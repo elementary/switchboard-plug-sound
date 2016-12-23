@@ -71,7 +71,7 @@ public class Sound.Device : GLib.Object {
             case "portable":
                 return _("Portable");
             default:
-                return _("Output");
+                return input? _("Input") : _("Output");
         }
     
     }

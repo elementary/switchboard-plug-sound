@@ -25,11 +25,16 @@ public class Sound.Plug : Switchboard.Plug {
     Gtk.Stack stack;
 
     public Plug () {
+        var settings = new Gee.TreeMap<string, string?> (null, null);
+        settings.set ("sound", "null");
+        settings.set ("sound/input", "input");
+        settings.set ("sound/output", "output");
         Object (category: Category.HARDWARE,
                 code_name: "hardware-pantheon-sound",
                 display_name: _("Sound"),
                 description: _("Change sound and microphone volume"),
-                icon: "preferences-desktop-sound");
+                icon: "preferences-desktop-sound",
+                supported_settings: settings);
     }
 
     public override Gtk.Widget get_widget () {
@@ -69,7 +74,14 @@ public class Sound.Plug : Switchboard.Plug {
     }
 
     public override void search_callback (string location) {
-        
+        switch (location) {
+            case "input":
+                stack.set_visible_child_name ("input");
+                break;
+            case "output":
+                stack.set_visible_child_name ("output");
+                break;
+        }
     }
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
