@@ -1,0 +1,190 @@
+# French translation for switchboard-plug-about
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the switchboard-plug-about package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: switchboard-plug-about\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-23 02:49+0100\n"
+"PO-Revision-Date: 2016-12-23 02:56+0100\n"
+"Last-Translator: Alexis Saettler <alexis@saettler.org>\n"
+"Language-Team: French <fr@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../src/Plug.vala:30
+msgid "Sound"
+msgstr "Son"
+
+#: ../src/Plug.vala:31
+msgid "Change sound and microphone volume"
+msgstr "Changer le volume du son et du microphone"
+
+#: ../src/Plug.vala:47
+msgid "Output"
+msgstr "Sortie"
+
+#: ../src/Plug.vala:48
+msgid "Input"
+msgstr "Entrée"
+
+#: ../src/OutputPanel.vala:35
+msgid "Available Sound Output Devices:"
+msgstr "Périphériques d'écoute disponibles :"
+
+#: ../src/OutputPanel.vala:44
+msgid "Output Volume:"
+msgstr "Volume de sortie :"
+
+#: ../src/OutputPanel.vala:51
+msgid "Balance:"
+msgstr "Balance :"
+
+#: ../src/OutputPanel.vala:56
+msgid "Left"
+msgstr "Gauche"
+
+#: ../src/OutputPanel.vala:57
+msgid "Center"
+msgstr "Centre"
+
+#: ../src/OutputPanel.vala:58
+msgid "Right"
+msgstr "Droite"
+
+#: ../src/OutputPanel.vala:59
+msgid "Device Profile:"
+msgstr "Profil du périphérique :"
+
+#: ../src/OutputPanel.vala:62
+msgid "Test Speakers…"
+msgstr "Tester le son…"
+
+#: ../src/OutputPanel.vala:65
+msgid "No Output Device"
+msgstr "Aucun périphérique d'écoute"
+
+#: ../src/OutputPanel.vala:65
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+"Aucun périphérique d'écoute n'a été détecté. Essayez d'en ajouter un pour "
+"commencer à écouter quoi que ce soit."
+
+#: ../src/InputPanel.vala:36
+msgid "Available Sound Input Devices:"
+msgstr "Périphériques d'enregistrement disponibles :"
+
+#: ../src/InputPanel.vala:45
+msgid "Input Volume:"
+msgstr "Volume d'enregistrement :"
+
+#: ../src/InputPanel.vala:50
+msgid "Unamplified"
+msgstr "Non Amplifié"
+
+#: ../src/InputPanel.vala:51
+msgid "100%"
+msgstr "100%"
+
+#: ../src/InputPanel.vala:54
+msgid "Input Level:"
+msgstr "Niveau d'enregistrement"
+
+#: ../src/InputPanel.vala:58
+msgid "No Input Device"
+msgstr "Aucun périphérique d'enregistrement"
+
+#: ../src/InputPanel.vala:58
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
+"Aucun périphérique d'enregistrement n'a été détecté. Essayez d'en ajouter "
+"un pour commencer à enregistrer quoi que ce soit."
+
+#~ msgid "About"
+#~ msgstr "À propos"
+
+#~ msgid "View operating system and hardware information"
+#~ msgstr "Afficher les informations du système d'exploitation et du matériel"
+
+#~ msgid "System Information"
+#~ msgstr "Informations système"
+
+#~ msgid "Restore Default Settings"
+#~ msgstr "Restaurer les paramètres par défaut"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "Suggérer une traduction"
+
+#~ msgid "Report Problems"
+#~ msgstr "Rapporter un problème"
+
+#~ msgid "Updates"
+#~ msgstr "Mises à jour"
+
+#~ msgid "Unknown"
+#~ msgstr "Inconnu"
+
+#~ msgid "Dual-Core"
+#~ msgstr "Double coeur"
+
+#~ msgid "Quad-Core"
+#~ msgstr "Quadruple coeur"
+
+#~ msgid "Built on %s"
+#~ msgstr "Basé sur %s"
+
+#~ msgid "Website"
+#~ msgstr "Site Internet"
+
+#~ msgid "Hardware"
+#~ msgstr "Matériel"
+
+#~ msgid "Processor:"
+#~ msgstr "Processeur :"
+
+#~ msgid "Memory:"
+#~ msgstr "Mémoire vive :"
+
+#~ msgid "Graphics:"
+#~ msgstr "Carte graphique :"
+
+#~ msgid "Storage:"
+#~ msgstr "Stockage :"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "Proposer des traductions"
+
+#~ msgid "Report a Problem"
+#~ msgstr "Signaler un problème"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Vérifier les mises à jour"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "Les paramètres du système seront restaurés aux valeurs par défaut"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr ""
+#~ "Tous les paramètres du système et les données seront réinitialisés aux "
+#~ "valeurs par défaut."
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr ""
+#~ "Les données personnelles, telles que la musique et les photos, ne seront "
+#~ "pas affectées."
+
+#~ msgid "Restore Settings"
+#~ msgstr "Restaurer les paramètres"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuler"

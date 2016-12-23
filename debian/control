@@ -1,0 +1,31 @@
+Source: switchboard-plug-sound
+Section: x11
+Priority: optional
+Maintainer: Corentin Noël <corentin@elementary.io>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               libgranite-dev,
+               libswitchboard-2.0-dev,
+               valac (>= 0.22)
+Standards-Version: 3.9.2
+Homepage: https://launchpad.net/switchboard-plug-sound
+
+Package: switchboard-plug-sound
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Enhances: switchboard
+Description: Sound plug for Switchboard
+ This plug allow to set the audio and microphone volume and several 
+ sound-related settings.
+
+Package: switchboard-plug-sound-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: switchboard-plug-sound (= ${binary:Version}), ${misc:Depends}
+Enhances: switchboard-plug-sound
+Description: Sound plug for Switchboard (debugging symbols)
+ This plug allow to set the audio and microphone volume and several 
+ sound-related settings.
+ .
+ This package contains debugging symbols for switchboard-plug-sound.
