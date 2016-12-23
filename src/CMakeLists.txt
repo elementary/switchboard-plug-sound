@@ -1,7 +1,7 @@
 find_package (PkgConfig)
 
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED gthread-2.0 gtk+-3.0 switchboard-2.0 granite libpulse libpulse-mainloop-glib)
+pkg_check_modules (DEPS REQUIRED gthread-2.0 gtk+-3.0 switchboard-2.0 granite libpulse libpulse-mainloop-glib libcanberra libcanberra-gtk)
 
 add_definitions (${DEPS_CFLAGS})
 link_directories (${DEPS_LIBRARY_DIRS})
@@ -17,12 +17,15 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     InputPanel.vala
     OutputPanel.vala
     DeviceRow.vala
+    TestPopover.vala
     Device.vala
     PulseAudioManager.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     granite
     gtk+-3.0
+    libcanberra
+    libcanberra-gtk
     libpulse
     libpulse-mainloop-glib
     libpulse-ext

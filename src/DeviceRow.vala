@@ -27,6 +27,7 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Label name_label;
     private Gtk.Label description_label;
     private Gtk.RadioButton activate_radio;
+    private bool ignore_default = false;
     public DeviceRow (Device device) {
         Object (device: device);
     }
@@ -54,9 +55,22 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         add (grid);
         activate.connect (() => {activate_radio.active = true;});
         activate_radio.toggled.connect (() => {
-            if (activate_radio.active) {
+            if (activate_radio.active && !ignore_default) {
                 set_as_default ();
             }
+        });
+
+        device.bind_property ("display-name", name_label, "label");
+
+        device.removed.connect (() => destroy ());
+        device.notify["is-default"].connect (() => {
+            ignore_default = true;
+            activate_radio.active = device.is_default;
+            ignore_default = false;
+        });
+
+        device.notify["form-factor"].connect (() => {
+            description_label.label = device.get_nice_form_factor ();
         });
     }
 }

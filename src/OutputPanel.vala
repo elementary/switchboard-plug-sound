@@ -23,6 +23,14 @@
 public class Sound.OutputPanel : Gtk.Grid {
     private Gtk.ListBox devices_listbox;
     private unowned PulseAudioManager pam;
+    private bool changing_default = false;
+
+    Gtk.Scale volume_scale;
+    Gtk.Switch volume_switch;
+    Gtk.Scale balance_scale;
+
+    private unowned Device default_device;
+
     public OutputPanel () {
         
     }
@@ -44,25 +52,27 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_frame.add (scrolled);
         var volume_label = new Gtk.Label (_("Output Volume:"));
         volume_label.halign = Gtk.Align.END;
-        var volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
+        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
+        volume_scale.adjustment.page_increment = 5;
         volume_scale.draw_value = false;
         volume_scale.hexpand = true;
-        var volume_switch = new Gtk.Switch ();
+        volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
         volume_switch.active = true;
         var balance_label = new Gtk.Label (_("Balance:"));
         balance_label.valign = Gtk.Align.START;
         balance_label.halign = Gtk.Align.END;
-        var balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 200, 10);
+        balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, -1, 1, 0.1);
+        balance_scale.adjustment.page_increment = 0.1;
         balance_scale.draw_value = false;
-        balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Left"));
-        balance_scale.add_mark (100, Gtk.PositionType.BOTTOM, _("Center"));
-        balance_scale.add_mark (200, Gtk.PositionType.BOTTOM, _("Right"));
-        var profile_label = new Gtk.Label (_("Device Profile:"));
-        profile_label.halign = Gtk.Align.END;
-        var profile_combobox = new Gtk.ComboBoxText ();
-        var test_button = new Gtk.Button.with_label (_("Test Speakers…"));
+        balance_scale.add_mark (-1, Gtk.PositionType.BOTTOM, _("Left"));
+        balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
+        balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
+        var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…"));
         test_button.halign = Gtk.Align.END;
+
+        var test_popover = new TestPopover (test_button);
+        test_button.bind_property ("active", test_popover, "visible", GLib.BindingFlags.BIDIRECTIONAL);
 
         var no_device_grid = new Granite.Widgets.AlertView (_("No Output Device"), _("There is no output device detected. You might want to add one to start listening to anything."), "audio-volume-muted-symbolic");
         no_device_grid.show_all ();
@@ -75,12 +85,68 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (volume_switch, 2, 2, 1, 1);
         attach (balance_label, 0, 3, 1, 1);
         attach (balance_scale, 1, 3, 2, 1);
-        attach (profile_label, 0, 4, 1, 1);
-        attach (profile_combobox, 1, 4, 2, 1);
-        attach (test_button, 0, 5, 3, 1);
+        attach (test_button, 0, 4, 3, 1);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
+        pam.notify["default-output"].connect (() => {
+            default_changed ();
+        });
+
+        volume_switch.notify["active"].connect (() => {
+            if (changing_default || volume_switch.active == !default_device.is_muted) {
+                return;
+            }
+
+            pam.change_device_mute (default_device, !volume_switch.active);
+        });
+
+        volume_scale.value_changed.connect (() => {
+            if (changing_default) {
+                return;
+            }
+
+            pam.change_device_volume (default_device, volume_scale.get_value ());
+        });
+
+        balance_scale.value_changed.connect (() => {
+            if (changing_default) {
+                return;
+            }
+
+            pam.change_device_balance (default_device, (float)balance_scale.get_value ());
+        });
+    }
+
+    private void default_changed () {
+        changing_default = true;
+        if (default_device != null) {
+            default_device.notify.disconnect (device_notify);
+        }
+
+        default_device = pam.default_output;
+        volume_switch.active = !default_device.is_muted;
+        volume_scale.set_value (default_device.volume);
+        balance_scale.set_value (default_device.balance);
+        default_device.notify.connect (device_notify);
+        changing_default = false;
+    }
+
+    private void device_notify (ParamSpec pspec) {
+        changing_default = true;
+        switch (pspec.get_name ()) {
+            case "is-muted":
+                volume_switch.active = !default_device.is_muted;
+                break;
+            case "volume":
+                volume_scale.set_value (default_device.volume);
+                break;
+            case "balance":
+                balance_scale.set_value (default_device.balance);
+                break;
+        }
+
+        changing_default = false;
     }
 
     private void add_device (Device device) {

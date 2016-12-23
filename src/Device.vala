@@ -20,14 +20,20 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
+// This is a read-only class, set the properties via PulseAudioManager.
 public class Sound.Device : GLib.Object {
+    public signal void removed ();
+
     public bool input { get; set; default=true; }
-    public uint32 index { get; construct; }
+    public uint32 index { get; construct; default=0U; }
     public string name { get; set; }
     public string display_name { get; set; }
     public string form_factor { get; set; }
-    // This is a state property, don't use it to set as default.
     public bool is_default { get; set; default=false; }
+    public bool is_muted { get; set; default=false; }
+    public double volume { get; set; default=0; }
+    public float balance { get; set; default=0; }
+    public PulseAudio.ChannelPosition[] channel_positions { get; set; default={}; }
     public Device (uint32 index) {
         Object (index: index);
     }

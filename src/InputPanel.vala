@@ -23,6 +23,13 @@
 public class Sound.InputPanel : Gtk.Grid {
     private Gtk.ListBox devices_listbox;
     private unowned PulseAudioManager pam;
+    private bool changing_default = false;
+
+    Gtk.Scale volume_scale;
+    Gtk.Switch volume_switch;
+    Gtk.LevelBar level_bar;
+
+    private unowned Device default_device;
 
     public InputPanel () {
         
@@ -44,18 +51,19 @@ public class Sound.InputPanel : Gtk.Grid {
         devices_frame.expand = true;
         devices_frame.add (scrolled);
         var volume_label = new Gtk.Label (_("Input Volume:"));
+        volume_label.valign = Gtk.Align.START;
         volume_label.halign = Gtk.Align.END;
-        var volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
+        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
         volume_scale.draw_value = false;
         volume_scale.hexpand = true;
         volume_scale.add_mark (10, Gtk.PositionType.BOTTOM, _("Unamplified"));
         volume_scale.add_mark (80, Gtk.PositionType.BOTTOM, _("100%"));
-        var volume_switch = new Gtk.Switch ();
+        volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
         volume_switch.active = true;
         var level_label = new Gtk.Label (_("Input Level:"));
         level_label.halign = Gtk.Align.END;
-        var level_bar = new Gtk.LevelBar ();
+        level_bar = new Gtk.LevelBar ();
         level_bar.mode = Gtk.LevelBarMode.DISCRETE;
 
         var no_device_grid = new Granite.Widgets.AlertView (_("No Input Device"), _("There is no input device detected. You might want to add one to start recording anything."), "audio-input-microphone-symbolic");
@@ -72,6 +80,52 @@ public class Sound.InputPanel : Gtk.Grid {
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
+        pam.notify["default-input"].connect (() => {
+            default_changed ();
+        });
+
+        volume_switch.notify["active"].connect (() => {
+            if (changing_default || volume_switch.active == !default_device.is_muted) {
+                return;
+            }
+
+            pam.change_device_mute (default_device, !volume_switch.active);
+        });
+
+        volume_scale.value_changed.connect (() => {
+            if (changing_default) {
+                return;
+            }
+
+            pam.change_device_volume (default_device, volume_scale.get_value ());
+        });
+    }
+
+    private void default_changed () {
+        changing_default = true;
+        if (default_device != null) {
+            default_device.notify.disconnect (device_notify);
+        }
+
+        default_device = pam.default_input;
+        volume_switch.active = !default_device.is_muted;
+        volume_scale.set_value (default_device.volume);
+        default_device.notify.connect (device_notify);
+        changing_default = false;
+    }
+
+    private void device_notify (ParamSpec pspec) {
+        changing_default = true;
+        switch (pspec.get_name ()) {
+            case "is-muted":
+                volume_switch.active = !default_device.is_muted;
+                break;
+            case "volume":
+                volume_scale.set_value (default_device.volume);
+                break;
+        }
+
+        changing_default = false;
     }
 
     private void add_device (Device device) {
