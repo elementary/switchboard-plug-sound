@@ -28,7 +28,5 @@ add_definitions (-w)
 
 # Traslation stuff
 add_subdirectory (po)
-# Info-plug
-install (FILES ${resources} DESTINATION ${PKGDATADIR})
 
-add_subdirectory(src)
+add_subdirectory (src)

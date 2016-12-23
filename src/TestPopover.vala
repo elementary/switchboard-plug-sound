@@ -42,6 +42,9 @@ public class Sound.TestPopover : Gtk.Popover {
         pam.notify["default-output"].connect (() => {
             default_changed ();
         });
+
+        var icon_theme = Gtk.IconTheme.get_default ();
+        icon_theme.add_resource_path ("/io/elementary/switchboard/sound/icons/");
     }
 
     private void create_position_button (PulseAudio.ChannelPosition pa_position) {

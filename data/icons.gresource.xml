@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/elementary/switchboard/sound/icons/scalable/devices/">
+    <file alias="audio-speaker-center-back-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-center-back-testing.svg</file>
+    <file alias="audio-speaker-center.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-center.svg</file>
+    <file alias="audio-speaker-center-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-center-testing.svg</file>
+    <file alias="audio-speaker-left-back.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-left-back.svg</file>
+    <file alias="audio-speaker-left-back-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-left-back-testing.svg</file>
+    <file alias="audio-speaker-left-side.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-left-side.svg</file>
+    <file alias="audio-speaker-left-side-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-left-side-testing.svg</file>
+    <file alias="audio-speaker-left.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-left.svg</file>
+    <file alias="audio-speaker-left-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-left-testing.svg</file>
+    <file alias="audio-speaker-right-back.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-right-back.svg</file>
+    <file alias="audio-speaker-right-back-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-right-back-testing.svg</file>
+    <file alias="audio-speaker-right-side.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-right-side.svg</file>
+    <file alias="audio-speaker-right-side-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-right-side-testing.svg</file>
+    <file alias="audio-speaker-right.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-right.svg</file>
+    <file alias="audio-speaker-right-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-right-testing.svg</file>
+    <file alias="audio-speaker-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-speaker-testing.svg</file>
+    <file alias="audio-subwoofer.svg" compressed="true" preprocess="xml-stripblanks">audio-subwoofer.svg</file>
+    <file alias="audio-subwoofer-testing.svg" compressed="true" preprocess="xml-stripblanks">audio-subwoofer-testing.svg</file>
+  </gresource>
+</gresources>
