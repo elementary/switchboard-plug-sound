@@ -22,16 +22,51 @@
 
 public class Sound.Device : GLib.Object {
     public bool input { get; set; default=true; }
-    public uint32 index { get; set; }
+    public uint32 index { get; construct; }
     public string name { get; set; }
     public string display_name { get; set; }
-    public string icon { get; set; }
-    public string description { get; set; }
-    private Device () {
-        
+    public string form_factor { get; set; }
+    // This is a state property, don't use it to set as default.
+    public bool is_default { get; set; default=false; }
+    public Device (uint32 index) {
+        Object (index: index);
     }
 
     construct {
         
+    }
+
+    public string get_nice_form_factor () {
+        switch (form_factor) {
+            case "internal":
+                return _("Built-in");
+            case "speaker":
+                return _("Speaker");
+            case "handset":
+                return _("Handset");
+            case "tv":
+                return _("TV");
+            case "webcam":
+                return _("Webcam");
+            case "microphone":
+                return _("Microphone");
+            case "headset":
+                return _("Headset");
+            case "headphone":
+                return _("Headphone");
+            case "hands-free":
+                return _("Hands-Free");
+            case "car":
+                return _("Car");
+            case "hifi":
+                return _("HiFi");
+            case "computer":
+                return _("Computer");
+            case "portable":
+                return _("Portable");
+            default:
+                return _("Output");
+        }
+    
     }
 }

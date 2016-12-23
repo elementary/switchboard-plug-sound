@@ -37,6 +37,7 @@ public class Sound.InputPanel : Gtk.Grid {
         available_label.get_style_context ().add_class ("h4");
         available_label.halign = Gtk.Align.START;
         devices_listbox = new Gtk.ListBox ();
+        devices_listbox.activate_on_single_click = true;
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
         var devices_frame = new Gtk.Frame (null);
@@ -51,9 +52,11 @@ public class Sound.InputPanel : Gtk.Grid {
         volume_scale.add_mark (80, Gtk.PositionType.BOTTOM, _("100%"));
         var volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
+        volume_switch.active = true;
         var level_label = new Gtk.Label (_("Input Level:"));
         level_label.halign = Gtk.Align.END;
         var level_bar = new Gtk.LevelBar ();
+        level_bar.mode = Gtk.LevelBarMode.DISCRETE;
 
         var no_device_grid = new Granite.Widgets.AlertView (_("No Input Device"), _("There is no input device detected. You might want to add one to start recording anything."), "audio-input-microphone-symbolic");
         no_device_grid.show_all ();
@@ -68,6 +71,24 @@ public class Sound.InputPanel : Gtk.Grid {
         attach (level_bar, 1, 3, 2, 1);
 
         pam = PulseAudioManager.get_default ();
+        pam.new_device.connect (add_device);
     }
 
+    private void add_device (Device device) {
+        if (!device.input) {
+            return;
+        }
+
+        var device_row = new DeviceRow (device);
+        Gtk.ListBoxRow? row = devices_listbox.get_row_at_index (0);
+        if (row != null) {
+            device_row.link_to_row ((DeviceRow) row);
+        }
+
+        device_row.show_all ();
+        devices_listbox.add (device_row);
+        device_row.set_as_default.connect (() => {
+            pam.set_default_device (device);
+        });
+    }
 }

@@ -30,17 +30,47 @@ public class Sound.PulseAudioManager : GLib.Object {
         return pam;
     }
 
+    public signal void new_device (Device dev);
+
     private PulseAudio.GLibMainLoop loop;
     private PulseAudio.Context context;
     private bool is_ready = false;
     private uint reconnect_timer_id = 0U;
+    private HashTable<uint32, Device> input_devices;
+    private HashTable<uint32, Device> output_devices;
+    private unowned Device default_output;
+    private unowned Device default_input;
+    private string default_source_name;
+    private string default_sink_name;
 
     private PulseAudioManager () {
-        reconnect_to_pulse.begin ();
+        
     }
 
     construct {
         loop = new PulseAudio.GLibMainLoop ();
+        input_devices = new HashTable<uint32, Device> (direct_hash, direct_equal);
+        output_devices = new HashTable<uint32, Device> (direct_hash, direct_equal);
+    }
+
+    public void start () {
+        reconnect_to_pulse.begin ();
+    }
+
+    public void set_default_device (Device device) {
+        if (device.input) {
+            default_source_name = device.name;
+            var ope = context.set_default_source (device.name, null);
+            if (ope != null) {
+                PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_source_callback);
+            }
+        } else {
+            default_sink_name = device.name;
+            var ope = context.set_default_sink (device.name, null);
+            if (ope != null) {
+                PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_sink_callback);
+            }
+        }
     }
 
     private bool reconnect_timeout () {
@@ -65,18 +95,49 @@ public class Sound.PulseAudioManager : GLib.Object {
         context = new PulseAudio.Context (loop.get_api (), null, props);
         context.set_state_callback (context_state_callback);
 
-        if (context.connect(null, PulseAudio.Context.Flags.NOFAIL, null) < 0)
-            warning( "pa_context_connect() failed: %s\n", PulseAudio.strerror(context.errno()));
+        if (context.connect(null, PulseAudio.Context.Flags.NOFAIL, null) < 0) {
+            warning ("pa_context_connect() failed: %s\n", PulseAudio.strerror(context.errno()));
+        }
+    }
+
+    private void ext_stream_restore_read_sink_callback (PulseAudio.Context c, PulseAudio.ExtStreamRestoreInfo? info, int eol) {
+        if (eol != 0 || !info.name.has_prefix ("sink-input-by")) {
+            return;
+        }
+
+        // We need to duplicate the info but with the right device name
+        var new_info = PulseAudio.ExtStreamRestoreInfo ();
+        new_info.name = info.name;
+        new_info.channel_map = info.channel_map;
+        new_info.volume = info.volume;
+        new_info.mute = info.mute;
+        new_info.device = default_sink_name;
+        PulseAudio.ext_stream_restore_write (c, PulseAudio.UpdateMode.REPLACE, {new_info}, 1, null);
+    }
+
+    private void ext_stream_restore_read_source_callback (PulseAudio.Context c, PulseAudio.ExtStreamRestoreInfo? info, int eol) {
+        if (eol != 0 || !info.name.has_prefix ("source-output-by")) {
+            return;
+        }
+
+        // We need to duplicate the info but with the right device name
+        var new_info = PulseAudio.ExtStreamRestoreInfo ();
+        new_info.name = info.name;
+        new_info.channel_map = info.channel_map;
+        new_info.volume = info.volume;
+        new_info.mute = info.mute;
+        new_info.device = default_source_name;
+        PulseAudio.ext_stream_restore_write (c, PulseAudio.UpdateMode.REPLACE, {new_info}, 1, null);
     }
 
     private void context_state_callback (PulseAudio.Context c) {
         switch (c.get_state ()) {
             case PulseAudio.Context.State.READY:
-                c.subscribe (PulseAudio.Context.SubscriptionMask.SINK |
-                        PulseAudio.Context.SubscriptionMask.SOURCE |
+                c.set_subscribe_callback (subscribe_callback);
+                c.subscribe (PulseAudio.Context.SubscriptionMask.SERVER |
+                        PulseAudio.Context.SubscriptionMask.SINK_INPUT |
                         PulseAudio.Context.SubscriptionMask.SOURCE_OUTPUT);
-                //c.set_subscribe_callback (context_events_cb);
-                context.get_server_info (server_info_cb_for_props);
+                context.get_server_info (server_info_callback);
                 is_ready = true;
                 break;
 
@@ -92,27 +153,114 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
 
-    private void source_info_cb (PulseAudio.Context c, PulseAudio.SourceInfo? i, int eol) {
-        if (i == null)
-            return;
 
-        warning ("%u: %s - %s | %02X", i.index, i.name, i.description, i.flags);
-        //TODO: do things
+    private void subscribe_callback (PulseAudio.Context c, PulseAudio.Context.SubscriptionEventType t, uint32 index) {
+        switch (t & PulseAudio.Context.SubscriptionEventType.FACILITY_MASK) {
+            case PulseAudio.Context.SubscriptionEventType.SINK:
+                //TODO
+                break;
+
+            case PulseAudio.Context.SubscriptionEventType.SINK_INPUT:
+                switch (t & PulseAudio.Context.SubscriptionEventType.TYPE_MASK) {
+                    case PulseAudio.Context.SubscriptionEventType.NEW:
+                        //c.get_sink_input_info (index, handle_new_sink_input_cb);
+                        break;
+
+                    case PulseAudio.Context.SubscriptionEventType.CHANGE:
+                        //c.get_sink_input_info (index, handle_changed_sink_input_cb);
+                        break;
+
+                    case PulseAudio.Context.SubscriptionEventType.REMOVE:
+                        //remove_sink_input_from_list (index);
+                        break;
+                    default:
+                        debug ("Sink input event not known.");
+                        break;
+                }
+                break;
+
+            case PulseAudio.Context.SubscriptionEventType.SOURCE:
+                //TODO
+                break;
+
+            case PulseAudio.Context.SubscriptionEventType.SOURCE_OUTPUT:
+                switch (t & PulseAudio.Context.SubscriptionEventType.TYPE_MASK) {
+                    case PulseAudio.Context.SubscriptionEventType.NEW:
+                        //c.get_source_output_info (index, source_output_info_cb);
+                        break;
+
+                    case PulseAudio.Context.SubscriptionEventType.REMOVE:
+                        //this.active_mic = false;
+                        break;
+                }
+                break;
+        }
     }
 
-    private void sink_info_cb_for_props (PulseAudio.Context c, PulseAudio.SinkInfo? i, int eol) {
+    private void source_info_callback (PulseAudio.Context c, PulseAudio.SourceInfo? i, int eol) {
         if (i == null)
             return;
 
-        warning ("%u: %s - %s | %02X", i.index, i.name, i.description, i.flags);
-        //TODO: do things
+        // completely ignore monitors, they're not real sources
+        if (i.monitor_of_sink != PulseAudio.INVALID_INDEX) {
+            return;
+        }
+
+        Device device = null;
+        if (input_devices.contains (i.index)) {
+            device = input_devices.get (i.index);
+            //TODO: do things
+        } else {
+            device = new Device (i.index);
+            device.input = true;
+            device.name = i.name;
+            device.display_name = i.description;
+
+            var form_factor = i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
+            if (form_factor != null) {
+                device.form_factor = form_factor;
+            }
+
+            device.is_default = i.name == default_source_name;
+            input_devices.insert (i.index, device);
+            default_output = device;
+            new_device (device);
+        }
     }
 
-    private void server_info_cb_for_props (PulseAudio.Context c, PulseAudio.ServerInfo? i) {
+    private void sink_info_callback (PulseAudio.Context c, PulseAudio.SinkInfo? i, int eol) {
         if (i == null)
             return;
 
-        context.get_sink_info_list (sink_info_cb_for_props);
-        context.get_source_info_list (source_info_cb);
+        Device device = null;
+        if (output_devices.contains (i.index)) {
+            device = output_devices.get (i.index);
+            //TODO: do things
+        } else {
+            device = new Device (i.index);
+            device.input = false;
+            device.name = i.name;
+            device.display_name = i.description;
+
+            var form_factor = i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
+            if (form_factor != null) {
+                device.form_factor = form_factor;
+            }
+
+            device.is_default = i.name == default_sink_name;
+            output_devices.insert (i.index, device);
+            default_input = device;
+            new_device (device);
+        }
+    }
+
+    private void server_info_callback (PulseAudio.Context c, PulseAudio.ServerInfo? i) {
+        if (i == null)
+            return;
+
+        default_source_name = i.default_source_name;
+        default_sink_name = i.default_sink_name;
+        context.get_sink_info_list (sink_info_callback);
+        context.get_source_info_list (source_info_callback);
     }
 }

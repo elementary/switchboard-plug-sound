@@ -36,6 +36,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         available_label.get_style_context ().add_class ("h4");
         available_label.halign = Gtk.Align.START;
         devices_listbox = new Gtk.ListBox ();
+        devices_listbox.activate_on_single_click = true;
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
         var devices_frame = new Gtk.Frame (null);
@@ -48,6 +49,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_scale.hexpand = true;
         var volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
+        volume_switch.active = true;
         var balance_label = new Gtk.Label (_("Balance:"));
         balance_label.valign = Gtk.Align.START;
         balance_label.halign = Gtk.Align.END;
@@ -78,5 +80,24 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (test_button, 0, 5, 3, 1);
 
         pam = PulseAudioManager.get_default ();
+        pam.new_device.connect (add_device);
+    }
+
+    private void add_device (Device device) {
+        if (device.input) {
+            return;
+        }
+
+        var device_row = new DeviceRow (device);
+        Gtk.ListBoxRow? row = devices_listbox.get_row_at_index (0);
+        if (row != null) {
+            device_row.link_to_row ((DeviceRow) row);
+        }
+
+        device_row.show_all ();
+        devices_listbox.add (device_row);
+        device_row.set_as_default.connect (() => {
+            pam.set_default_device (device);
+        });
     }
 }

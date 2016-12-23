@@ -16,6 +16,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Plug.vala
     InputPanel.vala
     OutputPanel.vala
+    DeviceRow.vala
     Device.vala
     PulseAudioManager.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
@@ -24,8 +25,10 @@ PACKAGES
     gtk+-3.0
     libpulse
     libpulse-mainloop-glib
+    libpulse-ext
     switchboard-2.0
 OPTIONS
+    --vapidir=${CMAKE_SOURCE_DIR}/vapi
     --thread
 )
 

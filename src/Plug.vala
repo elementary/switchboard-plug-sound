@@ -52,6 +52,9 @@ public class Sound.Plug : Switchboard.Plug {
             main_grid.add (stack_switcher);
             main_grid.add (stack);
             main_grid.show_all ();
+
+            var pam = PulseAudioManager.get_default ();
+            pam.start ();
         }
 
         return main_grid;
