@@ -19,6 +19,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     DeviceRow.vala
     TestPopover.vala
     Device.vala
+    InputDeviceMonitor.vala
     PulseAudioManager.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES

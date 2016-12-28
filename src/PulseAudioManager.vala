@@ -38,8 +38,8 @@ public class Sound.PulseAudioManager : GLib.Object {
 
     public signal void new_device (Device dev);
 
+    public PulseAudio.Context context { get; private set; }
     private PulseAudio.GLibMainLoop loop;
-    private PulseAudio.Context context;
     private bool is_ready = false;
     private uint reconnect_timer_id = 0U;
     private Gee.HashMap<uint32, Device> input_devices;
@@ -121,11 +121,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
 
         var props = new PulseAudio.Proplist ();
-        props.sets (PulseAudio.Proplist.PROP_APPLICATION_NAME, "Switchboard sound");
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "org.pantheon.switchboard.plug.sound");
-        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ICON_NAME, "multimedia-volume-control");
-        props.sets (PulseAudio.Proplist.PROP_APPLICATION_VERSION, "0.1");
-
         context = new PulseAudio.Context (loop.get_api (), null, props);
         context.set_state_callback (context_state_callback);
 

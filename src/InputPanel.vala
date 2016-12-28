@@ -30,6 +30,7 @@ public class Sound.InputPanel : Gtk.Grid {
     Gtk.LevelBar level_bar;
 
     private unowned Device default_device;
+    private InputDeviceMonitor device_monitor;
 
     public InputPanel () {
         
@@ -64,7 +65,6 @@ public class Sound.InputPanel : Gtk.Grid {
         var level_label = new Gtk.Label (_("Input Level:"));
         level_label.halign = Gtk.Align.END;
         level_bar = new Gtk.LevelBar ();
-        level_bar.mode = Gtk.LevelBarMode.DISCRETE;
 
         var no_device_grid = new Granite.Widgets.AlertView (_("No Input Device"), _("There is no input device detected. You might want to add one to start recording anything."), "audio-input-microphone-symbolic");
         no_device_grid.show_all ();
@@ -77,6 +77,9 @@ public class Sound.InputPanel : Gtk.Grid {
         attach (volume_switch, 2, 2, 1, 1);
         attach (level_label, 0, 3, 1, 1);
         attach (level_bar, 1, 3, 2, 1);
+
+        device_monitor = new InputDeviceMonitor ();
+        device_monitor.update_fraction.connect (update_fraction);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -101,6 +104,14 @@ public class Sound.InputPanel : Gtk.Grid {
         });
     }
 
+    public void set_visibility (bool is_visible) {
+        if (is_visible) {
+            device_monitor.start_record ();
+        } else {
+            device_monitor.stop_record ();
+        }
+    }
+
     private void default_changed () {
         changing_default = true;
         if (default_device != null) {
@@ -108,6 +119,7 @@ public class Sound.InputPanel : Gtk.Grid {
         }
 
         default_device = pam.default_input;
+        device_monitor.set_device (default_device);
         volume_switch.active = !default_device.is_muted;
         volume_scale.set_value (default_device.volume);
         default_device.notify.connect (device_notify);
@@ -126,6 +138,10 @@ public class Sound.InputPanel : Gtk.Grid {
         }
 
         changing_default = false;
+    }
+
+    private void update_fraction (float fraction) {
+        level_bar.value = fraction;
     }
 
     private void add_device (Device device) {
