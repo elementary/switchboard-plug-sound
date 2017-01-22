@@ -49,6 +49,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         scrolled.add (devices_listbox);
         var devices_frame = new Gtk.Frame (null);
         devices_frame.expand = true;
+        devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
         var volume_label = new Gtk.Label (_("Output Volume:"));
         volume_label.halign = Gtk.Align.END;
@@ -70,6 +71,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
         var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…"));
         test_button.halign = Gtk.Align.END;
+        test_button.margin_top = 18;
 
         var test_popover = new TestPopover (test_button);
         test_button.bind_property ("active", test_popover, "visible", GLib.BindingFlags.BIDIRECTIONAL);
@@ -84,7 +86,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (volume_scale, 1, 2, 1, 1);
         attach (volume_switch, 2, 2, 1, 1);
         attach (balance_label, 0, 3, 1, 1);
-        attach (balance_scale, 1, 3, 2, 1);
+        attach (balance_scale, 1, 3, 1, 1);
         attach (test_button, 0, 4, 3, 1);
 
         pam = PulseAudioManager.get_default ();
