@@ -149,6 +149,7 @@ public class Sound.InputPanel : Gtk.Grid {
     }
 
     private void update_fraction (float fraction) {
+        /* Since we split the bar in 18 segments, get the value out of 18 instead of 1 */
         level_bar.value = fraction * 18;
     }
 
