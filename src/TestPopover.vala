@@ -131,8 +131,8 @@ public class Sound.TestPopover : Gtk.Popover {
         private bool playing = false;
         public PositionButton (PulseAudio.ChannelPosition pa_position) {
             Object (pa_position: pa_position);
-            image = new Gtk.Image.from_icon_name (get_icon (), Gtk.IconSize.DND);
-            ((Gtk.Image) image).pixel_size = 32;
+            image = new Gtk.Image.from_icon_name (get_icon (), Gtk.IconSize.DIALOG);
+            ((Gtk.Image) image).pixel_size = 48;
         }
 
         construct {

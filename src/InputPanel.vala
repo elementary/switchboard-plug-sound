@@ -38,6 +38,7 @@ public class Sound.InputPanel : Gtk.Grid {
 
     construct {
         margin = 12;
+        margin_bottom = 24;
         margin_top = 0;
         column_spacing = 12;
         row_spacing = 6;
@@ -52,9 +53,10 @@ public class Sound.InputPanel : Gtk.Grid {
         devices_frame.expand = true;
         devices_frame.add (scrolled);
         var volume_label = new Gtk.Label (_("Input Volume:"));
-        volume_label.valign = Gtk.Align.START;
+        volume_label.valign = Gtk.Align.CENTER;
         volume_label.halign = Gtk.Align.END;
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
+        volume_scale.margin_top = 18;
         volume_scale.draw_value = false;
         volume_scale.hexpand = true;
         volume_scale.add_mark (10, Gtk.PositionType.BOTTOM, _("Unamplified"));
@@ -64,7 +66,13 @@ public class Sound.InputPanel : Gtk.Grid {
         volume_switch.active = true;
         var level_label = new Gtk.Label (_("Input Level:"));
         level_label.halign = Gtk.Align.END;
-        level_bar = new Gtk.LevelBar ();
+
+        level_bar = new Gtk.LevelBar.for_interval (0.0, 18.0);
+        level_bar.max_value = 18;
+        level_bar.mode = Gtk.LevelBarMode.DISCRETE;
+        level_bar.add_offset_value ("low", 16.1);
+        level_bar.add_offset_value ("middle", 16.0);
+        level_bar.add_offset_value ("high", 14.0);
 
         var no_device_grid = new Granite.Widgets.AlertView (_("No Input Device"), _("There is no input device detected. You might want to add one to start recording anything."), "audio-input-microphone-symbolic");
         no_device_grid.show_all ();
@@ -76,7 +84,7 @@ public class Sound.InputPanel : Gtk.Grid {
         attach (volume_scale, 1, 2, 1, 1);
         attach (volume_switch, 2, 2, 1, 1);
         attach (level_label, 0, 3, 1, 1);
-        attach (level_bar, 1, 3, 2, 1);
+        attach (level_bar, 1, 3, 1, 1);
 
         device_monitor = new InputDeviceMonitor ();
         device_monitor.update_fraction.connect (update_fraction);
@@ -141,7 +149,8 @@ public class Sound.InputPanel : Gtk.Grid {
     }
 
     private void update_fraction (float fraction) {
-        level_bar.value = fraction;
+        /* Since we split the bar in 18 segments, get the value out of 18 instead of 1 */
+        level_bar.value = fraction * 18;
     }
 
     private void add_device (Device device) {
