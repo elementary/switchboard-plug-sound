@@ -14,6 +14,8 @@ Package: switchboard-plug-sound
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Enhances: switchboard
+Conflicts: switchboard-plug-gcc-sound
+Replaces: switchboard-plug-gcc-sound
 Description: Sound plug for Switchboard
  This plug allow to set the audio and microphone volume and several 
  sound-related settings.
