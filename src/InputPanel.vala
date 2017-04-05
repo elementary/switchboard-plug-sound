@@ -29,7 +29,7 @@ public class Sound.InputPanel : Gtk.Grid {
     Gtk.Switch volume_switch;
     Gtk.LevelBar level_bar;
 
-    private unowned Device default_device;
+    private Device default_device;
     private InputDeviceMonitor device_monitor;
 
     public InputPanel () {
@@ -122,15 +122,20 @@ public class Sound.InputPanel : Gtk.Grid {
 
     private void default_changed () {
         changing_default = true;
-        if (default_device != null) {
-            default_device.notify.disconnect (device_notify);
+        lock (default_device) {
+            if (default_device != null) {
+                default_device.notify.disconnect (device_notify);
+            }
+
+            default_device = pam.default_input;
+            if (default_device != null) {
+                device_monitor.set_device (default_device);
+                volume_switch.active = !default_device.is_muted;
+                volume_scale.set_value (default_device.volume);
+                default_device.notify.connect (device_notify);
+            }
         }
 
-        default_device = pam.default_input;
-        device_monitor.set_device (default_device);
-        volume_switch.active = !default_device.is_muted;
-        volume_scale.set_value (default_device.volume);
-        default_device.notify.connect (device_notify);
         changing_default = false;
     }
 
