@@ -4,7 +4,7 @@ services:
  - docker
 
 env:
- - DEPENDENCY_PACKAGES="cmake libcanberra-gtk-dev libpulse-dev valac"
+ - DEPENDENCY_PACKAGES="cmake libcanberra-gtk-dev libgranite-dev libgtk-3-dev libswitchboard-2.0-dev libpulse-dev valac"
 
 install:
  - docker pull elementary/docker:loki
