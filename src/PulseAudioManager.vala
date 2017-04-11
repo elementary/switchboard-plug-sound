@@ -44,8 +44,8 @@ public class Sound.PulseAudioManager : GLib.Object {
     private uint reconnect_timer_id = 0U;
     private Gee.HashMap<uint32, Device> input_devices;
     private Gee.HashMap<uint32, Device> output_devices;
-    public unowned Device default_output { get; private set; }
-    public unowned Device default_input { get; private set; }
+    public Device default_output { get; private set; }
+    public Device default_input { get; private set; }
     private string default_source_name;
     private string default_sink_name;
 
