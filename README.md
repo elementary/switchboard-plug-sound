@@ -5,9 +5,8 @@
 You'll need the following dependencies:
 
 * cmake
-* debhelper
-* libgranite-dev
-* libswitchboard-2.0-dev
+* libcanberra-gtk-dev
+* libpulse-dev
 * valac
 
 It's recommended to create a clean build environment
