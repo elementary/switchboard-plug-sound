@@ -78,16 +78,28 @@ public class Sound.PulseAudioManager : GLib.Object {
         reconnect_to_pulse.begin ();
     }
 
-    public void set_default_device (Device device) {
+    public void set_default_device (Device device, bool force = false) {
         if (device.input) {
+            bool use_echo = input_uses_echo ();
             default_source_name = device.name;
             var ope = context.set_default_source (device.name, null);
+            if (ope != null && use_echo && !force) {
+                default_source_name = echo_cancel_input.name;
+                ope = context.set_default_source (default_source_name, null);
+            }
+
             if (ope != null) {
                 PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_source_callback);
             }
         } else {
+            bool use_echo = output_uses_echo ();
             default_sink_name = device.name;
             var ope = context.set_default_sink (device.name, null);
+            if (ope != null && use_echo && !force) {
+                default_sink_name = echo_cancel_output.name;
+                ope = context.set_default_sink (default_sink_name, null);
+            }
+
             if (ope != null) {
                 PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_sink_callback);
             }
@@ -158,11 +170,11 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     public void set_cancel_echo_input (bool cancel_echo) {
-        set_default_device (cancel_echo ? echo_cancel_input : get_real_default_input ());
+        set_default_device (cancel_echo ? echo_cancel_input : get_real_default_input (), true);
     }
 
     public void set_cancel_echo_output (bool cancel_echo) {
-        set_default_device (cancel_echo ? echo_cancel_output : get_real_default_output ());
+        set_default_device (cancel_echo ? echo_cancel_output : get_real_default_output (), true);
     }
 
     private Device get_topmost_input_device (Device d) {
@@ -332,7 +344,19 @@ public class Sound.PulseAudioManager : GLib.Object {
                 break;
 
             case PulseAudio.Context.SubscriptionEventType.MODULE:
-                c.get_module_info (index, module_info_callback);
+                var event_type = t & PulseAudio.Context.SubscriptionEventType.TYPE_MASK;
+                switch (event_type) {
+                    case PulseAudio.Context.SubscriptionEventType.NEW:
+                    case PulseAudio.Context.SubscriptionEventType.CHANGE:
+                        c.get_module_info (index, module_info_callback);
+                        break;
+
+                    case PulseAudio.Context.SubscriptionEventType.REMOVE:
+                        c.get_module_info (index, module_info_remove_callback);
+
+                        break;
+                }
+
                 break;
         }
     }
@@ -480,6 +504,15 @@ public class Sound.PulseAudioManager : GLib.Object {
 
         if (i.name == "module-echo-cancel") {
             has_echo_cancellation = true;
+        }
+    }
+
+    public void module_info_remove_callback (PulseAudio.Context c, PulseAudio.ModuleInfo? i, int eol) {
+        if (i == null)
+            return;
+
+        if (i.name == "module-echo-cancel") {
+            has_echo_cancellation = false;
         }
     }
 
