@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-23 02:45+0100\n"
+"POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2017-04-12 18:19+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard"
-"/switchboard-plug-sound/fi/>\n"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,59 +20,145 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: ../src/Plug.vala:30
+#: ../src/Plug.vala:36
 msgid "Sound"
 msgstr "Ääni"
 
-#: ../src/Plug.vala:31
+#: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
 msgstr "Muuta äänen ja mikrofonin voimakkuutta"
 
-#: ../src/Plug.vala:47
+#: ../src/Plug.vala:54 ../src/Device.vala:76
 msgid "Output"
 msgstr "Ulostulo"
 
-#: ../src/Plug.vala:48
+#: ../src/Plug.vala:55 ../src/Device.vala:76
 msgid "Input"
 msgstr "Sisääntulo"
 
-#: ../src/OutputPanel.vala:35
+#: ../src/InputPanel.vala:44
+msgid "Available Sound Input Devices:"
+msgstr "Saatavilla olevat sisääntulolaitteet:"
+
+#: ../src/InputPanel.vala:54
+msgid "Input Volume:"
+msgstr "Sisääntulon äänenvoimakkuus:"
+
+#: ../src/InputPanel.vala:61
+msgid "Unamplified"
+msgstr ""
+
+#: ../src/InputPanel.vala:62
+msgid "100%"
+msgstr "100 %"
+
+#: ../src/InputPanel.vala:66
+msgid "Input Level:"
+msgstr "Sisääntulon taso:"
+
+#: ../src/InputPanel.vala:76
+msgid "No Input Device"
+msgstr "Ei sisääntulolaitetta"
+
+#: ../src/InputPanel.vala:76
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
+"Sisääntulolaitetta ei havaittu. Lisää sisääntulolaite nauhoittaaksesi mitä "
+"tahansa."
+
+#: ../src/InputDeviceMonitor.vala:78
+msgid "Peak detect"
+msgstr ""
+
+#: ../src/Device.vala:50
+#, fuzzy
+msgid "Built-in"
+msgstr "Pohjana %s"
+
+#: ../src/Device.vala:52
+#, fuzzy
+msgid "Speaker"
+msgstr "Testaa kaiuttimia…"
+
+#: ../src/Device.vala:54
+msgid "Handset"
+msgstr ""
+
+#: ../src/Device.vala:56
+msgid "TV"
+msgstr ""
+
+#: ../src/Device.vala:58
+msgid "Webcam"
+msgstr ""
+
+#: ../src/Device.vala:60
+msgid "Microphone"
+msgstr ""
+
+#: ../src/Device.vala:62
+msgid "Headset"
+msgstr ""
+
+#: ../src/Device.vala:64
+msgid "Headphone"
+msgstr ""
+
+#: ../src/Device.vala:66
+msgid "Hands-Free"
+msgstr ""
+
+#: ../src/Device.vala:68
+msgid "Car"
+msgstr ""
+
+#: ../src/Device.vala:70
+msgid "HiFi"
+msgstr ""
+
+#: ../src/Device.vala:72
+msgid "Computer"
+msgstr ""
+
+#: ../src/Device.vala:74
+msgid "Portable"
+msgstr ""
+
+#: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
 msgstr "Saatavilla olevat ulostulolaitteet:"
 
-#: ../src/OutputPanel.vala:44
+#: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
 msgstr "Ulostulon äänenvoimakkuus:"
 
-#: ../src/OutputPanel.vala:51
+#: ../src/OutputPanel.vala:62
 msgid "Balance:"
 msgstr "Tasapaino:"
 
-#: ../src/OutputPanel.vala:56
+#: ../src/OutputPanel.vala:68
 msgid "Left"
 msgstr "Vasen"
 
-#: ../src/OutputPanel.vala:57
+#: ../src/OutputPanel.vala:69
 msgid "Center"
 msgstr "Keski"
 
-#: ../src/OutputPanel.vala:58
+#: ../src/OutputPanel.vala:70
 msgid "Right"
 msgstr "Oikea"
 
-#: ../src/OutputPanel.vala:59
-msgid "Device Profile:"
-msgstr "Laiteprofiili:"
-
-#: ../src/OutputPanel.vala:62
+#: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
 msgstr "Testaa kaiuttimia…"
 
-#: ../src/OutputPanel.vala:65
+#: ../src/OutputPanel.vala:78
 msgid "No Output Device"
 msgstr "Ei ulostulolaitetta"
 
-#: ../src/OutputPanel.vala:65
+#: ../src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -80,37 +166,8 @@ msgstr ""
 "Ulostulolaitetta ei havaittu. Lisää ulostulolaite kuunnellaksesi mitä "
 "tahansa."
 
-#: ../src/InputPanel.vala:36
-msgid "Available Sound Input Devices:"
-msgstr "Saatavilla olevat sisääntulolaitteet:"
-
-#: ../src/InputPanel.vala:45
-msgid "Input Volume:"
-msgstr "Sisääntulon äänenvoimakkuus:"
-
-#: ../src/InputPanel.vala:50
-msgid "Unamplified"
-msgstr ""
-
-#: ../src/InputPanel.vala:51
-msgid "100%"
-msgstr "100 %"
-
-#: ../src/InputPanel.vala:54
-msgid "Input Level:"
-msgstr "Sisääntulon taso:"
-
-#: ../src/InputPanel.vala:58
-msgid "No Input Device"
-msgstr "Ei sisääntulolaitetta"
-
-#: ../src/InputPanel.vala:58
-msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
-msgstr ""
-"Sisääntulolaitetta ei havaittu. Lisää sisääntulolaite nauhoittaaksesi mitä "
-"tahansa."
+#~ msgid "Device Profile:"
+#~ msgstr "Laiteprofiili:"
 
 #~ msgid "About"
 #~ msgstr "Tietoja"
@@ -141,9 +198,6 @@ msgstr ""
 
 #~ msgid "Quad-Core"
 #~ msgstr "Neliydin"
-
-#~ msgid "Built on %s"
-#~ msgstr "Pohjana %s"
 
 #~ msgid "Website"
 #~ msgstr "Verkkosivusto"
