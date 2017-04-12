@@ -76,8 +76,10 @@ public class Sound.InputPanel : Gtk.Grid {
 
         var noise_cancellation_label = new Gtk.Label (_("Noise Cancellation:"));
         noise_cancellation_label.halign = Gtk.Align.END;
+        noise_cancellation_label.no_show_all = true;
         noise_cancellation_switch = new Gtk.Switch ();
         noise_cancellation_switch.halign = Gtk.Align.START;
+        noise_cancellation_switch.no_show_all = true;
 
         var no_device_grid = new Granite.Widgets.AlertView (_("No Input Device"), _("There is no input device detected. You might want to add one to start recording anything."), "audio-input-microphone-symbolic");
         no_device_grid.show_all ();
@@ -103,8 +105,8 @@ public class Sound.InputPanel : Gtk.Grid {
         });
 
         volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
-        noise_cancellation_switch.bind_property ("sensitive", noise_cancellation_label, "sensitive", BindingFlags.DEFAULT);
-        pam.bind_property ("has-echo-cancellation", noise_cancellation_switch, "sensitive", BindingFlags.SYNC_CREATE);
+        noise_cancellation_switch.bind_property ("visible", noise_cancellation_label, "visible", BindingFlags.DEFAULT);
+        pam.bind_property ("has-echo-cancellation", noise_cancellation_switch, "visible", BindingFlags.SYNC_CREATE);
 
         connect_signals ();
     }
