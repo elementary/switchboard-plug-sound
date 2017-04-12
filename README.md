@@ -6,6 +6,9 @@ You'll need the following dependencies:
 
 * cmake
 * libcanberra-gtk-dev
+* libgranite-dev
+* libgtk-3-dev
+* libswitchboard-2.0-dev
 * libpulse-dev
 * valac
 
