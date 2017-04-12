@@ -269,16 +269,16 @@ public class Sound.PulseAudioManager : GLib.Object {
         device.cvolume = i.volume;
         device.channel_map = i.channel_map;
         device.balance = i.volume.get_balance (i.channel_map);
+        device.volume_operations.foreach ((operation) => {
+            if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
+                device.volume_operations.remove (operation);
+            }
+
+            return GLib.Source.CONTINUE;
+        });
+
         if (device.volume_operations.is_empty) {
             device.volume = volume_to_double (i.volume.max ());
-        } else {
-            device.volume_operations.foreach ((operation) => {
-                if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
-                    device.volume_operations.remove (operation);
-                }
-
-                return GLib.Source.CONTINUE;
-            });
         }
 
         var form_factor = i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
@@ -317,16 +317,16 @@ public class Sound.PulseAudioManager : GLib.Object {
         device.cvolume = i.volume;
         device.channel_map = i.channel_map;
         device.balance = i.volume.get_balance (i.channel_map);
+        device.volume_operations.foreach ((operation) => {
+            if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
+                device.volume_operations.remove (operation);
+            }
+
+            return GLib.Source.CONTINUE;
+        });
+
         if (device.volume_operations.is_empty) {
             device.volume = volume_to_double (i.volume.max ());
-        } else {
-            device.volume_operations.foreach ((operation) => {
-                if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
-                    device.volume_operations.remove (operation);
-                }
-
-                return GLib.Source.CONTINUE;
-            });
         }
 
         var form_factor = i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
