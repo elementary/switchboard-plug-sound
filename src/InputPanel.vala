@@ -27,6 +27,7 @@ public class Sound.InputPanel : Gtk.Grid {
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
     Gtk.LevelBar level_bar;
+    Gtk.Switch noise_cancellation_switch;
 
     private Device default_device;
     private InputDeviceMonitor device_monitor;
@@ -73,6 +74,11 @@ public class Sound.InputPanel : Gtk.Grid {
         level_bar.add_offset_value ("middle", 16.0);
         level_bar.add_offset_value ("high", 14.0);
 
+        var noise_cancellation_label = new Gtk.Label (_("Noise Cancellation:"));
+        noise_cancellation_label.halign = Gtk.Align.END;
+        noise_cancellation_switch = new Gtk.Switch ();
+        noise_cancellation_switch.halign = Gtk.Align.START;
+
         var no_device_grid = new Granite.Widgets.AlertView (_("No Input Device"), _("There is no input device detected. You might want to add one to start recording anything."), "audio-input-microphone-symbolic");
         no_device_grid.show_all ();
         devices_listbox.set_placeholder (no_device_grid);
@@ -84,17 +90,21 @@ public class Sound.InputPanel : Gtk.Grid {
         attach (volume_switch, 2, 2, 1, 1);
         attach (level_label, 0, 3, 1, 1);
         attach (level_bar, 1, 3, 1, 1);
+        attach (noise_cancellation_label, 0, 4, 1, 1);
+        attach (noise_cancellation_switch, 1, 4, 1, 1);
 
         device_monitor = new InputDeviceMonitor ();
         device_monitor.update_fraction.connect (update_fraction);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
-        pam.notify["default-input"].connect (() => {
+        pam.default_input_changed.connect (() => {
             default_changed ();
         });
 
         volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
+        noise_cancellation_switch.bind_property ("sensitive", noise_cancellation_label, "sensitive", BindingFlags.DEFAULT);
+        pam.bind_property ("has-echo-cancellation", noise_cancellation_switch, "sensitive", BindingFlags.SYNC_CREATE);
 
         connect_signals ();
     }
@@ -110,11 +120,13 @@ public class Sound.InputPanel : Gtk.Grid {
     private void disconnect_signals () {
         volume_switch.notify["active"].disconnect (volume_switch_changed);
         volume_scale.value_changed.disconnect (volume_scale_value_changed);
+        noise_cancellation_switch.notify["active"].disconnect (noise_cancellation_switch_changed);
     }
 
     private void connect_signals () {
         volume_switch.notify["active"].connect (volume_switch_changed);
         volume_scale.value_changed.connect (volume_scale_value_changed);
+        noise_cancellation_switch.notify["active"].connect (noise_cancellation_switch_changed);
     }
 
     private void volume_scale_value_changed () {
@@ -129,6 +141,12 @@ public class Sound.InputPanel : Gtk.Grid {
         connect_signals ();
     }
 
+    private void noise_cancellation_switch_changed () {
+        disconnect_signals ();
+        pam.set_cancel_echo_input (noise_cancellation_switch.active);
+        connect_signals ();
+    }
+
     private void default_changed () {
         disconnect_signals ();
         lock (default_device) {
@@ -136,12 +154,13 @@ public class Sound.InputPanel : Gtk.Grid {
                 default_device.notify.disconnect (device_notify);
             }
 
-            default_device = pam.default_input;
+            default_device = pam.get_real_default_input ();
             if (default_device != null) {
                 device_monitor.set_device (default_device);
                 volume_switch.active = !default_device.is_muted;
                 volume_scale.set_value (default_device.volume);
                 default_device.notify.connect (device_notify);
+                noise_cancellation_switch.active = pam.input_uses_echo ();
             }
         }
 
