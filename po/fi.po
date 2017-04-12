@@ -7,115 +7,183 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2016-07-20 13:33+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
-"Language-Team: Finnish <fi@li.org>\n"
+"POT-Creation-Date: 2016-12-23 02:45+0100\n"
+"PO-Revision-Date: 2017-04-12 18:19+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/fi/>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
-"Language: fi\n"
 
-#: ../src/Plug.vala:37
-msgid "About"
-msgstr "Tietoja"
+#: ../src/Plug.vala:30
+msgid "Sound"
+msgstr "Ääni"
 
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "Katso käyttöjärjestelmän ja laitteiston tiedot"
+#: ../src/Plug.vala:31
+msgid "Change sound and microphone volume"
+msgstr "Muuta äänen ja mikrofonin voimakkuutta"
 
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "Järjestelmän tiedot"
+#: ../src/Plug.vala:47
+msgid "Output"
+msgstr "Ulostulo"
 
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "Palauta oletusasetukset"
+#: ../src/Plug.vala:48
+msgid "Input"
+msgstr "Sisääntulo"
 
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "Ehdota käännöstä"
+#: ../src/OutputPanel.vala:35
+msgid "Available Sound Output Devices:"
+msgstr "Saatavilla olevat ulostulolaitteet:"
 
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "Ilmoita ongelmasta"
+#: ../src/OutputPanel.vala:44
+msgid "Output Volume:"
+msgstr "Ulostulon äänenvoimakkuus:"
 
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "Päivitykset"
+#: ../src/OutputPanel.vala:51
+msgid "Balance:"
+msgstr "Tasapaino:"
 
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "Tuntematon"
+#: ../src/OutputPanel.vala:56
+msgid "Left"
+msgstr "Vasen"
 
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "Tuplaydin"
+#: ../src/OutputPanel.vala:57
+msgid "Center"
+msgstr "Keski"
 
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "Neliydin"
+#: ../src/OutputPanel.vala:58
+msgid "Right"
+msgstr "Oikea"
 
-#: ../src/Plug.vala:249
-msgid "Built on %s"
-msgstr "Pohjana %s"
+#: ../src/OutputPanel.vala:59
+msgid "Device Profile:"
+msgstr "Laiteprofiili:"
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "Verkkosivusto"
+#: ../src/OutputPanel.vala:62
+msgid "Test Speakers…"
+msgstr "Testaa kaiuttimia…"
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr "Laitteisto"
+#: ../src/OutputPanel.vala:65
+msgid "No Output Device"
+msgstr "Ei ulostulolaitetta"
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "Suoritin:"
-
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "Muisti:"
-
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "Grafiikka:"
-
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "Tallennustila:"
-
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "Ehdota käännöksiä"
-
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "Ilmoita ongelmasta"
-
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "Tarkista päivitykset"
-
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr "Järjestelmän asetukset palautetaan oletusasetuksiin"
-
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
-msgstr "Kaikki järjestelmän asetukset ja tiedot palautetaan oletusarvoihin."
-
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
+#: ../src/OutputPanel.vala:65
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
 msgstr ""
-"Tämä ei vaikuta henkilökohtaisiin tietoihin, kuten musiikkiin ja kuviin."
+"Ulostulolaitetta ei havaittu. Lisää ulostulolaite kuunnellaksesi mitä "
+"tahansa."
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "Palauta oletusasetukset"
+#: ../src/InputPanel.vala:36
+msgid "Available Sound Input Devices:"
+msgstr "Saatavilla olevat sisääntulolaitteet:"
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "Peru"
+#: ../src/InputPanel.vala:45
+msgid "Input Volume:"
+msgstr "Sisääntulon äänenvoimakkuus:"
+
+#: ../src/InputPanel.vala:50
+msgid "Unamplified"
+msgstr ""
+
+#: ../src/InputPanel.vala:51
+msgid "100%"
+msgstr "100 %"
+
+#: ../src/InputPanel.vala:54
+msgid "Input Level:"
+msgstr "Sisääntulon taso:"
+
+#: ../src/InputPanel.vala:58
+msgid "No Input Device"
+msgstr "Ei sisääntulolaitetta"
+
+#: ../src/InputPanel.vala:58
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
+"Sisääntulolaitetta ei havaittu. Lisää sisääntulolaite nauhoittaaksesi mitä "
+"tahansa."
+
+#~ msgid "About"
+#~ msgstr "Tietoja"
+
+#~ msgid "View operating system and hardware information"
+#~ msgstr "Katso käyttöjärjestelmän ja laitteiston tiedot"
+
+#~ msgid "System Information"
+#~ msgstr "Järjestelmän tiedot"
+
+#~ msgid "Restore Default Settings"
+#~ msgstr "Palauta oletusasetukset"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "Ehdota käännöstä"
+
+#~ msgid "Report Problems"
+#~ msgstr "Ilmoita ongelmasta"
+
+#~ msgid "Updates"
+#~ msgstr "Päivitykset"
+
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Dual-Core"
+#~ msgstr "Tuplaydin"
+
+#~ msgid "Quad-Core"
+#~ msgstr "Neliydin"
+
+#~ msgid "Built on %s"
+#~ msgstr "Pohjana %s"
+
+#~ msgid "Website"
+#~ msgstr "Verkkosivusto"
+
+#~ msgid "Hardware"
+#~ msgstr "Laitteisto"
+
+#~ msgid "Processor:"
+#~ msgstr "Suoritin:"
+
+#~ msgid "Memory:"
+#~ msgstr "Muisti:"
+
+#~ msgid "Graphics:"
+#~ msgstr "Grafiikka:"
+
+#~ msgid "Storage:"
+#~ msgstr "Tallennustila:"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "Ehdota käännöksiä"
+
+#~ msgid "Report a Problem"
+#~ msgstr "Ilmoita ongelmasta"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Tarkista päivitykset"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "Järjestelmän asetukset palautetaan oletusasetuksiin"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr "Kaikki järjestelmän asetukset ja tiedot palautetaan oletusarvoihin."
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr ""
+#~ "Tämä ei vaikuta henkilökohtaisiin tietoihin, kuten musiikkiin ja kuviin."
+
+#~ msgid "Restore Settings"
+#~ msgstr "Palauta oletusasetukset"
+
+#~ msgid "Cancel"
+#~ msgstr "Peru"
