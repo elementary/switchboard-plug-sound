@@ -94,6 +94,9 @@ public class Sound.OutputPanel : Gtk.Grid {
             default_changed ();
         });
 
+        volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
+        volume_switch.bind_property ("active", balance_scale, "sensitive", BindingFlags.DEFAULT);
+
         connect_signals ();
     }
 
