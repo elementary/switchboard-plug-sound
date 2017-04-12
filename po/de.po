@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:45+0100\n"
 "PO-Revision-Date: 2017-04-12 08:38+0000\n"
-"Last-Translator: Niklas Higi <niklas.higi@web.de>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/de/>\n"
 "Language: de\n"
@@ -50,15 +50,15 @@ msgstr ""
 
 #: ../src/OutputPanel.vala:56
 msgid "Left"
-msgstr ""
+msgstr "Links"
 
 #: ../src/OutputPanel.vala:57
 msgid "Center"
-msgstr ""
+msgstr "Mitte"
 
 #: ../src/OutputPanel.vala:58
 msgid "Right"
-msgstr ""
+msgstr "Rechts"
 
 #: ../src/OutputPanel.vala:59
 msgid "Device Profile:"
