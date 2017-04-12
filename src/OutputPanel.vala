@@ -133,7 +133,7 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     private void volume_scale_value_changed () {
         disconnect_signals ();
-        pam.change_device_balance (default_device, (float)balance_scale.get_value ());
+        pam.change_device_volume (default_device, (float)volume_scale.get_value ());
         connect_signals ();
     }
 
@@ -144,10 +144,6 @@ public class Sound.OutputPanel : Gtk.Grid {
     }
 
     private void volume_switch_changed () {
-        if (volume_switch.active == !default_device.is_muted) {
-            return;
-        }
-
         disconnect_signals ();
         pam.change_device_mute (default_device, !volume_switch.active);
         connect_signals ();
