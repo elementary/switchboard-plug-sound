@@ -22,7 +22,7 @@
 
 public class Sound.TestPopover : Gtk.Popover {
     private Gtk.Grid main_grid;
-    private unowned Device default_device;
+    private Device default_device;
 
     public TestPopover (Gtk.ToggleButton relative_to) {
         Object (relative_to: relative_to);
@@ -119,8 +119,10 @@ public class Sound.TestPopover : Gtk.Popover {
     }
 
     private void add_buttons () {
-        foreach (var position in default_device.channel_positions) {
-            create_position_button (position);
+        foreach (var position in default_device.channel_map.map) {
+            if (position > 0 && position < PulseAudio.ChannelPosition.MAX) {
+                create_position_button (position);
+            }
         }
 
         main_grid.show_all ();

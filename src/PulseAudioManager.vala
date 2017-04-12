@@ -48,6 +48,7 @@ public class Sound.PulseAudioManager : GLib.Object {
     public Device default_input { get; private set; }
     private string default_source_name;
     private string default_sink_name;
+    private Gee.HashMap<uint32, PulseAudio.Operation> volume_operations;
 
     private PulseAudioManager () {
         
@@ -57,6 +58,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         loop = new PulseAudio.GLibMainLoop ();
         input_devices = new Gee.HashMap<uint32, Device> ();
         output_devices = new Gee.HashMap<uint32, Device> ();
+        volume_operations = new Gee.HashMap<uint32, PulseAudio.Operation> ();
     }
 
     public void start () {
@@ -88,18 +90,41 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     public void change_device_volume (Device device, double volume) {
+        device.volume_operations.foreach ((operation) => {
+            if (operation.get_state () == PulseAudio.Operation.State.RUNNING) {
+                operation.cancel ();
+            }
+
+            device.volume_operations.remove (operation);
+            return GLib.Source.CONTINUE;
+        });
+
+        var cvol = device.cvolume;
+        cvol.scale (double_to_volume (volume));
+        PulseAudio.Operation? operation = null;
         if (device.input) {
-            context.get_source_info_by_index (device.index, (c, i, eol) => source_info_set_volume_callback (c, i, eol, volume));
+            operation = context.set_source_volume_by_index (device.index, cvol, null);
         } else {
-            context.get_sink_info_by_index (device.index, (c, i, eol) => sink_info_set_volume_callback (c, i, eol, volume));
+            operation = context.set_sink_volume_by_index (device.index, cvol, null);
+        }
+
+        if (operation != null) {
+            device.volume_operations.add (operation);
         }
     }
 
     public void change_device_balance (Device device, float balance) {
+        var cvol = device.cvolume;
+        cvol = cvol.set_balance (device.channel_map, balance);
+        PulseAudio.Operation? operation = null;
         if (device.input) {
-            context.get_source_info_by_index (device.index, (c, i, eol) => source_info_set_balance_callback (c, i, eol, balance));
+            operation = context.set_source_volume_by_index (device.index, cvol, null);
         } else {
-            context.get_sink_info_by_index (device.index, (c, i, eol) => sink_info_set_balance_callback (c, i, eol, balance));
+            operation = context.set_sink_volume_by_index (device.index, cvol, null);
+        }
+
+        if (operation != null) {
+            device.volume_operations.add (operation);
         }
     }
 
@@ -241,7 +266,20 @@ public class Sound.PulseAudioManager : GLib.Object {
         device.name = i.name;
         device.display_name = i.description;
         device.is_muted = (i.mute != 0);
-        device.volume = volume_to_double (i.volume.values[0]);
+        device.cvolume = i.volume;
+        device.channel_map = i.channel_map;
+        device.balance = i.volume.get_balance (i.channel_map);
+        if (device.volume_operations.is_empty) {
+            device.volume = volume_to_double (i.volume.max ());
+        } else {
+            device.volume_operations.foreach ((operation) => {
+                if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
+                    device.volume_operations.remove (operation);
+                }
+
+                return GLib.Source.CONTINUE;
+            });
+        }
 
         var form_factor = i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
         if (form_factor != null) {
@@ -276,16 +314,20 @@ public class Sound.PulseAudioManager : GLib.Object {
         device.name = i.name;
         device.display_name = i.description;
         device.is_muted = (i.mute != 0);
-        device.volume = volume_to_double (i.volume.max ());
+        device.cvolume = i.volume;
+        device.channel_map = i.channel_map;
         device.balance = i.volume.get_balance (i.channel_map);
-        PulseAudio.ChannelPosition[] channel_positions = {};
-        foreach (var position in i.channel_map.map) {
-            if (position > 0 && position < PulseAudio.ChannelPosition.MAX) {
-                channel_positions += position;
-            }
-        }
+        if (device.volume_operations.is_empty) {
+            device.volume = volume_to_double (i.volume.max ());
+        } else {
+            device.volume_operations.foreach ((operation) => {
+                if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
+                    device.volume_operations.remove (operation);
+                }
 
-        device.channel_positions = channel_positions;
+                return GLib.Source.CONTINUE;
+            });
+        }
 
         var form_factor = i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
         if (form_factor != null) {
@@ -360,43 +402,5 @@ public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudio.Volume double_to_volume (double vol) {
         double tmp = (double)(PulseAudio.Volume.NORM - PulseAudio.Volume.MUTED) * vol/100;
         return (PulseAudio.Volume)tmp + PulseAudio.Volume.MUTED;
-    }
-
-    private static void sink_info_set_volume_callback (PulseAudio.Context c, PulseAudio.SinkInfo? i, int eol, double volume) {
-        if (i == null)
-            return;
-
-        var pa_volume = double_to_volume (volume);
-        unowned PulseAudio.CVolume cvol = i.volume;
-        cvol.scale (pa_volume);
-        c.set_sink_volume_by_index (i.index, cvol, null);
-    }
-
-    private static void source_info_set_volume_callback (PulseAudio.Context c, PulseAudio.SourceInfo? i, int eol, double volume) {
-        if (i == null)
-            return;
-
-        var pa_volume = double_to_volume (volume);
-        unowned PulseAudio.CVolume cvol = i.volume;
-        cvol.scale (pa_volume);
-        c.set_source_volume_by_index (i.index, cvol, null);
-    }
-
-    private static void sink_info_set_balance_callback (PulseAudio.Context c, PulseAudio.SinkInfo? i, int eol, float balance) {
-        if (i == null)
-            return;
-
-        unowned PulseAudio.CVolume cvol = i.volume;
-        cvol = cvol.set_balance (i.channel_map, balance);
-        c.set_sink_volume_by_index (i.index, cvol, null);
-    }
-
-    private static void source_info_set_balance_callback (PulseAudio.Context c, PulseAudio.SourceInfo? i, int eol, float balance) {
-        if (i == null)
-            return;
-
-        unowned PulseAudio.CVolume cvol = i.volume;
-        cvol = cvol.set_balance (i.channel_map, balance);
-        c.set_source_volume_by_index (i.index, cvol, null);
     }
 }
