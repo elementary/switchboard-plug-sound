@@ -50,7 +50,7 @@ msgstr "Баланс:"
 
 #: ../src/OutputPanel.vala:56
 msgid "Left"
-msgstr "Ляво:"
+msgstr "Ляво"
 
 #: ../src/OutputPanel.vala:57
 msgid "Center"
