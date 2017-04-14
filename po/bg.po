@@ -6,117 +6,186 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2016-08-06 17:24+0000\n"
-"Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
-"Language-Team: Bulgarian <bg@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-23 02:45+0100\n"
+"PO-Revision-Date: 2017-04-14 16:34+0000\n"
+"Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
+"Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/bg/>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
-#: ../src/Plug.vala:37
-msgid "About"
-msgstr "Относно"
+#: ../src/Plug.vala:30
+msgid "Sound"
+msgstr "Звук"
 
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "Преглед на сведения за операционната системата и апаратурата"
+#: ../src/Plug.vala:31
+msgid "Change sound and microphone volume"
+msgstr "Сила на звука и микрофона"
 
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "Сведения за системата"
+#: ../src/Plug.vala:47
+msgid "Output"
+msgstr "Звук"
 
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "Възстановяване на първоначалните настройки"
+#: ../src/Plug.vala:48
+msgid "Input"
+msgstr "Микрофон"
 
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "Предлагане на превод"
+#: ../src/OutputPanel.vala:35
+msgid "Available Sound Output Devices:"
+msgstr "Устройства за възпроизвеждане на звук:"
 
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "Докладване на проблеми"
+#: ../src/OutputPanel.vala:44
+msgid "Output Volume:"
+msgstr "Сила на звука:"
 
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "Обновления"
+#: ../src/OutputPanel.vala:51
+msgid "Balance:"
+msgstr "Баланс:"
 
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "Неизвестен"
+#: ../src/OutputPanel.vala:56
+msgid "Left"
+msgstr "Ляво:"
 
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "Двуядрен"
+#: ../src/OutputPanel.vala:57
+msgid "Center"
+msgstr "Център"
 
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "Четириядрен"
+#: ../src/OutputPanel.vala:58
+msgid "Right"
+msgstr "Дясно"
 
-#: ../src/Plug.vala:249
-msgid "Built on %s"
-msgstr "Базирана на %s"
+#: ../src/OutputPanel.vala:59
+msgid "Device Profile:"
+msgstr "Профил:"
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "Мрежова страница"
+#: ../src/OutputPanel.vala:62
+msgid "Test Speakers…"
+msgstr "Проверка на звука…"
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr "Апаратура"
+#: ../src/OutputPanel.vala:65
+msgid "No Output Device"
+msgstr "Липсват устройства за възпроизвеждане на звук"
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "Процесор:"
-
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "Памет:"
-
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "Видеокарта"
-
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "Постоянна памет"
-
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "Предлагане на превод"
-
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "Докладване на проблем"
-
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "Проверка за обновления"
-
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
+#: ../src/OutputPanel.vala:65
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
 msgstr ""
-"Настройките на системата ще бъдат върнати към първоначалните стойности"
+"Не бяха открити устройства за възпроизвеждане на звук - моля свържете "
+"устройство."
 
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
+#: ../src/InputPanel.vala:36
+msgid "Available Sound Input Devices:"
+msgstr "Микрофони:"
+
+#: ../src/InputPanel.vala:45
+msgid "Input Volume:"
+msgstr "Сила на микрофона:"
+
+#: ../src/InputPanel.vala:50
+msgid "Unamplified"
+msgstr "Неусилиен"
+
+#: ../src/InputPanel.vala:51
+msgid "100%"
+msgstr "100%"
+
+#: ../src/InputPanel.vala:54
+msgid "Input Level:"
+msgstr "Ниво:"
+
+#: ../src/InputPanel.vala:58
+msgid "No Input Device"
+msgstr "Липсват микрофони"
+
+#: ../src/InputPanel.vala:58
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
 msgstr ""
-"Всички данни и настройки на системата ще бъдат върнати към първоначалните "
-"стойности."
+"Не бяха открити устройства. Моля свържете микрофон ако искате да записвате "
+"звук."
 
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr "Лични данни, например музика и снимки, няма да бъдат повлияни."
+#~ msgid "About"
+#~ msgstr "Относно"
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "Възстановяване на настройките"
+#~ msgid "View operating system and hardware information"
+#~ msgstr "Преглед на сведения за операционната системата и апаратурата"
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "Отказ"
+#~ msgid "System Information"
+#~ msgstr "Сведения за системата"
+
+#~ msgid "Restore Default Settings"
+#~ msgstr "Възстановяване на първоначалните настройки"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "Предлагане на превод"
+
+#~ msgid "Report Problems"
+#~ msgstr "Докладване на проблеми"
+
+#~ msgid "Updates"
+#~ msgstr "Обновления"
+
+#~ msgid "Unknown"
+#~ msgstr "Неизвестен"
+
+#~ msgid "Dual-Core"
+#~ msgstr "Двуядрен"
+
+#~ msgid "Quad-Core"
+#~ msgstr "Четириядрен"
+
+#~ msgid "Built on %s"
+#~ msgstr "Базирана на %s"
+
+#~ msgid "Website"
+#~ msgstr "Мрежова страница"
+
+#~ msgid "Hardware"
+#~ msgstr "Апаратура"
+
+#~ msgid "Processor:"
+#~ msgstr "Процесор:"
+
+#~ msgid "Memory:"
+#~ msgstr "Памет:"
+
+#~ msgid "Graphics:"
+#~ msgstr "Видеокарта"
+
+#~ msgid "Storage:"
+#~ msgstr "Постоянна памет"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "Предлагане на превод"
+
+#~ msgid "Report a Problem"
+#~ msgstr "Докладване на проблем"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Проверка за обновления"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr ""
+#~ "Настройките на системата ще бъдат върнати към първоначалните стойности"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr ""
+#~ "Всички данни и настройки на системата ще бъдат върнати към първоначалните "
+#~ "стойности."
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr "Лични данни, например музика и снимки, няма да бъдат повлияни."
+
+#~ msgid "Restore Settings"
+#~ msgstr "Възстановяване на настройките"
+
+#~ msgid "Cancel"
+#~ msgstr "Отказ"
