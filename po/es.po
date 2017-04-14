@@ -7,115 +7,174 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2016-03-03 05:48+0000\n"
-"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
-"Language-Team: Spanish <es@li.org>\n"
+"POT-Creation-Date: 2016-12-23 02:45+0100\n"
+"PO-Revision-Date: 2017-04-14 05:50+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
-"Language: es\n"
 
-#: ../src/Plug.vala:37
-msgid "About"
-msgstr "Acerca de"
-
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "Vea información del sistema operativo y el equipo"
-
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "Información del sistema"
-
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "Restaurar configuración predeterminada"
-
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "Sugerir traducciones"
-
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "Informar de problemas"
-
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "Actualizaciones"
-
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "Desconocido"
-
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "Doble núcleo"
-
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "Cuádruple núcleo"
-
-#: ../src/Plug.vala:249
-msgid "Built on %s"
+#: ../src/Plug.vala:30
+msgid "Sound"
 msgstr ""
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "Sitio web"
-
-#: ../src/Plug.vala:258
-msgid "Hardware"
+#: ../src/Plug.vala:31
+msgid "Change sound and microphone volume"
 msgstr ""
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "Procesador:"
-
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "Memoria:"
-
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "Gráficos:"
-
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "Almacenamiento:"
-
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "Sugerir traducciones"
-
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "Informar de un problema"
-
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "Buscar actualizaciones"
-
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr "La configuración del sistema se restaurará a los valores originales"
-
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
+#: ../src/Plug.vala:47
+msgid "Output"
 msgstr ""
-"Todos los datos y configuraciones se restaurarán a los valores originales."
 
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr "No se afectarán los datos personales, como la música y las imágenes."
+#: ../src/Plug.vala:48
+msgid "Input"
+msgstr ""
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "Restaurar configuración"
+#: ../src/OutputPanel.vala:35
+msgid "Available Sound Output Devices:"
+msgstr ""
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "Cancelar"
+#: ../src/OutputPanel.vala:44
+msgid "Output Volume:"
+msgstr ""
+
+#: ../src/OutputPanel.vala:51
+msgid "Balance:"
+msgstr ""
+
+#: ../src/OutputPanel.vala:56
+msgid "Left"
+msgstr "Izquierda"
+
+#: ../src/OutputPanel.vala:57
+msgid "Center"
+msgstr "Centro"
+
+#: ../src/OutputPanel.vala:58
+msgid "Right"
+msgstr "Derecha"
+
+#: ../src/OutputPanel.vala:59
+msgid "Device Profile:"
+msgstr ""
+
+#: ../src/OutputPanel.vala:62
+msgid "Test Speakers…"
+msgstr ""
+
+#: ../src/OutputPanel.vala:65
+msgid "No Output Device"
+msgstr ""
+
+#: ../src/OutputPanel.vala:65
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+
+#: ../src/InputPanel.vala:36
+msgid "Available Sound Input Devices:"
+msgstr ""
+
+#: ../src/InputPanel.vala:45
+msgid "Input Volume:"
+msgstr ""
+
+#: ../src/InputPanel.vala:50
+msgid "Unamplified"
+msgstr ""
+
+#: ../src/InputPanel.vala:51
+msgid "100%"
+msgstr ""
+
+#: ../src/InputPanel.vala:54
+msgid "Input Level:"
+msgstr ""
+
+#: ../src/InputPanel.vala:58
+msgid "No Input Device"
+msgstr ""
+
+#: ../src/InputPanel.vala:58
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
+
+#~ msgid "About"
+#~ msgstr "Acerca de"
+
+#~ msgid "View operating system and hardware information"
+#~ msgstr "Vea información del sistema operativo y el equipo"
+
+#~ msgid "System Information"
+#~ msgstr "Información del sistema"
+
+#~ msgid "Restore Default Settings"
+#~ msgstr "Restaurar configuración predeterminada"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "Sugerir traducciones"
+
+#~ msgid "Report Problems"
+#~ msgstr "Informar de problemas"
+
+#~ msgid "Updates"
+#~ msgstr "Actualizaciones"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconocido"
+
+#~ msgid "Dual-Core"
+#~ msgstr "Doble núcleo"
+
+#~ msgid "Quad-Core"
+#~ msgstr "Cuádruple núcleo"
+
+#~ msgid "Website"
+#~ msgstr "Sitio web"
+
+#~ msgid "Processor:"
+#~ msgstr "Procesador:"
+
+#~ msgid "Memory:"
+#~ msgstr "Memoria:"
+
+#~ msgid "Graphics:"
+#~ msgstr "Gráficos:"
+
+#~ msgid "Storage:"
+#~ msgstr "Almacenamiento:"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "Sugerir traducciones"
+
+#~ msgid "Report a Problem"
+#~ msgstr "Informar de un problema"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Buscar actualizaciones"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "La configuración del sistema se restaurará a los valores originales"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr ""
+#~ "Todos los datos y configuraciones se restaurarán a los valores originales."
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr ""
+#~ "No se afectarán los datos personales, como la música y las imágenes."
+
+#~ msgid "Restore Settings"
+#~ msgstr "Restaurar configuración"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
