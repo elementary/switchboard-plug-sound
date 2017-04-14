@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:49+0100\n"
-"PO-Revision-Date: 2017-04-11 19:46+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2017-04-14 23:57+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/fr/>\n"
 "Language: fr\n"
@@ -58,7 +58,7 @@ msgstr "Centre"
 
 #: ../src/OutputPanel.vala:58
 msgid "Right"
-msgstr "Droite"
+msgstr "Droit"
 
 #: ../src/OutputPanel.vala:59
 msgid "Device Profile:"
@@ -98,7 +98,7 @@ msgstr "100%"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Level:"
-msgstr "Niveau d'enregistrement:"
+msgstr "Niveau d'enregistrement :"
 
 #: ../src/InputPanel.vala:58
 msgid "No Input Device"
