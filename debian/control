@@ -4,7 +4,10 @@ Priority: optional
 Maintainer: Corentin Noël <corentin@elementary.io>
 Build-Depends: cmake,
                debhelper (>= 9),
+               libcanberra-dev,
+               libcanberra-gtk-dev,
                libgranite-dev,
+               libpulse-dev,
                libswitchboard-2.0-dev,
                valac (>= 0.22)
 Standards-Version: 3.9.2
