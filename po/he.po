@@ -6,114 +6,179 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2016-10-18 20:29+0000\n"
-"Last-Translator: Noam Sellam <noam.sellam@hotmail.com>\n"
-"Language-Team: Hebrew <he@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-23 02:45+0100\n"
+"PO-Revision-Date: 2017-04-19 10:17+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/he/>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-10-19 06:26+0000\n"
-"X-Generator: Launchpad (build 18232)\n"
 
-#: ../src/Plug.vala:37
-msgid "About"
-msgstr "על אודות"
+#: ../src/Plug.vala:30
+msgid "Sound"
+msgstr "צליל"
 
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "צפייה במידע חומרה ומערכת ההפעלה"
+#: ../src/Plug.vala:31
+msgid "Change sound and microphone volume"
+msgstr "שינוי עצמת השמע לצליל ולמיקרופון"
 
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "מידע מערכת"
+#: ../src/Plug.vala:47
+msgid "Output"
+msgstr "פלט"
 
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "שחזור הגדרות בררת המחדל"
+#: ../src/Plug.vala:48
+msgid "Input"
+msgstr "קלט"
 
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "הצעת תרגום"
+#: ../src/OutputPanel.vala:35
+msgid "Available Sound Output Devices:"
+msgstr "התקנים זמינים לפלט צליל:"
 
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "דיווח בעיות"
+#: ../src/OutputPanel.vala:44
+msgid "Output Volume:"
+msgstr "עצמת השמע של הפלט:"
 
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "עדכונים"
+#: ../src/OutputPanel.vala:51
+msgid "Balance:"
+msgstr "איזון:"
 
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "לא ידוע"
+#: ../src/OutputPanel.vala:56
+msgid "Left"
+msgstr "שמאל"
 
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "ליבה כפולה"
+#: ../src/OutputPanel.vala:57
+msgid "Center"
+msgstr "מרכז"
 
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "ליבה מרובעת"
+#: ../src/OutputPanel.vala:58
+msgid "Right"
+msgstr "ימין"
 
-#: ../src/Plug.vala:249
-msgid "Built on %s"
-msgstr "נבנה על גבי %s"
+#: ../src/OutputPanel.vala:59
+msgid "Device Profile:"
+msgstr "פרופיל ההתקן:"
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "אתר אינטרנט"
+#: ../src/OutputPanel.vala:62
+msgid "Test Speakers…"
+msgstr "בדיקת הרמקולים…"
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr "חומרה"
+#: ../src/OutputPanel.vala:65
+msgid "No Output Device"
+msgstr "אין התקן פלט"
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "מעבד:"
+#: ../src/OutputPanel.vala:65
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr "לא זוהה התקן פלט. יתכן שעדיף לך להוסיף אחד כדי להתחיל לשמוע משהו."
 
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "זיכרון:"
+#: ../src/InputPanel.vala:36
+msgid "Available Sound Input Devices:"
+msgstr "התקני קלט שמע זמינים:"
 
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "גרפיקה:"
+#: ../src/InputPanel.vala:45
+msgid "Input Volume:"
+msgstr "עצמת שמע של קלט:"
 
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "אחסון"
+#: ../src/InputPanel.vala:50
+msgid "Unamplified"
+msgstr "ללא הגברה"
 
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "הצעת תרגום"
+#: ../src/InputPanel.vala:51
+msgid "100%"
+msgstr "100%"
 
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "דיווח על בעיה"
+#: ../src/InputPanel.vala:54
+msgid "Input Level:"
+msgstr "רמת הקלט:"
 
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "בדיקה עבור עדכונים"
+#: ../src/InputPanel.vala:58
+msgid "No Input Device"
+msgstr "אין התקן קלט"
 
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr "הגדרות המערכת ישוחזרו לברירת המחדל של היצרן"
+#: ../src/InputPanel.vala:58
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr "לא זוהה התקן קלט. עדיף להוסיף אחד כדי להתחיל להקליט משהו."
 
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
-msgstr "כל הנתונים והגדרות המערכת יתאפסו לערכי ברירת המחדל."
+#~ msgid "About"
+#~ msgstr "על אודות"
 
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr "מידע אישי, כגון מוזיקה ותמונות יישאר ללא שינוי."
+#~ msgid "View operating system and hardware information"
+#~ msgstr "צפייה במידע חומרה ומערכת ההפעלה"
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "שחזור הגדרות"
+#~ msgid "System Information"
+#~ msgstr "מידע מערכת"
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "ביטול"
+#~ msgid "Restore Default Settings"
+#~ msgstr "שחזור הגדרות בררת המחדל"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "הצעת תרגום"
+
+#~ msgid "Report Problems"
+#~ msgstr "דיווח בעיות"
+
+#~ msgid "Updates"
+#~ msgstr "עדכונים"
+
+#~ msgid "Unknown"
+#~ msgstr "לא ידוע"
+
+#~ msgid "Dual-Core"
+#~ msgstr "ליבה כפולה"
+
+#~ msgid "Quad-Core"
+#~ msgstr "ליבה מרובעת"
+
+#~ msgid "Built on %s"
+#~ msgstr "נבנה על גבי %s"
+
+#~ msgid "Website"
+#~ msgstr "אתר אינטרנט"
+
+#~ msgid "Hardware"
+#~ msgstr "חומרה"
+
+#~ msgid "Processor:"
+#~ msgstr "מעבד:"
+
+#~ msgid "Memory:"
+#~ msgstr "זיכרון:"
+
+#~ msgid "Graphics:"
+#~ msgstr "גרפיקה:"
+
+#~ msgid "Storage:"
+#~ msgstr "אחסון"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "הצעת תרגום"
+
+#~ msgid "Report a Problem"
+#~ msgstr "דיווח על בעיה"
+
+#~ msgid "Check for Updates"
+#~ msgstr "בדיקה עבור עדכונים"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "הגדרות המערכת ישוחזרו לברירת המחדל של היצרן"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr "כל הנתונים והגדרות המערכת יתאפסו לערכי ברירת המחדל."
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr "מידע אישי, כגון מוזיקה ותמונות יישאר ללא שינוי."
+
+#~ msgid "Restore Settings"
+#~ msgstr "שחזור הגדרות"
+
+#~ msgid "Cancel"
+#~ msgstr "ביטול"
