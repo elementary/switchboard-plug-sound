@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:45+0100\n"
 "PO-Revision-Date: 2017-04-23 09:52+0000\n"
-"Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
+"Last-Translator: Yuly <crow@rikka.io>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ru/>\n"
 "Language: ru\n"
@@ -85,11 +85,11 @@ msgstr "Доступные устройства ввода:"
 
 #: ../src/InputPanel.vala:45
 msgid "Input Volume:"
-msgstr ""
+msgstr "Громкость ввода:"
 
 #: ../src/InputPanel.vala:50
 msgid "Unamplified"
-msgstr ""
+msgstr "Без усиления"
 
 #: ../src/InputPanel.vala:51
 msgid "100%"
