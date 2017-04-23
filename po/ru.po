@@ -6,114 +6,180 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2016-08-03 16:13+0000\n"
-"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-23 02:45+0100\n"
+"PO-Revision-Date: 2017-04-23 09:49+0000\n"
+"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
-#: ../src/Plug.vala:37
-msgid "About"
-msgstr "О системе"
+#: ../src/Plug.vala:30
+msgid "Sound"
+msgstr "Звук"
 
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "Просмотр информации об операционной системе и комплектующих"
+#: ../src/Plug.vala:31
+msgid "Change sound and microphone volume"
+msgstr "Изменить громкость звука и микрофона"
 
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "Сведения о системе"
+#: ../src/Plug.vala:47
+msgid "Output"
+msgstr ""
 
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "Восстановить настройки"
+#: ../src/Plug.vala:48
+msgid "Input"
+msgstr ""
 
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "Предложить перевод"
+#: ../src/OutputPanel.vala:35
+msgid "Available Sound Output Devices:"
+msgstr ""
 
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "Сообщить о проблеме"
+#: ../src/OutputPanel.vala:44
+msgid "Output Volume:"
+msgstr ""
 
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "Обновления"
+#: ../src/OutputPanel.vala:51
+msgid "Balance:"
+msgstr ""
 
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "Неизвестно"
+#: ../src/OutputPanel.vala:56
+msgid "Left"
+msgstr ""
 
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "2-х ядерный"
+#: ../src/OutputPanel.vala:57
+msgid "Center"
+msgstr ""
 
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "4-х ядерный"
+#: ../src/OutputPanel.vala:58
+msgid "Right"
+msgstr ""
 
-#: ../src/Plug.vala:249
-msgid "Built on %s"
-msgstr "Построена на базе %s"
+#: ../src/OutputPanel.vala:59
+msgid "Device Profile:"
+msgstr ""
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "Веб-сайт"
+#: ../src/OutputPanel.vala:62
+msgid "Test Speakers…"
+msgstr ""
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr "Оборудование"
+#: ../src/OutputPanel.vala:65
+msgid "No Output Device"
+msgstr ""
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "Процессор:"
+#: ../src/OutputPanel.vala:65
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
 
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "Память:"
+#: ../src/InputPanel.vala:36
+msgid "Available Sound Input Devices:"
+msgstr ""
 
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "Графика:"
+#: ../src/InputPanel.vala:45
+msgid "Input Volume:"
+msgstr ""
 
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "Системный раздел:"
+#: ../src/InputPanel.vala:50
+msgid "Unamplified"
+msgstr ""
 
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "Предложить перевод"
+#: ../src/InputPanel.vala:51
+msgid "100%"
+msgstr ""
 
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "Сообщить об ошибке"
+#: ../src/InputPanel.vala:54
+msgid "Input Level:"
+msgstr ""
 
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "Проверить обновления"
+#: ../src/InputPanel.vala:58
+msgid "No Input Device"
+msgstr ""
 
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr "Восстановление настроек по умолчанию"
+#: ../src/InputPanel.vala:58
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
 
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
-msgstr "Все настройки системы будут сброшены на значения по умолчанию."
+#~ msgid "About"
+#~ msgstr "О системе"
 
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr "Личные данные, такие как музыка и изображения, не будут затронуты."
+#~ msgid "View operating system and hardware information"
+#~ msgstr "Просмотр информации об операционной системе и комплектующих"
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "Восстановить настройки"
+#~ msgid "System Information"
+#~ msgstr "Сведения о системе"
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "Отменить"
+#~ msgid "Restore Default Settings"
+#~ msgstr "Восстановить настройки"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "Предложить перевод"
+
+#~ msgid "Report Problems"
+#~ msgstr "Сообщить о проблеме"
+
+#~ msgid "Updates"
+#~ msgstr "Обновления"
+
+#~ msgid "Unknown"
+#~ msgstr "Неизвестно"
+
+#~ msgid "Dual-Core"
+#~ msgstr "2-х ядерный"
+
+#~ msgid "Quad-Core"
+#~ msgstr "4-х ядерный"
+
+#~ msgid "Built on %s"
+#~ msgstr "Построена на базе %s"
+
+#~ msgid "Website"
+#~ msgstr "Веб-сайт"
+
+#~ msgid "Hardware"
+#~ msgstr "Оборудование"
+
+#~ msgid "Processor:"
+#~ msgstr "Процессор:"
+
+#~ msgid "Memory:"
+#~ msgstr "Память:"
+
+#~ msgid "Graphics:"
+#~ msgstr "Графика:"
+
+#~ msgid "Storage:"
+#~ msgstr "Системный раздел:"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "Предложить перевод"
+
+#~ msgid "Report a Problem"
+#~ msgstr "Сообщить об ошибке"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Проверить обновления"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "Восстановление настроек по умолчанию"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr "Все настройки системы будут сброшены на значения по умолчанию."
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr "Личные данные, такие как музыка и изображения, не будут затронуты."
+
+#~ msgid "Restore Settings"
+#~ msgstr "Восстановить настройки"
+
+#~ msgid "Cancel"
+#~ msgstr "Отменить"
