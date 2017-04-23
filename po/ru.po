@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:45+0100\n"
-"PO-Revision-Date: 2017-04-23 09:49+0000\n"
-"Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
+"PO-Revision-Date: 2017-04-23 09:51+0000\n"
+"Last-Translator: Yuly <crow@rikka.io>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ru/>\n"
 "Language: ru\n"
@@ -43,31 +43,31 @@ msgstr "Доступные устройства вывода:"
 
 #: ../src/OutputPanel.vala:44
 msgid "Output Volume:"
-msgstr ""
+msgstr "Громкость вывода:"
 
 #: ../src/OutputPanel.vala:51
 msgid "Balance:"
-msgstr ""
+msgstr "Баланс:"
 
 #: ../src/OutputPanel.vala:56
 msgid "Left"
-msgstr ""
+msgstr "Левый"
 
 #: ../src/OutputPanel.vala:57
 msgid "Center"
-msgstr ""
+msgstr "Центр"
 
 #: ../src/OutputPanel.vala:58
 msgid "Right"
-msgstr ""
+msgstr "Правый"
 
 #: ../src/OutputPanel.vala:59
 msgid "Device Profile:"
-msgstr ""
+msgstr "Профиль устройства:"
 
 #: ../src/OutputPanel.vala:62
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Проверка динамиков..."
 
 #: ../src/OutputPanel.vala:65
 msgid "No Output Device"
