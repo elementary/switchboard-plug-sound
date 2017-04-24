@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:45+0100\n"
-"PO-Revision-Date: 2017-04-14 05:50+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2017-04-24 07:12+0000\n"
+"Last-Translator: Oscar A. Mata T. <oscar.mata@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/es/>\n"
 "Language: es\n"
@@ -22,31 +22,31 @@ msgstr ""
 
 #: ../src/Plug.vala:30
 msgid "Sound"
-msgstr ""
+msgstr "Sonido"
 
 #: ../src/Plug.vala:31
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Cambiar el volumen del micrófono y el sonido"
 
 #: ../src/Plug.vala:47
 msgid "Output"
-msgstr ""
+msgstr "Salida"
 
 #: ../src/Plug.vala:48
 msgid "Input"
-msgstr ""
+msgstr "Entrada"
 
 #: ../src/OutputPanel.vala:35
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Dispositivos de salida de sonido disponibles:"
 
 #: ../src/OutputPanel.vala:44
 msgid "Output Volume:"
-msgstr ""
+msgstr "Volumen de salida"
 
 #: ../src/OutputPanel.vala:51
 msgid "Balance:"
-msgstr ""
+msgstr "Balance:"
 
 #: ../src/OutputPanel.vala:56
 msgid "Left"
@@ -62,51 +62,55 @@ msgstr "Derecha"
 
 #: ../src/OutputPanel.vala:59
 msgid "Device Profile:"
-msgstr ""
+msgstr "Perfil del dispositivo"
 
 #: ../src/OutputPanel.vala:62
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Probar cornetas…"
 
 #: ../src/OutputPanel.vala:65
 msgid "No Output Device"
-msgstr ""
+msgstr "No hay dispositivo de salida"
 
 #: ../src/OutputPanel.vala:65
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"No se detectó un dispositivo de salida. Debería agregar uno para comenzar a "
+"escuchar algo."
 
 #: ../src/InputPanel.vala:36
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Dispositivos de entrada de sonido disponibles:"
 
 #: ../src/InputPanel.vala:45
 msgid "Input Volume:"
-msgstr ""
+msgstr "Volumen de la entrada"
 
 #: ../src/InputPanel.vala:50
 msgid "Unamplified"
-msgstr ""
+msgstr "Sin amplificar"
 
 #: ../src/InputPanel.vala:51
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Level:"
-msgstr ""
+msgstr "Nivel de la entrada:"
 
 #: ../src/InputPanel.vala:58
 msgid "No Input Device"
-msgstr ""
+msgstr "No hay dispositivo de entrada"
 
 #: ../src/InputPanel.vala:58
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"No se detectó un dispositivo de entrada. Debería agregar uno para comenzar a "
+"grabar algo."
 
 #~ msgid "About"
 #~ msgstr "Acerca de"
