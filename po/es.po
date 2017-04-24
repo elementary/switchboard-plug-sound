@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:45+0100\n"
-"PO-Revision-Date: 2017-04-24 07:12+0000\n"
+"PO-Revision-Date: 2017-04-24 07:17+0000\n"
 "Last-Translator: Oscar A. Mata T. <oscar.mata@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/es/>\n"
@@ -42,7 +42,7 @@ msgstr "Dispositivos de salida de sonido disponibles:"
 
 #: ../src/OutputPanel.vala:44
 msgid "Output Volume:"
-msgstr "Volumen de salida"
+msgstr "Volumen de la salida:"
 
 #: ../src/OutputPanel.vala:51
 msgid "Balance:"
@@ -62,7 +62,7 @@ msgstr "Derecha"
 
 #: ../src/OutputPanel.vala:59
 msgid "Device Profile:"
-msgstr "Perfil del dispositivo"
+msgstr "Perfil del dispositivo:"
 
 #: ../src/OutputPanel.vala:62
 msgid "Test Speakers…"
@@ -86,7 +86,7 @@ msgstr "Dispositivos de entrada de sonido disponibles:"
 
 #: ../src/InputPanel.vala:45
 msgid "Input Volume:"
-msgstr "Volumen de la entrada"
+msgstr "Volumen de la entrada:"
 
 #: ../src/InputPanel.vala:50
 msgid "Unamplified"
