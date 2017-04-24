@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-23 02:45+0100\n"
-"PO-Revision-Date: 2017-04-12 05:40+0000\n"
+"PO-Revision-Date: 2017-04-24 13:11+0000\n"
 "Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ja/>\n"
@@ -37,12 +37,10 @@ msgid "Input"
 msgstr "入力"
 
 #: ../src/OutputPanel.vala:35
-#, fuzzy
 msgid "Available Sound Output Devices:"
 msgstr "利用可能なサウンドの出力デバイス："
 
 #: ../src/OutputPanel.vala:44
-#, fuzzy
 msgid "Output Volume:"
 msgstr "出力のボリューム："
 
