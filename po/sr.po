@@ -6,114 +6,226 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2016-05-16 12:25+0000\n"
 "Last-Translator: Саша Петровић <salepetronije@gmail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 "X-Generator: Launchpad (build 18204)\n"
 
-#: ../src/Plug.vala:37
-msgid "About"
-msgstr "О"
-
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "Преглед радног склопа и подаци о уређају"
-
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "Подаци о склопу"
-
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "Поврати подразумеване поставке"
-
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "Предложите превод"
-
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "Пријавите потешкоће"
-
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "Надградње"
-
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "Непознато"
-
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "Двојезгрални"
-
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "Четворојезгрални"
-
-#: ../src/Plug.vala:249
-msgid "Built on %s"
+#: ../src/Plug.vala:36
+msgid "Sound"
 msgstr ""
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "Страница Веба"
+#: ../src/Plug.vala:37
+msgid "Change sound and microphone volume"
+msgstr ""
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr "Уређаји"
+#: ../src/Plug.vala:54 ../src/Device.vala:76
+msgid "Output"
+msgstr ""
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "Процесор:"
+#: ../src/Plug.vala:55 ../src/Device.vala:76
+msgid "Input"
+msgstr ""
 
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "Меморија:"
+#: ../src/InputPanel.vala:44
+msgid "Available Sound Input Devices:"
+msgstr ""
 
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "Графика:"
+#: ../src/InputPanel.vala:54
+msgid "Input Volume:"
+msgstr ""
 
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "Складиште"
+#: ../src/InputPanel.vala:61
+msgid "Unamplified"
+msgstr ""
 
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "Предложите преводе"
+#: ../src/InputPanel.vala:62
+msgid "100%"
+msgstr ""
 
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "Пријавите потешкоћу"
+#: ../src/InputPanel.vala:66
+msgid "Input Level:"
+msgstr ""
 
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "Провери надоградње"
+#: ../src/InputPanel.vala:76
+msgid "No Input Device"
+msgstr ""
 
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr "Поставке склопа ће се вратити на подразумеване вредности"
+#: ../src/InputPanel.vala:76
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
 
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
-msgstr "Све поставке склопа ће се вратити на подразумеване вредности"
+#: ../src/InputDeviceMonitor.vala:78
+msgid "Peak detect"
+msgstr ""
 
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr "Лични подаци, као што су песме и слике неће бити угрожени."
+#: ../src/Device.vala:50
+msgid "Built-in"
+msgstr ""
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "Поврати поставке"
+#: ../src/Device.vala:52
+msgid "Speaker"
+msgstr ""
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "Откажи"
+#: ../src/Device.vala:54
+msgid "Handset"
+msgstr ""
+
+#: ../src/Device.vala:56
+msgid "TV"
+msgstr ""
+
+#: ../src/Device.vala:58
+msgid "Webcam"
+msgstr ""
+
+#: ../src/Device.vala:60
+msgid "Microphone"
+msgstr ""
+
+#: ../src/Device.vala:62
+msgid "Headset"
+msgstr ""
+
+#: ../src/Device.vala:64
+msgid "Headphone"
+msgstr ""
+
+#: ../src/Device.vala:66
+msgid "Hands-Free"
+msgstr ""
+
+#: ../src/Device.vala:68
+msgid "Car"
+msgstr ""
+
+#: ../src/Device.vala:70
+msgid "HiFi"
+msgstr ""
+
+#: ../src/Device.vala:72
+msgid "Computer"
+msgstr ""
+
+#: ../src/Device.vala:74
+msgid "Portable"
+msgstr ""
+
+#: ../src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr ""
+
+#: ../src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr ""
+
+#: ../src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr ""
+
+#: ../src/OutputPanel.vala:68
+msgid "Left"
+msgstr ""
+
+#: ../src/OutputPanel.vala:69
+msgid "Center"
+msgstr ""
+
+#: ../src/OutputPanel.vala:70
+msgid "Right"
+msgstr ""
+
+#: ../src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr ""
+
+#: ../src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr ""
+
+#: ../src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+
+#~ msgid "About"
+#~ msgstr "О"
+
+#~ msgid "View operating system and hardware information"
+#~ msgstr "Преглед радног склопа и подаци о уређају"
+
+#~ msgid "System Information"
+#~ msgstr "Подаци о склопу"
+
+#~ msgid "Restore Default Settings"
+#~ msgstr "Поврати подразумеване поставке"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "Предложите превод"
+
+#~ msgid "Report Problems"
+#~ msgstr "Пријавите потешкоће"
+
+#~ msgid "Updates"
+#~ msgstr "Надградње"
+
+#~ msgid "Unknown"
+#~ msgstr "Непознато"
+
+#~ msgid "Dual-Core"
+#~ msgstr "Двојезгрални"
+
+#~ msgid "Quad-Core"
+#~ msgstr "Четворојезгрални"
+
+#~ msgid "Website"
+#~ msgstr "Страница Веба"
+
+#~ msgid "Hardware"
+#~ msgstr "Уређаји"
+
+#~ msgid "Processor:"
+#~ msgstr "Процесор:"
+
+#~ msgid "Memory:"
+#~ msgstr "Меморија:"
+
+#~ msgid "Graphics:"
+#~ msgstr "Графика:"
+
+#~ msgid "Storage:"
+#~ msgstr "Складиште"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "Предложите преводе"
+
+#~ msgid "Report a Problem"
+#~ msgstr "Пријавите потешкоћу"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Провери надоградње"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "Поставке склопа ће се вратити на подразумеване вредности"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr "Све поставке склопа ће се вратити на подразумеване вредности"
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr "Лични подаци, као што су песме и слике неће бити угрожени."
+
+#~ msgid "Restore Settings"
+#~ msgstr "Поврати поставке"
+
+#~ msgid "Cancel"
+#~ msgstr "Откажи"
