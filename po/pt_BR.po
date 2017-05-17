@@ -8,156 +8,169 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2016-07-30 15:22+0000\n"
-"Last-Translator: Leonardo Lemos <Unknown>\n"
-"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"PO-Revision-Date: 2017-05-17 17:03+0000\n"
+"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
+"sound/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: ../src/Plug.vala:36
 msgid "Sound"
-msgstr ""
+msgstr "Som"
 
 #: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Mudar o volume do som e microfone"
 
 #: ../src/Plug.vala:54 ../src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Saída"
 
 #: ../src/Plug.vala:55 ../src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Entrada"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Dispositivos de entrada de som disponíveis:"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr ""
+msgstr "Volume de entrada:"
 
 #: ../src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Não amplificado"
 
 #: ../src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr ""
+msgstr "Nível de entrada:"
 
 #: ../src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "Sem dispositivo de entrada"
 
 #: ../src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Não existem dispositivos de entrada detectados. Você pode querer adicionar "
+"um para começar a gravar alguma coisa."
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Detecção de pico"
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "Construído sobre %s"
+msgstr "Embutido"
 
 #: ../src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "Alto-falante"
 
 #: ../src/Device.vala:54
+#, fuzzy
 msgid "Handset"
-msgstr ""
+msgstr "Handset"
 
 #: ../src/Device.vala:56
+#, fuzzy
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/Device.vala:58
+#, fuzzy
 msgid "Webcam"
-msgstr ""
+msgstr "Webcam"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Microfone"
 
 #: ../src/Device.vala:62
+#, fuzzy
 msgid "Headset"
-msgstr ""
+msgstr "Headset"
 
 #: ../src/Device.vala:64
+#, fuzzy
 msgid "Headphone"
-msgstr ""
+msgstr "Headphone"
 
 #: ../src/Device.vala:66
+#, fuzzy
 msgid "Hands-Free"
-msgstr ""
+msgstr "Hands-Free"
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Carro"
 
 #: ../src/Device.vala:70
+#, fuzzy
 msgid "HiFi"
-msgstr ""
+msgstr "Alta-fidelidade"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Computador"
 
 #: ../src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Portátil"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Dispositivos de saída de áudio disponíveis:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Volume de saída:"
 
 #: ../src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Balanço:"
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Esquerda"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "Centro"
 
 #: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Direita"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Testar alto-falantes…"
 
 #: ../src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Sem dispositivo de saída"
 
 #: ../src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Não foi detectado um dispositivo de saída. Você pode querer adicionar um "
+"para começar a ouvir alguma coisa."
 
 #~ msgid "About"
 #~ msgstr "Sobre"
