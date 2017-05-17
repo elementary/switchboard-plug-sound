@@ -8,74 +8,79 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2016-08-06 22:00+0000\n"
-"Last-Translator: Marek Suchánek <suchm@seznam.cz>\n"
-"Language-Team: Czech <cs@li.org>\n"
+"PO-Revision-Date: 2017-05-17 21:57+0000\n"
+"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: ../src/Plug.vala:36
 msgid "Sound"
-msgstr ""
+msgstr "Zvuk"
 
 #: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Změnit hlasitost zvuku a mikrofonu"
 
 #: ../src/Plug.vala:54 ../src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Výstup"
 
 #: ../src/Plug.vala:55 ../src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Vstup"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Dostupná vstupní zvuková zařízení:"
 
 #: ../src/InputPanel.vala:54
+#, fuzzy
 msgid "Input Volume:"
-msgstr ""
+msgstr "Vstupní hlasitost:"
 
 #: ../src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Nezesíleno"
 
 #: ../src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../src/InputPanel.vala:66
+#, fuzzy
 msgid "Input Level:"
-msgstr ""
+msgstr "Vstupní hladina:"
 
 #: ../src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "Žadné vstupní zařízení"
 
 #: ../src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Nebylo rozpoznáno žádné vstupní zařízení. Bylo by dobré ho přidat, abyste "
+"mohli něco nahrávat."
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
 msgstr ""
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "Postaveno na %s"
+msgstr "Zbudovaný"
 
 #: ../src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "Reproduktor"
 
 #: ../src/Device.vala:54
 msgid "Handset"
@@ -83,15 +88,15 @@ msgstr ""
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "Televize"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Webkamera"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: ../src/Device.vala:62
 msgid "Headset"
@@ -99,65 +104,67 @@ msgstr ""
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Sluchátka"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Handsfree"
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Auto"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Počítač"
 
 #: ../src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Přenosný"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Dostupná výstupní zvuková zařízení:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Výstupní hlasitost:"
 
 #: ../src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Vyvážení:"
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Levé"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "Střed"
 
 #: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Pravé"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Testovat reproduktory…"
 
 #: ../src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Žádné výstupní zařízení"
 
 #: ../src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Nebylo rozpoznáno žádné výstupní zařízení. Bylo by dobré ho přidat, abyste "
+"mohli něco poslouchat."
 
 #~ msgid "About"
 #~ msgstr "O systému"
