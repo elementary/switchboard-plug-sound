@@ -8,156 +8,162 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2016-09-10 15:41+0000\n"
-"Last-Translator: Pedro Monteiro <Unknown>\n"
-"Language-Team: Portuguese <pt@li.org>\n"
+"PO-Revision-Date: 2017-05-25 18:00+0000\n"
+"Last-Translator: Luís Lima <geral@liqensoft.com>\n"
+"Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: ../src/Plug.vala:36
 msgid "Sound"
-msgstr ""
+msgstr "Som"
 
 #: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Alterar volume do som e do microfone"
 
 #: ../src/Plug.vala:54 ../src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Saída"
 
 #: ../src/Plug.vala:55 ../src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Entrada"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Dispositivos de entrada disponíves:"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr ""
+msgstr "Volume de Entrada:"
 
 #: ../src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Não amplificado"
 
 #: ../src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr ""
+msgstr "Nível de entrada:"
 
 #: ../src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "Sem dispositivos de entrada"
 
 #: ../src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Não foram detetados dispositivos de entrada. Terá de adicionar um se planeia "
+"gravar alguma coisa."
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Deteção de pico"
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "Baseado em %s"
+msgstr "Integrados"
 
 #: ../src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "Altifalante"
 
 #: ../src/Device.vala:54
+#, fuzzy
 msgid "Handset"
-msgstr ""
+msgstr "Auscultador"
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Webcam"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Microfone"
 
 #: ../src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "Auscultador"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Auscultador"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Mãos livres"
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Carro"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Computador"
 
 #: ../src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Portátil"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Dispositivos de Saída Disponíveis:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Volume de Saída:"
 
 #: ../src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Balanço:"
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Esquerda"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "Centro"
 
 #: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Direita"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Testar altifalantes…"
 
 #: ../src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Sem Dispositivos de Saída"
 
 #: ../src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Não foi detetado nenhum dispositivo de saída. Terá de adicionar um se "
+"planeia ouvir alguma coisa."
 
 #~ msgid "About"
 #~ msgstr "Sobre"
