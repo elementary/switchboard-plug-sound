@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2017-05-29 22:31+0000\n"
-"Last-Translator: Kay van der Zander <kay20@hotmail.com>\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/nl/>\n"
 "Language: nl\n"
@@ -42,7 +42,7 @@ msgstr "Beschikbare geluidsinvoerapparaten."
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr "Invoer volume"
+msgstr "Invoervolume:"
 
 #: ../src/InputPanel.vala:61
 msgid "Unamplified"
