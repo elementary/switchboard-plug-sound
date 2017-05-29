@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2017-05-29 22:34+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"Last-Translator: Kay van der Zander <kay20@hotmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/nl/>\n"
 "Language: nl\n"
@@ -86,15 +86,15 @@ msgstr ""
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Webcam"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Microfoon"
 
 #: ../src/Device.vala:62
 msgid "Headset"
