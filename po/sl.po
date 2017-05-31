@@ -8,156 +8,162 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2016-07-24 14:41+0000\n"
-"Last-Translator: Jernej Virag <Unknown>\n"
-"Language-Team: Slovenian <sl@li.org>\n"
+"PO-Revision-Date: 2017-05-31 21:33+0000\n"
+"Last-Translator: Jernej Virag <jernej@virag.si>\n"
+"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: ../src/Plug.vala:36
 msgid "Sound"
-msgstr ""
+msgstr "Zvok"
 
 #: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Spremeni glasnost zvoka in mikrofona"
 
 #: ../src/Plug.vala:54 ../src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Izhod"
 
 #: ../src/Plug.vala:55 ../src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Vhod"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Naprave za snemane zvoka:"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr ""
+msgstr "Glasnost vhoda:"
 
 #: ../src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Neojačano"
 
 #: ../src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr ""
+msgstr "Nivo vhoda:"
 
 #: ../src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "Ni vhodne naprave"
 
 #: ../src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Najdene ni bilo nobene vhodne naprave. Priklopite napravo če želite snemati "
+"zvoke."
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Zaznavanje največje vrednosti"
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "Zgrajen na osnovi %s"
+msgstr "Vgrajen"
 
 #: ../src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "zvočnik"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "slušalka"
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "kamera"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "mikrofon"
 
 #: ../src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "slušalka"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "slušalka"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "prostoročno"
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Avto"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Računalnik"
 
 #: ../src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Prenosnik"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Izhodne naprave:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Glanost izhoda:"
 
 #: ../src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Ravnovesje:"
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Levo"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "Sredina"
 
 #: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Desno"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Preizkusi zvočnike…"
 
 #: ../src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Ni izhodne naprave"
 
 #: ../src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Zaznane ni bilo nobene zvočne naprave. Dodajte zvočno kartico če želite "
+"slišati zvok."
 
 #~ msgid "About"
 #~ msgstr "O programu"
