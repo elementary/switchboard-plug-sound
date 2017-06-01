@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-05-29 22:37+0000\n"
-"Last-Translator: Kay van der Zander <kay20@hotmail.com>\n"
+"PO-Revision-Date: 2017-06-01 20:13+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/nl/>\n"
 "Language: nl\n"
@@ -38,7 +38,7 @@ msgstr "Ingang"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr "Beschikbare geluidsinvoerapparaten."
+msgstr "Beschikbare geluidsinvoerapparaten:"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
@@ -54,7 +54,7 @@ msgstr "100%"
 
 #: ../src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr ""
+msgstr "Invoerniveau:"
 
 #: ../src/InputPanel.vala:76
 msgid "No Input Device"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Piekdetectie"
 
 #: ../src/Device.vala:50
 msgid "Built-in"
@@ -82,7 +82,7 @@ msgstr "Luidspreker"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "Handtelefoon"
 
 #: ../src/Device.vala:56
 msgid "TV"
@@ -106,7 +106,7 @@ msgstr "Koptelefoon"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Handenvrij"
 
 #: ../src/Device.vala:68
 msgid "Car"
@@ -126,7 +126,7 @@ msgstr "Draagbaar"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr "Beschikbare geluidsuitgangapparaten"
+msgstr "Beschikbare geluidsuitgangapparaten:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
@@ -161,8 +161,8 @@ msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
-"Er is geen uitgang apparaat gedetecteerd. U wilt misschien een toevoegen om "
-"te beginnen met iets te luisteren."
+"Er is geen uitgangsapparaat gedetecteerd. U wilt misschien een toevoegen om "
+"te beginnen naar iets te luisteren."
 
 #~ msgid "About"
 #~ msgstr "Over"
