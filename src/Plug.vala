@@ -28,7 +28,7 @@ public class Sound.Plug : Switchboard.Plug {
 
     public Plug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
-        settings.set ("sound", "null");
+        settings.set ("sound", null);
         settings.set ("sound/input", "input");
         settings.set ("sound/output", "output");
         Object (category: Category.HARDWARE,
