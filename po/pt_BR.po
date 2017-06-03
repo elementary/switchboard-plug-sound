@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2017-06-03 15:50+0000\n"
-"Last-Translator: Lucas T T <lucastabelini@hotmail.com>\n"
+"Last-Translator: Henrique Specian <henrique_specian@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
 "sound/pt_BR/>\n"
@@ -91,9 +91,8 @@ msgid "TV"
 msgstr "TV"
 
 #: ../src/Device.vala:58
-#, fuzzy
 msgid "Webcam"
-msgstr "Webcam"
+msgstr "Câmera"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
