@@ -7,70 +7,158 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-23 02:49+0100\n"
-"PO-Revision-Date: 2016-12-23 02:56+0100\n"
-"Last-Translator: Alexis Saettler <alexis@saettler.org>\n"
-"Language-Team: French <fr@li.org>\n"
+"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"PO-Revision-Date: 2017-05-25 09:06+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Poedit 1.8.7.1\n"
 
-#: ../src/Plug.vala:30
+#: ../src/Plug.vala:36
 msgid "Sound"
 msgstr "Son"
 
-#: ../src/Plug.vala:31
+#: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
 msgstr "Changer le volume du son et du microphone"
 
-#: ../src/Plug.vala:47
+#: ../src/Plug.vala:54 ../src/Device.vala:76
 msgid "Output"
 msgstr "Sortie"
 
-#: ../src/Plug.vala:48
+#: ../src/Plug.vala:55 ../src/Device.vala:76
 msgid "Input"
 msgstr "Entrée"
 
-#: ../src/OutputPanel.vala:35
+#: ../src/InputPanel.vala:44
+msgid "Available Sound Input Devices:"
+msgstr "Périphériques d'enregistrement disponibles :"
+
+#: ../src/InputPanel.vala:54
+msgid "Input Volume:"
+msgstr "Volume d'enregistrement :"
+
+#: ../src/InputPanel.vala:61
+msgid "Unamplified"
+msgstr "Non Amplifié"
+
+#: ../src/InputPanel.vala:62
+msgid "100%"
+msgstr "100%"
+
+#: ../src/InputPanel.vala:66
+msgid "Input Level:"
+msgstr "Niveau d'enregistrement :"
+
+#: ../src/InputPanel.vala:76
+msgid "No Input Device"
+msgstr "Aucun périphérique d'enregistrement"
+
+#: ../src/InputPanel.vala:76
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
+"Aucun périphérique d'enregistrement n'a été détecté. Essayez d'en ajouter un "
+"pour commencer à enregistrer quoi que ce soit."
+
+#: ../src/InputDeviceMonitor.vala:78
+msgid "Peak detect"
+msgstr ""
+
+#: ../src/Device.vala:50
+#, fuzzy
+msgid "Built-in"
+msgstr "Basé sur %s"
+
+#: ../src/Device.vala:52
+#, fuzzy
+msgid "Speaker"
+msgstr "Tester le son…"
+
+#: ../src/Device.vala:54
+msgid "Handset"
+msgstr ""
+
+#: ../src/Device.vala:56
+msgid "TV"
+msgstr ""
+
+#: ../src/Device.vala:58
+msgid "Webcam"
+msgstr ""
+
+#: ../src/Device.vala:60
+msgid "Microphone"
+msgstr ""
+
+#: ../src/Device.vala:62
+msgid "Headset"
+msgstr ""
+
+#: ../src/Device.vala:64
+msgid "Headphone"
+msgstr ""
+
+#: ../src/Device.vala:66
+msgid "Hands-Free"
+msgstr ""
+
+#: ../src/Device.vala:68
+msgid "Car"
+msgstr ""
+
+#: ../src/Device.vala:70
+msgid "HiFi"
+msgstr ""
+
+#: ../src/Device.vala:72
+msgid "Computer"
+msgstr ""
+
+#: ../src/Device.vala:74
+msgid "Portable"
+msgstr ""
+
+#: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
 msgstr "Périphériques d'écoute disponibles :"
 
-#: ../src/OutputPanel.vala:44
+#: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
 msgstr "Volume de sortie :"
 
-#: ../src/OutputPanel.vala:51
+#: ../src/OutputPanel.vala:62
 msgid "Balance:"
 msgstr "Balance :"
 
-#: ../src/OutputPanel.vala:56
+#: ../src/OutputPanel.vala:68
 msgid "Left"
 msgstr "Gauche"
 
-#: ../src/OutputPanel.vala:57
+#: ../src/OutputPanel.vala:69
 msgid "Center"
 msgstr "Centre"
 
-#: ../src/OutputPanel.vala:58
+#: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr "Droite"
+msgstr "Droit"
 
-#: ../src/OutputPanel.vala:59
-msgid "Device Profile:"
-msgstr "Profil du périphérique :"
-
-#: ../src/OutputPanel.vala:62
+#: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
 msgstr "Tester le son…"
 
-#: ../src/OutputPanel.vala:65
+#: ../src/OutputPanel.vala:78
 msgid "No Output Device"
 msgstr "Aucun périphérique d'écoute"
 
-#: ../src/OutputPanel.vala:65
+#: ../src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -78,37 +166,8 @@ msgstr ""
 "Aucun périphérique d'écoute n'a été détecté. Essayez d'en ajouter un pour "
 "commencer à écouter quoi que ce soit."
 
-#: ../src/InputPanel.vala:36
-msgid "Available Sound Input Devices:"
-msgstr "Périphériques d'enregistrement disponibles :"
-
-#: ../src/InputPanel.vala:45
-msgid "Input Volume:"
-msgstr "Volume d'enregistrement :"
-
-#: ../src/InputPanel.vala:50
-msgid "Unamplified"
-msgstr "Non Amplifié"
-
-#: ../src/InputPanel.vala:51
-msgid "100%"
-msgstr "100%"
-
-#: ../src/InputPanel.vala:54
-msgid "Input Level:"
-msgstr "Niveau d'enregistrement"
-
-#: ../src/InputPanel.vala:58
-msgid "No Input Device"
-msgstr "Aucun périphérique d'enregistrement"
-
-#: ../src/InputPanel.vala:58
-msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
-msgstr ""
-"Aucun périphérique d'enregistrement n'a été détecté. Essayez d'en ajouter "
-"un pour commencer à enregistrer quoi que ce soit."
+#~ msgid "Device Profile:"
+#~ msgstr "Profil du périphérique :"
 
 #~ msgid "About"
 #~ msgstr "À propos"
@@ -139,9 +198,6 @@ msgstr ""
 
 #~ msgid "Quad-Core"
 #~ msgstr "Quadruple coeur"
-
-#~ msgid "Built on %s"
-#~ msgstr "Basé sur %s"
 
 #~ msgid "Website"
 #~ msgstr "Site Internet"

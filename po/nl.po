@@ -6,114 +6,196 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2015-08-13 21:44+0000\n"
-"Last-Translator: needhelp007 <iempie3@hotmail.com>\n"
-"Language-Team: Dutch <nl@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"PO-Revision-Date: 2017-06-01 20:13+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/nl/>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
+
+#: ../src/Plug.vala:36
+msgid "Sound"
+msgstr "Geluid"
 
 #: ../src/Plug.vala:37
-msgid "About"
-msgstr "Over"
+msgid "Change sound and microphone volume"
+msgstr "Wijzig geluids- en microfoonvolume"
 
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
+#: ../src/Plug.vala:54 ../src/Device.vala:76
+msgid "Output"
+msgstr "Uitgang"
+
+#: ../src/Plug.vala:55 ../src/Device.vala:76
+msgid "Input"
+msgstr "Ingang"
+
+#: ../src/InputPanel.vala:44
+msgid "Available Sound Input Devices:"
+msgstr "Beschikbare geluidsinvoerapparaten:"
+
+#: ../src/InputPanel.vala:54
+msgid "Input Volume:"
+msgstr "Invoervolume:"
+
+#: ../src/InputPanel.vala:61
+msgid "Unamplified"
+msgstr "Onversterkt"
+
+#: ../src/InputPanel.vala:62
+msgid "100%"
+msgstr "100%"
+
+#: ../src/InputPanel.vala:66
+msgid "Input Level:"
+msgstr "Invoerniveau:"
+
+#: ../src/InputPanel.vala:76
+msgid "No Input Device"
+msgstr "Geen invoerapparaat"
+
+#: ../src/InputPanel.vala:76
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
 msgstr ""
+"Er is geen invoerapparaat gedetecteerd. U wilt misschien een toevoegen om "
+"een opname te maken."
 
-#: ../src/Plug.vala:65
-msgid "System Information"
+#: ../src/InputDeviceMonitor.vala:78
+msgid "Peak detect"
+msgstr "Piekdetectie"
+
+#: ../src/Device.vala:50
+msgid "Built-in"
+msgstr "Ingebouwd"
+
+#: ../src/Device.vala:52
+msgid "Speaker"
+msgstr "Luidspreker"
+
+#: ../src/Device.vala:54
+msgid "Handset"
+msgstr "Handtelefoon"
+
+#: ../src/Device.vala:56
+msgid "TV"
+msgstr "TV"
+
+#: ../src/Device.vala:58
+msgid "Webcam"
+msgstr "Webcam"
+
+#: ../src/Device.vala:60
+msgid "Microphone"
+msgstr "Microfoon"
+
+#: ../src/Device.vala:62
+msgid "Headset"
+msgstr "Headset"
+
+#: ../src/Device.vala:64
+msgid "Headphone"
+msgstr "Koptelefoon"
+
+#: ../src/Device.vala:66
+msgid "Hands-Free"
+msgstr "Handenvrij"
+
+#: ../src/Device.vala:68
+msgid "Car"
+msgstr "Auto"
+
+#: ../src/Device.vala:70
+msgid "HiFi"
+msgstr "HiFi"
+
+#: ../src/Device.vala:72
+msgid "Computer"
+msgstr "Computer"
+
+#: ../src/Device.vala:74
+msgid "Portable"
+msgstr "Draagbaar"
+
+#: ../src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "Beschikbare geluidsuitgangapparaten:"
+
+#: ../src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "Uitvoervolume:"
+
+#: ../src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "Balans:"
+
+#: ../src/OutputPanel.vala:68
+msgid "Left"
+msgstr "Links"
+
+#: ../src/OutputPanel.vala:69
+msgid "Center"
+msgstr "Centreren"
+
+#: ../src/OutputPanel.vala:70
+msgid "Right"
+msgstr "Rechts"
+
+#: ../src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "Test luidsprekers…"
+
+#: ../src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "Geen uitgangsapparaat"
+
+#: ../src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
 msgstr ""
+"Er is geen uitgangsapparaat gedetecteerd. U wilt misschien een toevoegen om "
+"te beginnen naar iets te luisteren."
 
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr ""
+#~ msgid "About"
+#~ msgstr "Over"
 
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr ""
+#~ msgid "Unknown"
+#~ msgstr "Onbekend"
 
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr ""
+#~ msgid "Dual-Core"
+#~ msgstr "Dual-Core"
 
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr ""
+#~ msgid "Quad-Core"
+#~ msgstr "Quad-Core"
 
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "Onbekend"
+#~ msgid "Website"
+#~ msgstr "Website"
 
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "Dual-Core"
+#~ msgid "Processor:"
+#~ msgstr "Processor:"
 
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "Quad-Core"
+#~ msgid "Memory:"
+#~ msgstr "Geheugen:"
 
-#: ../src/Plug.vala:249
-msgid "Built on %s"
-msgstr ""
+#~ msgid "Graphics:"
+#~ msgstr "Videokaart:"
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "Website"
+#~ msgid "Storage:"
+#~ msgstr "Opslag"
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr ""
+#~ msgid "Suggest Translations"
+#~ msgstr "Suggereer vertaling"
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "Processor:"
+#~ msgid "Report a Problem"
+#~ msgstr "Meld een probleem"
 
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "Geheugen:"
-
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "Videokaart:"
-
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "Opslag"
-
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "Suggereer vertaling"
-
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "Meld een probleem"
-
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "Controleer op updates"
-
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr ""
-
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
-msgstr ""
-
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr ""
-
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr ""
-
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr ""
+#~ msgid "Check for Updates"
+#~ msgstr "Controleer op updates"

@@ -7,114 +7,237 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2016-11-18 14:02+0000\n"
-"Last-Translator: Davidmp <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <ca@li.org>\n"
+"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"PO-Revision-Date: 2017-04-18 15:00+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/ca/>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-11-19 05:57+0000\n"
-"X-Generator: Launchpad (build 18269)\n"
-"Language: ca\n"
+
+#: ../src/Plug.vala:36
+msgid "Sound"
+msgstr "So"
 
 #: ../src/Plug.vala:37
-msgid "About"
-msgstr "Quant a"
+msgid "Change sound and microphone volume"
+msgstr "Canvieu el volum del so i del micròfon"
 
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "Mostra la informació del sistema operatiu i del maquinari"
+#: ../src/Plug.vala:54 ../src/Device.vala:76
+msgid "Output"
+msgstr "Sortida"
 
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "Informació del sistema"
+#: ../src/Plug.vala:55 ../src/Device.vala:76
+msgid "Input"
+msgstr "Entrada"
 
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "Restaura els paràmetres per defecte"
+#: ../src/InputPanel.vala:44
+msgid "Available Sound Input Devices:"
+msgstr "Dispositius d'entrada de so disponibles:"
 
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "Suggeriu una traducció"
+#: ../src/InputPanel.vala:54
+msgid "Input Volume:"
+msgstr "Volum d'entrada:"
 
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "Informeu de problemes"
+#: ../src/InputPanel.vala:61
+msgid "Unamplified"
+msgstr "Sense amplificar"
 
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "Actualitzacions"
+#: ../src/InputPanel.vala:62
+msgid "100%"
+msgstr "100 %"
 
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "Desconegut"
+#: ../src/InputPanel.vala:66
+msgid "Input Level:"
+msgstr "Nivell d'entrada:"
 
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "Nucli doble"
+#: ../src/InputPanel.vala:76
+msgid "No Input Device"
+msgstr "No hi ha dispositiu d'entrada"
 
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "Nucli quàdruple"
+#: ../src/InputPanel.vala:76
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
+"No s'ha detectat cap dispositiu d'entrada. N'heu d'afegir un per poder "
+"gravar alguna cosa."
 
-#: ../src/Plug.vala:249
-msgid "Built on %s"
+#: ../src/InputDeviceMonitor.vala:78
+msgid "Peak detect"
+msgstr ""
+
+#: ../src/Device.vala:50
+#, fuzzy
+msgid "Built-in"
 msgstr "Muntat el %s"
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "Lloc web"
+#: ../src/Device.vala:52
+#, fuzzy
+msgid "Speaker"
+msgstr "Prova els altaveus…"
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr "Maquinari"
+#: ../src/Device.vala:54
+msgid "Handset"
+msgstr ""
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "Processador:"
+#: ../src/Device.vala:56
+msgid "TV"
+msgstr ""
 
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "Memòria:"
+#: ../src/Device.vala:58
+msgid "Webcam"
+msgstr ""
 
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "Gràfics:"
+#: ../src/Device.vala:60
+msgid "Microphone"
+msgstr ""
 
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "Emmagatzematge:"
+#: ../src/Device.vala:62
+msgid "Headset"
+msgstr ""
 
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "Suggeriu traduccions"
+#: ../src/Device.vala:64
+msgid "Headphone"
+msgstr ""
 
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "Informeu d'un problema"
+#: ../src/Device.vala:66
+msgid "Hands-Free"
+msgstr ""
 
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "Comprova si hi ha actualitzacions"
+#: ../src/Device.vala:68
+msgid "Car"
+msgstr ""
 
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr "Els paràmetres del sistema es restauraran als valors de fàbrica"
+#: ../src/Device.vala:70
+msgid "HiFi"
+msgstr ""
 
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
-msgstr "Tots els paràmetres del sistema s'establiran als valors per defecte."
+#: ../src/Device.vala:72
+msgid "Computer"
+msgstr ""
 
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr "No afectarà les dades personals, com ara la música i les imatges."
+#: ../src/Device.vala:74
+msgid "Portable"
+msgstr ""
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "Restaura els paràmetres"
+#: ../src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "Dispositius de sortida de so disponibles:"
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "Cancel·la"
+#: ../src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "Volum de sortida:"
+
+#: ../src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "Balanç:"
+
+#: ../src/OutputPanel.vala:68
+msgid "Left"
+msgstr "Esquerra"
+
+#: ../src/OutputPanel.vala:69
+msgid "Center"
+msgstr "Centre"
+
+#: ../src/OutputPanel.vala:70
+msgid "Right"
+msgstr "Dreta"
+
+#: ../src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "Prova els altaveus…"
+
+#: ../src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "No hi ha dispositiu de sortida"
+
+#: ../src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+"No s'ha detectat cap dispositiu de sortida. N'heu d'afegir un per poder "
+"escoltar alguna cosa."
+
+#~ msgid "Device Profile:"
+#~ msgstr "Perfil del dispositiu:"
+
+#~ msgid "About"
+#~ msgstr "Quant a"
+
+#~ msgid "View operating system and hardware information"
+#~ msgstr "Mostra la informació del sistema operatiu i del maquinari"
+
+#~ msgid "System Information"
+#~ msgstr "Informació del sistema"
+
+#~ msgid "Restore Default Settings"
+#~ msgstr "Restaura els paràmetres per defecte"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "Suggeriu una traducció"
+
+#~ msgid "Report Problems"
+#~ msgstr "Informeu de problemes"
+
+#~ msgid "Updates"
+#~ msgstr "Actualitzacions"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconegut"
+
+#~ msgid "Dual-Core"
+#~ msgstr "Nucli doble"
+
+#~ msgid "Quad-Core"
+#~ msgstr "Nucli quàdruple"
+
+#~ msgid "Website"
+#~ msgstr "Lloc web"
+
+#~ msgid "Hardware"
+#~ msgstr "Maquinari"
+
+#~ msgid "Processor:"
+#~ msgstr "Processador:"
+
+#~ msgid "Memory:"
+#~ msgstr "Memòria:"
+
+#~ msgid "Graphics:"
+#~ msgstr "Gràfics:"
+
+#~ msgid "Storage:"
+#~ msgstr "Emmagatzematge:"
+
+#~ msgid "Suggest Translations"
+#~ msgstr "Suggeriu traduccions"
+
+#~ msgid "Report a Problem"
+#~ msgstr "Informeu d'un problema"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Comprova si hi ha actualitzacions"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "Els paràmetres del sistema es restauraran als valors de fàbrica"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr ""
+#~ "Tots els paràmetres del sistema s'establiran als valors per defecte."
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr "No afectarà les dades personals, com ara la música i les imatges."
+
+#~ msgid "Restore Settings"
+#~ msgstr "Restaura els paràmetres"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancel·la"

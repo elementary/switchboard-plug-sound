@@ -7,114 +7,233 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-19 08:28-0500\n"
-"PO-Revision-Date: 2016-07-20 17:18+0000\n"
+"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"PO-Revision-Date: 2017-05-08 03:23+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language-Team: Chinese (Simplified) "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
+"sound/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
-"Language: \n"
+
+#: ../src/Plug.vala:36
+msgid "Sound"
+msgstr "声音"
 
 #: ../src/Plug.vala:37
-msgid "About"
-msgstr "关于"
+msgid "Change sound and microphone volume"
+msgstr "调整声音和麦克风音量"
 
-#: ../src/Plug.vala:38
-msgid "View operating system and hardware information"
-msgstr "查看操作系统和硬件信息"
+#: ../src/Plug.vala:54 ../src/Device.vala:76
+msgid "Output"
+msgstr "输出"
 
-#: ../src/Plug.vala:65
-msgid "System Information"
-msgstr "系统信息"
+#: ../src/Plug.vala:55 ../src/Device.vala:76
+msgid "Input"
+msgstr "输入"
 
-#: ../src/Plug.vala:66 ../src/Plug.vala:339
-msgid "Restore Default Settings"
-msgstr "重置设置"
+#: ../src/InputPanel.vala:44
+msgid "Available Sound Input Devices:"
+msgstr "可用音频输入设备："
 
-#: ../src/Plug.vala:67
-msgid "Suggest Translation"
-msgstr "助力翻译"
+#: ../src/InputPanel.vala:54
+msgid "Input Volume:"
+msgstr "输入音量："
 
-#: ../src/Plug.vala:68
-msgid "Report Problems"
-msgstr "反馈问题"
+#: ../src/InputPanel.vala:61
+msgid "Unamplified"
+msgstr "不放大"
 
-#: ../src/Plug.vala:69
-msgid "Updates"
-msgstr "检查更新"
+#: ../src/InputPanel.vala:62
+msgid "100%"
+msgstr "100%"
 
-#: ../src/Plug.vala:145 ../src/Plug.vala:174 ../src/Plug.vala:198
-#: ../src/Plug.vala:209 ../src/Plug.vala:229
-msgid "Unknown"
-msgstr "未知"
+#: ../src/InputPanel.vala:66
+msgid "Input Level:"
+msgstr "输入等级："
 
-#: ../src/Plug.vala:165
-msgid "Dual-Core"
-msgstr "双核"
+#: ../src/InputPanel.vala:76
+msgid "No Input Device"
+msgstr "无输入设备"
 
-#: ../src/Plug.vala:167
-msgid "Quad-Core"
-msgstr "四核"
+#: ../src/InputPanel.vala:76
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr "未检测到音频输入设备，您将无法录制任何音频。"
 
-#: ../src/Plug.vala:249
-msgid "Built on %s"
+#: ../src/InputDeviceMonitor.vala:78
+msgid "Peak detect"
+msgstr ""
+
+#: ../src/Device.vala:50
+#, fuzzy
+msgid "Built-in"
 msgstr "基于 %s 构建"
 
-#: ../src/Plug.vala:254
-msgid "Website"
-msgstr "项目主页"
+#: ../src/Device.vala:52
+#, fuzzy
+msgid "Speaker"
+msgstr "测试扬声器…"
 
-#: ../src/Plug.vala:258
-msgid "Hardware"
-msgstr "硬件信息："
+#: ../src/Device.vala:54
+msgid "Handset"
+msgstr ""
 
-#: ../src/Plug.vala:263
-msgid "Processor:"
-msgstr "处理器："
+#: ../src/Device.vala:56
+msgid "TV"
+msgstr ""
 
-#: ../src/Plug.vala:266
-msgid "Memory:"
-msgstr "内存："
+#: ../src/Device.vala:58
+msgid "Webcam"
+msgstr ""
 
-#: ../src/Plug.vala:269
-msgid "Graphics:"
-msgstr "图形："
+#: ../src/Device.vala:60
+msgid "Microphone"
+msgstr ""
 
-#: ../src/Plug.vala:272
-msgid "Storage:"
-msgstr "硬盘："
+#: ../src/Device.vala:62
+msgid "Headset"
+msgstr ""
 
-#: ../src/Plug.vala:309
-msgid "Suggest Translations"
-msgstr "助力翻译"
+#: ../src/Device.vala:64
+msgid "Headphone"
+msgstr ""
 
-#: ../src/Plug.vala:319
-msgid "Report a Problem"
-msgstr "报告问题"
+#: ../src/Device.vala:66
+msgid "Hands-Free"
+msgstr ""
 
-#: ../src/Plug.vala:329
-msgid "Check for Updates"
-msgstr "检查更新"
+#: ../src/Device.vala:68
+msgid "Car"
+msgstr ""
 
-#: ../src/Plug.vala:463
-msgid "System settings will be restored to the factory defaults"
-msgstr "系统设置将会被重置为出厂默认值"
+#: ../src/Device.vala:70
+msgid "HiFi"
+msgstr ""
 
-#: ../src/Plug.vala:464
-msgid "All system settings and data will be reset to the default values."
-msgstr "所有系统设置参数将会被重置为默认值。"
+#: ../src/Device.vala:72
+msgid "Computer"
+msgstr ""
 
-#: ../src/Plug.vala:465
-msgid "Personal data, such as music and pictures, will be uneffected."
-msgstr "个人数据，如音乐和照片等将不受影响。"
+#: ../src/Device.vala:74
+msgid "Portable"
+msgstr ""
 
-#: ../src/Plug.vala:482
-msgid "Restore Settings"
-msgstr "重置设置"
+#: ../src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "可用音频输出设备："
 
-#: ../src/Plug.vala:485
-msgid "Cancel"
-msgstr "取消"
+#: ../src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "输出音量："
+
+#: ../src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "音量平衡："
+
+#: ../src/OutputPanel.vala:68
+msgid "Left"
+msgstr "左键"
+
+#: ../src/OutputPanel.vala:69
+msgid "Center"
+msgstr "中"
+
+#: ../src/OutputPanel.vala:70
+msgid "Right"
+msgstr "右键"
+
+#: ../src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "测试扬声器…"
+
+#: ../src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "无输出设备"
+
+#: ../src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr "未检测到音频输出设备，您将无法听到任何声音。"
+
+#~ msgid "Device Profile:"
+#~ msgstr "设备信息："
+
+#~ msgid "About"
+#~ msgstr "关于"
+
+#~ msgid "View operating system and hardware information"
+#~ msgstr "查看操作系统和硬件信息"
+
+#~ msgid "System Information"
+#~ msgstr "系统信息"
+
+#~ msgid "Restore Default Settings"
+#~ msgstr "重置设置"
+
+#~ msgid "Suggest Translation"
+#~ msgstr "助力翻译"
+
+#~ msgid "Report Problems"
+#~ msgstr "反馈问题"
+
+#~ msgid "Updates"
+#~ msgstr "检查更新"
+
+#~ msgid "Unknown"
+#~ msgstr "未知"
+
+#~ msgid "Dual-Core"
+#~ msgstr "双核"
+
+#~ msgid "Quad-Core"
+#~ msgstr "四核"
+
+#~ msgid "Website"
+#~ msgstr "项目主页"
+
+#~ msgid "Hardware"
+#~ msgstr "硬件信息："
+
+#~ msgid "Processor:"
+#~ msgstr "处理器："
+
+#~ msgid "Memory:"
+#~ msgstr "内存："
+
+#~ msgid "Graphics:"
+#~ msgstr "图形："
+
+#~ msgid "Storage:"
+#~ msgstr "硬盘："
+
+#~ msgid "Suggest Translations"
+#~ msgstr "助力翻译"
+
+#~ msgid "Report a Problem"
+#~ msgstr "报告问题"
+
+#~ msgid "Check for Updates"
+#~ msgstr "检查更新"
+
+#~ msgid "System settings will be restored to the factory defaults"
+#~ msgstr "系统设置将会被重置为出厂默认值"
+
+#~ msgid "All system settings and data will be reset to the default values."
+#~ msgstr "所有系统设置参数将会被重置为默认值。"
+
+#~ msgid "Personal data, such as music and pictures, will be uneffected."
+#~ msgstr "个人数据，如音乐和照片等将不受影响。"
+
+#~ msgid "Restore Settings"
+#~ msgstr "重置设置"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
