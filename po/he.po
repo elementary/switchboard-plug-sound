@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-05-24 22:10+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2017-07-07 14:25+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/he/>\n"
 "Language: he\n"
@@ -68,17 +68,15 @@ msgstr "לא זוהה התקן קלט. עדיף להוסיף אחד כדי לה�
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "זיהוי פסגה"
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "נבנה על גבי %s"
+msgstr "מובנה"
 
 #: ../src/Device.vala:52
-#, fuzzy
 msgid "Speaker"
-msgstr "בדיקת הרמקולים…"
+msgstr "רמקול"
 
 #: ../src/Device.vala:54
 msgid "Handset"
