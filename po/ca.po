@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-07 11:47+0000\n"
+"PO-Revision-Date: 2017-07-07 11:49+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ca/>\n"
@@ -82,7 +82,7 @@ msgstr "Altaveu"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr "Mòbil"
+msgstr "Microtelèfon"
 
 #: ../src/Device.vala:56
 msgid "TV"
