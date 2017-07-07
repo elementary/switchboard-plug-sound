@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-02 09:28+0000\n"
+"PO-Revision-Date: 2017-07-07 06:32+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ru/>\n"
@@ -79,9 +79,8 @@ msgid "Built-in"
 msgstr "Построена на базе %s"
 
 #: ../src/Device.vala:52
-#, fuzzy
 msgid "Speaker"
-msgstr "Проверка динамиков…"
+msgstr "Динамик"
 
 #: ../src/Device.vala:54
 msgid "Handset"
@@ -97,11 +96,11 @@ msgstr ""
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Микрофон"
 
 #: ../src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "Наушники"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
