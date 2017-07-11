@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-07 06:32+0000\n"
-"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
+"PO-Revision-Date: 2017-07-11 18:08+0000\n"
+"Last-Translator: Papa Tut <papatut@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ru/>\n"
 "Language: ru\n"
@@ -74,9 +74,8 @@ msgid "Peak detect"
 msgstr ""
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "Построена на базе %s"
+msgstr "Встроено"
 
 #: ../src/Device.vala:52
 msgid "Speaker"
@@ -88,11 +87,11 @@ msgstr ""
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "ТВ"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Веб-камера"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
@@ -104,7 +103,7 @@ msgstr "Наушники"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Наушники"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
