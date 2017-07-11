@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-11 18:41+0000\n"
+"PO-Revision-Date: 2017-07-11 18:48+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ru/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../src/Plug.vala:36
 msgid "Sound"
-msgstr "Звуки"
+msgstr "Звук"
 
 #: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
