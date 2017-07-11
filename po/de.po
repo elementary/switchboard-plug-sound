@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-06-05 10:30+0000\n"
+"PO-Revision-Date: 2017-06-22 20:50+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/de/>\n"
@@ -72,9 +72,8 @@ msgstr ""
 "hinzugefügt werden."
 
 #: ../src/InputDeviceMonitor.vala:78
-#, fuzzy
 msgid "Peak detect"
-msgstr "Peak-Erkennung"
+msgstr "Spitzenerkennung"
 
 #: ../src/Device.vala:50
 msgid "Built-in"
