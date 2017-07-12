@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-04 09:00+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2017-07-12 02:13+0000\n"
+"Last-Translator: hf <hffqyd@sina.com>\n"
 "Language-Team: Chinese (Simplified) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
 "sound/zh_CN/>\n"
@@ -69,7 +69,7 @@ msgstr "未检测到音频输入设备，您将无法录制任何音频。"
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "峰值检测"
 
 #: ../src/Device.vala:50
 #, fuzzy
@@ -83,47 +83,47 @@ msgstr "测试扬声器…"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "耳机"
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "电视"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "摄像头"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "麦克风"
 
 #: ../src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "耳机"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "耳机"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "免提"
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "汽车"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "高保真"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "电脑"
 
 #: ../src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "便携"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
