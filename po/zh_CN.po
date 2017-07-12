@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2017-07-12 02:14+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"Last-Translator: hf <hffqyd@sina.com>\n"
 "Language-Team: Chinese (Simplified) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
 "sound/zh_CN/>\n"
@@ -76,9 +76,8 @@ msgid "Built-in"
 msgstr "内置"
 
 #: ../src/Device.vala:52
-#, fuzzy
 msgid "Speaker"
-msgstr "测试扬声器…"
+msgstr "扬声器"
 
 #: ../src/Device.vala:54
 msgid "Handset"
