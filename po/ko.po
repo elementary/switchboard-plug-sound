@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-05-25 15:05+0000\n"
+"PO-Revision-Date: 2017-07-14 23:52+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ko/>\n"
@@ -68,61 +68,59 @@ msgstr "입력 장치를 찾을 수 없습니다. 녹음하시려면 장치를 �
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "피크 검출"
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "%s 기반"
+msgstr "내장"
 
 #: ../src/Device.vala:52
-#, fuzzy
 msgid "Speaker"
-msgstr "스피커 테스트…"
+msgstr "스피커"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "핸드셋"
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "웹캠"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "마이크"
 
 #: ../src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "헤드셋"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "헤드폰"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "핸즈프리"
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "자동차"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "컴퓨터"
 
 #: ../src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "이동식"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
