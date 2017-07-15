@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-11 11:54+0000\n"
-"Last-Translator: Mattias Ezequiel Mignone <memignone@gmail.com>\n"
+"PO-Revision-Date: 2017-07-15 00:43+0000\n"
+"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/es/>\n"
 "Language: es\n"
@@ -69,8 +69,9 @@ msgstr ""
 "grabar algo."
 
 #: ../src/InputDeviceMonitor.vala:78
+#, fuzzy
 msgid "Peak detect"
-msgstr ""
+msgstr "Detección de picos"
 
 #: ../src/Device.vala:50
 msgid "Built-in"
@@ -81,6 +82,7 @@ msgid "Speaker"
 msgstr "Altavoz"
 
 #: ../src/Device.vala:54
+#, fuzzy
 msgid "Handset"
 msgstr "Auricular"
 
@@ -101,8 +103,9 @@ msgid "Headset"
 msgstr "Auriculares"
 
 #: ../src/Device.vala:64
+#, fuzzy
 msgid "Headphone"
-msgstr ""
+msgstr "Auriculares"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
