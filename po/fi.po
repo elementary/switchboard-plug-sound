@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-04-27 14:42+0000\n"
+"PO-Revision-Date: 2017-07-16 09:44+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: ../src/Plug.vala:36
@@ -73,14 +73,12 @@ msgid "Peak detect"
 msgstr ""
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "Pohjana %s"
+msgstr "Sisäänrakennettu"
 
 #: ../src/Device.vala:52
-#, fuzzy
 msgid "Speaker"
-msgstr "Testaa kaiuttimia…"
+msgstr "Kaiutin"
 
 #: ../src/Device.vala:54
 msgid "Handset"
@@ -88,15 +86,15 @@ msgstr ""
 
 #: ../src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Web-kamera"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofoni"
 
 #: ../src/Device.vala:62
 msgid "Headset"
@@ -112,15 +110,15 @@ msgstr ""
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Auto"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Tietokone"
 
 #: ../src/Device.vala:74
 msgid "Portable"
