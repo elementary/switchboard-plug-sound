@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-31 07:16+0000\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"PO-Revision-Date: 2017-08-22 11:16+0000\n"
+"Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/id/>\n"
 "Language: id\n"
@@ -73,15 +73,15 @@ msgstr "Deteksi puncak"
 
 #: ../src/Device.vala:50
 msgid "Built-in"
-msgstr "Built-in"
+msgstr ""
 
 #: ../src/Device.vala:52
 msgid "Speaker"
-msgstr "Speaker"
+msgstr ""
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr "Handset"
+msgstr ""
 
 #: ../src/Device.vala:56
 msgid "TV"
@@ -101,7 +101,7 @@ msgstr "Headset"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr "Headphone"
+msgstr ""
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
@@ -113,7 +113,7 @@ msgstr "Mobil"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr "HiFi"
+msgstr ""
 
 #: ../src/Device.vala:72
 msgid "Computer"
