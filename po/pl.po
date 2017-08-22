@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-08-09 04:50+0000\n"
+"PO-Revision-Date: 2017-08-22 09:20+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/pl/>\n"
@@ -83,7 +83,7 @@ msgstr "Głośnik"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "Słuchawka z mikrofonem"
 
 #: ../src/Device.vala:56
 msgid "TV"
@@ -107,7 +107,7 @@ msgstr "Słuchawki"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Zestaw głośnomówiący"
 
 #: ../src/Device.vala:68
 msgid "Car"
