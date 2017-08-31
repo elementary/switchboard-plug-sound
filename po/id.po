@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-08-22 11:16+0000\n"
-"Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
+"PO-Revision-Date: 2017-08-31 15:17+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/id/>\n"
 "Language: id\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: ../src/Plug.vala:36
@@ -73,15 +73,15 @@ msgstr "Deteksi puncak"
 
 #: ../src/Device.vala:50
 msgid "Built-in"
-msgstr ""
+msgstr "Built-in"
 
 #: ../src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "Speaker"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "Handset"
 
 #: ../src/Device.vala:56
 msgid "TV"
@@ -101,7 +101,7 @@ msgstr "Headset"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Headphone"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
@@ -113,7 +113,7 @@ msgstr "Mobil"
 
 #: ../src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
