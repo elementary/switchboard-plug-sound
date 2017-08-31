@@ -8,155 +8,176 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2015-02-10 22:51+0000\n"
-"Last-Translator: George Chalkitis <chalkitisge@gmail.com>\n"
-"Language-Team: Greek <el@li.org>\n"
+"PO-Revision-Date: 2017-08-31 23:39+0000\n"
+"Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
+"Language-Team: Greek <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: ../src/Plug.vala:36
 msgid "Sound"
-msgstr ""
+msgstr "Ήχος"
 
 #: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Αλλαγή έντασης ήχου και μικροφώνου"
 
 #: ../src/Plug.vala:54 ../src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Έξοδος"
 
 #: ../src/Plug.vala:55 ../src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Είσοδος"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Διαθέσιμες συσκευές εισόδου ήχου:"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr ""
+msgstr "Ένταση εισόδου:"
 
 #: ../src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Χωρίς ενίσχυση"
 
 #: ../src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../src/InputPanel.vala:66
+#, fuzzy
 msgid "Input Level:"
-msgstr ""
+msgstr "Επίπεδο εισόδου:"
 
 #: ../src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "Δεν υπάρχει συσκευή εισόδου"
 
 #: ../src/InputPanel.vala:76
+#, fuzzy
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Δεν εντοπίστηκε κάποια συσκευή εισόδου. Ίσως θα θέλατε να προσθέσετε μία "
+"πρίν ξεκινήσετε οποιαδήποτε εγγραφή."
 
 #: ../src/InputDeviceMonitor.vala:78
+#, fuzzy
 msgid "Peak detect"
-msgstr ""
+msgstr "Ανίχνευση κορυφής"
 
 #: ../src/Device.vala:50
 msgid "Built-in"
-msgstr ""
+msgstr "Ενσωματωμένο"
 
 #: ../src/Device.vala:52
+#, fuzzy
 msgid "Speaker"
-msgstr ""
+msgstr "Ηχείο"
 
 #: ../src/Device.vala:54
+#, fuzzy
 msgid "Handset"
-msgstr ""
+msgstr "Ακουστικό (Handset)"
 
 #: ../src/Device.vala:56
+#, fuzzy
 msgid "TV"
-msgstr ""
+msgstr "Τηλεόραση (TV)"
 
 #: ../src/Device.vala:58
+#, fuzzy
 msgid "Webcam"
-msgstr ""
+msgstr "Webcam"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Μικρόφωνο"
 
 #: ../src/Device.vala:62
+#, fuzzy
 msgid "Headset"
-msgstr ""
+msgstr "Ακουστικά (Headset)"
 
 #: ../src/Device.vala:64
+#, fuzzy
 msgid "Headphone"
-msgstr ""
+msgstr "Ακουστικά (Headphone)"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Ακουστικά (Hands-Free)"
 
 #: ../src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Αυτοκίνητο"
 
 #: ../src/Device.vala:70
+#, fuzzy
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi Ηχοσύστημα"
 
 #: ../src/Device.vala:72
+#, fuzzy
 msgid "Computer"
-msgstr ""
+msgstr "Υπολογιστής"
 
 #: ../src/Device.vala:74
+#, fuzzy
 msgid "Portable"
-msgstr ""
+msgstr "Φορητό"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Διαθέσιμες συσκευές εξόδου ήχου:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Ένταση εξόδου:"
 
 #: ../src/OutputPanel.vala:62
+#, fuzzy
 msgid "Balance:"
-msgstr ""
+msgstr "Ισοστάθμιση:"
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Αριστερά"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "Κέντρο"
 
 #: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Δεξιά"
 
 #: ../src/OutputPanel.vala:71
+#, fuzzy
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Δοκιμή ηχείων…"
 
 #: ../src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Δεν υπάρχει συσκευή εξόδου"
 
 #: ../src/OutputPanel.vala:78
+#, fuzzy
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Δεν εντοπίστηκε κάποια συσκευή εξόδου. Ίσως θα θέλατε να προσθέσετε μία πρίν "
+"ξεκινήσετε να ακούτε οποιαδήποτε."
 
 #~ msgid "About"
 #~ msgstr "Περί"
