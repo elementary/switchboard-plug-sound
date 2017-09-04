@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-09-03 20:18+0000\n"
+"PO-Revision-Date: 2017-09-04 00:42+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Bølgeutslagsdeteksjon"
 
 #: ../src/Device.vala:50
 #, fuzzy
@@ -85,7 +85,7 @@ msgstr "Test høyttalere…"
 
 #: ../src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "Håndsett"
 
 #: ../src/Device.vala:56
 msgid "TV"
@@ -93,7 +93,7 @@ msgstr "TV"
 
 #: ../src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Vevkamera"
 
 #: ../src/Device.vala:60
 msgid "Microphone"
@@ -101,15 +101,15 @@ msgstr "Mikrofon"
 
 #: ../src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "Hodesett"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Hodetelefon"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Håndsfri"
 
 #: ../src/Device.vala:68
 msgid "Car"
@@ -124,8 +124,9 @@ msgid "Computer"
 msgstr "Datamaskin"
 
 #: ../src/Device.vala:74
+#, fuzzy
 msgid "Portable"
-msgstr ""
+msgstr "Flyttbar"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
