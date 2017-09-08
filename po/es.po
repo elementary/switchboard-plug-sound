@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-07-15 00:43+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
+"PO-Revision-Date: 2017-09-08 07:35+0000\n"
+"Last-Translator: Julio García <yllelder@gmail.com>\n"
+"Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: ../src/Plug.vala:36
@@ -69,7 +69,6 @@ msgstr ""
 "grabar algo."
 
 #: ../src/InputDeviceMonitor.vala:78
-#, fuzzy
 msgid "Peak detect"
 msgstr "Detección de picos"
 
@@ -84,7 +83,7 @@ msgstr "Altavoz"
 #: ../src/Device.vala:54
 #, fuzzy
 msgid "Handset"
-msgstr "Auricular"
+msgstr "Teléfono"
 
 #: ../src/Device.vala:56
 msgid "TV"
@@ -103,7 +102,6 @@ msgid "Headset"
 msgstr "Auriculares"
 
 #: ../src/Device.vala:64
-#, fuzzy
 msgid "Headphone"
 msgstr "Auriculares"
 
@@ -126,7 +124,7 @@ msgstr ""
 #: ../src/Device.vala:74
 #, fuzzy
 msgid "Portable"
-msgstr "Portable"
+msgstr "Portátil"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
