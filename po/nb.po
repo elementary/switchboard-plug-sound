@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-09-04 00:42+0000\n"
+"PO-Revision-Date: 2017-09-24 09:24+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -74,14 +74,12 @@ msgid "Peak detect"
 msgstr "Bølgeutslagsdeteksjon"
 
 #: ../src/Device.vala:50
-#, fuzzy
 msgid "Built-in"
-msgstr "Bygget på %s"
+msgstr "Innebygd"
 
 #: ../src/Device.vala:52
-#, fuzzy
 msgid "Speaker"
-msgstr "Test høyttalere…"
+msgstr "Høyttaler"
 
 #: ../src/Device.vala:54
 msgid "Handset"
