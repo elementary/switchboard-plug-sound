@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-09-24 09:24+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2017-09-26 22:47+0000\n"
+"Last-Translator: Stein Erik <post@svendheim.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "sound/nb/>\n"
@@ -103,7 +103,7 @@ msgstr "Hodesett"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
-msgstr "Hodetelefon"
+msgstr "Hodetelefoner"
 
 #: ../src/Device.vala:66
 msgid "Hands-Free"
