@@ -46,10 +46,12 @@ public class Sound.Plug : Switchboard.Plug {
 
             stack = new Gtk.Stack ();
             stack.expand = true;
+
             var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.margin = 12;
             stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.set_stack (stack);
+            stack_switcher.homogeneous = true;
+            stack_switcher.margin = 12;
+            stack_switcher.stack = stack;
 
             stack.add_titled (output_panel, "output", _("Output"));
             stack.add_titled (input_panel, "input", _("Input"));
