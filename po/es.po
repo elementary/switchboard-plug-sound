@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-12-20 07:20+0000\n"
+"PO-Revision-Date: 2017-12-21 11:27+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/es/>\n"
@@ -121,9 +121,8 @@ msgid "Computer"
 msgstr "Computadora"
 
 #: ../src/Device.vala:74
-#, fuzzy
 msgid "Portable"
-msgstr "Portátil"
+msgstr "Portable"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
