@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2017-12-20 07:03+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
+"Last-Translator: haloes123 <haloes123@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/es/>\n"
 "Language: es\n"
@@ -81,9 +81,8 @@ msgid "Speaker"
 msgstr "Altavoz"
 
 #: ../src/Device.vala:54
-#, fuzzy
 msgid "Handset"
-msgstr "Teléfono"
+msgstr "Auricular"
 
 #: ../src/Device.vala:56
 msgid "TV"
