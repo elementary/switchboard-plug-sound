@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-08-19 12:47+0000\n"
+"PO-Revision-Date: 2018-01-04 00:14+0000\n"
 "Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/de/>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: ../src/Plug.vala:36
 msgid "Sound"
-msgstr "Ton"
+msgstr "Audio"
 
 #: ../src/Plug.vala:37
 msgid "Change sound and microphone volume"
@@ -38,7 +38,7 @@ msgstr "Eingang"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr "Vorhandene Klangeingabegeräte:"
+msgstr "Vorhandene Audio-Eingabegeräte:"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
@@ -50,7 +50,7 @@ msgstr "Unverstärkt"
 
 #: ../src/InputPanel.vala:62
 msgid "100%"
-msgstr "100 %"
+msgstr "100%"
 
 #: ../src/InputPanel.vala:66
 msgid "Input Level:"
@@ -58,19 +58,19 @@ msgstr "Eingangs-Level:"
 
 #: ../src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr "Keine Eingangsgerät vorhanden"
+msgstr "Kein Eingangsgerät vorhanden"
 
 #: ../src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
-"Es wurde kein Eingangsgerät gefunden. Zur Aufnahme von Klängen muss eines "
-"hinzugefügt werden."
+"Es wurde kein Eingangsgerät gefunden. Vielleicht möchten Sie eines "
+"hinzufügen, um mit der Aufnahme zu beginnen."
 
 #: ../src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr "Spitzenerkennung"
+msgstr "Spitzenwert-Erkennung"
 
 #: ../src/Device.vala:50
 msgid "Built-in"
@@ -98,7 +98,7 @@ msgstr "Mikrofon"
 
 #: ../src/Device.vala:62
 msgid "Headset"
-msgstr "Sprechgarnitur"
+msgstr "Headset"
 
 #: ../src/Device.vala:64
 msgid "Headphone"
@@ -118,7 +118,7 @@ msgstr "HiFi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr "Rechner"
+msgstr "Computer"
 
 #: ../src/Device.vala:74
 msgid "Portable"
@@ -126,7 +126,7 @@ msgstr "Tragbares Gerät"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr "Vorhandene Klangausgabegeräte:"
+msgstr "Vorhandene Audio-Ausgabegeräte:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
@@ -150,7 +150,7 @@ msgstr "Rechts"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr "Lautsprechertest …"
+msgstr "Lautsprechertest…"
 
 #: ../src/OutputPanel.vala:78
 msgid "No Output Device"
@@ -161,8 +161,8 @@ msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
-"Es wurde kein Ausgabegerät gefunden. Um Klänge wiederzugeben, muss eines "
-"hinzugefügt werden."
+"Es wurde kein Ausgabegerät gefunden. Vielleicht möchten Sie eines "
+"hinzufügen, um mit der Wiedergabe zu beginnen."
 
 #~ msgid "About"
 #~ msgstr "Info"
