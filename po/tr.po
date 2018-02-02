@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2018-02-02 20:09+0000\n"
-"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
+"PO-Revision-Date: 2018-02-02 20:10+0000\n"
+"Last-Translator: Salih Karayel <mistral04@yandex.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/tr/>\n"
 "Language: tr\n"
@@ -118,23 +118,23 @@ msgstr "Hi-Fi"
 
 #: ../src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Bilgisayar"
 
 #: ../src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Taşınabilir"
 
 #: ../src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Kullanılabilir Ses Çıkış Aygıtları:"
 
 #: ../src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Çıkış Sesi:"
 
 #: ../src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Denge:"
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
