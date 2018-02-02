@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2018-02-02 20:04+0000\n"
-"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
+"PO-Revision-Date: 2018-02-02 20:05+0000\n"
+"Last-Translator: Salih Karayel <mistral04@yandex.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/tr/>\n"
 "Language: tr\n"
@@ -50,7 +50,7 @@ msgstr "Yükseltilmedi"
 
 #: ../src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "%100"
 
 #: ../src/InputPanel.vala:66
 msgid "Input Level:"
