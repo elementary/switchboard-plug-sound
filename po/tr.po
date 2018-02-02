@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2018-02-02 20:03+0000\n"
-"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
+"Last-Translator: Salih Karayel <mistral04@yandex.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/tr/>\n"
 "Language: tr\n"
@@ -38,7 +38,7 @@ msgstr "Giriş"
 
 #: ../src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Kullanılabilir Ses Giriş Aygıtları:"
 
 #: ../src/InputPanel.vala:54
 msgid "Input Volume:"
