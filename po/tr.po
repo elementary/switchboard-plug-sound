@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
 "PO-Revision-Date: 2018-02-02 20:10+0000\n"
-"Last-Translator: Salih Karayel <mistral04@yandex.com>\n"
+"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/tr/>\n"
 "Language: tr\n"
@@ -138,7 +138,7 @@ msgstr "Denge:"
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Sol"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
