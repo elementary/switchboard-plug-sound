@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2018-02-02 20:10+0000\n"
-"Last-Translator: Furkan Ege Öztürk <furkanegeozturk@galatasaray.net>\n"
+"PO-Revision-Date: 2018-02-02 20:11+0000\n"
+"Last-Translator: Salih Karayel <mistral04@yandex.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/tr/>\n"
 "Language: tr\n"
@@ -150,17 +150,19 @@ msgstr "Sağ"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Hoparlörleri Test Et..."
 
 #: ../src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Çıkış Aygıtı Yok"
 
 #: ../src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Hiç çıkış aygıtı algılanmadı.Bir şeyler dinlemeye başlamak için bir tane "
+"eklemek isteyebilirsin."
 
 #~ msgid "About"
 #~ msgstr "Hakkında"
