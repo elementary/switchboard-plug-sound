@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2015-12-07 19:15+0000\n"
-"Last-Translator: Jimmy Merrild Krag <jimmy@kragenet.dk>\n"
-"Language-Team: Danish <da@li.org>\n"
+"PO-Revision-Date: 2018-02-09 00:10+0000\n"
+"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: ../src/Plug.vala:36
 msgid "Sound"
@@ -134,7 +136,7 @@ msgstr ""
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Venstre"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
@@ -142,7 +144,7 @@ msgstr ""
 
 #: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Højre"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
