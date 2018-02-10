@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2018-02-05 00:12+0000\n"
+"PO-Revision-Date: 2018-02-11 00:09+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ku/>\n"
@@ -129,15 +129,15 @@ msgstr ""
 
 #: ../src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Çepê"
 
 #: ../src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "navîn"
 
 #: ../src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Raste"
 
 #: ../src/OutputPanel.vala:71
 msgid "Test Speakers…"
