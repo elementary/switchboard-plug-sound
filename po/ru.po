@@ -7,61 +7,101 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"POT-Creation-Date: 2018-02-20 15:16-0800\n"
 "PO-Revision-Date: 2017-07-11 19:05+0000\n"
 "Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
-"Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
-"/switchboard-plug-sound/ru/>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: ../src/Plug.vala:36
+#: src/Plug.vala:36
 msgid "Sound"
 msgstr "Звук"
 
-#: ../src/Plug.vala:37
+#: src/Plug.vala:37
 msgid "Change sound and microphone volume"
 msgstr "Изменить громкость звука и микрофона"
 
-#: ../src/Plug.vala:54 ../src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
 msgstr "Вывод"
 
-#: ../src/Plug.vala:55 ../src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
 msgstr "Ввод"
 
-#: ../src/InputPanel.vala:44
+#: src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "Доступные устройства вывода:"
+
+#: src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "Громкость вывода:"
+
+#: src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "Баланс:"
+
+#: src/OutputPanel.vala:68
+msgid "Left"
+msgstr "Левый"
+
+#: src/OutputPanel.vala:69
+msgid "Center"
+msgstr "Центр"
+
+#: src/OutputPanel.vala:70
+msgid "Right"
+msgstr "Правый"
+
+#: src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "Проверка динамиков…"
+
+#: src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "Нет устройств вывода"
+
+#: src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+"Устройство вывода не обнаружено. Возможно, вы захотите добавить его, чтобы "
+"начать что-нибудь слушать."
+
+#: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
 msgstr "Доступные устройства ввода:"
 
-#: ../src/InputPanel.vala:54
+#: src/InputPanel.vala:54
 msgid "Input Volume:"
 msgstr "Громкость ввода:"
 
-#: ../src/InputPanel.vala:61
+#: src/InputPanel.vala:61
 msgid "Unamplified"
 msgstr "Без усиления"
 
-#: ../src/InputPanel.vala:62
+#: src/InputPanel.vala:62
 msgid "100%"
 msgstr "100%"
 
-#: ../src/InputPanel.vala:66
+#: src/InputPanel.vala:66
 msgid "Input Level:"
 msgstr "Уровень ввода:"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid "No Input Device"
 msgstr "Нет устройств ввода"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -69,101 +109,61 @@ msgstr ""
 "Устройство ввода не обнаружено. Возможно, вы захотите добавить его, чтобы "
 "начать что-нибудь записывать."
 
-#: ../src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
 msgstr "Обнаружение максимума"
 
-#: ../src/Device.vala:50
+#: src/Device.vala:50
 msgid "Built-in"
 msgstr "Встроенное устройство"
 
-#: ../src/Device.vala:52
+#: src/Device.vala:52
 msgid "Speaker"
 msgstr "Динамик"
 
-#: ../src/Device.vala:54
+#: src/Device.vala:54
 msgid "Handset"
 msgstr "Телефонная трубка"
 
-#: ../src/Device.vala:56
+#: src/Device.vala:56
 msgid "TV"
 msgstr "ТВ"
 
-#: ../src/Device.vala:58
+#: src/Device.vala:58
 msgid "Webcam"
 msgstr "Веб-камера"
 
-#: ../src/Device.vala:60
+#: src/Device.vala:60
 msgid "Microphone"
 msgstr "Микрофон"
 
-#: ../src/Device.vala:62
+#: src/Device.vala:62
 msgid "Headset"
 msgstr "Наушники с микрофоном"
 
-#: ../src/Device.vala:64
+#: src/Device.vala:64
 msgid "Headphone"
 msgstr "Наушники"
 
-#: ../src/Device.vala:66
+#: src/Device.vala:66
 msgid "Hands-Free"
 msgstr "Гарнитура «Hands-free»"
 
-#: ../src/Device.vala:68
+#: src/Device.vala:68
 msgid "Car"
 msgstr "Автомобиль"
 
-#: ../src/Device.vala:70
+#: src/Device.vala:70
 msgid "HiFi"
 msgstr "HiFi"
 
-#: ../src/Device.vala:72
+#: src/Device.vala:72
 msgid "Computer"
 msgstr "Компьютер"
 
-#: ../src/Device.vala:74
+#: src/Device.vala:74
 msgid "Portable"
 msgstr "Портативное устройство"
-
-#: ../src/OutputPanel.vala:42
-msgid "Available Sound Output Devices:"
-msgstr "Доступные устройства вывода:"
-
-#: ../src/OutputPanel.vala:53
-msgid "Output Volume:"
-msgstr "Громкость вывода:"
-
-#: ../src/OutputPanel.vala:62
-msgid "Balance:"
-msgstr "Баланс:"
-
-#: ../src/OutputPanel.vala:68
-msgid "Left"
-msgstr "Левый"
-
-#: ../src/OutputPanel.vala:69
-msgid "Center"
-msgstr "Центр"
-
-#: ../src/OutputPanel.vala:70
-msgid "Right"
-msgstr "Правый"
-
-#: ../src/OutputPanel.vala:71
-msgid "Test Speakers…"
-msgstr "Проверка динамиков…"
-
-#: ../src/OutputPanel.vala:78
-msgid "No Output Device"
-msgstr "Нет устройств вывода"
-
-#: ../src/OutputPanel.vala:78
-msgid ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-msgstr ""
-"Устройство вывода не обнаружено. Возможно, вы захотите добавить его, чтобы "
-"начать что-нибудь слушать."
 
 #~ msgid "Device Profile:"
 #~ msgstr "Профиль устройства:"

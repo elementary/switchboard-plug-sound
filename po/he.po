@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"POT-Creation-Date: 2018-02-20 15:16-0800\n"
 "PO-Revision-Date: 2017-07-07 14:28+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard"
-"/switchboard-plug-sound/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,145 +20,145 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-10-19 06:26+0000\n"
 
-#: ../src/Plug.vala:36
+#: src/Plug.vala:36
 msgid "Sound"
 msgstr "צלילים"
 
-#: ../src/Plug.vala:37
+#: src/Plug.vala:37
 msgid "Change sound and microphone volume"
 msgstr "שינוי עצמת השמע לצליל ולמיקרופון"
 
-#: ../src/Plug.vala:54 ../src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
 msgstr "פלט"
 
-#: ../src/Plug.vala:55 ../src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
 msgstr "קלט"
 
-#: ../src/InputPanel.vala:44
+#: src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "התקנים זמינים לפלט צליל:"
+
+#: src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "עצמת השמע של הפלט:"
+
+#: src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "איזון:"
+
+#: src/OutputPanel.vala:68
+msgid "Left"
+msgstr "שמאל"
+
+#: src/OutputPanel.vala:69
+msgid "Center"
+msgstr "מרכז"
+
+#: src/OutputPanel.vala:70
+msgid "Right"
+msgstr "ימין"
+
+#: src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "בדיקת הרמקולים…"
+
+#: src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "אין התקן פלט"
+
+#: src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr "לא זוהה התקן פלט. יתכן שעדיף לך להוסיף אחד כדי להתחיל לשמוע משהו."
+
+#: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
 msgstr "התקני קלט שמע זמינים:"
 
-#: ../src/InputPanel.vala:54
+#: src/InputPanel.vala:54
 msgid "Input Volume:"
 msgstr "עצמת שמע של קלט:"
 
-#: ../src/InputPanel.vala:61
+#: src/InputPanel.vala:61
 msgid "Unamplified"
 msgstr "ללא הגברה"
 
-#: ../src/InputPanel.vala:62
+#: src/InputPanel.vala:62
 msgid "100%"
 msgstr "100%"
 
-#: ../src/InputPanel.vala:66
+#: src/InputPanel.vala:66
 msgid "Input Level:"
 msgstr "רמת הקלט:"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid "No Input Device"
 msgstr "אין התקן קלט"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr "לא זוהה התקן קלט. עדיף להוסיף אחד כדי להתחיל להקליט משהו."
 
-#: ../src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
 msgstr "זיהוי פסגה"
 
-#: ../src/Device.vala:50
+#: src/Device.vala:50
 msgid "Built-in"
 msgstr "מובנה"
 
-#: ../src/Device.vala:52
+#: src/Device.vala:52
 msgid "Speaker"
 msgstr "רמקול"
 
-#: ../src/Device.vala:54
+#: src/Device.vala:54
 msgid "Handset"
 msgstr "שפופרת"
 
-#: ../src/Device.vala:56
+#: src/Device.vala:56
 msgid "TV"
 msgstr "טלוויזיה"
 
-#: ../src/Device.vala:58
+#: src/Device.vala:58
 msgid "Webcam"
 msgstr "מצלמת רשת"
 
-#: ../src/Device.vala:60
+#: src/Device.vala:60
 msgid "Microphone"
 msgstr "מיקרופון"
 
-#: ../src/Device.vala:62
+#: src/Device.vala:62
 msgid "Headset"
 msgstr "אוזניות עם מיקרופון"
 
-#: ../src/Device.vala:64
+#: src/Device.vala:64
 msgid "Headphone"
 msgstr "אוזניות"
 
-#: ../src/Device.vala:66
+#: src/Device.vala:66
 msgid "Hands-Free"
 msgstr "דיבורית"
 
-#: ../src/Device.vala:68
+#: src/Device.vala:68
 msgid "Car"
 msgstr "רכב"
 
-#: ../src/Device.vala:70
+#: src/Device.vala:70
 msgid "HiFi"
 msgstr "איכות גבוהה"
 
-#: ../src/Device.vala:72
+#: src/Device.vala:72
 msgid "Computer"
 msgstr "מחשב"
 
-#: ../src/Device.vala:74
+#: src/Device.vala:74
 msgid "Portable"
 msgstr "נייד"
-
-#: ../src/OutputPanel.vala:42
-msgid "Available Sound Output Devices:"
-msgstr "התקנים זמינים לפלט צליל:"
-
-#: ../src/OutputPanel.vala:53
-msgid "Output Volume:"
-msgstr "עצמת השמע של הפלט:"
-
-#: ../src/OutputPanel.vala:62
-msgid "Balance:"
-msgstr "איזון:"
-
-#: ../src/OutputPanel.vala:68
-msgid "Left"
-msgstr "שמאל"
-
-#: ../src/OutputPanel.vala:69
-msgid "Center"
-msgstr "מרכז"
-
-#: ../src/OutputPanel.vala:70
-msgid "Right"
-msgstr "ימין"
-
-#: ../src/OutputPanel.vala:71
-msgid "Test Speakers…"
-msgstr "בדיקת הרמקולים…"
-
-#: ../src/OutputPanel.vala:78
-msgid "No Output Device"
-msgstr "אין התקן פלט"
-
-#: ../src/OutputPanel.vala:78
-msgid ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-msgstr "לא זוהה התקן פלט. יתכן שעדיף לך להוסיף אחד כדי להתחיל לשמוע משהו."
 
 #~ msgid "Device Profile:"
 #~ msgstr "פרופיל ההתקן:"

@@ -7,61 +7,101 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"POT-Creation-Date: 2018-02-20 15:16-0800\n"
 "PO-Revision-Date: 2017-07-08 11:59+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard"
-"/switchboard-plug-sound/lt/>\n"
+"Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"(n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: ../src/Plug.vala:36
+#: src/Plug.vala:36
 msgid "Sound"
 msgstr "Garsas"
 
-#: ../src/Plug.vala:37
+#: src/Plug.vala:37
 msgid "Change sound and microphone volume"
 msgstr "Keisti garso ir mikrofono garsį"
 
-#: ../src/Plug.vala:54 ../src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
 msgstr "Išvestis"
 
-#: ../src/Plug.vala:55 ../src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
 msgstr "Įvestis"
 
-#: ../src/InputPanel.vala:44
+#: src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "Prieinami garso išvesties įrenginiai:"
+
+#: src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "Išvesties garsis:"
+
+#: src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "Balansas:"
+
+#: src/OutputPanel.vala:68
+msgid "Left"
+msgstr "Kairė"
+
+#: src/OutputPanel.vala:69
+msgid "Center"
+msgstr "Vidurys"
+
+#: src/OutputPanel.vala:70
+msgid "Right"
+msgstr "Dešinė"
+
+#: src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "Išbandyti garsiakalbius…"
+
+#: src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "Nėra išvesties įrenginio"
+
+#: src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+"Nėra aptikta jokio išvesties įrenginio. Norėdami pradėti kažko klausytis, "
+"jūs, tikriausiai, norėtumėte pridėti išvesties įrenginį."
+
+#: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
 msgstr "Prieinami garso įvesties įrenginiai:"
 
-#: ../src/InputPanel.vala:54
+#: src/InputPanel.vala:54
 msgid "Input Volume:"
 msgstr "Įvesties garsis:"
 
-#: ../src/InputPanel.vala:61
+#: src/InputPanel.vala:61
 msgid "Unamplified"
 msgstr "Nesustiprintas"
 
-#: ../src/InputPanel.vala:62
+#: src/InputPanel.vala:62
 msgid "100%"
 msgstr "100%"
 
-#: ../src/InputPanel.vala:66
+#: src/InputPanel.vala:66
 msgid "Input Level:"
 msgstr "Įvesties lygis:"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid "No Input Device"
 msgstr "Nėra įvesties įrenginio"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -69,101 +109,61 @@ msgstr ""
 "Nėra aptikta jokio įvesties įrenginio. Norėdami pradėti kažką įrašinėti, "
 "jūs, tikriausiai, norėtumėte pridėti įvesties įrenginį."
 
-#: ../src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
 msgstr "Piko aptikimas"
 
-#: ../src/Device.vala:50
+#: src/Device.vala:50
 msgid "Built-in"
 msgstr "Įtaisyta"
 
-#: ../src/Device.vala:52
+#: src/Device.vala:52
 msgid "Speaker"
 msgstr "Garsiakalbis"
 
-#: ../src/Device.vala:54
+#: src/Device.vala:54
 msgid "Handset"
 msgstr "Telefono ragelis"
 
-#: ../src/Device.vala:56
+#: src/Device.vala:56
 msgid "TV"
 msgstr "Televizorius"
 
-#: ../src/Device.vala:58
+#: src/Device.vala:58
 msgid "Webcam"
 msgstr "Vaizdo kamera"
 
-#: ../src/Device.vala:60
+#: src/Device.vala:60
 msgid "Microphone"
 msgstr "Mikrofonas"
 
-#: ../src/Device.vala:62
+#: src/Device.vala:62
 msgid "Headset"
 msgstr "Ausinės su mikrofonu"
 
-#: ../src/Device.vala:64
+#: src/Device.vala:64
 msgid "Headphone"
 msgstr "Ausinės"
 
-#: ../src/Device.vala:66
+#: src/Device.vala:66
 msgid "Hands-Free"
 msgstr "Laisvų rankų įranga"
 
-#: ../src/Device.vala:68
+#: src/Device.vala:68
 msgid "Car"
 msgstr "Automobilis"
 
-#: ../src/Device.vala:70
+#: src/Device.vala:70
 msgid "HiFi"
 msgstr "HiFi"
 
-#: ../src/Device.vala:72
+#: src/Device.vala:72
 msgid "Computer"
 msgstr "Kompiuteris"
 
-#: ../src/Device.vala:74
+#: src/Device.vala:74
 msgid "Portable"
 msgstr "Portatyvi sistema"
-
-#: ../src/OutputPanel.vala:42
-msgid "Available Sound Output Devices:"
-msgstr "Prieinami garso išvesties įrenginiai:"
-
-#: ../src/OutputPanel.vala:53
-msgid "Output Volume:"
-msgstr "Išvesties garsis:"
-
-#: ../src/OutputPanel.vala:62
-msgid "Balance:"
-msgstr "Balansas:"
-
-#: ../src/OutputPanel.vala:68
-msgid "Left"
-msgstr "Kairė"
-
-#: ../src/OutputPanel.vala:69
-msgid "Center"
-msgstr "Vidurys"
-
-#: ../src/OutputPanel.vala:70
-msgid "Right"
-msgstr "Dešinė"
-
-#: ../src/OutputPanel.vala:71
-msgid "Test Speakers…"
-msgstr "Išbandyti garsiakalbius…"
-
-#: ../src/OutputPanel.vala:78
-msgid "No Output Device"
-msgstr "Nėra išvesties įrenginio"
-
-#: ../src/OutputPanel.vala:78
-msgid ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-msgstr ""
-"Nėra aptikta jokio išvesties įrenginio. Norėdami pradėti kažko klausytis, "
-"jūs, tikriausiai, norėtumėte pridėti išvesties įrenginį."
 
 #~ msgid "Device Profile:"
 #~ msgstr "Įrenginio profilis:"
