@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2017-04-17 15:04+0000\n"
+"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"PO-Revision-Date: 2017-08-16 11:47+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
-"Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
+"Language-Team: Croatian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -18,50 +18,90 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: ../src/Plug.vala:36
+#: src/Plug.vala:36
 msgid "Sound"
-msgstr "Zvuk"
+msgstr "Zvukovi"
 
-#: ../src/Plug.vala:37
+#: src/Plug.vala:37
 msgid "Change sound and microphone volume"
 msgstr "Promijenite glasnoću zvuka i mikrofona"
 
-#: ../src/Plug.vala:54 ../src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
 msgstr "Izlaz"
 
-#: ../src/Plug.vala:55 ../src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
 msgstr "Ulaz"
 
-#: ../src/InputPanel.vala:44
+#: src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "Dostupni uređaji ulaza zvuka:"
+
+#: src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "Glasnoća zvuka izlaza:"
+
+#: src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "Uravnoteženje:"
+
+#: src/OutputPanel.vala:68
+msgid "Left"
+msgstr "Lijeva"
+
+#: src/OutputPanel.vala:69
+msgid "Center"
+msgstr "Sredina"
+
+#: src/OutputPanel.vala:70
+msgid "Right"
+msgstr "Desna"
+
+#: src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "Testiranje zvučnika…"
+
+#: src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "Nema izlaznih uređaja"
+
+#: src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+"Nema otkrivenih izlaznih uređaja. Možda želite dodati jedan uređaj kako bi "
+"započeli nešto slušati."
+
+#: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
 msgstr "Dostupni uređaji izlaza zvuka:"
 
-#: ../src/InputPanel.vala:54
+#: src/InputPanel.vala:54
 msgid "Input Volume:"
 msgstr "Glasnoća zvuka ukaza:"
 
-#: ../src/InputPanel.vala:61
+#: src/InputPanel.vala:61
 msgid "Unamplified"
 msgstr "Utišano"
 
-#: ../src/InputPanel.vala:62
+#: src/InputPanel.vala:62
 msgid "100%"
 msgstr "100%"
 
-#: ../src/InputPanel.vala:66
+#: src/InputPanel.vala:66
 msgid "Input Level:"
 msgstr "Razina ulaza:"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid "No Input Device"
 msgstr "Nema ulaznog uređaja"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -69,103 +109,61 @@ msgstr ""
 "Nema otkrivenog ulaznog uređaja. Možda želite dodati jedan uređaj kako bi "
 "nešto započeli snimati."
 
-#: ../src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
 msgstr ""
 
-#: ../src/Device.vala:50
-#, fuzzy
+#: src/Device.vala:50
 msgid "Built-in"
-msgstr "Temeljen na %s"
+msgstr "Ugrađen"
 
-#: ../src/Device.vala:52
-#, fuzzy
+#: src/Device.vala:52
 msgid "Speaker"
-msgstr "Testiranje zvučnika…"
+msgstr "Zvučnik"
 
-#: ../src/Device.vala:54
+#: src/Device.vala:54
 msgid "Handset"
 msgstr ""
 
-#: ../src/Device.vala:56
+#: src/Device.vala:56
 msgid "TV"
 msgstr ""
 
-#: ../src/Device.vala:58
+#: src/Device.vala:58
 msgid "Webcam"
 msgstr ""
 
-#: ../src/Device.vala:60
+#: src/Device.vala:60
 msgid "Microphone"
 msgstr ""
 
-#: ../src/Device.vala:62
+#: src/Device.vala:62
 msgid "Headset"
 msgstr ""
 
-#: ../src/Device.vala:64
+#: src/Device.vala:64
 msgid "Headphone"
 msgstr ""
 
-#: ../src/Device.vala:66
+#: src/Device.vala:66
 msgid "Hands-Free"
 msgstr ""
 
-#: ../src/Device.vala:68
+#: src/Device.vala:68
 msgid "Car"
 msgstr ""
 
-#: ../src/Device.vala:70
+#: src/Device.vala:70
 msgid "HiFi"
 msgstr ""
 
-#: ../src/Device.vala:72
+#: src/Device.vala:72
 msgid "Computer"
 msgstr ""
 
-#: ../src/Device.vala:74
+#: src/Device.vala:74
 msgid "Portable"
 msgstr ""
-
-#: ../src/OutputPanel.vala:42
-msgid "Available Sound Output Devices:"
-msgstr "Dostupni uređaji ulaza zvuka:"
-
-#: ../src/OutputPanel.vala:53
-msgid "Output Volume:"
-msgstr "Glasnoća zvuka izlaza:"
-
-#: ../src/OutputPanel.vala:62
-msgid "Balance:"
-msgstr "Uravnoteženje:"
-
-#: ../src/OutputPanel.vala:68
-msgid "Left"
-msgstr "Lijeva"
-
-#: ../src/OutputPanel.vala:69
-msgid "Center"
-msgstr "Sredina"
-
-#: ../src/OutputPanel.vala:70
-msgid "Right"
-msgstr "Desna"
-
-#: ../src/OutputPanel.vala:71
-msgid "Test Speakers…"
-msgstr "Testiranje zvučnika…"
-
-#: ../src/OutputPanel.vala:78
-msgid "No Output Device"
-msgstr "Nema izlaznih uređaja"
-
-#: ../src/OutputPanel.vala:78
-msgid ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-msgstr ""
-"Nema otkrivenih izlaznih uređaja. Možda želite dodati jedan uređaj kako bi "
-"započeli nešto slušati."
 
 #~ msgid "Device Profile:"
 #~ msgstr "Profil uređaja:"

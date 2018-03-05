@@ -1,17 +1,18 @@
 Source: switchboard-plug-sound
 Section: x11
 Priority: optional
-Maintainer: Corentin Noël <corentin@elementary.io>
-Build-Depends: cmake,
-               debhelper (>= 9),
+Maintainer: elementary OS Team <builds@elementary.io>
+Build-Depends: debhelper (>= 10.5.1),
+               gettext,
                libcanberra-dev,
                libcanberra-gtk-dev,
                libgranite-dev,
                libpulse-dev,
                libswitchboard-2.0-dev,
+               meson,
                valac (>= 0.22)
-Standards-Version: 3.9.2
-Homepage: https://launchpad.net/switchboard-plug-sound
+Standards-Version: 4.1.1
+Homepage: https://github.com/elementary/switchboard-plug-sound
 
 Package: switchboard-plug-sound
 Architecture: any
@@ -20,17 +21,5 @@ Enhances: switchboard
 Conflicts: switchboard-plug-gcc-sound
 Replaces: switchboard-plug-gcc-sound
 Description: Sound plug for Switchboard
- This plug allow to set the audio and microphone volume and several 
+ This plug allows the user to set the audio and microphone volume and several 
  sound-related settings.
-
-Package: switchboard-plug-sound-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: switchboard-plug-sound (= ${binary:Version}), ${misc:Depends}
-Enhances: switchboard-plug-sound
-Description: Sound plug for Switchboard (debugging symbols)
- This plug allow to set the audio and microphone volume and several 
- sound-related settings.
- .
- This package contains debugging symbols for switchboard-plug-sound.

@@ -14,8 +14,8 @@
  *
  * You should have received a copy of the GNU Library General Public
  * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ * Boston, MA 02110-1301 USA.
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
@@ -46,10 +46,12 @@ public class Sound.Plug : Switchboard.Plug {
 
             stack = new Gtk.Stack ();
             stack.expand = true;
+
             var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.margin = 12;
             stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.set_stack (stack);
+            stack_switcher.homogeneous = true;
+            stack_switcher.margin = 12;
+            stack_switcher.stack = stack;
 
             stack.add_titled (output_panel, "output", _("Output"));
             stack.add_titled (input_panel, "input", _("Input"));

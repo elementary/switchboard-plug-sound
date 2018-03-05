@@ -1,0 +1,8 @@
+src/TestPopover.vala
+src/PulseAudioManager.vala
+src/Plug.vala
+src/OutputPanel.vala
+src/InputPanel.vala
+src/InputDeviceMonitor.vala
+src/DeviceRow.vala
+src/Device.vala

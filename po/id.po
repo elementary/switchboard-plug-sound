@@ -2,161 +2,166 @@
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the switchboard-plug-about package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 07:55+0300\n"
-"PO-Revision-Date: 2014-12-17 04:52+0000\n"
-"Last-Translator: Yudha Yudhistira <yudhayudhistira94@yahoo.co.id>\n"
-"Language-Team: Indonesian <id@li.org>\n"
+"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"PO-Revision-Date: 2017-08-31 15:17+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"Language-Team: Indonesian <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-sound/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
-#: ../src/Plug.vala:36
+#: src/Plug.vala:36
 msgid "Sound"
-msgstr ""
+msgstr "Suara"
 
-#: ../src/Plug.vala:37
+#: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Ubah volume suara dan mikrofon"
 
-#: ../src/Plug.vala:54 ../src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Keluaran"
 
-#: ../src/Plug.vala:55 ../src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Masukan"
 
-#: ../src/InputPanel.vala:44
-msgid "Available Sound Input Devices:"
-msgstr ""
-
-#: ../src/InputPanel.vala:54
-msgid "Input Volume:"
-msgstr ""
-
-#: ../src/InputPanel.vala:61
-msgid "Unamplified"
-msgstr ""
-
-#: ../src/InputPanel.vala:62
-msgid "100%"
-msgstr ""
-
-#: ../src/InputPanel.vala:66
-msgid "Input Level:"
-msgstr ""
-
-#: ../src/InputPanel.vala:76
-msgid "No Input Device"
-msgstr ""
-
-#: ../src/InputPanel.vala:76
-msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
-msgstr ""
-
-#: ../src/InputDeviceMonitor.vala:78
-msgid "Peak detect"
-msgstr ""
-
-#: ../src/Device.vala:50
-msgid "Built-in"
-msgstr ""
-
-#: ../src/Device.vala:52
-msgid "Speaker"
-msgstr ""
-
-#: ../src/Device.vala:54
-msgid "Handset"
-msgstr ""
-
-#: ../src/Device.vala:56
-msgid "TV"
-msgstr ""
-
-#: ../src/Device.vala:58
-msgid "Webcam"
-msgstr ""
-
-#: ../src/Device.vala:60
-msgid "Microphone"
-msgstr ""
-
-#: ../src/Device.vala:62
-msgid "Headset"
-msgstr ""
-
-#: ../src/Device.vala:64
-msgid "Headphone"
-msgstr ""
-
-#: ../src/Device.vala:66
-msgid "Hands-Free"
-msgstr ""
-
-#: ../src/Device.vala:68
-msgid "Car"
-msgstr ""
-
-#: ../src/Device.vala:70
-msgid "HiFi"
-msgstr ""
-
-#: ../src/Device.vala:72
-msgid "Computer"
-msgstr ""
-
-#: ../src/Device.vala:74
-msgid "Portable"
-msgstr ""
-
-#: ../src/OutputPanel.vala:42
+#: src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Perangkat Keluaran Suara yang Tersedia:"
 
-#: ../src/OutputPanel.vala:53
+#: src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Volume Keluaran:"
 
-#: ../src/OutputPanel.vala:62
+#: src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Balans:"
 
-#: ../src/OutputPanel.vala:68
+#: src/OutputPanel.vala:68
 msgid "Left"
-msgstr ""
+msgstr "Kiri"
 
-#: ../src/OutputPanel.vala:69
+#: src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "Tengah"
 
-#: ../src/OutputPanel.vala:70
+#: src/OutputPanel.vala:70
 msgid "Right"
-msgstr ""
+msgstr "Kanan"
 
-#: ../src/OutputPanel.vala:71
+#: src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Uji Speaker…"
 
-#: ../src/OutputPanel.vala:78
+#: src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Tidak Ada Perangkat Keluaran"
 
-#: ../src/OutputPanel.vala:78
+#: src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Tidak ada perangkat keluaran yang terdeteksi. Anda mungkin ingin "
+"menambahkannya untuk mulai mendengarkan apapun."
+
+#: src/InputPanel.vala:44
+msgid "Available Sound Input Devices:"
+msgstr "Perangkat Masukan Suara yang Tersedia:"
+
+#: src/InputPanel.vala:54
+msgid "Input Volume:"
+msgstr "Volume Masukan:"
+
+#: src/InputPanel.vala:61
+msgid "Unamplified"
+msgstr "Tak diperkuat"
+
+#: src/InputPanel.vala:62
+msgid "100%"
+msgstr "100%"
+
+#: src/InputPanel.vala:66
+msgid "Input Level:"
+msgstr "Tingkat Masukan:"
+
+#: src/InputPanel.vala:76
+msgid "No Input Device"
+msgstr "Tidak Ada Perangkat Masukan"
+
+#: src/InputPanel.vala:76
+msgid ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
+msgstr ""
+"Tidak ada perangkat masukan yang terdeteksi. Anda mungkin ingin "
+"menambahkannya untuk mulai merekam apapun."
+
+#: src/InputDeviceMonitor.vala:78
+msgid "Peak detect"
+msgstr "Deteksi puncak"
+
+#: src/Device.vala:50
+msgid "Built-in"
+msgstr "Built-in"
+
+#: src/Device.vala:52
+msgid "Speaker"
+msgstr "Speaker"
+
+#: src/Device.vala:54
+msgid "Handset"
+msgstr "Handset"
+
+#: src/Device.vala:56
+msgid "TV"
+msgstr "TV"
+
+#: src/Device.vala:58
+msgid "Webcam"
+msgstr "Webkam"
+
+#: src/Device.vala:60
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#: src/Device.vala:62
+msgid "Headset"
+msgstr "Headset"
+
+#: src/Device.vala:64
+msgid "Headphone"
+msgstr "Headphone"
+
+#: src/Device.vala:66
+msgid "Hands-Free"
+msgstr "Mode instruksi memasak hands-free"
+
+#: src/Device.vala:68
+msgid "Car"
+msgstr "Mobil"
+
+#: src/Device.vala:70
+msgid "HiFi"
+msgstr "HiFi"
+
+#: src/Device.vala:72
+msgid "Computer"
+msgstr "Komputer"
+
+#: src/Device.vala:74
+msgid "Portable"
+msgstr "Portabel"
 
 #~ msgid "About"
 #~ msgstr "Keterangan"

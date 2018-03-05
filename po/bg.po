@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 07:55+0300\n"
+"POT-Creation-Date: 2018-02-20 15:16-0800\n"
 "PO-Revision-Date: 2017-04-14 16:34+0000\n"
 "Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -20,47 +20,87 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: ../src/Plug.vala:36
+#: src/Plug.vala:36
 msgid "Sound"
 msgstr "Звук"
 
-#: ../src/Plug.vala:37
+#: src/Plug.vala:37
 msgid "Change sound and microphone volume"
 msgstr "Сила на звука и микрофона"
 
-#: ../src/Plug.vala:54 ../src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
 msgstr "Звук"
 
-#: ../src/Plug.vala:55 ../src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
 msgstr "Микрофон"
 
-#: ../src/InputPanel.vala:44
+#: src/OutputPanel.vala:42
+msgid "Available Sound Output Devices:"
+msgstr "Устройства за възпроизвеждане на звук:"
+
+#: src/OutputPanel.vala:53
+msgid "Output Volume:"
+msgstr "Сила на звука:"
+
+#: src/OutputPanel.vala:62
+msgid "Balance:"
+msgstr "Баланс:"
+
+#: src/OutputPanel.vala:68
+msgid "Left"
+msgstr "Ляво"
+
+#: src/OutputPanel.vala:69
+msgid "Center"
+msgstr "Център"
+
+#: src/OutputPanel.vala:70
+msgid "Right"
+msgstr "Дясно"
+
+#: src/OutputPanel.vala:71
+msgid "Test Speakers…"
+msgstr "Проверка на звука…"
+
+#: src/OutputPanel.vala:78
+msgid "No Output Device"
+msgstr "Липсват устройства за възпроизвеждане на звук"
+
+#: src/OutputPanel.vala:78
+msgid ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
+msgstr ""
+"Не бяха открити устройства за възпроизвеждане на звук - моля свържете "
+"устройство."
+
+#: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
 msgstr "Микрофони:"
 
-#: ../src/InputPanel.vala:54
+#: src/InputPanel.vala:54
 msgid "Input Volume:"
 msgstr "Сила на микрофона:"
 
-#: ../src/InputPanel.vala:61
+#: src/InputPanel.vala:61
 msgid "Unamplified"
 msgstr "Неусилиен"
 
-#: ../src/InputPanel.vala:62
+#: src/InputPanel.vala:62
 msgid "100%"
 msgstr "100%"
 
-#: ../src/InputPanel.vala:66
+#: src/InputPanel.vala:66
 msgid "Input Level:"
 msgstr "Ниво:"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid "No Input Device"
 msgstr "Липсват микрофони"
 
-#: ../src/InputPanel.vala:76
+#: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -68,103 +108,63 @@ msgstr ""
 "Не бяха открити устройства. Моля свържете микрофон ако искате да записвате "
 "звук."
 
-#: ../src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
 msgstr ""
 
-#: ../src/Device.vala:50
+#: src/Device.vala:50
 #, fuzzy
 msgid "Built-in"
 msgstr "Базирана на %s"
 
-#: ../src/Device.vala:52
+#: src/Device.vala:52
 #, fuzzy
 msgid "Speaker"
 msgstr "Проверка на звука…"
 
-#: ../src/Device.vala:54
+#: src/Device.vala:54
 msgid "Handset"
 msgstr ""
 
-#: ../src/Device.vala:56
+#: src/Device.vala:56
 msgid "TV"
 msgstr ""
 
-#: ../src/Device.vala:58
+#: src/Device.vala:58
 msgid "Webcam"
 msgstr ""
 
-#: ../src/Device.vala:60
+#: src/Device.vala:60
 msgid "Microphone"
 msgstr ""
 
-#: ../src/Device.vala:62
+#: src/Device.vala:62
 msgid "Headset"
 msgstr ""
 
-#: ../src/Device.vala:64
+#: src/Device.vala:64
 msgid "Headphone"
 msgstr ""
 
-#: ../src/Device.vala:66
+#: src/Device.vala:66
 msgid "Hands-Free"
 msgstr ""
 
-#: ../src/Device.vala:68
+#: src/Device.vala:68
 msgid "Car"
 msgstr ""
 
-#: ../src/Device.vala:70
+#: src/Device.vala:70
 msgid "HiFi"
 msgstr ""
 
-#: ../src/Device.vala:72
+#: src/Device.vala:72
 msgid "Computer"
 msgstr ""
 
-#: ../src/Device.vala:74
+#: src/Device.vala:74
 msgid "Portable"
 msgstr ""
-
-#: ../src/OutputPanel.vala:42
-msgid "Available Sound Output Devices:"
-msgstr "Устройства за възпроизвеждане на звук:"
-
-#: ../src/OutputPanel.vala:53
-msgid "Output Volume:"
-msgstr "Сила на звука:"
-
-#: ../src/OutputPanel.vala:62
-msgid "Balance:"
-msgstr "Баланс:"
-
-#: ../src/OutputPanel.vala:68
-msgid "Left"
-msgstr "Ляво"
-
-#: ../src/OutputPanel.vala:69
-msgid "Center"
-msgstr "Център"
-
-#: ../src/OutputPanel.vala:70
-msgid "Right"
-msgstr "Дясно"
-
-#: ../src/OutputPanel.vala:71
-msgid "Test Speakers…"
-msgstr "Проверка на звука…"
-
-#: ../src/OutputPanel.vala:78
-msgid "No Output Device"
-msgstr "Липсват устройства за възпроизвеждане на звук"
-
-#: ../src/OutputPanel.vala:78
-msgid ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-msgstr ""
-"Не бяха открити устройства за възпроизвеждане на звук - моля свържете "
-"устройство."
 
 #~ msgid "Device Profile:"
 #~ msgstr "Профил:"
