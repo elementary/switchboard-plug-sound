@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 15:16-0800\n"
-"PO-Revision-Date: 2018-02-24 00:04+0000\n"
+"PO-Revision-Date: 2018-03-08 16:25+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -27,27 +27,27 @@ msgstr "Sound"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Change sound and microphone volume"
 
 #: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Output"
 
 #: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Input"
 
 #: src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Available Sound Output Devices:"
 
 #: src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Output Volume:"
 
 #: src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Balance:"
 
 #: src/OutputPanel.vala:68
 msgid "Left"
@@ -63,103 +63,107 @@ msgstr "Right"
 
 #: src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Test Speakers…"
 
 #: src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "No Output Device"
 
 #: src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"There is no output device detected. You might want to add one to start "
+"listening to anything."
 
 #: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Available Sound Input Devices:"
 
 #: src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr ""
+msgstr "Input Volume:"
 
 #: src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Unamplified"
 
 #: src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr ""
+msgstr "Input Level:"
 
 #: src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "No Input Device"
 
 #: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"There is no input device detected. You might want to add one to start "
+"recording anything."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Peak detect"
 
 #: src/Device.vala:50
 msgid "Built-in"
-msgstr ""
+msgstr "Built-in"
 
 #: src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "Speaker"
 
 #: src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "Handset"
 
 #: src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Webcam"
 
 #: src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Microphone"
 
 #: src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "Headset"
 
 #: src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Headphone"
 
 #: src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Hands-Free"
 
 #: src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Car"
 
 #: src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Computer"
 
 #: src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Portable"
 
 #~ msgid "About"
 #~ msgstr "About"
