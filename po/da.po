@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 15:16-0800\n"
-"PO-Revision-Date: 2018-03-25 00:09+0000\n"
+"PO-Revision-Date: 2018-03-31 21:28+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/da/>\n"
@@ -26,27 +26,27 @@ msgstr "Lyd"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Ændre lyd- og mikrofonvolumen"
 
 #: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Udgang"
 
 #: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Indgang"
 
 #: src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Tilgængelige lydudgangsenheder:"
 
 #: src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Udgangsvolumen:"
 
 #: src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Balance:"
 
 #: src/OutputPanel.vala:68
 msgid "Left"
@@ -54,7 +54,7 @@ msgstr "Venstre"
 
 #: src/OutputPanel.vala:69
 msgid "Center"
-msgstr ""
+msgstr "Center"
 
 #: src/OutputPanel.vala:70
 msgid "Right"
@@ -62,103 +62,107 @@ msgstr "Højre"
 
 #: src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Test Højttalere…"
 
 #: src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Ingen Udgangsenhed"
 
 #: src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Der er ikke registreret nogen udgangsenhed. Tilføj en for at kunne afspille "
+"noget."
 
 #: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Tilgængelige Lydindgangsenheder:"
 
 #: src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr ""
+msgstr "Indgangsvolumen:"
 
 #: src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Uamplificeret"
 
 #: src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr ""
+msgstr "Indgangsniveau:"
 
 #: src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "Ingen Indgangsenhed"
 
 #: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Der er ikke registreret en indgangsenhed. Tilføj en for at kunne optage "
+"noget."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Peak detektion"
 
 #: src/Device.vala:50
 msgid "Built-in"
-msgstr ""
+msgstr "Indbygget"
 
 #: src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "Højttaler"
 
 #: src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "Trådløs telefon"
 
 #: src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Webcam"
 
 #: src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "Headset"
 
 #: src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Hovedtelefoner"
 
 #: src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Håndfri"
 
 #: src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Bil"
 
 #: src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Computer"
 
 #: src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Transportabel"
 
 #~ msgid "About"
 #~ msgstr "Om"
