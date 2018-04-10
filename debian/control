@@ -5,7 +5,7 @@ Maintainer: elementary OS Team <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                gettext,
                libcanberra-dev,
-               libcanberra-gtk-dev,
+               libcanberra-gtk3-dev,
                libgranite-dev,
                libpulse-dev,
                libswitchboard-2.0-dev,
