@@ -23,7 +23,7 @@ shared_module(
         dependency('libpulse'),
         dependency('libpulse-mainloop-glib'),
         dependency('libcanberra'),
-        dependency('libcanberra-gtk'),
+        dependency('libcanberra-gtk3'),
         meson.get_compiler('vala').find_library('libpulse-ext', dirs: join_paths(meson.source_root(), 'vapi')),
         switchboard_dep
     ],

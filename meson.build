@@ -9,6 +9,11 @@ add_project_arguments(
     language:'c'
 )
 
+add_project_arguments(
+    ['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
+    language: 'vala'
+)
+
 plug_resources = gnome.compile_resources(
     'plug_resources',
     'data/icons.gresource.xml',
