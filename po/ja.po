@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 15:16-0800\n"
-"PO-Revision-Date: 2017-07-09 02:49+0000\n"
-"Last-Translator: Ryo Nakano <rmfmada3q@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-sound/ja/>\n"
+"PO-Revision-Date: 2018-05-03 14:32+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-sound/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-10-16 06:42+0000\n"
 
 #: src/Plug.vala:36
@@ -38,15 +38,15 @@ msgstr "入力"
 
 #: src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr "利用可能なサウンドの出力デバイス："
+msgstr "利用可能なサウンドの出力デバイス:"
 
 #: src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr "出力のボリューム："
+msgstr "出力のボリューム:"
 
 #: src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr "バランス："
+msgstr "バランス:"
 
 #: src/OutputPanel.vala:68
 msgid "Left"
@@ -72,15 +72,15 @@ msgstr "出力デバイスがありません"
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
-msgstr ""
+msgstr "出力デバイスが検出されませんでした。何かを聞くには出力デバイスを追加するといいでしょう。"
 
 #: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr "利用可能なサウンドの入力デバイス："
+msgstr "利用可能なサウンドの入力デバイス:"
 
 #: src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr "入力のボリューム："
+msgstr "入力のボリューム:"
 
 #: src/InputPanel.vala:61
 msgid "Unamplified"
@@ -92,7 +92,7 @@ msgstr "100%"
 
 #: src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr "入力のレベル："
+msgstr "入力のレベル:"
 
 #: src/InputPanel.vala:76
 msgid "No Input Device"
@@ -102,7 +102,7 @@ msgstr "入力デバイスがありません"
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
-msgstr ""
+msgstr "入力デバイスが検出されませんでした。何かを録音するには入力デバイスを追加するといいでしょう。"
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
@@ -146,7 +146,7 @@ msgstr "ハンズフリー"
 
 #: src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "車"
 
 #: src/Device.vala:70
 msgid "HiFi"
