@@ -29,6 +29,7 @@ public class Sound.Device : GLib.Object {
     public string name { get; set; }
     public string display_name { get; set; }
     public string form_factor { get; set; }
+    public string? parent_device_name { get; set; default=null; }
     public bool is_default { get; set; default=false; }
     public bool is_muted { get; set; default=false; }
     public PulseAudio.CVolume cvolume { get; set; }

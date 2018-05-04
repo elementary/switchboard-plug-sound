@@ -90,7 +90,7 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
-        pam.notify["default-output"].connect (() => {
+        pam.default_output_changed.connect (() => {
             default_changed ();
         });
 
@@ -107,7 +107,7 @@ public class Sound.OutputPanel : Gtk.Grid {
                 default_device.notify.disconnect (device_notify);
             }
 
-            default_device = pam.default_output;
+            default_device = pam.get_real_default_output ();
             if (default_device != null) {
                 volume_switch.active = !default_device.is_muted;
                 volume_scale.set_value (default_device.volume);

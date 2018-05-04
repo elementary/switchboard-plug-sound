@@ -39,7 +39,7 @@ public class Sound.TestPopover : Gtk.Popover {
         add (main_grid);
 
         unowned PulseAudioManager pam = PulseAudioManager.get_default ();
-        pam.notify["default-output"].connect (() => {
+        pam.default_output_changed.connect (() => {
             default_changed ();
         });
 
@@ -96,7 +96,7 @@ public class Sound.TestPopover : Gtk.Popover {
         }
 
         unowned PulseAudioManager pam = PulseAudioManager.get_default ();
-        default_device = pam.default_output;
+        default_device = pam.get_real_default_output ();
         default_device.notify.connect (device_notify);
         add_buttons ();
     }
