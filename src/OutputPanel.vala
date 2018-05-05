@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2016-2018 elemntary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -27,12 +27,9 @@ public class Sound.OutputPanel : Gtk.Grid {
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
     Gtk.Scale balance_scale;
+    Gtk.ComboBoxText ports_dropdown;
 
     private Device default_device = null;
-
-    public OutputPanel () {
-        
-    }
 
     construct {
         margin = 12;
@@ -50,6 +47,12 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_frame.expand = true;
         devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
+
+        var ports_label = new Gtk.Label (_("Output Port:"));
+        ports_label.halign = Gtk.Align.END;
+        ports_dropdown = new Gtk.ComboBoxText ();
+        ports_dropdown.changed.connect (port_changed);
+
         var volume_label = new Gtk.Label (_("Output Volume:"));
         volume_label.halign = Gtk.Align.END;
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
@@ -81,12 +84,14 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         attach (available_label, 0, 0, 3, 1);
         attach (devices_frame, 0, 1, 3, 1);
-        attach (volume_label, 0, 2, 1, 1);
-        attach (volume_scale, 1, 2, 1, 1);
-        attach (volume_switch, 2, 2, 1, 1);
-        attach (balance_label, 0, 3, 1, 1);
-        attach (balance_scale, 1, 3, 1, 1);
-        attach (test_button, 0, 4, 3, 1);
+        attach (ports_label, 0, 2, 1, 1);
+        attach (ports_dropdown, 1, 2, 1, 1);
+        attach (volume_label, 0, 3, 1, 1);
+        attach (volume_scale, 1, 3, 1, 1);
+        attach (volume_switch, 2, 3, 1, 1);
+        attach (balance_label, 0, 4, 1, 1);
+        attach (balance_scale, 1, 4, 1, 1);
+        attach (test_button, 0, 5, 3, 1);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -112,6 +117,9 @@ public class Sound.OutputPanel : Gtk.Grid {
                 volume_switch.active = !default_device.is_muted;
                 volume_scale.set_value (default_device.volume);
                 balance_scale.set_value (default_device.balance);
+
+                rebuild_ports_dropdown ();
+
                 default_device.notify.connect (device_notify);
             }
         }
@@ -119,16 +127,24 @@ public class Sound.OutputPanel : Gtk.Grid {
         connect_signals ();
     }
 
+    private void port_changed () {
+        disconnect_signals ();
+        pam.context.set_sink_port_by_index (default_device.index, ports_dropdown.active_id);
+        connect_signals ();
+    }
+
     private void disconnect_signals () {
         volume_switch.notify["active"].disconnect (volume_switch_changed);
         volume_scale.value_changed.disconnect (volume_scale_value_changed);
         balance_scale.value_changed.disconnect (balance_scale_value_changed);
+        ports_dropdown.changed.disconnect (port_changed);
     }
 
     private void connect_signals () {
         volume_switch.notify["active"].connect (volume_switch_changed);
         volume_scale.value_changed.connect (volume_scale_value_changed);
         balance_scale.value_changed.connect (balance_scale_value_changed);
+        ports_dropdown.changed.connect (port_changed);
     }
 
     private void volume_scale_value_changed () {
@@ -161,9 +177,25 @@ public class Sound.OutputPanel : Gtk.Grid {
             case "balance":
                 balance_scale.set_value (default_device.balance);
                 break;
+            case "default-port":
+                ports_dropdown.active_id = default_device.default_port.name;
+                break;
+            case "ports":
+                rebuild_ports_dropdown ();
+                break;
         }
 
         connect_signals ();
+    }
+
+    private void rebuild_ports_dropdown () {
+        ports_dropdown.remove_all ();
+
+        foreach (var port in default_device.ports) {
+            ports_dropdown.append (port.name, port.description);
+        }
+
+        ports_dropdown.active_id = default_device.default_port.name;
     }
 
     private void add_device (Device device) {
