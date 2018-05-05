@@ -129,9 +129,7 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     private void port_changed () {
         disconnect_signals ();
-
         pam.context.set_sink_port_by_index (default_device.index, ports_dropdown.active_id);
-
         connect_signals ();
     }
 
