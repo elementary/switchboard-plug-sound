@@ -277,12 +277,17 @@ public class Sound.PulseAudioManager : GLib.Object {
             return GLib.Source.CONTINUE;
         });
 
+        device.ports.clear ();
         for (int idx = 0; idx < i.n_ports; idx++) {
-            var new_port = Device.Port ();
+            var new_port = new Device.Port ();
             new_port.name = i.ports[idx].name;
             new_port.description = i.ports[idx].description;
             new_port.priority = i.ports[idx].priority;
             device.ports.add (new_port);
+
+            if (i.ports[idx] == i.active_port) {
+                device.default_port = new_port;
+            }
         }
 
         if (device.volume_operations.is_empty) {
@@ -333,12 +338,17 @@ public class Sound.PulseAudioManager : GLib.Object {
             return GLib.Source.CONTINUE;
         });
 
+        device.ports.clear ();
         for (int idx = 0; idx < i.n_ports; idx++) {
-            var new_port = Device.Port ();
+            var new_port = new Device.Port ();
             new_port.name = i.ports[idx].name;
             new_port.description = i.ports[idx].description;
             new_port.priority = i.ports[idx].priority;
             device.ports.add (new_port);
+
+            if (i.ports[idx] == i.active_port) {
+                device.default_port = new_port;
+            }
         }
 
         if (device.volume_operations.is_empty) {

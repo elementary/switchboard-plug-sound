@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2016-2017 elemntary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -27,14 +27,14 @@ public class Sound.OutputPanel : Gtk.Grid {
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
     Gtk.Scale balance_scale;
+    Gtk.ComboBox ports_dropdown;
+    Gtk.ListStore ports_store;
 
     private Device default_device = null;
 
-    public OutputPanel () {
-        
-    }
-
     construct {
+        ports_store = new Gtk.ListStore (2, typeof (string), typeof (string));
+
         margin = 12;
         margin_top = 0;
         column_spacing = 12;
@@ -50,6 +50,16 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_frame.expand = true;
         devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
+
+        var ports_label = new Gtk.Label (_("Output Port:"));
+        ports_label.halign = Gtk.Align.END;
+        ports_dropdown = new Gtk.ComboBox.with_model (ports_store);
+        ports_dropdown.id_column = 1;
+
+		Gtk.CellRendererText renderer = new Gtk.CellRendererText ();
+		ports_dropdown.pack_start (renderer, true);
+		ports_dropdown.add_attribute (renderer, "text", 0);
+
         var volume_label = new Gtk.Label (_("Output Volume:"));
         volume_label.halign = Gtk.Align.END;
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
@@ -81,12 +91,14 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         attach (available_label, 0, 0, 3, 1);
         attach (devices_frame, 0, 1, 3, 1);
-        attach (volume_label, 0, 2, 1, 1);
-        attach (volume_scale, 1, 2, 1, 1);
-        attach (volume_switch, 2, 2, 1, 1);
-        attach (balance_label, 0, 3, 1, 1);
-        attach (balance_scale, 1, 3, 1, 1);
-        attach (test_button, 0, 4, 3, 1);
+        attach (ports_label, 0, 2, 1, 1);
+        attach (ports_dropdown, 1, 2, 1, 1);
+        attach (volume_label, 0, 3, 1, 1);
+        attach (volume_scale, 1, 3, 1, 1);
+        attach (volume_switch, 2, 3, 1, 1);
+        attach (balance_label, 0, 4, 1, 1);
+        attach (balance_scale, 1, 4, 1, 1);
+        attach (test_button, 0, 5, 3, 1);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -112,6 +124,9 @@ public class Sound.OutputPanel : Gtk.Grid {
                 volume_switch.active = !default_device.is_muted;
                 volume_scale.set_value (default_device.volume);
                 balance_scale.set_value (default_device.balance);
+
+                rebuild_ports_dropdown ();
+
                 default_device.notify.connect (device_notify);
             }
         }
@@ -161,9 +176,27 @@ public class Sound.OutputPanel : Gtk.Grid {
             case "balance":
                 balance_scale.set_value (default_device.balance);
                 break;
+            case "default-port":
+                ports_dropdown.active_id = default_device.default_port.name;
+                break;
+            case "ports":
+                rebuild_ports_dropdown ();
+                break;
         }
 
         connect_signals ();
+    }
+
+    private void rebuild_ports_dropdown () {
+        ports_store.clear ();
+        Gtk.TreeIter iter;
+
+        foreach (var port in default_device.ports) {
+            ports_store.append (out iter);
+            ports_store.set (iter, 0, port.description, 1, port.name);
+        }
+
+        ports_dropdown.active_id = default_device.default_port.name;
     }
 
     private void add_device (Device device) {

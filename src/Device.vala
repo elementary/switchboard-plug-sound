@@ -22,10 +22,10 @@
 
 // This is a read-only class, set the properties via PulseAudioManager.
 public class Sound.Device : GLib.Object {
-    public struct Port {
-        string name;
-        string description;
-        uint32 priority;
+    public class Port {
+        public string name;
+        public string description;
+        public uint32 priority;
     }
 
     public signal void removed ();
@@ -42,7 +42,8 @@ public class Sound.Device : GLib.Object {
     public float balance { get; set; default=0; }
     public PulseAudio.ChannelMap channel_map { get; set; }
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
-    public Gee.ArrayList<Port?> ports;
+    public Gee.ArrayList<Port> ports { get; set; }
+    public Port default_port { get; set; }
 
     public Device (uint32 index) {
         Object (index: index);
