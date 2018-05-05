@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elemntary LLC. (https://elementary.io)
+ * Copyright (c) 2016-2018 elemntary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -57,9 +57,9 @@ public class Sound.OutputPanel : Gtk.Grid {
         ports_dropdown.id_column = 1;
         ports_dropdown.changed.connect (port_changed);
 
-		Gtk.CellRendererText renderer = new Gtk.CellRendererText ();
-		ports_dropdown.pack_start (renderer, true);
-		ports_dropdown.add_attribute (renderer, "text", 0);
+        Gtk.CellRendererText renderer = new Gtk.CellRendererText ();
+        ports_dropdown.pack_start (renderer, true);
+        ports_dropdown.add_attribute (renderer, "text", 0);
 
         var volume_label = new Gtk.Label (_("Output Volume:"));
         volume_label.halign = Gtk.Align.END;
@@ -142,7 +142,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         Value new_port;
 
         ports_dropdown.get_active_iter (out iter);
-		ports_store.get_value (iter, 1, out new_port);
+        ports_store.get_value (iter, 1, out new_port);
 
         pam.context.set_sink_port_by_index (default_device.index, new_port.get_string ());
 
@@ -153,12 +153,14 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_switch.notify["active"].disconnect (volume_switch_changed);
         volume_scale.value_changed.disconnect (volume_scale_value_changed);
         balance_scale.value_changed.disconnect (balance_scale_value_changed);
+        ports_dropdown.changed.disconnect (port_changed);
     }
 
     private void connect_signals () {
         volume_switch.notify["active"].connect (volume_switch_changed);
         volume_scale.value_changed.connect (volume_scale_value_changed);
         balance_scale.value_changed.connect (balance_scale_value_changed);
+        ports_dropdown.changed.connect (port_changed);
     }
 
     private void volume_scale_value_changed () {
