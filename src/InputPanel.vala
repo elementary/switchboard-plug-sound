@@ -27,19 +27,12 @@ public class Sound.InputPanel : Gtk.Grid {
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
     Gtk.LevelBar level_bar;
-    Gtk.ComboBox ports_dropdown;
-    Gtk.ListStore ports_store;
+    Gtk.ComboBoxText ports_dropdown;
 
     private Device default_device;
     private InputDeviceMonitor device_monitor;
 
-    public InputPanel () {
-        
-    }
-
     construct {
-        ports_store = new Gtk.ListStore (2, typeof (string), typeof (string));
-
         margin = 12;
         margin_bottom = 24;
         margin_top = 0;
@@ -58,13 +51,8 @@ public class Sound.InputPanel : Gtk.Grid {
 
         var ports_label = new Gtk.Label (_("Input Port:"));
         ports_label.halign = Gtk.Align.END;
-        ports_dropdown = new Gtk.ComboBox.with_model (ports_store);
-        ports_dropdown.id_column = 1;
+        ports_dropdown = new Gtk.ComboBoxText ();
         ports_dropdown.changed.connect (port_changed);
-
-        Gtk.CellRendererText renderer = new Gtk.CellRendererText ();
-        ports_dropdown.pack_start (renderer, true);
-        ports_dropdown.add_attribute (renderer, "text", 0);
 
         var volume_label = new Gtk.Label (_("Input Volume:"));
         volume_label.valign = Gtk.Align.CENTER;
@@ -127,13 +115,7 @@ public class Sound.InputPanel : Gtk.Grid {
     private void port_changed () {
         disconnect_signals ();
 
-        Gtk.TreeIter iter;
-        Value new_port;
-
-        ports_dropdown.get_active_iter (out iter);
-        ports_store.get_value (iter, 1, out new_port);
-
-        pam.context.set_source_port_by_index (default_device.index, new_port.get_string ());
+        pam.context.set_source_port_by_index (default_device.index, ports_dropdown.active_id);
 
         connect_signals ();
     }
@@ -205,12 +187,10 @@ public class Sound.InputPanel : Gtk.Grid {
     }
 
     private void rebuild_ports_dropdown () {
-        ports_store.clear ();
-        Gtk.TreeIter iter;
+        ports_dropdown.remove_all ();
 
         foreach (var port in default_device.ports) {
-            ports_store.append (out iter);
-            ports_store.set (iter, 0, port.description, 1, port.name);
+            ports_dropdown.append (port.name, port.description);
         }
 
         ports_dropdown.active_id = default_device.default_port.name;
