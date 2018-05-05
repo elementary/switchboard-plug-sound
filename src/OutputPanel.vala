@@ -55,6 +55,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         ports_label.halign = Gtk.Align.END;
         ports_dropdown = new Gtk.ComboBox.with_model (ports_store);
         ports_dropdown.id_column = 1;
+        ports_dropdown.changed.connect (port_changed);
 
 		Gtk.CellRendererText renderer = new Gtk.CellRendererText ();
 		ports_dropdown.pack_start (renderer, true);
@@ -130,6 +131,20 @@ public class Sound.OutputPanel : Gtk.Grid {
                 default_device.notify.connect (device_notify);
             }
         }
+
+        connect_signals ();
+    }
+
+    private void port_changed () {
+        disconnect_signals ();
+
+        Gtk.TreeIter iter;
+        Value new_port;
+
+        ports_dropdown.get_active_iter (out iter);
+		ports_store.get_value (iter, 1, out new_port);
+
+        pam.context.set_sink_port_by_index (default_device.index, new_port.get_string ());
 
         connect_signals ();
     }
