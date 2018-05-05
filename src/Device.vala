@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elemntary LLC. (https://elementary.io)
+ * Copyright (c) 2016-2018 elementary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -22,6 +22,12 @@
 
 // This is a read-only class, set the properties via PulseAudioManager.
 public class Sound.Device : GLib.Object {
+    public struct Port {
+        string name;
+        string description;
+        uint32 priority;
+    }
+
     public signal void removed ();
 
     public bool input { get; set; default=true; }
@@ -36,12 +42,15 @@ public class Sound.Device : GLib.Object {
     public float balance { get; set; default=0; }
     public PulseAudio.ChannelMap channel_map { get; set; }
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
+    public Gee.ArrayList<Port?> ports;
+
     public Device (uint32 index) {
         Object (index: index);
     }
 
     construct {
         volume_operations = new Gee.LinkedList<PulseAudio.Operation> ();
+        ports = new Gee.ArrayList<Port?> ();
     }
 
     public string get_nice_form_factor () {

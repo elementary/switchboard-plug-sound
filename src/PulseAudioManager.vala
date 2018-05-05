@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elemntary LLC. (https://elementary.io)
+ * Copyright (c) 2016-2018 elementary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -277,6 +277,14 @@ public class Sound.PulseAudioManager : GLib.Object {
             return GLib.Source.CONTINUE;
         });
 
+        for (int idx = 0; idx < i.n_ports; idx++) {
+            var new_port = Device.Port ();
+            new_port.name = i.ports[idx].name;
+            new_port.description = i.ports[idx].description;
+            new_port.priority = i.ports[idx].priority;
+            device.ports.add (new_port);
+        }
+
         if (device.volume_operations.is_empty) {
             device.volume = volume_to_double (i.volume.max ());
         }
@@ -324,6 +332,14 @@ public class Sound.PulseAudioManager : GLib.Object {
 
             return GLib.Source.CONTINUE;
         });
+
+        for (int idx = 0; idx < i.n_ports; idx++) {
+            var new_port = Device.Port ();
+            new_port.name = i.ports[idx].name;
+            new_port.description = i.ports[idx].description;
+            new_port.priority = i.ports[idx].priority;
+            device.ports.add (new_port);
+        }
 
         if (device.volume_operations.is_empty) {
             device.volume = volume_to_double (i.volume.max ());
