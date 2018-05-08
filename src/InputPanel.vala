@@ -53,6 +53,7 @@ public class Sound.InputPanel : Gtk.Grid {
         ports_label.halign = Gtk.Align.END;
         ports_dropdown = new Gtk.ComboBoxText ();
         ports_dropdown.changed.connect (port_changed);
+        ports_dropdown.bind_property ("sensitive", ports_label, "sensitive");
 
         var volume_label = new Gtk.Label (_("Input Volume:"));
         volume_label.valign = Gtk.Align.CENTER;
@@ -174,7 +175,10 @@ public class Sound.InputPanel : Gtk.Grid {
                 volume_scale.set_value (default_device.volume);
                 break;
             case "default-port":
-                ports_dropdown.active_id = default_device.default_port.name;
+                if (default_device.default_port != null) {
+                    ports_dropdown.active_id = default_device.default_port.name;
+                }
+
                 break;
             case "ports":
                 rebuild_ports_dropdown ();
@@ -186,12 +190,15 @@ public class Sound.InputPanel : Gtk.Grid {
 
     private void rebuild_ports_dropdown () {
         ports_dropdown.remove_all ();
+        ports_dropdown.sensitive = !default_device.ports.is_empty;
 
         foreach (var port in default_device.ports) {
             ports_dropdown.append (port.name, port.description);
         }
 
-        ports_dropdown.active_id = default_device.default_port.name;
+        if (default_device.default_port != null) {
+            ports_dropdown.active_id = default_device.default_port.name;
+        }
     }
 
     private void update_fraction (float fraction) {

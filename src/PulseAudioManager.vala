@@ -278,6 +278,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         });
 
         device.ports.clear ();
+        device.default_port = null;
         for (int idx = 0; idx < i.n_ports; idx++) {
             var new_port = new Device.Port ();
             new_port.name = i.ports[idx].name;
@@ -339,6 +340,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         });
 
         device.ports.clear ();
+        device.default_port = null;
         for (int idx = 0; idx < i.n_ports; idx++) {
             var new_port = new Device.Port ();
             new_port.name = i.ports[idx].name;

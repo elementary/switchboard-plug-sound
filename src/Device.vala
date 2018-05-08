@@ -43,7 +43,7 @@ public class Sound.Device : GLib.Object {
     public PulseAudio.ChannelMap channel_map { get; set; }
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
     public Gee.ArrayList<Port> ports { get; set; }
-    public Port default_port { get; set; }
+    public Port? default_port { get; set; default=null; }
 
     public Device (uint32 index) {
         Object (index: index);

@@ -52,6 +52,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         ports_label.halign = Gtk.Align.END;
         ports_dropdown = new Gtk.ComboBoxText ();
         ports_dropdown.changed.connect (port_changed);
+        ports_dropdown.bind_property ("sensitive", ports_label, "sensitive");
 
         var volume_label = new Gtk.Label (_("Output Volume:"));
         volume_label.halign = Gtk.Align.END;
@@ -178,7 +179,10 @@ public class Sound.OutputPanel : Gtk.Grid {
                 balance_scale.set_value (default_device.balance);
                 break;
             case "default-port":
-                ports_dropdown.active_id = default_device.default_port.name;
+                if (default_device.default_port != null) {
+                    ports_dropdown.active_id = default_device.default_port.name;
+                }
+
                 break;
             case "ports":
                 rebuild_ports_dropdown ();
@@ -190,12 +194,15 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     private void rebuild_ports_dropdown () {
         ports_dropdown.remove_all ();
+        ports_dropdown.sensitive = !default_device.ports.is_empty;
 
         foreach (var port in default_device.ports) {
             ports_dropdown.append (port.name, port.description);
         }
 
-        ports_dropdown.active_id = default_device.default_port.name;
+        if (default_device.default_port != null) {
+            ports_dropdown.active_id = default_device.default_port.name;
+        }
     }
 
     private void add_device (Device device) {
