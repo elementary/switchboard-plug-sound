@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 15:16-0800\n"
-"PO-Revision-Date: 2018-05-03 14:32+0000\n"
+"PO-Revision-Date: 2018-05-21 00:09+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/ja/>\n"
@@ -84,7 +84,7 @@ msgstr "入力のボリューム:"
 
 #: src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr "未増幅"
+msgstr "増幅なし"
 
 #: src/InputPanel.vala:62
 msgid "100%"
