@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 15:16-0800\n"
-"PO-Revision-Date: 2018-05-31 00:03+0000\n"
+"PO-Revision-Date: 2018-05-31 12:22+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/hu/>\n"
@@ -22,31 +22,31 @@ msgstr ""
 
 #: src/Plug.vala:36
 msgid "Sound"
-msgstr "Hangjelzés"
+msgstr "Hang"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Módosítsa a ki- és bemeneti hangerő értékeket"
 
 #: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
-msgstr ""
+msgstr "Kimenet"
 
 #: src/Plug.vala:57 src/Device.vala:76
 msgid "Input"
-msgstr ""
+msgstr "Bemenet"
 
 #: src/OutputPanel.vala:42
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Rendelkezésre álló hangkimeneti eszközök:"
 
 #: src/OutputPanel.vala:53
 msgid "Output Volume:"
-msgstr ""
+msgstr "Kimeneti hangerő:"
 
 #: src/OutputPanel.vala:62
 msgid "Balance:"
-msgstr ""
+msgstr "Egyensúly:"
 
 #: src/OutputPanel.vala:68
 msgid "Left"
@@ -54,7 +54,7 @@ msgstr "Bal"
 
 #: src/OutputPanel.vala:69
 msgid "Center"
-msgstr "Középen"
+msgstr "Közép"
 
 #: src/OutputPanel.vala:70
 msgid "Right"
@@ -62,103 +62,104 @@ msgstr "Jobb"
 
 #: src/OutputPanel.vala:71
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Hangszórók tesztelése…"
 
 #: src/OutputPanel.vala:78
 msgid "No Output Device"
-msgstr ""
+msgstr "Nincs kimeneti eszköz"
 
 #: src/OutputPanel.vala:78
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
-msgstr ""
+msgstr "Nem található kimeneti eszköz. A lejátszáshoz csatlakoztasson egyet."
 
 #: src/InputPanel.vala:44
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Rendelkezésre álló hangbemenetek:"
 
 #: src/InputPanel.vala:54
 msgid "Input Volume:"
-msgstr ""
+msgstr "Bemeneti hangerő:"
 
 #: src/InputPanel.vala:61
 msgid "Unamplified"
-msgstr ""
+msgstr "Erősítetlen"
 
 #: src/InputPanel.vala:62
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: src/InputPanel.vala:66
 msgid "Input Level:"
-msgstr ""
+msgstr "Bemeneti szint:"
 
 #: src/InputPanel.vala:76
 msgid "No Input Device"
-msgstr ""
+msgstr "Nincs bemeneti eszköz"
 
 #: src/InputPanel.vala:76
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Nincs bemeneti eszköz észlelve. Felvételek készítéséhez adjon hozzá egyet."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Csúcs észlelés"
 
 #: src/Device.vala:50
 msgid "Built-in"
-msgstr ""
+msgstr "Beépített eszköz"
 
 #: src/Device.vala:52
 msgid "Speaker"
-msgstr ""
+msgstr "Hangszóró"
 
 #: src/Device.vala:54
 msgid "Handset"
-msgstr ""
+msgstr "Telefonkagyló"
 
 #: src/Device.vala:56
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: src/Device.vala:58
 msgid "Webcam"
-msgstr ""
+msgstr "Webkamera"
 
 #: src/Device.vala:60
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: src/Device.vala:62
 msgid "Headset"
-msgstr ""
+msgstr "Mikrofonos fejhallgató"
 
 #: src/Device.vala:64
 msgid "Headphone"
-msgstr ""
+msgstr "Fejhallgató"
 
 #: src/Device.vala:66
 msgid "Hands-Free"
-msgstr ""
+msgstr "Kihangosított eszköz"
 
 #: src/Device.vala:68
 msgid "Car"
-msgstr ""
+msgstr "Autó"
 
 #: src/Device.vala:70
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
 #: src/Device.vala:72
 msgid "Computer"
-msgstr ""
+msgstr "Számítógép"
 
 #: src/Device.vala:74
 msgid "Portable"
-msgstr ""
+msgstr "Hordozható"
 
 #~ msgid "About"
 #~ msgstr "Részletek"
