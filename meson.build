@@ -1,4 +1,8 @@
-project('sound', 'vala', 'c')
+project(
+    'sound',
+    'vala', 'c',
+    version: '0.1'
+)
 
 gettext_name = meson.project_name() + '-plug'
 gnome = import('gnome')
