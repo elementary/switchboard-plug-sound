@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 15:16-0800\n"
-"PO-Revision-Date: 2018-05-31 12:22+0000\n"
+"PO-Revision-Date: 2018-06-18 00:06+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-sound/hu/>\n"
@@ -26,7 +26,7 @@ msgstr "Hang"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr "Módosítsa a ki- és bemeneti hangerő értékeket"
+msgstr "Kimeneti és mikrofon hangerő beállítása"
 
 #: src/Plug.vala:56 src/Device.vala:76
 msgid "Output"
