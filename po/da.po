@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:33-0700\n"
-"PO-Revision-Date: 2018-03-31 21:28+0000\n"
+"PO-Revision-Date: 2018-06-27 21:50+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/da/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:36
@@ -41,13 +41,12 @@ msgid "Available Sound Output Devices:"
 msgstr "Tilgængelige lydudgangsenheder:"
 
 #: src/OutputPanel.vala:51
-#, fuzzy
 msgid "Output Port:"
-msgstr "Udgangsvolumen:"
+msgstr "Udgangsport:"
 
 #: src/OutputPanel.vala:57
 msgid "Output Volume:"
-msgstr "Udgangsvolumen:"
+msgstr "Udgangslydstyrke:"
 
 #: src/OutputPanel.vala:66
 msgid "Balance:"
@@ -86,9 +85,8 @@ msgid "Available Sound Input Devices:"
 msgstr "Tilgængelige Lydindgangsenheder:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "Indgangsvolumen:"
+msgstr "Indgangsport:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
