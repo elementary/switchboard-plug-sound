@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"POT-Creation-Date: 2018-06-27 09:33-0700\n"
 "PO-Revision-Date: 2017-06-24 10:08+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,47 +28,52 @@ msgstr "Suoni"
 msgid "Change sound and microphone volume"
 msgstr "Cambia il volume dell'audio e del microfono"
 
-#: src/Plug.vala:56 src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:86
 msgid "Output"
 msgstr "Uscita"
 
-#: src/Plug.vala:57 src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:86
 msgid "Input"
 msgstr "Ingresso"
 
-#: src/OutputPanel.vala:42
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Dispositivi di uscita audio disponibili:"
 
-#: src/OutputPanel.vala:53
+#: src/OutputPanel.vala:51
+#, fuzzy
+msgid "Output Port:"
+msgstr "Volume in uscita:"
+
+#: src/OutputPanel.vala:57
 msgid "Output Volume:"
 msgstr "Volume in uscita:"
 
-#: src/OutputPanel.vala:62
+#: src/OutputPanel.vala:66
 msgid "Balance:"
 msgstr "Bilanciamento:"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:72
 msgid "Left"
 msgstr "Sinistra"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:73
 msgid "Center"
 msgstr "Centro"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:74
 msgid "Right"
 msgstr "Destra"
 
-#: src/OutputPanel.vala:71
+#: src/OutputPanel.vala:75
 msgid "Test Speakers…"
 msgstr "Test altoparlanti…"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "No Output Device"
 msgstr "Nessun dispositivo di uscita"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -76,31 +81,36 @@ msgstr ""
 "Non è stato rilevato alcun dispositivo di uscita. Potresti aggiungerne uno "
 "per iniziare ad ascoltare qualsiasi cosa."
 
-#: src/InputPanel.vala:44
+#: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
 msgstr "Dispositivi di ingresso audio disponibili:"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:52
+#, fuzzy
+msgid "Input Port:"
+msgstr "Volume in ingresso:"
+
+#: src/InputPanel.vala:58
 msgid "Input Volume:"
 msgstr "Volume in ingresso:"
 
-#: src/InputPanel.vala:61
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "Non amplificato"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:70
 msgid "Input Level:"
 msgstr "Livello di ingresso:"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid "No Input Device"
 msgstr "Nessun dispositivo di ingresso"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -112,55 +122,55 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Rilevazione picchi"
 
-#: src/Device.vala:50
+#: src/Device.vala:60
 msgid "Built-in"
 msgstr "Integrato"
 
-#: src/Device.vala:52
+#: src/Device.vala:62
 msgid "Speaker"
 msgstr "Altoparlante"
 
-#: src/Device.vala:54
+#: src/Device.vala:64
 msgid "Handset"
 msgstr "Ricevitore"
 
-#: src/Device.vala:56
+#: src/Device.vala:66
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:58
+#: src/Device.vala:68
 msgid "Webcam"
 msgstr "Webcam"
 
-#: src/Device.vala:60
+#: src/Device.vala:70
 msgid "Microphone"
 msgstr "Microfono"
 
-#: src/Device.vala:62
+#: src/Device.vala:72
 msgid "Headset"
 msgstr "Cuffia con microfono"
 
-#: src/Device.vala:64
+#: src/Device.vala:74
 msgid "Headphone"
 msgstr "Auricolari"
 
-#: src/Device.vala:66
+#: src/Device.vala:76
 msgid "Hands-Free"
 msgstr "Microfono vivavoce"
 
-#: src/Device.vala:68
+#: src/Device.vala:78
 msgid "Car"
 msgstr "Automobile"
 
-#: src/Device.vala:70
+#: src/Device.vala:80
 msgid "HiFi"
 msgstr "HiFi"
 
-#: src/Device.vala:72
+#: src/Device.vala:82
 msgid "Computer"
 msgstr "Computer"
 
-#: src/Device.vala:74
+#: src/Device.vala:84
 msgid "Portable"
 msgstr "Portatile"
 

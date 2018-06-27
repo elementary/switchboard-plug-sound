@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"POT-Creation-Date: 2018-06-27 09:33-0700\n"
 "PO-Revision-Date: 2018-02-03 11:49+0000\n"
 "Last-Translator: Rico Tzschichholz <ricotz@ubuntu.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
@@ -28,47 +28,52 @@ msgstr "Ses"
 msgid "Change sound and microphone volume"
 msgstr "Ses ve mikrofon ses seviyesini değiştirme"
 
-#: src/Plug.vala:56 src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:86
 msgid "Output"
 msgstr "Çıkış"
 
-#: src/Plug.vala:57 src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:86
 msgid "Input"
 msgstr "Giriş"
 
-#: src/OutputPanel.vala:42
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Kullanılabilir Ses Çıkış Aygıtları:"
 
-#: src/OutputPanel.vala:53
+#: src/OutputPanel.vala:51
+#, fuzzy
+msgid "Output Port:"
+msgstr "Çıkış Sesi:"
+
+#: src/OutputPanel.vala:57
 msgid "Output Volume:"
 msgstr "Çıkış Sesi:"
 
-#: src/OutputPanel.vala:62
+#: src/OutputPanel.vala:66
 msgid "Balance:"
 msgstr "Denge:"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:72
 msgid "Left"
 msgstr "Sol"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:73
 msgid "Center"
 msgstr "Orta"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:74
 msgid "Right"
 msgstr "Sağ"
 
-#: src/OutputPanel.vala:71
+#: src/OutputPanel.vala:75
 msgid "Test Speakers…"
 msgstr "Hoparlörleri Test Et..."
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "No Output Device"
 msgstr "Çıkış Aygıtı Yok"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -76,31 +81,36 @@ msgstr ""
 "Hiç çıkış aygıtı algılanmadı.Bir şeyler dinlemeye başlamak için bir tane "
 "eklemek isteyebilirsin."
 
-#: src/InputPanel.vala:44
+#: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
 msgstr "Kullanılabilir Ses Giriş Aygıtları:"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:52
+#, fuzzy
+msgid "Input Port:"
+msgstr "Girdi Sesi:"
+
+#: src/InputPanel.vala:58
 msgid "Input Volume:"
 msgstr "Girdi Sesi:"
 
-#: src/InputPanel.vala:61
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "Yükseltilmedi"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "%100"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:70
 msgid "Input Level:"
 msgstr "Girdi Düzeyi:"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid "No Input Device"
 msgstr "Giriş Aygıtı Yok"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -112,55 +122,55 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Tepe noktası algılama"
 
-#: src/Device.vala:50
+#: src/Device.vala:60
 msgid "Built-in"
 msgstr "Gömülü"
 
-#: src/Device.vala:52
+#: src/Device.vala:62
 msgid "Speaker"
 msgstr "Hoparlör"
 
-#: src/Device.vala:54
+#: src/Device.vala:64
 msgid "Handset"
 msgstr "Ahize"
 
-#: src/Device.vala:56
+#: src/Device.vala:66
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:58
+#: src/Device.vala:68
 msgid "Webcam"
 msgstr "Bilgisayar Kamerası"
 
-#: src/Device.vala:60
+#: src/Device.vala:70
 msgid "Microphone"
 msgstr "Mikrofon"
 
-#: src/Device.vala:62
+#: src/Device.vala:72
 msgid "Headset"
 msgstr "Kulaklık"
 
-#: src/Device.vala:64
+#: src/Device.vala:74
 msgid "Headphone"
 msgstr "Kulaklık"
 
-#: src/Device.vala:66
+#: src/Device.vala:76
 msgid "Hands-Free"
 msgstr "Eller Serbest"
 
-#: src/Device.vala:68
+#: src/Device.vala:78
 msgid "Car"
 msgstr "Araba"
 
-#: src/Device.vala:70
+#: src/Device.vala:80
 msgid "HiFi"
 msgstr "Hi-Fi"
 
-#: src/Device.vala:72
+#: src/Device.vala:82
 msgid "Computer"
 msgstr "Bilgisayar"
 
-#: src/Device.vala:74
+#: src/Device.vala:84
 msgid "Portable"
 msgstr "Taşınabilir"
 

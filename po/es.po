@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"POT-Creation-Date: 2018-06-27 09:33-0700\n"
 "PO-Revision-Date: 2018-05-17 00:04+0000\n"
 "Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
-"Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-sound/es/>\n"
+"Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,47 +28,52 @@ msgstr "Sonido"
 msgid "Change sound and microphone volume"
 msgstr "Cambiar el volumen del micrófono y el sonido"
 
-#: src/Plug.vala:56 src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:86
 msgid "Output"
 msgstr "Salida"
 
-#: src/Plug.vala:57 src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:86
 msgid "Input"
 msgstr "Entrada"
 
-#: src/OutputPanel.vala:42
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Dispositivos de Salida Disponibles:"
 
-#: src/OutputPanel.vala:53
+#: src/OutputPanel.vala:51
+#, fuzzy
+msgid "Output Port:"
+msgstr "Volumen de la salida:"
+
+#: src/OutputPanel.vala:57
 msgid "Output Volume:"
 msgstr "Volumen de la salida:"
 
-#: src/OutputPanel.vala:62
+#: src/OutputPanel.vala:66
 msgid "Balance:"
 msgstr "Balance:"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:72
 msgid "Left"
 msgstr "Izquierda"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:73
 msgid "Center"
 msgstr "Centro"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:74
 msgid "Right"
 msgstr "Derecha"
 
-#: src/OutputPanel.vala:71
+#: src/OutputPanel.vala:75
 msgid "Test Speakers…"
 msgstr "Probar los altavoces…"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "No Output Device"
 msgstr "No hay dispositivo de salida"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -76,31 +81,36 @@ msgstr ""
 "No se detectó un dispositivo de salida. Debería agregar uno para comenzar a "
 "escuchar algo."
 
-#: src/InputPanel.vala:44
+#: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
 msgstr "Dispositivos de entrada de sonido disponibles:"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:52
+#, fuzzy
+msgid "Input Port:"
+msgstr "Volumen de la entrada:"
+
+#: src/InputPanel.vala:58
 msgid "Input Volume:"
 msgstr "Volumen de la entrada:"
 
-#: src/InputPanel.vala:61
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "Sin amplificar"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:70
 msgid "Input Level:"
 msgstr "Nivel de la entrada:"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid "No Input Device"
 msgstr "No hay dispositivo de entrada"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -112,55 +122,55 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Detección de picos"
 
-#: src/Device.vala:50
+#: src/Device.vala:60
 msgid "Built-in"
 msgstr "Integrado"
 
-#: src/Device.vala:52
+#: src/Device.vala:62
 msgid "Speaker"
 msgstr "Altavoz"
 
-#: src/Device.vala:54
+#: src/Device.vala:64
 msgid "Handset"
 msgstr "Auricular"
 
-#: src/Device.vala:56
+#: src/Device.vala:66
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:58
+#: src/Device.vala:68
 msgid "Webcam"
 msgstr "Cámara Web"
 
-#: src/Device.vala:60
+#: src/Device.vala:70
 msgid "Microphone"
 msgstr "Micrófono"
 
-#: src/Device.vala:62
+#: src/Device.vala:72
 msgid "Headset"
 msgstr "Auriculares"
 
-#: src/Device.vala:64
+#: src/Device.vala:74
 msgid "Headphone"
 msgstr "Auriculares"
 
-#: src/Device.vala:66
+#: src/Device.vala:76
 msgid "Hands-Free"
 msgstr "Manos libres"
 
-#: src/Device.vala:68
+#: src/Device.vala:78
 msgid "Car"
 msgstr "Coche"
 
-#: src/Device.vala:70
+#: src/Device.vala:80
 msgid "HiFi"
 msgstr "Alta fidelidad"
 
-#: src/Device.vala:72
+#: src/Device.vala:82
 msgid "Computer"
 msgstr "Computadora"
 
-#: src/Device.vala:74
+#: src/Device.vala:84
 msgid "Portable"
 msgstr "Portable"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"POT-Creation-Date: 2018-06-27 09:33-0700\n"
 "PO-Revision-Date: 2017-07-07 09:42+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -28,47 +28,52 @@ msgstr "Son"
 msgid "Change sound and microphone volume"
 msgstr "Changer le volume du son et du microphone"
 
-#: src/Plug.vala:56 src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:86
 msgid "Output"
 msgstr "Sortie"
 
-#: src/Plug.vala:57 src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:86
 msgid "Input"
 msgstr "Entrée"
 
-#: src/OutputPanel.vala:42
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Périphériques d'écoute disponibles :"
 
-#: src/OutputPanel.vala:53
+#: src/OutputPanel.vala:51
+#, fuzzy
+msgid "Output Port:"
+msgstr "Volume de sortie :"
+
+#: src/OutputPanel.vala:57
 msgid "Output Volume:"
 msgstr "Volume de sortie :"
 
-#: src/OutputPanel.vala:62
+#: src/OutputPanel.vala:66
 msgid "Balance:"
 msgstr "Balance :"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:72
 msgid "Left"
 msgstr "Gauche"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:73
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:74
 msgid "Right"
 msgstr "Droit"
 
-#: src/OutputPanel.vala:71
+#: src/OutputPanel.vala:75
 msgid "Test Speakers…"
 msgstr "Tester le son…"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "No Output Device"
 msgstr "Aucun périphérique d'écoute"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -76,31 +81,36 @@ msgstr ""
 "Aucun périphérique d'écoute n'a été détecté. Essayez d'en ajouter un pour "
 "commencer à écouter quoi que ce soit."
 
-#: src/InputPanel.vala:44
+#: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
 msgstr "Périphériques d'enregistrement disponibles :"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:52
+#, fuzzy
+msgid "Input Port:"
+msgstr "Volume d'enregistrement :"
+
+#: src/InputPanel.vala:58
 msgid "Input Volume:"
 msgstr "Volume d'enregistrement :"
 
-#: src/InputPanel.vala:61
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "Non Amplifié"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:70
 msgid "Input Level:"
 msgstr "Niveau d'enregistrement :"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid "No Input Device"
 msgstr "Aucun périphérique d'enregistrement"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -112,55 +122,55 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Détecteur de pics"
 
-#: src/Device.vala:50
+#: src/Device.vala:60
 msgid "Built-in"
 msgstr "Intégré"
 
-#: src/Device.vala:52
+#: src/Device.vala:62
 msgid "Speaker"
 msgstr "Haut-parleur"
 
-#: src/Device.vala:54
+#: src/Device.vala:64
 msgid "Handset"
 msgstr "Écouteurs"
 
-#: src/Device.vala:56
+#: src/Device.vala:66
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:58
+#: src/Device.vala:68
 msgid "Webcam"
 msgstr "Webcam"
 
-#: src/Device.vala:60
+#: src/Device.vala:70
 msgid "Microphone"
 msgstr "Microphone"
 
-#: src/Device.vala:62
+#: src/Device.vala:72
 msgid "Headset"
 msgstr "Casque"
 
-#: src/Device.vala:64
+#: src/Device.vala:74
 msgid "Headphone"
 msgstr "Casque"
 
-#: src/Device.vala:66
+#: src/Device.vala:76
 msgid "Hands-Free"
 msgstr "Kit mains-libres"
 
-#: src/Device.vala:68
+#: src/Device.vala:78
 msgid "Car"
 msgstr "Voiture"
 
-#: src/Device.vala:70
+#: src/Device.vala:80
 msgid "HiFi"
 msgstr "Hi-Fi"
 
-#: src/Device.vala:72
+#: src/Device.vala:82
 msgid "Computer"
 msgstr "Ordinateur"
 
-#: src/Device.vala:74
+#: src/Device.vala:84
 msgid "Portable"
 msgstr "Portable"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"POT-Creation-Date: 2018-06-27 09:33-0700\n"
 "PO-Revision-Date: 2017-07-14 23:53+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -28,77 +28,87 @@ msgstr "알림음"
 msgid "Change sound and microphone volume"
 msgstr "소리와 마이크 볼륨 크기 조절"
 
-#: src/Plug.vala:56 src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:86
 msgid "Output"
 msgstr "출력"
 
-#: src/Plug.vala:57 src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:86
 msgid "Input"
 msgstr "입력"
 
-#: src/OutputPanel.vala:42
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "사용 가능한 출력 장치:"
 
-#: src/OutputPanel.vala:53
+#: src/OutputPanel.vala:51
+#, fuzzy
+msgid "Output Port:"
+msgstr "출력 볼륨:"
+
+#: src/OutputPanel.vala:57
 msgid "Output Volume:"
 msgstr "출력 볼륨:"
 
-#: src/OutputPanel.vala:62
+#: src/OutputPanel.vala:66
 msgid "Balance:"
 msgstr "밸런스:"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:72
 msgid "Left"
 msgstr "왼쪽"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:73
 msgid "Center"
 msgstr "가운데"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:74
 msgid "Right"
 msgstr "오른쪽"
 
-#: src/OutputPanel.vala:71
+#: src/OutputPanel.vala:75
 msgid "Test Speakers…"
 msgstr "스피커 테스트…"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "No Output Device"
 msgstr "출력 장치 없음"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr "출력 장치를 찾을 수 없습니다. 소리를 들으시려면 장치를 추가하세요."
 
-#: src/InputPanel.vala:44
+#: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
 msgstr "사용 가능한 입력 장치:"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:52
+#, fuzzy
+msgid "Input Port:"
+msgstr "입력 볼륨:"
+
+#: src/InputPanel.vala:58
 msgid "Input Volume:"
 msgstr "입력 볼륨:"
 
-#: src/InputPanel.vala:61
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "비증폭"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:70
 msgid "Input Level:"
 msgstr "입력 레벨:"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid "No Input Device"
 msgstr "입력 장치 없음"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -108,55 +118,55 @@ msgstr "입력 장치를 찾을 수 없습니다. 녹음하시려면 장치를 �
 msgid "Peak detect"
 msgstr "피크 검출"
 
-#: src/Device.vala:50
+#: src/Device.vala:60
 msgid "Built-in"
 msgstr "내장"
 
-#: src/Device.vala:52
+#: src/Device.vala:62
 msgid "Speaker"
 msgstr "스피커"
 
-#: src/Device.vala:54
+#: src/Device.vala:64
 msgid "Handset"
 msgstr "핸드셋"
 
-#: src/Device.vala:56
+#: src/Device.vala:66
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:58
+#: src/Device.vala:68
 msgid "Webcam"
 msgstr "웹캠"
 
-#: src/Device.vala:60
+#: src/Device.vala:70
 msgid "Microphone"
 msgstr "마이크"
 
-#: src/Device.vala:62
+#: src/Device.vala:72
 msgid "Headset"
 msgstr "헤드셋"
 
-#: src/Device.vala:64
+#: src/Device.vala:74
 msgid "Headphone"
 msgstr "헤드폰"
 
-#: src/Device.vala:66
+#: src/Device.vala:76
 msgid "Hands-Free"
 msgstr "핸즈프리"
 
-#: src/Device.vala:68
+#: src/Device.vala:78
 msgid "Car"
 msgstr "자동차"
 
-#: src/Device.vala:70
+#: src/Device.vala:80
 msgid "HiFi"
 msgstr "하이파이"
 
-#: src/Device.vala:72
+#: src/Device.vala:82
 msgid "Computer"
 msgstr "컴퓨터"
 
-#: src/Device.vala:74
+#: src/Device.vala:84
 msgid "Portable"
 msgstr "이동식"
 

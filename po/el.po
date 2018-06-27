@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 15:16-0800\n"
+"POT-Creation-Date: 2018-06-27 09:33-0700\n"
 "PO-Revision-Date: 2017-08-31 23:39+0000\n"
 "Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
 "Language-Team: Greek <https://weblate.elementary.io/projects/switchboard/"
@@ -28,49 +28,54 @@ msgstr "Ήχος"
 msgid "Change sound and microphone volume"
 msgstr "Αλλαγή έντασης ήχου και μικροφώνου"
 
-#: src/Plug.vala:56 src/Device.vala:76
+#: src/Plug.vala:56 src/Device.vala:86
 msgid "Output"
 msgstr "Έξοδος"
 
-#: src/Plug.vala:57 src/Device.vala:76
+#: src/Plug.vala:57 src/Device.vala:86
 msgid "Input"
 msgstr "Είσοδος"
 
-#: src/OutputPanel.vala:42
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Διαθέσιμες συσκευές εξόδου ήχου:"
 
-#: src/OutputPanel.vala:53
+#: src/OutputPanel.vala:51
+#, fuzzy
+msgid "Output Port:"
+msgstr "Ένταση εξόδου:"
+
+#: src/OutputPanel.vala:57
 msgid "Output Volume:"
 msgstr "Ένταση εξόδου:"
 
-#: src/OutputPanel.vala:62
+#: src/OutputPanel.vala:66
 #, fuzzy
 msgid "Balance:"
 msgstr "Ισοστάθμιση:"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:72
 msgid "Left"
 msgstr "Αριστερά"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:73
 msgid "Center"
 msgstr "Κέντρο"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:74
 msgid "Right"
 msgstr "Δεξιά"
 
-#: src/OutputPanel.vala:71
+#: src/OutputPanel.vala:75
 #, fuzzy
 msgid "Test Speakers…"
 msgstr "Δοκιμή ηχείων…"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "No Output Device"
 msgstr "Δεν υπάρχει συσκευή εξόδου"
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 #, fuzzy
 msgid ""
 "There is no output device detected. You might want to add one to start "
@@ -79,32 +84,37 @@ msgstr ""
 "Δεν εντοπίστηκε κάποια συσκευή εξόδου. Ίσως θα θέλατε να προσθέσετε μία πρίν "
 "ξεκινήσετε να ακούτε οποιαδήποτε."
 
-#: src/InputPanel.vala:44
+#: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
 msgstr "Διαθέσιμες συσκευές εισόδου ήχου:"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:52
+#, fuzzy
+msgid "Input Port:"
+msgstr "Ένταση εισόδου:"
+
+#: src/InputPanel.vala:58
 msgid "Input Volume:"
 msgstr "Ένταση εισόδου:"
 
-#: src/InputPanel.vala:61
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "Χωρίς ενίσχυση"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:70
 #, fuzzy
 msgid "Input Level:"
 msgstr "Επίπεδο εισόδου:"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 msgid "No Input Device"
 msgstr "Δεν υπάρχει συσκευή εισόδου"
 
-#: src/InputPanel.vala:76
+#: src/InputPanel.vala:80
 #, fuzzy
 msgid ""
 "There is no input device detected. You might want to add one to start "
@@ -118,63 +128,63 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Ανίχνευση κορυφής"
 
-#: src/Device.vala:50
+#: src/Device.vala:60
 msgid "Built-in"
 msgstr "Ενσωματωμένο"
 
-#: src/Device.vala:52
+#: src/Device.vala:62
 #, fuzzy
 msgid "Speaker"
 msgstr "Ηχείο"
 
-#: src/Device.vala:54
+#: src/Device.vala:64
 #, fuzzy
 msgid "Handset"
 msgstr "Ακουστικό (Handset)"
 
-#: src/Device.vala:56
+#: src/Device.vala:66
 #, fuzzy
 msgid "TV"
 msgstr "Τηλεόραση (TV)"
 
-#: src/Device.vala:58
+#: src/Device.vala:68
 #, fuzzy
 msgid "Webcam"
 msgstr "Webcam"
 
-#: src/Device.vala:60
+#: src/Device.vala:70
 msgid "Microphone"
 msgstr "Μικρόφωνο"
 
-#: src/Device.vala:62
+#: src/Device.vala:72
 #, fuzzy
 msgid "Headset"
 msgstr "Ακουστικά (Headset)"
 
-#: src/Device.vala:64
+#: src/Device.vala:74
 #, fuzzy
 msgid "Headphone"
 msgstr "Ακουστικά (Headphone)"
 
-#: src/Device.vala:66
+#: src/Device.vala:76
 msgid "Hands-Free"
 msgstr "Ακουστικά (Hands-Free)"
 
-#: src/Device.vala:68
+#: src/Device.vala:78
 msgid "Car"
 msgstr "Αυτοκίνητο"
 
-#: src/Device.vala:70
+#: src/Device.vala:80
 #, fuzzy
 msgid "HiFi"
 msgstr "HiFi Ηχοσύστημα"
 
-#: src/Device.vala:72
+#: src/Device.vala:82
 #, fuzzy
 msgid "Computer"
 msgstr "Υπολογιστής"
 
-#: src/Device.vala:74
+#: src/Device.vala:84
 #, fuzzy
 msgid "Portable"
 msgstr "Φορητό"
