@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:33-0700\n"
-"PO-Revision-Date: 2017-08-22 09:20+0000\n"
-"Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2018-06-28 01:20+0000\n"
+"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:36
@@ -42,9 +42,8 @@ msgid "Available Sound Output Devices:"
 msgstr "Dostępne wyjściowe urządzenia dźwiękowe:"
 
 #: src/OutputPanel.vala:51
-#, fuzzy
 msgid "Output Port:"
-msgstr "Głośność wyjścia:"
+msgstr "Port wyjścia:"
 
 #: src/OutputPanel.vala:57
 msgid "Output Volume:"
@@ -87,9 +86,8 @@ msgid "Available Sound Input Devices:"
 msgstr "Dostępna wejściowe urządzenia dźwiękowe:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "Głośność wejścia:"
+msgstr "Port wejścia:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
