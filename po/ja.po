@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:33-0700\n"
-"PO-Revision-Date: 2018-05-21 00:09+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"PO-Revision-Date: 2018-06-29 00:05+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-10-16 06:42+0000\n"
 
 #: src/Plug.vala:36
@@ -41,9 +41,8 @@ msgid "Available Sound Output Devices:"
 msgstr "利用可能なサウンドの出力デバイス:"
 
 #: src/OutputPanel.vala:51
-#, fuzzy
 msgid "Output Port:"
-msgstr "出力のボリューム:"
+msgstr "出力ポート:"
 
 #: src/OutputPanel.vala:57
 msgid "Output Volume:"
@@ -86,9 +85,8 @@ msgid "Available Sound Input Devices:"
 msgstr "利用可能なサウンドの入力デバイス:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "入力のボリューム:"
+msgstr "入力ポート:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
