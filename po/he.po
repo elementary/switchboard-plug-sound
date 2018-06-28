@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:33-0700\n"
-"PO-Revision-Date: 2018-05-04 00:07+0000\n"
+"PO-Revision-Date: 2018-06-28 05:18+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/he/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-10-19 06:26+0000\n"
 
 #: src/Plug.vala:36
@@ -41,9 +41,8 @@ msgid "Available Sound Output Devices:"
 msgstr "התקנים זמינים לפלט צליל:"
 
 #: src/OutputPanel.vala:51
-#, fuzzy
 msgid "Output Port:"
-msgstr "עצמת השמע של הפלט:"
+msgstr "פתחת פלט:"
 
 #: src/OutputPanel.vala:57
 msgid "Output Volume:"
@@ -84,9 +83,8 @@ msgid "Available Sound Input Devices:"
 msgstr "התקני קלט שמע זמינים:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "עצמת שמע של קלט:"
+msgstr "פתחת קלט:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
