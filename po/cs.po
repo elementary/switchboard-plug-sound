@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:33-0700\n"
-"PO-Revision-Date: 2018-05-20 00:05+0000\n"
+"PO-Revision-Date: 2018-06-29 19:11+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:36
@@ -41,9 +41,8 @@ msgid "Available Sound Output Devices:"
 msgstr "Dostupná výstupní zvuková zařízení:"
 
 #: src/OutputPanel.vala:51
-#, fuzzy
 msgid "Output Port:"
-msgstr "Výstupní hlasitost:"
+msgstr "Výstupní port:"
 
 #: src/OutputPanel.vala:57
 msgid "Output Volume:"
@@ -86,9 +85,8 @@ msgid "Available Sound Input Devices:"
 msgstr "Dostupná vstupní zvuková zařízení:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "Vstupní hlasitost:"
+msgstr "Vstupní port:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
