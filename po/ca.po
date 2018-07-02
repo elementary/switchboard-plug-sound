@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 09:33-0700\n"
-"PO-Revision-Date: 2017-07-07 11:49+0000\n"
+"PO-Revision-Date: 2018-07-02 16:02+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-19 05:57+0000\n"
 
 #: src/Plug.vala:36
@@ -41,9 +41,8 @@ msgid "Available Sound Output Devices:"
 msgstr "Dispositius de sortida de so disponibles:"
 
 #: src/OutputPanel.vala:51
-#, fuzzy
 msgid "Output Port:"
-msgstr "Volum de sortida:"
+msgstr "Port de sortida:"
 
 #: src/OutputPanel.vala:57
 msgid "Output Volume:"
@@ -86,9 +85,8 @@ msgid "Available Sound Input Devices:"
 msgstr "Dispositius d'entrada de so disponibles:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "Volum d'entrada:"
+msgstr "Port d'entrada:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
