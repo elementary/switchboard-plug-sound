@@ -26,16 +26,12 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
-    Gtk.Switch event_sounds_switch;
     Gtk.Scale balance_scale;
     Gtk.ComboBoxText ports_dropdown;
-    GLib.Settings sound_settings;
 
     private Device default_device = null;
 
     construct {
-        sound_settings = new Settings ("org.gnome.desktop.sound");
-
         margin = 12;
         margin_top = 0;
         column_spacing = 12;
@@ -54,7 +50,8 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         var event_sounds_label = new Gtk.Label (_("Event Sounds:"));
         event_sounds_label.halign = Gtk.Align.END;
-        event_sounds_switch = new Gtk.Switch ();
+
+        var event_sounds_switch = new Gtk.Switch ();
         event_sounds_switch.valign = Gtk.Align.CENTER;
         event_sounds_switch.halign = Gtk.Align.START;
         event_sounds_switch.active = true;
@@ -96,15 +93,15 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         attach (available_label, 0, 0, 3, 1);
         attach (devices_frame, 0, 1, 3, 1);
-        attach (event_sounds_label, 0, 2, 1, 1);
-        attach (event_sounds_switch, 1, 2, 1, 1);
-        attach (ports_label, 0, 3, 1, 1);
-        attach (ports_dropdown, 1, 3, 1, 1);
-        attach (volume_label, 0, 4, 1, 1);
-        attach (volume_scale, 1, 4, 1, 1);
-        attach (volume_switch, 2, 4, 1, 1);
-        attach (balance_label, 0, 5, 1, 1);
-        attach (balance_scale, 1, 5, 1, 1);
+        attach (event_sounds_label, 0, 2);
+        attach (event_sounds_switch, 1, 2);
+        attach (ports_label, 0, 3);
+        attach (ports_dropdown, 1, 3);
+        attach (volume_label, 0, 4);
+        attach (volume_scale, 1, 4);
+        attach (volume_switch, 2, 4);
+        attach (balance_label, 0, 5);
+        attach (balance_scale, 1, 5);
         attach (test_button, 0, 6, 3, 1);
 
         pam = PulseAudioManager.get_default ();
@@ -116,9 +113,8 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
         volume_switch.bind_property ("active", balance_scale, "sensitive", BindingFlags.DEFAULT);
 
-        sound_settings.changed["event-sounds"].connect (() => {
-            event_sounds_switch.set_active (sound_settings.get_boolean ("event-sounds"));
-        });
+        var sound_settings = new Settings ("org.gnome.desktop.sound");
+        sound_settings.bind ("event-sounds", event_sounds_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
         connect_signals ();
     }
@@ -153,7 +149,6 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     private void disconnect_signals () {
         volume_switch.notify["active"].disconnect (volume_switch_changed);
-        event_sounds_switch.notify["active"].disconnect (event_sounds_switch_changed);
         volume_scale.value_changed.disconnect (volume_scale_value_changed);
         balance_scale.value_changed.disconnect (balance_scale_value_changed);
         ports_dropdown.changed.disconnect (port_changed);
@@ -161,7 +156,6 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     private void connect_signals () {
         volume_switch.notify["active"].connect (volume_switch_changed);
-        event_sounds_switch.notify["active"].connect (event_sounds_switch_changed);
         volume_scale.value_changed.connect (volume_scale_value_changed);
         balance_scale.value_changed.connect (balance_scale_value_changed);
         ports_dropdown.changed.connect (port_changed);
@@ -182,12 +176,6 @@ public class Sound.OutputPanel : Gtk.Grid {
     private void volume_switch_changed () {
         disconnect_signals ();
         pam.change_device_mute (default_device, !volume_switch.active);
-        connect_signals ();
-    }
-
-    private void event_sounds_switch_changed () {
-        disconnect_signals ();
-        sound_settings.set_boolean ("event-sounds", event_sounds_switch.active);
         connect_signals ();
     }
 
