@@ -54,7 +54,6 @@ public class Sound.OutputPanel : Gtk.Grid {
         var event_sounds_switch = new Gtk.Switch ();
         event_sounds_switch.valign = Gtk.Align.CENTER;
         event_sounds_switch.halign = Gtk.Align.START;
-        event_sounds_switch.active = true;
 
         var ports_label = new Gtk.Label (_("Output Port:"));
         ports_label.halign = Gtk.Align.END;
