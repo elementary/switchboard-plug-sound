@@ -48,6 +48,13 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
 
+        var event_sounds_label = new Gtk.Label (_("Event Sounds:"));
+        event_sounds_label.halign = Gtk.Align.END;
+
+        var event_sounds_switch = new Gtk.Switch ();
+        event_sounds_switch.valign = Gtk.Align.CENTER;
+        event_sounds_switch.halign = Gtk.Align.START;
+
         var ports_label = new Gtk.Label (_("Output Port:"));
         ports_label.halign = Gtk.Align.END;
         ports_dropdown = new Gtk.ComboBoxText ();
@@ -85,14 +92,16 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         attach (available_label, 0, 0, 3, 1);
         attach (devices_frame, 0, 1, 3, 1);
-        attach (ports_label, 0, 2, 1, 1);
-        attach (ports_dropdown, 1, 2, 1, 1);
-        attach (volume_label, 0, 3, 1, 1);
-        attach (volume_scale, 1, 3, 1, 1);
-        attach (volume_switch, 2, 3, 1, 1);
-        attach (balance_label, 0, 4, 1, 1);
-        attach (balance_scale, 1, 4, 1, 1);
-        attach (test_button, 0, 5, 3, 1);
+        attach (event_sounds_label, 0, 2);
+        attach (event_sounds_switch, 1, 2);
+        attach (ports_label, 0, 3);
+        attach (ports_dropdown, 1, 3);
+        attach (volume_label, 0, 4);
+        attach (volume_scale, 1, 4);
+        attach (volume_switch, 2, 4);
+        attach (balance_label, 0, 5);
+        attach (balance_scale, 1, 5);
+        attach (test_button, 0, 6, 3, 1);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -102,6 +111,9 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
         volume_switch.bind_property ("active", balance_scale, "sensitive", BindingFlags.DEFAULT);
+
+        var sound_settings = new Settings ("org.gnome.desktop.sound");
+        sound_settings.bind ("event-sounds", event_sounds_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
         connect_signals ();
     }
