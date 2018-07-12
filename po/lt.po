@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-06-30 10:16+0000\n"
+"PO-Revision-Date: 2018-07-12 19:44+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/lt/>\n"
@@ -44,7 +44,7 @@ msgstr "Prieinami garso išvesties įrenginiai:"
 
 #: src/OutputPanel.vala:51
 msgid "Event Sounds:"
-msgstr ""
+msgstr "Įvykių garsai:"
 
 #: src/OutputPanel.vala:58
 msgid "Output Port:"
