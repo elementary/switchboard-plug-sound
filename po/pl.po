@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-06-28 01:20+0000\n"
+"PO-Revision-Date: 2018-07-12 17:22+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/pl/>\n"
@@ -43,7 +43,7 @@ msgstr "Dostępne wyjściowe urządzenia dźwiękowe:"
 
 #: src/OutputPanel.vala:51
 msgid "Event Sounds:"
-msgstr ""
+msgstr "Dźwięki wydarzeń:"
 
 #: src/OutputPanel.vala:58
 msgid "Output Port:"
