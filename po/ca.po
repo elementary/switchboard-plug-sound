@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 09:33-0700\n"
+"POT-Creation-Date: 2018-07-12 18:41+0200\n"
 "PO-Revision-Date: 2018-07-02 16:02+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
@@ -41,38 +41,42 @@ msgid "Available Sound Output Devices:"
 msgstr "Dispositius de sortida de so disponibles:"
 
 #: src/OutputPanel.vala:51
+msgid "Event Sounds:"
+msgstr ""
+
+#: src/OutputPanel.vala:58
 msgid "Output Port:"
 msgstr "Port de sortida:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:64
 msgid "Output Volume:"
 msgstr "Volum de sortida:"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:73
 msgid "Balance:"
 msgstr "Balanç:"
 
-#: src/OutputPanel.vala:72
+#: src/OutputPanel.vala:79
 msgid "Left"
 msgstr "Esquerra"
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:80
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:81
 msgid "Right"
 msgstr "Dreta"
 
-#: src/OutputPanel.vala:75
+#: src/OutputPanel.vala:82
 msgid "Test Speakers…"
 msgstr "Prova els altaveus…"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid "No Output Device"
 msgstr "No hi ha dispositiu de sortida"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

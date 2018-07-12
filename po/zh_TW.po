@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 09:33-0700\n"
+"POT-Creation-Date: 2018-07-12 18:41+0200\n"
 "PO-Revision-Date: 2017-09-16 00:16+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -39,39 +39,43 @@ msgid "Available Sound Output Devices:"
 msgstr "可用聲音輸入裝置："
 
 #: src/OutputPanel.vala:51
+msgid "Event Sounds:"
+msgstr ""
+
+#: src/OutputPanel.vala:58
 #, fuzzy
 msgid "Output Port:"
 msgstr "輸出音量："
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:64
 msgid "Output Volume:"
 msgstr "輸出音量："
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:73
 msgid "Balance:"
 msgstr "平衡："
 
-#: src/OutputPanel.vala:72
+#: src/OutputPanel.vala:79
 msgid "Left"
 msgstr "左"
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:80
 msgid "Center"
 msgstr "中"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:81
 msgid "Right"
 msgstr "右"
 
-#: src/OutputPanel.vala:75
+#: src/OutputPanel.vala:82
 msgid "Test Speakers…"
 msgstr "測試喇叭…"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid "No Output Device"
 msgstr "沒有輸出裝置"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

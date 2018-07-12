@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 09:33-0700\n"
+"POT-Creation-Date: 2018-07-12 18:41+0200\n"
 "PO-Revision-Date: 2017-12-15 00:12+0000\n"
 "Last-Translator: Joe Osborne <reachjoe.o@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
@@ -41,39 +41,43 @@ msgid "Available Sound Output Devices:"
 msgstr "Available Sound Output Devices:"
 
 #: src/OutputPanel.vala:51
+msgid "Event Sounds:"
+msgstr ""
+
+#: src/OutputPanel.vala:58
 #, fuzzy
 msgid "Output Port:"
 msgstr "Output Volume:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:64
 msgid "Output Volume:"
 msgstr "Output Volume:"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:73
 msgid "Balance:"
 msgstr "Balance:"
 
-#: src/OutputPanel.vala:72
+#: src/OutputPanel.vala:79
 msgid "Left"
 msgstr "Left"
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:80
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:81
 msgid "Right"
 msgstr "Right"
 
-#: src/OutputPanel.vala:75
+#: src/OutputPanel.vala:82
 msgid "Test Speakers…"
 msgstr "Test Speakers…"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid "No Output Device"
 msgstr "No Output Device"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

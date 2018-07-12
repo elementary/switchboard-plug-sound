@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 09:33-0700\n"
+"POT-Creation-Date: 2018-07-12 18:41+0200\n"
 "PO-Revision-Date: 2018-02-03 11:49+0000\n"
 "Last-Translator: Rico Tzschichholz <ricotz@ubuntu.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
@@ -41,39 +41,43 @@ msgid "Available Sound Output Devices:"
 msgstr "Kullanılabilir Ses Çıkış Aygıtları:"
 
 #: src/OutputPanel.vala:51
+msgid "Event Sounds:"
+msgstr ""
+
+#: src/OutputPanel.vala:58
 #, fuzzy
 msgid "Output Port:"
 msgstr "Çıkış Sesi:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:64
 msgid "Output Volume:"
 msgstr "Çıkış Sesi:"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:73
 msgid "Balance:"
 msgstr "Denge:"
 
-#: src/OutputPanel.vala:72
+#: src/OutputPanel.vala:79
 msgid "Left"
 msgstr "Sol"
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:80
 msgid "Center"
 msgstr "Orta"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:81
 msgid "Right"
 msgstr "Sağ"
 
-#: src/OutputPanel.vala:75
+#: src/OutputPanel.vala:82
 msgid "Test Speakers…"
 msgstr "Hoparlörleri Test Et..."
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid "No Output Device"
 msgstr "Çıkış Aygıtı Yok"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

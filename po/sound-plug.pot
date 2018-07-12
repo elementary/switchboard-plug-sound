@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sound-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 09:33-0700\n"
+"POT-Creation-Date: 2018-07-12 18:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,38 +38,42 @@ msgid "Available Sound Output Devices:"
 msgstr ""
 
 #: src/OutputPanel.vala:51
+msgid "Event Sounds:"
+msgstr ""
+
+#: src/OutputPanel.vala:58
 msgid "Output Port:"
 msgstr ""
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:64
 msgid "Output Volume:"
 msgstr ""
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:73
 msgid "Balance:"
 msgstr ""
 
-#: src/OutputPanel.vala:72
+#: src/OutputPanel.vala:79
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:80
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:81
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:75
+#: src/OutputPanel.vala:82
 msgid "Test Speakers…"
 msgstr ""
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid "No Output Device"
 msgstr ""
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:89
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
