@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-07-02 16:02+0000\n"
+"PO-Revision-Date: 2018-07-13 17:31+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ca/>\n"
@@ -42,7 +42,7 @@ msgstr "Dispositius de sortida de so disponibles:"
 
 #: src/OutputPanel.vala:51
 msgid "Event Sounds:"
-msgstr ""
+msgstr "Sons d'esdeveniment:"
 
 #: src/OutputPanel.vala:58
 msgid "Output Port:"
