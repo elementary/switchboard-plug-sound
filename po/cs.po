@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-06-29 19:11+0000\n"
+"PO-Revision-Date: 2018-07-21 12:32+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/cs/>\n"
@@ -42,7 +42,7 @@ msgstr "Dostupná výstupní zvuková zařízení:"
 
 #: src/OutputPanel.vala:51
 msgid "Event Sounds:"
-msgstr ""
+msgstr "Zvuky událostí:"
 
 #: src/OutputPanel.vala:58
 msgid "Output Port:"
@@ -58,7 +58,7 @@ msgstr "Vyvážení:"
 
 #: src/OutputPanel.vala:79
 msgid "Left"
-msgstr "Levý"
+msgstr "Levé"
 
 #: src/OutputPanel.vala:80
 msgid "Center"
@@ -66,7 +66,7 @@ msgstr "Střední"
 
 #: src/OutputPanel.vala:81
 msgid "Right"
-msgstr "Pravý"
+msgstr "Pravé"
 
 #: src/OutputPanel.vala:82
 msgid "Test Speakers…"
