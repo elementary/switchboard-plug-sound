@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-07-18 00:06+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2018-07-22 12:05+0000\n"
+"Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/nb/>\n"
 "Language: nb\n"
@@ -45,9 +45,8 @@ msgid "Event Sounds:"
 msgstr "Hendelseslyder:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output Port:"
-msgstr "Utgangslydstyrke:"
+msgstr "Utgangsport:"
 
 #: src/OutputPanel.vala:64
 msgid "Output Volume:"
@@ -90,9 +89,8 @@ msgid "Available Sound Input Devices:"
 msgstr "Tilgjengelige lydinngangsenheter:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "Inngangslydstyrke:"
+msgstr "Inngangsport:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
@@ -175,7 +173,6 @@ msgid "Computer"
 msgstr "Datamaskin"
 
 #: src/Device.vala:84
-#, fuzzy
 msgid "Portable"
 msgstr "Flyttbar"
 
