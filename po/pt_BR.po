@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
 "PO-Revision-Date: 2018-08-29 15:50+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Last-Translator: Fabricio Caseiro <fcaseiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -46,7 +46,7 @@ msgstr "Som de Eventos:"
 
 #: src/OutputPanel.vala:58
 msgid "Output Port:"
-msgstr "Porta de Saída:"
+msgstr "Porta de saída:"
 
 #: src/OutputPanel.vala:64
 msgid "Output Volume:"
@@ -90,7 +90,7 @@ msgstr "Dispositivos de entrada de som disponíveis:"
 
 #: src/InputPanel.vala:52
 msgid "Input Port:"
-msgstr "Porta de Entrada:"
+msgstr "Porta de entrada:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
