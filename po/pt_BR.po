@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-08-29 15:50+0000\n"
+"PO-Revision-Date: 2018-08-29 15:52+0000\n"
 "Last-Translator: Fabricio Caseiro <fcaseiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/pt_BR/>\n"
@@ -159,7 +159,7 @@ msgstr "Fone de ouvido"
 
 #: src/Device.vala:76
 msgid "Hands-Free"
-msgstr "Mãos livres"
+msgstr "Fone de ouvido sem fio"
 
 #: src/Device.vala:78
 msgid "Car"
