@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-08-29 16:20+0000\n"
+"PO-Revision-Date: 2018-09-01 00:09+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/pt_BR/>\n"
@@ -38,7 +38,7 @@ msgstr "Entrada"
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
-msgstr "Dispositivos de saída de áudio disponíveis:"
+msgstr "Dispositivos de saída de som disponíveis:"
 
 #: src/OutputPanel.vala:51
 msgid "Event Sounds:"
