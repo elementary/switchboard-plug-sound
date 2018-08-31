@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2018-07-21 00:07+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2018-08-31 13:10+0000\n"
+"Last-Translator: Robin Lahtinen <robin.lahtinen@gmail.com>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/fi/>\n"
 "Language: fi\n"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Huipun havaitseminen"
 
 #: src/Device.vala:60
 msgid "Built-in"
@@ -134,7 +134,7 @@ msgstr "Kaiutin"
 
 #: src/Device.vala:64
 msgid "Handset"
-msgstr ""
+msgstr "Luuri"
 
 #: src/Device.vala:66
 msgid "TV"
@@ -150,15 +150,15 @@ msgstr "Mikrofoni"
 
 #: src/Device.vala:72
 msgid "Headset"
-msgstr ""
+msgstr "Kuulokemikrofoni"
 
 #: src/Device.vala:74
 msgid "Headphone"
-msgstr ""
+msgstr "Kuuloke"
 
 #: src/Device.vala:76
 msgid "Hands-Free"
-msgstr ""
+msgstr "Handsfree"
 
 #: src/Device.vala:78
 msgid "Car"
@@ -174,7 +174,7 @@ msgstr "Tietokone"
 
 #: src/Device.vala:84
 msgid "Portable"
-msgstr ""
+msgstr "Kannettava"
 
 #~ msgid "Device Profile:"
 #~ msgstr "Laiteprofiili:"
