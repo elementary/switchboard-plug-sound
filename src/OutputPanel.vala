@@ -76,6 +76,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, -1, 1, 0.1);
         balance_scale.adjustment.page_increment = 0.1;
         balance_scale.draw_value = false;
+        balance_scale.has_origin = false;
         balance_scale.add_mark (-1, Gtk.PositionType.BOTTOM, _("Left"));
         balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
         balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
