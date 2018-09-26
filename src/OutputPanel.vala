@@ -41,9 +41,8 @@ public class Sound.OutputPanel : Gtk.Grid {
         available_label.halign = Gtk.Align.START;
         devices_listbox = new Gtk.ListBox ();
         devices_listbox.activate_on_single_click = true;
-        devices_listbox.row_activated.connect (() => {
-            var row = (Sound.DeviceRow) devices_listbox.get_selected_row ();
-            pam.set_default_device (row.device);
+        devices_listbox.row_activated.connect ((row) => {
+            pam.set_default_device (((Sound.DeviceRow) row).device);
         });
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
