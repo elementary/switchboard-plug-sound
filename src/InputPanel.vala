@@ -89,7 +89,7 @@ public class Sound.InputPanel : Gtk.Grid {
         attach (volume_scale, 1, 3, 1, 1);
         attach (volume_switch, 2, 3, 1, 1);
         attach (level_label, 0, 4, 1, 1);
-        attach (level_bar, 1, 5, 1, 1);
+        attach (level_bar, 1, 4, 1, 1);
 
         device_monitor = new InputDeviceMonitor ();
         device_monitor.update_fraction.connect (update_fraction);
