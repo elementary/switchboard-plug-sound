@@ -5,12 +5,12 @@
 
 You'll need the following dependencies:
 
-* cmake
-* libcanberra-gtk-dev
+* libcanberra-gtk3-dev
 * libgranite-dev
 * libgtk-3-dev
-* libswitchboard-2.0-dev
 * libpulse-dev
+* libswitchboard-2.0-dev
+* meson
 * valac
 
 Run `meson` to configure the build environment and then `ninja` to build
