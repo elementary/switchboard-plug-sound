@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 18:41+0200\n"
-"PO-Revision-Date: 2017-08-31 15:17+0700\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"PO-Revision-Date: 2018-10-01 00:08+0000\n"
+"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/id/>\n"
 "Language: id\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:36
@@ -44,9 +44,8 @@ msgid "Event Sounds:"
 msgstr ""
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output Port:"
-msgstr "Volume Keluaran:"
+msgstr "Port Keluaran:"
 
 #: src/OutputPanel.vala:64
 msgid "Output Volume:"
@@ -89,9 +88,8 @@ msgid "Available Sound Input Devices:"
 msgstr "Perangkat Masukan Suara yang Tersedia:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input Port:"
-msgstr "Volume Masukan:"
+msgstr "Port Masukan:"
 
 #: src/InputPanel.vala:58
 msgid "Input Volume:"
@@ -127,11 +125,11 @@ msgstr "Deteksi puncak"
 
 #: src/Device.vala:60
 msgid "Built-in"
-msgstr "Built-in"
+msgstr "Bawaan"
 
 #: src/Device.vala:62
 msgid "Speaker"
-msgstr "Speaker"
+msgstr "Pengeras Suara"
 
 #: src/Device.vala:64
 msgid "Handset"
