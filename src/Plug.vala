@@ -99,6 +99,8 @@ public class Sound.Plug : Switchboard.Plug {
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        search_results.set ("%s → %s".printf (display_name, _("Output")), "output");
+        search_results.set ("%s → %s".printf (display_name, _("Input")), "input");
         return search_results;
     }
 }
