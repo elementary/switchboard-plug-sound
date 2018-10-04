@@ -99,6 +99,17 @@ public class Sound.Plug : Switchboard.Plug {
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        search_results.set ("%s → %s".printf (display_name, _("Output")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Device")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Event Sounds")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Port")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Volume")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Balance")), "output");
+        search_results.set ("%s → %s".printf (display_name, _("Input")), "input");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Device")), "input");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Port")), "input");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Volume")), "input");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Enable")), "input");
         return search_results;
     }
 }
