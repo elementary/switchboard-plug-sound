@@ -1,6 +1,8 @@
 # Switchboard Sound Plug
 [![Translation status](https://l10n.elementary.io/widgets/switchboard/switchboard-plug-sound/svg-badge.svg)](https://l10n.elementary.io/projects/switchboard/switchboard-plug-sound/?utm_source=widget)
 
+![screenshot](data/screenshot.png?raw=true)
+
 ## Building and Installation
 
 You'll need the following dependencies:
