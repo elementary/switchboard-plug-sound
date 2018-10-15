@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 18:41+0200\n"
+"POT-Creation-Date: 2018-10-15 15:55-0500\n"
 "PO-Revision-Date: 2018-07-13 17:31+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
@@ -28,55 +28,85 @@ msgstr "So"
 msgid "Change sound and microphone volume"
 msgstr "Canvieu el volum del so i del micròfon"
 
-#: src/Plug.vala:56 src/Device.vala:86
+#: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
 msgid "Output"
 msgstr "Sortida"
 
-#: src/Plug.vala:57 src/Device.vala:86
+#: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
 msgid "Input"
 msgstr "Entrada"
+
+#: src/Plug.vala:103 src/Plug.vala:109
+msgid "Device"
+msgstr ""
+
+#: src/Plug.vala:104
+#, fuzzy
+msgid "Event Sounds"
+msgstr "Sons d'esdeveniment:"
+
+#: src/Plug.vala:105 src/Plug.vala:110
+#, fuzzy
+msgid "Port"
+msgstr "Portàtil"
+
+#: src/Plug.vala:106 src/Plug.vala:111
+#, fuzzy
+msgid "Volume"
+msgstr "Volum d'entrada:"
+
+#: src/Plug.vala:107
+#, fuzzy
+msgid "Balance"
+msgstr "Balanç:"
+
+#: src/Plug.vala:112
+msgid "Enable"
+msgstr ""
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Dispositius de sortida de so disponibles:"
 
-#: src/OutputPanel.vala:51
+#: src/OutputPanel.vala:54
 msgid "Event Sounds:"
 msgstr "Sons d'esdeveniment:"
 
-#: src/OutputPanel.vala:58
+#: src/OutputPanel.vala:61
 msgid "Output Port:"
 msgstr "Port de sortida:"
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:67
 msgid "Output Volume:"
 msgstr "Volum de sortida:"
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:76
 msgid "Balance:"
 msgstr "Balanç:"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Left"
 msgstr "Esquerra"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:85
 msgid "Right"
 msgstr "Dreta"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 msgid "Test Speakers…"
 msgstr "Prova els altaveus…"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid "No Output Device"
 msgstr "No hi ha dispositiu de sortida"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

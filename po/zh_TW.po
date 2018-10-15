@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 18:41+0200\n"
+"POT-Creation-Date: 2018-10-15 15:55-0500\n"
 "PO-Revision-Date: 2017-09-16 00:16+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -26,56 +26,85 @@ msgstr "音效"
 msgid "Change sound and microphone volume"
 msgstr "變更音量與麥克風收音量"
 
-#: src/Plug.vala:56 src/Device.vala:86
+#: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
 msgid "Output"
 msgstr "輸出"
 
-#: src/Plug.vala:57 src/Device.vala:86
+#: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
 msgid "Input"
 msgstr "輸入"
+
+#: src/Plug.vala:103 src/Plug.vala:109
+msgid "Device"
+msgstr ""
+
+#: src/Plug.vala:104
+msgid "Event Sounds"
+msgstr ""
+
+#: src/Plug.vala:105 src/Plug.vala:110
+#, fuzzy
+msgid "Port"
+msgstr "可攜裝置"
+
+#: src/Plug.vala:106 src/Plug.vala:111
+#, fuzzy
+msgid "Volume"
+msgstr "輸入音量："
+
+#: src/Plug.vala:107
+#, fuzzy
+msgid "Balance"
+msgstr "平衡："
+
+#: src/Plug.vala:112
+msgid "Enable"
+msgstr ""
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "可用聲音輸入裝置："
 
-#: src/OutputPanel.vala:51
+#: src/OutputPanel.vala:54
 msgid "Event Sounds:"
 msgstr ""
 
-#: src/OutputPanel.vala:58
+#: src/OutputPanel.vala:61
 #, fuzzy
 msgid "Output Port:"
 msgstr "輸出音量："
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:67
 msgid "Output Volume:"
 msgstr "輸出音量："
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:76
 msgid "Balance:"
 msgstr "平衡："
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Left"
 msgstr "左"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Center"
 msgstr "中"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:85
 msgid "Right"
 msgstr "右"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 msgid "Test Speakers…"
 msgstr "測試喇叭…"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid "No Output Device"
 msgstr "沒有輸出裝置"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

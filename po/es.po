@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 18:41+0200\n"
+"POT-Creation-Date: 2018-10-15 15:55-0500\n"
 "PO-Revision-Date: 2018-05-17 00:04+0000\n"
 "Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
@@ -28,56 +28,85 @@ msgstr "Sonido"
 msgid "Change sound and microphone volume"
 msgstr "Cambiar el volumen del micrófono y el sonido"
 
-#: src/Plug.vala:56 src/Device.vala:86
+#: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
 msgid "Output"
 msgstr "Salida"
 
-#: src/Plug.vala:57 src/Device.vala:86
+#: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
 msgid "Input"
 msgstr "Entrada"
+
+#: src/Plug.vala:103 src/Plug.vala:109
+msgid "Device"
+msgstr ""
+
+#: src/Plug.vala:104
+msgid "Event Sounds"
+msgstr ""
+
+#: src/Plug.vala:105 src/Plug.vala:110
+#, fuzzy
+msgid "Port"
+msgstr "Portable"
+
+#: src/Plug.vala:106 src/Plug.vala:111
+#, fuzzy
+msgid "Volume"
+msgstr "Volumen de la entrada:"
+
+#: src/Plug.vala:107
+#, fuzzy
+msgid "Balance"
+msgstr "Balance:"
+
+#: src/Plug.vala:112
+msgid "Enable"
+msgstr ""
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Dispositivos de Salida Disponibles:"
 
-#: src/OutputPanel.vala:51
+#: src/OutputPanel.vala:54
 msgid "Event Sounds:"
 msgstr ""
 
-#: src/OutputPanel.vala:58
+#: src/OutputPanel.vala:61
 #, fuzzy
 msgid "Output Port:"
 msgstr "Volumen de la salida:"
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:67
 msgid "Output Volume:"
 msgstr "Volumen de la salida:"
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:76
 msgid "Balance:"
 msgstr "Balance:"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Left"
 msgstr "Izquierda"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Center"
 msgstr "Centro"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:85
 msgid "Right"
 msgstr "Derecha"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 msgid "Test Speakers…"
 msgstr "Probar los altavoces…"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid "No Output Device"
 msgstr "No hay dispositivo de salida"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

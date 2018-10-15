@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 18:41+0200\n"
+"POT-Creation-Date: 2018-10-15 15:55-0500\n"
 "PO-Revision-Date: 2016-08-04 00:09+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -26,55 +26,82 @@ msgstr ""
 msgid "Change sound and microphone volume"
 msgstr ""
 
-#: src/Plug.vala:56 src/Device.vala:86
+#: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
 msgid "Output"
 msgstr ""
 
-#: src/Plug.vala:57 src/Device.vala:86
+#: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
 msgid "Input"
+msgstr ""
+
+#: src/Plug.vala:103 src/Plug.vala:109
+msgid "Device"
+msgstr ""
+
+#: src/Plug.vala:104
+msgid "Event Sounds"
+msgstr ""
+
+#: src/Plug.vala:105 src/Plug.vala:110
+msgid "Port"
+msgstr ""
+
+#: src/Plug.vala:106 src/Plug.vala:111
+msgid "Volume"
+msgstr ""
+
+#: src/Plug.vala:107
+#, fuzzy
+msgid "Balance"
+msgstr "Tühista"
+
+#: src/Plug.vala:112
+msgid "Enable"
 msgstr ""
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr ""
 
-#: src/OutputPanel.vala:51
+#: src/OutputPanel.vala:54
 msgid "Event Sounds:"
 msgstr ""
 
-#: src/OutputPanel.vala:58
+#: src/OutputPanel.vala:61
 msgid "Output Port:"
 msgstr ""
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:67
 msgid "Output Volume:"
 msgstr ""
 
-#: src/OutputPanel.vala:73
+#: src/OutputPanel.vala:76
 msgid "Balance:"
 msgstr ""
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:85
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 msgid "Test Speakers…"
 msgstr ""
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid "No Output Device"
 msgstr ""
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:93
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -239,6 +266,3 @@ msgstr ""
 
 #~ msgid "Restore Settings"
 #~ msgstr "Taasta seadistused"
-
-#~ msgid "Cancel"
-#~ msgstr "Tühista"
