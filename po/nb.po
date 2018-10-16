@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 15:55-0500\n"
-"PO-Revision-Date: 2018-07-22 12:05+0000\n"
-"Last-Translator: Nils K <slx@nilsk.net>\n"
+"PO-Revision-Date: 2018-10-17 00:07+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/nb/>\n"
 "Language: nb\n"
@@ -40,7 +40,7 @@ msgstr "Inngang"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "Enhet"
 
 #: src/Plug.vala:104
 #, fuzzy
@@ -64,7 +64,7 @@ msgstr "Balanse:"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Skru på"
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
