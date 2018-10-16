@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 15:55-0500\n"
-"PO-Revision-Date: 2018-09-06 04:39+0000\n"
-"Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
+"PO-Revision-Date: 2018-10-16 00:59+0000\n"
+"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/it/>\n"
 "Language: it\n"
@@ -40,31 +40,27 @@ msgstr "Ingresso"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "Dispositivo"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Event Sounds"
-msgstr "Suoni degli eventi:"
+msgstr "Suoni degli eventi"
 
 #: src/Plug.vala:105 src/Plug.vala:110
-#, fuzzy
 msgid "Port"
-msgstr "Portatile"
+msgstr "Porta"
 
 #: src/Plug.vala:106 src/Plug.vala:111
-#, fuzzy
 msgid "Volume"
-msgstr "Volume in ingresso:"
+msgstr "Volume"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Balance"
-msgstr "Bilanciamento:"
+msgstr "Bilanciamento"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Attiva"
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
