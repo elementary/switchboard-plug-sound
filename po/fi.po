@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 15:55-0500\n"
-"PO-Revision-Date: 2018-08-31 13:10+0000\n"
-"Last-Translator: Robin Lahtinen <robin.lahtinen@gmail.com>\n"
+"PO-Revision-Date: 2018-10-16 16:42+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/fi/>\n"
 "Language: fi\n"
@@ -40,31 +40,27 @@ msgstr "Sisääntulo"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "Laite"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Event Sounds"
-msgstr "Tapahtumaäänet:"
+msgstr "Tapahtumaäänet"
 
 #: src/Plug.vala:105 src/Plug.vala:110
-#, fuzzy
 msgid "Port"
-msgstr "Kannettava"
+msgstr "Portti"
 
 #: src/Plug.vala:106 src/Plug.vala:111
-#, fuzzy
 msgid "Volume"
-msgstr "Sisääntulon äänenvoimakkuus:"
+msgstr "Äänenvoimakkuus"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Balance"
-msgstr "Tasapaino:"
+msgstr "Tasapaino"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Käytä"
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
