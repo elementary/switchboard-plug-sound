@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 15:55-0500\n"
-"PO-Revision-Date: 2018-07-12 19:44+0000\n"
+"PO-Revision-Date: 2018-10-16 19:53+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/lt/>\n"
@@ -42,31 +42,27 @@ msgstr "Įvestis"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "Įrenginys"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Event Sounds"
-msgstr "Įvykių garsai:"
+msgstr "Įvykių garsai"
 
 #: src/Plug.vala:105 src/Plug.vala:110
-#, fuzzy
 msgid "Port"
-msgstr "Portatyvi sistema"
+msgstr "Prievadas"
 
 #: src/Plug.vala:106 src/Plug.vala:111
-#, fuzzy
 msgid "Volume"
-msgstr "Įvesties garsis:"
+msgstr "Garsis"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Balance"
-msgstr "Balansas:"
+msgstr "Balansas"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Įjungti"
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
