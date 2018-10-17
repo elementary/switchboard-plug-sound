@@ -51,7 +51,7 @@ public class Sound.PulseAudioManager : GLib.Object {
     private Gee.HashMap<uint32, PulseAudio.Operation> volume_operations;
 
     private PulseAudioManager () {
-        
+
     }
 
     construct {
@@ -399,17 +399,17 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (i == null)
             return;
         stdout.printf("  card: %s (%s) \n", i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION), i.name);
-        
+
         foreach (var profile in i.profiles2) {
             // var name = get_profile_canonical_name(profile.name);
             // if (name != "" && profile.available == 1) {
             //     stdout.printf("      profile: %s (%s)\n", name, profile.name);
             // }
         }
-        
+
         foreach (var port in i.ports) {
             if (port.available == PulseAudio.PortAvailable.NO) continue;
-            if (port.direction != PulseAudio.Direction.OUTPUT) continue;
+            if (!(PulseAudio.Direction.OUTPUT in port.direction)) continue;
             stdout.printf("    port: %s (%s)\n", port.description, port.name);
             // stdout.printf("      proplist: %s\n", port.proplist.to_string());
         }
