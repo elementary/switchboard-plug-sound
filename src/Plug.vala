@@ -24,7 +24,7 @@ public class Sound.Plug : Switchboard.Plug {
     Gtk.Grid main_grid;
     Gtk.Stack stack;
 
-    InputPanel input_panel;
+    // InputPanel input_panel;
 
     public Plug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
@@ -42,7 +42,7 @@ public class Sound.Plug : Switchboard.Plug {
     public override Gtk.Widget get_widget () {
         if (main_grid == null) {
             var output_panel = new OutputPanel ();
-            input_panel = new InputPanel ();
+            // input_panel = new InputPanel ();
 
             stack = new Gtk.Stack ();
             stack.expand = true;
@@ -54,11 +54,11 @@ public class Sound.Plug : Switchboard.Plug {
             stack_switcher.stack = stack;
 
             stack.add_titled (output_panel, "output", _("Output"));
-            stack.add_titled (input_panel, "input", _("Input"));
+            // stack.add_titled (input_panel, "input", _("Input"));
 
-            stack.notify["visible-child"].connect (() => {
-                input_panel.set_visibility (stack.visible_child == input_panel);
-            });
+            // stack.notify["visible-child"].connect (() => {
+            //     input_panel.set_visibility (stack.visible_child == input_panel);
+            // });
 
             main_grid = new Gtk.Grid ();
             main_grid.orientation = Gtk.Orientation.VERTICAL;
@@ -75,14 +75,14 @@ public class Sound.Plug : Switchboard.Plug {
 
     public override void shown () {
         main_grid.show ();
-        if (stack.visible_child == input_panel) {
-            input_panel.set_visibility (true);
-        }
+        // if (stack.visible_child == input_panel) {
+        //     input_panel.set_visibility (true);
+        // }
     }
 
     public override void hidden () {
         main_grid.hide ();
-        input_panel.set_visibility (false);
+        // input_panel.set_visibility (false);
     }
 
     public override void search_callback (string location) {

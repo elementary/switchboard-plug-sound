@@ -31,7 +31,8 @@ public class Sound.Device : GLib.Object {
     public signal void removed ();
 
     public bool input { get; set; default=true; }
-    public uint32 index { get; construct; default=0U; }
+    public string id { get; construct; }
+    public uint32 card_index { get; construct; }
     public string name { get; set; }
     public string display_name { get; set; }
     public string form_factor { get; set; }
@@ -45,8 +46,8 @@ public class Sound.Device : GLib.Object {
     public Gee.ArrayList<Port> ports { get; set; }
     public Port? default_port { get; set; default=null; }
 
-    public Device (uint32 index) {
-        Object (index: index);
+    public Device (string id, uint32 card_index) {
+        Object (id: id, card_index: card_index);
     }
 
     construct {

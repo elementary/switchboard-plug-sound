@@ -3,8 +3,8 @@ plug_files = files(
     'PulseAudioManager.vala',
     'Plug.vala',
     'OutputPanel.vala',
-    'InputPanel.vala',
-    'InputDeviceMonitor.vala',
+    # 'InputPanel.vala',
+    # 'InputDeviceMonitor.vala',
     'DeviceRow.vala',
     'Device.vala'
 )
