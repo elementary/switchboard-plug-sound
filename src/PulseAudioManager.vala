@@ -163,7 +163,8 @@ public class Sound.PulseAudioManager : GLib.Object {
                         PulseAudio.Context.SubscriptionMask.SINK |
                         PulseAudio.Context.SubscriptionMask.SOURCE |
                         PulseAudio.Context.SubscriptionMask.SINK_INPUT |
-                        PulseAudio.Context.SubscriptionMask.SOURCE_OUTPUT);
+                        PulseAudio.Context.SubscriptionMask.SOURCE_OUTPUT |
+                        PulseAudio.Context.SubscriptionMask.CARD);
                 context.get_server_info (server_info_callback);
                 is_ready = true;
                 break;
@@ -213,6 +214,25 @@ public class Sound.PulseAudioManager : GLib.Object {
 
             case PulseAudio.Context.SubscriptionEventType.SERVER:
                 context.get_server_info (server_info_callback);
+                break;
+
+            case PulseAudio.Context.SubscriptionEventType.CARD:
+                var event_type = t & PulseAudio.Context.SubscriptionEventType.TYPE_MASK;
+                switch (event_type) {
+                    case PulseAudio.Context.SubscriptionEventType.NEW:
+                        stdout.printf("subscribe_callback:CARD:NEW\n");
+                        c.get_card_info_by_index (index, card_info_callback);
+                        break;
+
+                    case PulseAudio.Context.SubscriptionEventType.CHANGE:
+                        stdout.printf("subscribe_callback:CARD:CHANGE\n");
+                        c.get_card_info_by_index (index, card_info_callback);
+                        break;
+
+                    case PulseAudio.Context.SubscriptionEventType.REMOVE:
+                        stdout.printf("subscribe_callback:CARD:REMOVE\n");
+                        break;
+                }
                 break;
 
             case PulseAudio.Context.SubscriptionEventType.SOURCE:
@@ -374,6 +394,37 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
 
+    private void card_info_callback (PulseAudio.Context c, PulseAudio.CardInfo? i, int eol) {
+        stdout.printf("card_info_callback\n");
+        if (i == null)
+            return;
+        stdout.printf("  card: %s (%s) \n", i.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION), i.name);
+        
+        foreach (var profile in i.profiles2) {
+            // var name = get_profile_canonical_name(profile.name);
+            // if (name != "" && profile.available == 1) {
+            //     stdout.printf("      profile: %s (%s)\n", name, profile.name);
+            // }
+        }
+        
+        foreach (var port in i.ports) {
+            if (port.available == PulseAudio.PortAvailable.NO) continue;
+            if (port.direction != PulseAudio.Direction.OUTPUT) continue;
+            stdout.printf("    port: %s (%s)\n", port.description, port.name);
+            // stdout.printf("      proplist: %s\n", port.proplist.to_string());
+        }
+    }
+
+    private string get_profile_canonical_name(string org_name) {
+        var org_name_parts = org_name.split("+");
+        string[] name_parts = {};
+        foreach (var part in org_name_parts) {
+            if (part.has_prefix("input:")) continue;
+            name_parts += part.replace("output:", "");
+        }
+        return string.joinv ("+", name_parts);
+    }
+
     private void server_info_callback (PulseAudio.Context c, PulseAudio.ServerInfo? i) {
         if (i == null)
             return;
@@ -382,6 +433,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         default_sink_name = i.default_sink_name;
         context.get_sink_info_list (sink_info_callback);
         context.get_source_info_list (source_info_callback);
+        context.get_card_info_list (card_info_callback);
     }
 
     /*
