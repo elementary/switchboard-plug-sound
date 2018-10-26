@@ -42,7 +42,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_listbox = new Gtk.ListBox ();
         devices_listbox.activate_on_single_click = true;
         devices_listbox.row_activated.connect ((row) => {
-            pam.set_default_device (((Sound.DeviceRow) row).device);
+            pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
@@ -235,7 +235,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         device_row.show_all ();
         devices_listbox.add (device_row);
         device_row.set_as_default.connect (() => {
-            pam.set_default_device (device);
+            pam.set_default_device.begin (device);
         });
     }
 }

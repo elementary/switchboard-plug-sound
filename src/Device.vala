@@ -33,6 +33,12 @@ public class Sound.Device : GLib.Object {
     public bool input { get; set; default=true; }
     public string id { get; construct; }
     public uint32 card_index { get; construct; }
+    public string port_name { get; construct; }
+    public string? sink_name { get; set; }
+    public uint32? sink_index { get; set; }
+    public string? card_sink_name { get; set; }
+    public string? card_sink_port_name { get; set; }
+    public uint32? card_sink_index { get; set; }
     public string name { get; set; }
     public string display_name { get; set; }
     public string form_factor { get; set; }
@@ -44,10 +50,12 @@ public class Sound.Device : GLib.Object {
     public PulseAudio.ChannelMap channel_map { get; set; }
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
     public Gee.ArrayList<Port> ports { get; set; }
+    public Gee.ArrayList<string> profiles { get; set; }
+    public string card_active_profile_name { get; set; }
     public Port? default_port { get; set; default=null; }
 
-    public Device (string id, uint32 card_index) {
-        Object (id: id, card_index: card_index);
+    public Device (string id, uint32 card_index, string port_name) {
+        Object (id: id, card_index: card_index, port_name: port_name);
     }
 
     construct {
