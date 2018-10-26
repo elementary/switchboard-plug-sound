@@ -115,7 +115,8 @@ public class Sound.InputPanel : Gtk.Grid {
 
     private void port_changed () {
         disconnect_signals ();
-        pam.context.set_source_port_by_index (default_device.index, ports_dropdown.active_id);
+        // TODO
+        // pam.context.set_source_port_by_index (default_device.index, ports_dropdown.active_id);
         connect_signals ();
     }
 
@@ -220,7 +221,7 @@ public class Sound.InputPanel : Gtk.Grid {
         device_row.show_all ();
         devices_listbox.add (device_row);
         device_row.set_as_default.connect (() => {
-            pam.set_default_device (device);
+            pam.set_default_device.begin (device);
         });
     }
 }

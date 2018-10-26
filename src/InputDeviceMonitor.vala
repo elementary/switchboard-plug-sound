@@ -82,7 +82,8 @@ public class Sound.InputDeviceMonitor : GLib.Object {
         var a = PulseAudio.Stream.BufferAttr ();
         a.maxlength = uint32.MAX;
         a.fragsize = (uint32)sizeof(float);
-        steam.connect_record ("%u".printf (device.index), a, PulseAudio.Stream.Flags.DONT_MOVE|PulseAudio.Stream.Flags.PEAK_DETECT|PulseAudio.Stream.Flags.ADJUST_LATENCY);
+        // TODO
+        // steam.connect_record ("%u".printf (device.index), a, PulseAudio.Stream.Flags.DONT_MOVE|PulseAudio.Stream.Flags.PEAK_DETECT|PulseAudio.Stream.Flags.ADJUST_LATENCY);
     }
 
     public void set_device (Device device) {
