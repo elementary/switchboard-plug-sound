@@ -529,11 +529,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             device.name = card.name;
             var card_description = card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION);
             device.display_name = @"$(port.description) - $(card_description)";
-            // var form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
-            // if (form_factor != null) {
-            //     device.form_factor = form_factor;
-            // }
-            device.form_factor = null;
+            device.form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
             device.profiles = get_relevant_card_port_profiles (port);
             foreach (var profile in device.profiles) {
                 debug ("      profile: %s", profile);
