@@ -456,9 +456,6 @@ public class Sound.PulseAudioManager : GLib.Object {
                     device.sink_index = sink.index;
                     device.is_default = (sink.name == default_sink_name);
                     debug("      is_default: %s", device.is_default ? "true" : "false");
-                    if (device.is_default) {
-                        default_output = device;
-                    }
                     device.is_muted = (sink.mute != 0);
                     device.cvolume = sink.volume;
                     device.channel_map = sink.channel_map;
@@ -486,9 +483,9 @@ public class Sound.PulseAudioManager : GLib.Object {
                 //             device.default_port = new_port;
                 //         }
                 //     }
-                //
-                    
-                    
+                    if (device.is_default) {
+                        default_output = device;
+                    }
                 } else {
                     device.sink_name = null;
                     device.sink_index = null;
