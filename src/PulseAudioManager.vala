@@ -163,50 +163,50 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     public void change_device_mute (Device device, bool mute = true) {
-        // if (device.input) {
-        //     context.set_source_mute_by_index (device.index, mute, null);
-        // } else {
-        //     context.set_sink_mute_by_index (device.index, mute, null);
-        // }
+        if (device.input) {
+            context.set_source_mute_by_name (device.sink_name, mute, null);
+        } else {
+            context.set_sink_mute_by_name (device.sink_name, mute, null);
+        }
     }
 
     public void change_device_volume (Device device, double volume) {
-        // device.volume_operations.foreach ((operation) => {
-        //     if (operation.get_state () == PulseAudio.Operation.State.RUNNING) {
-        //         operation.cancel ();
-        //     }
-        //
-        //     device.volume_operations.remove (operation);
-        //     return GLib.Source.CONTINUE;
-        // });
-        //
-        // var cvol = device.cvolume;
-        // cvol.scale (double_to_volume (volume));
-        // PulseAudio.Operation? operation = null;
-        // if (device.input) {
-        //     operation = context.set_source_volume_by_index (device.index, cvol, null);
-        // } else {
-        //     operation = context.set_sink_volume_by_index (device.index, cvol, null);
-        // }
-        //
-        // if (operation != null) {
-        //     device.volume_operations.add (operation);
-        // }
+        device.volume_operations.foreach ((operation) => {
+            if (operation.get_state () == PulseAudio.Operation.State.RUNNING) {
+                operation.cancel ();
+            }
+        
+            device.volume_operations.remove (operation);
+            return GLib.Source.CONTINUE;
+        });
+        
+        var cvol = device.cvolume;
+        cvol.scale (double_to_volume (volume));
+        PulseAudio.Operation? operation = null;
+        if (device.input) {
+            operation = context.set_source_volume_by_name (device.sink_name, cvol, null);
+        } else {
+            operation = context.set_sink_volume_by_name (device.sink_name, cvol, null);
+        }
+        
+        if (operation != null) {
+            device.volume_operations.add (operation);
+        }
     }
 
     public void change_device_balance (Device device, float balance) {
-        // var cvol = device.cvolume;
-        // cvol = cvol.set_balance (device.channel_map, balance);
-        // PulseAudio.Operation? operation = null;
-        // if (device.input) {
-        //     operation = context.set_source_volume_by_index (device.index, cvol, null);
-        // } else {
-        //     operation = context.set_sink_volume_by_index (device.index, cvol, null);
-        // }
-        //
-        // if (operation != null) {
-        //     device.volume_operations.add (operation);
-        // }
+        var cvol = device.cvolume;
+        cvol = cvol.set_balance (device.channel_map, balance);
+        PulseAudio.Operation? operation = null;
+        if (device.input) {
+            operation = context.set_source_volume_by_name (device.sink_name, cvol, null);
+        } else {
+            operation = context.set_sink_volume_by_name (device.sink_name, cvol, null);
+        }
+        
+        if (operation != null) {
+            device.volume_operations.add (operation);
+        }
     }
 
     /*
@@ -459,42 +459,42 @@ public class Sound.PulseAudioManager : GLib.Object {
                     if (device.is_default) {
                         default_output = device;
                     }
+                    device.is_muted = (sink.mute != 0);
+                    device.cvolume = sink.volume;
+                    device.channel_map = sink.channel_map;
+                    device.balance = sink.volume.get_balance (sink.channel_map);
+                    device.volume_operations.foreach ((operation) => {
+                        if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
+                            device.volume_operations.remove (operation);
+                        }
+                
+                        return GLib.Source.CONTINUE;
+                    });
+                    if (device.volume_operations.is_empty) {
+                        device.volume = volume_to_double (sink.volume.max ());
+                    }
+                //     device.ports.clear ();
+                //     device.default_port = null;
+                //     for (int idx = 0; idx < sink.n_ports; idx++) {
+                //         var new_port = new Device.Port ();
+                //         new_port.name = i.ports[idx].name;
+                //         new_port.description = i.ports[idx].description;
+                //         new_port.priority = i.ports[idx].priority;
+                //         device.ports.add (new_port);
+                //
+                //         if (i.ports[idx] == i.active_port) {
+                //             device.default_port = new_port;
+                //         }
+                //     }
+                //
+                    
+                    
                 } else {
                     device.sink_name = null;
                     device.sink_index = null;
                 }
             }
         }
-
-    //     device.is_muted = (i.mute != 0);
-    //     device.cvolume = i.volume;
-    //     device.channel_map = i.channel_map;
-    //     device.balance = i.volume.get_balance (i.channel_map);
-    //     device.volume_operations.foreach ((operation) => {
-    //         if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
-    //             device.volume_operations.remove (operation);
-    //         }
-    //
-    //         return GLib.Source.CONTINUE;
-    //     });
-    //
-    //     device.ports.clear ();
-    //     device.default_port = null;
-    //     for (int idx = 0; idx < i.n_ports; idx++) {
-    //         var new_port = new Device.Port ();
-    //         new_port.name = i.ports[idx].name;
-    //         new_port.description = i.ports[idx].description;
-    //         new_port.priority = i.ports[idx].priority;
-    //         device.ports.add (new_port);
-    //
-    //         if (i.ports[idx] == i.active_port) {
-    //             device.default_port = new_port;
-    //         }
-    //     }
-    //
-    //     if (device.volume_operations.is_empty) {
-    //         device.volume = volume_to_double (i.volume.max ());
-    //     }
     }
 
     private void card_info_callback (PulseAudio.Context c, PulseAudio.CardInfo? card, int eol) {
