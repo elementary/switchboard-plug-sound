@@ -27,7 +27,7 @@ public class Sound.OutputPanel : Gtk.Grid {
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
     Gtk.Scale balance_scale;
-    Gtk.ComboBoxText ports_dropdown;
+    // Gtk.ComboBoxText ports_dropdown;
 
     private Device default_device = null;
 
@@ -58,11 +58,11 @@ public class Sound.OutputPanel : Gtk.Grid {
         event_sounds_switch.valign = Gtk.Align.CENTER;
         event_sounds_switch.halign = Gtk.Align.START;
 
-        var ports_label = new Gtk.Label (_("Output Port:"));
-        ports_label.halign = Gtk.Align.END;
-        ports_dropdown = new Gtk.ComboBoxText ();
-        ports_dropdown.changed.connect (port_changed);
-        ports_dropdown.bind_property ("sensitive", ports_label, "sensitive");
+        // var ports_label = new Gtk.Label (_("Output Port:"));
+        // ports_label.halign = Gtk.Align.END;
+        // ports_dropdown = new Gtk.ComboBoxText ();
+        // ports_dropdown.changed.connect (port_changed);
+        // ports_dropdown.bind_property ("sensitive", ports_label, "sensitive");
 
         var volume_label = new Gtk.Label (_("Output Volume:"));
         volume_label.halign = Gtk.Align.END;
@@ -98,8 +98,8 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (devices_frame, 0, 1, 3, 1);
         attach (event_sounds_label, 0, 2);
         attach (event_sounds_switch, 1, 2);
-        attach (ports_label, 0, 3);
-        attach (ports_dropdown, 1, 3);
+        // attach (ports_label, 0, 3);
+        // attach (ports_dropdown, 1, 3);
         attach (volume_label, 0, 4);
         attach (volume_scale, 1, 4);
         attach (volume_switch, 2, 4);
@@ -135,7 +135,7 @@ public class Sound.OutputPanel : Gtk.Grid {
                 volume_scale.set_value (default_device.volume);
                 balance_scale.set_value (default_device.balance);
 
-                rebuild_ports_dropdown ();
+                // rebuild_ports_dropdown ();
 
                 default_device.notify.connect (device_notify);
             }
@@ -154,14 +154,14 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_switch.notify["active"].disconnect (volume_switch_changed);
         volume_scale.value_changed.disconnect (volume_scale_value_changed);
         balance_scale.value_changed.disconnect (balance_scale_value_changed);
-        ports_dropdown.changed.disconnect (port_changed);
+        // ports_dropdown.changed.disconnect (port_changed);
     }
 
     private void connect_signals () {
         volume_switch.notify["active"].connect (volume_switch_changed);
         volume_scale.value_changed.connect (volume_scale_value_changed);
         balance_scale.value_changed.connect (balance_scale_value_changed);
-        ports_dropdown.changed.connect (port_changed);
+        // ports_dropdown.changed.connect (port_changed);
     }
 
     private void volume_scale_value_changed () {
@@ -194,32 +194,32 @@ public class Sound.OutputPanel : Gtk.Grid {
             case "balance":
                 balance_scale.set_value (default_device.balance);
                 break;
-            case "default-port":
-                if (default_device.default_port != null) {
-                    ports_dropdown.active_id = default_device.default_port.name;
-                }
-
-                break;
-            case "ports":
-                rebuild_ports_dropdown ();
-                break;
+            // case "default-port":
+            //     if (default_device.default_port != null) {
+            //         ports_dropdown.active_id = default_device.default_port.name;
+            //     }
+            //
+            //     break;
+            // case "ports":
+            //     rebuild_ports_dropdown ();
+            //     break;
         }
 
         connect_signals ();
     }
 
-    private void rebuild_ports_dropdown () {
-        ports_dropdown.remove_all ();
-        ports_dropdown.sensitive = !default_device.ports.is_empty;
-
-        foreach (var port in default_device.ports) {
-            ports_dropdown.append (port.name, port.description);
-        }
-
-        if (default_device.default_port != null) {
-            ports_dropdown.active_id = default_device.default_port.name;
-        }
-    }
+    // private void rebuild_ports_dropdown () {
+    //     ports_dropdown.remove_all ();
+    //     ports_dropdown.sensitive = !default_device.ports.is_empty;
+    //
+    //     foreach (var port in default_device.ports) {
+    //         ports_dropdown.append (port.name, port.description);
+    //     }
+    //
+    //     if (default_device.default_port != null) {
+    //         ports_dropdown.active_id = default_device.default_port.name;
+    //     }
+    // }
 
     private void add_device (Device device) {
         if (device.input) {

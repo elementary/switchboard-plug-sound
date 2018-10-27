@@ -685,7 +685,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (default_sink_name != server.default_sink_name) {
             debug("  default_sink_name: %s > %s", default_sink_name, server.default_sink_name);
             default_sink_name = server.default_sink_name;
-            PulseAudio.ext_stream_restore_read (c, ext_stream_restore_read_sink_callback);
+            PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_sink_callback);
         }
         if (default_source_name == null) {
             default_source_name = server.default_source_name;

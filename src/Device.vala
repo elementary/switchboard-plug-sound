@@ -72,7 +72,7 @@ public class Sound.Device : GLib.Object {
 
     construct {
         volume_operations = new Gee.LinkedList<PulseAudio.Operation> ();
-        ports = new Gee.ArrayList<Port> ();
+        // ports = new Gee.ArrayList<Port> ();
     }
 
     public string get_nice_form_factor () {
