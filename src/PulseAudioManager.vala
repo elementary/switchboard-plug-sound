@@ -68,11 +68,11 @@ public class Sound.PulseAudioManager : GLib.Object {
     public async void set_default_device (Device device) {
         debug("\nset_default_device: %s", device.id);
         if (device.input) {
-            default_source_name = device.name;
-            var ope = context.set_default_source (device.name, null);
-            if (ope != null) {
-                PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_source_callback);
-            }
+            // default_source_name = device.name;
+            // var ope = context.set_default_source (device.name, null);
+            // if (ope != null) {
+            //     PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_source_callback);
+            // }
         } else {
             // Some sinks are only available under certain card profiles,
             // for example to switch between onboard speakers to hdmi
@@ -164,7 +164,7 @@ public class Sound.PulseAudioManager : GLib.Object {
 
     public void change_device_mute (Device device, bool mute = true) {
         if (device.input) {
-            context.set_source_mute_by_name (device.sink_name, mute, null);
+            context.set_source_mute_by_name (device.source_name, mute, null);
         } else {
             context.set_sink_mute_by_name (device.sink_name, mute, null);
         }
@@ -184,7 +184,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         cvol.scale (double_to_volume (volume));
         PulseAudio.Operation? operation = null;
         if (device.input) {
-            operation = context.set_source_volume_by_name (device.sink_name, cvol, null);
+            operation = context.set_source_volume_by_name (device.source_name, cvol, null);
         } else {
             operation = context.set_sink_volume_by_name (device.sink_name, cvol, null);
         }
@@ -199,7 +199,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         cvol = cvol.set_balance (device.channel_map, balance);
         PulseAudio.Operation? operation = null;
         if (device.input) {
-            operation = context.set_source_volume_by_name (device.sink_name, cvol, null);
+            operation = context.set_source_volume_by_name (device.source_name, cvol, null);
         } else {
             operation = context.set_sink_volume_by_name (device.sink_name, cvol, null);
         }
@@ -367,15 +367,67 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (source.monitor_of_sink != PulseAudio.INVALID_INDEX) {
             return;
         }
-    
-        // Device device = null;
-        // bool is_new = !input_devices.has_key (i.index);
-        // if (is_new) {
-        //     device = new Device (i.index);
-        // } else {
-        //     device = input_devices.get (i.index);
-        // }
-        //
+        debug("source info update");
+        debug("  source: %s (%s)", source.description, source.name);
+        debug("    card: %u", source.card);
+        
+        // public SinkPortInfo*[] ports;
+        foreach (var port in source.ports) {
+            debug("    port: %s (%s)", port.description, port.name);
+        }
+        debug("    active port: %s (%s)", source.active_port.description, source.active_port.name);
+
+        foreach (var device in input_devices.values) {
+            if (device.card_index == source.card) {
+                debug("    updating device: %s", device.id);
+                device.card_source_index = source.index;
+                device.card_source_name = source.name;
+                debug("      device.card_source_name: %s", device.card_source_name);
+                device.card_source_port_name = source.active_port.name;
+                if (device.port_name == source.active_port.name) {
+                    device.source_name = source.name;
+                    debug("      device.source_name: %s", device.card_source_name);
+                    device.source_index = source.index;
+                    device.is_default = (source.name == default_source_name);
+                    debug("      is_default: %s", device.is_default ? "true" : "false");
+                    
+                    device.is_muted = (source.mute != 0);
+                    device.cvolume = source.volume;
+                    device.channel_map = source.channel_map;
+                    device.balance = source.volume.get_balance (source.channel_map);
+                    device.volume_operations.foreach ((operation) => {
+                        if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
+                            device.volume_operations.remove (operation);
+                        }
+                
+                        return GLib.Source.CONTINUE;
+                    });
+                    if (device.volume_operations.is_empty) {
+                        device.volume = volume_to_double (source.volume.max ());
+                    }
+                //     device.ports.clear ();
+                //     device.default_port = null;
+                //     for (int idx = 0; idx < source.n_ports; idx++) {
+                //         var new_port = new Device.Port ();
+                //         new_port.name = i.ports[idx].name;
+                //         new_port.description = i.ports[idx].description;
+                //         new_port.priority = i.ports[idx].priority;
+                //         device.ports.add (new_port);
+                //
+                //         if (i.ports[idx] == i.active_port) {
+                //             device.default_port = new_port;
+                //         }
+                //     }
+                    if (device.is_default) {
+                        default_input = device;
+                    }
+                } else {
+                    device.source_name = null;
+                    device.source_index = null;
+                }
+            }
+        }
+
         // device.input = true;
         // device.name = i.name;
         // device.display_name = i.description;
@@ -524,7 +576,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             }
             device.card_active_profile_name = card_active_profile_name;
             device.input = is_input;
-            device.name = card.name;
+            device.card_name = card.name;
             var card_description = card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION);
             device.display_name = @"$(port.description) - $(card_description)";
             device.form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
@@ -621,7 +673,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         return profiles;
     }
 
-    private void server_info_callback (PulseAudio.Context c, PulseAudio.ServerInfo? server) {
+    private void server_info_callback (PulseAudio.Context context, PulseAudio.ServerInfo? server) {
         debug("server info update");
         if (server == null)
             return;
@@ -635,10 +687,19 @@ public class Sound.PulseAudioManager : GLib.Object {
             default_sink_name = server.default_sink_name;
             PulseAudio.ext_stream_restore_read (c, ext_stream_restore_read_sink_callback);
         }
+        if (default_source_name == null) {
+            default_source_name = server.default_source_name;
+            debug("  default_source_name: %s", default_source_name);
+        }
+        if (default_source_name != server.default_source_name) {
+            debug("  default_source_name: %s > %s", default_source_name, server.default_source_name);
+            default_source_name = server.default_source_name;
+            PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_source_callback);
+        }
         // request info on cards and ports before requesting info on
         // sinks, because sinks info is added to existing Devices.
         context.get_card_info_list (card_info_callback);
-        // context.get_source_info_list (source_info_callback);
+        context.get_source_info_list (source_info_callback);
         context.get_sink_info_list (sink_info_callback);
     }
 
