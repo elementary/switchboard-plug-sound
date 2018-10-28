@@ -66,45 +66,56 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     public async void set_default_device (Device device) {
-        debug("\nset_default_device: %s", device.id);
-        if (device.input) {
-            // default_source_name = device.name;
-            // var ope = context.set_default_source (device.name, null);
-            // if (ope != null) {
-            //     PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_source_callback);
-            // }
-        } else {
-            // Some sinks are only available under certain card profiles,
-            // for example to switch between onboard speakers to hdmi
-            // the profile has to be switched from analog stereo output to
-            // digital stereo. So we check profile
-            var profile_name = device.profiles[0];
-            if (profile_name != device.card_active_profile_name) {
-                debug("set card profile: %s > %s", device.card_active_profile_name, profile_name);
-                // switch profile to get sink for this device
-                yield set_card_profile_by_index (device.card_index, profile_name);
-                // wait for new card sink to appear
-                debug("wait for card sink");
-                yield get_device_sink_name(device);
-            }
-            // Speakers and headphones can be different ports on the same sink,
-            // So we check the sink port
-            if (device.port_name != device.card_sink_port_name) {
-                debug("set sink port: %s > %s", device.card_sink_port_name, device.port_name);
-                // set sink port (enables switching between headphones and speakers for example)
-                yield set_sink_port_by_name (device.card_sink_name, device.port_name);
-            }
-            if (device.sink_name == null) {
-                // wait for sink to appear for this device
-                debug("wait for sink");
-                yield get_device_sink_name(device);
-            }
-            // Onboard speakers and bluetooth audio devices are different sinks
-            if (device.sink_name != default_sink_name) {
-                yield set_default_sink (device.sink_name);
-                debug("set sink: %s > %s", default_sink_name, device.sink_name);
-                context.set_default_sink (device.sink_name);
-            }
+        debug ("\n");
+        debug("set_default_device: %s", device.id);
+        debug("  %s", device.input? "input" : "output");
+        debug("#1");
+        // #1 Set card profile
+        // Some sinks / sources are only available under certain card profiles,
+        // for example to switch between onboard speakers to hdmi
+        // the profile has to be switched from analog stereo output to
+        // digital stereo. So we check profile
+        var profile_name = device.profiles[0];
+        if (profile_name != device.card_active_profile_name) {
+            debug("set card profile: %s > %s", device.card_active_profile_name, profile_name);
+            // switch profile to get sink for this device
+            yield set_card_profile_by_index (device.card_index, profile_name);
+            // wait for new card sink to appear
+            debug("wait for card sink / source");
+            // yield get_device_sink_name(device);
+            // yield get_card_sink_name(device);
+            yield wait_for_update (device, device.input? "card-source-name" : "card-sink-name");
+        }
+        debug("#2");
+        // #2 Set sink / source port
+        // Speakers and headphones can be different ports on the same sink
+        if (!device.input && device.port_name != device.card_sink_port_name) {
+            debug("set sink port: %s > %s", device.card_sink_port_name, device.port_name);
+            // set sink port (enables switching between headphones and speakers for example)
+            yield set_sink_port_by_name (device.card_sink_name, device.port_name);
+        }
+        if (device.input && device.port_name != device.card_source_port_name) {
+            debug("set source port: %s > %s", device.card_source_port_name, device.port_name);
+            yield set_source_port_by_name (device.card_source_name, device.port_name);
+        }
+        debug("#3");
+        // #3 Wait for sink / source to appear for this device
+        if (!device.input && device.sink_name == null ||
+            device.input && device.source_name == null) {
+            debug("wait for sink / source");
+            // yield get_device_sink_name(device);
+            yield wait_for_update (device, device.input? "source-name" : "sink-name");
+        }
+        debug("#4");
+        // #4 Set sink / source
+        // To for example switch between onboard speakers and bluetooth audio devices
+        if (!device.input && device.sink_name != default_sink_name) {
+            debug("set sink: %s > %s", default_sink_name, device.sink_name);
+            yield set_default_sink (device.sink_name);
+        }
+        if (device.input && device.source_name != default_source_name) {
+            debug("set source: %s > %s", default_source_name, device.source_name);
+            yield set_default_source (device.source_name);
         }
     }
 
@@ -117,18 +128,20 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     // TODO make more robust. Add timeout? Prevent multiple connects?
-    private async string get_card_sink_name (Device device) {
+    private async void wait_for_update (Device device, string prop_name) {
+        debug ("wait_for_update: %s:%s", device.id, prop_name);
         ulong handler_id = 0;
-        string card_sink_name = "";
-        handler_id = device.notify["card-sink-name"].connect((s, p) => {
-            if (device.card_sink_name != null) {
-                card_sink_name = device.card_sink_name;
+        handler_id = device.notify[prop_name].connect((s, p) => {
+            // debug ("  update: %s", device.get (prop_name));
+            // string value = device.get (prop_name);
+            string prop_value;
+            device.get (prop_name, out prop_value);
+            if (prop_value != null) {
                 device.disconnect(handler_id);
-                get_card_sink_name.callback();
+                wait_for_update.callback();
             }
         });
         yield;
-        return card_sink_name;
     }
 
     private async void set_sink_port_by_name (string sink_name, string port_name) {
@@ -138,26 +151,27 @@ public class Sound.PulseAudioManager : GLib.Object {
         });
         yield;
     }
-    
-    // TODO make more robust. Add timeout? Prevent multiple connects?
-    private async string get_device_sink_name (Device device) {
-        ulong handler_id = 0;
-        string sink_name = "";
-        handler_id = device.notify["sink-name"].connect((s, p) => {
-            if (device.sink_name != null) {
-                sink_name = device.sink_name;
-                device.disconnect(handler_id);
-                get_device_sink_name.callback();
-            }
+
+    private async void set_source_port_by_name (string source_name, string port_name) {
+        context.set_source_port_by_name(source_name, port_name, (c, success) => {
+            if (success == 1) set_source_port_by_name.callback();
+            else warning("setting source %s port to %s failed", source_name, port_name);
         });
         yield;
-        return sink_name;
     }
 
     private async void set_default_sink(string sink_name) {
         context.set_default_sink (sink_name, (c, success) => {
             if (success == 1) set_default_sink.callback();
             else warning("setting default sink to %s failed", sink_name);
+        });
+        yield;
+    }
+
+    private async void set_default_source(string source_name) {
+        context.set_default_source (source_name, (c, success) => {
+            if (success == 1) set_default_source.callback();
+            else warning("setting default source to %s failed", source_name);
         });
         yield;
     }
@@ -346,8 +360,23 @@ public class Sound.PulseAudioManager : GLib.Object {
                         break;
             
                     case PulseAudio.Context.SubscriptionEventType.REMOVE:
-                        // TODO
-            
+                        debug("subscribe_callback:SOURCE:REMOVE");
+                        foreach (var device in input_devices.values) {
+                            if (device.source_index == index) {
+                                debug("  updating device: %s", device.id);
+                                device.source_name = null;
+                                device.source_index = null;
+                                device.is_default = false;
+                                debug("    device.source_name: %s", device.source_name);
+                            }
+                            if (device.card_source_index == index) {
+                                debug("  updating device: %s", device.id);
+                                device.card_source_name = null;
+                                device.card_source_index = null;
+                                device.card_source_port_name = null;
+                                debug("    device.card_source_name: %s", device.card_source_name);
+                            }
+                        }
                         break;
                 }
             
@@ -549,6 +578,9 @@ public class Sound.PulseAudioManager : GLib.Object {
         debug ("  card: %u %s (%s)", card.index, card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION), card.name);
         debug ("    active profile: %s", card.active_profile2.name);
         
+        debug ("    card form factor: %s", card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR));
+        debug ("    card icon name: %s", card.proplist.gets (PulseAudio.Proplist.PROP_MEDIA_ICON_NAME));
+        
         var card_active_profile_name = card.active_profile2.name;
         
         // retrieve relevant ports
@@ -580,6 +612,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             var card_description = card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION);
             device.display_name = @"$(port.description) - $(card_description)";
             device.form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
+            debug ("      port icon name: %s", port.proplist.gets (PulseAudio.Proplist.PROP_MEDIA_ICON_NAME)); // optional:
             device.profiles = get_relevant_card_port_profiles (port);
             foreach (var profile in device.profiles) {
                 debug ("      profile: %s", profile);
@@ -620,8 +653,9 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
     
     private void select_profiles (Gee.HashMap<string, PulseAudio.CardProfileInfo2*> profiles_map, PulseAudio.CardPortInfo* port, bool only_canonical) {
+        bool is_input = (PulseAudio.Direction.INPUT in port.direction);
         foreach (var profile in port.profiles2) {
-            var canonical_name = get_profile_canonical_name(profile.name);
+            var canonical_name = get_profile_canonical_name(profile.name, is_input);
             // debug ("      profile: %s", profile.name);
             // debug ("        canonical_name: %s", canonical_name);
             // debug ("        priority: %u", profile.priority);
@@ -639,12 +673,14 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
     
-    private string get_profile_canonical_name(string org_name) {
+    private string get_profile_canonical_name(string org_name, bool is_input) {
+        string skip_prefix = is_input ? "output:" : "input:";
         var org_name_parts = org_name.split("+");
         string[] name_parts = {};
         foreach (var part in org_name_parts) {
-            if (part.has_prefix("input:")) continue;
-            name_parts += part.replace("output:", "");
+            if (part.has_prefix(skip_prefix)) continue;
+            // name_parts += part.replace("output:", "");
+            name_parts += part;
         }
         return string.joinv ("+", name_parts);
     }
