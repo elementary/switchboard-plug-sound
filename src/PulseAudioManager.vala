@@ -594,8 +594,8 @@ public class Sound.PulseAudioManager : GLib.Object {
         
         // add new / update devices
         foreach (var port in relevant_ports) {
-            debug ("    port: %s (%s)", port.description, port.name);
             bool is_input = (PulseAudio.Direction.INPUT in port.direction);
+            debug ("    %s port: %s (%s)", is_input ? "input" : "output", port.description, port.name);
             Gee.HashMap<string, Device> devices = is_input? input_devices : output_devices;
             Device device = null;
             var id = get_device_id (card, port);
