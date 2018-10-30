@@ -189,11 +189,11 @@ public class Sound.PulseAudioManager : GLib.Object {
             if (operation.get_state () == PulseAudio.Operation.State.RUNNING) {
                 operation.cancel ();
             }
-        
+
             device.volume_operations.remove (operation);
             return GLib.Source.CONTINUE;
         });
-        
+
         var cvol = device.cvolume;
         cvol.scale (double_to_volume (volume));
         PulseAudio.Operation? operation = null;
@@ -202,7 +202,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         } else {
             operation = context.set_sink_volume_by_name (device.sink_name, cvol, null);
         }
-        
+
         if (operation != null) {
             device.volume_operations.add (operation);
         }
@@ -217,7 +217,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         } else {
             operation = context.set_sink_volume_by_name (device.sink_name, cvol, null);
         }
-        
+
         if (operation != null) {
             device.volume_operations.add (operation);
         }
@@ -290,11 +290,11 @@ public class Sound.PulseAudioManager : GLib.Object {
                     case PulseAudio.Context.SubscriptionEventType.NEW:
                         c.get_sink_info_by_index (index, sink_info_callback);
                         break;
-            
+
                     case PulseAudio.Context.SubscriptionEventType.CHANGE:
                         c.get_sink_info_by_index (index, sink_info_callback);
                         break;
-            
+
                     case PulseAudio.Context.SubscriptionEventType.REMOVE:
                         debug("subscribe_callback:SINK:REMOVE");
                         foreach (var device in output_devices.values) {
@@ -315,7 +315,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                         }
                         break;
                 }
-            
+
                 break;
 
             case PulseAudio.Context.SubscriptionEventType.SERVER:
@@ -354,11 +354,11 @@ public class Sound.PulseAudioManager : GLib.Object {
                     case PulseAudio.Context.SubscriptionEventType.NEW:
                         c.get_source_info_by_index (index, source_info_callback);
                         break;
-            
+
                     case PulseAudio.Context.SubscriptionEventType.CHANGE:
                         c.get_source_info_by_index (index, source_info_callback);
                         break;
-            
+
                     case PulseAudio.Context.SubscriptionEventType.REMOVE:
                         debug("subscribe_callback:SOURCE:REMOVE");
                         foreach (var device in input_devices.values) {
@@ -379,7 +379,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                         }
                         break;
                 }
-            
+
                 break;
         }
     }
@@ -391,7 +391,7 @@ public class Sound.PulseAudioManager : GLib.Object {
     private void source_info_callback (PulseAudio.Context c, PulseAudio.SourceInfo? source, int eol) {
         if (source == null)
             return;
-    
+
         // completely ignore monitors, they're not real sources
         if (source.monitor_of_sink != PulseAudio.INVALID_INDEX) {
             return;
@@ -399,7 +399,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         debug("source info update");
         debug("  source: %s (%s)", source.description, source.name);
         debug("    card: %u", source.card);
-        
+
         // public SinkPortInfo*[] ports;
         foreach (var port in source.ports) {
             debug("    port: %s (%s)", port.description, port.name);
@@ -419,7 +419,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                     device.source_index = source.index;
                     device.is_default = (source.name == default_source_name);
                     debug("      is_default: %s", device.is_default ? "true" : "false");
-                    
+
                     device.is_muted = (source.mute != 0);
                     device.cvolume = source.volume;
                     device.channel_map = source.channel_map;
@@ -428,7 +428,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                         if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
                             device.volume_operations.remove (operation);
                         }
-                
+
                         return GLib.Source.CONTINUE;
                     });
                     if (device.volume_operations.is_empty) {
@@ -513,7 +513,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         debug("sink info update");
         debug("  sink: %s (%s)", sink.description, sink.name);
         debug("    card: %u", sink.card);
-        
+
         // public SinkPortInfo*[] ports;
         foreach (var port in sink.ports) {
             debug("    port: %s (%s)", port.description, port.name);
@@ -541,7 +541,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                         if (operation.get_state () != PulseAudio.Operation.State.RUNNING) {
                             device.volume_operations.remove (operation);
                         }
-                
+
                         return GLib.Source.CONTINUE;
                     });
                     if (device.volume_operations.is_empty) {
@@ -578,12 +578,12 @@ public class Sound.PulseAudioManager : GLib.Object {
         debug ("card info update");
         debug ("  card: %u %s (%s)", card.index, card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION), card.name);
         debug ("    active profile: %s", card.active_profile2.name);
-        
+
         debug ("    card form factor: %s", card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR));
         debug ("    card icon name: %s", card.proplist.gets (PulseAudio.Proplist.PROP_MEDIA_ICON_NAME));
-        
+
         var card_active_profile_name = card.active_profile2.name;
-        
+
         // retrieve relevant ports
         PulseAudio.CardPortInfo*[] relevant_ports = {};
         foreach (var port in card.ports) {
@@ -591,7 +591,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             // if (!(PulseAudio.Direction.OUTPUT in port.direction)) continue;
             relevant_ports += port;
         }
-        
+
         // add new / update devices
         foreach (var port in relevant_ports) {
             bool is_input = (PulseAudio.Direction.INPUT in port.direction);
@@ -626,7 +626,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         cleanup_devices (output_devices, card, relevant_ports);
         cleanup_devices (input_devices, card, relevant_ports);
     }
-    
+
     // remove devices which port has dissappeared
     private void cleanup_devices (Gee.HashMap<string, Device> devices, PulseAudio.CardInfo card, PulseAudio.CardPortInfo*[] relevant_ports) {
         var iter = devices.map_iterator ();
@@ -648,11 +648,11 @@ public class Sound.PulseAudioManager : GLib.Object {
             }
         }
     }
-    
+
     private string get_device_id (PulseAudio.CardInfo card, PulseAudio.CardPortInfo* port) {
         return @"$(card.name):$(port.name)";
     }
-    
+
     private void select_profiles (Gee.HashMap<string, PulseAudio.CardProfileInfo2*> profiles_map, PulseAudio.CardPortInfo* port, bool only_canonical) {
         bool is_input = (PulseAudio.Direction.INPUT in port.direction);
         foreach (var profile in port.profiles2) {
@@ -663,17 +663,17 @@ public class Sound.PulseAudioManager : GLib.Object {
             /* Have we already added the canonical version of this profile? */
             if (profiles_map.has_key(canonical_name))
                 continue;
-            
+
             if (only_canonical && canonical_name != profile.name)
                 continue;
-            
+
             if (profile.n_sinks == 0 && profile.n_sources == 0)
                 continue;
-            
+
             profiles_map[canonical_name] = profile;
         }
     }
-    
+
     private string get_profile_canonical_name(string org_name, bool is_input) {
         string skip_prefix = is_input ? "output:" : "input:";
         var org_name_parts = org_name.split("+");
@@ -685,7 +685,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
         return string.joinv ("+", name_parts);
     }
-    
+
     private Gee.ArrayList<string> get_relevant_card_port_profiles (PulseAudio.CardPortInfo* port) {
         var profiles_map = new Gee.HashMap<string, PulseAudio.CardProfileInfo2*> ();
         /* Run two iterations: First, add profiles which are canonical themselves,
@@ -714,7 +714,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         debug("server info update");
         if (server == null)
             return;
-        
+
         if (default_sink_name == null) {
             default_sink_name = server.default_sink_name;
             debug("  default_sink_name: %s", default_sink_name);

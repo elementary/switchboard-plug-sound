@@ -27,7 +27,7 @@ public class Sound.InputDeviceMonitor : GLib.Object {
     private bool allow_record = false;
 
     public InputDeviceMonitor () {
-        
+
     }
 
     ~InputDeviceMonitor () {

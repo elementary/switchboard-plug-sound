@@ -29,7 +29,7 @@ public class Sound.Device : GLib.Object {
     }
 
     public signal void removed ();
-    
+
     // info from card and ports
     public bool input { get; set; default=true; }
     public string id { get; construct; }
@@ -42,7 +42,7 @@ public class Sound.Device : GLib.Object {
     public string card_active_profile_name { get; set; }
     // public Gee.ArrayList<Port> ports { get; set; }
     // public Port? default_port { get; set; default=null; }
-    
+
     // sink info
     public string? sink_name { get; set; }
     public uint32? sink_index { get; set; }
@@ -106,6 +106,6 @@ public class Sound.Device : GLib.Object {
             default:
                 return input? _("Input") : _("Output");
         }
-    
+
     }
 }
