@@ -453,6 +453,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 } else {
                     device.source_name = null;
                     device.source_index = null;
+                    device.is_default = false;
                 }
             }
         }
