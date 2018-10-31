@@ -400,6 +400,10 @@ public class Sound.PulseAudioManager : GLib.Object {
         debug("  source: %s (%s)", source.description, source.name);
         debug("    card: %u", source.card);
 
+        if (source.name == "auto_null") {
+            return;
+        }
+
         // public SinkPortInfo*[] ports;
         foreach (var port in source.ports) {
             debug("    port: %s (%s)", port.description, port.name);
@@ -513,6 +517,11 @@ public class Sound.PulseAudioManager : GLib.Object {
             return;
         debug("sink info update");
         debug("  sink: %s (%s)", sink.description, sink.name);
+
+        if (sink.name == "auto_null") {
+            return;
+        }
+
         debug("    card: %u", sink.card);
 
         // public SinkPortInfo*[] ports;
