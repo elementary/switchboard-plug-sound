@@ -73,9 +73,15 @@ public class Sound.PulseAudioManager : GLib.Object {
         // #1 Set card profile
         // Some sinks / sources are only available under certain card profiles,
         // for example to switch between onboard speakers to hdmi
-        // the profile has to be switched from analog stereo output to
-        // digital stereo. So we check profile
-        var profile_name = device.profiles[0];
+        // the profile has to be switched from analog stereo to digital stereo.
+        // Attempt to find profiles that support both selected input and output
+        var other_device = device.input? default_output : default_input;
+        var profile_name = get_matching_profile(device, other_device);
+        // otherwise fall back to supporting this device only
+        if (profile_name == null) {
+            profile_name = device.profiles[0];
+        }
+        debug("  profile_name: %s", profile_name);
         if (profile_name != device.card_active_profile_name) {
             debug("set card profile: %s > %s", device.card_active_profile_name, profile_name);
             // switch profile to get sink for this device
@@ -117,6 +123,15 @@ public class Sound.PulseAudioManager : GLib.Object {
             debug("set source: %s > %s", default_source_name, device.source_name);
             yield set_default_source (device.source_name);
         }
+    }
+
+    private string? get_matching_profile (Device device1, Device device2) {
+        foreach (var profile1 in device1.profiles) {
+            if (device2.profiles.contains (profile1)) {
+                return profile1;
+            }
+        }
+        return null;
     }
 
     private async void set_card_profile_by_index (uint32 card_index, string profile_name) {
@@ -663,58 +678,18 @@ public class Sound.PulseAudioManager : GLib.Object {
         return @"$(card.name):$(port.name)";
     }
 
-    private void select_profiles (Gee.HashMap<string, PulseAudio.CardProfileInfo2*> profiles_map, PulseAudio.CardPortInfo* port, bool only_canonical) {
-        bool is_input = (PulseAudio.Direction.INPUT in port.direction);
-        foreach (var profile in port.profiles2) {
-            var canonical_name = get_profile_canonical_name(profile.name, is_input);
-            // debug ("      profile: %s", profile.name);
-            // debug ("        canonical_name: %s", canonical_name);
-            // debug ("        priority: %u", profile.priority);
-            /* Have we already added the canonical version of this profile? */
-            if (profiles_map.has_key(canonical_name))
-                continue;
-
-            if (only_canonical && canonical_name != profile.name)
-                continue;
-
-            if (profile.n_sinks == 0 && profile.n_sources == 0)
-                continue;
-
-            profiles_map[canonical_name] = profile;
-        }
-    }
-
-    private string get_profile_canonical_name(string org_name, bool is_input) {
-        string skip_prefix = is_input ? "output:" : "input:";
-        var org_name_parts = org_name.split("+");
-        string[] name_parts = {};
-        foreach (var part in org_name_parts) {
-            if (part.has_prefix(skip_prefix)) continue;
-            // name_parts += part.replace("output:", "");
-            name_parts += part;
-        }
-        return string.joinv ("+", name_parts);
-    }
-
     private Gee.ArrayList<string> get_relevant_card_port_profiles (PulseAudio.CardPortInfo* port) {
-        var profiles_map = new Gee.HashMap<string, PulseAudio.CardProfileInfo2*> ();
-        /* Run two iterations: First, add profiles which are canonical themselves,
-        * Second, add profiles for which the canonical name is not added already. */
-        select_profiles (profiles_map, port, true);
-        select_profiles (profiles_map, port, false);
-        var profiles_list = new Gee.ArrayList<PulseAudio.CardProfileInfo2*> ();
-        profiles_list.add_all (profiles_map.values);
+        var profiles_list = new Gee.ArrayList<PulseAudio.CardProfileInfo2*>.wrap (port.profiles2);
+
         // sort on priority;
         profiles_list.sort((a, b) => {
             if (a.priority > b.priority) return -1;
             if (a.priority < b.priority) return 1;
             return 0;
         });
+        // just store names in Device
         var profiles = new Gee.ArrayList<string>();
-        // debug ("  sorted profiles_list:");
         foreach (var item in profiles_list) {
-            // debug ("    profile: %s", item.name);
-            // debug ("      priority: %u", item.priority);
             profiles.add(item.name);
         }
         return profiles;
