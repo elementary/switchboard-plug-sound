@@ -40,8 +40,6 @@ public class Sound.Device : GLib.Object {
     public string form_factor { get; set; }
     public Gee.ArrayList<string> profiles { get; set; }
     public string card_active_profile_name { get; set; }
-    // public Gee.ArrayList<Port> ports { get; set; }
-    // public Port? default_port { get; set; default=null; }
 
     // sink info
     public string? sink_name { get; set; }
@@ -72,7 +70,6 @@ public class Sound.Device : GLib.Object {
 
     construct {
         volume_operations = new Gee.LinkedList<PulseAudio.Operation> ();
-        // ports = new Gee.ArrayList<Port> ();
     }
 
     public string get_nice_form_factor () {
