@@ -349,15 +349,8 @@ public class Sound.PulseAudioManager : GLib.Object {
                         break;
 
                     case PulseAudio.Context.SubscriptionEventType.REMOVE:
-                        var iter = output_devices.map_iterator ();
-                        while (iter.next()) {
-                            var device = iter.get_value ();
-                            if (device.card_index == index) {
-                                debug("  REMOVE: %s", device.id);
-                                device.removed ();
-                                iter.unset();
-                            }
-                        }
+                        remove_devices_by_card (output_devices, index);
+                        remove_devices_by_card (input_devices, index);
                         break;
                 }
                 break;
@@ -693,6 +686,17 @@ public class Sound.PulseAudioManager : GLib.Object {
             profiles.add(item.name);
         }
         return profiles;
+    }
+    private void remove_devices_by_card (Gee.HashMap<string, Device> devices, uint32 card_index) {
+        var iter = devices.map_iterator ();
+        while (iter.next()) {
+            var device = iter.get_value ();
+            if (device.card_index == card_index) {
+                debug("Removing device: %s", device.id);
+                device.removed ();
+                iter.unset();
+            }
+        }
     }
 
     private void server_info_callback (PulseAudio.Context context, PulseAudio.ServerInfo? server) {
