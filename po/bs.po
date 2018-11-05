@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 15:55-0500\n"
-"PO-Revision-Date: 2018-11-05 23:54+0000\n"
+"PO-Revision-Date: 2018-11-07 01:52+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/bs/>\n"
@@ -49,7 +49,7 @@ msgstr "Zvukovi događaja"
 
 #: src/Plug.vala:105 src/Plug.vala:110
 msgid "Port"
-msgstr "Ulaz"
+msgstr "Priključak"
 
 #: src/Plug.vala:106 src/Plug.vala:111
 msgid "Volume"
