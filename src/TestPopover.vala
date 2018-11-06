@@ -200,8 +200,9 @@ public class Sound.TestPopover : Gtk.Popover {
         }
 
         private string get_pretty_position () {
-            if (pa_position == PulseAudio.ChannelPosition.LFE)
+            if (pa_position == PulseAudio.ChannelPosition.LFE) {
                 return "Subwoofer";
+            }
 
             return pa_position.to_pretty_string ();
         }
