@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 15:55-0500\n"
-"PO-Revision-Date: 2018-07-22 00:04+0000\n"
+"PO-Revision-Date: 2018-10-20 03:05+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ko/>\n"
@@ -40,31 +40,27 @@ msgstr "입력"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "장치"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Event Sounds"
-msgstr "이벤트 알림음:"
+msgstr "이벤트 알림음"
 
 #: src/Plug.vala:105 src/Plug.vala:110
-#, fuzzy
 msgid "Port"
-msgstr "이동식"
+msgstr "포트"
 
 #: src/Plug.vala:106 src/Plug.vala:111
-#, fuzzy
 msgid "Volume"
-msgstr "입력 볼륨:"
+msgstr "볼륨"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Balance"
-msgstr "밸런스:"
+msgstr "밸런스"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "사용"
 
 #: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
