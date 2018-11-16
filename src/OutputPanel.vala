@@ -35,47 +35,66 @@ public class Sound.OutputPanel : Gtk.Grid {
         margin_top = 0;
         column_spacing = 12;
         row_spacing = 6;
+
         var available_label = new Gtk.Label (_("Available Sound Output Devices:"));
         available_label.get_style_context ().add_class ("h4");
         available_label.halign = Gtk.Align.START;
+
         devices_listbox = new Gtk.ListBox ();
         devices_listbox.activate_on_single_click = true;
         devices_listbox.row_activated.connect ((row) => {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
+
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
+
         var devices_frame = new Gtk.Frame (null);
         devices_frame.expand = true;
         devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
 
-        var event_sounds_label = new Gtk.Label (_("Event Sounds:"));
-        event_sounds_label.halign = Gtk.Align.END;
-
-        var event_sounds_switch = new Gtk.Switch ();
-        event_sounds_switch.valign = Gtk.Align.CENTER;
-        event_sounds_switch.halign = Gtk.Align.START;
-
-        var volume_label = new Gtk.Label (_("Output Volume:"));
+        var volume_label = new Gtk.Label (_("Output volume:"));
         volume_label.halign = Gtk.Align.END;
+
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
         volume_scale.adjustment.page_increment = 5;
         volume_scale.draw_value = false;
         volume_scale.hexpand = true;
+
         volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
         volume_switch.active = true;
+
         var balance_label = new Gtk.Label (_("Balance:"));
         balance_label.valign = Gtk.Align.START;
         balance_label.halign = Gtk.Align.END;
+        balance_label.margin_bottom = 18;
+
         balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, -1, 1, 0.1);
         balance_scale.adjustment.page_increment = 0.1;
         balance_scale.draw_value = false;
         balance_scale.has_origin = false;
+        balance_scale.margin_bottom = 18;
         balance_scale.add_mark (-1, Gtk.PositionType.BOTTOM, _("Left"));
         balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
         balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
+
+        var alerts_label = new Gtk.Label (_("Event alerts:"));
+        alerts_label.halign = Gtk.Align.END;
+
+        var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound"));
+
+        var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen"));
+        visual_alert_check.halign = Gtk.Align.START;
+        visual_alert_check.hexpand = true;
+
+        var alerts_info = new Gtk.Label (_("Event alerts occur when the system cannot do something in response to user input, like attempting to backspace in an empty input or switch windows when only one is open."));
+        alerts_info.max_width_chars = 80;
+        alerts_info.wrap = true;
+        alerts_info.xalign = 0;
+        alerts_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…"));
         test_button.halign = Gtk.Align.END;
         test_button.margin_top = 18;
@@ -89,14 +108,16 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         attach (available_label, 0, 0, 3, 1);
         attach (devices_frame, 0, 1, 3, 1);
-        attach (event_sounds_label, 0, 2);
-        attach (event_sounds_switch, 1, 2);
-        attach (volume_label, 0, 3);
-        attach (volume_scale, 1, 3);
-        attach (volume_switch, 2, 3);
-        attach (balance_label, 0, 4);
-        attach (balance_scale, 1, 4);
-        attach (test_button, 0, 5, 3, 1);
+        attach (volume_label, 0, 2);
+        attach (volume_scale, 1, 2, 2);
+        attach (volume_switch, 3, 2);
+        attach (balance_label, 0, 3);
+        attach (balance_scale, 1, 3, 2);
+        attach (alerts_label, 0, 4);
+        attach (audio_alert_check, 1, 4);
+        attach (visual_alert_check, 2, 4);
+        attach (alerts_info, 1, 5, 2);
+        attach (test_button, 0, 6, 4);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -106,7 +127,10 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_switch.bind_property ("active", balance_scale, "sensitive", BindingFlags.DEFAULT);
 
         var sound_settings = new Settings ("org.gnome.desktop.sound");
-        sound_settings.bind ("event-sounds", event_sounds_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        sound_settings.bind ("event-sounds", audio_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
+
+        var wm_settings = new Settings ("org.gnome.desktop.wm.preferences");
+        wm_settings.bind ("visual-bell", visual_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
         connect_signals ();
     }
