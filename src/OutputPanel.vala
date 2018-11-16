@@ -55,32 +55,6 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
 
-        var alerts_label = new Gtk.Label (_("Event alerts:"));
-        alerts_label.halign = Gtk.Align.END;
-        alerts_label.margin_top = 12;
-        alerts_label.valign = Gtk.Align.START;
-
-        var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound"));
-
-        var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen"));
-        visual_alert_check.halign = Gtk.Align.START;
-        visual_alert_check.hexpand = true;
-
-        var alerts_info = new Gtk.Label (_("Event alerts occur when the system cannot do something in response to user input, like attempting to backspace in an empty input or switch windows when only one is open."));
-        alerts_info.max_width_chars = 80;
-        alerts_info.wrap = true;
-        alerts_info.xalign = 0;
-        alerts_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-
-        var alerts_grid = new Gtk.Grid ();
-        alerts_grid.column_spacing = 12;
-        alerts_grid.margin_top = 12;
-        alerts_grid.row_spacing = 6;
-
-        alerts_grid.attach (audio_alert_check, 0, 0);
-        alerts_grid.attach (visual_alert_check, 1, 0);
-        alerts_grid.attach (alerts_info, 0, 1, 3);
-
         var ports_label = new Gtk.Label (_("Output Port:"));
         ports_label.halign = Gtk.Align.END;
 
@@ -103,14 +77,31 @@ public class Sound.OutputPanel : Gtk.Grid {
         var balance_label = new Gtk.Label (_("Balance:"));
         balance_label.valign = Gtk.Align.START;
         balance_label.halign = Gtk.Align.END;
+        balance_label.margin_bottom = 18;
 
         balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, -1, 1, 0.1);
         balance_scale.adjustment.page_increment = 0.1;
         balance_scale.draw_value = false;
         balance_scale.has_origin = false;
+        balance_scale.margin_bottom = 18;
         balance_scale.add_mark (-1, Gtk.PositionType.BOTTOM, _("Left"));
         balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
         balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
+
+        var alerts_label = new Gtk.Label (_("Event alerts:"));
+        alerts_label.halign = Gtk.Align.END;
+
+        var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound"));
+
+        var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen"));
+        visual_alert_check.halign = Gtk.Align.START;
+        visual_alert_check.hexpand = true;
+
+        var alerts_info = new Gtk.Label (_("Event alerts occur when the system cannot do something in response to user input, like attempting to backspace in an empty input or switch windows when only one is open."));
+        alerts_info.max_width_chars = 80;
+        alerts_info.wrap = true;
+        alerts_info.xalign = 0;
+        alerts_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…"));
         test_button.halign = Gtk.Align.END;
@@ -126,15 +117,17 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (available_label, 0, 0, 3, 1);
         attach (devices_frame, 0, 1, 3, 1);
         attach (ports_label, 0, 2);
-        attach (ports_dropdown, 1, 2);
+        attach (ports_dropdown, 1, 2, 2);
         attach (volume_label, 0, 3);
-        attach (volume_scale, 1, 3);
-        attach (volume_switch, 2, 3);
+        attach (volume_scale, 1, 3, 2);
+        attach (volume_switch, 3, 3);
         attach (balance_label, 0, 4);
-        attach (balance_scale, 1, 4);
+        attach (balance_scale, 1, 4, 2);
         attach (alerts_label, 0, 5);
-        attach (alerts_grid, 1, 5);
-        attach (test_button, 0, 6, 3, 1);
+        attach (audio_alert_check, 1, 5);
+        attach (visual_alert_check, 2, 5);
+        attach (alerts_info, 1, 6, 2);
+        attach (test_button, 0, 7, 4);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
