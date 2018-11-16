@@ -49,13 +49,13 @@ public class Sound.InputPanel : Gtk.Grid {
         devices_frame.expand = true;
         devices_frame.add (scrolled);
 
-        var ports_label = new Gtk.Label (_("Input Port:"));
+        var ports_label = new Gtk.Label (_("Input port:"));
         ports_label.halign = Gtk.Align.END;
         ports_dropdown = new Gtk.ComboBoxText ();
         ports_dropdown.changed.connect (port_changed);
         ports_dropdown.bind_property ("sensitive", ports_label, "sensitive");
 
-        var volume_label = new Gtk.Label (_("Input Volume:"));
+        var volume_label = new Gtk.Label (_("Input volume:"));
         volume_label.valign = Gtk.Align.CENTER;
         volume_label.halign = Gtk.Align.END;
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
@@ -67,7 +67,7 @@ public class Sound.InputPanel : Gtk.Grid {
         volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
         volume_switch.active = true;
-        var level_label = new Gtk.Label (_("Input Level:"));
+        var level_label = new Gtk.Label (_("Input level:"));
         level_label.halign = Gtk.Align.END;
 
         level_bar = new Gtk.LevelBar.for_interval (0.0, 18.0);
