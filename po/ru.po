@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 15:55-0500\n"
+"POT-Creation-Date: 2018-11-16 12:30-0800\n"
 "PO-Revision-Date: 2018-07-13 18:14+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
@@ -67,47 +67,65 @@ msgstr "Баланс:"
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:40
 msgid "Available Sound Output Devices:"
 msgstr "Доступные устройства вывода:"
 
-#: src/OutputPanel.vala:54
-msgid "Event Sounds:"
-msgstr "Звуки событий:"
-
-#: src/OutputPanel.vala:61
-msgid "Output Port:"
+#: src/OutputPanel.vala:58
+#, fuzzy
+msgid "Output port:"
 msgstr "Порт вывода:"
 
-#: src/OutputPanel.vala:67
-msgid "Output Volume:"
+#: src/OutputPanel.vala:65
+#, fuzzy
+msgid "Output volume:"
 msgstr "Громкость вывода:"
 
-#: src/OutputPanel.vala:76
+#: src/OutputPanel.vala:77
 msgid "Balance:"
 msgstr "Баланс:"
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:87
 msgid "Left"
 msgstr "Левый"
 
-#: src/OutputPanel.vala:84
+#: src/OutputPanel.vala:88
 msgid "Center"
 msgstr "Центр"
 
-#: src/OutputPanel.vala:85
+#: src/OutputPanel.vala:89
 msgid "Right"
 msgstr "Правый"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:91
+#, fuzzy
+msgid "Event alerts:"
+msgstr "Звуки событий:"
+
+#: src/OutputPanel.vala:94
+msgid "Play sound"
+msgstr ""
+
+#: src/OutputPanel.vala:96
+msgid "Flash screen"
+msgstr ""
+
+#: src/OutputPanel.vala:100
+msgid ""
+"Event alerts occur when the system cannot do something in response to user "
+"input, like attempting to backspace in an empty input or switch windows when "
+"only one is open."
+msgstr ""
+
+#: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr "Проверка динамиков…"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:113
 msgid "No Output Device"
 msgstr "Нет устройств вывода"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:113
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -120,11 +138,13 @@ msgid "Available Sound Input Devices:"
 msgstr "Доступные устройства ввода:"
 
 #: src/InputPanel.vala:52
-msgid "Input Port:"
+#, fuzzy
+msgid "Input port:"
 msgstr "Порт ввода:"
 
 #: src/InputPanel.vala:58
-msgid "Input Volume:"
+#, fuzzy
+msgid "Input volume:"
 msgstr "Громкость ввода:"
 
 #: src/InputPanel.vala:65
@@ -136,7 +156,8 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-msgid "Input Level:"
+#, fuzzy
+msgid "Input level:"
 msgstr "Уровень ввода:"
 
 #: src/InputPanel.vala:80

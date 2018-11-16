@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 15:55-0500\n"
+"POT-Creation-Date: 2018-11-16 12:30-0800\n"
 "PO-Revision-Date: 2017-08-31 23:39+0000\n"
 "Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
 "Language-Team: Greek <https://weblate.elementary.io/projects/switchboard/"
@@ -65,50 +65,66 @@ msgstr "Ισοστάθμιση:"
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:40
 msgid "Available Sound Output Devices:"
 msgstr "Διαθέσιμες συσκευές εξόδου ήχου:"
 
-#: src/OutputPanel.vala:54
-msgid "Event Sounds:"
-msgstr ""
-
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:58
 #, fuzzy
-msgid "Output Port:"
+msgid "Output port:"
 msgstr "Ένταση εξόδου:"
 
-#: src/OutputPanel.vala:67
-msgid "Output Volume:"
+#: src/OutputPanel.vala:65
+#, fuzzy
+msgid "Output volume:"
 msgstr "Ένταση εξόδου:"
 
-#: src/OutputPanel.vala:76
+#: src/OutputPanel.vala:77
 #, fuzzy
 msgid "Balance:"
 msgstr "Ισοστάθμιση:"
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:87
 msgid "Left"
 msgstr "Αριστερά"
 
-#: src/OutputPanel.vala:84
+#: src/OutputPanel.vala:88
 msgid "Center"
 msgstr "Κέντρο"
 
-#: src/OutputPanel.vala:85
+#: src/OutputPanel.vala:89
 msgid "Right"
 msgstr "Δεξιά"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:91
+msgid "Event alerts:"
+msgstr ""
+
+#: src/OutputPanel.vala:94
+msgid "Play sound"
+msgstr ""
+
+#: src/OutputPanel.vala:96
+msgid "Flash screen"
+msgstr ""
+
+#: src/OutputPanel.vala:100
+msgid ""
+"Event alerts occur when the system cannot do something in response to user "
+"input, like attempting to backspace in an empty input or switch windows when "
+"only one is open."
+msgstr ""
+
+#: src/OutputPanel.vala:106
 #, fuzzy
 msgid "Test Speakers…"
 msgstr "Δοκιμή ηχείων…"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:113
 msgid "No Output Device"
 msgstr "Δεν υπάρχει συσκευή εξόδου"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:113
 #, fuzzy
 msgid ""
 "There is no output device detected. You might want to add one to start "
@@ -123,11 +139,12 @@ msgstr "Διαθέσιμες συσκευές εισόδου ήχου:"
 
 #: src/InputPanel.vala:52
 #, fuzzy
-msgid "Input Port:"
+msgid "Input port:"
 msgstr "Ένταση εισόδου:"
 
 #: src/InputPanel.vala:58
-msgid "Input Volume:"
+#, fuzzy
+msgid "Input volume:"
 msgstr "Ένταση εισόδου:"
 
 #: src/InputPanel.vala:65
@@ -140,7 +157,7 @@ msgstr "100%"
 
 #: src/InputPanel.vala:70
 #, fuzzy
-msgid "Input Level:"
+msgid "Input level:"
 msgstr "Επίπεδο εισόδου:"
 
 #: src/InputPanel.vala:80
