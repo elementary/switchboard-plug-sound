@@ -148,6 +148,9 @@ public class Sound.OutputPanel : Gtk.Grid {
         var sound_settings = new Settings ("org.gnome.desktop.sound");
         sound_settings.bind ("event-sounds", audio_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
+        var wm_settings = new Settings ("org.gnome.desktop.wm.preferences");
+        wm_settings.bind ("visual-bell", visual_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
+
         connect_signals ();
     }
 
