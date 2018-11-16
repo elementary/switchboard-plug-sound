@@ -61,10 +61,10 @@ public class Sound.OutputPanel : Gtk.Grid {
         alerts_label.valign = Gtk.Align.START;
 
         var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound"));
-        audio_alert_check.halign = Gtk.Align.START;
 
         var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen"));
         visual_alert_check.halign = Gtk.Align.START;
+        visual_alert_check.hexpand = true;
 
         var alerts_info = new Gtk.Label (_("Event alerts occur when the system cannot do something in response to user input, like attempting to backspace in an empty input or switch windows when only one is open."));
         alerts_info.max_width_chars = 80;
@@ -133,7 +133,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (balance_label, 0, 4);
         attach (balance_scale, 1, 4);
         attach (alerts_label, 0, 5);
-        attach (alerts_grid, 1, 5, 2);
+        attach (alerts_grid, 1, 5);
         attach (test_button, 0, 6, 3, 1);
 
         pam = PulseAudioManager.get_default ();
