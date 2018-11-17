@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-15 21:48+0000\n"
+"PO-Revision-Date: 2018-11-17 07:15+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/he/>\n"
@@ -67,14 +67,12 @@ msgid "Available Sound Output Devices:"
 msgstr "התקנים זמינים לפלט צליל:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "פתחת פלט:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
-msgstr "עצמת השמע של הפלט:"
+msgstr "עצמת שמע פלט:"
 
 #: src/OutputPanel.vala:77
 msgid "Balance:"
@@ -93,17 +91,16 @@ msgid "Right"
 msgstr "ימני"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "צלילי אירועים:"
+msgstr "התראות אירועים:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "השמעת צליל"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "הבהוב המסך"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -111,6 +108,8 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"התראות אירועים מתרחשות כאשר המערכת לא יכולה לעשות משהו בתגובה לקלט המשתמש, "
+"כמו לנסות למחוק קלט בשדה ריק או להחליף חלונות כאשר יש רק חלון אחד פתוח."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -131,14 +130,12 @@ msgid "Available Sound Input Devices:"
 msgstr "התקני קלט שמע זמינים:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "פתחת קלט:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
-msgstr "עצמת שמע של קלט:"
+msgstr "עצמת שמע קלט:"
 
 #: src/InputPanel.vala:65
 msgid "Unamplified"
@@ -149,7 +146,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "רמת הקלט:"
 
