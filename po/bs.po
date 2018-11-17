@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-11-07 01:52+0000\n"
+"PO-Revision-Date: 2018-11-17 09:30+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/bs/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
@@ -68,12 +68,10 @@ msgid "Available Sound Output Devices:"
 msgstr "Dostupni izlazni zvučni uređaji:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "Izlazni priključak:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
 msgstr "Izlazna glasnoća:"
 
@@ -94,17 +92,16 @@ msgid "Right"
 msgstr "Desno"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "Zvukovi događaja:"
+msgstr "Upozorenja o događajima:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Sviraj zvuk"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Zabljesni ekran"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -112,6 +109,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Upozorenja o događajima se pojavljuju kada sistem ne može uraditi nešto u "
+"skladu s unosom korisnikom, poput pokušaja da se vrati za jedno mjesto u "
+"praznom polju ili da se prebaci na drugi prozor kada je samo jedan otvoren."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -134,12 +134,10 @@ msgid "Available Sound Input Devices:"
 msgstr "Dostupni ulazni zvučni uređaji:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "Ulazni priključak:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
 msgstr "Ulazna glasnoća:"
 
@@ -152,7 +150,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "Nivo ulaza:"
 
