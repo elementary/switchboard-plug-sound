@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-16 19:53+0000\n"
+"PO-Revision-Date: 2018-11-19 11:15+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/lt/>\n"
@@ -69,12 +69,10 @@ msgid "Available Sound Output Devices:"
 msgstr "Prieinami garso išvesties įrenginiai:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "Išvesties jungtis:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
 msgstr "Išvesties garsis:"
 
@@ -95,17 +93,16 @@ msgid "Right"
 msgstr "Dešinė"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
 msgstr "Įvykių garsai:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Atkurti garsą"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Blyksėti ekrane"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -113,6 +110,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Įvykių garsai atsiranda tuomet, kai sistema, atsakydama į naudotojo įvestį, "
+"negali kažko atlikti. Pavyzdžiui, negali tuščiame lauke panaikinti jokių "
+"simbolių arba kai yra tik vienas langas, negali perjungti į kitą langą."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -135,12 +135,10 @@ msgid "Available Sound Input Devices:"
 msgstr "Prieinami garso įvesties įrenginiai:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "Įvesties jungtis:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
 msgstr "Įvesties garsis:"
 
@@ -153,7 +151,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "Įvesties lygis:"
 
