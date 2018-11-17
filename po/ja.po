@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-15 21:48+0000\n"
+"PO-Revision-Date: 2018-11-17 12:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ja/>\n"
@@ -67,14 +67,12 @@ msgid "Available Sound Output Devices:"
 msgstr "利用可能なサウンドの出力デバイス:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "出力ポート:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
-msgstr "出力のボリューム:"
+msgstr "出力音量:"
 
 #: src/OutputPanel.vala:77
 msgid "Balance:"
@@ -93,17 +91,16 @@ msgid "Right"
 msgstr "右"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "イベントサウンド:"
+msgstr "イベント警告:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "音を鳴らす"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "画面の点滅"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -111,6 +108,8 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"イベント警告は、空白の入力欄で Backspace キーを押そうとしたときや、1 "
+"つしか開いていないウィンドウを切り替えようとしたときなど、システムがユーザーの入力に応じた操作をできないときに実行されます。"
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -133,14 +132,12 @@ msgid "Available Sound Input Devices:"
 msgstr "利用可能なサウンドの入力デバイス:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "入力ポート:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
-msgstr "入力のボリューム:"
+msgstr "入力音量:"
 
 #: src/InputPanel.vala:65
 msgid "Unamplified"
@@ -151,9 +148,8 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
-msgstr "入力のレベル:"
+msgstr "入力レベル:"
 
 #: src/InputPanel.vala:80
 msgid "No Input Device"
