@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-16 10:17+0000\n"
+"PO-Revision-Date: 2018-11-18 15:38+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/pl/>\n"
@@ -68,14 +68,12 @@ msgid "Available Sound Output Devices:"
 msgstr "Dostępne wyjściowe urządzenia dźwiękowe:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
-msgstr "Port wyjścia:"
+msgstr "Port wyjściowy:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
-msgstr "Głośność wyjścia:"
+msgstr "Głośność na wyjściu:"
 
 #: src/OutputPanel.vala:77
 msgid "Balance:"
@@ -94,17 +92,16 @@ msgid "Right"
 msgstr "Prawy"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "Dźwięki wydarzeń:"
+msgstr "Alarmy wydarzeń:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Odtwarzaj dźwięki"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Migający ekran"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -112,6 +109,10 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Alerty o zdarzeniach pojawiają się, gdy system nie może zrobić czegoś w "
+"odpowiedzi na dane wprowadzane przez użytkownika. Dzieje się tak na przykład "
+"podczas próby cofnięcia do pustego wejścia lub przełączania okien, gdy tylko "
+"jedno jest otwarte."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -134,14 +135,12 @@ msgid "Available Sound Input Devices:"
 msgstr "Dostępna wejściowe urządzenia dźwiękowe:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "Port wejścia:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
-msgstr "Głośność wejścia:"
+msgstr "Głośność na wejściu:"
 
 #: src/InputPanel.vala:65
 msgid "Unamplified"
@@ -152,9 +151,8 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
-msgstr "Poziom wejścia:"
+msgstr "Poziom na wejściu:"
 
 #: src/InputPanel.vala:80
 msgid "No Input Device"
