@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-11-18 19:27+0000\n"
+"PO-Revision-Date: 2018-11-22 20:04+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ru/>\n"
@@ -101,7 +101,7 @@ msgstr "Звук"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr "Вспышка"
+msgstr "Вспышка экрана"
 
 #: src/OutputPanel.vala:100
 msgid ""
