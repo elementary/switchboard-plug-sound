@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-20 03:05+0000\n"
+"PO-Revision-Date: 2018-11-17 10:32+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ko/>\n"
@@ -67,12 +67,10 @@ msgid "Available Sound Output Devices:"
 msgstr "사용 가능한 출력 장치:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "출력 포트:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
 msgstr "출력 볼륨:"
 
@@ -93,17 +91,16 @@ msgid "Right"
 msgstr "오른쪽"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "이벤트 알림음:"
+msgstr "이벤트 소리:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "소리 재생"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "플래시 스크린"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -111,6 +108,8 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"이벤트 소리는 시스템이 사용자의 입력에 아무런 반응을 할 수 없는, 빈 입력에 뒤로 가기를 누른다거나 창이 하나만 열려 있는데 창 전환을 "
+"시도하거나 할 때 같은 상황에서 납니다."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -131,12 +130,10 @@ msgid "Available Sound Input Devices:"
 msgstr "사용 가능한 입력 장치:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "입력 포트:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
 msgstr "입력 볼륨:"
 
@@ -149,7 +146,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "입력 레벨:"
 

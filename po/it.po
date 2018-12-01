@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-16 00:59+0000\n"
+"PO-Revision-Date: 2018-11-17 17:38+0000\n"
 "Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/it/>\n"
@@ -67,12 +67,10 @@ msgid "Available Sound Output Devices:"
 msgstr "Dispositivi di uscita audio disponibili:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "Porta di uscita:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
 msgstr "Volume in uscita:"
 
@@ -93,17 +91,16 @@ msgid "Right"
 msgstr "Destra"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
 msgstr "Suoni degli eventi:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Riproduci suono"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Fai lampeggiare lo schermo"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -111,6 +108,10 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Gli avvisi vengono emessi quando il sistema non può compiere un'azione in "
+"risposta all'input dell'utente, come cercare di cancellare un carattere in "
+"un campo di input già vuoto o cambiare ad un'altra finestra quando ce n'è "
+"solo una aperta."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -133,12 +134,10 @@ msgid "Available Sound Input Devices:"
 msgstr "Dispositivi di ingresso audio disponibili:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
-msgstr "Porta di entrata:"
+msgstr "Porta d'entrata:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
 msgstr "Volume in ingresso:"
 
@@ -151,7 +150,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "Livello di ingresso:"
 

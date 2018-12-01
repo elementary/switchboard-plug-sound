@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-17 00:07+0000\n"
+"PO-Revision-Date: 2018-11-21 10:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/nb/>\n"
@@ -103,11 +103,11 @@ msgstr "Hendelseslyder:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Spill lyd"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Blink skjerm"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -115,6 +115,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Hendelsesvarsler inntreffer når systemet ikke kan utrette brukerhandlinger "
+"som har med inndata å gjøre, som å forsøke å bruke rettetast i et tomt felt, "
+"eller bytte vinduer når kun ett er åpent."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"

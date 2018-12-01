@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-16 12:42+0000\n"
+"PO-Revision-Date: 2018-11-19 16:37+0000\n"
 "Last-Translator: Nuno Alexandre MS Ribeiro <nuno.anarresti@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/pt/>\n"
@@ -67,14 +67,12 @@ msgid "Available Sound Output Devices:"
 msgstr "Dispositivos de Saída Disponíveis:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
-msgstr "Volume de Saída:"
+msgstr "Porta de saída:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
-msgstr "Volume de Saída:"
+msgstr "Volume de saída:"
 
 #: src/OutputPanel.vala:77
 msgid "Balance:"
@@ -93,17 +91,16 @@ msgid "Right"
 msgstr "Direita"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "Som de Eventos:"
+msgstr "Alertas de eventos:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Reproduzir som"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Fazer o ecrã piscar"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -111,10 +108,13 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Os alertas de eventos ocorrem quando o sistema não consegue fazer algo em "
+"resposta a uma ação no teclado, por exemplo tentar apagar num espaço vazio "
+"ou alternar entre janelas quando apenas está aberta uma janela."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
-msgstr "Testar altifalantes…"
+msgstr "Testar Altifalantes…"
 
 #: src/OutputPanel.vala:113
 msgid "No Output Device"
@@ -125,51 +125,48 @@ msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
-"Não foi detetado nenhum dispositivo de saída. Terá de adicionar um se "
-"planeia ouvir alguma coisa."
+"Não foi detetado nenhum dispositivo de saída. Terá de adicionar um para "
+"poder começar a escutar algo."
 
 #: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
-msgstr "Dispositivos de entrada disponíves:"
+msgstr "Dispositivos de Entrada Disponíveis:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
-msgstr "Volume de Entrada:"
+msgstr "Porta de entrada:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
-msgstr "Volume de Entrada:"
+msgstr "Volume de entrada:"
 
 #: src/InputPanel.vala:65
 msgid "Unamplified"
-msgstr "Não amplificado"
+msgstr "Sem amplificação"
 
 #: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "Nível de entrada:"
 
 #: src/InputPanel.vala:80
 msgid "No Input Device"
-msgstr "Sem dispositivos de entrada"
+msgstr "Sem Dispositivos de Entrada"
 
 #: src/InputPanel.vala:80
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
-"Não foram detetados dispositivos de entrada. Terá de adicionar um se planeia "
-"gravar alguma coisa."
+"Não foram detetados dispositivos de entrada. Terá de adicionar um para poder "
+"começar a gravar."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr "Deteção de pico"
+msgstr "Deteção de picos"
 
 #: src/Device.vala:60
 msgid "Built-in"
@@ -181,7 +178,7 @@ msgstr "Altifalante"
 
 #: src/Device.vala:64
 msgid "Handset"
-msgstr "Auscultador"
+msgstr "Telefone"
 
 #: src/Device.vala:66
 msgid "TV"
@@ -197,11 +194,11 @@ msgstr "Microfone"
 
 #: src/Device.vala:72
 msgid "Headset"
-msgstr "Auscultador"
+msgstr "Auscultadores com microfone"
 
 #: src/Device.vala:74
 msgid "Headphone"
-msgstr "Auscultador"
+msgstr "Auscultadores"
 
 #: src/Device.vala:76
 msgid "Hands-Free"

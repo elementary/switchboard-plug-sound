@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-16 16:42+0000\n"
+"PO-Revision-Date: 2018-11-21 13:05+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/fi/>\n"
@@ -67,12 +67,10 @@ msgid "Available Sound Output Devices:"
 msgstr "Saatavilla olevat ulostulolaitteet:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "Ulostulon portti:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
 msgstr "Ulostulon äänenvoimakkuus:"
 
@@ -93,17 +91,16 @@ msgid "Right"
 msgstr "Oikea"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
 msgstr "Tapahtumaäänet:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Toista ääni"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Väläytä näyttöä"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -133,12 +130,10 @@ msgid "Available Sound Input Devices:"
 msgstr "Saatavilla olevat sisääntulolaitteet:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "Sisääntulon portti:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
 msgstr "Sisääntulon äänenvoimakkuus:"
 
@@ -151,7 +146,6 @@ msgid "100%"
 msgstr "100 %"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "Sisääntulon taso:"
 
