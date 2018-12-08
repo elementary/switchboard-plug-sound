@@ -52,7 +52,6 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         var devices_frame = new Gtk.Frame (null);
         devices_frame.expand = true;
-        devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
 
         var ports_label = new Gtk.Label (_("Output port:"));
@@ -65,10 +64,23 @@ public class Sound.OutputPanel : Gtk.Grid {
         var volume_label = new Gtk.Label (_("Output volume:"));
         volume_label.halign = Gtk.Align.END;
 
-        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
+        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0.0, 100.0, 5.0);
+
+        var sound_settings = new Settings ("io.elementary.desktop.wingpanel.sound");
+        
+        if (sound_settings != null) {
+            var max_volume = sound_settings.get_value ("max-volume").get_double ();
+            volume_scale.set_range(0, max_volume);
+        }
+
         volume_scale.adjustment.page_increment = 5;
-        volume_scale.draw_value = false;
+        volume_scale.set_value_pos(Gtk.PositionType.BOTTOM);
+        volume_scale.format_value.connect((val) => {
+			return "%.0f %%".printf(val);
+		});
         volume_scale.hexpand = true;
+        volume_scale.add_mark (100, Gtk.PositionType.BOTTOM, null);
+        volume_scale.margin_top = 18;
 
         volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
@@ -115,7 +127,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_listbox.set_placeholder (no_device_grid);
 
         attach (available_label, 0, 0, 3, 1);
-        attach (devices_frame, 0, 1, 3, 1);
+        attach (devices_frame, 0, 1, 5, 1);
         attach (ports_label, 0, 2);
         attach (ports_dropdown, 1, 2, 2);
         attach (volume_label, 0, 3);
@@ -138,8 +150,8 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
         volume_switch.bind_property ("active", balance_scale, "sensitive", BindingFlags.DEFAULT);
 
-        var sound_settings = new Settings ("org.gnome.desktop.sound");
-        sound_settings.bind ("event-sounds", audio_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
+        var gnome_sound_settings = new Settings ("org.gnome.desktop.sound");
+        gnome_sound_settings.bind ("event-sounds", audio_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
         var wm_settings = new Settings ("org.gnome.desktop.wm.preferences");
         wm_settings.bind ("visual-bell", visual_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
