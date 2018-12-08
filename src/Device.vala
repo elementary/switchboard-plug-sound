@@ -37,10 +37,10 @@ public class Sound.Device : GLib.Object {
     public string form_factor { get; set; }
     public bool is_default { get; set; default=false; }
     public bool is_muted { get; set; default=false; }
-    public PulseAudio.CVolume cvolume { get; set; }
     public double volume { get; set; default=0; }
     public float balance { get; set; default=0; }
-    public PulseAudio.ChannelMap channel_map { get; set; }
+    public PulseAudio.CVolume cvolume;
+    public PulseAudio.ChannelMap channel_map;
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
     public Gee.ArrayList<Port> ports { get; set; }
     public Port? default_port { get; set; default=null; }
