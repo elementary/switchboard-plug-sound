@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-11-22 20:04+0000\n"
+"PO-Revision-Date: 2018-12-13 14:04+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ru/>\n"
@@ -81,7 +81,7 @@ msgstr "Баланс:"
 
 #: src/OutputPanel.vala:87
 msgid "Left"
-msgstr "Левый"
+msgstr "Левая"
 
 #: src/OutputPanel.vala:88
 msgid "Center"
@@ -89,7 +89,7 @@ msgstr "Центр"
 
 #: src/OutputPanel.vala:89
 msgid "Right"
-msgstr "Правый"
+msgstr "Правая"
 
 #: src/OutputPanel.vala:91
 msgid "Event alerts:"

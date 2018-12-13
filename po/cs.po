@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-28 16:14+0000\n"
+"PO-Revision-Date: 2018-12-13 14:21+0000\n"
 "Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/cs/>\n"
@@ -67,12 +67,10 @@ msgid "Available Sound Output Devices:"
 msgstr "Dostupná výstupní zvuková zařízení:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "Výstupní port:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
 msgstr "Výstupní hlasitost:"
 
@@ -93,17 +91,16 @@ msgid "Right"
 msgstr "Pravé"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "Zvuky událostí:"
+msgstr "Zvuky upozornění:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Přehrát zvuk"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "Probliknout obrazovku"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -111,6 +108,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Uživatel bude upozorněn v situaci, kdy požaduje něco, co nelze provést. "
+"Například stisk klávesy backspace za situace, kdy není co smazat, nebo pokus "
+"o přepnutí na další okno, i když je otevřeno pouze jedno."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -133,12 +133,10 @@ msgid "Available Sound Input Devices:"
 msgstr "Dostupná vstupní zvuková zařízení:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "Vstupní port:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
 msgstr "Vstupní hlasitost:"
 
@@ -151,7 +149,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
 msgstr "Vstupní úroveň:"
 
