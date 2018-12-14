@@ -46,6 +46,7 @@ public class Sound.Plug : Switchboard.Plug {
 
             stack = new Gtk.Stack ();
             stack.expand = true;
+            stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
 
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.halign = Gtk.Align.CENTER;
