@@ -70,6 +70,7 @@ public class Sound.Device : GLib.Object {
 
     construct {
         volume_operations = new Gee.LinkedList<PulseAudio.Operation> ();
+        profiles = new Gee.ArrayList<string> ();
     }
 
     public string get_nice_form_factor () {
