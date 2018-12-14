@@ -89,7 +89,6 @@ public class Sound.PulseAudioManager : GLib.Object {
             debug ("wait for card sink / source");
             yield wait_for_update (device, device.input? "card-source-name" : "card-sink-name");
         }
-        debug ("#2");
         // #2 Set sink / source port
         // Speakers and headphones can be different ports on the same sink
         if (!device.input && device.port_name != device.card_sink_port_name) {
@@ -101,14 +100,12 @@ public class Sound.PulseAudioManager : GLib.Object {
             debug ("set source port: %s > %s", device.card_source_port_name, device.port_name);
             yield set_source_port_by_name (device.card_source_name, device.port_name);
         }
-        debug ("#3");
         // #3 Wait for sink / source to appear for this device
         if (!device.input && device.sink_name == null ||
             device.input && device.source_name == null) {
             debug ("wait for sink / source");
             yield wait_for_update (device, device.input? "source-name" : "sink-name");
         }
-        debug ("#4");
         // #4 Set sink / source
         // To for example switch between onboard speakers and bluetooth audio devices
         if (!device.input && device.sink_name != default_sink_name) {
