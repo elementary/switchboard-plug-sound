@@ -254,7 +254,7 @@ public class Sound.PulseAudioManager : GLib.Object {
     private bool reconnect_timeout () {
         reconnect_timer_id = 0U;
         reconnect_to_pulse.begin ();
-        return false; // G_SOURCE_REMOVE
+        return false;
     }
 
     private async void reconnect_to_pulse () {
@@ -482,7 +482,6 @@ public class Sound.PulseAudioManager : GLib.Object {
 
         debug ("    card: %u", sink.card);
 
-        // public SinkPortInfo*[] ports;
         foreach (var port in sink.ports) {
             debug ("    port: %s (%s)", port.description, port.name);
         }
