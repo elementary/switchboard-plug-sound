@@ -69,7 +69,6 @@ public class Sound.PulseAudioManager : GLib.Object {
         debug ("\n");
         debug ("set_default_device: %s", device.id);
         debug ("  %s", device.input? "input" : "output");
-        debug ("#1");
         // #1 Set card profile
         // Some sinks / sources are only available under certain card profiles,
         // for example to switch between onboard speakers to hdmi
