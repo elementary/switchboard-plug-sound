@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-11-17 17:38+0000\n"
-"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
+"PO-Revision-Date: 2018-12-11 15:10+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/it/>\n"
 "Language: it\n"
@@ -44,7 +44,7 @@ msgstr "Dispositivo"
 
 #: src/Plug.vala:104
 msgid "Event Sounds"
-msgstr "Suoni degli eventi"
+msgstr "Suoni degli avvisi"
 
 #: src/Plug.vala:105 src/Plug.vala:110
 msgid "Port"
@@ -80,7 +80,7 @@ msgstr "Bilanciamento:"
 
 #: src/OutputPanel.vala:87
 msgid "Left"
-msgstr "Sinistra"
+msgstr "Sinistro"
 
 #: src/OutputPanel.vala:88
 msgid "Center"
@@ -88,11 +88,11 @@ msgstr "Centro"
 
 #: src/OutputPanel.vala:89
 msgid "Right"
-msgstr "Destra"
+msgstr "Destro"
 
 #: src/OutputPanel.vala:91
 msgid "Event alerts:"
-msgstr "Suoni degli eventi:"
+msgstr "Suoni degli avvisi:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
@@ -110,8 +110,8 @@ msgid ""
 msgstr ""
 "Gli avvisi vengono emessi quando il sistema non può compiere un'azione in "
 "risposta all'input dell'utente, come cercare di cancellare un carattere in "
-"un campo di input già vuoto o cambiare ad un'altra finestra quando ce n'è "
-"solo una aperta."
+"un campo di input già vuoto o passare a un'altra finestra quando ce n'è solo "
+"una aperta."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -127,7 +127,7 @@ msgid ""
 "listening to anything."
 msgstr ""
 "Non è stato rilevato alcun dispositivo di uscita. Potresti aggiungerne uno "
-"per iniziare ad ascoltare qualsiasi cosa."
+"per iniziare ad ascoltare qualcosa."
 
 #: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
@@ -163,7 +163,7 @@ msgid ""
 "recording anything."
 msgstr ""
 "Non è stato rilevato alcun dispositivo di ingresso. Potresti aggiungerne uno "
-"per iniziare a registrare qualsiasi cosa."
+"per iniziare a registrare qualcosa."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
@@ -179,7 +179,7 @@ msgstr "Altoparlante"
 
 #: src/Device.vala:64
 msgid "Handset"
-msgstr "Ricevitore"
+msgstr "Cuffia"
 
 #: src/Device.vala:66
 msgid "TV"
@@ -211,7 +211,7 @@ msgstr "Automobile"
 
 #: src/Device.vala:80
 msgid "HiFi"
-msgstr "Alta fedeltà"
+msgstr "Sistema HiFi"
 
 #: src/Device.vala:82
 msgid "Computer"
