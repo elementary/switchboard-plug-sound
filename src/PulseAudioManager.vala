@@ -322,14 +322,14 @@ public class Sound.PulseAudioManager : GLib.Object {
                             if (device.sink_index == index) {
                                 debug ("  updating device: %s", device.id);
                                 device.sink_name = null;
-                                device.sink_index = null;
+                                device.sink_index = -1;
                                 device.is_default = false;
                                 debug ("    device.sink_name: %s", device.sink_name);
                             }
                             if (device.card_sink_index == index) {
                                 debug ("  updating device: %s", device.id);
                                 device.card_sink_name = null;
-                                device.card_sink_index = null;
+                                device.card_sink_index = -1;
                                 device.card_sink_port_name = null;
                                 debug ("    device.card_sink_name: %s", device.card_sink_name);
                             }
@@ -379,14 +379,14 @@ public class Sound.PulseAudioManager : GLib.Object {
                             if (device.source_index == index) {
                                 debug ("  updating device: %s", device.id);
                                 device.source_name = null;
-                                device.source_index = null;
+                                device.source_index = -1;
                                 device.is_default = false;
                                 debug ("    device.source_name: %s", device.source_name);
                             }
                             if (device.card_source_index == index) {
                                 debug ("  updating device: %s", device.id);
                                 device.card_source_name = null;
-                                device.card_source_index = null;
+                                device.card_source_index = -1;
                                 device.card_source_port_name = null;
                                 debug ("    device.card_source_name: %s", device.card_source_name);
                             }
@@ -427,14 +427,14 @@ public class Sound.PulseAudioManager : GLib.Object {
         foreach (var device in input_devices.values) {
             if (device.card_index == source.card) {
                 debug ("    updating device: %s", device.id);
-                device.card_source_index = source.index;
+                device.card_source_index = (int)source.index;
                 device.card_source_name = source.name;
                 debug ("      device.card_source_name: %s", device.card_source_name);
                 device.card_source_port_name = source.active_port.name;
                 if (device.port_name == source.active_port.name) {
                     device.source_name = source.name;
                     debug ("      device.source_name: %s", device.card_source_name);
-                    device.source_index = source.index;
+                    device.source_index = (int)source.index;
                     device.is_default = (source.name == default_source_name);
                     debug ("      is_default: %s", device.is_default ? "true" : "false");
 
@@ -457,7 +457,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                     }
                 } else {
                     device.source_name = null;
-                    device.source_index = null;
+                    device.source_index = -1;
                     device.is_default = false;
                 }
             }
@@ -486,14 +486,14 @@ public class Sound.PulseAudioManager : GLib.Object {
         foreach (var device in output_devices.values) {
             if (device.card_index == sink.card) {
                 debug ("    updating device: %s", device.id);
-                device.card_sink_index = sink.index;
+                device.card_sink_index = (int)sink.index;
                 device.card_sink_name = sink.name;
                 debug ("      device.card_sink_name: %s", device.card_sink_name);
                 device.card_sink_port_name = sink.active_port.name;
                 if (device.port_name == sink.active_port.name) {
                     device.sink_name = sink.name;
                     debug ("      device.sink_name: %s", device.card_sink_name);
-                    device.sink_index = sink.index;
+                    device.sink_index = (int)sink.index;
                     device.is_default = (sink.name == default_sink_name);
                     debug ("      is_default: %s", device.is_default ? "true" : "false");
                     device.is_muted = (sink.mute != 0);
@@ -515,7 +515,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                     }
                 } else {
                     device.sink_name = null;
-                    device.sink_index = null;
+                    device.sink_index = -1;
                     device.is_default = false;
                 }
             }

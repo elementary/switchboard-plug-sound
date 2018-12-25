@@ -43,17 +43,17 @@ public class Sound.Device : GLib.Object {
 
     // sink info
     public string? sink_name { get; set; }
-    public uint32? sink_index { get; set; }
+    public int sink_index { get; set; }
     public string? card_sink_name { get; set; }
     public string? card_sink_port_name { get; set; }
-    public uint32? card_sink_index { get; set; }
+    public int card_sink_index { get; set; }
 
     // source info
     public string? source_name { get; set; }
-    public uint32? source_index { get; set; }
+    public int source_index { get; set; }
     public string? card_source_name { get; set; }
     public string? card_source_port_name { get; set; }
-    public uint32? card_source_index { get; set; }
+    public int card_source_index { get; set; }
 
     // info from source or sink
     public bool is_default { get; set; default=false; }
