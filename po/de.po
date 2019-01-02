@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2019-01-02 21:56+0000\n"
+"PO-Revision-Date: 2019-01-03 00:04+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/de/>\n"
@@ -26,7 +26,7 @@ msgstr "Audio"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr "Klang- und Mikrofonlautstärke ändern"
+msgstr "Audio- und Mikrofonlautstärke ändern"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
@@ -48,7 +48,7 @@ msgstr "Ereignistöne"
 
 #: src/Plug.vala:105 src/Plug.vala:110
 msgid "Port"
-msgstr "Anschluss"
+msgstr "Schnittstelle"
 
 #: src/Plug.vala:106 src/Plug.vala:111
 msgid "Volume"
@@ -92,11 +92,11 @@ msgstr "Rechts"
 
 #: src/OutputPanel.vala:91
 msgid "Event alerts:"
-msgstr "Ereignis-Warnungen:"
+msgstr "Ereigniswarnungen:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr "Ton abspielen"
+msgstr "Ton wiedergeben"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
@@ -179,7 +179,7 @@ msgstr "Lautsprecher"
 
 #: src/Device.vala:64
 msgid "Handset"
-msgstr "Hörer"
+msgstr "Handset"
 
 #: src/Device.vala:66
 msgid "TV"
