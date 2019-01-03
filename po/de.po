@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-12-29 00:01+0000\n"
+"PO-Revision-Date: 2019-01-03 00:04+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/de/>\n"
@@ -26,7 +26,7 @@ msgstr "Audio"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr "Klang- und Mikrofonlautstärke ändern"
+msgstr "Audio- und Mikrofonlautstärke ändern"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
@@ -40,43 +40,37 @@ msgstr "Eingang"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "Gerät"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Event Sounds"
-msgstr "Ereignistöne:"
+msgstr "Ereignistöne"
 
 #: src/Plug.vala:105 src/Plug.vala:110
-#, fuzzy
 msgid "Port"
-msgstr "Tragbares Gerät"
+msgstr "Schnittstelle"
 
 #: src/Plug.vala:106 src/Plug.vala:111
-#, fuzzy
 msgid "Volume"
-msgstr "Eingangslautstärke:"
+msgstr "Lautstärke"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Balance"
-msgstr "Balance:"
+msgstr "Balance"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Aktivieren"
 
 #: src/OutputPanel.vala:40
 msgid "Available Sound Output Devices:"
 msgstr "Vorhandene Audio-Ausgabegeräte:"
 
 #: src/OutputPanel.vala:58
-#, fuzzy
 msgid "Output port:"
 msgstr "Ausgangsschnittstelle:"
 
 #: src/OutputPanel.vala:65
-#, fuzzy
 msgid "Output volume:"
 msgstr "Ausgangslautstärke:"
 
@@ -97,13 +91,12 @@ msgid "Right"
 msgstr "Rechts"
 
 #: src/OutputPanel.vala:91
-#, fuzzy
 msgid "Event alerts:"
-msgstr "Ereignistöne:"
+msgstr "Ereigniswarnungen:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "Ton wiedergeben"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
@@ -115,6 +108,10 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Ereigniswarnungen treten auf, wenn das System als Reaktion auf "
+"Benutzereingaben nichts tun kann, wie z.B. bei dem Versuch, in einem leeren "
+"Eingabefeld die Rücktaste zu betätigen oder Fenster zu wechseln, wenn nur "
+"eines geöffnet ist."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -137,12 +134,10 @@ msgid "Available Sound Input Devices:"
 msgstr "Vorhandene Audio-Eingabegeräte:"
 
 #: src/InputPanel.vala:52
-#, fuzzy
 msgid "Input port:"
 msgstr "Eingangsschnittstelle:"
 
 #: src/InputPanel.vala:58
-#, fuzzy
 msgid "Input volume:"
 msgstr "Eingangslautstärke:"
 
@@ -155,9 +150,8 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:70
-#, fuzzy
 msgid "Input level:"
-msgstr "Eingangs-Level:"
+msgstr "Eingangslevel:"
 
 #: src/InputPanel.vala:80
 msgid "No Input Device"
@@ -185,7 +179,7 @@ msgstr "Lautsprecher"
 
 #: src/Device.vala:64
 msgid "Handset"
-msgstr "Hörer"
+msgstr "Handset"
 
 #: src/Device.vala:66
 msgid "TV"
