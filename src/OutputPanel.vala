@@ -106,8 +106,8 @@ public class Sound.OutputPanel : Gtk.Grid {
         no_device_grid.show_all ();
         devices_listbox.set_placeholder (no_device_grid);
 
-        attach (available_label, 0, 0, 3, 1);
-        attach (devices_frame, 0, 1, 3, 1);
+        attach (available_label, 0, 0, 4, 1);
+        attach (devices_frame, 0, 1, 4, 1);
         attach (volume_label, 0, 2);
         attach (volume_scale, 1, 2, 2);
         attach (volume_switch, 3, 2);
