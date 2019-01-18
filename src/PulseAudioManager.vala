@@ -75,7 +75,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         // the profile has to be switched from analog stereo to digital stereo.
         // Attempt to find profiles that support both selected input and output
         var other_device = device.input? default_output : default_input;
-        var profile_name = get_matching_profile (device, other_device);
+        var profile_name = device.get_matching_profile (other_device);
         // otherwise fall back to supporting this device only
         if (profile_name == null) {
             profile_name = device.profiles[0];
@@ -115,15 +115,6 @@ public class Sound.PulseAudioManager : GLib.Object {
             debug ("set source: %s > %s", default_source_name, device.source_name);
             yield set_default_source (device.source_name);
         }
-    }
-
-    private string? get_matching_profile (Device device1, Device device2) {
-        foreach (var profile1 in device1.profiles) {
-            if (device2.profiles.contains (profile1)) {
-                return profile1;
-            }
-        }
-        return null;
     }
 
     private async void set_card_profile_by_index (uint32 card_index, string profile_name) {

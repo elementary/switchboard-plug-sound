@@ -104,6 +104,15 @@ public class Sound.Device : GLib.Object {
             default:
                 return input? _("Input") : _("Output");
         }
+    }
 
+    public string? get_matching_profile (Device other_device) {
+        foreach (var profile in profiles) {
+            if (other_device.profiles.contains (profile)) {
+                return profile;
+            }
+        }
+        
+        return null;
     }
 }
