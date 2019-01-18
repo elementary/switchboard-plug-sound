@@ -597,7 +597,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
 
-    private string get_device_id (PulseAudio.CardInfo card, PulseAudio.CardPortInfo* port) {
+    private static string get_device_id (PulseAudio.CardInfo card, PulseAudio.CardPortInfo* port) {
         return @"$(card.name):$(port.name)";
     }
 
