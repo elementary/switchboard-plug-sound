@@ -550,7 +550,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 device = new Device (id, card.index, port.name);
             } else {
                 debug ("      updating device: %s", id);
-                device = devices.get (id);
+                device = devices[id];
             }
             device.card_active_profile_name = card_active_profile_name;
             device.input = is_input;
