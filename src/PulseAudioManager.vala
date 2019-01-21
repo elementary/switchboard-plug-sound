@@ -28,9 +28,7 @@
 
 public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudioManager pam;
-    private static string G_MESSAGES_DEBUG_RAW = GLib.Environment.get_variable("G_MESSAGES_DEBUG");
-    private static string[]? G_MESSAGES_DEBUG = G_MESSAGES_DEBUG_RAW == null ? null : G_MESSAGES_DEBUG_RAW.split(" ");
-    private static bool DEBUG_ENABLED = "all" in G_MESSAGES_DEBUG || "debug" in G_MESSAGES_DEBUG;
+    private static bool DEBUG_ENABLED;
 
     public static unowned PulseAudioManager get_default () {
         if (pam == null) {
@@ -63,6 +61,12 @@ public class Sound.PulseAudioManager : GLib.Object {
         input_devices = new Gee.HashMap<string, Device> ();
         output_devices = new Gee.HashMap<string, Device> ();
         volume_operations = new Gee.HashMap<uint32, PulseAudio.Operation> ();
+
+        string G_MESSAGES_DEBUG_RAW = GLib.Environment.get_variable("G_MESSAGES_DEBUG");
+        if (G_MESSAGES_DEBUG_RAW != null) {
+            string[]? G_MESSAGES_DEBUG = G_MESSAGES_DEBUG_RAW.split(" ");
+            DEBUG_ENABLED = "all" in G_MESSAGES_DEBUG || "debug" in G_MESSAGES_DEBUG;
+        }
     }
 
     public void start () {
