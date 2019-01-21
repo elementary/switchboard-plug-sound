@@ -28,6 +28,10 @@
 
 public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudioManager pam;
+    private static string G_MESSAGES_DEBUG_RAW = GLib.Environment.get_variable("G_MESSAGES_DEBUG");
+    private static string[]? G_MESSAGES_DEBUG = G_MESSAGES_DEBUG_RAW == null ? null : G_MESSAGES_DEBUG_RAW.split(" ");
+    private static bool DEBUG_ENABLED = "all" in G_MESSAGES_DEBUG || "debug" in G_MESSAGES_DEBUG;
+
     public static unowned PulseAudioManager get_default () {
         if (pam == null) {
             pam = new PulseAudioManager ();
@@ -409,10 +413,12 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (source.name == "auto_null") {
             return;
         }
-
-        foreach (var port in source.ports) {
-            debug ("    port: %s (%s)", port.description, port.name);
+        if (DEBUG_ENABLED) {
+            foreach (var port in source.ports) {
+                debug ("    port: %s (%s)", port.description, port.name);
+            }
         }
+
         debug ("    active port: %s (%s)", source.active_port.description, source.active_port.name);
 
         foreach (var device in input_devices.values) {
@@ -468,10 +474,12 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
 
         debug ("    card: %u", sink.card);
-
-        foreach (var port in sink.ports) {
-            debug ("    port: %s (%s)", port.description, port.name);
+        if (DEBUG_ENABLED) {
+            foreach (var port in sink.ports) {
+                debug ("    port: %s (%s)", port.description, port.name);
+            }
         }
+
         debug ("    active port: %s (%s)", sink.active_port.description, sink.active_port.name);
 
         foreach (var device in output_devices.values) {
@@ -560,9 +568,12 @@ public class Sound.PulseAudioManager : GLib.Object {
             device.form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
             debug ("      port icon name: %s", port.proplist.gets (PulseAudio.Proplist.PROP_MEDIA_ICON_NAME)); // optional:
             device.profiles = get_relevant_card_port_profiles (port);
-            foreach (var profile in device.profiles) {
-                debug ("      profile: %s", profile);
+            if (DEBUG_ENABLED) {
+                foreach (var profile in device.profiles) {
+                    debug ("      profile: %s", profile);
+                }
             }
+
             if (is_new) {
                 devices.set (id, device);
                 new_device (device);
