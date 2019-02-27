@@ -62,10 +62,10 @@ public class Sound.PulseAudioManager : GLib.Object {
         output_devices = new Gee.HashMap<string, Device> ();
         volume_operations = new Gee.HashMap<uint32, PulseAudio.Operation> ();
 
-        string G_MESSAGES_DEBUG_RAW = GLib.Environment.get_variable("G_MESSAGES_DEBUG");
-        if (G_MESSAGES_DEBUG_RAW != null) {
-            string[]? G_MESSAGES_DEBUG = G_MESSAGES_DEBUG_RAW.split(" ");
-            DEBUG_ENABLED = "all" in G_MESSAGES_DEBUG || "debug" in G_MESSAGES_DEBUG;
+        string messagesDebugRaw = GLib.Environment.get_variable("G_MESSAGES_DEBUG");
+        if (messagesDebugRaw != null) {
+            string[]? messagesDebug = messagesDebugRaw.split(" ");
+            DEBUG_ENABLED = "all" in messagesDebug || "debug" in messagesDebug;
         }
     }
 
