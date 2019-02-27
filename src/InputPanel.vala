@@ -45,6 +45,7 @@ public class Sound.InputPanel : Gtk.Grid {
         devices_listbox.row_activated.connect ((row) => {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
+
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
         var devices_frame = new Gtk.Frame (null);

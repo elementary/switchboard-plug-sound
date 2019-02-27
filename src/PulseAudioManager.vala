@@ -88,6 +88,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (profile_name == null) {
             profile_name = device.profiles[0];
         }
+
         if (profile_name != device.card_active_profile_name) {
             debug ("set card profile: %s > %s", device.card_active_profile_name, profile_name);
             // switch profile to get sink for this device
@@ -96,6 +97,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             debug ("wait for card sink / source");
             yield wait_for_update (device, device.input? "card-source-name" : "card-sink-name");
         }
+
         // #2 Set sink / source port
         // Speakers and headphones can be different ports on the same sink
         if (!device.input && device.port_name != device.card_sink_port_name) {
@@ -103,22 +105,26 @@ public class Sound.PulseAudioManager : GLib.Object {
             // set sink port (enables switching between headphones and speakers for example)
             yield set_sink_port_by_name (device.card_sink_name, device.port_name);
         }
+
         if (device.input && device.port_name != device.card_source_port_name) {
             debug ("set source port: %s > %s", device.card_source_port_name, device.port_name);
             yield set_source_port_by_name (device.card_source_name, device.port_name);
         }
+
         // #3 Wait for sink / source to appear for this device
         if (!device.input && device.sink_name == null ||
             device.input && device.source_name == null) {
             debug ("wait for sink / source");
             yield wait_for_update (device, device.input? "source-name" : "sink-name");
         }
+
         // #4 Set sink / source
         // To for example switch between onboard speakers and bluetooth audio devices
         if (!device.input && device.sink_name != default_sink_name) {
             debug ("set sink: %s > %s", default_sink_name, device.sink_name);
             yield set_default_sink (device.sink_name);
         }
+
         if (device.input && device.source_name != default_source_name) {
             debug ("set source: %s > %s", default_source_name, device.source_name);
             yield set_default_source (device.source_name);
@@ -133,6 +139,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 warning ("setting card %u profile to %s failed", card_index, profile_name);
             }
         });
+
         yield;
     }
 
@@ -148,6 +155,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 wait_for_update.callback ();
             }
         });
+
         yield;
     }
 
@@ -159,6 +167,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 warning ("setting sink %s port to %s failed", sink_name, port_name);
             }
         });
+
         yield;
     }
 
@@ -170,6 +179,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 warning ("setting source %s port to %s failed", source_name, port_name);
             }
         });
+
         yield;
     }
 
@@ -181,6 +191,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 warning ("setting default sink to %s failed", sink_name);
             }
         });
+
         yield;
     }
 
@@ -192,6 +203,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 warning ("setting default source to %s failed", source_name);
             }
         });
+
         yield;
     }
 
@@ -274,11 +286,11 @@ public class Sound.PulseAudioManager : GLib.Object {
             case PulseAudio.Context.State.READY:
                 c.set_subscribe_callback (subscribe_callback);
                 c.subscribe (PulseAudio.Context.SubscriptionMask.SERVER |
-                        PulseAudio.Context.SubscriptionMask.SINK |
-                        PulseAudio.Context.SubscriptionMask.SOURCE |
-                        PulseAudio.Context.SubscriptionMask.SINK_INPUT |
-                        PulseAudio.Context.SubscriptionMask.SOURCE_OUTPUT |
-                        PulseAudio.Context.SubscriptionMask.CARD);
+                             PulseAudio.Context.SubscriptionMask.SINK |
+                             PulseAudio.Context.SubscriptionMask.SOURCE |
+                             PulseAudio.Context.SubscriptionMask.SINK_INPUT |
+                             PulseAudio.Context.SubscriptionMask.SOURCE_OUTPUT |
+                             PulseAudio.Context.SubscriptionMask.CARD);
                 context.get_server_info (server_info_callback);
                 is_ready = true;
                 break;
@@ -288,6 +300,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 if (reconnect_timer_id == 0U) {
                     reconnect_timer_id = Timeout.add_seconds (2, reconnect_timeout);
                 }
+
                 break;
 
             default:
@@ -325,6 +338,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                                 device.is_default = false;
                                 debug ("    device.sink_name: %s", device.sink_name);
                             }
+
                             if (device.card_sink_index == index) {
                                 debug ("  updating device: %s", device.id);
                                 device.card_sink_name = null;
@@ -333,6 +347,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                                 debug ("    device.card_sink_name: %s", device.card_sink_name);
                             }
                         }
+
                         break;
                 }
 
@@ -358,6 +373,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                         remove_devices_by_card (input_devices, index);
                         break;
                 }
+
                 break;
 
             case PulseAudio.Context.SubscriptionEventType.SOURCE:
@@ -382,6 +398,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                                 device.is_default = false;
                                 debug ("    device.source_name: %s", device.source_name);
                             }
+
                             if (device.card_source_index == index) {
                                 debug ("  updating device: %s", device.id);
                                 device.card_source_name = null;
@@ -390,6 +407,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                                 debug ("    device.card_source_name: %s", device.card_source_name);
                             }
                         }
+
                         break;
                 }
 
@@ -410,6 +428,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (source.monitor_of_sink != PulseAudio.INVALID_INDEX) {
             return;
         }
+
         debug ("source info update");
         debug ("  source: %s (%s)", source.description, source.name);
         debug ("    card: %u", source.card);
@@ -417,6 +436,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (source.name == "auto_null") {
             return;
         }
+
         if (DEBUG_ENABLED) {
             foreach (var port in source.ports) {
                 debug ("    port: %s (%s)", port.description, port.name);
@@ -450,12 +470,15 @@ public class Sound.PulseAudioManager : GLib.Object {
 
                         return GLib.Source.CONTINUE;
                     });
+
                     if (device.volume_operations.is_empty) {
                         device.volume = volume_to_double (source.volume.max ());
                     }
+
                     if (device.is_default) {
                         default_input = device;
                     }
+
                 } else {
                     device.source_name = null;
                     device.source_index = -1;
@@ -510,12 +533,15 @@ public class Sound.PulseAudioManager : GLib.Object {
 
                         return GLib.Source.CONTINUE;
                     });
+
                     if (device.volume_operations.is_empty) {
                         device.volume = volume_to_double (sink.volume.max ());
                     }
+
                     if (device.is_default) {
                         default_output = device;
                     }
+
                 } else {
                     device.sink_name = null;
                     device.sink_index = -1;
@@ -564,6 +590,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 debug ("      updating device: %s", id);
                 device = devices[id];
             }
+
             device.card_active_profile_name = card_active_profile_name;
             device.input = is_input;
             device.card_name = card.name;
@@ -583,6 +610,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                 new_device (device);
             }
         }
+
         cleanup_devices (output_devices, card, relevant_ports);
         cleanup_devices (input_devices, card, relevant_ports);
     }
@@ -604,6 +632,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                     break;
                 }
             }
+
             if (!found) {
                 debug ("    removing device: %s", device.id);
                 device.removed ();
@@ -624,16 +653,20 @@ public class Sound.PulseAudioManager : GLib.Object {
             if (a.priority > b.priority) {
                 return -1;
             }
+
             if (a.priority < b.priority) {
                 return 1;
             }
+
             return 0;
         });
+
         // just store names in Device
         var profiles = new Gee.ArrayList<string> ();
         foreach (var item in profiles_list) {
             profiles.add (item.name);
         }
+
         return profiles;
     }
 
@@ -659,20 +692,24 @@ public class Sound.PulseAudioManager : GLib.Object {
             default_sink_name = server.default_sink_name;
             debug ("  default_sink_name: %s", default_sink_name);
         }
+
         if (default_sink_name != server.default_sink_name) {
             debug ("  default_sink_name: %s > %s", default_sink_name, server.default_sink_name);
             default_sink_name = server.default_sink_name;
             PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_sink_callback);
         }
+
         if (default_source_name == null) {
             default_source_name = server.default_source_name;
             debug ("  default_source_name: %s", default_source_name);
         }
+
         if (default_source_name != server.default_source_name) {
             debug ("  default_source_name: %s > %s", default_source_name, server.default_source_name);
             default_source_name = server.default_source_name;
             PulseAudio.ext_stream_restore_read (context, ext_stream_restore_read_source_callback);
         }
+
         // request info on cards and ports before requesting info on
         // sinks, because sinks info is added to existing Devices.
         context.get_card_info_list (card_info_callback);
