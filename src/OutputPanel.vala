@@ -27,7 +27,6 @@ public class Sound.OutputPanel : Gtk.Grid {
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
     Gtk.Scale balance_scale;
-    Gtk.ComboBoxText ports_dropdown;
 
     private Device default_device = null;
 
@@ -44,7 +43,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_listbox = new Gtk.ListBox ();
         devices_listbox.activate_on_single_click = true;
         devices_listbox.row_activated.connect ((row) => {
-            pam.set_default_device (((Sound.DeviceRow) row).device);
+            pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
@@ -54,13 +53,6 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_frame.expand = true;
         devices_frame.margin_bottom = 18;
         devices_frame.add (scrolled);
-
-        var ports_label = new Gtk.Label (_("Output port:"));
-        ports_label.halign = Gtk.Align.END;
-
-        ports_dropdown = new Gtk.ComboBoxText ();
-        ports_dropdown.changed.connect (port_changed);
-        ports_dropdown.bind_property ("sensitive", ports_label, "sensitive");
 
         var volume_label = new Gtk.Label (_("Output volume:"));
         volume_label.halign = Gtk.Align.END;
@@ -116,24 +108,20 @@ public class Sound.OutputPanel : Gtk.Grid {
 
         attach (available_label, 0, 0, 4, 1);
         attach (devices_frame, 0, 1, 4, 1);
-        attach (ports_label, 0, 2);
-        attach (ports_dropdown, 1, 2, 2);
-        attach (volume_label, 0, 3);
-        attach (volume_scale, 1, 3, 2);
-        attach (volume_switch, 3, 3);
-        attach (balance_label, 0, 4);
-        attach (balance_scale, 1, 4, 2);
-        attach (alerts_label, 0, 5);
-        attach (audio_alert_check, 1, 5);
-        attach (visual_alert_check, 2, 5);
-        attach (alerts_info, 1, 6, 2);
-        attach (test_button, 0, 7, 4);
+        attach (volume_label, 0, 2);
+        attach (volume_scale, 1, 2, 2);
+        attach (volume_switch, 3, 2);
+        attach (balance_label, 0, 3);
+        attach (balance_scale, 1, 3, 2);
+        attach (alerts_label, 0, 4);
+        attach (audio_alert_check, 1, 4);
+        attach (visual_alert_check, 2, 4);
+        attach (alerts_info, 1, 5, 2);
+        attach (test_button, 0, 6, 4);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
-        pam.notify["default-output"].connect (() => {
-            default_changed ();
-        });
+        pam.notify["default-output"].connect (default_changed);
 
         volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
         volume_switch.bind_property ("active", balance_scale, "sensitive", BindingFlags.DEFAULT);
@@ -159,9 +147,6 @@ public class Sound.OutputPanel : Gtk.Grid {
                 volume_switch.active = !default_device.is_muted;
                 volume_scale.set_value (default_device.volume);
                 balance_scale.set_value (default_device.balance);
-
-                rebuild_ports_dropdown ();
-
                 default_device.notify.connect (device_notify);
             }
         }
@@ -169,24 +154,16 @@ public class Sound.OutputPanel : Gtk.Grid {
         connect_signals ();
     }
 
-    private void port_changed () {
-        disconnect_signals ();
-        pam.context.set_sink_port_by_index (default_device.index, ports_dropdown.active_id);
-        connect_signals ();
-    }
-
     private void disconnect_signals () {
         volume_switch.notify["active"].disconnect (volume_switch_changed);
         volume_scale.value_changed.disconnect (volume_scale_value_changed);
         balance_scale.value_changed.disconnect (balance_scale_value_changed);
-        ports_dropdown.changed.disconnect (port_changed);
     }
 
     private void connect_signals () {
         volume_switch.notify["active"].connect (volume_switch_changed);
         volume_scale.value_changed.connect (volume_scale_value_changed);
         balance_scale.value_changed.connect (balance_scale_value_changed);
-        ports_dropdown.changed.connect (port_changed);
     }
 
     private void volume_scale_value_changed () {
@@ -219,31 +196,9 @@ public class Sound.OutputPanel : Gtk.Grid {
             case "balance":
                 balance_scale.set_value (default_device.balance);
                 break;
-            case "default-port":
-                if (default_device.default_port != null) {
-                    ports_dropdown.active_id = default_device.default_port.name;
-                }
-
-                break;
-            case "ports":
-                rebuild_ports_dropdown ();
-                break;
         }
 
         connect_signals ();
-    }
-
-    private void rebuild_ports_dropdown () {
-        ports_dropdown.remove_all ();
-        ports_dropdown.sensitive = !default_device.ports.is_empty;
-
-        foreach (var port in default_device.ports) {
-            ports_dropdown.append (port.name, port.description);
-        }
-
-        if (default_device.default_port != null) {
-            ports_dropdown.active_id = default_device.default_port.name;
-        }
     }
 
     private void add_device (Device device) {
@@ -260,8 +215,7 @@ public class Sound.OutputPanel : Gtk.Grid {
         device_row.show_all ();
         devices_listbox.add (device_row);
         device_row.set_as_default.connect (() => {
-            pam.set_default_device (device);
+            pam.set_default_device.begin (device);
         });
     }
 }
-

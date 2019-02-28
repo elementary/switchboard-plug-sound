@@ -91,23 +91,19 @@ public class Sound.TestPopover : Gtk.Popover {
 
     private void default_changed () {
         if (default_device != null) {
-            default_device.notify.disconnect (device_notify);
+            default_device.notify.disconnect (update_buttons);
             clear_buttons ();
         }
 
         unowned PulseAudioManager pam = PulseAudioManager.get_default ();
         default_device = pam.default_output;
-        default_device.notify.connect (device_notify);
+        default_device.notify["channel-map"].connect (update_buttons);
         add_buttons ();
     }
 
-    private void device_notify (ParamSpec pspec) {
-        switch (pspec.get_name ()) {
-            case "channel-positions":
-                clear_buttons ();
-                add_buttons ();
-                break;
-        }
+    private void update_buttons () {
+        clear_buttons ();
+        add_buttons ();
     }
 
     private void clear_buttons () {
@@ -204,8 +200,9 @@ public class Sound.TestPopover : Gtk.Popover {
         }
 
         private string get_pretty_position () {
-            if (pa_position == PulseAudio.ChannelPosition.LFE)
+            if (pa_position == PulseAudio.ChannelPosition.LFE) {
                 return "Subwoofer";
+            }
 
             return pa_position.to_pretty_string ();
         }
