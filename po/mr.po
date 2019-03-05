@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2018-10-14 00:04+0000\n"
+"PO-Revision-Date: 2019-03-06 18:27+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.4\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:36
@@ -26,81 +26,81 @@ msgstr "ध्वनी"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "ध्वनी आणि मायक्रोफोन आवाज बदला"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
 msgid "Output"
-msgstr ""
+msgstr "आउटपुट"
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
 msgid "Input"
-msgstr ""
+msgstr "इनपुट"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "उपकरण"
 
 #: src/Plug.vala:104
 msgid "Event Sounds"
-msgstr ""
+msgstr "घटना ध्वनी"
 
 #: src/Plug.vala:105 src/Plug.vala:110
 msgid "Port"
-msgstr ""
+msgstr "पोर्ट"
 
 #: src/Plug.vala:106 src/Plug.vala:111
 msgid "Volume"
-msgstr ""
+msgstr "आवाज"
 
 #: src/Plug.vala:107
 msgid "Balance"
-msgstr ""
+msgstr "बॅलेन्स"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "सक्षम"
 
 #: src/OutputPanel.vala:40
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "उपलब्ध ध्वनी आउटपुट उपकरणे:"
 
 #: src/OutputPanel.vala:58
 msgid "Output port:"
-msgstr ""
+msgstr "आउटपुट पोर्ट:"
 
 #: src/OutputPanel.vala:65
 msgid "Output volume:"
-msgstr ""
+msgstr "आउटपुट आवाज:"
 
 #: src/OutputPanel.vala:77
 msgid "Balance:"
-msgstr ""
+msgstr "बॅलेन्स:"
 
 #: src/OutputPanel.vala:87
 msgid "Left"
-msgstr ""
+msgstr "डावा"
 
 #: src/OutputPanel.vala:88
 msgid "Center"
-msgstr ""
+msgstr "मध्य"
 
 #: src/OutputPanel.vala:89
 msgid "Right"
-msgstr ""
+msgstr "उजवा"
 
 #: src/OutputPanel.vala:91
 msgid "Event alerts:"
-msgstr ""
+msgstr "घटना अलर्टः"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
-msgstr ""
+msgstr "ध्वनी चालवा"
 
 #: src/OutputPanel.vala:96
 msgid "Flash screen"
-msgstr ""
+msgstr "स्क्रीन फ्लॅश करा"
 
 #: src/OutputPanel.vala:100
 msgid ""
@@ -111,51 +111,55 @@ msgstr ""
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
-msgstr ""
+msgstr "स्पीकर्सची चाचणी करा…"
 
 #: src/OutputPanel.vala:113
 msgid "No Output Device"
-msgstr ""
+msgstr "कोणतेही आउटपुट उपकरण नाही"
 
 #: src/OutputPanel.vala:113
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"येथे कोणतेही आउटपुट उपकरण आढळले नाही. आपल्याला काहीही ऐकण्यास प्रारंभ "
+"करण्यासाठी कदाचित एखादे जोडावे लागेल."
 
 #: src/InputPanel.vala:41
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "उपलब्ध साउंड इनपुट उपकरणे:"
 
 #: src/InputPanel.vala:52
 msgid "Input port:"
-msgstr ""
+msgstr "इनपुट पोर्ट:"
 
 #: src/InputPanel.vala:58
 msgid "Input volume:"
-msgstr ""
+msgstr "इनपुट आवाज:"
 
 #: src/InputPanel.vala:65
 msgid "Unamplified"
-msgstr ""
+msgstr "न वाढवलेला"
 
 #: src/InputPanel.vala:66
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: src/InputPanel.vala:70
 msgid "Input level:"
-msgstr ""
+msgstr "इनपुट स्तर:"
 
 #: src/InputPanel.vala:80
 msgid "No Input Device"
-msgstr ""
+msgstr "कोणतेही इनपुट डिव्हाइस नाही"
 
 #: src/InputPanel.vala:80
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"येथे कोणतेही इनपुट उपकरण आढळले नाही. आपल्याला काहीही रेकॉर्डिंग प्रारंभ "
+"करण्यासाठी कदाचित एखादे जोडावे लागेल."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
@@ -163,55 +167,55 @@ msgstr ""
 
 #: src/Device.vala:60
 msgid "Built-in"
-msgstr ""
+msgstr "अंगभूत"
 
 #: src/Device.vala:62
 msgid "Speaker"
-msgstr ""
+msgstr "स्पीकर"
 
 #: src/Device.vala:64
 msgid "Handset"
-msgstr ""
+msgstr "हँडसेट"
 
 #: src/Device.vala:66
 msgid "TV"
-msgstr ""
+msgstr "टीव्ही"
 
 #: src/Device.vala:68
 msgid "Webcam"
-msgstr ""
+msgstr "वेबकॅम"
 
 #: src/Device.vala:70
 msgid "Microphone"
-msgstr ""
+msgstr "मायक्रोफोन"
 
 #: src/Device.vala:72
 msgid "Headset"
-msgstr ""
+msgstr "हेडसेट"
 
 #: src/Device.vala:74
 msgid "Headphone"
-msgstr ""
+msgstr "हेडफोन"
 
 #: src/Device.vala:76
 msgid "Hands-Free"
-msgstr ""
+msgstr "हँड-फ्री"
 
 #: src/Device.vala:78
 msgid "Car"
-msgstr ""
+msgstr "कार"
 
 #: src/Device.vala:80
 msgid "HiFi"
-msgstr ""
+msgstr "हायफाय"
 
 #: src/Device.vala:82
 msgid "Computer"
-msgstr ""
+msgstr "कॉम्पुटर"
 
 #: src/Device.vala:84
 msgid "Portable"
-msgstr ""
+msgstr "पोर्टेबल"
 
 #~ msgid "About"
 #~ msgstr "माहिती"
