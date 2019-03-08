@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2019-03-06 18:27+0000\n"
+"PO-Revision-Date: 2019-03-09 18:27+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/mr/>\n"
@@ -92,7 +92,7 @@ msgstr "उजवा"
 
 #: src/OutputPanel.vala:91
 msgid "Event alerts:"
-msgstr "घटना अलर्टः"
+msgstr "घटना अलर्ट:"
 
 #: src/OutputPanel.vala:94
 msgid "Play sound"
@@ -108,6 +108,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"इव्हेंट अलर्ट होतात जेव्हा सिस्टम वापरकर्ता इनपुटच्या प्रतिसादात काहीतरी करू "
+"शकत नाही, जसे रिक्त इनपुटमध्ये बॅकस्पेस वापरण्याचा प्रयत्न करणे किंवा केवळ "
+"एखादे उघडल्यास विंडो स्विच करणे."
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -163,7 +166,7 @@ msgstr ""
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "उंचवटा शोधणे"
 
 #: src/Device.vala:60
 msgid "Built-in"
