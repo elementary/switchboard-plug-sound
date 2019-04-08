@@ -1,3 +1,9 @@
+switchboard-plug-sound (2.2.1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <codygarver@gmail.com>  Mon, 08 Apr 2019 13:36:47 -0500
+
 switchboard-plug-sound (2.2.0) bionic; urgency=medium
 
   * New upstream release.
