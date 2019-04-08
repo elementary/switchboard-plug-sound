@@ -443,7 +443,9 @@ public class Sound.PulseAudioManager : GLib.Object {
             }
         }
 
-        debug ("\t\tactive port: %s (%s)", source.active_port.description, source.active_port.name);
+        if (source.active_port != null) {
+            debug ("\t\tactive port: %s (%s)", source.active_port.description, source.active_port.name);
+        }
 
         foreach (var device in input_devices.values) {
             if (device.card_index == source.card) {
