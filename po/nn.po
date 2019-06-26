@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 12:30-0800\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2019-01-06 22:36+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -29,12 +29,12 @@ msgid "Change sound and microphone volume"
 msgstr "Endre lyd- og mikrofonvolum"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
 msgid "Output"
 msgstr "Utgang"
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
 msgid "Input"
 msgstr "Inngang"
 
@@ -62,47 +62,43 @@ msgstr "Balanse"
 msgid "Enable"
 msgstr "Slå på"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Tilgjengelege lydutgangseiningar"
 
-#: src/OutputPanel.vala:58
-msgid "Output port:"
-msgstr "Port for utdata:"
-
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:57
 msgid "Output volume:"
 msgstr "Utdatavolum:"
 
-#: src/OutputPanel.vala:77
+#: src/OutputPanel.vala:69
 msgid "Balance:"
 msgstr "Balanse:"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:79
 msgid "Left"
 msgstr "Venstre"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:80
 msgid "Center"
 msgstr "Sentrum"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:81
 msgid "Right"
 msgstr "Høgre"
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:83
 msgid "Event alerts:"
 msgstr "Hendingsvarsel"
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:86
 msgid "Play sound"
 msgstr "Spel av lyd"
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "Blink skjermen"
 
-#: src/OutputPanel.vala:100
+#: src/OutputPanel.vala:92
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -112,15 +108,15 @@ msgstr ""
 "brukarhandlingar som har med inndata å gjere, som til dømes forsøk på å "
 "bruke rettetasten i eit tomt felt, eller byte vindauge når kun eitt er opent."
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:98
 msgid "Test Speakers…"
 msgstr "Test høgtalarar…"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:105
 msgid "No Output Device"
 msgstr "Inga utdataeining"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:105
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -128,35 +124,31 @@ msgstr ""
 "Fann inga utdataeining. Det er mogleg at du vil legge til ei for å kunne "
 "lytte til noko."
 
-#: src/InputPanel.vala:41
+#: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
 msgstr "Tilgjengelege lydinngangseiningar:"
 
-#: src/InputPanel.vala:52
-msgid "Input port:"
-msgstr "Port for inndata:"
-
-#: src/InputPanel.vala:58
+#: src/InputPanel.vala:55
 msgid "Input volume:"
 msgstr "Inndatavolum:"
 
-#: src/InputPanel.vala:65
+#: src/InputPanel.vala:62
 msgid "Unamplified"
 msgstr "Uforsterka"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:63
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Input level:"
 msgstr "Inndatanivå:"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid "No Input Device"
 msgstr "Inga inndataeining"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -168,57 +160,63 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Bølgeutslagsoppdaging"
 
-#: src/Device.vala:60
+#: src/Device.vala:79
 msgid "Built-in"
 msgstr "Innebygd"
 
-#: src/Device.vala:62
+#: src/Device.vala:81
 msgid "Speaker"
 msgstr "Høgtalar"
 
-#: src/Device.vala:64
+#: src/Device.vala:83
 msgid "Handset"
 msgstr "Handsett"
 
-#: src/Device.vala:66
+#: src/Device.vala:85
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:68
+#: src/Device.vala:87
 msgid "Webcam"
 msgstr "Webkamera"
 
-#: src/Device.vala:70
+#: src/Device.vala:89
 msgid "Microphone"
 msgstr "Mikrofon"
 
-#: src/Device.vala:72
+#: src/Device.vala:91
 msgid "Headset"
 msgstr "Hovudsett"
 
-#: src/Device.vala:74
+#: src/Device.vala:93
 msgid "Headphone"
 msgstr "Hovudtelefonar"
 
-#: src/Device.vala:76
+#: src/Device.vala:95
 msgid "Hands-Free"
 msgstr "Handsfri"
 
-#: src/Device.vala:78
+#: src/Device.vala:97
 msgid "Car"
 msgstr "Bil"
 
-#: src/Device.vala:80
+#: src/Device.vala:99
 msgid "HiFi"
 msgstr "Hi-Fi"
 
-#: src/Device.vala:82
+#: src/Device.vala:101
 msgid "Computer"
 msgstr "Datamaskin"
 
-#: src/Device.vala:84
+#: src/Device.vala:103
 msgid "Portable"
 msgstr "Berbar"
+
+#~ msgid "Output port:"
+#~ msgstr "Port for utdata:"
+
+#~ msgid "Input port:"
+#~ msgstr "Port for inndata:"
 
 #~ msgid "About"
 #~ msgstr "Om"

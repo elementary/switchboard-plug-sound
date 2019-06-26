@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 12:30-0800\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2018-07-09 20:16+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
@@ -30,12 +30,12 @@ msgid "Change sound and microphone volume"
 msgstr "Spremeni glasnost zvoka in mikrofona"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
 msgid "Output"
 msgstr "Izhod"
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
 msgid "Input"
 msgstr "Vhod"
 
@@ -66,64 +66,59 @@ msgstr "Ravnovesje:"
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:39
 msgid "Available Sound Output Devices:"
 msgstr "Izhodne naprave:"
 
-#: src/OutputPanel.vala:58
-#, fuzzy
-msgid "Output port:"
-msgstr "Prilključek na izhodu:"
-
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:57
 #, fuzzy
 msgid "Output volume:"
 msgstr "Glasnost izhoda:"
 
-#: src/OutputPanel.vala:77
+#: src/OutputPanel.vala:69
 msgid "Balance:"
 msgstr "Ravnovesje:"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:79
 msgid "Left"
 msgstr "Levo"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:80
 msgid "Center"
 msgstr "Sredina"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:81
 msgid "Right"
 msgstr "Desno"
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:83
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:86
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:100
+#: src/OutputPanel.vala:92
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:98
 msgid "Test Speakers…"
 msgstr "Preizkusi zvočnike…"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:105
 msgid "No Output Device"
 msgstr "Ni izhodne naprave"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:105
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -131,38 +126,33 @@ msgstr ""
 "Zaznane ni bilo nobene zvočne naprave. Dodajte zvočno kartico če želite "
 "slišati zvok."
 
-#: src/InputPanel.vala:41
+#: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
 msgstr "Naprave za snemane zvoka:"
 
-#: src/InputPanel.vala:52
-#, fuzzy
-msgid "Input port:"
-msgstr "Priključek na vhodu:"
-
-#: src/InputPanel.vala:58
+#: src/InputPanel.vala:55
 #, fuzzy
 msgid "Input volume:"
 msgstr "Glasnost vhoda:"
 
-#: src/InputPanel.vala:65
+#: src/InputPanel.vala:62
 msgid "Unamplified"
 msgstr "Neojačano"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:63
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 #, fuzzy
 msgid "Input level:"
 msgstr "Nivo vhoda:"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid "No Input Device"
 msgstr "Ni vhodne naprave"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -174,57 +164,65 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Zaznavanje največje vrednosti"
 
-#: src/Device.vala:60
+#: src/Device.vala:79
 msgid "Built-in"
 msgstr "Vgrajen"
 
-#: src/Device.vala:62
+#: src/Device.vala:81
 msgid "Speaker"
 msgstr "zvočnik"
 
-#: src/Device.vala:64
+#: src/Device.vala:83
 msgid "Handset"
 msgstr "slušalka"
 
-#: src/Device.vala:66
+#: src/Device.vala:85
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:68
+#: src/Device.vala:87
 msgid "Webcam"
 msgstr "kamera"
 
-#: src/Device.vala:70
+#: src/Device.vala:89
 msgid "Microphone"
 msgstr "mikrofon"
 
-#: src/Device.vala:72
+#: src/Device.vala:91
 msgid "Headset"
 msgstr "slušalka"
 
-#: src/Device.vala:74
+#: src/Device.vala:93
 msgid "Headphone"
 msgstr "slušalka"
 
-#: src/Device.vala:76
+#: src/Device.vala:95
 msgid "Hands-Free"
 msgstr "prostoročno"
 
-#: src/Device.vala:78
+#: src/Device.vala:97
 msgid "Car"
 msgstr "Avto"
 
-#: src/Device.vala:80
+#: src/Device.vala:99
 msgid "HiFi"
 msgstr "HiFi"
 
-#: src/Device.vala:82
+#: src/Device.vala:101
 msgid "Computer"
 msgstr "Računalnik"
 
-#: src/Device.vala:84
+#: src/Device.vala:103
 msgid "Portable"
 msgstr "Prenosnik"
+
+#, fuzzy
+#~ msgid "Output port:"
+#~ msgstr "Prilključek na izhodu:"
+
+#, fuzzy
+#~ msgid "Input port:"
+#~ msgstr "Priključek na vhodu:"
 
 #~ msgid "About"
 #~ msgstr "O programu"
