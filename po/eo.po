@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2019-07-12 00:28+0000\n"
+"PO-Revision-Date: 2019-07-14 06:28+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/eo/>\n"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: src/OutputPanel.vala:87
 msgid "Left"
-msgstr ""
+msgstr "Maldekstra"
 
 #: src/OutputPanel.vala:88
 msgid "Center"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/OutputPanel.vala:89
 msgid "Right"
-msgstr ""
+msgstr "Dekstra"
 
 #: src/OutputPanel.vala:91
 msgid "Event alerts:"
