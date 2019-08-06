@@ -30,11 +30,32 @@ public class Sound.Device : GLib.Object {
 
     public signal void removed ();
 
+    // info from card and ports
     public bool input { get; set; default=true; }
-    public uint32 index { get; construct; default=0U; }
-    public string name { get; set; }
+    public string id { get; construct; }
+    public string card_name { get; set; }
+    public uint32 card_index { get; construct; }
+    public string port_name { get; construct; }
     public string display_name { get; set; }
     public string form_factor { get; set; }
+    public Gee.ArrayList<string> profiles { get; set; }
+    public string card_active_profile_name { get; set; }
+
+    // sink info
+    public string? sink_name { get; set; }
+    public int sink_index { get; set; }
+    public string? card_sink_name { get; set; }
+    public string? card_sink_port_name { get; set; }
+    public int card_sink_index { get; set; }
+
+    // source info
+    public string? source_name { get; set; }
+    public int source_index { get; set; }
+    public string? card_source_name { get; set; }
+    public string? card_source_port_name { get; set; }
+    public int card_source_index { get; set; }
+
+    // info from source or sink
     public bool is_default { get; set; default=false; }
     public bool is_muted { get; set; default=false; }
     public double volume { get; set; default=0; }
@@ -42,16 +63,14 @@ public class Sound.Device : GLib.Object {
     public PulseAudio.CVolume cvolume;
     public PulseAudio.ChannelMap channel_map;
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
-    public Gee.ArrayList<Port> ports { get; set; }
-    public Port? default_port { get; set; default=null; }
 
-    public Device (uint32 index) {
-        Object (index: index);
+    public Device (string id, uint32 card_index, string port_name) {
+        Object (id: id, card_index: card_index, port_name: port_name);
     }
 
     construct {
         volume_operations = new Gee.LinkedList<PulseAudio.Operation> ();
-        ports = new Gee.ArrayList<Port> ();
+        profiles = new Gee.ArrayList<string> ();
     }
 
     public string get_nice_form_factor () {
@@ -85,6 +104,15 @@ public class Sound.Device : GLib.Object {
             default:
                 return input? _("Input") : _("Output");
         }
-    
+    }
+
+    public string? get_matching_profile (Device other_device) {
+        foreach (var profile in profiles) {
+            if (other_device.profiles.contains (profile)) {
+                return profile;
+            }
+        }
+        
+        return null;
     }
 }

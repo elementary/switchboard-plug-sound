@@ -27,7 +27,6 @@ public class Sound.InputPanel : Gtk.Grid {
     Gtk.Scale volume_scale;
     Gtk.Switch volume_switch;
     Gtk.LevelBar level_bar;
-    Gtk.ComboBoxText ports_dropdown;
 
     private Device default_device;
     private InputDeviceMonitor device_monitor;
@@ -43,17 +42,15 @@ public class Sound.InputPanel : Gtk.Grid {
         available_label.halign = Gtk.Align.START;
         devices_listbox = new Gtk.ListBox ();
         devices_listbox.activate_on_single_click = true;
+        devices_listbox.row_activated.connect ((row) => {
+            pam.set_default_device.begin (((Sound.DeviceRow) row).device);
+        });
+
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
         var devices_frame = new Gtk.Frame (null);
         devices_frame.expand = true;
         devices_frame.add (scrolled);
-
-        var ports_label = new Gtk.Label (_("Input port:"));
-        ports_label.halign = Gtk.Align.END;
-        ports_dropdown = new Gtk.ComboBoxText ();
-        ports_dropdown.changed.connect (port_changed);
-        ports_dropdown.bind_property ("sensitive", ports_label, "sensitive");
 
         var volume_label = new Gtk.Label (_("Input volume:"));
         volume_label.valign = Gtk.Align.CENTER;
@@ -83,13 +80,11 @@ public class Sound.InputPanel : Gtk.Grid {
 
         attach (available_label, 0, 0, 3, 1);
         attach (devices_frame, 0, 1, 3, 1);
-        attach (ports_label, 0, 2, 1, 1);
-        attach (ports_dropdown, 1, 2, 1, 1);
-        attach (volume_label, 0, 3, 1, 1);
-        attach (volume_scale, 1, 3, 1, 1);
-        attach (volume_switch, 2, 3, 1, 1);
-        attach (level_label, 0, 4, 1, 1);
-        attach (level_bar, 1, 4, 1, 1);
+        attach (volume_label, 0, 2, 1, 1);
+        attach (volume_scale, 1, 2, 1, 1);
+        attach (volume_switch, 2, 2, 1, 1);
+        attach (level_label, 0, 3, 1, 1);
+        attach (level_bar, 1, 3, 1, 1);
 
         device_monitor = new InputDeviceMonitor ();
         device_monitor.update_fraction.connect (update_fraction);
@@ -113,22 +108,14 @@ public class Sound.InputPanel : Gtk.Grid {
         }
     }
 
-    private void port_changed () {
-        disconnect_signals ();
-        pam.context.set_source_port_by_index (default_device.index, ports_dropdown.active_id);
-        connect_signals ();
-    }
-
     private void disconnect_signals () {
         volume_switch.notify["active"].disconnect (volume_switch_changed);
         volume_scale.value_changed.disconnect (volume_scale_value_changed);
-        ports_dropdown.changed.disconnect (port_changed);
     }
 
     private void connect_signals () {
         volume_switch.notify["active"].connect (volume_switch_changed);
         volume_scale.value_changed.connect (volume_scale_value_changed);
-        ports_dropdown.changed.connect (port_changed);
     }
 
     private void volume_scale_value_changed () {
@@ -155,9 +142,6 @@ public class Sound.InputPanel : Gtk.Grid {
                 device_monitor.set_device (default_device);
                 volume_switch.active = !default_device.is_muted;
                 volume_scale.set_value (default_device.volume);
-
-                rebuild_ports_dropdown ();
-
                 default_device.notify.connect (device_notify);
             }
         }
@@ -174,31 +158,9 @@ public class Sound.InputPanel : Gtk.Grid {
             case "volume":
                 volume_scale.set_value (default_device.volume);
                 break;
-            case "default-port":
-                if (default_device.default_port != null) {
-                    ports_dropdown.active_id = default_device.default_port.name;
-                }
-
-                break;
-            case "ports":
-                rebuild_ports_dropdown ();
-                break;
         }
 
         connect_signals ();
-    }
-
-    private void rebuild_ports_dropdown () {
-        ports_dropdown.remove_all ();
-        ports_dropdown.sensitive = !default_device.ports.is_empty;
-
-        foreach (var port in default_device.ports) {
-            ports_dropdown.append (port.name, port.description);
-        }
-
-        if (default_device.default_port != null) {
-            ports_dropdown.active_id = default_device.default_port.name;
-        }
     }
 
     private void update_fraction (float fraction) {
@@ -220,7 +182,7 @@ public class Sound.InputPanel : Gtk.Grid {
         device_row.show_all ();
         devices_listbox.add (device_row);
         device_row.set_as_default.connect (() => {
-            pam.set_default_device (device);
+            pam.set_default_device.begin (device);
         });
     }
 }

@@ -32,7 +32,7 @@ public class Sound.Plug : Switchboard.Plug {
         settings.set ("sound/input", "input");
         settings.set ("sound/output", "output");
         Object (category: Category.HARDWARE,
-                code_name: "hardware-pantheon-sound",
+                code_name: "io.elementary.switchboard.sound",
                 display_name: _("Sound"),
                 description: _("Change sound and microphone volume"),
                 icon: "preferences-desktop-sound",

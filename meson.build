@@ -1,7 +1,7 @@
 project(
     'sound',
     'vala', 'c',
-    version: '2.1.2'
+    version: '2.2.1'
 )
 
 gettext_name = meson.project_name() + '-plug'
@@ -24,5 +24,6 @@ plug_resources = gnome.compile_resources(
     source_dir: 'data'
 )
 
+subdir('data')
 subdir('src')
 subdir('po')
