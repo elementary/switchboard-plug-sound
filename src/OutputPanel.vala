@@ -30,6 +30,10 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     private Device default_device = null;
 
+    unowned Canberra.Context? ca_context = null;
+
+    uint notify_timeout_id = 0;
+
     construct {
         margin = 12;
         margin_top = 0;
@@ -132,6 +136,14 @@ public class Sound.OutputPanel : Gtk.Grid {
         var wm_settings = new Settings ("org.gnome.desktop.wm.preferences");
         wm_settings.bind ("visual-bell", visual_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
+        ca_context = CanberraGtk.context_get ();
+        var locale = Intl.setlocale (LocaleCategory.MESSAGES, null);
+        ca_context.change_props (Canberra.PROP_APPLICATION_NAME, "switchboard-plug-sound",
+                                Canberra.PROP_APPLICATION_ID, "io.elementary.switchboard.sound",
+                                Canberra.PROP_APPLICATION_LANGUAGE, locale,
+                                null);
+        ca_context.open ();
+
         connect_signals ();
     }
 
@@ -169,6 +181,7 @@ public class Sound.OutputPanel : Gtk.Grid {
     private void volume_scale_value_changed () {
         disconnect_signals ();
         pam.change_device_volume (default_device, (float)volume_scale.get_value ());
+        notify_change ();
         connect_signals ();
     }
 
@@ -181,6 +194,7 @@ public class Sound.OutputPanel : Gtk.Grid {
     private void volume_switch_changed () {
         disconnect_signals ();
         pam.change_device_mute (default_device, !volume_switch.active);
+        notify_change ();
         connect_signals ();
     }
 
@@ -216,6 +230,23 @@ public class Sound.OutputPanel : Gtk.Grid {
         devices_listbox.add (device_row);
         device_row.set_as_default.connect (() => {
             pam.set_default_device.begin (device);
+        });
+    }
+
+    private void notify_change () {
+        if (notify_timeout_id > 0) {
+            return;
+        }
+        notify_timeout_id = Timeout.add (50, () => {
+
+            Canberra.Proplist props;
+            Canberra.Proplist.create (out props);
+            props.sets (Canberra.PROP_CANBERRA_CACHE_CONTROL, "volatile");
+            props.sets (Canberra.PROP_EVENT_ID, "audio-volume-change");
+            ca_context.play_full (0, props);
+
+            notify_timeout_id = 0;
+            return false;
         });
     }
 }
