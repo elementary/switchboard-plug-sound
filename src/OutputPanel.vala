@@ -237,8 +237,8 @@ public class Sound.OutputPanel : Gtk.Grid {
         if (notify_timeout_id > 0) {
             return;
         }
-        notify_timeout_id = Timeout.add (50, () => {
 
+        notify_timeout_id = Timeout.add (50, () => {
             Canberra.Proplist props;
             Canberra.Proplist.create (out props);
             props.sets (Canberra.PROP_CANBERRA_CACHE_CONTROL, "volatile");
