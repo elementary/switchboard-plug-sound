@@ -194,7 +194,6 @@ public class Sound.OutputPanel : Gtk.Grid {
     private void volume_switch_changed () {
         disconnect_signals ();
         pam.change_device_mute (default_device, !volume_switch.active);
-        notify_change ();
         connect_signals ();
     }
 
