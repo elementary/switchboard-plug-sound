@@ -66,6 +66,18 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_scale.draw_value = false;
         volume_scale.hexpand = true;
 
+        volume_scale.button_release_event.connect (e => {
+            notify_change ();
+            return false;
+        });
+
+        volume_scale.scroll_event.connect (e => {
+            if (volume_scale.get_value () < 100) {
+                notify_change ();
+            }
+            return false;
+        });
+
         volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
         volume_switch.active = true;
@@ -181,7 +193,6 @@ public class Sound.OutputPanel : Gtk.Grid {
     private void volume_scale_value_changed () {
         disconnect_signals ();
         pam.change_device_volume (default_device, (float)volume_scale.get_value ());
-        notify_change ();
         connect_signals ();
     }
 
