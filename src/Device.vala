@@ -112,7 +112,7 @@ public class Sound.Device : GLib.Object {
                 return profile;
             }
         }
-        
+
         return null;
     }
 }

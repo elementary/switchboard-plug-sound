@@ -28,7 +28,7 @@
 
 public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudioManager pam;
-    private static bool DEBUG_ENABLED;
+    private static bool debug_enabled;
 
     public static unowned PulseAudioManager get_default () {
         if (pam == null) {
@@ -62,10 +62,10 @@ public class Sound.PulseAudioManager : GLib.Object {
         output_devices = new Gee.HashMap<string, Device> ();
         volume_operations = new Gee.HashMap<uint32, PulseAudio.Operation> ();
 
-        string messagesDebugRaw = GLib.Environment.get_variable("G_MESSAGES_DEBUG");
-        if (messagesDebugRaw != null) {
-            string[]? messagesDebug = messagesDebugRaw.split(" ");
-            DEBUG_ENABLED = "all" in messagesDebug || "debug" in messagesDebug;
+        string messages_debug_raw = GLib.Environment.get_variable ("G_MESSAGES_DEBUG");
+        if (messages_debug_raw != null) {
+            string[]? messages_debug = messages_debug_raw.split (" ");
+            debug_enabled = "all" in messages_debug || "debug" in messages_debug;
         }
     }
 
@@ -437,7 +437,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             return;
         }
 
-        if (DEBUG_ENABLED) {
+        if (debug_enabled) {
             foreach (var port in source.ports) {
                 debug ("\t\tport: %s (%s)", port.description, port.name);
             }
@@ -503,7 +503,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
 
         debug ("\t\tcard: %u", sink.card);
-        if (DEBUG_ENABLED) {
+        if (debug_enabled) {
             foreach (var port in sink.ports) {
                 debug ("\t\tport: %s (%s)", port.description, port.name);
             }
@@ -601,7 +601,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             device.form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
             debug ("\t\t\tport icon name: %s", port.proplist.gets (PulseAudio.Proplist.PROP_MEDIA_ICON_NAME)); // optional:
             device.profiles = get_relevant_card_port_profiles (port);
-            if (DEBUG_ENABLED) {
+            if (debug_enabled) {
                 foreach (var profile in device.profiles) {
                     debug ("\t\t\tprofile: %s", profile);
                 }
@@ -767,7 +767,7 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     private static PulseAudio.Volume double_to_volume (double vol) {
-        double tmp = (double)(PulseAudio.Volume.NORM - PulseAudio.Volume.MUTED) * vol/100;
+        double tmp = (double)(PulseAudio.Volume.NORM - PulseAudio.Volume.MUTED) * vol / 100;
         return (PulseAudio.Volume)tmp + PulseAudio.Volume.MUTED;
     }
 }

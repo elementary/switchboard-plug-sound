@@ -106,7 +106,7 @@ public class Sound.InputDeviceMonitor : GLib.Object {
             return;
         }
 
-        float v = ((float[]) data)[nbytes / sizeof (float) -1];
+        float v = ((float[]) data)[nbytes / sizeof (float) - 1];
         s.drop ();
 
         if (v < 0) {
