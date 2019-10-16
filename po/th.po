@@ -2,8 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"PO-Revision-Date: 2019-10-17 17:24+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Thai <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/th/>\n"
+"Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: src/Plug.vala:36
 msgid "Sound"
@@ -61,15 +69,15 @@ msgstr ""
 
 #: src/OutputPanel.vala:79
 msgid "Left"
-msgstr ""
+msgstr "ซ้าย"
 
 #: src/OutputPanel.vala:80
 msgid "Center"
-msgstr ""
+msgstr "ตรงกลาง"
 
 #: src/OutputPanel.vala:81
 msgid "Right"
-msgstr ""
+msgstr "ขวา"
 
 #: src/OutputPanel.vala:83
 msgid "Event alerts:"
