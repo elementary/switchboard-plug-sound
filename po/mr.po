@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2019-03-09 18:27+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -62,43 +62,43 @@ msgstr "बॅलेन्स"
 msgid "Enable"
 msgstr "सक्षम"
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "उपलब्ध ध्वनी आउटपुट उपकरणे:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "आउटपुट आवाज:"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr "बॅलेन्स:"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr "डावा"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr "मध्य"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr "उजवा"
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr "घटना अलर्ट:"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr "ध्वनी चालवा"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr "स्क्रीन फ्लॅश करा"
 
-#: src/OutputPanel.vala:92
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -108,15 +108,15 @@ msgstr ""
 "जसे रिक्त इनपुटमध्ये बॅकस्पेस वापरण्याचा प्रयत्न करणे किंवा केवळ एखादे उघडल्यास विंडो स्विच "
 "करणे."
 
-#: src/OutputPanel.vala:98
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr "स्पीकर्सची चाचणी करा…"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr "कोणतेही आउटपुट उपकरण नाही"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2019-10-25 13:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -62,43 +62,43 @@ msgstr "バランス"
 msgid "Enable"
 msgstr "有効"
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "利用可能なサウンド出力デバイス:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "出力音量:"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr "バランス:"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr "左"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr "中央"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr "右"
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr "イベント警告:"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr "音を鳴らす"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr "画面の点滅"
 
-#: src/OutputPanel.vala:92
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -108,19 +108,21 @@ msgstr ""
 "いていないウィンドウを切り替えようとしたときなど、システムがユーザーの入力に"
 "応じた操作をできないときに実行されます。"
 
-#: src/OutputPanel.vala:98
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr "スピーカーをテスト…"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr "出力デバイスがありません"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
-msgstr "出力デバイスが検出されませんでした。何かを聞くには出力デバイスを追加してください。"
+msgstr ""
+"出力デバイスが検出されませんでした。何かを聞くには出力デバイスを追加してくだ"
+"さい。"
 
 #: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
@@ -150,7 +152,9 @@ msgstr "入力デバイスがありません"
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
-msgstr "入力デバイスが検出されませんでした。録音するには入力デバイスを追加してください。"
+msgstr ""
+"入力デバイスが検出されませんでした。録音するには入力デバイスを追加してくださ"
+"い。"
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
