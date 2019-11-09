@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2019-11-09 15:25+0000\n"
+"PO-Revision-Date: 2019-11-11 12:25+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/eo/>\n"
@@ -29,7 +29,7 @@ msgstr "Ŝanĝi sonan kaj mikrofonan laŭtecojn"
 
 #: data/sound.appdata.xml.in:11
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "Aldoni sonon ĉe ŝanĝo de la laŭteco"
 
 #: data/sound.appdata.xml.in:12
 msgid "Updated translations"
@@ -37,4 +37,4 @@ msgstr "Ĝisdatigitaj tradukoj"
 
 #: data/sound.appdata.xml.in:22
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
