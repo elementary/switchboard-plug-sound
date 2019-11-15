@@ -1,3 +1,25 @@
+switchboard-plug-sound (2.2.2) bionic; urgency=medium
+
+  * Release 2.2.2 (#132)
+  * Update translation template
+  * Appdata: Add 2.2.2 release info
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * Add Lint to CI (#128)
+  * fix code style issues
+  * run installation in CI (#129)
+  * Test with GitHub CI (#127)
+  * Delete FUNDING.yml
+  * Delete CODE_OF_CONDUCT.md
+  * Add volume scale event sound (#124)
+  * build: fix install path for switchboard plug  (#121)
+  * Plug: Change code name to RDNN
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+  * Add appdata and translate (#115)
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 15 Nov 2019 23:03:04 +0000
+
 switchboard-plug-sound (2.2.1) bionic; urgency=medium
 
   * New upstream release.
