@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2020-01-01 23:08+0000\n"
+"PO-Revision-Date: 2020-01-05 17:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/nl/>\n"
@@ -40,37 +40,33 @@ msgstr "Ingang"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "Apparaat"
 
 #: src/Plug.vala:104
 msgid "Event Sounds"
-msgstr ""
+msgstr "Gebeurtenis geluiden"
 
 #: src/Plug.vala:105 src/Plug.vala:110
-#, fuzzy
 msgid "Port"
-msgstr "Draagbaar"
+msgstr "Poort"
 
 #: src/Plug.vala:106 src/Plug.vala:111
-#, fuzzy
 msgid "Volume"
-msgstr "Invoervolume:"
+msgstr "Volume"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Balance"
-msgstr "Balans:"
+msgstr "Balans"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Inschakelen"
 
 #: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "Beschikbare geluidsuitgangapparaten:"
 
 #: src/OutputPanel.vala:61
-#, fuzzy
 msgid "Output volume:"
 msgstr "Uitvoervolume:"
 
@@ -92,11 +88,11 @@ msgstr "Rechts"
 
 #: src/OutputPanel.vala:99
 msgid "Event alerts:"
-msgstr ""
+msgstr "Gebeurtenis waarschuwingen:"
 
 #: src/OutputPanel.vala:102
 msgid "Play sound"
-msgstr ""
+msgstr "Speel geluid"
 
 #: src/OutputPanel.vala:104
 msgid "Flash screen"
@@ -108,6 +104,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Gebeurtenis waarschuwingen komen voor als het systeem input van een "
+"gebruiker niet kan verwerken, zoals het drukken op backspace in een leeg "
+"inputveld of wisselen van vensters als er maar één venster open is."
 
 #: src/OutputPanel.vala:114
 msgid "Test Speakers…"
@@ -130,7 +129,6 @@ msgid "Available Sound Input Devices:"
 msgstr "Beschikbare geluidsinvoerapparaten:"
 
 #: src/InputPanel.vala:55
-#, fuzzy
 msgid "Input volume:"
 msgstr "Invoervolume:"
 
@@ -143,7 +141,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:67
-#, fuzzy
 msgid "Input level:"
 msgstr "Invoerniveau:"
 
