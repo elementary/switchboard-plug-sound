@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2020-01-01 16:07+0000\n"
+"PO-Revision-Date: 2020-01-06 21:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/nl/>\n"
@@ -29,7 +29,7 @@ msgstr "Wijzig geluids- en microfoonvolume"
 
 #: data/sound.appdata.xml.in:11
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "Volume slider gebeurtenis geluid toegevoegd"
 
 #: data/sound.appdata.xml.in:12
 msgid "Updated translations"
@@ -37,4 +37,4 @@ msgstr "Bijgewerkte vertalingen"
 
 #: data/sound.appdata.xml.in:22
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
