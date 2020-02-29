@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2019-12-19 13:07+0000\n"
-"Last-Translator: Marko <marko.dolar@gmail.com>\n"
+"PO-Revision-Date: 2020-03-01 14:09+0000\n"
+"Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/sl/>\n"
 "Language: sl\n"
@@ -45,12 +45,11 @@ msgstr "Naprava"
 
 #: src/Plug.vala:104
 msgid "Event Sounds"
-msgstr ""
+msgstr "Zvok ob dogodkih"
 
 #: src/Plug.vala:105 src/Plug.vala:110
-#, fuzzy
 msgid "Port"
-msgstr "Prenosnik"
+msgstr "Priključek"
 
 #: src/Plug.vala:106 src/Plug.vala:111
 msgid "Volume"
@@ -62,7 +61,7 @@ msgstr "Ravnovesje"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Omogoči"
 
 #: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
@@ -90,7 +89,7 @@ msgstr "Desno"
 
 #: src/OutputPanel.vala:99
 msgid "Event alerts:"
-msgstr ""
+msgstr "Opozorilo ob dogodkih:"
 
 #: src/OutputPanel.vala:102
 msgid "Play sound"
@@ -98,7 +97,7 @@ msgstr "Predvajaj zvok"
 
 #: src/OutputPanel.vala:104
 msgid "Flash screen"
-msgstr ""
+msgstr "Utripanje zaslona"
 
 #: src/OutputPanel.vala:108
 msgid ""
@@ -106,6 +105,8 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Opozorilo ob dogodkih se pojavi, ko sistem ne more narediti česa, npr. se "
+"odzvati na vnos tipkovnice ali preklopiti v drugo okno."
 
 #: src/OutputPanel.vala:114
 msgid "Test Speakers…"
@@ -124,9 +125,8 @@ msgstr ""
 "slišati zvok."
 
 #: src/InputPanel.vala:40
-#, fuzzy
 msgid "Available Sound Input Devices:"
-msgstr "Naprave za snemane zvoka:"
+msgstr "Naprave za zajem zvoka:"
 
 #: src/InputPanel.vala:55
 msgid "Input volume:"
