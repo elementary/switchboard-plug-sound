@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 22:14+0000\n"
+"POT-Creation-Date: 2020-04-03 20:30+0000\n"
 "PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -27,14 +27,18 @@ msgstr "Ses"
 msgid "Change sound and microphone volume"
 msgstr "Ses ve mikrofon seviyelerini değiştir"
 
-#: data/sound.appdata.xml.in:11
-msgid "Add volume slider event sound"
-msgstr "Ses seviyesi ayarlayıcısına olay sesi eklendi"
+#: data/sound.appdata.xml.in:10
+msgid "Minor updates:"
+msgstr ""
 
-#: data/sound.appdata.xml.in:12
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
 msgid "Updated translations"
 msgstr "Çeviriler güncellendi"
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:19
+msgid "Add volume slider event sound"
+msgstr "Ses seviyesi ayarlayıcısına olay sesi eklendi"
+
+#: data/sound.appdata.xml.in:30
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

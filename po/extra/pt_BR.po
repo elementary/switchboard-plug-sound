@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 22:14+0000\n"
+"POT-Creation-Date: 2020-04-03 20:30+0000\n"
 "PO-Revision-Date: 2019-11-23 07:25+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -27,14 +27,18 @@ msgstr "Som"
 msgid "Change sound and microphone volume"
 msgstr "Mudar o volume do som e microfone"
 
-#: data/sound.appdata.xml.in:11
-msgid "Add volume slider event sound"
-msgstr "Adicionar som do evento do controle deslizante de volume"
+#: data/sound.appdata.xml.in:10
+msgid "Minor updates:"
+msgstr ""
 
-#: data/sound.appdata.xml.in:12
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:19
+msgid "Add volume slider event sound"
+msgstr "Adicionar som do evento do controle deslizante de volume"
+
+#: data/sound.appdata.xml.in:30
 msgid "elementary, Inc."
 msgstr "elementary, Inc."

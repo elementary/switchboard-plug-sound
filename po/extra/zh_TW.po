@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 22:14+0000\n"
+"POT-Creation-Date: 2020-04-03 20:30+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -27,14 +27,18 @@ msgstr "音效"
 msgid "Change sound and microphone volume"
 msgstr "變更音量與麥克風收音量"
 
-#: data/sound.appdata.xml.in:11
-msgid "Add volume slider event sound"
-msgstr "加入音量滑桿事件音"
+#: data/sound.appdata.xml.in:10
+msgid "Minor updates:"
+msgstr ""
 
-#: data/sound.appdata.xml.in:12
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
 msgid "Updated translations"
 msgstr "翻譯更新"
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:19
+msgid "Add volume slider event sound"
+msgstr "加入音量滑桿事件音"
+
+#: data/sound.appdata.xml.in:30
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
