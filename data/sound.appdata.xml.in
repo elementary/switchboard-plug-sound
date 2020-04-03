@@ -5,6 +5,14 @@
   <name>Sound</name>
   <summary>Change sound and microphone volume</summary>
   <releases>
+    <release version="2.2.3" date="2020-04-03" urgency="medium">
+      <description>
+      <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.2.2" date="2019-11-15" urgency="medium">
       <description>
         <ul>
