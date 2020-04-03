@@ -1,3 +1,10 @@
+switchboard-plug-sound (2.2.3) bionic; urgency=medium
+
+  * release 2.2.3 (#139)
+  * Update translation files
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 03 Apr 2020 20:31:17 +0000
+
 switchboard-plug-sound (2.2.2) bionic; urgency=medium
 
   * Release 2.2.2 (#132)
