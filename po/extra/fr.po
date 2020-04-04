@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:30+0000\n"
-"PO-Revision-Date: 2019-11-09 15:25+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/fr/>\n"
+"PO-Revision-Date: 2020-04-05 10:10+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sound.appdata.xml.in:5
 msgid "Sound"
@@ -29,7 +29,7 @@ msgstr "Changer le volume du son et du microphone"
 
 #: data/sound.appdata.xml.in:10
 msgid "Minor updates:"
-msgstr ""
+msgstr "Mises à jour mineures :"
 
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
 msgid "Updated translations"
