@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:30+0000\n"
-"PO-Revision-Date: 2020-04-09 14:10+0000\n"
+"PO-Revision-Date: 2020-04-26 15:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/pt/>\n"
@@ -29,7 +29,7 @@ msgstr "Alterar volume do som e do microfone"
 
 #: data/sound.appdata.xml.in:10
 msgid "Minor updates:"
-msgstr "Pequenas actualizações:"
+msgstr "Pequenas atualizações:"
 
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
 msgid "Updated translations"
@@ -37,7 +37,7 @@ msgstr "Traduções atualizadas"
 
 #: data/sound.appdata.xml.in:19
 msgid "Add volume slider event sound"
-msgstr "Adicionar som do evento do controlo deslizante de volume"
+msgstr "Adicionar som de evento de volume deslizante"
 
 #: data/sound.appdata.xml.in:30
 msgid "elementary, Inc."
