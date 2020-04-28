@@ -2,7 +2,7 @@
 <component type="addon">
   <id>io.elementary.switchboard.sound</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Sound</name>
+  <name>Sound Settings</name>
   <summary>Change sound and microphone volume</summary>
   <icon type="stock">preferences-desktop-sound</icon>
   <translation type="gettext">sound-plug</translation>
