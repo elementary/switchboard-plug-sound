@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:30+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2019-05-13 15:14+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -22,25 +22,28 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 
 #: data/sound.appdata.xml.in:5
-msgid "Sound"
-msgstr "Garsas"
+msgid "Sound Settings"
+msgstr ""
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
 msgstr "Keisti garso ir mikrofono garsį"
 
-#: data/sound.appdata.xml.in:10
+#: data/sound.appdata.xml.in:12
 msgid "Minor updates:"
 msgstr ""
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
+#: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:22
 msgid "Updated translations"
 msgstr ""
 
-#: data/sound.appdata.xml.in:19
+#: data/sound.appdata.xml.in:21
 msgid "Add volume slider event sound"
 msgstr ""
 
-#: data/sound.appdata.xml.in:30
+#: data/sound.appdata.xml.in:32
 msgid "elementary, Inc."
 msgstr ""
+
+#~ msgid "Sound"
+#~ msgstr "Garsas"

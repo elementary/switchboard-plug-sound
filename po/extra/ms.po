@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:30+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2019-05-17 01:15+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Malay <https://l10n.elementary.io/projects/switchboard/sound-"
@@ -20,25 +20,28 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 
 #: data/sound.appdata.xml.in:5
-msgid "Sound"
-msgstr "Bunyi"
+msgid "Sound Settings"
+msgstr ""
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
 msgstr ""
 
-#: data/sound.appdata.xml.in:10
+#: data/sound.appdata.xml.in:12
 msgid "Minor updates:"
 msgstr ""
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
+#: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:22
 msgid "Updated translations"
 msgstr ""
 
-#: data/sound.appdata.xml.in:19
+#: data/sound.appdata.xml.in:21
 msgid "Add volume slider event sound"
 msgstr ""
 
-#: data/sound.appdata.xml.in:30
+#: data/sound.appdata.xml.in:32
 msgid "elementary, Inc."
 msgstr ""
+
+#~ msgid "Sound"
+#~ msgstr "Bunyi"
