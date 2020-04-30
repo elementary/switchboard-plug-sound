@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-04-09 14:10+0000\n"
+"PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sound.appdata.xml.in:5
 msgid "Sound Settings"
-msgstr ""
+msgstr "הגדרות שמע"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
