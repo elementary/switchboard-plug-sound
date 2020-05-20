@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-04-09 14:10+0000\n"
+"PO-Revision-Date: 2020-05-21 00:11+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/sound-plug-extra/pt_BR/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sound.appdata.xml.in:5
 msgid "Sound Settings"
-msgstr ""
+msgstr "Configurações de som"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
