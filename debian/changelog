@@ -1,3 +1,15 @@
+switchboard-plug-sound (2.2.4) bionic; urgency=medium
+
+  * Release 2.2.4 (#150)
+  * Update translation files
+  * Update translation template
+  * AppData: Add "Settings" to name (#145)
+  * AppData: Add Icon & Gettext domain (#143)
+  * Update translation files
+  * Update translation template
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 28 May 2020 18:50:23 +0000
+
 switchboard-plug-sound (2.2.3) bionic; urgency=medium
 
   * release 2.2.3 (#139)
