@@ -7,6 +7,14 @@
   <icon type="stock">preferences-desktop-sound</icon>
   <translation type="gettext">sound-plug</translation>
   <releases>
+    <release version="2.2.4" date="2020-05-28" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.2.3" date="2020-04-03" urgency="medium">
       <description>
         <p>Minor updates:</p>
