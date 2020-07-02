@@ -453,8 +453,8 @@ public class Sound.PulseAudioManager : GLib.Object {
                 device.card_source_index = (int)source.index;
                 device.card_source_name = source.name;
                 debug ("\t\t\tdevice.card_source_name: %s", device.card_source_name);
-                device.card_source_port_name = source.active_port.name;
-                if (device.port_name == source.active_port.name) {
+                if (source.active_port != null && device.port_name == source.active_port.name) {
+                    device.card_source_port_name = source.active_port.name;
                     device.source_name = source.name;
                     debug ("\t\t\tdevice.source_name: %s", device.card_source_name);
                     device.source_index = (int)source.index;
@@ -504,12 +504,18 @@ public class Sound.PulseAudioManager : GLib.Object {
 
         debug ("\t\tcard: %u", sink.card);
         if (debug_enabled) {
+            // Assuming that if sink.active_port is null, then sink.ports is empty
             foreach (var port in sink.ports) {
                 debug ("\t\tport: %s (%s)", port.description, port.name);
             }
         }
 
-        debug ("\t\tactive port: %s (%s)", sink.active_port.description, sink.active_port.name);
+
+        if (sink.active_port != null) {
+            debug ("\t\tactive port: %s (%s)", sink.active_port.description, sink.active_port.name);
+        } else {
+            warning ("Sink %s has no active port", sink.name);
+        }
 
         foreach (var device in output_devices.values) {
             if (device.card_index == sink.card) {
@@ -517,8 +523,9 @@ public class Sound.PulseAudioManager : GLib.Object {
                 device.card_sink_index = (int)sink.index;
                 device.card_sink_name = sink.name;
                 debug ("\t\t\tdevice.card_sink_name: %s", device.card_sink_name);
-                device.card_sink_port_name = sink.active_port.name;
-                if (device.port_name == sink.active_port.name) {
+
+                if (sink.active_port != null && device.port_name == sink.active_port.name) {
+                    device.card_sink_port_name = sink.active_port.name;
                     device.sink_name = sink.name;
                     debug ("\t\t\tdevice.sink_name: %s", device.card_sink_name);
                     device.sink_index = (int)sink.index;
