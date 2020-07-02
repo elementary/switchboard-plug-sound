@@ -83,6 +83,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         // the profile has to be switched from analog stereo to digital stereo.
         // Attempt to find profiles that support both selected input and output
         var other_device = device.input? default_output : default_input;
+
         var profile_name = device.get_matching_profile (other_device);
         // otherwise fall back to supporting this device only
         if (profile_name == null) {
@@ -207,7 +208,11 @@ public class Sound.PulseAudioManager : GLib.Object {
         yield;
     }
 
-    public void change_device_mute (Device device, bool mute = true) {
+    public void change_device_mute (Device? device, bool mute = true) {
+        if (device == null) {
+            return;
+        }
+
         if (device.input) {
             context.set_source_mute_by_name (device.source_name, mute, null);
         } else {
@@ -215,7 +220,11 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
 
-    public void change_device_volume (Device device, double volume) {
+    public void change_device_volume (Device? device, double volume) {
+        if (device == null) {
+            return;
+        }
+
         device.volume_operations.foreach ((operation) => {
             if (operation.get_state () == PulseAudio.Operation.State.RUNNING) {
                 operation.cancel ();
@@ -239,7 +248,11 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
 
-    public void change_device_balance (Device device, float balance) {
+    public void change_device_balance (Device? device, float balance) {
+        if (device == null) {
+            return;
+        }
+
         var cvol = device.cvolume;
         cvol = cvol.set_balance (device.channel_map, balance);
         PulseAudio.Operation? operation = null;
@@ -513,8 +526,6 @@ public class Sound.PulseAudioManager : GLib.Object {
 
         if (sink.active_port != null) {
             debug ("\t\tactive port: %s (%s)", sink.active_port.description, sink.active_port.name);
-        } else {
-            warning ("Sink %s has no active port", sink.name);
         }
 
         foreach (var device in output_devices.values) {

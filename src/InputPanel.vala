@@ -28,7 +28,7 @@ public class Sound.InputPanel : Gtk.Grid {
     Gtk.Switch volume_switch;
     Gtk.LevelBar level_bar;
 
-    private Device default_device;
+    private Device? default_device = null;
     private InputDeviceMonitor device_monitor;
 
     construct {
