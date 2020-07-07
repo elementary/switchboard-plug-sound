@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-07-07 18:57+0000\n"
 "PO-Revision-Date: 2019-11-28 16:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -27,19 +27,25 @@ msgstr ""
 msgid "Change sound and microphone volume"
 msgstr "ध्वनी आणि मायक्रोफोन आवाज बदला"
 
-#: data/sound.appdata.xml.in:12
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:29
 msgid "Minor updates:"
 msgstr ""
 
-#: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:14
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr ""
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:38
 msgid "Add volume slider event sound"
 msgstr "व्हॉल्यूम स्लाइडर इव्हेंटचा आवाज जोडा"
 
-#: data/sound.appdata.xml.in:32
+#: data/sound.appdata.xml.in:49
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी, Inc ."
 
