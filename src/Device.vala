@@ -106,10 +106,12 @@ public class Sound.Device : GLib.Object {
         }
     }
 
-    public string? get_matching_profile (Device other_device) {
-        foreach (var profile in profiles) {
-            if (other_device.profiles.contains (profile)) {
-                return profile;
+    public string? get_matching_profile (Device? other_device) {
+        if (other_device != null) {
+            foreach (var profile in profiles) {
+                if (other_device.profiles.contains (profile)) {
+                    return profile;
+                }
             }
         }
 
