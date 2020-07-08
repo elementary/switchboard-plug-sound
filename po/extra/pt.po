@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2020-05-01 09:52+0000\n"
+"PO-Revision-Date: 2020-07-09 21:12+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/pt/>\n"
@@ -34,7 +34,7 @@ msgstr "Pequenas atualizações:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
+msgstr "Corrige falha com o plugin de cancelamento de eco do PulseAudio"
 
 #: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
