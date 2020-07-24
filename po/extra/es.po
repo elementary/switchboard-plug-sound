@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2020-05-11 20:11+0000\n"
+"PO-Revision-Date: 2020-07-25 17:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/es/>\n"
@@ -35,6 +35,8 @@ msgstr "Actualizaciones menores:"
 #: data/sound.appdata.xml.in:14
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr ""
+"Se solucionó un cierre inesperado al utilizar el complemento de cancelación "
+"de eco de PulseAudio"
 
 #: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
@@ -43,7 +45,7 @@ msgstr "Traducciones actualizadas"
 
 #: data/sound.appdata.xml.in:38
 msgid "Add volume slider event sound"
-msgstr "Añadir sonido de evento de control deslizante de volumen"
+msgstr "Se añadió un sonido para el control deslizante de volumen"
 
 #: data/sound.appdata.xml.in:49
 msgid "elementary, Inc."
