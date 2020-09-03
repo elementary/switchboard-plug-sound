@@ -1,3 +1,12 @@
+switchboard-plug-sound (2.2.5) bionic; urgency=medium
+
+  * Release 2.2.5 (#159)
+  * Update translation files
+  * Update translation template
+  * Fix crash when pulseaudio module-echo-cancel is loaded. (#153)
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 03 Sep 2020 22:00:09 +0000
+
 switchboard-plug-sound (2.2.4) bionic; urgency=medium
 
   * Release 2.2.4 (#150)
