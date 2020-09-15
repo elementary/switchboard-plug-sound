@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2020-07-25 17:12+0000\n"
+"PO-Revision-Date: 2020-09-16 16:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/es/>\n"
@@ -25,7 +25,7 @@ msgstr "Configuración de sonido"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
-msgstr "Cambiar el volumen del micrófono y el sonido"
+msgstr "Cambie el volumen del micrófono y el sonido"
 
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
 #: data/sound.appdata.xml.in:29
