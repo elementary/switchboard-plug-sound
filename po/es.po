@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2020-08-23 20:13+0000\n"
+"PO-Revision-Date: 2020-09-16 16:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/es/>\n"
@@ -26,7 +26,7 @@ msgstr "Sonido"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr "Cambiar el volumen del micrófono y el sonido"
+msgstr "Cambie el volumen del micrófono y el sonido"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
@@ -44,7 +44,7 @@ msgstr "Dispositivo"
 
 #: src/Plug.vala:104
 msgid "Event Sounds"
-msgstr "Sonidos de Eventos"
+msgstr "Sonidos de sucesos"
 
 #: src/Plug.vala:105 src/Plug.vala:110
 msgid "Port"
@@ -60,19 +60,19 @@ msgstr "Balance"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr "Habilitar"
+msgstr "Activar"
 
 #: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
-msgstr "Dispositivos de Salida Disponibles:"
+msgstr "Dispositivos de salida de sonido disponibles:"
 
 #: src/OutputPanel.vala:61
 msgid "Output volume:"
-msgstr "Volumen de la salida:"
+msgstr "Volumen de salida:"
 
 #: src/OutputPanel.vala:85
 msgid "Balance:"
-msgstr "Balance:"
+msgstr "Equilibrio:"
 
 #: src/OutputPanel.vala:95
 msgid "Left"
@@ -88,7 +88,7 @@ msgstr "Derecha"
 
 #: src/OutputPanel.vala:99
 msgid "Event alerts:"
-msgstr "Alertar de eventos:"
+msgstr "Alertas de sucesos:"
 
 #: src/OutputPanel.vala:102
 msgid "Play sound"
@@ -104,9 +104,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
-"Los eventos de alerta ocurren cuando el sistema no es capaz de responder a "
-"algún ingreso del usuario, por ejemplo, al pressionar Backspace en un campo "
-"de entrada vacío o al intentar alternar entre ventanas cuando sólo existe "
+"Las alertas de sucesos ocurren cuando el sistema no es capaz de responder a "
+"alguna entrada de usuario, por ejemplo, al presionar Retrocesos en un campo "
+"de entrada vacío o al intentar alternar entre ventanas cuando solo existe "
 "una."
 
 #: src/OutputPanel.vala:114
