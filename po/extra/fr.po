@@ -7,22 +7,48 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2019-05-17 01:15+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/fr/>\n"
+"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"PO-Revision-Date: 2020-07-09 21:12+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sound.appdata.xml.in:5
-msgid "Sound"
-msgstr "Son"
+msgid "Sound Settings"
+msgstr "Paramètres de son"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
 msgstr "Changer le volume du son et du microphone"
+
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:29
+msgid "Minor updates:"
+msgstr "Mises à jour mineures :"
+
+#: data/sound.appdata.xml.in:14
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr ""
+"Correction d'un plantage avec le plugin d'annulation de l'écho de PulseAudio"
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+msgid "Updated translations"
+msgstr "Mise à jour des traductions"
+
+#: data/sound.appdata.xml.in:38
+msgid "Add volume slider event sound"
+msgstr "Ajout du retour sonore lors du changement de volume"
+
+#: data/sound.appdata.xml.in:49
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#~ msgid "Sound"
+#~ msgstr "Son"

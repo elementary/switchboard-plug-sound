@@ -28,7 +28,7 @@
 
 public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudioManager pam;
-    private static bool DEBUG_ENABLED;
+    private static bool debug_enabled;
 
     public static unowned PulseAudioManager get_default () {
         if (pam == null) {
@@ -62,10 +62,10 @@ public class Sound.PulseAudioManager : GLib.Object {
         output_devices = new Gee.HashMap<string, Device> ();
         volume_operations = new Gee.HashMap<uint32, PulseAudio.Operation> ();
 
-        string messagesDebugRaw = GLib.Environment.get_variable("G_MESSAGES_DEBUG");
-        if (messagesDebugRaw != null) {
-            string[]? messagesDebug = messagesDebugRaw.split(" ");
-            DEBUG_ENABLED = "all" in messagesDebug || "debug" in messagesDebug;
+        string messages_debug_raw = GLib.Environment.get_variable ("G_MESSAGES_DEBUG");
+        if (messages_debug_raw != null) {
+            string[]? messages_debug = messages_debug_raw.split (" ");
+            debug_enabled = "all" in messages_debug || "debug" in messages_debug;
         }
     }
 
@@ -83,6 +83,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         // the profile has to be switched from analog stereo to digital stereo.
         // Attempt to find profiles that support both selected input and output
         var other_device = device.input? default_output : default_input;
+
         var profile_name = device.get_matching_profile (other_device);
         // otherwise fall back to supporting this device only
         if (profile_name == null) {
@@ -207,7 +208,11 @@ public class Sound.PulseAudioManager : GLib.Object {
         yield;
     }
 
-    public void change_device_mute (Device device, bool mute = true) {
+    public void change_device_mute (Device? device, bool mute = true) {
+        if (device == null) {
+            return;
+        }
+
         if (device.input) {
             context.set_source_mute_by_name (device.source_name, mute, null);
         } else {
@@ -215,7 +220,11 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
 
-    public void change_device_volume (Device device, double volume) {
+    public void change_device_volume (Device? device, double volume) {
+        if (device == null) {
+            return;
+        }
+
         device.volume_operations.foreach ((operation) => {
             if (operation.get_state () == PulseAudio.Operation.State.RUNNING) {
                 operation.cancel ();
@@ -239,7 +248,11 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
     }
 
-    public void change_device_balance (Device device, float balance) {
+    public void change_device_balance (Device? device, float balance) {
+        if (device == null) {
+            return;
+        }
+
         var cvol = device.cvolume;
         cvol = cvol.set_balance (device.channel_map, balance);
         PulseAudio.Operation? operation = null;
@@ -437,7 +450,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             return;
         }
 
-        if (DEBUG_ENABLED) {
+        if (debug_enabled) {
             foreach (var port in source.ports) {
                 debug ("\t\tport: %s (%s)", port.description, port.name);
             }
@@ -453,8 +466,8 @@ public class Sound.PulseAudioManager : GLib.Object {
                 device.card_source_index = (int)source.index;
                 device.card_source_name = source.name;
                 debug ("\t\t\tdevice.card_source_name: %s", device.card_source_name);
-                device.card_source_port_name = source.active_port.name;
-                if (device.port_name == source.active_port.name) {
+                if (source.active_port != null && device.port_name == source.active_port.name) {
+                    device.card_source_port_name = source.active_port.name;
                     device.source_name = source.name;
                     debug ("\t\t\tdevice.source_name: %s", device.card_source_name);
                     device.source_index = (int)source.index;
@@ -503,13 +516,17 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
 
         debug ("\t\tcard: %u", sink.card);
-        if (DEBUG_ENABLED) {
+        if (debug_enabled) {
+            // Assuming that if sink.active_port is null, then sink.ports is empty
             foreach (var port in sink.ports) {
                 debug ("\t\tport: %s (%s)", port.description, port.name);
             }
         }
 
-        debug ("\t\tactive port: %s (%s)", sink.active_port.description, sink.active_port.name);
+
+        if (sink.active_port != null) {
+            debug ("\t\tactive port: %s (%s)", sink.active_port.description, sink.active_port.name);
+        }
 
         foreach (var device in output_devices.values) {
             if (device.card_index == sink.card) {
@@ -517,8 +534,9 @@ public class Sound.PulseAudioManager : GLib.Object {
                 device.card_sink_index = (int)sink.index;
                 device.card_sink_name = sink.name;
                 debug ("\t\t\tdevice.card_sink_name: %s", device.card_sink_name);
-                device.card_sink_port_name = sink.active_port.name;
-                if (device.port_name == sink.active_port.name) {
+
+                if (sink.active_port != null && device.port_name == sink.active_port.name) {
+                    device.card_sink_port_name = sink.active_port.name;
                     device.sink_name = sink.name;
                     debug ("\t\t\tdevice.sink_name: %s", device.card_sink_name);
                     device.sink_index = (int)sink.index;
@@ -601,7 +619,7 @@ public class Sound.PulseAudioManager : GLib.Object {
             device.form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
             debug ("\t\t\tport icon name: %s", port.proplist.gets (PulseAudio.Proplist.PROP_MEDIA_ICON_NAME)); // optional:
             device.profiles = get_relevant_card_port_profiles (port);
-            if (DEBUG_ENABLED) {
+            if (debug_enabled) {
                 foreach (var profile in device.profiles) {
                     debug ("\t\t\tprofile: %s", profile);
                 }
@@ -767,7 +785,7 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     private static PulseAudio.Volume double_to_volume (double vol) {
-        double tmp = (double)(PulseAudio.Volume.NORM - PulseAudio.Volume.MUTED) * vol/100;
+        double tmp = (double)(PulseAudio.Volume.NORM - PulseAudio.Volume.MUTED) * vol / 100;
         return (PulseAudio.Volume)tmp + PulseAudio.Volume.MUTED;
     }
 }

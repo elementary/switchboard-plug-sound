@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2019-01-03 00:04+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
@@ -62,43 +62,43 @@ msgstr "Balance"
 msgid "Enable"
 msgstr "Aktivieren"
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "Vorhandene Audio-Ausgabegeräte:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "Ausgangslautstärke:"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr "Balance:"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr "Links"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr "Mitte"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr "Rechts"
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr "Ereigniswarnungen:"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr "Ton wiedergeben"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr "Bildschirm blinken"
 
-#: src/OutputPanel.vala:92
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -109,15 +109,15 @@ msgstr ""
 "Eingabefeld die Rücktaste zu betätigen oder Fenster zu wechseln, wenn nur "
 "eines geöffnet ist."
 
-#: src/OutputPanel.vala:98
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr "Lautsprechertest…"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr "Kein Ausgabegerät vorhanden"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

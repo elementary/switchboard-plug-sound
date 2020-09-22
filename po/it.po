@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2018-12-11 15:10+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -62,43 +62,43 @@ msgstr "Bilanciamento"
 msgid "Enable"
 msgstr "Attiva"
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "Dispositivi di uscita audio disponibili:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "Volume in uscita:"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr "Bilanciamento:"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr "Sinistro"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr "Centro"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr "Destro"
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr "Suoni degli avvisi:"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr "Riproduci suono"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr "Fai lampeggiare lo schermo"
 
-#: src/OutputPanel.vala:92
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -109,15 +109,15 @@ msgstr ""
 "un campo di input già vuoto o passare a un'altra finestra quando ce n'è solo "
 "una aperta."
 
-#: src/OutputPanel.vala:98
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr "Test altoparlanti…"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr "Nessun dispositivo di uscita"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

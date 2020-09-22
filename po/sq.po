@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2016-05-01 13:45+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
@@ -61,58 +61,58 @@ msgstr "Anulo"
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr ""
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr ""
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr ""
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:92
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:98
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr ""
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr ""
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

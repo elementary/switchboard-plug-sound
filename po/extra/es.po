@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2019-05-17 01:15+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"PO-Revision-Date: 2020-09-16 16:14+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/es/>\n"
 "Language: es\n"
@@ -17,12 +17,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sound.appdata.xml.in:5
-msgid "Sound"
-msgstr "Sonido"
+msgid "Sound Settings"
+msgstr "Configuración de sonido"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
-msgstr "Cambiar el volumen del micrófono y el sonido"
+msgstr "Cambie el volumen del micrófono y el sonido"
+
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:29
+msgid "Minor updates:"
+msgstr "Actualizaciones menores:"
+
+#: data/sound.appdata.xml.in:14
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr ""
+"Se solucionó un cierre inesperado al utilizar el complemento de cancelación "
+"de eco de PulseAudio"
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+msgid "Updated translations"
+msgstr "Traducciones actualizadas"
+
+#: data/sound.appdata.xml.in:38
+msgid "Add volume slider event sound"
+msgstr "Se añadió un sonido para el control deslizante de volumen"
+
+#: data/sound.appdata.xml.in:49
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#~ msgid "Sound"
+#~ msgstr "Sonido"

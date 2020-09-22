@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 12:30-0800\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2019-07-17 07:12+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -62,43 +62,43 @@ msgstr "Sonekvilibro"
 msgid "Enable"
 msgstr "Ebligi"
 
-#: src/OutputPanel.vala:39
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "Disponeblaj sonaj eligaj aparatoj:"
 
-#: src/OutputPanel.vala:57
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "Eliga laŭteco:"
 
-#: src/OutputPanel.vala:69
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr "Sonekvilibro:"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr "Maldekstra"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr "Centro"
 
-#: src/OutputPanel.vala:81
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr "Dekstra"
 
-#: src/OutputPanel.vala:83
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr "Eventaj alarmoj:"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr "Ludi sonon"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr "Ekrana fulmlumigo"
 
-#: src/OutputPanel.vala:92
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -108,15 +108,15 @@ msgstr ""
 "ordonas, ekzemple retropaŝi en malplena enigujo aŭ baskuli fenestron, kiam "
 "estas nur unu malferma."
 
-#: src/OutputPanel.vala:98
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr "Testi laŭtparolilojn…"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr "Neniu eliga aparato"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

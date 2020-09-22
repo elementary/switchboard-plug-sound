@@ -7,22 +7,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2019-05-17 01:15+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/cs/>\n"
+"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"PO-Revision-Date: 2020-08-25 06:13+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sound.appdata.xml.in:5
-msgid "Sound"
-msgstr "Zvuk"
+msgid "Sound Settings"
+msgstr "Nastavení zvuku"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
 msgstr "Změnit hlasitost zvuku a mikrofonu"
+
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:29
+msgid "Minor updates:"
+msgstr "Drobné aktualizace:"
+
+#: data/sound.appdata.xml.in:14
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr "Opraven pád se zásuvným modulem Pulse Audio pro potlačování ozvěny"
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+msgid "Updated translations"
+msgstr "Aktualizovány překlady"
+
+#: data/sound.appdata.xml.in:38
+msgid "Add volume slider event sound"
+msgstr "Přidání zvuku událostí posuvníku hlasitosti"
+
+#: data/sound.appdata.xml.in:49
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#~ msgid "Sound"
+#~ msgstr "Zvuk"

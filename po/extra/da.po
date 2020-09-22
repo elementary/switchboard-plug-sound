@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2019-05-17 01:15+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"PO-Revision-Date: 2020-06-02 12:11+0000\n"
+"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/sound-"
 "plug-extra/da/>\n"
 "Language: da\n"
@@ -17,12 +17,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sound.appdata.xml.in:5
-msgid "Sound"
-msgstr "Lyd"
+msgid "Sound Settings"
+msgstr "Lydindstillinger"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
 msgstr "Ændre lyd- og mikrofonvolumen"
+
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:29
+msgid "Minor updates:"
+msgstr ""
+
+#: data/sound.appdata.xml.in:14
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr ""
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+msgid "Updated translations"
+msgstr "Opdaterede oversættelser"
+
+#: data/sound.appdata.xml.in:38
+msgid "Add volume slider event sound"
+msgstr ""
+
+#: data/sound.appdata.xml.in:49
+msgid "elementary, Inc."
+msgstr ""
+
+#~ msgid "Sound"
+#~ msgstr "Lyd"
