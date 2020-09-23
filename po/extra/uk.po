@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2020-09-20 14:33+0000\n"
+"PO-Revision-Date: 2020-09-24 16:44+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/uk/>\n"
@@ -26,7 +26,7 @@ msgstr "Параметри звуку"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Зміна гучності динаміків та мікрофона"
 
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
 #: data/sound.appdata.xml.in:29
@@ -35,7 +35,7 @@ msgstr "Незначні оновлення:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
+msgstr "Виправлено збої плагіна прибирання луни в PulseAudio"
 
 #: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
@@ -44,7 +44,7 @@ msgstr "Оновлено переклади"
 
 #: data/sound.appdata.xml.in:38
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "Додано звук події повзунка гучності"
 
 #: data/sound.appdata.xml.in:49
 msgid "elementary, Inc."
