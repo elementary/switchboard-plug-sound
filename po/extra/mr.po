@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2020-10-21 18:15+0000\n"
+"PO-Revision-Date: 2020-10-29 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/mr/>\n"
@@ -30,11 +30,11 @@ msgstr "ध्वनी आणि मायक्रोफोन आवाज �
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
 #: data/sound.appdata.xml.in:29
 msgid "Minor updates:"
-msgstr ""
+msgstr "किरकोळ अद्यतने:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
+msgstr "पल्स ऑडिओच्या प्रतिध्वनी प्लगइनसह क्रॅश निराकरण करा"
 
 #: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
