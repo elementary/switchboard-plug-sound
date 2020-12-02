@@ -81,8 +81,6 @@ public class Sound.Plug : Switchboard.Plug {
     }
 
     public override void hidden () {
-        main_grid.hide ();
-        input_panel.set_visibility (false);
     }
 
     public override void search_callback (string location) {
