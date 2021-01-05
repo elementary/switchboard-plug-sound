@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"POT-Creation-Date: 2021-01-05 22:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,23 +26,28 @@ msgid "Change sound and microphone volume"
 msgstr ""
 
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
-#: data/sound.appdata.xml.in:29
+#: data/sound.appdata.xml.in:30 data/sound.appdata.xml.in:38
 msgid "Minor updates:"
 msgstr ""
 
 #: data/sound.appdata.xml.in:14
-msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgid "Smoother transition when navigating away from this view"
 msgstr ""
 
-#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
-#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:24
+#: data/sound.appdata.xml.in:32 data/sound.appdata.xml.in:40
+#: data/sound.appdata.xml.in:48
 msgid "Updated translations"
 msgstr ""
 
-#: data/sound.appdata.xml.in:38
+#: data/sound.appdata.xml.in:23
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr ""
+
+#: data/sound.appdata.xml.in:47
 msgid "Add volume slider event sound"
 msgstr ""
 
-#: data/sound.appdata.xml.in:49
+#: data/sound.appdata.xml.in:58
 msgid "elementary, Inc."
 msgstr ""
