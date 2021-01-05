@@ -1,3 +1,12 @@
+switchboard-plug-sound (2.2.6) bionic; urgency=medium
+
+  * Release 2.2.6 (#178)
+  * Fix plug destroyed on navigation (#175)
+  * fix build warnning, copying delegates is not supported, type can not
+    be used for a GLib.Object property (#96)
+
+ -- elementary OS Team <builds@elementary.io>  Tue, 05 Jan 2021 22:04:59 +0000
+
 switchboard-plug-sound (2.2.5) bionic; urgency=medium
 
   * Release 2.2.5 (#159)
