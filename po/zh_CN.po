@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2020-12-19 11:16+0000\n"
+"PO-Revision-Date: 2021-02-01 12:46+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:36
@@ -64,7 +64,7 @@ msgstr "启用"
 
 #: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
-msgstr "可用音频输出设备："
+msgstr "可用设备："
 
 #: src/OutputPanel.vala:61
 msgid "Output volume:"
@@ -103,13 +103,11 @@ msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
-msgstr ""
-"事件警告用于系统无法对输入指令做出响应的情况，如在空白内容处退格、仅有单一窗"
-"口时进行窗口切换。"
+msgstr "事件警告用于系统无法对输入指令做出响应的情况，如在空白内容处退格、仅有单一窗口时进行窗口切换等。"
 
 #: src/OutputPanel.vala:114
 msgid "Test Speakers…"
-msgstr "测试扬声器…"
+msgstr "测试输出…"
 
 #: src/OutputPanel.vala:121
 msgid "No Output Device"
@@ -123,7 +121,7 @@ msgstr "未检测到音频输出设备，您将无法听到任何声音。"
 
 #: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
-msgstr "可用音频输入设备："
+msgstr "可用设备："
 
 #: src/InputPanel.vala:55
 msgid "Input volume:"
