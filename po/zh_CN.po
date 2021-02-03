@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2021-02-01 12:46+0000\n"
+"PO-Revision-Date: 2021-02-03 08:53+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/zh_Hans/>\n"
@@ -31,12 +31,12 @@ msgstr "调整声音和麦克风音量"
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
 msgid "Output"
-msgstr "输出"
+msgstr "输出设备"
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
 msgid "Input"
-msgstr "输入"
+msgstr "输入设备"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
@@ -107,7 +107,7 @@ msgstr "事件警告用于系统无法对输入指令做出响应的情况，如
 
 #: src/OutputPanel.vala:114
 msgid "Test Speakers…"
-msgstr "测试输出…"
+msgstr "声音测试…"
 
 #: src/OutputPanel.vala:121
 msgid "No Output Device"
