@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2021-02-15 21:09+0000\n"
+"PO-Revision-Date: 2021-03-14 14:49+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/de/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 #: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualisierte Übersetzungen"
 
 #: data/sound.appdata.xml.in:38
 msgid "Add volume slider event sound"
