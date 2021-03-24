@@ -28,6 +28,7 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
     private Gtk.Label description_label;
     private Gtk.RadioButton activate_radio;
     private bool ignore_default = false;
+
     public DeviceRow (Device device) {
         Object (device: device);
     }
@@ -53,7 +54,10 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         grid.add (name_label);
         grid.add (description_label);
         add (grid);
-        activate.connect (() => {activate_radio.active = true;});
+        activate.connect (() => {
+            activate_radio.active = true;
+        });
+
         activate_radio.toggled.connect (() => {
             if (activate_radio.active && !ignore_default) {
                 set_as_default ();

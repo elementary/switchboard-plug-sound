@@ -32,7 +32,7 @@ public class Sound.Plug : Switchboard.Plug {
         settings.set ("sound/input", "input");
         settings.set ("sound/output", "output");
         Object (category: Category.HARDWARE,
-                code_name: "hardware-pantheon-sound",
+                code_name: "io.elementary.switchboard.sound",
                 display_name: _("Sound"),
                 description: _("Change sound and microphone volume"),
                 icon: "preferences-desktop-sound",
@@ -81,8 +81,6 @@ public class Sound.Plug : Switchboard.Plug {
     }
 
     public override void hidden () {
-        main_grid.hide ();
-        input_panel.set_visibility (false);
     }
 
     public override void search_callback (string location) {
@@ -98,7 +96,7 @@ public class Sound.Plug : Switchboard.Plug {
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
-        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        var search_results = new Gee.TreeMap<string, string> ();
         search_results.set ("%s → %s".printf (display_name, _("Output")), "output");
         search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Device")), "output");
         search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Event Sounds")), "output");

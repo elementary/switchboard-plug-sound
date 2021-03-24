@@ -7,210 +7,211 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 12:30-0800\n"
-"PO-Revision-Date: 2016-06-14 22:33+0000\n"
-"Last-Translator: Roman Sytnyk <Unknown>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
+"PO-Revision-Date: 2020-09-30 12:14+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
 
 #: src/Plug.vala:36
 msgid "Sound"
-msgstr ""
+msgstr "Звук"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "Зміна гучності динаміків та мікрофона"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
 msgid "Output"
-msgstr ""
+msgstr "Вивід"
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
 msgid "Input"
-msgstr ""
+msgstr "Вхід"
 
 #: src/Plug.vala:103 src/Plug.vala:109
 msgid "Device"
-msgstr ""
+msgstr "Пристрій"
 
 #: src/Plug.vala:104
 msgid "Event Sounds"
-msgstr ""
+msgstr "Звуки подій"
 
 #: src/Plug.vala:105 src/Plug.vala:110
 msgid "Port"
-msgstr ""
+msgstr "Порт"
 
 #: src/Plug.vala:106 src/Plug.vala:111
 msgid "Volume"
-msgstr ""
+msgstr "Гучність"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Balance"
-msgstr "Скасувати"
+msgstr "Баланс"
 
 #: src/Plug.vala:112
 msgid "Enable"
-msgstr ""
+msgstr "Увімкнути"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
-msgstr ""
+msgstr "Доступні пристрої виведення звуку:"
 
-#: src/OutputPanel.vala:58
-msgid "Output port:"
-msgstr ""
-
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
-msgstr ""
+msgstr "Вивідна гучність:"
 
-#: src/OutputPanel.vala:77
+#: src/OutputPanel.vala:85
 msgid "Balance:"
-msgstr ""
+msgstr "Баланс:"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:95
 msgid "Left"
-msgstr ""
-
-#: src/OutputPanel.vala:88
-msgid "Center"
-msgstr ""
-
-#: src/OutputPanel.vala:89
-msgid "Right"
-msgstr ""
-
-#: src/OutputPanel.vala:91
-msgid "Event alerts:"
-msgstr ""
-
-#: src/OutputPanel.vala:94
-msgid "Play sound"
-msgstr ""
+msgstr "Ліва"
 
 #: src/OutputPanel.vala:96
-msgid "Flash screen"
-msgstr ""
+msgid "Center"
+msgstr "Центр"
 
-#: src/OutputPanel.vala:100
+#: src/OutputPanel.vala:97
+msgid "Right"
+msgstr "Права"
+
+#: src/OutputPanel.vala:99
+msgid "Event alerts:"
+msgstr "Попередження про події:"
+
+#: src/OutputPanel.vala:102
+msgid "Play sound"
+msgstr "Відтворення звуку"
+
+#: src/OutputPanel.vala:104
+msgid "Flash screen"
+msgstr "Блимання екрана"
+
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Попередження про події з'являються, коли система не може щось зробити у "
+"відповідь на введення користувачем, наприклад, спроба повернення назад до "
+"порожнього поля або перемикання вікон, коли відкрито лише одне."
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
-msgstr ""
+msgstr "Перевірити гучномовці…"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
-msgstr ""
+msgstr "Немає пристрою виведення"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
+"Пристрій виведення не виявлено. Під'єднайте якийсь пристрій, щоб почати "
+"слухати що-небудь."
 
-#: src/InputPanel.vala:41
+#: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
-msgstr ""
+msgstr "Доступні пристрої введення звуку:"
 
-#: src/InputPanel.vala:52
-msgid "Input port:"
-msgstr ""
-
-#: src/InputPanel.vala:58
+#: src/InputPanel.vala:55
 msgid "Input volume:"
-msgstr ""
+msgstr "Гучність введення:"
 
-#: src/InputPanel.vala:65
+#: src/InputPanel.vala:62
 msgid "Unamplified"
-msgstr ""
+msgstr "Непідсилюваний"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:63
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Input level:"
-msgstr ""
+msgstr "Рівень введення:"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid "No Input Device"
-msgstr ""
+msgstr "Немає пристрою введення"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
+"Пристрою введення не виявлено. Під'єднайте якийсь пристрій, щоб почати що-"
+"небудь записувати."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr ""
+msgstr "Виявлення пікових значень"
 
-#: src/Device.vala:60
+#: src/Device.vala:79
 msgid "Built-in"
-msgstr ""
+msgstr "Вбудовано"
 
-#: src/Device.vala:62
+#: src/Device.vala:81
 msgid "Speaker"
-msgstr ""
+msgstr "Гучномовець"
 
-#: src/Device.vala:64
+#: src/Device.vala:83
 msgid "Handset"
-msgstr ""
+msgstr "Слухавка"
 
-#: src/Device.vala:66
+#: src/Device.vala:85
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
-#: src/Device.vala:68
+#: src/Device.vala:87
 msgid "Webcam"
-msgstr ""
+msgstr "Вебкамера"
 
-#: src/Device.vala:70
+#: src/Device.vala:89
 msgid "Microphone"
-msgstr ""
+msgstr "Мікрофон"
 
-#: src/Device.vala:72
+#: src/Device.vala:91
 msgid "Headset"
-msgstr ""
+msgstr "Слухавка"
 
-#: src/Device.vala:74
+#: src/Device.vala:93
 msgid "Headphone"
-msgstr ""
+msgstr "Навушник"
 
-#: src/Device.vala:76
+#: src/Device.vala:95
 msgid "Hands-Free"
-msgstr ""
+msgstr "Вільні руки"
 
-#: src/Device.vala:78
+#: src/Device.vala:97
 msgid "Car"
-msgstr ""
+msgstr "Авто"
 
-#: src/Device.vala:80
+#: src/Device.vala:99
 msgid "HiFi"
-msgstr ""
+msgstr "HiFi"
 
-#: src/Device.vala:82
+#: src/Device.vala:101
 msgid "Computer"
-msgstr ""
+msgstr "Комп'ютер"
 
-#: src/Device.vala:84
+#: src/Device.vala:103
 msgid "Portable"
-msgstr ""
+msgstr "Переносний"
 
 #~ msgid "About"
 #~ msgstr "Про elementary"

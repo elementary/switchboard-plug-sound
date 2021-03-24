@@ -1,0 +1,53 @@
+# Marathi translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"PO-Revision-Date: 2020-10-29 18:15+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/mr/>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+#: data/sound.appdata.xml.in:5
+msgid "Sound Settings"
+msgstr "ध्वनी सेटिंग्ज"
+
+#: data/sound.appdata.xml.in:6
+msgid "Change sound and microphone volume"
+msgstr "ध्वनी आणि मायक्रोफोन आवाज बदला"
+
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:29
+msgid "Minor updates:"
+msgstr "किरकोळ अद्यतने:"
+
+#: data/sound.appdata.xml.in:14
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr "पल्स ऑडिओच्या प्रतिध्वनी प्लगइनसह क्रॅश निराकरण करा"
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+msgid "Updated translations"
+msgstr "अद्ययावत भाषांतर"
+
+#: data/sound.appdata.xml.in:38
+msgid "Add volume slider event sound"
+msgstr "व्हॉल्यूम स्लाइडर इव्हेंटचा आवाज जोडा"
+
+#: data/sound.appdata.xml.in:49
+msgid "elementary, Inc."
+msgstr "एलिमेंटरी, Inc ."
+
+#~ msgid "Sound"
+#~ msgstr "ध्वनी"

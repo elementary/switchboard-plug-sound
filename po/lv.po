@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 12:30-0800\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2014-12-22 14:03+0000\n"
 "Last-Translator: ERX <eriksh@inbox.lv>\n"
 "Language-Team: Latvian <lv@li.org>\n"
@@ -27,12 +27,12 @@ msgid "Change sound and microphone volume"
 msgstr ""
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
 msgid "Output"
 msgstr ""
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
 msgid "Input"
 msgstr ""
 
@@ -60,96 +60,88 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr ""
 
-#: src/OutputPanel.vala:58
-msgid "Output port:"
-msgstr ""
-
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr ""
 
-#: src/OutputPanel.vala:77
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr ""
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:100
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr ""
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr ""
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
 
-#: src/InputPanel.vala:41
+#: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
 msgstr ""
 
-#: src/InputPanel.vala:52
-msgid "Input port:"
-msgstr ""
-
-#: src/InputPanel.vala:58
+#: src/InputPanel.vala:55
 msgid "Input volume:"
 msgstr ""
 
-#: src/InputPanel.vala:65
+#: src/InputPanel.vala:62
 msgid "Unamplified"
 msgstr ""
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:63
 msgid "100%"
 msgstr ""
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Input level:"
 msgstr ""
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid "No Input Device"
 msgstr ""
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -159,55 +151,55 @@ msgstr ""
 msgid "Peak detect"
 msgstr ""
 
-#: src/Device.vala:60
+#: src/Device.vala:79
 msgid "Built-in"
 msgstr ""
 
-#: src/Device.vala:62
+#: src/Device.vala:81
 msgid "Speaker"
 msgstr ""
 
-#: src/Device.vala:64
+#: src/Device.vala:83
 msgid "Handset"
 msgstr ""
 
-#: src/Device.vala:66
+#: src/Device.vala:85
 msgid "TV"
 msgstr ""
 
-#: src/Device.vala:68
+#: src/Device.vala:87
 msgid "Webcam"
 msgstr ""
 
-#: src/Device.vala:70
+#: src/Device.vala:89
 msgid "Microphone"
 msgstr ""
 
-#: src/Device.vala:72
+#: src/Device.vala:91
 msgid "Headset"
 msgstr ""
 
-#: src/Device.vala:74
+#: src/Device.vala:93
 msgid "Headphone"
 msgstr ""
 
-#: src/Device.vala:76
+#: src/Device.vala:95
 msgid "Hands-Free"
 msgstr ""
 
-#: src/Device.vala:78
+#: src/Device.vala:97
 msgid "Car"
 msgstr ""
 
-#: src/Device.vala:80
+#: src/Device.vala:99
 msgid "HiFi"
 msgstr ""
 
-#: src/Device.vala:82
+#: src/Device.vala:101
 msgid "Computer"
 msgstr ""
 
-#: src/Device.vala:84
+#: src/Device.vala:103
 msgid "Portable"
 msgstr ""
 

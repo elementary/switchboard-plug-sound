@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 12:30-0800\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2018-11-19 11:15+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
@@ -31,12 +31,12 @@ msgid "Change sound and microphone volume"
 msgstr "Keisti garso ir mikrofono garsį"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
 msgid "Output"
 msgstr "Išvestis"
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
 msgid "Input"
 msgstr "Įvestis"
 
@@ -64,47 +64,43 @@ msgstr "Balansas"
 msgid "Enable"
 msgstr "Įjungti"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "Prieinami garso išvesties įrenginiai:"
 
-#: src/OutputPanel.vala:58
-msgid "Output port:"
-msgstr "Išvesties jungtis:"
-
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "Išvesties garsis:"
 
-#: src/OutputPanel.vala:77
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr "Balansas:"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr "Kairė"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr "Vidurys"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr "Dešinė"
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr "Įvykių garsai:"
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr "Atkurti garsą"
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr "Blyksėti ekrane"
 
-#: src/OutputPanel.vala:100
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -114,15 +110,15 @@ msgstr ""
 "negali kažko atlikti. Pavyzdžiui, negali tuščiame lauke panaikinti jokių "
 "simbolių arba kai yra tik vienas langas, negali perjungti į kitą langą."
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr "Išbandyti garsiakalbius…"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr "Nėra išvesties įrenginio"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -130,35 +126,31 @@ msgstr ""
 "Nėra aptikta jokio išvesties įrenginio. Norėdami pradėti kažko klausytis, "
 "jūs, tikriausiai, norėtumėte pridėti išvesties įrenginį."
 
-#: src/InputPanel.vala:41
+#: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
 msgstr "Prieinami garso įvesties įrenginiai:"
 
-#: src/InputPanel.vala:52
-msgid "Input port:"
-msgstr "Įvesties jungtis:"
-
-#: src/InputPanel.vala:58
+#: src/InputPanel.vala:55
 msgid "Input volume:"
 msgstr "Įvesties garsis:"
 
-#: src/InputPanel.vala:65
+#: src/InputPanel.vala:62
 msgid "Unamplified"
 msgstr "Nesustiprintas"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:63
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Input level:"
 msgstr "Įvesties lygis:"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid "No Input Device"
 msgstr "Nėra įvesties įrenginio"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -170,57 +162,63 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Piko aptikimas"
 
-#: src/Device.vala:60
+#: src/Device.vala:79
 msgid "Built-in"
 msgstr "Įtaisyta"
 
-#: src/Device.vala:62
+#: src/Device.vala:81
 msgid "Speaker"
 msgstr "Garsiakalbis"
 
-#: src/Device.vala:64
+#: src/Device.vala:83
 msgid "Handset"
 msgstr "Telefono ragelis"
 
-#: src/Device.vala:66
+#: src/Device.vala:85
 msgid "TV"
 msgstr "Televizorius"
 
-#: src/Device.vala:68
+#: src/Device.vala:87
 msgid "Webcam"
 msgstr "Vaizdo kamera"
 
-#: src/Device.vala:70
+#: src/Device.vala:89
 msgid "Microphone"
 msgstr "Mikrofonas"
 
-#: src/Device.vala:72
+#: src/Device.vala:91
 msgid "Headset"
 msgstr "Ausinės su mikrofonu"
 
-#: src/Device.vala:74
+#: src/Device.vala:93
 msgid "Headphone"
 msgstr "Ausinės"
 
-#: src/Device.vala:76
+#: src/Device.vala:95
 msgid "Hands-Free"
 msgstr "Laisvų rankų įranga"
 
-#: src/Device.vala:78
+#: src/Device.vala:97
 msgid "Car"
 msgstr "Automobilis"
 
-#: src/Device.vala:80
+#: src/Device.vala:99
 msgid "HiFi"
 msgstr "HiFi"
 
-#: src/Device.vala:82
+#: src/Device.vala:101
 msgid "Computer"
 msgstr "Kompiuteris"
 
-#: src/Device.vala:84
+#: src/Device.vala:103
 msgid "Portable"
 msgstr "Portatyvi sistema"
+
+#~ msgid "Output port:"
+#~ msgstr "Išvesties jungtis:"
+
+#~ msgid "Input port:"
+#~ msgstr "Įvesties jungtis:"
 
 #~ msgid "Device Profile:"
 #~ msgstr "Įrenginio profilis:"

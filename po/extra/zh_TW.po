@@ -1,0 +1,53 @@
+# Chinese translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"PO-Revision-Date: 2020-03-01 14:09+0000\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
+"switchboard/sound-plug-extra/zh_Hant/>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+#: data/sound.appdata.xml.in:5
+msgid "Sound Settings"
+msgstr ""
+
+#: data/sound.appdata.xml.in:6
+msgid "Change sound and microphone volume"
+msgstr "變更音量與麥克風收音量"
+
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
+#: data/sound.appdata.xml.in:29
+msgid "Minor updates:"
+msgstr ""
+
+#: data/sound.appdata.xml.in:14
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr ""
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+msgid "Updated translations"
+msgstr "翻譯更新"
+
+#: data/sound.appdata.xml.in:38
+msgid "Add volume slider event sound"
+msgstr "加入音量滑桿事件音"
+
+#: data/sound.appdata.xml.in:49
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#~ msgid "Sound"
+#~ msgstr "音效"

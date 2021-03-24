@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 12:30-0800\n"
+"POT-Creation-Date: 2019-11-06 22:14+0000\n"
 "PO-Revision-Date: 2018-06-18 00:06+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -29,12 +29,12 @@ msgid "Change sound and microphone volume"
 msgstr "Kimeneti és mikrofon hangerő beállítása"
 
 #: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:86
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
 msgid "Output"
 msgstr "Kimenet"
 
 #: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:86
+#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
 msgid "Input"
 msgstr "Bemenet"
 
@@ -65,101 +65,91 @@ msgstr "Egyensúly:"
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "Rendelkezésre álló hangkimeneti eszközök:"
 
-#: src/OutputPanel.vala:58
-#, fuzzy
-msgid "Output port:"
-msgstr "Kimeneti hangerő:"
-
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:61
 #, fuzzy
 msgid "Output volume:"
 msgstr "Kimeneti hangerő:"
 
-#: src/OutputPanel.vala:77
+#: src/OutputPanel.vala:85
 msgid "Balance:"
 msgstr "Egyensúly:"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:95
 msgid "Left"
 msgstr "Bal"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:96
 msgid "Center"
 msgstr "Közép"
 
-#: src/OutputPanel.vala:89
+#: src/OutputPanel.vala:97
 msgid "Right"
 msgstr "Jobb"
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:99
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:102
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:104
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:100
+#: src/OutputPanel.vala:108
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:114
 msgid "Test Speakers…"
 msgstr "Hangszórók tesztelése…"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid "No Output Device"
 msgstr "Nincs kimeneti eszköz"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:121
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr "Nem található kimeneti eszköz. A lejátszáshoz csatlakoztasson egyet."
 
-#: src/InputPanel.vala:41
+#: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
 msgstr "Rendelkezésre álló hangbemenetek:"
 
-#: src/InputPanel.vala:52
-#, fuzzy
-msgid "Input port:"
-msgstr "Bemeneti hangerő:"
-
-#: src/InputPanel.vala:58
+#: src/InputPanel.vala:55
 #, fuzzy
 msgid "Input volume:"
 msgstr "Bemeneti hangerő:"
 
-#: src/InputPanel.vala:65
+#: src/InputPanel.vala:62
 msgid "Unamplified"
 msgstr "Erősítetlen"
 
-#: src/InputPanel.vala:66
+#: src/InputPanel.vala:63
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 #, fuzzy
 msgid "Input level:"
 msgstr "Bemeneti szint:"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid "No Input Device"
 msgstr "Nincs bemeneti eszköz"
 
-#: src/InputPanel.vala:80
+#: src/InputPanel.vala:77
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -170,57 +160,65 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Csúcs észlelés"
 
-#: src/Device.vala:60
+#: src/Device.vala:79
 msgid "Built-in"
 msgstr "Beépített eszköz"
 
-#: src/Device.vala:62
+#: src/Device.vala:81
 msgid "Speaker"
 msgstr "Hangszóró"
 
-#: src/Device.vala:64
+#: src/Device.vala:83
 msgid "Handset"
 msgstr "Telefonkagyló"
 
-#: src/Device.vala:66
+#: src/Device.vala:85
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:68
+#: src/Device.vala:87
 msgid "Webcam"
 msgstr "Webkamera"
 
-#: src/Device.vala:70
+#: src/Device.vala:89
 msgid "Microphone"
 msgstr "Mikrofon"
 
-#: src/Device.vala:72
+#: src/Device.vala:91
 msgid "Headset"
 msgstr "Mikrofonos fejhallgató"
 
-#: src/Device.vala:74
+#: src/Device.vala:93
 msgid "Headphone"
 msgstr "Fejhallgató"
 
-#: src/Device.vala:76
+#: src/Device.vala:95
 msgid "Hands-Free"
 msgstr "Kihangosított eszköz"
 
-#: src/Device.vala:78
+#: src/Device.vala:97
 msgid "Car"
 msgstr "Autó"
 
-#: src/Device.vala:80
+#: src/Device.vala:99
 msgid "HiFi"
 msgstr "HiFi"
 
-#: src/Device.vala:82
+#: src/Device.vala:101
 msgid "Computer"
 msgstr "Számítógép"
 
-#: src/Device.vala:84
+#: src/Device.vala:103
 msgid "Portable"
 msgstr "Hordozható"
+
+#, fuzzy
+#~ msgid "Output port:"
+#~ msgstr "Kimeneti hangerő:"
+
+#, fuzzy
+#~ msgid "Input port:"
+#~ msgstr "Bemeneti hangerő:"
 
 #~ msgid "About"
 #~ msgstr "Részletek"
