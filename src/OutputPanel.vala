@@ -61,22 +61,14 @@ public class Sound.OutputPanel : Gtk.Grid {
         volume_label.halign = Gtk.Align.END;
 
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0.0, 100.0, 5.0);
-
-        var sound_settings = new Settings ("io.elementary.desktop.wingpanel.sound");
-        
-        if (sound_settings != null) {
-            var max_volume = sound_settings.get_value ("max-volume").get_double ();
-            volume_scale.set_range(0, max_volume);
-        }
-
         volume_scale.adjustment.page_increment = 5;
-        volume_scale.set_value_pos(Gtk.PositionType.BOTTOM);
-        volume_scale.format_value.connect((val) => {
-			return "%.0f %%".printf(val);
-		});
+        volume_scale.value_pos = Gtk.PositionType.BOTTOM;
+        volume_scale.margin_top = 18;
         volume_scale.hexpand = true;
         volume_scale.add_mark (100, Gtk.PositionType.BOTTOM, null);
-        volume_scale.margin_top = 18;
+        volume_scale.format_value.connect ((val) => {
+            return "%.0f%%".printf (val);
+        });
 
         volume_scale.button_release_event.connect (e => {
             notify_change ();
@@ -89,6 +81,12 @@ public class Sound.OutputPanel : Gtk.Grid {
             }
             return false;
         });
+
+        var sound_settings = new Settings ("io.elementary.desktop.wingpanel.sound");
+        if (sound_settings != null) {
+            var max_volume = sound_settings.get_value ("max-volume").get_double ();
+            volume_scale.set_range (0, max_volume);
+        }
 
         volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;

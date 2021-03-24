@@ -55,17 +55,17 @@ public class Sound.InputPanel : Gtk.Grid {
         var volume_label = new Gtk.Label (_("Input volume:"));
         volume_label.valign = Gtk.Align.CENTER;
         volume_label.halign = Gtk.Align.END;
-        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0.0, 100.0, 5.0);
 
-        volume_scale.set_value_pos(Gtk.PositionType.BOTTOM);
-        volume_scale.format_value.connect((val) => {
-			return "%.0f %%".printf(val);
-		});
+        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0.0, 100.0, 5.0);
+        volume_scale.value_pos = Gtk.PositionType.BOTTOM;
         volume_scale.margin_top = 18;
         volume_scale.hexpand = true;
         volume_scale.add_mark (10, Gtk.PositionType.BOTTOM, null);
         volume_scale.add_mark (80, Gtk.PositionType.BOTTOM, null);
         volume_scale.add_mark (100, Gtk.PositionType.BOTTOM, null);
+        volume_scale.format_value.connect ((val) => {
+            return "%.0f%%".printf (val);
+        });
 
         volume_switch = new Gtk.Switch ();
         volume_switch.valign = Gtk.Align.CENTER;
@@ -102,7 +102,7 @@ public class Sound.InputPanel : Gtk.Grid {
         });
 
         volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
-        
+
         connect_signals ();
     }
 
