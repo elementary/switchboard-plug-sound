@@ -82,8 +82,8 @@ public class Sound.OutputPanel : Gtk.Grid {
             return false;
         });
 
-        var sound_settings = new Settings ("io.elementary.desktop.wingpanel.sound");
-        if (sound_settings != null) {
+        if (SettingsSchemaSource.get_default ().lookup ("io.elementary.desktop.wingpanel.sound", false) != null) {
+            var sound_settings = new Settings ("io.elementary.desktop.wingpanel.sound");
             var max_volume = sound_settings.get_value ("max-volume").get_double ();
             volume_scale.set_range (0, max_volume);
         }
