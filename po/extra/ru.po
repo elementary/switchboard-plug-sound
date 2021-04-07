@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2021-03-11 00:14+0000\n"
+"PO-Revision-Date: 2021-04-08 01:00+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ru/>\n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: data/sound.appdata.xml.in:49
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #~ msgid "Sound"
 #~ msgstr "Звук"
