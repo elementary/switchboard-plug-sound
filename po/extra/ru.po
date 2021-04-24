@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-07 18:57+0000\n"
-"PO-Revision-Date: 2021-04-08 01:00+0000\n"
+"PO-Revision-Date: 2021-04-24 13:12+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ru/>\n"
@@ -31,11 +31,11 @@ msgstr "Изменить громкость звука и микрофона"
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
 #: data/sound.appdata.xml.in:29
 msgid "Minor updates:"
-msgstr ""
+msgstr "Незначительные обновления:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
+msgstr "Исправлены сбои с плагином эхоподавления в PulseAudio"
 
 #: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
@@ -44,7 +44,7 @@ msgstr "Обновлены переводы"
 
 #: data/sound.appdata.xml.in:38
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "Добавлен звук события ползунка громкости"
 
 #: data/sound.appdata.xml.in:49
 msgid "elementary, Inc."
