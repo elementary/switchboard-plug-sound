@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2021-01-21 23:37+0000\n"
+"PO-Revision-Date: 2021-06-03 12:08+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/nb/>\n"
@@ -43,9 +43,8 @@ msgid "Device"
 msgstr "Enhet"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Event Sounds"
-msgstr "Hendelseslyder:"
+msgstr "Hendelseslyder"
 
 #: src/Plug.vala:105 src/Plug.vala:110
 #, fuzzy
@@ -53,14 +52,13 @@ msgid "Port"
 msgstr "Flyttbar"
 
 #: src/Plug.vala:106 src/Plug.vala:111
-#, fuzzy
 msgid "Volume"
-msgstr "Inngangslydstyrke:"
+msgstr "Lydstyrke"
 
 #: src/Plug.vala:107
 #, fuzzy
 msgid "Balance"
-msgstr "Balanse:"
+msgstr "Balanse"
 
 #: src/Plug.vala:112
 msgid "Enable"
