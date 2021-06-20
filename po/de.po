@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2021-02-24 23:37+0000\n"
+"PO-Revision-Date: 2021-06-21 00:19+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/de/>\n"
@@ -64,7 +64,7 @@ msgstr "Aktivieren"
 
 #: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
-msgstr "Vorhandene Audio-Ausgabegeräte:"
+msgstr "Vorhandene Audioausgabegeräte:"
 
 #: src/OutputPanel.vala:61
 msgid "Output volume:"
@@ -104,10 +104,10 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
-"Ereigniswarnungen treten auf, wenn das System als Reaktion auf "
-"Benutzereingaben nichts tun kann, wie z.B. bei dem Versuch, in einem leeren "
-"Eingabefeld die Rücktaste zu betätigen oder Fenster zu wechseln, wenn nur "
-"eines geöffnet ist."
+"Ereigniswarnungen werden ausgelöst, wenn das System auf Benutzereingaben "
+"nicht anders reagieren kann; das ist beispielsweise der Fall bei dem "
+"Versuch, in einem leeren Eingabefeld die Rücktaste zu betätigen oder zu "
+"einem anderen Fenster zu wechseln, obwohl nur ein einziges geöffnet ist."
 
 #: src/OutputPanel.vala:114
 msgid "Test Speakers…"
