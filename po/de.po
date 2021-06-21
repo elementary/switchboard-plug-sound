@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 22:14+0000\n"
-"PO-Revision-Date: 2021-06-21 00:19+0000\n"
+"PO-Revision-Date: 2021-06-21 12:56+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/de/>\n"
@@ -96,7 +96,7 @@ msgstr "Ton wiedergeben"
 
 #: src/OutputPanel.vala:104
 msgid "Flash screen"
-msgstr "Bildschirm blinken"
+msgstr "Bildschirm kurz blinken lassen"
 
 #: src/OutputPanel.vala:108
 msgid ""
