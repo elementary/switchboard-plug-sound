@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 22:14+0000\n"
+"POT-Creation-Date: 2021-07-14 21:22+0000\n"
 "PO-Revision-Date: 2021-06-21 12:56+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -28,37 +28,37 @@ msgstr "Audio"
 msgid "Change sound and microphone volume"
 msgstr "Audio- und Mikrofonlautstärke ändern"
 
-#: src/Plug.vala:56 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Device.vala:105
+#: src/Plug.vala:56 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Device.vala:105
 msgid "Output"
 msgstr "Ausgang"
 
-#: src/Plug.vala:57 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Device.vala:105
+#: src/Plug.vala:57 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:110 src/Device.vala:105
 msgid "Input"
 msgstr "Eingang"
 
-#: src/Plug.vala:103 src/Plug.vala:109
+#: src/Plug.vala:101 src/Plug.vala:107
 msgid "Device"
 msgstr "Gerät"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:102
 msgid "Event Sounds"
 msgstr "Ereignistöne"
 
-#: src/Plug.vala:105 src/Plug.vala:110
+#: src/Plug.vala:103 src/Plug.vala:108
 msgid "Port"
 msgstr "Schnittstelle"
 
-#: src/Plug.vala:106 src/Plug.vala:111
+#: src/Plug.vala:104 src/Plug.vala:109
 msgid "Volume"
 msgstr "Lautstärke"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:105
 msgid "Balance"
 msgstr "Balance"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:110
 msgid "Enable"
 msgstr "Aktivieren"
 
