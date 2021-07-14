@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2021-04-21 20:13+0000\n"
+"PO-Revision-Date: 2021-07-15 01:02+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/pt/>\n"
@@ -41,7 +41,7 @@ msgstr "Traduções atualizadas"
 
 #: data/sound.appdata.xml.in:22
 msgid "Smoother transition when navigating away from this view"
-msgstr ""
+msgstr "Transição mais suave ao navegar para longe desta vista"
 
 #: data/sound.appdata.xml.in:31
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
