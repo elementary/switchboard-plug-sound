@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-07 18:57+0000\n"
+"POT-Creation-Date: 2021-07-14 21:22+0000\n"
 "PO-Revision-Date: 2021-07-03 16:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,24 +28,30 @@ msgstr "Налаштування звуку"
 msgid "Change sound and microphone volume"
 msgstr "Зміна гучності динаміків та мікрофона"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:21
-#: data/sound.appdata.xml.in:29
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
+#: data/sound.appdata.xml.in:29 data/sound.appdata.xml.in:38
+#: data/sound.appdata.xml.in:46
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
-#: data/sound.appdata.xml.in:14
-msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr "Виправлено збої плагіна прибирання луни в PulseAudio"
-
-#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:23
-#: data/sound.appdata.xml.in:31 data/sound.appdata.xml.in:39
+#: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:23
+#: data/sound.appdata.xml.in:32 data/sound.appdata.xml.in:40
+#: data/sound.appdata.xml.in:48 data/sound.appdata.xml.in:56
 msgid "Updated translations"
 msgstr "Оновлено переклади"
 
-#: data/sound.appdata.xml.in:38
+#: data/sound.appdata.xml.in:22
+msgid "Smoother transition when navigating away from this view"
+msgstr ""
+
+#: data/sound.appdata.xml.in:31
+msgid "Fix crash with PulseAudio's echo cancellation plugin"
+msgstr "Виправлено збої плагіна прибирання луни в PulseAudio"
+
+#: data/sound.appdata.xml.in:55
 msgid "Add volume slider event sound"
 msgstr "Додано звук події повзунка гучності"
 
-#: data/sound.appdata.xml.in:49
+#: data/sound.appdata.xml.in:66
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
