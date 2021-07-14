@@ -1,3 +1,13 @@
+switchboard-plug-sound (2.2.7) bionic; urgency=medium
+
+  * Release 2.2.7 (#201)
+  * Meson: actually add GResources (#196)
+  * LINGUAS: sort, remove en_US
+  * Update translation files
+  * Update translation template
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 14 Jul 2021 21:22:50 +0000
+
 switchboard-plug-sound (2.2.6) bionic; urgency=medium
 
   * Release 2.2.6 (#178)
