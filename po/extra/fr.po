@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2021-07-30 20:57+0000\n"
+"PO-Revision-Date: 2021-08-12 17:07+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/fr/>\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: data/sound.appdata.xml.in:55
 msgid "Add volume slider event sound"
-msgstr "Ajout du retour sonore lors du changement de volume"
+msgstr "Ajout du retour sonore lors de la modification du volume"
 
 #: data/sound.appdata.xml.in:66
 msgid "elementary, Inc."
