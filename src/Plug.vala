@@ -27,6 +27,9 @@ public class Sound.Plug : Switchboard.Plug {
     InputPanel input_panel;
 
     public Plug () {
+        GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("sound", null);
         settings.set ("sound/input", "input");
