@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2021-08-23 13:53+0000\n"
+"PO-Revision-Date: 2021-08-24 18:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/sk/>\n"
@@ -31,13 +31,13 @@ msgstr "Zmena hlasitosti zvuku a mikrofónu"
 #: data/sound.appdata.xml.in:29 data/sound.appdata.xml.in:38
 #: data/sound.appdata.xml.in:46
 msgid "Minor updates:"
-msgstr ""
+msgstr "Menšie aktualizácie:"
 
 #: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:32 data/sound.appdata.xml.in:40
 #: data/sound.appdata.xml.in:48 data/sound.appdata.xml.in:56
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/sound.appdata.xml.in:22
 msgid "Smoother transition when navigating away from this view"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: data/sound.appdata.xml.in:66
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #~ msgid "Sound"
 #~ msgstr "Zvuk"
