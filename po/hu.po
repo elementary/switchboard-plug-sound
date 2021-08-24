@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2018-06-18 00:06+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2021-08-24 21:51+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:36
@@ -26,7 +26,7 @@ msgstr "Hang"
 
 #: src/Plug.vala:37
 msgid "Change sound and microphone volume"
-msgstr "Kimeneti és mikrofon hangerő beállítása"
+msgstr "Hang és mikrofon hangerejének beállítása"
 
 #: src/Plug.vala:56 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
 #: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Device.vala:105
@@ -40,37 +40,33 @@ msgstr "Bemenet"
 
 #: src/Plug.vala:101 src/Plug.vala:107
 msgid "Device"
-msgstr ""
+msgstr "Eszköz"
 
 #: src/Plug.vala:102
 msgid "Event Sounds"
-msgstr ""
+msgstr "Eseményhangok"
 
 #: src/Plug.vala:103 src/Plug.vala:108
-#, fuzzy
 msgid "Port"
-msgstr "Hordozható"
+msgstr "Port"
 
 #: src/Plug.vala:104 src/Plug.vala:109
-#, fuzzy
 msgid "Volume"
-msgstr "Bemeneti hangerő:"
+msgstr "Hangerő"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Balance"
-msgstr "Egyensúly:"
+msgstr "Egyensúly"
 
 #: src/Plug.vala:110
 msgid "Enable"
-msgstr ""
+msgstr "Engedélyezés"
 
 #: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
 msgstr "Rendelkezésre álló hangkimeneti eszközök:"
 
 #: src/OutputPanel.vala:61
-#, fuzzy
 msgid "Output volume:"
 msgstr "Kimeneti hangerő:"
 
@@ -92,15 +88,15 @@ msgstr "Jobb"
 
 #: src/OutputPanel.vala:99
 msgid "Event alerts:"
-msgstr ""
+msgstr "Eseményhangok:"
 
 #: src/OutputPanel.vala:102
 msgid "Play sound"
-msgstr ""
+msgstr "Hang lejátszása"
 
 #: src/OutputPanel.vala:104
 msgid "Flash screen"
-msgstr ""
+msgstr "Képernyő villogtatása"
 
 #: src/OutputPanel.vala:108
 msgid ""
@@ -108,6 +104,9 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Az eseményértesítések olyankor történnek, amikor a rendszer nem tud "
+"válaszolni a felhasználói bemenetre, mint például törlésnél egy üres "
+"bemeneti mezőben vagy ablakváltásnál, ha csak egy van megnyitva."
 
 #: src/OutputPanel.vala:114
 msgid "Test Speakers…"
@@ -128,7 +127,6 @@ msgid "Available Sound Input Devices:"
 msgstr "Rendelkezésre álló hangbemenetek:"
 
 #: src/InputPanel.vala:55
-#, fuzzy
 msgid "Input volume:"
 msgstr "Bemeneti hangerő:"
 
@@ -141,7 +139,6 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:67
-#, fuzzy
 msgid "Input level:"
 msgstr "Bemeneti szint:"
 
@@ -154,15 +151,15 @@ msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
-"Nincs bemeneti eszköz észlelve. Felvételek készítéséhez adjon hozzá egyet."
+"Nem található bemeneti eszköz. Felvételek készítéséhez adjon hozzá egyet."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr "Csúcs észlelés"
+msgstr "Csúcsészlelés"
 
 #: src/Device.vala:79
 msgid "Built-in"
-msgstr "Beépített eszköz"
+msgstr "Beépített"
 
 #: src/Device.vala:81
 msgid "Speaker"
@@ -170,7 +167,7 @@ msgstr "Hangszóró"
 
 #: src/Device.vala:83
 msgid "Handset"
-msgstr "Telefonkagyló"
+msgstr "Telefon"
 
 #: src/Device.vala:85
 msgid "TV"
