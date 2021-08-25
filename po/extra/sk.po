@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2021-08-24 18:20+0000\n"
+"PO-Revision-Date: 2021-08-25 17:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/sk/>\n"
@@ -25,7 +25,7 @@ msgstr "Nastavenia zvuku"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
-msgstr "Zmena hlasitosti zvuku a mikrofónu"
+msgstr "Meňte hlasitosť zvuku a mikrofónu"
 
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
 #: data/sound.appdata.xml.in:29 data/sound.appdata.xml.in:38
@@ -41,15 +41,15 @@ msgstr "Aktualizované preklady"
 
 #: data/sound.appdata.xml.in:22
 msgid "Smoother transition when navigating away from this view"
-msgstr ""
+msgstr "Hladšia animácia prechodu pri navigovaní preč z tohto zobrazenia"
 
 #: data/sound.appdata.xml.in:31
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
+msgstr "Opravený pád so zásuvným modulom PulseAudio pre potláčanie ozveny"
 
 #: data/sound.appdata.xml.in:55
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "Pridanie zvuku pri prestavovaní posuvníka hlasitosti"
 
 #: data/sound.appdata.xml.in:66
 msgid "elementary, Inc."
