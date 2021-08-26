@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2021-08-26 08:31+0000\n"
+"PO-Revision-Date: 2021-08-26 12:30+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/sk/>\n"
@@ -96,7 +96,7 @@ msgstr "Prehrať zvuk"
 
 #: src/OutputPanel.vala:104
 msgid "Flash screen"
-msgstr ""
+msgstr "Prebliknúť obrazovku"
 
 #: src/OutputPanel.vala:108
 msgid ""
@@ -104,10 +104,13 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
+"Upozornenia udalostí sa vyskytnú, keď systém nedokáže urobiť akciu, ktorú "
+"požaduje používateľ. Napríklad stlačenie klávesy Backspace, keď nie je čo "
+"zmazať, alebo pokus o prepnutie na ďalšie okno, ak je otvorené iba jedno."
 
 #: src/OutputPanel.vala:114
 msgid "Test Speakers…"
-msgstr "Test reproduktorov…"
+msgstr "Otestovať reproduktory…"
 
 #: src/OutputPanel.vala:121
 msgid "No Output Device"
@@ -118,14 +121,14 @@ msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
-"Nezistené žiadne výstupné zvukové zariadenie. Bude potrebné ho pripojiť ."
+"Nebolo rozpoznané žiadne výstupné zariadenie. Aby ste mohli niečo počúvať, "
+"je potrebné nejaké pripojiť."
 
 #: src/InputPanel.vala:40
 msgid "Available Sound Input Devices:"
 msgstr "Dostupné vstupné zvukové zariadenia:"
 
 #: src/InputPanel.vala:55
-#, fuzzy
 msgid "Input volume:"
 msgstr "Vstupná hlasitosť:"
 
@@ -138,29 +141,28 @@ msgid "100%"
 msgstr "100%"
 
 #: src/InputPanel.vala:67
-#, fuzzy
 msgid "Input level:"
-msgstr "Vstupná hlasitosť:"
+msgstr "Vstupná úroveň:"
 
 #: src/InputPanel.vala:77
 msgid "No Input Device"
-msgstr "Žiadne vstupné zvukové zariadenie"
+msgstr "Žiadne vstupné zariadenie"
 
 #: src/InputPanel.vala:77
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
-"Nedetekované vstupné zariadenie. Je potrebné ho pripojiť ak chcete nahrávať "
-"zvuk."
+"Nebolo rozpoznané žiadne vstupné zariadenie. Aby ste mohli niečo nahrávať, "
+"je potrebné nejaké pripojiť."
 
 #: src/InputDeviceMonitor.vala:78
 msgid "Peak detect"
-msgstr "Detekcia skreslenia"
+msgstr "Detekcia špičiek"
 
 #: src/Device.vala:79
 msgid "Built-in"
-msgstr "Vbudovaný (é)"
+msgstr "Vstavaný"
 
 #: src/Device.vala:81
 msgid "Speaker"
@@ -168,11 +170,11 @@ msgstr "Reproduktor"
 
 #: src/Device.vala:83
 msgid "Handset"
-msgstr "Slúchadlá s mikrofónom"
+msgstr "Slúchadlo"
 
 #: src/Device.vala:85
 msgid "TV"
-msgstr "TV"
+msgstr "Televízor"
 
 #: src/Device.vala:87
 msgid "Webcam"
@@ -184,7 +186,7 @@ msgstr "Mikrofón"
 
 #: src/Device.vala:91
 msgid "Headset"
-msgstr "Slúchadlá s mikrofónom"
+msgstr "Náhlavná súprava"
 
 #: src/Device.vala:93
 msgid "Headphone"
