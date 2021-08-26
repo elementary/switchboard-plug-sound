@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2021-08-25 17:20+0000\n"
+"PO-Revision-Date: 2021-08-26 08:31+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/sk/>\n"
@@ -40,43 +40,39 @@ msgstr "Vstup"
 
 #: src/Plug.vala:101 src/Plug.vala:107
 msgid "Device"
-msgstr ""
+msgstr "Zariadenie"
 
 #: src/Plug.vala:102
 msgid "Event Sounds"
-msgstr ""
+msgstr "Zvuky udalostí"
 
 #: src/Plug.vala:103 src/Plug.vala:108
-#, fuzzy
 msgid "Port"
-msgstr "Prenosné"
+msgstr "Port"
 
 #: src/Plug.vala:104 src/Plug.vala:109
-#, fuzzy
 msgid "Volume"
-msgstr "Vstupná hlasitosť:"
+msgstr "Hlasitosť"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Balance"
-msgstr "Stereováha:"
+msgstr "Vyváženie"
 
 #: src/Plug.vala:110
 msgid "Enable"
-msgstr ""
+msgstr "Zapnúť"
 
 #: src/OutputPanel.vala:43
 msgid "Available Sound Output Devices:"
-msgstr "Výstupné zvukové zariadenia:"
+msgstr "Dostupné výstupné zvukové zariadenia:"
 
 #: src/OutputPanel.vala:61
-#, fuzzy
 msgid "Output volume:"
 msgstr "Výstupná hlasitosť:"
 
 #: src/OutputPanel.vala:85
 msgid "Balance:"
-msgstr "Stereováha:"
+msgstr "Vyváženie:"
 
 #: src/OutputPanel.vala:95
 msgid "Left"
@@ -84,7 +80,7 @@ msgstr "Ľavé"
 
 #: src/OutputPanel.vala:96
 msgid "Center"
-msgstr "Stredný"
+msgstr "Stredné"
 
 #: src/OutputPanel.vala:97
 msgid "Right"
@@ -92,11 +88,11 @@ msgstr "Pravé"
 
 #: src/OutputPanel.vala:99
 msgid "Event alerts:"
-msgstr ""
+msgstr "Upozornenia udalostí:"
 
 #: src/OutputPanel.vala:102
 msgid "Play sound"
-msgstr ""
+msgstr "Prehrať zvuk"
 
 #: src/OutputPanel.vala:104
 msgid "Flash screen"
