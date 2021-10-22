@@ -140,7 +140,7 @@ public class Sound.OutputPanel : Gtk.Grid {
             xalign = 1
         };
 
-        var screen_reader_switch = new Gtk.Switch() {
+        var screen_reader_switch = new Gtk.Switch () {
             halign = Gtk.Align.START,
             hexpand = true
         };
