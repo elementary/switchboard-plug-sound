@@ -37,39 +37,53 @@ public class Sound.InputPanel : Gtk.Grid {
         margin_top = 0;
         column_spacing = 12;
         row_spacing = 6;
-        var available_label = new Gtk.Label (_("Available Sound Input Devices:"));
+        var available_label = new Gtk.Label (_("Available Sound Input Devices:")) {
+            halign = Gtk.Align.START
+        };
         available_label.get_style_context ().add_class ("h4");
-        available_label.halign = Gtk.Align.START;
-        devices_listbox = new Gtk.ListBox ();
-        devices_listbox.activate_on_single_click = true;
+        devices_listbox = new Gtk.ListBox () {
+            activate_on_single_click = true
+        };
+
         devices_listbox.row_activated.connect ((row) => {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
-        var devices_frame = new Gtk.Frame (null);
-        devices_frame.expand = true;
+        var devices_frame = new Gtk.Frame (null) {
+            expand = true
+        };
         devices_frame.add (scrolled);
 
-        var volume_label = new Gtk.Label (_("Input volume:"));
-        volume_label.valign = Gtk.Align.CENTER;
-        volume_label.halign = Gtk.Align.END;
-        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
-        volume_scale.margin_top = 18;
-        volume_scale.draw_value = false;
-        volume_scale.hexpand = true;
+        var volume_label = new Gtk.Label (_("Input volume:")) {
+            valign = Gtk.Align.CENTER,
+            halign = Gtk.Align.END
+        };
+
+        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5) {
+            margin_top = 18,
+            draw_value = false,
+            hexpand = true
+        };
+
         volume_scale.add_mark (10, Gtk.PositionType.BOTTOM, _("Unamplified"));
         volume_scale.add_mark (80, Gtk.PositionType.BOTTOM, _("100%"));
-        volume_switch = new Gtk.Switch ();
-        volume_switch.valign = Gtk.Align.CENTER;
-        volume_switch.active = true;
-        var level_label = new Gtk.Label (_("Input level:"));
-        level_label.halign = Gtk.Align.END;
 
-        level_bar = new Gtk.LevelBar.for_interval (0.0, 18.0);
-        level_bar.max_value = 18;
-        level_bar.mode = Gtk.LevelBarMode.DISCRETE;
+        volume_switch = new Gtk.Switch () {
+            valign = Gtk.Align.CENTER,
+            active = true
+        };
+
+        var level_label = new Gtk.Label (_("Input level:")) {
+            halign = Gtk.Align.END
+        };
+
+        level_bar = new Gtk.LevelBar.for_interval (0.0, 18.0) {
+            max_value = 18,
+            mode = Gtk.LevelBarMode.DISCRETE
+        };
+
         level_bar.add_offset_value ("low", 16.1);
         level_bar.add_offset_value ("middle", 16.0);
         level_bar.add_offset_value ("high", 14.0);

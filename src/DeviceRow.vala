@@ -39,15 +39,21 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.column_spacing = 12;
-        grid.orientation = Gtk.Orientation.HORIZONTAL;
-        name_label = new Gtk.Label (device.display_name);
-        name_label.hexpand = true;
-        name_label.xalign = 0;
-        description_label = new Gtk.Label (device.get_nice_form_factor ());
-        description_label.halign = Gtk.Align.END;
+        var grid = new Gtk.Grid () {
+            margin = 6,
+            column_spacing = 12,
+            orientation = Gtk.Orientation.HORIZONTAL
+        };
+
+        name_label = new Gtk.Label (device.display_name) {
+            hexpand = true,
+            xalign = 0
+        };
+
+        description_label = new Gtk.Label (device.get_nice_form_factor ()) {
+            halign = Gtk.Align.END
+        };
+
         description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
         activate_radio = new Gtk.RadioButton (null);
         grid.add (activate_radio);

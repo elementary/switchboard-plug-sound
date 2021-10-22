@@ -47,14 +47,16 @@ public class Sound.Plug : Switchboard.Plug {
             var output_panel = new OutputPanel ();
             input_panel = new InputPanel ();
 
-            stack = new Gtk.Stack ();
-            stack.expand = true;
+            stack = new Gtk.Stack () {
+                expand = true
+            };
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.margin = 12;
-            stack_switcher.stack = stack;
+            var stack_switcher = new Gtk.StackSwitcher () {
+                halign = Gtk.Align.CENTER,
+                homogeneous = true,
+                margin = 12,
+                stack = stack
+            };
 
             stack.add_titled (output_panel, "output", _("Output"));
             stack.add_titled (input_panel, "input", _("Input"));
@@ -63,8 +65,9 @@ public class Sound.Plug : Switchboard.Plug {
                 input_panel.set_visibility (stack.visible_child == input_panel);
             });
 
-            main_grid = new Gtk.Grid ();
-            main_grid.orientation = Gtk.Orientation.VERTICAL;
+            main_grid = new Gtk.Grid () {
+                orientation = Gtk.Orientation.VERTICAL
+            };
             main_grid.add (stack_switcher);
             main_grid.add (stack);
             main_grid.show_all ();
