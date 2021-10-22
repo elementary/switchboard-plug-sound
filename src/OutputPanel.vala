@@ -34,6 +34,9 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     uint notify_timeout_id = 0;
 
+    private int status;
+    private int reader_pid;
+
     construct {
         margin = 12;
         margin_top = 0;
@@ -132,6 +135,24 @@ public class Sound.OutputPanel : Gtk.Grid {
             margin_top = 18
         };
 
+        var screen_reader_label = new Gtk.Label (_("Screen Reader:")) {
+            halign = Gtk.Align.END,
+            xalign = 1
+        };
+
+        var screen_reader_switch = new Gtk.Switch() {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
+
+        var screen_reader_description_label = new Gtk.Label ("Provide audio descriptions for items on the screen") {
+            max_width_chars = 60,
+            wrap = true,
+            xalign = 0
+        };
+
+        screen_reader_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         var test_popover = new TestPopover (test_button);
         test_button.bind_property ("active", test_popover, "visible", GLib.BindingFlags.BIDIRECTIONAL);
 
@@ -150,7 +171,10 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (audio_alert_check, 1, 4);
         attach (visual_alert_check, 2, 4);
         attach (alerts_info, 1, 5, 2);
-        attach (test_button, 0, 6, 4);
+        attach (screen_reader_label, 0, 6, 1, 1);
+        attach (screen_reader_switch, 1, 6, 1, 1);
+        attach (screen_reader_description_label, 1, 7, 1, 1);
+        attach (test_button, 0, 8, 4);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -173,7 +197,27 @@ public class Sound.OutputPanel : Gtk.Grid {
                                 null);
         ca_context.open ();
 
+        screen_reader_switch.notify["active"].connect (() => {
+            toggle_screen_reader (screen_reader_switch.active);
+        });
+
         connect_signals ();
+    }
+
+    private void toggle_screen_reader ( bool active ) {
+        if (active) {
+            try {
+                string[] argv;
+                Shell.parse_argv ("orca --replace", out argv);
+                Process.spawn_async (null, argv, null, SpawnFlags.SEARCH_PATH, null, out reader_pid);
+            } catch (Error e) {
+                warning (e.message);
+            }
+        } else {
+            Posix.kill (reader_pid, Posix.Signal.KILL);
+            Posix.waitpid (reader_pid, out status, 0);
+            reader_pid = 0;
+        }
     }
 
     private void default_changed () {
