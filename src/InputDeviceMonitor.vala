@@ -64,10 +64,11 @@ public class Sound.InputDeviceMonitor : GLib.Object {
         }
 
         unowned PulseAudio.Context c = PulseAudioManager.get_default ().context;
-        var ss = PulseAudio.SampleSpec ();
-        ss.format = PulseAudio.SampleFormat.FLOAT32NE;
-        ss.rate = 25;
-        ss.channels = 1;
+        var ss = PulseAudio.SampleSpec () {
+            format = PulseAudio.SampleFormat.FLOAT32NE,
+            rate = 25,
+            channels = 1
+        };
 
         var props = new PulseAudio.Proplist ();
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_NAME, "Switchboard sound");
@@ -79,9 +80,10 @@ public class Sound.InputDeviceMonitor : GLib.Object {
         steam.set_read_callback (steam_read_callback);
         steam.set_suspended_callback (steam_suspended_callback);
 
-        var a = PulseAudio.Stream.BufferAttr ();
-        a.maxlength = uint32.MAX;
-        a.fragsize = (uint32)sizeof (float);
+        var a = PulseAudio.Stream.BufferAttr () {
+            maxlength = uint32.MAX,
+            fragsize = (uint32)sizeof (float)
+        };
         steam.connect_record ("%u".printf (device.source_index), a, PulseAudio.Stream.Flags.DONT_MOVE | PulseAudio.Stream.Flags.PEAK_DETECT | PulseAudio.Stream.Flags.ADJUST_LATENCY);
     }
 

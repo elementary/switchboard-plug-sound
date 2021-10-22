@@ -40,12 +40,15 @@ public class Sound.OutputPanel : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 6;
 
-        var available_label = new Gtk.Label (_("Available Sound Output Devices:"));
+        var available_label = new Gtk.Label (_("Available Sound Output Devices:")) {
+            halign = Gtk.Align.START
+        };
         available_label.get_style_context ().add_class ("h4");
-        available_label.halign = Gtk.Align.START;
 
-        devices_listbox = new Gtk.ListBox ();
-        devices_listbox.activate_on_single_click = true;
+        devices_listbox = new Gtk.ListBox () {
+            activate_on_single_click = true
+        };
+
         devices_listbox.row_activated.connect ((row) => {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
@@ -53,18 +56,22 @@ public class Sound.OutputPanel : Gtk.Grid {
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (devices_listbox);
 
-        var devices_frame = new Gtk.Frame (null);
-        devices_frame.expand = true;
-        devices_frame.margin_bottom = 18;
+        var devices_frame = new Gtk.Frame (null) {
+            expand = true,
+            margin_bottom = 18
+        };
+
         devices_frame.add (scrolled);
 
-        var volume_label = new Gtk.Label (_("Output volume:"));
-        volume_label.halign = Gtk.Align.END;
+        var volume_label = new Gtk.Label (_("Output volume:")) {
+            halign = Gtk.Align.END
+        };
 
-        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5);
+        volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5) {
+            draw_value = false,
+            hexpand = true
+        };
         volume_scale.adjustment.page_increment = 5;
-        volume_scale.draw_value = false;
-        volume_scale.hexpand = true;
 
         volume_scale.button_release_event.connect (e => {
             notify_change ();
@@ -78,42 +85,52 @@ public class Sound.OutputPanel : Gtk.Grid {
             return false;
         });
 
-        volume_switch = new Gtk.Switch ();
-        volume_switch.valign = Gtk.Align.CENTER;
-        volume_switch.active = true;
+        volume_switch = new Gtk.Switch () {
+            valign = Gtk.Align.CENTER,
+            active = true
+        };
 
-        var balance_label = new Gtk.Label (_("Balance:"));
-        balance_label.valign = Gtk.Align.START;
-        balance_label.halign = Gtk.Align.END;
-        balance_label.margin_bottom = 18;
+        var balance_label = new Gtk.Label (_("Balance:")) {
+            valign = Gtk.Align.START,
+            halign = Gtk.Align.END,
+            margin_bottom = 18
+        };
 
-        balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, -1, 1, 0.1);
+        balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, -1, 1, 0.1) {
+            draw_value = false,
+            has_origin = false,
+            margin_bottom = 18
+        };
+
         balance_scale.adjustment.page_increment = 0.1;
-        balance_scale.draw_value = false;
-        balance_scale.has_origin = false;
-        balance_scale.margin_bottom = 18;
+
         balance_scale.add_mark (-1, Gtk.PositionType.BOTTOM, _("Left"));
         balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
         balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
 
-        var alerts_label = new Gtk.Label (_("Event alerts:"));
-        alerts_label.halign = Gtk.Align.END;
+        var alerts_label = new Gtk.Label (_("Event alerts:")) {
+            halign = Gtk.Align.END,
+        };
 
         var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound"));
 
-        var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen"));
-        visual_alert_check.halign = Gtk.Align.START;
-        visual_alert_check.hexpand = true;
+        var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen")) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
 
-        var alerts_info = new Gtk.Label (_("Event alerts occur when the system cannot do something in response to user input, like attempting to backspace in an empty input or switch windows when only one is open."));
-        alerts_info.max_width_chars = 80;
-        alerts_info.wrap = true;
-        alerts_info.xalign = 0;
+        var alerts_info = new Gtk.Label (_("Event alerts occur when the system cannot do something in response to user input, like attempting to backspace in an empty input or switch windows when only one is open.")) {
+            max_width_chars = 80,
+            wrap = true,
+            xalign = 0
+        };
+
         alerts_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…"));
-        test_button.halign = Gtk.Align.END;
-        test_button.margin_top = 18;
+        var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…")) {
+            halign = Gtk.Align.END,
+            margin_top = 18
+        };
 
         var test_popover = new TestPopover (test_button);
         test_button.bind_property ("active", test_popover, "visible", GLib.BindingFlags.BIDIRECTIONAL);

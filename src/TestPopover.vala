@@ -29,10 +29,12 @@ public class Sound.TestPopover : Gtk.Popover {
     }
 
     construct {
-        main_grid = new Gtk.Grid ();
-        main_grid.margin = 12;
-        main_grid.column_spacing = 6;
-        main_grid.row_spacing = 6;
+        main_grid = new Gtk.Grid () {
+            margin = 12,
+            column_spacing = 6,
+            row_spacing = 6
+        };
+
         var me = new Granite.Widgets.Avatar.with_default_icon (48);
         main_grid.attach (me, 2, 1, 1, 1);
         main_grid.show_all ();
