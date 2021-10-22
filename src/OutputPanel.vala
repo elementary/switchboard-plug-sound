@@ -21,6 +21,7 @@
  */
 
 public class Sound.OutputPanel : Gtk.Grid {
+    
     private Gtk.ListBox devices_listbox;
     private unowned PulseAudioManager pam;
 
@@ -35,7 +36,7 @@ public class Sound.OutputPanel : Gtk.Grid {
     uint notify_timeout_id = 0;
 
     private int status;
-    private int reader_pid;
+
 
     construct {
         margin = 12;
@@ -135,6 +136,9 @@ public class Sound.OutputPanel : Gtk.Grid {
             margin_top = 18
         };
 
+
+        var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
+
         var screen_reader_label = new Gtk.Label (_("Screen Reader:")) {
             halign = Gtk.Align.END,
             xalign = 1
@@ -176,6 +180,9 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (screen_reader_description_label, 1, 7, 1, 1);
         attach (test_button, 0, 8, 4);
 
+        applications_settings.bind ("screen-reader-enabled", screen_reader_switch, "active", SettingsBindFlags.DEFAULT);
+
+
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
         pam.notify["default-output"].connect (default_changed);
@@ -196,29 +203,10 @@ public class Sound.OutputPanel : Gtk.Grid {
                                 Canberra.PROP_APPLICATION_LANGUAGE, locale,
                                 null);
         ca_context.open ();
-
-        screen_reader_switch.notify["active"].connect (() => {
-            toggle_screen_reader (screen_reader_switch.active);
-        });
-
         connect_signals ();
     }
 
-    private void toggle_screen_reader ( bool active ) {
-        if (active) {
-            try {
-                string[] argv;
-                Shell.parse_argv ("orca --replace", out argv);
-                Process.spawn_async (null, argv, null, SpawnFlags.SEARCH_PATH, null, out reader_pid);
-            } catch (Error e) {
-                warning (e.message);
-            }
-        } else {
-            Posix.kill (reader_pid, Posix.Signal.KILL);
-            Posix.waitpid (reader_pid, out status, 0);
-            reader_pid = 0;
-        }
-    }
+
 
     private void default_changed () {
         disconnect_signals ();
