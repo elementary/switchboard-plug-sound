@@ -34,9 +34,6 @@ public class Sound.OutputPanel : Gtk.Grid {
 
     uint notify_timeout_id = 0;
 
-    private int status;
-
-
     construct {
         margin = 12;
         margin_top = 0;
