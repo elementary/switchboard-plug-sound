@@ -21,7 +21,6 @@
  */
 
 public class Sound.OutputPanel : Gtk.Grid {
-
     private Gtk.ListBox devices_listbox;
     private unowned PulseAudioManager pam;
 
