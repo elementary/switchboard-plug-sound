@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:22+0000\n"
-"PO-Revision-Date: 2020-10-28 11:22+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2021-11-01 10:01+0000\n"
+"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/sound-plug-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/sound.appdata.xml.in:5
 msgid "Sound Settings"
@@ -31,7 +31,7 @@ msgstr "调整声音和麦克风音量"
 #: data/sound.appdata.xml.in:29 data/sound.appdata.xml.in:38
 #: data/sound.appdata.xml.in:46
 msgid "Minor updates:"
-msgstr ""
+msgstr "次要更新："
 
 #: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:23
 #: data/sound.appdata.xml.in:32 data/sound.appdata.xml.in:40
@@ -41,15 +41,15 @@ msgstr "翻译更新"
 
 #: data/sound.appdata.xml.in:22
 msgid "Smoother transition when navigating away from this view"
-msgstr ""
+msgstr "离开此视图时更平滑的过渡"
 
 #: data/sound.appdata.xml.in:31
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
+msgstr "修复使用 PulseAudio 的回声消除插件崩溃"
 
 #: data/sound.appdata.xml.in:55
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "添加音量滑块事件声音"
 
 #: data/sound.appdata.xml.in:66
 msgid "elementary, Inc."
