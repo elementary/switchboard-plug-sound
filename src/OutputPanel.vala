@@ -174,9 +174,9 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (audio_alert_check, 1, 4);
         attach (visual_alert_check, 2, 4);
         attach (alerts_info, 1, 5, 2);
-        attach (screen_reader_label, 0, 6, 1, 1);
-        attach (screen_reader_switch, 1, 6, 1, 1);
-        attach (screen_reader_description_label, 1, 7, 1, 1);
+        attach (screen_reader_label, 0, 6);
+        attach (screen_reader_switch, 1, 6, 2);
+        attach (screen_reader_description_label, 1, 7, 2);
         attach (test_button, 0, 8, 4);
 
         applications_settings.bind ("screen-reader-enabled", screen_reader_switch, "active", SettingsBindFlags.DEFAULT);
