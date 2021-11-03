@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
+ * Copyright 2016-2021 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -24,8 +23,7 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
     public signal void set_as_default ();
 
     public Device device { get; construct; }
-    private Gtk.Label name_label;
-    private Gtk.Label description_label;
+
     private Gtk.RadioButton activate_radio;
     private bool ignore_default = false;
 
@@ -33,33 +31,37 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         Object (device: device);
     }
 
-    public void link_to_row (DeviceRow row) {
-        activate_radio.join_group (row.activate_radio);
-        activate_radio.active = device.is_default;
-    }
-
     construct {
+        activate_radio = new Gtk.RadioButton (null);
+
+        var image = new Gtk.Image.from_icon_name (device.icon_name, Gtk.IconSize.DND) {
+            tooltip_text = device.get_nice_form_factor ()
+        };
+
+        var name_label = new Gtk.Label (device.display_name) {
+            xalign = 0
+        };
+
+        var description_label = new Gtk.Label (device.description) {
+            xalign = 0
+        };
+
+        unowned var description_style_context = description_label.get_style_context ();
+        description_style_context.add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        description_style_context.add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+
         var grid = new Gtk.Grid () {
             margin = 6,
             column_spacing = 12,
             orientation = Gtk.Orientation.HORIZONTAL
         };
+        grid.attach (activate_radio, 0, 0, 1, 2);
+        grid.attach (image, 1, 0, 1, 2);
+        grid.attach (name_label, 2, 0);
+        grid.attach (description_label, 2, 1);
 
-        name_label = new Gtk.Label (device.display_name) {
-            hexpand = true,
-            xalign = 0
-        };
-
-        description_label = new Gtk.Label (device.get_nice_form_factor ()) {
-            halign = Gtk.Align.END
-        };
-
-        description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-        activate_radio = new Gtk.RadioButton (null);
-        grid.add (activate_radio);
-        grid.add (name_label);
-        grid.add (description_label);
         add (grid);
+
         activate.connect (() => {
             activate_radio.active = true;
         });
@@ -71,6 +73,7 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         });
 
         device.bind_property ("display-name", name_label, "label");
+        device.bind_property ("description", description_label, "label");
 
         device.removed.connect (() => destroy ());
         device.notify["is-default"].connect (() => {
@@ -78,9 +81,10 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
             activate_radio.active = device.is_default;
             ignore_default = false;
         });
+    }
 
-        device.notify["form-factor"].connect (() => {
-            description_label.label = device.get_nice_form_factor ();
-        });
+    public void link_to_row (DeviceRow row) {
+        activate_radio.join_group (row.activate_radio);
+        activate_radio.active = device.is_default;
     }
 }
