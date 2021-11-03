@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:22+0000\n"
+"POT-Creation-Date: 2021-11-03 17:16+0000\n"
 "PO-Revision-Date: 2018-10-22 18:48+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -20,45 +20,45 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Sound"
 msgstr "Ljud"
 
-#: src/Plug.vala:37
+#: src/Plug.vala:40
 msgid "Change sound and microphone volume"
 msgstr "Ändra ljud- och mikrofonvolym"
 
-#: src/Plug.vala:56 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Device.vala:105
+#: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:105
 msgid "Output"
 msgstr "Utgång"
 
-#: src/Plug.vala:57 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Device.vala:105
+#: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:105
 msgid "Input"
 msgstr "Ingång"
 
-#: src/Plug.vala:101 src/Plug.vala:107
+#: src/Plug.vala:107 src/Plug.vala:113
 msgid "Device"
 msgstr "Enhet"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:108
 msgid "Event Sounds"
 msgstr "Händelseljud"
 
-#: src/Plug.vala:103 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:114
 msgid "Port"
 msgstr "Port"
 
-#: src/Plug.vala:104 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:115
 msgid "Volume"
 msgstr "Volym"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Balance"
 msgstr "Balans"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:116
 msgid "Enable"
 msgstr "Aktivera"
 
@@ -66,56 +66,60 @@ msgstr "Aktivera"
 msgid "Available Sound Output Devices:"
 msgstr "Tillgängliga ljudutgångsenheter:"
 
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:66
 #, fuzzy
 msgid "Output volume:"
 msgstr "Utgångsvolym:"
 
-#: src/OutputPanel.vala:85
+#: src/OutputPanel.vala:93
 msgid "Balance:"
 msgstr "Balans:"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:107
 msgid "Left"
 msgstr "Vänster"
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:108
 msgid "Center"
 msgstr "Center"
 
-#: src/OutputPanel.vala:97
+#: src/OutputPanel.vala:109
 msgid "Right"
 msgstr "Höger"
 
-#: src/OutputPanel.vala:99
+#: src/OutputPanel.vala:111
 #, fuzzy
 msgid "Event alerts:"
 msgstr "Händelseljud:"
 
-#: src/OutputPanel.vala:102
+#: src/OutputPanel.vala:115
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:117
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:122
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:114
+#: src/OutputPanel.vala:130
 msgid "Test Speakers…"
 msgstr "Testa högtalare…"
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:135
+msgid "Screen Reader:"
+msgstr ""
+
+#: src/OutputPanel.vala:156
 msgid "No Output Device"
 msgstr "Ingen utgångsenhet"
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:156
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -126,35 +130,35 @@ msgstr ""
 msgid "Available Sound Input Devices:"
 msgstr "Tillgängliga ljudingångsenheter:"
 
-#: src/InputPanel.vala:55
+#: src/InputPanel.vala:59
 #, fuzzy
 msgid "Input volume:"
 msgstr "Ingångsvolym:"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:70
 msgid "Unamplified"
 msgstr "Oförstärkt"
 
-#: src/InputPanel.vala:63
+#: src/InputPanel.vala:71
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:67
+#: src/InputPanel.vala:78
 #, fuzzy
 msgid "Input level:"
 msgstr "Ingångsnivå:"
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid "No Input Device"
 msgstr "Ingen ingångsenhet"
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr "Ingen ingångsenhet funnen. Anslut en för att kunna spela in ljud."
 
-#: src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
 msgstr "Toppdetektering"
 

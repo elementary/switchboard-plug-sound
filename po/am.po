@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:22+0000\n"
+"POT-Creation-Date: 2021-11-03 17:16+0000\n"
 "PO-Revision-Date: 2014-07-08 06:18+0000\n"
 "Last-Translator: elementary Apps team <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
@@ -18,45 +18,45 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 "X-Generator: Launchpad (build 18204)\n"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Sound"
 msgstr ""
 
-#: src/Plug.vala:37
+#: src/Plug.vala:40
 msgid "Change sound and microphone volume"
 msgstr ""
 
-#: src/Plug.vala:56 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Device.vala:105
+#: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:105
 msgid "Output"
 msgstr ""
 
-#: src/Plug.vala:57 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Device.vala:105
+#: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:105
 msgid "Input"
 msgstr ""
 
-#: src/Plug.vala:101 src/Plug.vala:107
+#: src/Plug.vala:107 src/Plug.vala:113
 msgid "Device"
 msgstr ""
 
-#: src/Plug.vala:102
+#: src/Plug.vala:108
 msgid "Event Sounds"
 msgstr ""
 
-#: src/Plug.vala:103 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:114
 msgid "Port"
 msgstr ""
 
-#: src/Plug.vala:104 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:115
 msgid "Volume"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Balance"
 msgstr ""
 
-#: src/Plug.vala:110
+#: src/Plug.vala:116
 msgid "Enable"
 msgstr ""
 
@@ -64,54 +64,58 @@ msgstr ""
 msgid "Available Sound Output Devices:"
 msgstr ""
 
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:66
 msgid "Output volume:"
 msgstr ""
 
-#: src/OutputPanel.vala:85
+#: src/OutputPanel.vala:93
 msgid "Balance:"
 msgstr ""
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:107
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:108
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:97
+#: src/OutputPanel.vala:109
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:99
+#: src/OutputPanel.vala:111
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:102
+#: src/OutputPanel.vala:115
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:117
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:122
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:114
+#: src/OutputPanel.vala:130
 msgid "Test Speakers…"
 msgstr ""
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:135
+msgid "Screen Reader:"
+msgstr ""
+
+#: src/OutputPanel.vala:156
 msgid "No Output Device"
 msgstr ""
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:156
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -121,33 +125,33 @@ msgstr ""
 msgid "Available Sound Input Devices:"
 msgstr ""
 
-#: src/InputPanel.vala:55
+#: src/InputPanel.vala:59
 msgid "Input volume:"
 msgstr ""
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:70
 msgid "Unamplified"
 msgstr ""
 
-#: src/InputPanel.vala:63
+#: src/InputPanel.vala:71
 msgid "100%"
 msgstr ""
 
-#: src/InputPanel.vala:67
+#: src/InputPanel.vala:78
 msgid "Input level:"
 msgstr ""
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid "No Input Device"
 msgstr ""
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr ""
 
-#: src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
 msgstr ""
 

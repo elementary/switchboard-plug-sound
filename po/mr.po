@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:22+0000\n"
+"POT-Creation-Date: 2021-11-03 17:16+0000\n"
 "PO-Revision-Date: 2019-03-09 18:27+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -20,45 +20,45 @@ msgstr ""
 "X-Generator: Weblate 3.4\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Sound"
 msgstr "ध्वनी"
 
-#: src/Plug.vala:37
+#: src/Plug.vala:40
 msgid "Change sound and microphone volume"
 msgstr "ध्वनी आणि मायक्रोफोन आवाज बदला"
 
-#: src/Plug.vala:56 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Device.vala:105
+#: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:105
 msgid "Output"
 msgstr "आउटपुट"
 
-#: src/Plug.vala:57 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Device.vala:105
+#: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:105
 msgid "Input"
 msgstr "इनपुट"
 
-#: src/Plug.vala:101 src/Plug.vala:107
+#: src/Plug.vala:107 src/Plug.vala:113
 msgid "Device"
 msgstr "उपकरण"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:108
 msgid "Event Sounds"
 msgstr "घटना ध्वनी"
 
-#: src/Plug.vala:103 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:114
 msgid "Port"
 msgstr "पोर्ट"
 
-#: src/Plug.vala:104 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:115
 msgid "Volume"
 msgstr "आवाज"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Balance"
 msgstr "बॅलेन्स"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:116
 msgid "Enable"
 msgstr "सक्षम"
 
@@ -66,39 +66,39 @@ msgstr "सक्षम"
 msgid "Available Sound Output Devices:"
 msgstr "उपलब्ध ध्वनी आउटपुट उपकरणे:"
 
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:66
 msgid "Output volume:"
 msgstr "आउटपुट आवाज:"
 
-#: src/OutputPanel.vala:85
+#: src/OutputPanel.vala:93
 msgid "Balance:"
 msgstr "बॅलेन्स:"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:107
 msgid "Left"
 msgstr "डावा"
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:108
 msgid "Center"
 msgstr "मध्य"
 
-#: src/OutputPanel.vala:97
+#: src/OutputPanel.vala:109
 msgid "Right"
 msgstr "उजवा"
 
-#: src/OutputPanel.vala:99
+#: src/OutputPanel.vala:111
 msgid "Event alerts:"
 msgstr "घटना अलर्ट:"
 
-#: src/OutputPanel.vala:102
+#: src/OutputPanel.vala:115
 msgid "Play sound"
 msgstr "ध्वनी चालवा"
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:117
 msgid "Flash screen"
 msgstr "स्क्रीन फ्लॅश करा"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:122
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -108,15 +108,19 @@ msgstr ""
 "जसे रिक्त इनपुटमध्ये बॅकस्पेस वापरण्याचा प्रयत्न करणे किंवा केवळ एखादे उघडल्यास विंडो स्विच "
 "करणे."
 
-#: src/OutputPanel.vala:114
+#: src/OutputPanel.vala:130
 msgid "Test Speakers…"
 msgstr "स्पीकर्सची चाचणी करा…"
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:135
+msgid "Screen Reader:"
+msgstr ""
+
+#: src/OutputPanel.vala:156
 msgid "No Output Device"
 msgstr "कोणतेही आउटपुट उपकरण नाही"
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:156
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -128,27 +132,27 @@ msgstr ""
 msgid "Available Sound Input Devices:"
 msgstr "उपलब्ध साउंड इनपुट उपकरणे:"
 
-#: src/InputPanel.vala:55
+#: src/InputPanel.vala:59
 msgid "Input volume:"
 msgstr "इनपुट आवाज:"
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:70
 msgid "Unamplified"
 msgstr "न वाढवलेला"
 
-#: src/InputPanel.vala:63
+#: src/InputPanel.vala:71
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:67
+#: src/InputPanel.vala:78
 msgid "Input level:"
 msgstr "इनपुट स्तर:"
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid "No Input Device"
 msgstr "कोणतेही इनपुट डिव्हाइस नाही"
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -156,7 +160,7 @@ msgstr ""
 "येथे कोणतेही इनपुट उपकरण आढळले नाही. आपल्याला काहीही रेकॉर्डिंग प्रारंभ करण्यासाठी "
 "कदाचित एखादे जोडावे लागेल."
 
-#: src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
 msgstr "उंचवटा शोधणे"
 

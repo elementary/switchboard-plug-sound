@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:22+0000\n"
+"POT-Creation-Date: 2021-11-03 17:16+0000\n"
 "PO-Revision-Date: 2021-07-15 02:33+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -41,7 +41,9 @@ msgstr "翻訳の更新"
 
 #: data/sound.appdata.xml.in:22
 msgid "Smoother transition when navigating away from this view"
-msgstr "このプラグからほかのプラグに移動する際、スムーズに画面遷移が行われるように修正"
+msgstr ""
+"このプラグからほかのプラグに移動する際、スムーズに画面遷移が行われるように修"
+"正"
 
 #: data/sound.appdata.xml.in:31
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
