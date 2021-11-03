@@ -132,6 +132,24 @@ public class Sound.OutputPanel : Gtk.Grid {
             margin_top = 18
         };
 
+        var screen_reader_label = new Gtk.Label (_("Screen Reader:")) {
+            halign = Gtk.Align.END,
+            xalign = 1
+        };
+
+        var screen_reader_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
+
+        var screen_reader_description_label = new Gtk.Label ("Provide audio descriptions for items on the screen") {
+            max_width_chars = 60,
+            wrap = true,
+            xalign = 0
+        };
+
+        screen_reader_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         var test_popover = new TestPopover (test_button);
         test_button.bind_property ("active", test_popover, "visible", GLib.BindingFlags.BIDIRECTIONAL);
 
@@ -150,7 +168,13 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (audio_alert_check, 1, 4);
         attach (visual_alert_check, 2, 4);
         attach (alerts_info, 1, 5, 2);
-        attach (test_button, 0, 6, 4);
+        attach (screen_reader_label, 0, 6);
+        attach (screen_reader_switch, 1, 6, 2);
+        attach (screen_reader_description_label, 1, 7, 2);
+        attach (test_button, 0, 8, 4);
+
+        var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
+        applications_settings.bind ("screen-reader-enabled", screen_reader_switch, "active", SettingsBindFlags.DEFAULT);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -172,7 +196,6 @@ public class Sound.OutputPanel : Gtk.Grid {
                                 Canberra.PROP_APPLICATION_LANGUAGE, locale,
                                 null);
         ca_context.open ();
-
         connect_signals ();
     }
 
