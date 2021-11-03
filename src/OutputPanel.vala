@@ -40,11 +40,6 @@ public class Sound.OutputPanel : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 6;
 
-        var available_label = new Gtk.Label (_("Available Sound Output Devices:")) {
-            halign = Gtk.Align.START
-        };
-        available_label.get_style_context ().add_class ("h4");
-
         devices_listbox = new Gtk.ListBox () {
             activate_on_single_click = true
         };
@@ -157,7 +152,6 @@ public class Sound.OutputPanel : Gtk.Grid {
         no_device_grid.show_all ();
         devices_listbox.set_placeholder (no_device_grid);
 
-        attach (available_label, 0, 0, 4, 1);
         attach (devices_frame, 0, 1, 4, 1);
         attach (volume_label, 0, 2);
         attach (volume_scale, 1, 2, 2);
