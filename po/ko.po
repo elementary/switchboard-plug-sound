@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2019-05-13 15:14+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -62,43 +62,39 @@ msgstr "밸런스"
 msgid "Enable"
 msgstr "사용"
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "사용 가능한 출력 장치:"
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "출력 볼륨:"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "밸런스:"
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "왼쪽"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "가운데"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "오른쪽"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr "이벤트 소리:"
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr "소리 재생"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr "플래시 스크린"
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -108,49 +104,45 @@ msgstr ""
 "로 가기를 누른다거나 창이 하나만 열려 있는데 창 전환을 시도하거나 할 때 같은 "
 "상황에서 납니다."
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "스피커 테스트…"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "출력 장치 없음"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr "출력 장치를 찾을 수 없습니다. 소리를 들으시려면 장치를 추가하세요."
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "사용 가능한 입력 장치:"
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 msgid "Input volume:"
 msgstr "입력 볼륨:"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "비증폭"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 msgid "Input level:"
 msgstr "입력 레벨:"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "입력 장치 없음"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -211,6 +203,12 @@ msgstr "컴퓨터"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "이동식"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "사용 가능한 출력 장치:"
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "사용 가능한 입력 장치:"
 
 #~ msgid "Output port:"
 #~ msgstr "출력 포트:"

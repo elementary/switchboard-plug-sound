@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2018-12-11 15:10+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -62,43 +62,39 @@ msgstr "Bilanciamento"
 msgid "Enable"
 msgstr "Attiva"
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "Dispositivi di uscita audio disponibili:"
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "Volume in uscita:"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "Bilanciamento:"
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "Sinistro"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "Centro"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "Destro"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr "Suoni degli avvisi:"
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr "Riproduci suono"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr "Fai lampeggiare lo schermo"
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -109,19 +105,19 @@ msgstr ""
 "un campo di input già vuoto o passare a un'altra finestra quando ce n'è solo "
 "una aperta."
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "Test altoparlanti…"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "Nessun dispositivo di uscita"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -129,31 +125,27 @@ msgstr ""
 "Non è stato rilevato alcun dispositivo di uscita. Potresti aggiungerne uno "
 "per iniziare ad ascoltare qualcosa."
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "Dispositivi di ingresso audio disponibili:"
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 msgid "Input volume:"
 msgstr "Volume in ingresso:"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "Non amplificato"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 msgid "Input level:"
 msgstr "Livello di ingresso:"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "Nessun dispositivo di ingresso"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -216,6 +208,12 @@ msgstr "Computer"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "Portatile"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "Dispositivi di uscita audio disponibili:"
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "Dispositivi di ingresso audio disponibili:"
 
 #~ msgid "Output port:"
 #~ msgstr "Porta di uscita:"

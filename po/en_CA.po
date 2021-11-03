@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2018-03-08 16:25+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -65,63 +65,59 @@ msgstr "Balance:"
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "Available Sound Output Devices:"
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 #, fuzzy
 msgid "Output volume:"
 msgstr "Output Volume:"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "Balance:"
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "Left"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "Right"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "Test Speakers…"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "No Output Device"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -129,33 +125,29 @@ msgstr ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "Available Sound Input Devices:"
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 #, fuzzy
 msgid "Input volume:"
 msgstr "Input Volume:"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "Unamplified"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 #, fuzzy
 msgid "Input level:"
 msgstr "Input Level:"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "No Input Device"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -218,6 +210,12 @@ msgstr "Computer"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "Portable"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "Available Sound Output Devices:"
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "Available Sound Input Devices:"
 
 #, fuzzy
 #~ msgid "Output port:"

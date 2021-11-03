@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2021-05-13 11:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -62,43 +62,39 @@ msgstr "音量平衡"
 msgid "Enable"
 msgstr "启用"
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "可用设备："
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "输出音量："
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "音量均衡："
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "左声道"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "均衡"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "右声道"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr "事件警告："
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr "播放声音"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr "闪烁屏幕"
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -107,49 +103,45 @@ msgstr ""
 "事件警告用于系统无法对输入指令做出响应的情况，如在空白内容处退格、仅有单一窗"
 "口时进行窗口切换等。"
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "声音测试…"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "无输出设备"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr "未检测到音频输出设备，您将无法听到任何声音。"
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "可用设备："
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 msgid "Input volume:"
 msgstr "输入音量："
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "不放大"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 msgid "Input level:"
 msgstr "输入等级："
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "无输入设备"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -210,6 +202,12 @@ msgstr "电脑"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "便携"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "可用设备："
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "可用设备："
 
 #~ msgid "Output port:"
 #~ msgstr "输出端口："

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2018-05-27 13:18+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -58,63 +58,59 @@ msgstr "Echilibru:"
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "Dispozitive de ieșire audio disponibile:"
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 #, fuzzy
 msgid "Output volume:"
 msgstr "Volumul de ieșire:"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "Echilibru:"
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "Stânga"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "Centru"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "Dreapta"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "Încercați boxele …"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "Niciun dispozitiv de ieșire"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -122,33 +118,29 @@ msgstr ""
 "Nu este detectat niciun dispozitiv de ieșire. S-ar putea să doriți să "
 "adăugați unul pentru a începe să ascultați ceva."
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "Dispozitive de intrare a sunetului disponibile:"
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 #, fuzzy
 msgid "Input volume:"
 msgstr "Volumul de intrare:"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "Neamplificat"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100 %"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 #, fuzzy
 msgid "Input level:"
 msgstr "Nivelul de intrare:"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "Nu există dispozitiv de intrare"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -211,6 +203,12 @@ msgstr "Calculator"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "Portabil"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "Dispozitive de ieșire audio disponibile:"
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "Dispozitive de intrare a sunetului disponibile:"
 
 #, fuzzy
 #~ msgid "Output port:"

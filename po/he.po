@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2018-11-17 07:15+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
@@ -62,43 +62,39 @@ msgstr "איזון"
 msgid "Enable"
 msgstr "הפעלה"
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "התקנים זמינים לפלט צליל:"
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "עצמת שמע פלט:"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "איזון:"
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "שמאלי"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "מרכז"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "ימני"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr "התראות אירועים:"
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr "השמעת צליל"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr "הבהוב המסך"
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -107,49 +103,45 @@ msgstr ""
 "התראות אירועים מתרחשות כאשר המערכת לא יכולה לעשות משהו בתגובה לקלט המשתמש, "
 "כמו לנסות למחוק קלט בשדה ריק או להחליף חלונות כאשר יש רק חלון אחד פתוח."
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "בדיקת הרמקולים…"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "אין התקן פלט"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr "לא זוהה התקן פלט. יתכן שעדיף לך להוסיף אחד כדי להתחיל לשמוע משהו."
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "התקני קלט שמע זמינים:"
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 msgid "Input volume:"
 msgstr "עצמת שמע קלט:"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "ללא הגברה"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 msgid "Input level:"
 msgstr "רמת הקלט:"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "אין התקן קלט"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -210,6 +202,12 @@ msgstr "מחשב"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "נייד"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "התקנים זמינים לפלט צליל:"
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "התקני קלט שמע זמינים:"
 
 #~ msgid "Output port:"
 #~ msgstr "פתחת פלט:"

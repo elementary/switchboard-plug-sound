@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2018-11-17 09:30+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -63,43 +63,39 @@ msgstr "Balans"
 msgid "Enable"
 msgstr "Aktiviraj"
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "Dostupni izlazni zvučni uređaji:"
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "Izlazna glasnoća:"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "Balans:"
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "Lijevo"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "Centar"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "Desno"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr "Upozorenja o događajima:"
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr "Sviraj zvuk"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr "Zabljesni ekran"
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -109,19 +105,19 @@ msgstr ""
 "skladu s unosom korisnikom, poput pokušaja da se vrati za jedno mjesto u "
 "praznom polju ili da se prebaci na drugi prozor kada je samo jedan otvoren."
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "Testiraj zvučnike…"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "Nema izlaznih uređaja"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -129,31 +125,27 @@ msgstr ""
 "Nije prepoznat izlazni uređaj. Možda trebati dodati jedan kako biste "
 "započeli sa slušanjem."
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "Dostupni ulazni zvučni uređaji:"
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 msgid "Input volume:"
 msgstr "Ulazna glasnoća:"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "Nepojačano"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 msgid "Input level:"
 msgstr "Nivo ulaza:"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "Nema ulaznih uređaja"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -216,6 +208,12 @@ msgstr "Računar"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "Prijenosni uređaj"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "Dostupni izlazni zvučni uređaji:"
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "Dostupni ulazni zvučni uređaji:"
 
 #~ msgid "Output port:"
 #~ msgstr "Izlazni priključak:"

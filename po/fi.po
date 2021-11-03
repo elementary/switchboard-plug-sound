@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 17:16+0000\n"
+"POT-Creation-Date: 2021-11-03 18:40+0000\n"
 "PO-Revision-Date: 2018-12-07 03:18+0000\n"
 "Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
@@ -62,43 +62,39 @@ msgstr "Tasapaino"
 msgid "Enable"
 msgstr "Käytä"
 
-#: src/OutputPanel.vala:43
-msgid "Available Sound Output Devices:"
-msgstr "Saatavilla olevat ulostulolaitteet:"
-
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:61
 msgid "Output volume:"
 msgstr "Ulostulon äänenvoimakkuus:"
 
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:88
 msgid "Balance:"
 msgstr "Tasapaino:"
 
-#: src/OutputPanel.vala:107
+#: src/OutputPanel.vala:102
 msgid "Left"
 msgstr "Vasen"
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:103
 msgid "Center"
 msgstr "Keski"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:104
 msgid "Right"
 msgstr "Oikea"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:106
 msgid "Event alerts:"
 msgstr "Tapahtumaäänet:"
 
-#: src/OutputPanel.vala:115
+#: src/OutputPanel.vala:110
 msgid "Play sound"
 msgstr "Toista ääni"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:112
 msgid "Flash screen"
 msgstr "Väläytä näyttöä"
 
-#: src/OutputPanel.vala:122
+#: src/OutputPanel.vala:117
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -109,19 +105,19 @@ msgstr ""
 "tyhjässä syötekentässä tai yrittää vaihtaa toiseen ikkunaan vain yhden "
 "ollessa auki."
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:125
 msgid "Test Speakers…"
 msgstr "Testaa kaiuttimia…"
 
-#: src/OutputPanel.vala:135
+#: src/OutputPanel.vala:130
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid "No Output Device"
 msgstr "Ei ulostulolaitetta"
 
-#: src/OutputPanel.vala:156
+#: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -129,31 +125,27 @@ msgstr ""
 "Ulostulolaitetta ei havaittu. Lisää ulostulolaite kuunnellaksesi mitä "
 "tahansa."
 
-#: src/InputPanel.vala:40
-msgid "Available Sound Input Devices:"
-msgstr "Saatavilla olevat sisääntulolaitteet:"
-
-#: src/InputPanel.vala:59
+#: src/InputPanel.vala:56
 msgid "Input volume:"
 msgstr "Sisääntulon äänenvoimakkuus:"
 
-#: src/InputPanel.vala:70
+#: src/InputPanel.vala:67
 msgid "Unamplified"
 msgstr "Vahvistamaton"
 
-#: src/InputPanel.vala:71
+#: src/InputPanel.vala:68
 msgid "100%"
 msgstr "100 %"
 
-#: src/InputPanel.vala:78
+#: src/InputPanel.vala:75
 msgid "Input level:"
 msgstr "Sisääntulon taso:"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid "No Input Device"
 msgstr "Ei sisääntulolaitetta"
 
-#: src/InputPanel.vala:91
+#: src/InputPanel.vala:88
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
@@ -216,6 +208,12 @@ msgstr "Tietokone"
 #: src/Device.vala:103
 msgid "Portable"
 msgstr "Kannettava"
+
+#~ msgid "Available Sound Output Devices:"
+#~ msgstr "Saatavilla olevat ulostulolaitteet:"
+
+#~ msgid "Available Sound Input Devices:"
+#~ msgstr "Saatavilla olevat sisääntulolaitteet:"
 
 #~ msgid "Output port:"
 #~ msgstr "Ulostulon portti:"
