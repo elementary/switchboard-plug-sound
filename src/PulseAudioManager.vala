@@ -625,6 +625,12 @@ public class Sound.PulseAudioManager : GLib.Object {
             if (device.icon_name == null) {
                 device.icon_name = card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_ICON_NAME);
             }
+
+            // audio card is currently represented by a speaker
+            if (is_input && device.icon_name.has_prefix ("audio-card")) {
+                device.icon_name = "audio-input-microphone";
+            }
+
             device.profiles = get_relevant_card_port_profiles (port);
             if (debug_enabled) {
                 foreach (var profile in device.profiles) {
