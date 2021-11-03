@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:22+0000\n"
+"POT-Creation-Date: 2021-11-03 17:16+0000\n"
 "PO-Revision-Date: 2017-09-16 00:16+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -18,48 +18,48 @@ msgstr ""
 "X-Generator: Poedit 2.0.3\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Sound"
 msgstr "音效"
 
-#: src/Plug.vala:37
+#: src/Plug.vala:40
 msgid "Change sound and microphone volume"
 msgstr "變更音量與麥克風收音量"
 
-#: src/Plug.vala:56 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Device.vala:105
+#: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:105
 msgid "Output"
 msgstr "輸出"
 
-#: src/Plug.vala:57 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Device.vala:105
+#: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:105
 msgid "Input"
 msgstr "輸入"
 
-#: src/Plug.vala:101 src/Plug.vala:107
+#: src/Plug.vala:107 src/Plug.vala:113
 msgid "Device"
 msgstr ""
 
-#: src/Plug.vala:102
+#: src/Plug.vala:108
 msgid "Event Sounds"
 msgstr ""
 
-#: src/Plug.vala:103 src/Plug.vala:108
+#: src/Plug.vala:109 src/Plug.vala:114
 #, fuzzy
 msgid "Port"
 msgstr "可攜裝置"
 
-#: src/Plug.vala:104 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:115
 #, fuzzy
 msgid "Volume"
 msgstr "輸入音量："
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 #, fuzzy
 msgid "Balance"
 msgstr "平衡："
 
-#: src/Plug.vala:110
+#: src/Plug.vala:116
 msgid "Enable"
 msgstr ""
 
@@ -67,55 +67,59 @@ msgstr ""
 msgid "Available Sound Output Devices:"
 msgstr "可用聲音輸入裝置："
 
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:66
 #, fuzzy
 msgid "Output volume:"
 msgstr "輸出音量："
 
-#: src/OutputPanel.vala:85
+#: src/OutputPanel.vala:93
 msgid "Balance:"
 msgstr "平衡："
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:107
 msgid "Left"
 msgstr "左"
 
-#: src/OutputPanel.vala:96
+#: src/OutputPanel.vala:108
 msgid "Center"
 msgstr "中"
 
-#: src/OutputPanel.vala:97
+#: src/OutputPanel.vala:109
 msgid "Right"
 msgstr "右"
 
-#: src/OutputPanel.vala:99
+#: src/OutputPanel.vala:111
 msgid "Event alerts:"
 msgstr ""
 
-#: src/OutputPanel.vala:102
+#: src/OutputPanel.vala:115
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:117
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:108
+#: src/OutputPanel.vala:122
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:114
+#: src/OutputPanel.vala:130
 msgid "Test Speakers…"
 msgstr "測試喇叭…"
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:135
+msgid "Screen Reader:"
+msgstr ""
+
+#: src/OutputPanel.vala:156
 msgid "No Output Device"
 msgstr "沒有輸出裝置"
 
-#: src/OutputPanel.vala:121
+#: src/OutputPanel.vala:156
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
@@ -125,35 +129,35 @@ msgstr "沒有偵測到輸出裝置。您可以加入裝置開始收聽。"
 msgid "Available Sound Input Devices:"
 msgstr "可用聲音輸入裝置："
 
-#: src/InputPanel.vala:55
+#: src/InputPanel.vala:59
 #, fuzzy
 msgid "Input volume:"
 msgstr "輸入音量："
 
-#: src/InputPanel.vala:62
+#: src/InputPanel.vala:70
 msgid "Unamplified"
 msgstr "未增幅"
 
-#: src/InputPanel.vala:63
+#: src/InputPanel.vala:71
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:67
+#: src/InputPanel.vala:78
 #, fuzzy
 msgid "Input level:"
 msgstr "輸入等級："
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid "No Input Device"
 msgstr "無輸入裝置"
 
-#: src/InputPanel.vala:77
+#: src/InputPanel.vala:91
 msgid ""
 "There is no input device detected. You might want to add one to start "
 "recording anything."
 msgstr "沒有偵測到輸入裝置。您可以加入裝置展開錄製。"
 
-#: src/InputDeviceMonitor.vala:78
+#: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
 msgstr "峰值檢測"
 
