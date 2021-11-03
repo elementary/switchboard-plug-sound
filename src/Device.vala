@@ -33,6 +33,7 @@ public class Sound.Device : GLib.Object {
     public string port_name { get; construct; }
     public string display_name { get; set; }
     public string form_factor { get; set; }
+    public string icon_name { get; set; }
     public Gee.ArrayList<string> profiles { get; set; }
     public string card_active_profile_name { get; set; }
 
@@ -58,8 +59,6 @@ public class Sound.Device : GLib.Object {
     public PulseAudio.CVolume cvolume;
     public PulseAudio.ChannelMap channel_map;
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
-
-    public string icon_name { get; set; }
 
     public Device (string id, uint32 card_index, string port_name) {
         Object (id: id, card_index: card_index, port_name: port_name);
