@@ -59,34 +59,7 @@ public class Sound.Device : GLib.Object {
     public PulseAudio.ChannelMap channel_map;
     public Gee.LinkedList<PulseAudio.Operation> volume_operations;
 
-    public string icon_name {
-        get {
-            switch (form_factor) {
-                case "computer":
-                case "internal":
-                    return "computer";
-                case "handset":
-                case "hands-free":
-                    return "audio-headset";
-                case "headphone":
-                    return "audio-headphones";
-                case "headset":
-                    return "audio-headset";
-                case "hifi":
-                    return "audio-card";
-                case "microphone":
-                    return "audio-input-microphone";
-                case "speaker":
-                    return "audio-speakers";
-                case "tv":
-                    return "video-display-tv";
-                case "webcam":
-                    return "camera-web";
-                default:
-                    return input ? "audio-input-microphone" : "audio-speakers";
-            }
-        }
-    }
+    public string icon_name { get; set; }
 
     public Device (string id, uint32 card_index, string port_name) {
         Object (id: id, card_index: card_index, port_name: port_name);

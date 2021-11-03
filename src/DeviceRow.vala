@@ -35,7 +35,8 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         activate_radio = new Gtk.RadioButton (null);
 
         var image = new Gtk.Image.from_icon_name (device.icon_name, Gtk.IconSize.DND) {
-            tooltip_text = device.get_nice_form_factor ()
+            tooltip_text = device.get_nice_form_factor (),
+            use_fallback = true
         };
 
         var name_label = new Gtk.Label (device.display_name) {

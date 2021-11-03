@@ -617,7 +617,14 @@ public class Sound.PulseAudioManager : GLib.Object {
             device.description = port.description;
             device.display_name = card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_DESCRIPTION);
             device.form_factor = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
-            debug ("\t\t\tport icon name: %s", port.proplist.gets (PulseAudio.Proplist.PROP_MEDIA_ICON_NAME)); // optional:
+            if (device.form_factor == null) {
+                device.form_factor = card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_FORM_FACTOR);
+            }
+
+            device.icon_name = port.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_ICON_NAME);
+            if (device.icon_name == null) {
+                device.icon_name = card.proplist.gets (PulseAudio.Proplist.PROP_DEVICE_ICON_NAME);
+            }
             device.profiles = get_relevant_card_port_profiles (port);
             if (debug_enabled) {
                 foreach (var profile in device.profiles) {
