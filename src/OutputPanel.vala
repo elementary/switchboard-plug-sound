@@ -132,9 +132,6 @@ public class Sound.OutputPanel : Gtk.Grid {
             margin_top = 18
         };
 
-
-        var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
-
         var screen_reader_label = new Gtk.Label (_("Screen Reader:")) {
             halign = Gtk.Align.END,
             xalign = 1
@@ -176,8 +173,8 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (screen_reader_description_label, 1, 7, 2);
         attach (test_button, 0, 8, 4);
 
+        var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
         applications_settings.bind ("screen-reader-enabled", screen_reader_switch, "active", SettingsBindFlags.DEFAULT);
-
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -201,8 +198,6 @@ public class Sound.OutputPanel : Gtk.Grid {
         ca_context.open ();
         connect_signals ();
     }
-
-
 
     private void default_changed () {
         disconnect_signals ();
