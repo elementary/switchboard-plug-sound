@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-03 18:40+0000\n"
-"PO-Revision-Date: 2021-08-24 21:51+0000\n"
+"PO-Revision-Date: 2021-11-04 00:03+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/hu/>\n"
@@ -110,7 +110,7 @@ msgstr "Hangszórók tesztelése…"
 
 #: src/OutputPanel.vala:130
 msgid "Screen Reader:"
-msgstr ""
+msgstr "Képernyőlvasó:"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
