@@ -22,12 +22,6 @@
 
 // This is a read-only class, set the properties via PulseAudioManager.
 public class Sound.Device : GLib.Object {
-    public class Port {
-        public string name;
-        public string description;
-        public uint32 priority;
-    }
-
     public signal void removed ();
 
     // info from card and ports
@@ -35,9 +29,11 @@ public class Sound.Device : GLib.Object {
     public string id { get; construct; }
     public string card_name { get; set; }
     public uint32 card_index { get; construct; }
+    public string description { get; set; }
     public string port_name { get; construct; }
     public string display_name { get; set; }
     public string form_factor { get; set; }
+    public string icon_name { get; set; }
     public Gee.ArrayList<string> profiles { get; set; }
     public string card_active_profile_name { get; set; }
 
