@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-03 18:40+0000\n"
-"PO-Revision-Date: 2021-11-06 12:00+0000\n"
+"PO-Revision-Date: 2021-11-08 18:46+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/pl/>\n"
@@ -42,15 +42,15 @@ msgstr "Zaktualizowane tłumaczenia"
 
 #: data/sound.appdata.xml.in:22
 msgid "Smoother transition when navigating away from this view"
-msgstr ""
+msgstr "Gładsze przejście przy nawigacji z tego widoku"
 
 #: data/sound.appdata.xml.in:31
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
+msgstr "Naprawiono problem z błędem krytycznym wtyczki usuwania echa PulseAudio"
 
 #: data/sound.appdata.xml.in:55
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "Dodano dźwięk suwaka głośności"
 
 #: data/sound.appdata.xml.in:66
 msgid "elementary, Inc."
