@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-03 18:40+0000\n"
-"PO-Revision-Date: 2018-12-07 03:18+0000\n"
-"Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2021-11-08 11:22+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:39
@@ -111,7 +111,7 @@ msgstr "Testaa kaiuttimia…"
 
 #: src/OutputPanel.vala:130
 msgid "Screen Reader:"
-msgstr ""
+msgstr "Näytönlukija:"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
