@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:29+0000\n"
-"PO-Revision-Date: 2021-07-15 01:02+0000\n"
+"PO-Revision-Date: 2021-11-18 20:03+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/uk/>\n"
@@ -30,15 +30,15 @@ msgstr "Зміна гучності динаміків та мікрофона"
 
 #: data/sound.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Нові функції:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Show device icons"
-msgstr ""
+msgstr "З'явилися піктограми пристроїв"
 
 #: data/sound.appdata.xml.in:15
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Додано перемикач увімкнення читання з екрана"
 
 #: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
 #: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
