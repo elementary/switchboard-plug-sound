@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:29+0000\n"
-"PO-Revision-Date: 2021-11-08 18:46+0000\n"
+"PO-Revision-Date: 2021-11-19 15:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,15 +30,15 @@ msgstr "Zmień głośność dźwięku i mikrofonu"
 
 #: data/sound.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nowe funkcje:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Show device icons"
-msgstr ""
+msgstr "Wyświetlanie ikon urządzenia"
 
 #: data/sound.appdata.xml.in:15
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Przełącznik do włączenia czytnika ekranu"
 
 #: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
 #: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
