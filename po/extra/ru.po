@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:29+0000\n"
-"PO-Revision-Date: 2021-08-14 01:28+0000\n"
-"Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
+"PO-Revision-Date: 2021-11-20 11:51+0000\n"
+"Last-Translator: asdffdsdaf <asdffdsdaf@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -30,15 +30,15 @@ msgstr "Изменить громкость звука и микрофона"
 
 #: data/sound.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Новые возможности:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Show device icons"
-msgstr ""
+msgstr "Отображение значков у девайсов"
 
 #: data/sound.appdata.xml.in:15
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Переключатель чтения с экрана"
 
 #: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
 #: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
