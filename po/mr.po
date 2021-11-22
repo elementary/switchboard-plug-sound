@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 18:40+0000\n"
+"POT-Creation-Date: 2021-11-18 18:29+0000\n"
 "PO-Revision-Date: 2019-03-09 18:27+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -29,12 +29,12 @@ msgid "Change sound and microphone volume"
 msgstr "ध्वनी आणि मायक्रोफोन आवाज बदला"
 
 #: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:105
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:101
 msgid "Output"
 msgstr "आउटपुट"
 
 #: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
-#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:105
+#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:101
 msgid "Input"
 msgstr "इनपुट"
 
@@ -156,55 +156,55 @@ msgstr ""
 msgid "Peak detect"
 msgstr "उंचवटा शोधणे"
 
-#: src/Device.vala:79
+#: src/Device.vala:75
 msgid "Built-in"
 msgstr "अंगभूत"
 
-#: src/Device.vala:81
+#: src/Device.vala:77
 msgid "Speaker"
 msgstr "स्पीकर"
 
-#: src/Device.vala:83
+#: src/Device.vala:79
 msgid "Handset"
 msgstr "हँडसेट"
 
-#: src/Device.vala:85
+#: src/Device.vala:81
 msgid "TV"
 msgstr "टीव्ही"
 
-#: src/Device.vala:87
+#: src/Device.vala:83
 msgid "Webcam"
 msgstr "वेबकॅम"
 
-#: src/Device.vala:89
+#: src/Device.vala:85
 msgid "Microphone"
 msgstr "मायक्रोफोन"
 
-#: src/Device.vala:91
+#: src/Device.vala:87
 msgid "Headset"
 msgstr "हेडसेट"
 
-#: src/Device.vala:93
+#: src/Device.vala:89
 msgid "Headphone"
 msgstr "हेडफोन"
 
-#: src/Device.vala:95
+#: src/Device.vala:91
 msgid "Hands-Free"
 msgstr "हँड-फ्री"
 
-#: src/Device.vala:97
+#: src/Device.vala:93
 msgid "Car"
 msgstr "कार"
 
-#: src/Device.vala:99
+#: src/Device.vala:95
 msgid "HiFi"
 msgstr "हायफाय"
 
-#: src/Device.vala:101
+#: src/Device.vala:97
 msgid "Computer"
 msgstr "कॉम्पुटर"
 
-#: src/Device.vala:103
+#: src/Device.vala:99
 msgid "Portable"
 msgstr "पोर्टेबल"
 

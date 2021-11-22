@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 18:40+0000\n"
-"PO-Revision-Date: 2021-11-08 18:46+0000\n"
+"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"PO-Revision-Date: 2021-11-19 15:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/pl/>\n"
@@ -28,31 +28,45 @@ msgstr "Ustawienia dźwięku"
 msgid "Change sound and microphone volume"
 msgstr "Zmień głośność dźwięku i mikrofonu"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
-#: data/sound.appdata.xml.in:29 data/sound.appdata.xml.in:38
-#: data/sound.appdata.xml.in:46
+#: data/sound.appdata.xml.in:12
+msgid "New features:"
+msgstr "Nowe funkcje:"
+
+#: data/sound.appdata.xml.in:14
+msgid "Show device icons"
+msgstr "Wyświetlanie ikon urządzenia"
+
+#: data/sound.appdata.xml.in:15
+msgid "Switch to enable the screen reader"
+msgstr "Przełącznik do włączenia czytnika ekranu"
+
+#: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
+#: data/sound.appdata.xml.in:51 data/sound.appdata.xml.in:59
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
-#: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:23
-#: data/sound.appdata.xml.in:32 data/sound.appdata.xml.in:40
-#: data/sound.appdata.xml.in:48 data/sound.appdata.xml.in:56
+#: data/sound.appdata.xml.in:19 data/sound.appdata.xml.in:27
+#: data/sound.appdata.xml.in:36 data/sound.appdata.xml.in:45
+#: data/sound.appdata.xml.in:53 data/sound.appdata.xml.in:61
+#: data/sound.appdata.xml.in:69
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:35
 msgid "Smoother transition when navigating away from this view"
 msgstr "Gładsze przejście przy nawigacji z tego widoku"
 
-#: data/sound.appdata.xml.in:31
+#: data/sound.appdata.xml.in:44
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr "Naprawiono problem z błędem krytycznym wtyczki usuwania echa PulseAudio"
+msgstr ""
+"Naprawiono problem z błędem krytycznym wtyczki usuwania echa PulseAudio"
 
-#: data/sound.appdata.xml.in:55
+#: data/sound.appdata.xml.in:68
 msgid "Add volume slider event sound"
 msgstr "Dodano dźwięk suwaka głośności"
 
-#: data/sound.appdata.xml.in:66
+#: data/sound.appdata.xml.in:79
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

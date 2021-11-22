@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 18:40+0000\n"
+"POT-Creation-Date: 2021-11-18 18:29+0000\n"
 "PO-Revision-Date: 2014-07-08 06:08+0000\n"
 "Last-Translator: Eduard Gotwig <g@ox.io>\n"
 "Language-Team: Batak (Indonesia) <btk@li.org>\n"
@@ -27,12 +27,12 @@ msgid "Change sound and microphone volume"
 msgstr ""
 
 #: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:105
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:101
 msgid "Output"
 msgstr ""
 
 #: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
-#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:105
+#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:101
 msgid "Input"
 msgstr ""
 
@@ -147,54 +147,54 @@ msgstr ""
 msgid "Peak detect"
 msgstr ""
 
-#: src/Device.vala:79
+#: src/Device.vala:75
 msgid "Built-in"
 msgstr ""
 
-#: src/Device.vala:81
+#: src/Device.vala:77
 msgid "Speaker"
 msgstr ""
 
-#: src/Device.vala:83
+#: src/Device.vala:79
 msgid "Handset"
 msgstr ""
 
-#: src/Device.vala:85
+#: src/Device.vala:81
 msgid "TV"
 msgstr ""
 
-#: src/Device.vala:87
+#: src/Device.vala:83
 msgid "Webcam"
 msgstr ""
 
-#: src/Device.vala:89
+#: src/Device.vala:85
 msgid "Microphone"
 msgstr ""
 
-#: src/Device.vala:91
+#: src/Device.vala:87
 msgid "Headset"
 msgstr ""
 
-#: src/Device.vala:93
+#: src/Device.vala:89
 msgid "Headphone"
 msgstr ""
 
-#: src/Device.vala:95
+#: src/Device.vala:91
 msgid "Hands-Free"
 msgstr ""
 
-#: src/Device.vala:97
+#: src/Device.vala:93
 msgid "Car"
 msgstr ""
 
-#: src/Device.vala:99
+#: src/Device.vala:95
 msgid "HiFi"
 msgstr ""
 
-#: src/Device.vala:101
+#: src/Device.vala:97
 msgid "Computer"
 msgstr ""
 
-#: src/Device.vala:103
+#: src/Device.vala:99
 msgid "Portable"
 msgstr ""

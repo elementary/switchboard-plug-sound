@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 18:40+0000\n"
-"PO-Revision-Date: 2021-08-12 17:07+0000\n"
+"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"PO-Revision-Date: 2021-11-19 08:57+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,33 +27,46 @@ msgstr "Paramètres de son"
 msgid "Change sound and microphone volume"
 msgstr "Changer le volume du son et du microphone"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
-#: data/sound.appdata.xml.in:29 data/sound.appdata.xml.in:38
-#: data/sound.appdata.xml.in:46
+#: data/sound.appdata.xml.in:12
+msgid "New features:"
+msgstr "Nouvelles fonctionnalités :"
+
+#: data/sound.appdata.xml.in:14
+msgid "Show device icons"
+msgstr "Affichage des icônes des appareils"
+
+#: data/sound.appdata.xml.in:15
+msgid "Switch to enable the screen reader"
+msgstr "Option pour activer le lecteur d'écran"
+
+#: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
+#: data/sound.appdata.xml.in:51 data/sound.appdata.xml.in:59
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
-#: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:23
-#: data/sound.appdata.xml.in:32 data/sound.appdata.xml.in:40
-#: data/sound.appdata.xml.in:48 data/sound.appdata.xml.in:56
+#: data/sound.appdata.xml.in:19 data/sound.appdata.xml.in:27
+#: data/sound.appdata.xml.in:36 data/sound.appdata.xml.in:45
+#: data/sound.appdata.xml.in:53 data/sound.appdata.xml.in:61
+#: data/sound.appdata.xml.in:69
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:35
 msgid "Smoother transition when navigating away from this view"
 msgstr ""
 "Transition plus fluide lorsque cette vue est fermée au cours de la navigation"
 
-#: data/sound.appdata.xml.in:31
+#: data/sound.appdata.xml.in:44
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr ""
 "Correction d'un plantage avec le plugin d'annulation de l'écho de PulseAudio"
 
-#: data/sound.appdata.xml.in:55
+#: data/sound.appdata.xml.in:68
 msgid "Add volume slider event sound"
 msgstr "Ajout du retour sonore lors de la modification du volume"
 
-#: data/sound.appdata.xml.in:66
+#: data/sound.appdata.xml.in:79
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

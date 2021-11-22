@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 18:40+0000\n"
+"POT-Creation-Date: 2021-11-18 18:29+0000\n"
 "PO-Revision-Date: 2020-04-26 15:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -29,12 +29,12 @@ msgid "Change sound and microphone volume"
 msgstr "Alterar volume do som e do microfone"
 
 #: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:105
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:101
 msgid "Output"
 msgstr "Saída"
 
 #: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
-#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:105
+#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:101
 msgid "Input"
 msgstr "Entrada"
 
@@ -156,55 +156,55 @@ msgstr ""
 msgid "Peak detect"
 msgstr "Deteção de picos"
 
-#: src/Device.vala:79
+#: src/Device.vala:75
 msgid "Built-in"
 msgstr "Integrados"
 
-#: src/Device.vala:81
+#: src/Device.vala:77
 msgid "Speaker"
 msgstr "Altifalante"
 
-#: src/Device.vala:83
+#: src/Device.vala:79
 msgid "Handset"
 msgstr "Telefone"
 
-#: src/Device.vala:85
+#: src/Device.vala:81
 msgid "TV"
 msgstr "TV"
 
-#: src/Device.vala:87
+#: src/Device.vala:83
 msgid "Webcam"
 msgstr "Webcam"
 
-#: src/Device.vala:89
+#: src/Device.vala:85
 msgid "Microphone"
 msgstr "Microfone"
 
-#: src/Device.vala:91
+#: src/Device.vala:87
 msgid "Headset"
 msgstr "Auscultadores com microfone"
 
-#: src/Device.vala:93
+#: src/Device.vala:89
 msgid "Headphone"
 msgstr "Auscultadores"
 
-#: src/Device.vala:95
+#: src/Device.vala:91
 msgid "Hands-Free"
 msgstr "Mãos-livres"
 
-#: src/Device.vala:97
+#: src/Device.vala:93
 msgid "Car"
 msgstr "Carro"
 
-#: src/Device.vala:99
+#: src/Device.vala:95
 msgid "HiFi"
 msgstr "Alta-fidelidade"
 
-#: src/Device.vala:101
+#: src/Device.vala:97
 msgid "Computer"
 msgstr "Computador"
 
-#: src/Device.vala:103
+#: src/Device.vala:99
 msgid "Portable"
 msgstr "Portátil"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-03 18:40+0000\n"
+"POT-Creation-Date: 2021-11-18 18:29+0000\n"
 "PO-Revision-Date: 2019-05-09 18:31-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -26,30 +26,43 @@ msgstr ""
 msgid "Change sound and microphone volume"
 msgstr ""
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:20
-#: data/sound.appdata.xml.in:29 data/sound.appdata.xml.in:38
-#: data/sound.appdata.xml.in:46
+#: data/sound.appdata.xml.in:12
+msgid "New features:"
+msgstr ""
+
+#: data/sound.appdata.xml.in:14
+msgid "Show device icons"
+msgstr ""
+
+#: data/sound.appdata.xml.in:15
+msgid "Switch to enable the screen reader"
+msgstr ""
+
+#: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
+#: data/sound.appdata.xml.in:51 data/sound.appdata.xml.in:59
 msgid "Minor updates:"
 msgstr ""
 
-#: data/sound.appdata.xml.in:14 data/sound.appdata.xml.in:23
-#: data/sound.appdata.xml.in:32 data/sound.appdata.xml.in:40
-#: data/sound.appdata.xml.in:48 data/sound.appdata.xml.in:56
+#: data/sound.appdata.xml.in:19 data/sound.appdata.xml.in:27
+#: data/sound.appdata.xml.in:36 data/sound.appdata.xml.in:45
+#: data/sound.appdata.xml.in:53 data/sound.appdata.xml.in:61
+#: data/sound.appdata.xml.in:69
 msgid "Updated translations"
 msgstr ""
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:35
 msgid "Smoother transition when navigating away from this view"
 msgstr ""
 
-#: data/sound.appdata.xml.in:31
+#: data/sound.appdata.xml.in:44
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr ""
 
-#: data/sound.appdata.xml.in:55
+#: data/sound.appdata.xml.in:68
 msgid "Add volume slider event sound"
 msgstr ""
 
-#: data/sound.appdata.xml.in:66
+#: data/sound.appdata.xml.in:79
 msgid "elementary, Inc."
 msgstr ""
