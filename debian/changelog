@@ -1,3 +1,16 @@
+switchboard-plug-sound (2.3.0) bionic; urgency=medium
+
+  * Release 2.3.0 (#214)
+  * Update translation files
+  * Update translation template
+  * DeviceRow: Add icon and split display name (#213)
+  * Remove redundant panel titles (#212)
+  * Expose Screen Reader settings in Audio (#210)
+  * Converted to preferred style of object creation (#209)
+  * l10n: Correctly setup the locales (#203)
+
+ -- elementary OS Team <builds@elementary.io>  Tue, 23 Nov 2021 17:17:36 +0000
+
 switchboard-plug-sound (2.2.7) bionic; urgency=medium
 
   * Release 2.2.7 (#201)
