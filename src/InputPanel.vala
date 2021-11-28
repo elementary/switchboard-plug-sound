@@ -85,7 +85,7 @@ public class Sound.InputPanel : Gtk.Grid {
         level_bar.add_offset_value ("middle", 16.0);
         level_bar.add_offset_value ("high", 14.0);
 
-        var no_device_grid = new Granite.Widgets.AlertView (_("No Input Device"), _("There is no input device detected. You might want to add one to start recording anything."), "audio-input-microphone-symbolic");
+        var no_device_grid = new Granite.Widgets.AlertView (_("No Connected Audio Devices Detected"), _("Check that all cables are securely attached and audio input devices are powered on."), "audio-input-microphone-symbolic");
         no_device_grid.show_all ();
         devices_listbox.set_placeholder (no_device_grid);
 
