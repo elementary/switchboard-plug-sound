@@ -19,7 +19,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Sound.DeviceRow : Gtk.ListBoxRow {
+ public class Sound.DeviceRow : Gtk.ListBoxRow {
     public signal void set_as_default ();
 
     public Device device { get; construct; }
@@ -32,12 +32,19 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
     }
 
     construct {
-        activate_radio = new Gtk.RadioButton (null);
+        activate_radio = new Gtk.RadioButton (null) {
+            halign = Gtk.Align.END,
+            valign = Gtk.Align.END
+        };
 
         var image = new Gtk.Image.from_icon_name (device.icon_name, Gtk.IconSize.DND) {
             tooltip_text = device.get_nice_form_factor (),
             use_fallback = true
         };
+
+        var overlay = new Gtk.Overlay ();
+        overlay.add (image);
+        overlay.add_overlay (activate_radio);
 
         var name_label = new Gtk.Label (device.display_name) {
             xalign = 0
@@ -56,8 +63,8 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
             column_spacing = 12,
             orientation = Gtk.Orientation.HORIZONTAL
         };
-        grid.attach (activate_radio, 0, 0, 1, 2);
-        grid.attach (image, 1, 0, 1, 2);
+
+        grid.attach (overlay, 1, 0, 1, 2);
         grid.attach (name_label, 2, 0);
         grid.attach (description_label, 2, 1);
 
