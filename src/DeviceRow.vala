@@ -19,7 +19,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
- public class Sound.DeviceRow : Gtk.ListBoxRow {
+public class Sound.DeviceRow : Gtk.ListBoxRow {
     public signal void set_as_default ();
 
     public Device device { get; construct; }
