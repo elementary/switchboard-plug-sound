@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-08 11:22+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -142,16 +142,14 @@ msgid "Input level:"
 msgstr "Sisääntulon taso:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Ei sisääntulolaitetta"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Sisääntulolaitetta ei havaittu. Lisää sisääntulolaite nauhoittaaksesi mitä "
-"tahansa."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -208,6 +206,16 @@ msgstr "Tietokone"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Kannettava"
+
+#~ msgid "No Input Device"
+#~ msgstr "Ei sisääntulolaitetta"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Sisääntulolaitetta ei havaittu. Lisää sisääntulolaite nauhoittaaksesi "
+#~ "mitä tahansa."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Saatavilla olevat ulostulolaitteet:"

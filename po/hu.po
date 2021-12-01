@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-04 00:03+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -139,15 +139,14 @@ msgid "Input level:"
 msgstr "Bemeneti szint:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Nincs bemeneti eszköz"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Nem található bemeneti eszköz. Felvételek készítéséhez adjon hozzá egyet."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -204,6 +203,15 @@ msgstr "Számítógép"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Hordozható"
+
+#~ msgid "No Input Device"
+#~ msgstr "Nincs bemeneti eszköz"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Nem található bemeneti eszköz. Felvételek készítéséhez adjon hozzá egyet."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Rendelkezésre álló hangkimeneti eszközök:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-03 19:28+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -138,14 +138,14 @@ msgid "Input level:"
 msgstr "רמת הקלט:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "אין התקן קלט"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
-msgstr "לא זוהה התקן קלט. עדיף להוסיף אחד כדי להתחיל להקליט משהו."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
+msgstr ""
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -202,6 +202,14 @@ msgstr "מחשב"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "נייד"
+
+#~ msgid "No Input Device"
+#~ msgstr "אין התקן קלט"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr "לא זוהה התקן קלט. עדיף להוסיף אחד כדי להתחיל להקליט משהו."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "התקנים זמינים לפלט צליל:"

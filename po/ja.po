@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-04 00:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -141,16 +141,14 @@ msgid "Input level:"
 msgstr "入力レベル:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "入力デバイスがありません"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"入力デバイスが検出されませんでした。録音するには入力デバイスを追加してくださ"
-"い。"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -207,6 +205,16 @@ msgstr "コンピューター"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "ポータブル"
+
+#~ msgid "No Input Device"
+#~ msgstr "入力デバイスがありません"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "入力デバイスが検出されませんでした。録音するには入力デバイスを追加してくだ"
+#~ "さい。"
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "利用可能なサウンド出力デバイス:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2018-11-19 11:15+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
@@ -143,16 +143,14 @@ msgid "Input level:"
 msgstr "Įvesties lygis:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Nėra įvesties įrenginio"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Nėra aptikta jokio įvesties įrenginio. Norėdami pradėti kažką įrašinėti, "
-"jūs, tikriausiai, norėtumėte pridėti įvesties įrenginį."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -209,6 +207,16 @@ msgstr "Kompiuteris"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Portatyvi sistema"
+
+#~ msgid "No Input Device"
+#~ msgstr "Nėra įvesties įrenginio"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Nėra aptikta jokio įvesties įrenginio. Norėdami pradėti kažką įrašinėti, "
+#~ "jūs, tikriausiai, norėtumėte pridėti įvesties įrenginį."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Prieinami garso išvesties įrenginiai:"

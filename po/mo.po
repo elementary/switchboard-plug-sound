@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2018-05-27 13:18+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -137,16 +137,14 @@ msgid "Input level:"
 msgstr "Nivelul de intrare:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Nu există dispozitiv de intrare"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Nu este detectat niciun dispozitiv de intrare. S-ar putea să doriți să "
-"adăugați unul pentru a începe de a înregistrarea ceva."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -203,6 +201,16 @@ msgstr "Calculator"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Portabil"
+
+#~ msgid "No Input Device"
+#~ msgstr "Nu există dispozitiv de intrare"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Nu este detectat niciun dispozitiv de intrare. S-ar putea să doriți să "
+#~ "adăugați unul pentru a începe de a înregistrarea ceva."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Dispozitive de ieșire audio disponibile:"

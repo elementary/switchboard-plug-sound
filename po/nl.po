@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2020-01-05 17:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -141,16 +141,14 @@ msgid "Input level:"
 msgstr "Invoerniveau:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Geen invoerapparaat"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Er is geen invoerapparaat gedetecteerd. U wilt misschien een toevoegen om "
-"een opname te maken."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -207,6 +205,16 @@ msgstr "Computer"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Draagbaar"
+
+#~ msgid "No Input Device"
+#~ msgstr "Geen invoerapparaat"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Er is geen invoerapparaat gedetecteerd. U wilt misschien een toevoegen om "
+#~ "een opname te maken."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Beschikbare geluidsuitgangapparaten:"

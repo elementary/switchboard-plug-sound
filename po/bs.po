@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2018-11-17 09:30+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -142,16 +142,14 @@ msgid "Input level:"
 msgstr "Nivo ulaza:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Nema ulaznih uređaja"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Nije prepoznat ulazni uređaj. Možda trebate dodati jedan kako biste započeli "
-"sa snimanjem."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -208,6 +206,16 @@ msgstr "Računar"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Prijenosni uređaj"
+
+#~ msgid "No Input Device"
+#~ msgstr "Nema ulaznih uređaja"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Nije prepoznat ulazni uređaj. Možda trebate dodati jedan kako biste "
+#~ "započeli sa snimanjem."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Dostupni izlazni zvučni uređaji:"

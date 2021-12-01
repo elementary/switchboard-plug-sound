@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-04 02:22+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -138,14 +138,14 @@ msgid "Input level:"
 msgstr "输入等级："
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "无输入设备"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
-msgstr "未检测到音频输入设备，您将无法录制任何音频。"
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
+msgstr ""
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -202,6 +202,14 @@ msgstr "电脑"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "便携"
+
+#~ msgid "No Input Device"
+#~ msgstr "无输入设备"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr "未检测到音频输入设备，您将无法录制任何音频。"
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "可用设备："

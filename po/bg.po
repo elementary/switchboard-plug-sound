@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2017-04-14 16:34+0000\n"
 "Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -143,16 +143,14 @@ msgid "Input level:"
 msgstr "Ниво:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Липсват микрофони"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Не бяха открити устройства. Моля свържете микрофон ако искате да записвате "
-"звук."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -211,6 +209,16 @@ msgstr ""
 #: src/Device.vala:99
 msgid "Portable"
 msgstr ""
+
+#~ msgid "No Input Device"
+#~ msgstr "Липсват микрофони"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Не бяха открити устройства. Моля свържете микрофон ако искате да "
+#~ "записвате звук."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Устройства за възпроизвеждане на звук:"

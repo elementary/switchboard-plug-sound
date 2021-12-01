@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2018-10-22 18:48+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -141,14 +141,14 @@ msgid "Input level:"
 msgstr "Ingångsnivå:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Ingen ingångsenhet"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
-msgstr "Ingen ingångsenhet funnen. Anslut en för att kunna spela in ljud."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
+msgstr ""
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -205,6 +205,14 @@ msgstr "Dator"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Bärbar"
+
+#~ msgid "No Input Device"
+#~ msgstr "Ingen ingångsenhet"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr "Ingen ingångsenhet funnen. Anslut en för att kunna spela in ljud."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Tillgängliga ljudutgångsenheter:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-04 21:05+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -142,16 +142,14 @@ msgid "Input level:"
 msgstr "Уровень ввода:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Нет устройств ввода"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Устройство ввода не обнаружено. Возможно, вы захотите добавить его, чтобы "
-"начать что-нибудь записывать."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -208,6 +206,16 @@ msgstr "Компьютер"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Портативное устройство"
+
+#~ msgid "No Input Device"
+#~ msgstr "Нет устройств ввода"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Устройство ввода не обнаружено. Возможно, вы захотите добавить его, чтобы "
+#~ "начать что-нибудь записывать."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Доступные устройства вывода:"

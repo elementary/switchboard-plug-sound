@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-04 11:25+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -141,16 +141,14 @@ msgid "Input level:"
 msgstr "Niveau d'enregistrement :"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Aucun périphérique d'enregistrement"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Aucun périphérique d'enregistrement n'a été détecté. Essayez d'en ajouter un "
-"pour commencer à enregistrer quoi que ce soit."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -207,6 +205,16 @@ msgstr "Ordinateur"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Portable"
+
+#~ msgid "No Input Device"
+#~ msgstr "Aucun périphérique d'enregistrement"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Aucun périphérique d'enregistrement n'a été détecté. Essayez d'en ajouter "
+#~ "un pour commencer à enregistrer quoi que ce soit."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Périphériques d'écoute disponibles :"

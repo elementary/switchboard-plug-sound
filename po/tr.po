@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-06 04:01+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -141,16 +141,14 @@ msgid "Input level:"
 msgstr "Giriş düzeyi:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Giriş Aygıtı Yok"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Hiçbir giriş aygıtı algılanmadı. Bir şeyler kaydetmeye başlamak için bir "
-"tane eklemek isteyebilirsiniz."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -207,6 +205,16 @@ msgstr "Bilgisayar"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Taşınabilir"
+
+#~ msgid "No Input Device"
+#~ msgstr "Giriş Aygıtı Yok"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Hiçbir giriş aygıtı algılanmadı. Bir şeyler kaydetmeye başlamak için bir "
+#~ "tane eklemek isteyebilirsiniz."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Kullanılabilir Ses Çıkış Aygıtları:"

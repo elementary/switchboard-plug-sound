@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2017-09-16 00:16+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -140,14 +140,14 @@ msgid "Input level:"
 msgstr "輸入等級："
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "無輸入裝置"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
-msgstr "沒有偵測到輸入裝置。您可以加入裝置展開錄製。"
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
+msgstr ""
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -204,6 +204,14 @@ msgstr "電腦"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "可攜裝置"
+
+#~ msgid "No Input Device"
+#~ msgstr "無輸入裝置"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr "沒有偵測到輸入裝置。您可以加入裝置展開錄製。"
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "可用聲音輸入裝置："

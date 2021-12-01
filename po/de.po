@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2021-11-04 16:52+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -142,16 +142,14 @@ msgid "Input level:"
 msgstr "Eingangspegel:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Kein Eingangsgerät vorhanden"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Es wurde kein Eingangsgerät gefunden. Vielleicht möchten Sie eines "
-"hinzufügen, um mit der Aufnahme zu beginnen."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -208,6 +206,16 @@ msgstr "Rechner"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Tragbares Gerät"
+
+#~ msgid "No Input Device"
+#~ msgstr "Kein Eingangsgerät vorhanden"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Es wurde kein Eingangsgerät gefunden. Vielleicht möchten Sie eines "
+#~ "hinzufügen, um mit der Aufnahme zu beginnen."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Vorhandene Audioausgabegeräte:"

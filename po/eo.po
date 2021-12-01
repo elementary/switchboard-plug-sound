@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2019-07-17 07:12+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -141,16 +141,14 @@ msgid "Input level:"
 msgstr "Eniga nivelo:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Neniu eniga aparato"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Neniu eniga aparato estis eltrovita. Provu instali iun por komenci registri "
-"ion ajn."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -207,6 +205,16 @@ msgstr "Komputilo"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Sinkomputilo"
+
+#~ msgid "No Input Device"
+#~ msgstr "Neniu eniga aparato"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Neniu eniga aparato estis eltrovita. Provu instali iun por komenci "
+#~ "registri ion ajn."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Disponeblaj sonaj eligaj aparatoj:"

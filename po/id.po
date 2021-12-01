@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:29+0000\n"
+"POT-Creation-Date: 2021-12-01 23:57+0000\n"
 "PO-Revision-Date: 2018-10-21 11:01+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
@@ -141,16 +141,14 @@ msgid "Input level:"
 msgstr "Tingkat Masukan:"
 
 #: src/InputPanel.vala:88
-msgid "No Input Device"
-msgstr "Tidak Ada Perangkat Masukan"
+msgid "No Connected Audio Devices Detected"
+msgstr ""
 
 #: src/InputPanel.vala:88
 msgid ""
-"There is no input device detected. You might want to add one to start "
-"recording anything."
+"Check that all cables are securely attached and audio input devices are "
+"powered on."
 msgstr ""
-"Tidak ada perangkat masukan yang terdeteksi. Anda mungkin ingin "
-"menambahkannya untuk mulai merekam apapun."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -207,6 +205,16 @@ msgstr "Komputer"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Portabel"
+
+#~ msgid "No Input Device"
+#~ msgstr "Tidak Ada Perangkat Masukan"
+
+#~ msgid ""
+#~ "There is no input device detected. You might want to add one to start "
+#~ "recording anything."
+#~ msgstr ""
+#~ "Tidak ada perangkat masukan yang terdeteksi. Anda mungkin ingin "
+#~ "menambahkannya untuk mulai merekam apapun."
 
 #~ msgid "Available Sound Output Devices:"
 #~ msgstr "Perangkat Keluaran Suara yang Tersedia:"
