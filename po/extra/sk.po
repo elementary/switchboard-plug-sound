@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:29+0000\n"
-"PO-Revision-Date: 2021-08-25 17:20+0000\n"
+"PO-Revision-Date: 2021-11-30 18:29+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,15 +29,15 @@ msgstr "Meňte hlasitosť zvuku a mikrofónu"
 
 #: data/sound.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkcie:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Show device icons"
-msgstr ""
+msgstr "Zobrazovať ikonky zariadení"
 
 #: data/sound.appdata.xml.in:15
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Prepnite na zapnutie čítačky obrazovky"
 
 #: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
 #: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
