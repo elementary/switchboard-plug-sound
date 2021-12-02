@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-01 23:57+0000\n"
-"PO-Revision-Date: 2021-11-04 11:25+0000\n"
+"PO-Revision-Date: 2021-12-02 13:13+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/fr/>\n"
@@ -142,13 +142,15 @@ msgstr "Niveau d'enregistrement :"
 
 #: src/InputPanel.vala:88
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "Aucun périphérique audio connecté détecté"
 
 #: src/InputPanel.vala:88
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+"Veuillez vérifier que tous les câbles sont bien branchés et que les "
+"périphériques d'entrée audio sont bien allumés."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
