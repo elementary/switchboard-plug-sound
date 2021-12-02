@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-01 23:57+0000\n"
-"PO-Revision-Date: 2021-11-04 00:03+0000\n"
+"PO-Revision-Date: 2021-12-02 08:09+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ja/>\n"
@@ -142,13 +142,13 @@ msgstr "入力レベル:"
 
 #: src/InputPanel.vala:88
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "接続済みの音声デバイスが検出されませんでした"
 
 #: src/InputPanel.vala:88
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
-msgstr ""
+msgstr "ケーブルにゆるみがないか、音声入力デバイスの電源が入っているか確認してください。"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
