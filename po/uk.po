@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-01 23:57+0000\n"
-"PO-Revision-Date: 2021-11-04 00:03+0000\n"
+"PO-Revision-Date: 2021-12-02 01:57+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/uk/>\n"
@@ -143,13 +143,14 @@ msgstr "Рівень введення:"
 
 #: src/InputPanel.vala:88
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "Не виявлено підʼєднаних аудіопристроїв"
 
 #: src/InputPanel.vala:88
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+"Перевірте, чи всі кабелі надійно під’єднані, а пристрої аудіовводу ввімкнено."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
