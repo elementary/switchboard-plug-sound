@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-01 23:57+0000\n"
-"PO-Revision-Date: 2021-11-06 04:01+0000\n"
+"PO-Revision-Date: 2021-12-11 19:27+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/tr/>\n"
@@ -142,13 +142,15 @@ msgstr "Giriş düzeyi:"
 
 #: src/InputPanel.vala:88
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "Bağlı Ses Aygıtı Algılanmadı"
 
 #: src/InputPanel.vala:88
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+"Tüm kabloların güvenli bir şekilde takıldığından ve ses giriş cihazlarının "
+"açık olduğundan emin olun."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
