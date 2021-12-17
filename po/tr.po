@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 09:46+0000\n"
-"PO-Revision-Date: 2021-12-11 19:27+0000\n"
+"PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/tr/>\n"
@@ -114,7 +114,7 @@ msgstr "Ekran Okuyucu:"
 
 #: src/OutputPanel.vala:140
 msgid "Provide audio descriptions for items on the screen"
-msgstr ""
+msgstr "Ekrandaki öğeler için sesli açıklamalar sağlayın"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
