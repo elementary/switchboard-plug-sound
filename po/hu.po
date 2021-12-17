@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 09:46+0000\n"
-"PO-Revision-Date: 2021-12-06 14:37+0000\n"
+"PO-Revision-Date: 2021-12-17 22:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/hu/>\n"
@@ -114,7 +114,7 @@ msgstr "Képernyőlvasó:"
 
 #: src/OutputPanel.vala:140
 msgid "Provide audio descriptions for items on the screen"
-msgstr ""
+msgstr "Hangalapú leírások szolgáltatása a kijelzőn lévő elemekhez"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
