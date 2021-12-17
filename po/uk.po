@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 09:46+0000\n"
-"PO-Revision-Date: 2021-12-02 01:57+0000\n"
+"PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/uk/>\n"
@@ -115,7 +115,7 @@ msgstr "Зчитувач екрана:"
 
 #: src/OutputPanel.vala:140
 msgid "Provide audio descriptions for items on the screen"
-msgstr ""
+msgstr "Надавати звукові описи елементів на екрані"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
