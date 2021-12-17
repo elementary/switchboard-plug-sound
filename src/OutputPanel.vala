@@ -137,7 +137,7 @@ public class Sound.OutputPanel : Gtk.Grid {
             hexpand = true
         };
 
-        var screen_reader_description_label = new Gtk.Label ("Provide audio descriptions for items on the screen") {
+        var screen_reader_description_label = new Gtk.Label (_("Provide audio descriptions for items on the screen")) {
             max_width_chars = 60,
             wrap = true,
             xalign = 0
