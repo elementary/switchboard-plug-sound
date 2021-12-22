@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 09:46+0000\n"
-"PO-Revision-Date: 2020-04-26 15:10+0000\n"
+"PO-Revision-Date: 2021-12-22 19:30+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:39
@@ -110,11 +110,11 @@ msgstr "Testar altifalantes…"
 
 #: src/OutputPanel.vala:130
 msgid "Screen Reader:"
-msgstr ""
+msgstr "Leitor de ecrã:"
 
 #: src/OutputPanel.vala:140
 msgid "Provide audio descriptions for items on the screen"
-msgstr ""
+msgstr "Disponibiliza descrições áudio para itens no ecrã"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
@@ -146,13 +146,15 @@ msgstr "Nível de entrada:"
 
 #: src/InputPanel.vala:88
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "Não foram detetados dispositivos áudio ligados"
 
 #: src/InputPanel.vala:88
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+"Verificar se todos os cabos estão corretamente ligados e se os dispositivos "
+"de entrada de áudio estão ligados."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
