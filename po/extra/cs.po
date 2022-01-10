@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 09:46+0000\n"
-"PO-Revision-Date: 2022-01-10 12:16+0000\n"
+"PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/cs/>\n"
@@ -33,11 +33,11 @@ msgstr "Nové funkce:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Show device icons"
-msgstr ""
+msgstr "Zobrazovány ikony zařízení"
 
 #: data/sound.appdata.xml.in:15
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Přepínač pro zapnutí čtečky obrazovky"
 
 #: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
 #: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
@@ -54,7 +54,7 @@ msgstr "Aktualizovány překlady"
 
 #: data/sound.appdata.xml.in:35
 msgid "Smoother transition when navigating away from this view"
-msgstr ""
+msgstr "Hladší přechod při odchodu z tohoto pohledu"
 
 #: data/sound.appdata.xml.in:44
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
