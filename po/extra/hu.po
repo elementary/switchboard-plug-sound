@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 09:46+0000\n"
-"PO-Revision-Date: 2021-11-25 03:26+0000\n"
+"PO-Revision-Date: 2022-01-19 19:02+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/hu/>\n"
@@ -33,11 +33,11 @@ msgstr "Új funkciók:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Show device icons"
-msgstr ""
+msgstr "Eszközikonok kijelzése"
 
 #: data/sound.appdata.xml.in:15
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Kapcsoló a képernyőolvasóhoz"
 
 #: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
 #: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
@@ -54,19 +54,20 @@ msgstr "Frissített fordítások"
 
 #: data/sound.appdata.xml.in:35
 msgid "Smoother transition when navigating away from this view"
-msgstr ""
+msgstr "Folyamatosabb átmenet a nézetből való elnavigáláskor"
 
 #: data/sound.appdata.xml.in:44
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr ""
+"A PulseAudio visszhangeltávolító moduljával kapcsolatos összeomlás javítva"
 
 #: data/sound.appdata.xml.in:68
 msgid "Add volume slider event sound"
-msgstr ""
+msgstr "Hangeffekt a hangerő-csúszkához"
 
 #: data/sound.appdata.xml.in:79
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #~ msgid "Sound"
 #~ msgstr "Hang"
