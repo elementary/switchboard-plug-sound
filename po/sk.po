@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-17 09:46+0000\n"
-"PO-Revision-Date: 2021-11-30 18:29+0000\n"
+"PO-Revision-Date: 2022-02-05 22:24+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/sk/>\n"
@@ -114,7 +114,7 @@ msgstr "Čítačka obrazovky:"
 
 #: src/OutputPanel.vala:140
 msgid "Provide audio descriptions for items on the screen"
-msgstr ""
+msgstr "Poskytuje zvukový popis položiek na obrazovke"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
@@ -146,13 +146,15 @@ msgstr "Vstupná úroveň:"
 
 #: src/InputPanel.vala:88
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "Neboli nájdené žiadne pripojené zvukové zariadenia"
 
 #: src/InputPanel.vala:88
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+"Skontrolujte, či sú všetky káble dobre zapojené a vstupné zvukové zariadenia "
+"zapnuté."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
