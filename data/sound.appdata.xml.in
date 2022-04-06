@@ -7,6 +7,16 @@
   <icon type="stock">preferences-desktop-sound</icon>
   <translation type="gettext">sound-plug</translation>
   <releases>
+    <release version="2.3.1" date="2022-04-05" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Provide a fallback device icon in case none is available</li>
+          <li>More helpful placeholder text when no input devices are found</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.3.0" date="2021-11-23" urgency="medium">
       <description>
         <p>New features:</p>
