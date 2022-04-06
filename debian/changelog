@@ -1,3 +1,14 @@
+switchboard-plug-sound (2.3.1) bionic; urgency=medium
+
+  * Release 2.3.1 (#224)
+  * Update translation files
+  * Update translation template
+  * OutputPanel: Make screen reader description translatable (#220)
+  * InputPanel: update placeholder text
+  * PulseAudioManager: Provide a fallback icon in case none is available
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 06 Apr 2022 22:53:17 +0000
+
 switchboard-plug-sound (2.3.0) bionic; urgency=medium
 
   * Release 2.3.0 (#214)
