@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-17 09:46+0000\n"
+"POT-Creation-Date: 2022-04-06 20:39+0000\n"
 "PO-Revision-Date: 2019-12-24 22:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,44 +28,53 @@ msgstr ""
 msgid "Change sound and microphone volume"
 msgstr "Spremeni glasnost zvoka in mikrofona"
 
-#: data/sound.appdata.xml.in:12
-msgid "New features:"
-msgstr ""
-
-#: data/sound.appdata.xml.in:14
-msgid "Show device icons"
-msgstr ""
-
-#: data/sound.appdata.xml.in:15
-msgid "Switch to enable the screen reader"
-msgstr ""
-
-#: data/sound.appdata.xml.in:17 data/sound.appdata.xml.in:25
-#: data/sound.appdata.xml.in:33 data/sound.appdata.xml.in:42
-#: data/sound.appdata.xml.in:51 data/sound.appdata.xml.in:59
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:27
+#: data/sound.appdata.xml.in:35 data/sound.appdata.xml.in:43
+#: data/sound.appdata.xml.in:52 data/sound.appdata.xml.in:61
+#: data/sound.appdata.xml.in:69
 msgid "Minor updates:"
 msgstr ""
 
-#: data/sound.appdata.xml.in:19 data/sound.appdata.xml.in:27
-#: data/sound.appdata.xml.in:36 data/sound.appdata.xml.in:45
-#: data/sound.appdata.xml.in:53 data/sound.appdata.xml.in:61
-#: data/sound.appdata.xml.in:69
+#: data/sound.appdata.xml.in:14
+msgid "Provide a fallback device icon in case none is available"
+msgstr ""
+
+#: data/sound.appdata.xml.in:15
+msgid "More helpful placeholder text when no input devices are found"
+msgstr ""
+
+#: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
+#: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
+#: data/sound.appdata.xml.in:55 data/sound.appdata.xml.in:63
+#: data/sound.appdata.xml.in:71 data/sound.appdata.xml.in:79
 msgid "Updated translations"
 msgstr "Posodobljeni prevodi"
 
-#: data/sound.appdata.xml.in:35
+#: data/sound.appdata.xml.in:22
+msgid "New features:"
+msgstr ""
+
+#: data/sound.appdata.xml.in:24
+msgid "Show device icons"
+msgstr ""
+
+#: data/sound.appdata.xml.in:25
+msgid "Switch to enable the screen reader"
+msgstr ""
+
+#: data/sound.appdata.xml.in:45
 msgid "Smoother transition when navigating away from this view"
 msgstr ""
 
-#: data/sound.appdata.xml.in:44
+#: data/sound.appdata.xml.in:54
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr ""
 
-#: data/sound.appdata.xml.in:68
+#: data/sound.appdata.xml.in:78
 msgid "Add volume slider event sound"
 msgstr ""
 
-#: data/sound.appdata.xml.in:79
+#: data/sound.appdata.xml.in:89
 msgid "elementary, Inc."
 msgstr ""
 
