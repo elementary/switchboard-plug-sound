@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2021-11-19 15:16+0000\n"
+"PO-Revision-Date: 2022-04-07 16:25+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,11 +37,12 @@ msgstr "Mniejsze aktualizacje:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Provide a fallback device icon in case none is available"
-msgstr ""
+msgstr "Dodano alternatywną ikonę urządzenia gdy żadna nie jest dostępna"
 
 #: data/sound.appdata.xml.in:15
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
+"Dodano bardziej pomocny tekst zastępczy przy braku urządzeń wprowadzania"
 
 #: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
 #: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
