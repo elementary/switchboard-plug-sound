@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2021-11-21 17:50+0000\n"
+"PO-Revision-Date: 2022-04-07 16:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ca/>\n"
@@ -37,10 +37,14 @@ msgstr "Actualitzacions menors:"
 #: data/sound.appdata.xml.in:14
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
+"Proporciona una icona de dispositiu alternativa en cas que no n'hi hagi cap "
+"de disponible."
 
 #: data/sound.appdata.xml.in:15
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
+"Text de marcador de posició més útil quan no es troba cap dispositiu "
+"d'entrada"
 
 #: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
 #: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
