@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2021-11-19 13:40+0000\n"
+"PO-Revision-Date: 2022-04-09 01:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ja/>\n"
@@ -32,15 +32,15 @@ msgstr "サウンドとマイクのボリュームを変更します"
 #: data/sound.appdata.xml.in:52 data/sound.appdata.xml.in:61
 #: data/sound.appdata.xml.in:69
 msgid "Minor updates:"
-msgstr "軽微なアップデート:"
+msgstr "そのほかのアップデート:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Provide a fallback device icon in case none is available"
-msgstr ""
+msgstr "デバイスアイコンが利用できない場合に、代わりのアイコンを表示するように修正"
 
 #: data/sound.appdata.xml.in:15
 msgid "More helpful placeholder text when no input devices are found"
-msgstr ""
+msgstr "入力デバイスが見つからない場合に表示するプレースホルダーに、より有益な情報を表示するように修正"
 
 #: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
 #: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
