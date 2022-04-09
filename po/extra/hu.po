@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2022-01-19 19:02+0000\n"
+"PO-Revision-Date: 2022-04-10 05:12+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/hu/>\n"
@@ -36,11 +36,13 @@ msgstr "Kisebb frissítések:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Provide a fallback device icon in case none is available"
-msgstr ""
+msgstr "Alapértelmezett ikon biztosítása arra az esetre, ha nincs elérhető"
 
 #: data/sound.appdata.xml.in:15
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
+"Hasznosabb helykitöltő szöveg arra az esetre, ha nem találhatóak bemeneti "
+"eszközök"
 
 #: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
 #: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
