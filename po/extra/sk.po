@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2021-11-30 18:29+0000\n"
+"PO-Revision-Date: 2022-04-20 07:04+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,11 +36,12 @@ msgstr "Menšie aktualizácie:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Provide a fallback device icon in case none is available"
-msgstr ""
+msgstr "Poskytnúť záložnú ikonku zariadenia, ak nie je dostupná žiadna iná"
 
 #: data/sound.appdata.xml.in:15
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
+"Viac nápomocný záložný text, ak nie sú nájdené žiadne vstupné zariadenia"
 
 #: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
 #: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
