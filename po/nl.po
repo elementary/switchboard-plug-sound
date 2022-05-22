@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2020-01-05 17:07+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:39
@@ -76,7 +76,7 @@ msgstr "Links"
 
 #: src/OutputPanel.vala:103
 msgid "Center"
-msgstr "Centreren"
+msgstr "Midden"
 
 #: src/OutputPanel.vala:104
 msgid "Right"
@@ -84,7 +84,7 @@ msgstr "Rechts"
 
 #: src/OutputPanel.vala:106
 msgid "Event alerts:"
-msgstr "Gebeurtenis waarschuwingen:"
+msgstr "Waarschuwingen:"
 
 #: src/OutputPanel.vala:110
 msgid "Play sound"
@@ -100,33 +100,33 @@ msgid ""
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
-"Gebeurtenis waarschuwingen komen voor als het systeem input van een "
-"gebruiker niet kan verwerken, zoals het drukken op backspace in een leeg "
-"inputveld of wisselen van vensters als er maar één venster open is."
+"Waarschuwingen komen voor als het systeem input van een gebruiker niet kan "
+"verwerken, bijvoorbeeld bij het indrukken van de backspace in een leeg "
+"invoerveld of wisselen van vensters als er maar een enkel venster open is."
 
 #: src/OutputPanel.vala:125
 msgid "Test Speakers…"
-msgstr "Test luidsprekers…"
+msgstr "Luidsprekers testen…"
 
 #: src/OutputPanel.vala:130
 msgid "Screen Reader:"
-msgstr ""
+msgstr "Schermlezer:"
 
 #: src/OutputPanel.vala:140
 msgid "Provide audio descriptions for items on the screen"
-msgstr ""
+msgstr "Audiobeschrijving geven van elementen op het scherm"
 
 #: src/OutputPanel.vala:151
 msgid "No Output Device"
-msgstr "Geen uitgangsapparaat"
+msgstr "Geen uitvoerapparaat"
 
 #: src/OutputPanel.vala:151
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
 msgstr ""
-"Er is geen uitgangsapparaat gedetecteerd. U wilt misschien een toevoegen om "
-"te beginnen naar iets te luisteren."
+"Er is geen uitvoerapparaat gedetecteerd. Misschien wilt u een toevoegen om "
+"geluidsopnames te maken."
 
 #: src/InputPanel.vala:56
 msgid "Input volume:"
@@ -146,13 +146,15 @@ msgstr "Invoerniveau:"
 
 #: src/InputPanel.vala:88
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "Geen verbonden audio-apparaten gedetecteerd"
 
 #: src/InputPanel.vala:88
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+"Controleer of alle kabels goed zijn aangesloten en of de audio-"
+"invoerapparaten zijn ingeschakeld."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -192,7 +194,7 @@ msgstr "Koptelefoon"
 
 #: src/Device.vala:91
 msgid "Hands-Free"
-msgstr "Handenvrij"
+msgstr "Hands-free"
 
 #: src/Device.vala:93
 msgid "Car"
