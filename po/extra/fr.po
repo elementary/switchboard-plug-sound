@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2022-04-07 16:25+0000\n"
+"PO-Revision-Date: 2022-05-30 10:51+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/fr/>\n"
@@ -32,7 +32,7 @@ msgstr "Changer le volume du son et du microphone"
 #: data/sound.appdata.xml.in:52 data/sound.appdata.xml.in:61
 #: data/sound.appdata.xml.in:69
 msgid "Minor updates:"
-msgstr "Mises à jour mineures :"
+msgstr "Mises à jour mineures :"
 
 #: data/sound.appdata.xml.in:14
 msgid "Provide a fallback device icon in case none is available"
