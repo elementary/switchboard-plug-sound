@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
 "PO-Revision-Date: 2022-08-01 20:11+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -37,7 +37,7 @@ msgstr "Незначительные обновления:"
 
 #: data/sound.appdata.xml.in:14
 msgid "Provide a fallback device icon in case none is available"
-msgstr ""
+msgstr "Показ резервного значка устройства в случае, если таковой недоступен"
 
 #: data/sound.appdata.xml.in:15
 msgid "More helpful placeholder text when no input devices are found"
