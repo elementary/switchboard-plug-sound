@@ -150,7 +150,9 @@ public class Sound.InputPanel : Gtk.Grid {
             default_device = pam.default_input;
             if (default_device != null) {
                 device_monitor.set_device (default_device);
-                volume_switch.active = !default_device.is_muted;
+                if (volume_switch.active == default_device.is_muted) {
+                    volume_switch.activate ();
+                }
                 volume_scale.set_value (default_device.volume);
                 default_device.notify.connect (device_notify);
             }
@@ -163,7 +165,9 @@ public class Sound.InputPanel : Gtk.Grid {
         disconnect_signals ();
         switch (pspec.get_name ()) {
             case "is-muted":
-                volume_switch.active = !default_device.is_muted;
+                if (volume_switch.active == default_device.is_muted) {
+                    volume_switch.activate ();
+                }
                 break;
             case "volume":
                 volume_scale.set_value (default_device.volume);
