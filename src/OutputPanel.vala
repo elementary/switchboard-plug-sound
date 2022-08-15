@@ -33,6 +33,7 @@ public class Sound.OutputPanel : Gtk.Grid {
     unowned Canberra.Context? ca_context = null;
 
     uint notify_timeout_id = 0;
+    public bool screen_reader_active { get; set; }
 
     construct {
         margin = 12;
@@ -168,7 +169,12 @@ public class Sound.OutputPanel : Gtk.Grid {
         attach (test_button, 0, 8, 4);
 
         var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
-        applications_settings.bind ("screen-reader-enabled", screen_reader_switch, "active", SettingsBindFlags.DEFAULT);
+        applications_settings.bind ("screen-reader-enabled", this, "screen_reader_active", SettingsBindFlags.DEFAULT);
+        bind_property ("screen_reader_active", screen_reader_switch, "active", GLib.BindingFlags.BIDIRECTIONAL, () => {
+            if (screen_reader_active != screen_reader_switch.active) {
+                screen_reader_switch.activate ();
+            }
+        }, null);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -202,7 +208,9 @@ public class Sound.OutputPanel : Gtk.Grid {
 
             default_device = pam.default_output;
             if (default_device != null) {
-                volume_switch.active = !default_device.is_muted;
+                if (volume_switch.active == default_device.is_muted) {
+                    volume_switch.activate ();
+                }
                 volume_scale.set_value (default_device.volume);
                 balance_scale.set_value (default_device.balance);
                 default_device.notify.connect (device_notify);
@@ -246,7 +254,9 @@ public class Sound.OutputPanel : Gtk.Grid {
         disconnect_signals ();
         switch (pspec.get_name ()) {
             case "is-muted":
-                volume_switch.active = !default_device.is_muted;
+                if (volume_switch.active == default_device.is_muted) {
+                    volume_switch.activate ();
+                }
                 break;
             case "volume":
                 volume_scale.set_value (default_device.volume);
