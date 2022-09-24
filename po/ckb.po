@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2022-09-21 15:36+0000\n"
+"PO-Revision-Date: 2022-09-25 06:58+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/ckb/>\n"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/OutputPanel.vala:102
 msgid "Left"
-msgstr ""
+msgstr "چەپ"
 
 #: src/OutputPanel.vala:103
 msgid "Center"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/OutputPanel.vala:104
 msgid "Right"
-msgstr ""
+msgstr "ڕاست"
 
 #: src/OutputPanel.vala:106
 msgid "Event alerts:"
