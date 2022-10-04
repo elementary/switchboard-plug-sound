@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 20:39+0000\n"
-"PO-Revision-Date: 2022-09-21 15:36+0000\n"
+"PO-Revision-Date: 2022-10-04 21:31+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/sound-plug-extra/ckb/>\n"
@@ -25,7 +25,7 @@ msgstr "ڕێکخستنەکانی دەنگ"
 
 #: data/sound.appdata.xml.in:6
 msgid "Change sound and microphone volume"
-msgstr ""
+msgstr "گۆڕینی بەرزی دەنگ و مایکرۆفۆن"
 
 #: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:27
 #: data/sound.appdata.xml.in:35 data/sound.appdata.xml.in:43
