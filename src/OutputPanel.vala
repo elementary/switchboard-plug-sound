@@ -35,12 +35,12 @@ public class Sound.OutputPanel : Gtk.Box {
     }
 
     construct {
-        var no_device_grid = new Granite.Widgets.AlertView (
-            _("No Connected Output Devices Detected"),
-            _("Check that all cables are securely attached and audio output devices are powered on."),
-            "audio-volume-muted-symbolic"
-        );
-        no_device_grid.show_all ();
+        var no_device_grid = new Granite.Placeholder (
+            _("No Connected Output Devices Detected")
+        ) {
+            description = _("Check that all cables are securely attached and audio output devices are powered on."),
+            icon = new ThemedIcon ("audio-volume-muted-symbolic")
+        };
 
         devices_listbox = new Gtk.ListBox () {
             activate_on_single_click = true,
@@ -48,7 +48,7 @@ public class Sound.OutputPanel : Gtk.Box {
         };
         devices_listbox.set_placeholder (no_device_grid);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = devices_listbox
         };
 
@@ -96,11 +96,12 @@ public class Sound.OutputPanel : Gtk.Box {
             xalign = 0
         };
 
-        alerts_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        alerts_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var test_popover = new TestPopover ();
 
         var test_button = new Gtk.MenuButton () {
+            direction = Gtk.ArrowType.UP,
             halign = Gtk.Align.END,
             label = _("Test Speakers…"),
             popover = test_popover
@@ -119,7 +120,7 @@ public class Sound.OutputPanel : Gtk.Box {
             wrap = true,
             xalign = 0
         };
-        screen_reader_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        screen_reader_description_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var output_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -130,10 +131,10 @@ public class Sound.OutputPanel : Gtk.Box {
         output_grid.attach (balance_scale, 0, 2);
 
         var alerts_box = new Gtk.Box (VERTICAL, 0);
-        alerts_box.add (alerts_label);
-        alerts_box.add (alerts_info);
-        alerts_box.add (audio_alert_check);
-        alerts_box.add (visual_alert_check);
+        alerts_box.append (alerts_label);
+        alerts_box.append (alerts_info);
+        alerts_box.append (audio_alert_check);
+        alerts_box.append (visual_alert_check);
 
         var screen_reader_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -144,11 +145,11 @@ public class Sound.OutputPanel : Gtk.Box {
 
         orientation = VERTICAL;
         spacing = 18;
-        add (devices_frame);
-        add (output_grid);
-        add (alerts_box);
-        add (screen_reader_grid);
-        add (test_button);
+        append (devices_frame);
+        append (output_grid);
+        append (alerts_box);
+        append (screen_reader_grid);
+        append (test_button);
 
         var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
         applications_settings.bind ("screen-reader-enabled", this, "screen_reader_active", SettingsBindFlags.DEFAULT);
@@ -168,10 +169,10 @@ public class Sound.OutputPanel : Gtk.Box {
         var wm_settings = new Settings ("org.gnome.desktop.wm.preferences");
         wm_settings.bind ("visual-bell", visual_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
-        ca_context = CanberraGtk.context_get ();
+        ca_context = CanberraGtk4.context_get ();
         var locale = Intl.setlocale (LocaleCategory.MESSAGES, null);
-        ca_context.change_props (Canberra.PROP_APPLICATION_NAME, "switchboard-plug-sound",
-                                Canberra.PROP_APPLICATION_ID, "io.elementary.switchboard.sound",
+        ca_context.change_props (Canberra.PROP_APPLICATION_NAME, "Sound Settings",
+                                Canberra.PROP_APPLICATION_ID, "io.elementary.settings.sound",
                                 Canberra.PROP_APPLICATION_LANGUAGE, locale,
                                 null);
         ca_context.open ();
@@ -185,17 +186,17 @@ public class Sound.OutputPanel : Gtk.Box {
             screen_reader_description_label.label = screenreader_shortcut_label;
         });
 
-        volume_scale.button_release_event.connect (e => {
-            notify_change ();
-            return false;
-        });
+        // volume_scale.button_release_event.connect (e => {
+        //     notify_change ();
+        //     return false;
+        // });
 
-        volume_scale.scroll_event.connect (e => {
-            if (volume_scale.get_value () < 100) {
-                notify_change ();
-            }
-            return false;
-        });
+        // volume_scale.scroll_event.connect (e => {
+        //     if (volume_scale.get_value () < 100) {
+        //         notify_change ();
+        //     }
+        //     return false;
+        // });
     }
 
     private void default_changed () {
@@ -282,8 +283,7 @@ public class Sound.OutputPanel : Gtk.Box {
             device_row.link_to_row ((DeviceRow) row);
         }
 
-        device_row.show_all ();
-        devices_listbox.add (device_row);
+        devices_listbox.append (device_row);
         device_row.set_as_default.connect (() => {
             pam.set_default_device.begin (device);
         });
