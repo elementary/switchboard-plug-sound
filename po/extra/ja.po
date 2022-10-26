@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:39+0000\n"
+"POT-Creation-Date: 2022-10-26 17:59+0000\n"
 "PO-Revision-Date: 2022-04-09 01:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -27,55 +27,63 @@ msgstr "サウンドの設定"
 msgid "Change sound and microphone volume"
 msgstr "サウンドとマイクのボリュームを変更します"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:27
-#: data/sound.appdata.xml.in:35 data/sound.appdata.xml.in:43
-#: data/sound.appdata.xml.in:52 data/sound.appdata.xml.in:61
-#: data/sound.appdata.xml.in:69
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:40 data/sound.appdata.xml.in:48
+#: data/sound.appdata.xml.in:56 data/sound.appdata.xml.in:65
+#: data/sound.appdata.xml.in:74 data/sound.appdata.xml.in:82
 msgid "Minor updates:"
 msgstr "そのほかのアップデート:"
 
 #: data/sound.appdata.xml.in:14
-msgid "Provide a fallback device icon in case none is available"
-msgstr "デバイスアイコンが利用できない場合に、代わりのアイコンを表示するように修正"
+msgid "Use device form factor when available to assign more accurate icons"
+msgstr ""
 
-#: data/sound.appdata.xml.in:15
-msgid "More helpful placeholder text when no input devices are found"
-msgstr "入力デバイスが見つからない場合に表示するプレースホルダーに、より有益な情報を表示するように修正"
-
-#: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
-#: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
-#: data/sound.appdata.xml.in:55 data/sound.appdata.xml.in:63
-#: data/sound.appdata.xml.in:71 data/sound.appdata.xml.in:79
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:29
+#: data/sound.appdata.xml.in:42 data/sound.appdata.xml.in:50
+#: data/sound.appdata.xml.in:59 data/sound.appdata.xml.in:68
+#: data/sound.appdata.xml.in:76 data/sound.appdata.xml.in:84
+#: data/sound.appdata.xml.in:92
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:27
+msgid "Provide a fallback device icon in case none is available"
+msgstr ""
+"デバイスアイコンが利用できない場合に、代わりのアイコンを表示するように修正"
+
+#: data/sound.appdata.xml.in:28
+msgid "More helpful placeholder text when no input devices are found"
+msgstr ""
+"入力デバイスが見つからない場合に表示するプレースホルダーに、より有益な情報を"
+"表示するように修正"
+
+#: data/sound.appdata.xml.in:35
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/sound.appdata.xml.in:24
+#: data/sound.appdata.xml.in:37
 msgid "Show device icons"
 msgstr "デバイスのアイコンを表示するように変更"
 
-#: data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:38
 msgid "Switch to enable the screen reader"
 msgstr "スクリーンリーダーを有効化できるスイッチを追加"
 
-#: data/sound.appdata.xml.in:45
+#: data/sound.appdata.xml.in:58
 msgid "Smoother transition when navigating away from this view"
 msgstr ""
 "このプラグからほかのプラグに移動する際、スムーズに画面遷移が行われるように修"
 "正"
 
-#: data/sound.appdata.xml.in:54
+#: data/sound.appdata.xml.in:67
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr "PulseAudio エコーキャンセルプラグインによって生じるクラッシュを修正"
 
-#: data/sound.appdata.xml.in:78
+#: data/sound.appdata.xml.in:91
 msgid "Add volume slider event sound"
 msgstr "音量スライダーにイベントサウンドを追加"
 
-#: data/sound.appdata.xml.in:89
+#: data/sound.appdata.xml.in:102
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

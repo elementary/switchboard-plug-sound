@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:39+0000\n"
+"POT-Creation-Date: 2022-10-26 17:59+0000\n"
 "PO-Revision-Date: 2022-04-20 07:04+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
-"sound-plug-extra/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/sound-"
+"plug-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,54 +27,59 @@ msgstr "Nastavenia zvuku"
 msgid "Change sound and microphone volume"
 msgstr "Meňte hlasitosť zvuku a mikrofónu"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:27
-#: data/sound.appdata.xml.in:35 data/sound.appdata.xml.in:43
-#: data/sound.appdata.xml.in:52 data/sound.appdata.xml.in:61
-#: data/sound.appdata.xml.in:69
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:40 data/sound.appdata.xml.in:48
+#: data/sound.appdata.xml.in:56 data/sound.appdata.xml.in:65
+#: data/sound.appdata.xml.in:74 data/sound.appdata.xml.in:82
 msgid "Minor updates:"
 msgstr "Menšie aktualizácie:"
 
 #: data/sound.appdata.xml.in:14
+msgid "Use device form factor when available to assign more accurate icons"
+msgstr ""
+
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:29
+#: data/sound.appdata.xml.in:42 data/sound.appdata.xml.in:50
+#: data/sound.appdata.xml.in:59 data/sound.appdata.xml.in:68
+#: data/sound.appdata.xml.in:76 data/sound.appdata.xml.in:84
+#: data/sound.appdata.xml.in:92
+msgid "Updated translations"
+msgstr "Aktualizované preklady"
+
+#: data/sound.appdata.xml.in:27
 msgid "Provide a fallback device icon in case none is available"
 msgstr "Poskytnúť záložnú ikonku zariadenia, ak nie je dostupná žiadna iná"
 
-#: data/sound.appdata.xml.in:15
+#: data/sound.appdata.xml.in:28
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
 "Viac nápomocný záložný text, ak nie sú nájdené žiadne vstupné zariadenia"
 
-#: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
-#: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
-#: data/sound.appdata.xml.in:55 data/sound.appdata.xml.in:63
-#: data/sound.appdata.xml.in:71 data/sound.appdata.xml.in:79
-msgid "Updated translations"
-msgstr "Aktualizované preklady"
-
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:35
 msgid "New features:"
 msgstr "Nové funkcie:"
 
-#: data/sound.appdata.xml.in:24
+#: data/sound.appdata.xml.in:37
 msgid "Show device icons"
 msgstr "Zobrazovať ikonky zariadení"
 
-#: data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:38
 msgid "Switch to enable the screen reader"
 msgstr "Prepnite na zapnutie čítačky obrazovky"
 
-#: data/sound.appdata.xml.in:45
+#: data/sound.appdata.xml.in:58
 msgid "Smoother transition when navigating away from this view"
 msgstr "Hladšia animácia prechodu pri navigovaní preč z tohto zobrazenia"
 
-#: data/sound.appdata.xml.in:54
+#: data/sound.appdata.xml.in:67
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr "Opravený pád so zásuvným modulom PulseAudio pre potláčanie ozveny"
 
-#: data/sound.appdata.xml.in:78
+#: data/sound.appdata.xml.in:91
 msgid "Add volume slider event sound"
 msgstr "Pridanie zvuku pri prestavovaní posuvníka hlasitosti"
 
-#: data/sound.appdata.xml.in:89
+#: data/sound.appdata.xml.in:102
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

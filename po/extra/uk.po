@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:39+0000\n"
+"POT-Creation-Date: 2022-10-26 17:59+0000\n"
 "PO-Revision-Date: 2022-05-29 23:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,52 +28,58 @@ msgstr "Налаштування звуку"
 msgid "Change sound and microphone volume"
 msgstr "Зміна гучності динаміків та мікрофона"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:27
-#: data/sound.appdata.xml.in:35 data/sound.appdata.xml.in:43
-#: data/sound.appdata.xml.in:52 data/sound.appdata.xml.in:61
-#: data/sound.appdata.xml.in:69
+#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:40 data/sound.appdata.xml.in:48
+#: data/sound.appdata.xml.in:56 data/sound.appdata.xml.in:65
+#: data/sound.appdata.xml.in:74 data/sound.appdata.xml.in:82
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
 #: data/sound.appdata.xml.in:14
-msgid "Provide a fallback device icon in case none is available"
-msgstr "Додано запасну піктограму пристрою на випадок, якщо вона недоступна"
+msgid "Use device form factor when available to assign more accurate icons"
+msgstr ""
 
-#: data/sound.appdata.xml.in:15
-msgid "More helpful placeholder text when no input devices are found"
-msgstr "Корисніший текст заповнювач, коли не знайдено жодних пристроїв введення"
-
-#: data/sound.appdata.xml.in:16 data/sound.appdata.xml.in:29
-#: data/sound.appdata.xml.in:37 data/sound.appdata.xml.in:46
-#: data/sound.appdata.xml.in:55 data/sound.appdata.xml.in:63
-#: data/sound.appdata.xml.in:71 data/sound.appdata.xml.in:79
+#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:29
+#: data/sound.appdata.xml.in:42 data/sound.appdata.xml.in:50
+#: data/sound.appdata.xml.in:59 data/sound.appdata.xml.in:68
+#: data/sound.appdata.xml.in:76 data/sound.appdata.xml.in:84
+#: data/sound.appdata.xml.in:92
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/sound.appdata.xml.in:22
+#: data/sound.appdata.xml.in:27
+msgid "Provide a fallback device icon in case none is available"
+msgstr "Додано запасну піктограму пристрою на випадок, якщо вона недоступна"
+
+#: data/sound.appdata.xml.in:28
+msgid "More helpful placeholder text when no input devices are found"
+msgstr ""
+"Корисніший текст заповнювач, коли не знайдено жодних пристроїв введення"
+
+#: data/sound.appdata.xml.in:35
 msgid "New features:"
 msgstr "Нові функції:"
 
-#: data/sound.appdata.xml.in:24
+#: data/sound.appdata.xml.in:37
 msgid "Show device icons"
 msgstr "З'явилися піктограми пристроїв"
 
-#: data/sound.appdata.xml.in:25
+#: data/sound.appdata.xml.in:38
 msgid "Switch to enable the screen reader"
 msgstr "Додано перемикач увімкнення читання з екрана"
 
-#: data/sound.appdata.xml.in:45
+#: data/sound.appdata.xml.in:58
 msgid "Smoother transition when navigating away from this view"
 msgstr "Плавніший перехід під час переходу до іншого подання"
 
-#: data/sound.appdata.xml.in:54
+#: data/sound.appdata.xml.in:67
 msgid "Fix crash with PulseAudio's echo cancellation plugin"
 msgstr "Виправлено збої плагіна прибирання луни в PulseAudio"
 
-#: data/sound.appdata.xml.in:78
+#: data/sound.appdata.xml.in:91
 msgid "Add volume slider event sound"
 msgstr "Додано звук події повзунка гучності"
 
-#: data/sound.appdata.xml.in:89
+#: data/sound.appdata.xml.in:102
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
