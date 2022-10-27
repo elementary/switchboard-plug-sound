@@ -7,7 +7,7 @@
   <icon type="stock">preferences-desktop-sound</icon>
   <translation type="gettext">sound-plug</translation>
   <releases>
-    <release version="2.3.2" date="2022-10-25" urgency="medium">
+    <release version="2.3.2" date="2022-10-26" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
