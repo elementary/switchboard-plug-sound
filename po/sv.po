@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:39+0000\n"
+"POT-Creation-Date: 2022-10-26 17:59+0000\n"
 "PO-Revision-Date: 2018-10-22 18:48+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -62,64 +62,64 @@ msgstr "Balans"
 msgid "Enable"
 msgstr "Aktivera"
 
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:62
 #, fuzzy
 msgid "Output volume:"
 msgstr "Utgångsvolym:"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:89
 msgid "Balance:"
 msgstr "Balans:"
 
-#: src/OutputPanel.vala:102
+#: src/OutputPanel.vala:103
 msgid "Left"
 msgstr "Vänster"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:104
 msgid "Center"
 msgstr "Center"
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:105
 msgid "Right"
 msgstr "Höger"
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:107
 #, fuzzy
 msgid "Event alerts:"
 msgstr "Händelseljud:"
 
-#: src/OutputPanel.vala:110
+#: src/OutputPanel.vala:111
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:112
+#: src/OutputPanel.vala:113
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:118
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
 "only one is open."
 msgstr ""
 
-#: src/OutputPanel.vala:125
+#: src/OutputPanel.vala:126
 msgid "Test Speakers…"
 msgstr "Testa högtalare…"
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:131
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:140
+#: src/OutputPanel.vala:141
 msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
-#: src/OutputPanel.vala:151
+#: src/OutputPanel.vala:152
 msgid "No Output Device"
 msgstr "Ingen utgångsenhet"
 
-#: src/OutputPanel.vala:151
+#: src/OutputPanel.vala:152
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

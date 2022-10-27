@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:39+0000\n"
+"POT-Creation-Date: 2022-10-26 17:59+0000\n"
 "PO-Revision-Date: 2021-12-17 12:02+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -62,39 +62,39 @@ msgstr "Balanç"
 msgid "Enable"
 msgstr "Habilita"
 
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:62
 msgid "Output volume:"
 msgstr "Volum de sortida:"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:89
 msgid "Balance:"
 msgstr "Balanç:"
 
-#: src/OutputPanel.vala:102
+#: src/OutputPanel.vala:103
 msgid "Left"
 msgstr "Esquerra"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:104
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:105
 msgid "Right"
 msgstr "Dreta"
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:107
 msgid "Event alerts:"
 msgstr "Alertes d'esdeveniments:"
 
-#: src/OutputPanel.vala:110
+#: src/OutputPanel.vala:111
 msgid "Play sound"
 msgstr "Reprodueix un so"
 
-#: src/OutputPanel.vala:112
+#: src/OutputPanel.vala:113
 msgid "Flash screen"
 msgstr "Pantalla de benvinguda"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:118
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -104,23 +104,23 @@ msgstr ""
 "com a resposta a una petició de l'usuari, com ara intentar fer retrocedir el "
 "cursor en un camp buit o canviar de finestra quan només n'hi ha una."
 
-#: src/OutputPanel.vala:125
+#: src/OutputPanel.vala:126
 msgid "Test Speakers…"
 msgstr "Prova els altaveus…"
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:131
 msgid "Screen Reader:"
 msgstr "Lector de pantalla:"
 
-#: src/OutputPanel.vala:140
+#: src/OutputPanel.vala:141
 msgid "Provide audio descriptions for items on the screen"
 msgstr "Es proporcionen descripcions d'àudio per als elements de la pantalla."
 
-#: src/OutputPanel.vala:151
+#: src/OutputPanel.vala:152
 msgid "No Output Device"
 msgstr "No hi ha dispositiu de sortida"
 
-#: src/OutputPanel.vala:151
+#: src/OutputPanel.vala:152
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."

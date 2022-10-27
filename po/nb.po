@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:39+0000\n"
+"POT-Creation-Date: 2022-10-26 17:59+0000\n"
 "PO-Revision-Date: 2021-07-03 07:44+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -63,41 +63,41 @@ msgstr "Balanse"
 msgid "Enable"
 msgstr "Skru på"
 
-#: src/OutputPanel.vala:61
+#: src/OutputPanel.vala:62
 #, fuzzy
 msgid "Output volume:"
 msgstr "Utgangslydstyrke:"
 
-#: src/OutputPanel.vala:88
+#: src/OutputPanel.vala:89
 msgid "Balance:"
 msgstr "Balanse:"
 
-#: src/OutputPanel.vala:102
+#: src/OutputPanel.vala:103
 msgid "Left"
 msgstr "Venstre"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:104
 msgid "Center"
 msgstr "Senter"
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:105
 msgid "Right"
 msgstr "Høyre"
 
-#: src/OutputPanel.vala:106
+#: src/OutputPanel.vala:107
 #, fuzzy
 msgid "Event alerts:"
 msgstr "Hendelseslyder:"
 
-#: src/OutputPanel.vala:110
+#: src/OutputPanel.vala:111
 msgid "Play sound"
 msgstr "Spill lyd"
 
-#: src/OutputPanel.vala:112
+#: src/OutputPanel.vala:113
 msgid "Flash screen"
 msgstr "Blink skjerm"
 
-#: src/OutputPanel.vala:117
+#: src/OutputPanel.vala:118
 msgid ""
 "Event alerts occur when the system cannot do something in response to user "
 "input, like attempting to backspace in an empty input or switch windows when "
@@ -107,23 +107,23 @@ msgstr ""
 "som har med inndata å gjøre, som å forsøke å bruke rettetast i et tomt felt, "
 "eller bytte vinduer når kun ett er åpent."
 
-#: src/OutputPanel.vala:125
+#: src/OutputPanel.vala:126
 msgid "Test Speakers…"
 msgstr "Test høyttalere…"
 
-#: src/OutputPanel.vala:130
+#: src/OutputPanel.vala:131
 msgid "Screen Reader:"
 msgstr ""
 
-#: src/OutputPanel.vala:140
+#: src/OutputPanel.vala:141
 msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
-#: src/OutputPanel.vala:151
+#: src/OutputPanel.vala:152
 msgid "No Output Device"
 msgstr "Ingen utgangsenhet"
 
-#: src/OutputPanel.vala:151
+#: src/OutputPanel.vala:152
 msgid ""
 "There is no output device detected. You might want to add one to start "
 "listening to anything."
