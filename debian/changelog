@@ -1,3 +1,14 @@
+switchboard-plug-sound (2.3.2) bionic; urgency=medium
+
+  * Release 2.3.2 (#231)
+  * Update translation files
+  * Update translation template
+  * AppData: 2.3.2 release notes (#230)
+  * PulseAudioManager: add device form factor icon fallbacks (#228)
+  * Animate switches (#225)
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 27 Oct 2022 16:49:16 +0000
+
 switchboard-plug-sound (2.3.1) bionic; urgency=medium
 
   * Release 2.3.1 (#224)
