@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-26 17:59+0000\n"
-"PO-Revision-Date: 2022-04-10 05:12+0000\n"
+"PO-Revision-Date: 2022-11-01 00:12+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/hu/>\n"
@@ -37,6 +37,8 @@ msgstr "Kisebb frissítések:"
 #: data/sound.appdata.xml.in:14
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
+"A pontosabb ikonok hozzárendeléséhez használja az eszköz formai tényezőjét, "
+"ha az rendelkezésre áll"
 
 #: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:29
 #: data/sound.appdata.xml.in:42 data/sound.appdata.xml.in:50
