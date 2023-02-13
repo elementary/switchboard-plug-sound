@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-26 17:59+0000\n"
-"PO-Revision-Date: 2021-07-03 07:44+0000\n"
+"PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:39
@@ -113,11 +113,12 @@ msgstr "Test høyttalere…"
 
 #: src/OutputPanel.vala:131
 msgid "Screen Reader:"
-msgstr ""
+msgstr "Skjermleser:"
 
 #: src/OutputPanel.vala:141
+#, fuzzy
 msgid "Provide audio descriptions for items on the screen"
-msgstr ""
+msgstr "Angi lydbeskrivelser for elementer på skjermen"
 
 #: src/OutputPanel.vala:152
 msgid "No Output Device"
@@ -150,14 +151,18 @@ msgid "Input level:"
 msgstr "Inngangsnivå:"
 
 #: src/InputPanel.vala:88
+#, fuzzy
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "Ingen tilkoblede lydenheter ble oppdaget"
 
 #: src/InputPanel.vala:88
+#, fuzzy
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+"Sjekk at alle kabler er koblet til riktig og at lydinngangsenhetene er "
+"påskrudd."
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
