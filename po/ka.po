@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-26 17:59+0000\n"
-"PO-Revision-Date: 2023-03-11 14:25+0000\n"
+"PO-Revision-Date: 2023-03-12 14:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ka/>\n"
@@ -73,15 +73,15 @@ msgstr ""
 
 #: src/OutputPanel.vala:103
 msgid "Left"
-msgstr ""
+msgstr "მარცხენა"
 
 #: src/OutputPanel.vala:104
 msgid "Center"
-msgstr ""
+msgstr "ცენტრი"
 
 #: src/OutputPanel.vala:105
 msgid "Right"
-msgstr ""
+msgstr "მარჯვენა"
 
 #: src/OutputPanel.vala:107
 msgid "Event alerts:"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: src/OutputPanel.vala:113
 msgid "Flash screen"
-msgstr ""
+msgstr "ეკრანის ციმციმი"
 
 #: src/OutputPanel.vala:118
 msgid ""
