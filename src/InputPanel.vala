@@ -83,7 +83,6 @@ public class Sound.InputPanel : Gtk.Box {
 
         device_monitor = new InputDeviceMonitor ();
         device_monitor.update_fraction.connect ((fraction) => {
-            /* Since we split the bar in segments, get the value out of level_bar.max instead of 1 */
             level_bar.value = fraction;
         });
 
