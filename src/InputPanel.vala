@@ -1,103 +1,91 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA.
+/*
+ * SPDX-License-Identifier: LGPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2016-2022 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Sound.InputPanel : Gtk.Grid {
-    private Gtk.ListBox devices_listbox;
-    private unowned PulseAudioManager pam;
-
-    Gtk.Scale volume_scale;
-    Gtk.Switch volume_switch;
-    Gtk.LevelBar level_bar;
-
+public class Sound.InputPanel : Gtk.Box {
     private Device? default_device = null;
+    private Gtk.LevelBar level_bar;
+    private Gtk.ListBox devices_listbox;
+    private Gtk.Scale volume_scale;
+    private Gtk.Switch volume_switch;
     private InputDeviceMonitor device_monitor;
+    private unowned PulseAudioManager pam;
 
     construct {
         margin = 12;
         margin_bottom = 24;
         margin_top = 0;
-        column_spacing = 12;
-        row_spacing = 6;
+
+        var no_device_grid = new Granite.Widgets.AlertView (
+            _("No Connected Audio Devices Detected"),
+            _("Check that all cables are securely attached and audio input devices are powered on."),
+            "audio-input-microphone-symbolic"
+        );
+        no_device_grid.show_all ();
 
         devices_listbox = new Gtk.ListBox () {
-            activate_on_single_click = true
+            activate_on_single_click = true,
+            vexpand = true
         };
+        devices_listbox.set_placeholder (no_device_grid);
 
         devices_listbox.row_activated.connect ((row) => {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.add (devices_listbox);
-        var devices_frame = new Gtk.Frame (null) {
-            expand = true
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = devices_listbox
         };
-        devices_frame.add (scrolled);
 
-        var volume_label = new Gtk.Label (_("Input volume:")) {
-            valign = Gtk.Align.CENTER,
-            halign = Gtk.Align.END
+        var devices_frame = new Gtk.Frame (null) {
+            child = scrolled
         };
+
+        var volume_label = new Granite.HeaderLabel (_("Input Volume"));
 
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5) {
-            margin_top = 18,
             draw_value = false,
-            hexpand = true
+            hexpand = true,
+            margin_top = 3
         };
 
         volume_scale.add_mark (10, Gtk.PositionType.BOTTOM, _("Unamplified"));
         volume_scale.add_mark (80, Gtk.PositionType.BOTTOM, _("100%"));
 
         volume_switch = new Gtk.Switch () {
-            valign = Gtk.Align.CENTER,
-            active = true
+            valign = START
         };
 
-        var level_label = new Gtk.Label (_("Input level:")) {
-            halign = Gtk.Align.END
+        level_bar = new Gtk.LevelBar.for_interval (0.0, 1.0);
+        level_bar.get_style_context ().add_class ("inverted");
+
+        level_bar.add_offset_value ("low", 0.8);
+        level_bar.add_offset_value ("high", 0.95);
+        level_bar.add_offset_value ("full", 1.0);
+
+        var volume_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 3
         };
+        volume_grid.attach (volume_label, 0, 0);
+        volume_grid.attach (level_bar, 0, 1);
+        volume_grid.attach (volume_scale, 0, 2);
+        volume_grid.attach (volume_switch, 1, 1, 1, 2);
 
-        level_bar = new Gtk.LevelBar.for_interval (0.0, 18.0) {
-            max_value = 18,
-            mode = Gtk.LevelBarMode.DISCRETE
-        };
 
-        level_bar.add_offset_value ("low", 16.1);
-        level_bar.add_offset_value ("middle", 16.0);
-        level_bar.add_offset_value ("high", 14.0);
-
-        var no_device_grid = new Granite.Widgets.AlertView (_("No Connected Audio Devices Detected"), _("Check that all cables are securely attached and audio input devices are powered on."), "audio-input-microphone-symbolic");
-        no_device_grid.show_all ();
-        devices_listbox.set_placeholder (no_device_grid);
-
-        attach (devices_frame, 0, 1, 3, 1);
-        attach (volume_label, 0, 2, 1, 1);
-        attach (volume_scale, 1, 2, 1, 1);
-        attach (volume_switch, 2, 2, 1, 1);
-        attach (level_label, 0, 3, 1, 1);
-        attach (level_bar, 1, 3, 1, 1);
+        orientation = VERTICAL;
+        spacing = 18;
+        add (devices_frame);
+        add (volume_grid);
 
         device_monitor = new InputDeviceMonitor ();
-        device_monitor.update_fraction.connect (update_fraction);
+        device_monitor.update_fraction.connect ((fraction) => {
+            /* Since we split the bar in segments, get the value out of level_bar.max instead of 1 */
+            level_bar.value = fraction;
+        });
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
@@ -175,11 +163,6 @@ public class Sound.InputPanel : Gtk.Grid {
         }
 
         connect_signals ();
-    }
-
-    private void update_fraction (float fraction) {
-        /* Since we split the bar in 18 segments, get the value out of 18 instead of 1 */
-        level_bar.value = fraction * 18;
     }
 
     private void add_device (Device device) {
