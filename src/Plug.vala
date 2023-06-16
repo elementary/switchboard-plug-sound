@@ -1,30 +1,14 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2016-2017 elementary LLC. (https://elementary.io)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA.
+/*
+ * SPDX-License-Identifier: LGPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2016-2022 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
 public class Sound.Plug : Switchboard.Plug {
-    Gtk.Grid main_grid;
-    Gtk.Stack stack;
-
-    InputPanel input_panel;
+    private Gtk.Box box;
+    private Gtk.Stack stack;
+    private InputPanel input_panel;
 
     public Plug () {
         GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -43,44 +27,47 @@ public class Sound.Plug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (main_grid == null) {
+        if (box == null) {
             var output_panel = new OutputPanel ();
             input_panel = new InputPanel ();
 
             stack = new Gtk.Stack () {
-                expand = true
+                hexpand = true,
+                vexpand = true
             };
+            stack.add_titled (output_panel, "output", _("Output"));
+            stack.add_titled (input_panel, "input", _("Input"));
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
                 homogeneous = true,
-                margin = 12,
                 stack = stack
             };
 
-            stack.add_titled (output_panel, "output", _("Output"));
-            stack.add_titled (input_panel, "input", _("Input"));
+            var clamp = new Hdy.Clamp () {
+                child = stack
+            };
+
+            box = new Gtk.Box (VERTICAL, 12) {
+                margin = 12
+            };
+            box.add (stack_switcher);
+            box.add (clamp);
+            box.show_all ();
+
+            var pam = PulseAudioManager.get_default ();
+            pam.start ();
 
             stack.notify["visible-child"].connect (() => {
                 input_panel.set_visibility (stack.visible_child == input_panel);
             });
-
-            main_grid = new Gtk.Grid () {
-                orientation = Gtk.Orientation.VERTICAL
-            };
-            main_grid.add (stack_switcher);
-            main_grid.add (stack);
-            main_grid.show_all ();
-
-            var pam = PulseAudioManager.get_default ();
-            pam.start ();
         }
 
-        return main_grid;
+        return box;
     }
 
     public override void shown () {
-        main_grid.show ();
+        box.show ();
         if (stack.visible_child == input_panel) {
             input_panel.set_visibility (true);
         }

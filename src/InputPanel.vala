@@ -32,9 +32,7 @@ public class Sound.InputPanel : Gtk.Grid {
     private InputDeviceMonitor device_monitor;
 
     construct {
-        margin = 12;
-        margin_bottom = 24;
-        margin_top = 0;
+        margin_bottom = 12;
         column_spacing = 12;
         row_spacing = 6;
 
