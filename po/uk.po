@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 06:21+0000\n"
-"PO-Revision-Date: 2021-12-17 16:10+0000\n"
+"PO-Revision-Date: 2023-06-19 15:07+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/uk/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:23
@@ -64,21 +64,16 @@ msgid "Enable"
 msgstr "Увімкнути"
 
 #: src/OutputPanel.vala:25
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "Не виявлено підʼєднаних аудіопристроїв"
+msgstr "Не виявлено під'єднаних пристроїв виводу"
 
 #: src/OutputPanel.vala:26
-#, fuzzy
-#| msgid ""
-#| "Check that all cables are securely attached and audio input devices are "
-#| "powered on."
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
-"Перевірте, чи всі кабелі надійно під’єднані, а пристрої аудіовводу ввімкнено."
+"Перевірте, чи всі кабелі надійно під'єднані, а пристрої аудіовиводу "
+"ввімкнено."
 
 #: src/OutputPanel.vala:64
 msgid "Left"
@@ -93,10 +88,8 @@ msgid "Right"
 msgstr "Права"
 
 #: src/OutputPanel.vala:68
-#, fuzzy
-#| msgid "Event alerts:"
 msgid "Event Alerts"
-msgstr "Попередження про події:"
+msgstr "Попередження про події"
 
 #: src/OutputPanel.vala:70
 msgid "Play sound"
@@ -107,29 +100,22 @@ msgid "Flash screen"
 msgstr "Блимання екрана"
 
 #: src/OutputPanel.vala:79
-#, fuzzy
-#| msgid ""
-#| "Event alerts occur when the system cannot do something in response to "
-#| "user input, like attempting to backspace in an empty input or switch "
-#| "windows when only one is open."
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
-"Попередження про події з'являються, коли система не може щось зробити у "
-"відповідь на введення користувачем, наприклад, спроба повернення назад до "
-"порожнього поля або перемикання вікон, коли відкрито лише одне."
+"Сповіщати, коли система не може щось зробити у відповідь на введення, "
+"наприклад, після спроби стерти порожнє поле або перемкнутися між вікнами, "
+"коли відкрито лише одне."
 
 #: src/OutputPanel.vala:91
 msgid "Test Speakers…"
 msgstr "Перевірити гучномовці…"
 
 #: src/OutputPanel.vala:95
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "Зчитувач екрана:"
+msgstr "Зчитувач екрана"
 
 #: src/OutputPanel.vala:103
 msgid "Provide audio descriptions for items on the screen"
@@ -147,10 +133,8 @@ msgstr ""
 "Перевірте, чи всі кабелі надійно під’єднані, а пристрої аудіовводу ввімкнено."
 
 #: src/InputPanel.vala:45
-#, fuzzy
-#| msgid "Input volume:"
 msgid "Input Volume"
-msgstr "Гучність введення:"
+msgstr "Гучність вводу"
 
 #: src/InputPanel.vala:53
 msgid "Unamplified"
