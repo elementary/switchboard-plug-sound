@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-26 17:59+0000\n"
+"POT-Creation-Date: 2023-06-17 06:16+0000\n"
 "PO-Revision-Date: 2019-03-09 18:27+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -20,135 +20,134 @@ msgstr ""
 "X-Generator: Weblate 3.4\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:23
 msgid "Sound"
 msgstr "ध्वनी"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:24
 msgid "Change sound and microphone volume"
 msgstr "ध्वनी आणि मायक्रोफोन आवाज बदला"
 
-#: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
+#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
 msgid "Output"
 msgstr "आउटपुट"
 
-#: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
-#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
 msgid "Input"
 msgstr "इनपुट"
 
-#: src/Plug.vala:107 src/Plug.vala:113
+#: src/Plug.vala:94 src/Plug.vala:100
 msgid "Device"
 msgstr "उपकरण"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:95
 msgid "Event Sounds"
 msgstr "घटना ध्वनी"
 
-#: src/Plug.vala:109 src/Plug.vala:114
+#: src/Plug.vala:96 src/Plug.vala:101
 msgid "Port"
 msgstr "पोर्ट"
 
-#: src/Plug.vala:110 src/Plug.vala:115
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
 msgid "Volume"
 msgstr "आवाज"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:98
 msgid "Balance"
 msgstr "बॅलेन्स"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:103
 msgid "Enable"
 msgstr "सक्षम"
 
-#: src/OutputPanel.vala:62
-msgid "Output volume:"
-msgstr "आउटपुट आवाज:"
+#: src/OutputPanel.vala:25
+#, fuzzy
+#| msgid "No Output Device"
+msgid "No Connected Output Devices Detected"
+msgstr "कोणतेही आउटपुट उपकरण नाही"
 
-#: src/OutputPanel.vala:89
-msgid "Balance:"
-msgstr "बॅलेन्स:"
+#: src/OutputPanel.vala:26
+msgid ""
+"Check that all cables are securely attached and audio output devices are "
+"powered on."
+msgstr ""
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:64
 msgid "Left"
 msgstr "डावा"
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:65
 msgid "Center"
 msgstr "मध्य"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:66
 msgid "Right"
 msgstr "उजवा"
 
-#: src/OutputPanel.vala:107
-msgid "Event alerts:"
+#: src/OutputPanel.vala:68
+#, fuzzy
+#| msgid "Event alerts:"
+msgid "Event Alerts"
 msgstr "घटना अलर्ट:"
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:70
 msgid "Play sound"
 msgstr "ध्वनी चालवा"
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:74
 msgid "Flash screen"
 msgstr "स्क्रीन फ्लॅश करा"
 
-#: src/OutputPanel.vala:118
+#: src/OutputPanel.vala:79
+#, fuzzy
+#| msgid ""
+#| "Event alerts occur when the system cannot do something in response to "
+#| "user input, like attempting to backspace in an empty input or switch "
+#| "windows when only one is open."
 msgid ""
-"Event alerts occur when the system cannot do something in response to user "
-"input, like attempting to backspace in an empty input or switch windows when "
-"only one is open."
+"Notify when the system can't do something in response to input, like "
+"attempting to backspace in an empty input or switch windows when only one is "
+"open."
 msgstr ""
 "इव्हेंट अलर्ट होतात जेव्हा सिस्टम वापरकर्ता इनपुटच्या प्रतिसादात काहीतरी करू शकत नाही, "
 "जसे रिक्त इनपुटमध्ये बॅकस्पेस वापरण्याचा प्रयत्न करणे किंवा केवळ एखादे उघडल्यास विंडो स्विच "
 "करणे."
 
-#: src/OutputPanel.vala:126
+#: src/OutputPanel.vala:91
 msgid "Test Speakers…"
 msgstr "स्पीकर्सची चाचणी करा…"
 
-#: src/OutputPanel.vala:131
-msgid "Screen Reader:"
+#: src/OutputPanel.vala:95
+msgid "Screen Reader"
 msgstr ""
 
-#: src/OutputPanel.vala:141
+#: src/OutputPanel.vala:103
 msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
-#: src/OutputPanel.vala:152
-msgid "No Output Device"
-msgstr "कोणतेही आउटपुट उपकरण नाही"
-
-#: src/OutputPanel.vala:152
-msgid ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-msgstr ""
-"येथे कोणतेही आउटपुट उपकरण आढळले नाही. आपल्याला काहीही ऐकण्यास प्रारंभ करण्यासाठी "
-"कदाचित एखादे जोडावे लागेल."
-
-#: src/InputPanel.vala:56
+#: src/InputPanel.vala:54
 msgid "Input volume:"
 msgstr "इनपुट आवाज:"
 
-#: src/InputPanel.vala:67
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "न वाढवलेला"
 
-#: src/InputPanel.vala:68
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:75
+#: src/InputPanel.vala:73
 msgid "Input level:"
 msgstr "इनपुट स्तर:"
 
-#: src/InputPanel.vala:88
+#: src/InputPanel.vala:86
 msgid "No Connected Audio Devices Detected"
 msgstr ""
 
-#: src/InputPanel.vala:88
+#: src/InputPanel.vala:86
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
@@ -209,6 +208,19 @@ msgstr "कॉम्पुटर"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "पोर्टेबल"
+
+#~ msgid "Output volume:"
+#~ msgstr "आउटपुट आवाज:"
+
+#~ msgid "Balance:"
+#~ msgstr "बॅलेन्स:"
+
+#~ msgid ""
+#~ "There is no output device detected. You might want to add one to start "
+#~ "listening to anything."
+#~ msgstr ""
+#~ "येथे कोणतेही आउटपुट उपकरण आढळले नाही. आपल्याला काहीही ऐकण्यास प्रारंभ करण्यासाठी "
+#~ "कदाचित एखादे जोडावे लागेल."
 
 #~ msgid "No Input Device"
 #~ msgstr "कोणतेही इनपुट डिव्हाइस नाही"
