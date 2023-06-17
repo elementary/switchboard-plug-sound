@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2022-01-15 12:35+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -132,31 +132,29 @@ msgstr "屏幕阅读："
 msgid "Provide audio descriptions for items on the screen"
 msgstr "为屏幕上的项目提供音频描述"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "输入音量："
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "不放大"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "输入等级："
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "未检测到连接的音频设备"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr "检查所有电缆是否已牢固连接并且音频输入设备已打开电源。"
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "输入音量："
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "不放大"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -213,6 +211,9 @@ msgstr "电脑"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "便携"
+
+#~ msgid "Input level:"
+#~ msgstr "输入等级："
 
 #~ msgid "Output volume:"
 #~ msgstr "输出音量："

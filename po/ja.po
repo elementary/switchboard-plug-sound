@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2021-12-17 12:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -135,33 +135,31 @@ msgstr "スクリーンリーダー:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "画面上の項目について音声ガイドを提供します"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "入力音量:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "増幅なし"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "入力レベル:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "接続済みの音声デバイスが検出されませんでした"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 "ケーブルにゆるみがないか、音声入力デバイスの電源が入っているか確認してくださ"
 "い。"
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "入力音量:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "増幅なし"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -218,6 +216,9 @@ msgstr "コンピューター"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "ポータブル"
+
+#~ msgid "Input level:"
+#~ msgstr "入力レベル:"
 
 #~ msgid "Output volume:"
 #~ msgstr "出力音量:"

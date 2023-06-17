@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2021-12-17 22:07+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -132,31 +132,29 @@ msgstr "מקריא מסך:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "אספקת תיאורים קוליים לפריטים על המסך"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "עצמת שמע קלט:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "ללא הגברה"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "רמת הקלט:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "לא התגלו התקני שמע מחוברים"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr "נא לבדוק שכל הכבלים מחוברים כאוי והתקני קלט השמע פועלים."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "עצמת שמע קלט:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "ללא הגברה"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -213,6 +211,9 @@ msgstr "מחשב"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "נייד"
+
+#~ msgid "Input level:"
+#~ msgstr "רמת הקלט:"
 
 #~ msgid "Output volume:"
 #~ msgstr "עצמת שמע פלט:"

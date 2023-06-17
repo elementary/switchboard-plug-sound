@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2022-10-04 21:31+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -129,33 +129,31 @@ msgstr "خوێنەری ڕوونما:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "فرۆزی دەنگی دابین بکە بۆ دانەکانی سەر ڕوونما"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "ئاستی بەرزی وەرگرنی دەنگ:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "ئاسایی"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "%١٠٠"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "ئاستی وەرگرنی دەنگ:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "هیچ ئامێرێکی دەنگی پەیوەستکراو نەدۆزرایەوە"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 "دڵنیابە کە هەموو وەیارەکان بە دروستی بەجێگەی خۆیانەوەن و ئامێرە دەنگییەکانی "
 "وەرگرتنی دەنگ پێکراون."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "ئاستی بەرزی وەرگرنی دەنگ:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "ئاسایی"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "%١٠٠"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -212,6 +210,9 @@ msgstr "کۆمپیتەر"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "هەڵگیراو"
+
+#~ msgid "Input level:"
+#~ msgstr "ئاستی وەرگرنی دەنگ:"
 
 #~ msgid "Output volume:"
 #~ msgstr "بەرزی دەنگی دەردراو:"

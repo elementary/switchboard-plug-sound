@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2019-06-26 18:53+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -107,30 +107,26 @@ msgstr ""
 msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr ""
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr ""
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr ""
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr ""
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr ""
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
+msgstr ""
+
+#: src/InputPanel.vala:45
+msgid "Input Volume"
+msgstr ""
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr ""
+
+#: src/InputPanel.vala:54
+msgid "100%"
 msgstr ""
 
 #: src/InputDeviceMonitor.vala:79

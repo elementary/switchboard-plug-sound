@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -132,30 +132,12 @@ msgstr "Skjermleser:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "Angi lydbeskrivelser for elementer på skjermen"
 
-#: src/InputPanel.vala:54
-#, fuzzy
-msgid "Input volume:"
-msgstr "Inngangslydstyrke:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "Uforsterket"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-#, fuzzy
-msgid "Input level:"
-msgstr "Inngangsnivå:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 #, fuzzy
 msgid "No Connected Audio Devices Detected"
 msgstr "Ingen tilkoblede lydenheter ble oppdaget"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 #, fuzzy
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
@@ -163,6 +145,19 @@ msgid ""
 msgstr ""
 "Sjekk at alle kabler er koblet til riktig og at lydinngangsenhetene er "
 "påskrudd."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+msgid "Input Volume"
+msgstr "Inngangslydstyrke:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "Uforsterket"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -219,6 +214,10 @@ msgstr "Datamaskin"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Flyttbar"
+
+#, fuzzy
+#~ msgid "Input level:"
+#~ msgstr "Inngangsnivå:"
 
 #, fuzzy
 #~ msgid "Output volume:"

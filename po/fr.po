@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -135,33 +135,31 @@ msgstr "Lecteur d'écran :"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "Fournit une description audio des éléments à l'écran"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "Volume d'enregistrement :"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "Non Amplifié"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "Niveau d'enregistrement :"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "Aucun périphérique audio connecté détecté"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 "Veuillez vérifier que tous les câbles sont bien branchés et que les "
 "périphériques d'entrée audio sont bien allumés."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "Volume d'enregistrement :"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "Non Amplifié"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -218,6 +216,9 @@ msgstr "Ordinateur"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Portable"
+
+#~ msgid "Input level:"
+#~ msgstr "Niveau d'enregistrement :"
 
 #~ msgid "Output volume:"
 #~ msgstr "Volume de sortie :"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -135,33 +135,31 @@ msgstr "Schermlezer:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "Audiobeschrijving geven van elementen op het scherm"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "Invoervolume:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "Onversterkt"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "Invoerniveau:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "Geen verbonden audio-apparaten gedetecteerd"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 "Controleer of alle kabels goed zijn aangesloten en of de audio-"
 "invoerapparaten zijn ingeschakeld."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "Invoervolume:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "Onversterkt"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -218,6 +216,9 @@ msgstr "Computer"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Draagbaar"
+
+#~ msgid "Input level:"
+#~ msgstr "Invoerniveau:"
 
 #~ msgid "Output volume:"
 #~ msgstr "Uitvoervolume:"

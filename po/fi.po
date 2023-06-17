@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2021-12-20 09:18+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -136,33 +136,31 @@ msgstr "Näytönlukija:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "Tarjoa äänikuvaukset näytöllä oleville kohteille"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "Sisääntulon äänenvoimakkuus:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "Vahvistamaton"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100 %"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "Sisääntulon taso:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "Yhdistettyjä äänilaitteita ei havaittu"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 "Varmista, että kaikki kaapelit on liitetty ja äänen tulolaitteisiin on "
 "kytketty virta."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "Sisääntulon äänenvoimakkuus:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "Vahvistamaton"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100 %"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -219,6 +217,9 @@ msgstr "Tietokone"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Kannettava"
+
+#~ msgid "Input level:"
+#~ msgstr "Sisääntulon taso:"
 
 #~ msgid "Output volume:"
 #~ msgstr "Ulostulon äänenvoimakkuus:"

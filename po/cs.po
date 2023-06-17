@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -135,33 +135,31 @@ msgstr "Čtečka obrazovky:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "Poskytuje zvukové popisy pro položky na obrazovce"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "Vstupní hlasitost:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "Nezesíleno"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "Vstupní úroveň:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "Nebyla zjištěna žádná připojena zvuková zařízení"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 "Zkontrolujte, zda jsou všechny kabely dobře zapojené a zvuková vstupní "
 "zařízení zapnutá."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "Vstupní hlasitost:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "Nezesíleno"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -218,6 +216,9 @@ msgstr "Počítač"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Přenosný"
+
+#~ msgid "Input level:"
+#~ msgstr "Vstupní úroveň:"
 
 #~ msgid "Output volume:"
 #~ msgstr "Výstupní hlasitost:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -135,32 +135,30 @@ msgstr "Зчитувач екрана:"
 msgid "Provide audio descriptions for items on the screen"
 msgstr "Надавати звукові описи елементів на екрані"
 
-#: src/InputPanel.vala:54
-msgid "Input volume:"
-msgstr "Гучність введення:"
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "Непідсилюваний"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-msgid "Input level:"
-msgstr "Рівень введення:"
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr "Не виявлено підʼєднаних аудіопристроїв"
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 "Перевірте, чи всі кабелі надійно під’єднані, а пристрої аудіовводу ввімкнено."
+
+#: src/InputPanel.vala:45
+#, fuzzy
+#| msgid "Input volume:"
+msgid "Input Volume"
+msgstr "Гучність введення:"
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "Непідсилюваний"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -217,6 +215,9 @@ msgstr "Комп'ютер"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Переносний"
+
+#~ msgid "Input level:"
+#~ msgstr "Рівень введення:"
 
 #~ msgid "Output volume:"
 #~ msgstr "Вивідна гучність:"

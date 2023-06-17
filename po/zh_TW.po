@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:16+0000\n"
+"POT-Creation-Date: 2023-06-17 06:21+0000\n"
 "PO-Revision-Date: 2017-09-16 00:16+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -118,33 +118,28 @@ msgstr ""
 msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
-#: src/InputPanel.vala:54
-#, fuzzy
-msgid "Input volume:"
-msgstr "輸入音量："
-
-#: src/InputPanel.vala:65
-msgid "Unamplified"
-msgstr "未增幅"
-
-#: src/InputPanel.vala:66
-msgid "100%"
-msgstr "100%"
-
-#: src/InputPanel.vala:73
-#, fuzzy
-msgid "Input level:"
-msgstr "輸入等級："
-
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
 msgstr ""
 
-#: src/InputPanel.vala:86
+#: src/InputPanel.vala:22
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
+
+#: src/InputPanel.vala:45
+#, fuzzy
+msgid "Input Volume"
+msgstr "輸入音量："
+
+#: src/InputPanel.vala:53
+msgid "Unamplified"
+msgstr "未增幅"
+
+#: src/InputPanel.vala:54
+msgid "100%"
+msgstr "100%"
 
 #: src/InputDeviceMonitor.vala:79
 msgid "Peak detect"
@@ -201,6 +196,10 @@ msgstr "電腦"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "可攜裝置"
+
+#, fuzzy
+#~ msgid "Input level:"
+#~ msgstr "輸入等級："
 
 #, fuzzy
 #~ msgid "Output volume:"
