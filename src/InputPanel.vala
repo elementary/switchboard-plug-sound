@@ -75,7 +75,6 @@ public class Sound.InputPanel : Gtk.Box {
         volume_grid.attach (volume_scale, 0, 2);
         volume_grid.attach (volume_switch, 1, 1, 1, 2);
 
-
         orientation = VERTICAL;
         spacing = 18;
         add (devices_frame);
