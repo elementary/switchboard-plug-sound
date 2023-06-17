@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-26 17:59+0000\n"
+"POT-Creation-Date: 2023-06-17 06:16+0000\n"
 "PO-Revision-Date: 2018-03-08 16:25+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) <https://weblate.elementary.io/projects/"
@@ -20,138 +20,129 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:23
 msgid "Sound"
 msgstr "Sound"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:24
 msgid "Change sound and microphone volume"
 msgstr "Change sound and microphone volume"
 
-#: src/Plug.vala:61 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
+#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
 msgid "Output"
 msgstr "Output"
 
-#: src/Plug.vala:62 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
-#: src/Plug.vala:115 src/Plug.vala:116 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
 msgid "Input"
 msgstr "Input"
 
-#: src/Plug.vala:107 src/Plug.vala:113
+#: src/Plug.vala:94 src/Plug.vala:100
 msgid "Device"
 msgstr ""
 
-#: src/Plug.vala:108
+#: src/Plug.vala:95
 msgid "Event Sounds"
 msgstr ""
 
-#: src/Plug.vala:109 src/Plug.vala:114
+#: src/Plug.vala:96 src/Plug.vala:101
 #, fuzzy
 msgid "Port"
 msgstr "Portable"
 
-#: src/Plug.vala:110 src/Plug.vala:115
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
 #, fuzzy
 msgid "Volume"
 msgstr "Input Volume:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:98
 #, fuzzy
 msgid "Balance"
 msgstr "Balance:"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:103
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:62
+#: src/OutputPanel.vala:25
 #, fuzzy
-msgid "Output volume:"
-msgstr "Output Volume:"
+#| msgid "No Output Device"
+msgid "No Connected Output Devices Detected"
+msgstr "No Output Device"
 
-#: src/OutputPanel.vala:89
-msgid "Balance:"
-msgstr "Balance:"
+#: src/OutputPanel.vala:26
+msgid ""
+"Check that all cables are securely attached and audio output devices are "
+"powered on."
+msgstr ""
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:64
 msgid "Left"
 msgstr "Left"
 
-#: src/OutputPanel.vala:104
+#: src/OutputPanel.vala:65
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:66
 msgid "Right"
 msgstr "Right"
 
-#: src/OutputPanel.vala:107
-msgid "Event alerts:"
+#: src/OutputPanel.vala:68
+msgid "Event Alerts"
 msgstr ""
 
-#: src/OutputPanel.vala:111
+#: src/OutputPanel.vala:70
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:113
+#: src/OutputPanel.vala:74
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:118
+#: src/OutputPanel.vala:79
 msgid ""
-"Event alerts occur when the system cannot do something in response to user "
-"input, like attempting to backspace in an empty input or switch windows when "
-"only one is open."
+"Notify when the system can't do something in response to input, like "
+"attempting to backspace in an empty input or switch windows when only one is "
+"open."
 msgstr ""
 
-#: src/OutputPanel.vala:126
+#: src/OutputPanel.vala:91
 msgid "Test Speakers…"
 msgstr "Test Speakers…"
 
-#: src/OutputPanel.vala:131
-msgid "Screen Reader:"
+#: src/OutputPanel.vala:95
+msgid "Screen Reader"
 msgstr ""
 
-#: src/OutputPanel.vala:141
+#: src/OutputPanel.vala:103
 msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
-#: src/OutputPanel.vala:152
-msgid "No Output Device"
-msgstr "No Output Device"
-
-#: src/OutputPanel.vala:152
-msgid ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-msgstr ""
-"There is no output device detected. You might want to add one to start "
-"listening to anything."
-
-#: src/InputPanel.vala:56
+#: src/InputPanel.vala:54
 #, fuzzy
 msgid "Input volume:"
 msgstr "Input Volume:"
 
-#: src/InputPanel.vala:67
+#: src/InputPanel.vala:65
 msgid "Unamplified"
 msgstr "Unamplified"
 
-#: src/InputPanel.vala:68
+#: src/InputPanel.vala:66
 msgid "100%"
 msgstr "100%"
 
-#: src/InputPanel.vala:75
+#: src/InputPanel.vala:73
 #, fuzzy
 msgid "Input level:"
 msgstr "Input Level:"
 
-#: src/InputPanel.vala:88
+#: src/InputPanel.vala:86
 msgid "No Connected Audio Devices Detected"
 msgstr ""
 
-#: src/InputPanel.vala:88
+#: src/InputPanel.vala:86
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
@@ -212,6 +203,20 @@ msgstr "Computer"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Portable"
+
+#, fuzzy
+#~ msgid "Output volume:"
+#~ msgstr "Output Volume:"
+
+#~ msgid "Balance:"
+#~ msgstr "Balance:"
+
+#~ msgid ""
+#~ "There is no output device detected. You might want to add one to start "
+#~ "listening to anything."
+#~ msgstr ""
+#~ "There is no output device detected. You might want to add one to start "
+#~ "listening to anything."
 
 #~ msgid "No Input Device"
 #~ msgstr "No Input Device"
