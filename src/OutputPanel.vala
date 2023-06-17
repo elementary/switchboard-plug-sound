@@ -1,65 +1,48 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2016-2018 elemntary LLC. (https://elementary.io)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Library General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Library General Public License for more details.
- *
- * You should have received a copy of the GNU Library General Public
- * License along with this library; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA.
+/*
+ * SPDX-License-Identifier: LGPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2016-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Sound.OutputPanel : Gtk.Grid {
-    private Gtk.ListBox devices_listbox;
-    private unowned PulseAudioManager pam;
-
-    Gtk.Scale volume_scale;
-    Gtk.Switch volume_switch;
-    Gtk.Scale balance_scale;
-
-    private Device default_device = null;
-
-    unowned Canberra.Context? ca_context = null;
-
-    uint notify_timeout_id = 0;
+public class Sound.OutputPanel : Gtk.Box {
     public bool screen_reader_active { get; set; }
 
+    private Device default_device = null;
+    private Gtk.ListBox devices_listbox;
+    private Gtk.Scale balance_scale;
+    private Gtk.Scale volume_scale;
+    private Gtk.Switch volume_switch;
+    private uint notify_timeout_id = 0;
+    private unowned Canberra.Context? ca_context = null;
+    private unowned PulseAudioManager pam;
+
     construct {
-        column_spacing = 12;
-        row_spacing = 6;
+        margin = 12;
+        margin_top = 0;
+
+        var no_device_grid = new Granite.Widgets.AlertView (
+            _("No Connected Output Devices Detected"),
+            _("Check that all cables are securely attached and audio output devices are powered on."),
+            "audio-volume-muted-symbolic"
+        );
+        no_device_grid.show_all ();
 
         devices_listbox = new Gtk.ListBox () {
-            activate_on_single_click = true
+            activate_on_single_click = true,
+            vexpand = true
         };
+        devices_listbox.set_placeholder (no_device_grid);
 
-        devices_listbox.row_activated.connect ((row) => {
-            pam.set_default_device.begin (((Sound.DeviceRow) row).device);
-        });
-
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.add (devices_listbox);
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = devices_listbox
+        };
 
         var devices_frame = new Gtk.Frame (null) {
-            expand = true,
-            margin_bottom = 18
+            child = scrolled
         };
 
-        devices_frame.add (scrolled);
-
-        var volume_label = new Gtk.Label (_("Output volume:")) {
-            halign = Gtk.Align.END
-        };
+        var volume_label = new Granite.HeaderLabel (_("Volume"));
 
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5) {
             draw_value = false,
@@ -67,33 +50,13 @@ public class Sound.OutputPanel : Gtk.Grid {
         };
         volume_scale.adjustment.page_increment = 5;
 
-        volume_scale.button_release_event.connect (e => {
-            notify_change ();
-            return false;
-        });
-
-        volume_scale.scroll_event.connect (e => {
-            if (volume_scale.get_value () < 100) {
-                notify_change ();
-            }
-            return false;
-        });
-
         volume_switch = new Gtk.Switch () {
             valign = Gtk.Align.CENTER,
             active = true
         };
-
-        var balance_label = new Gtk.Label (_("Balance:")) {
-            valign = Gtk.Align.START,
-            halign = Gtk.Align.END,
-            margin_bottom = 18
-        };
-
         balance_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, -1, 1, 0.1) {
             draw_value = false,
-            has_origin = false,
-            margin_bottom = 18
+            has_origin = false
         };
 
         balance_scale.adjustment.page_increment = 0.1;
@@ -102,69 +65,75 @@ public class Sound.OutputPanel : Gtk.Grid {
         balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
         balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
 
-        var alerts_label = new Gtk.Label (_("Event alerts:")) {
-            halign = Gtk.Align.END,
-        };
+        var alerts_label = new Granite.HeaderLabel (_("Event Alerts"));
 
-        var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound"));
+        var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound")) {
+            margin_top = 6
+        };
 
         var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen")) {
-            halign = Gtk.Align.START,
-            hexpand = true
+            margin_top = 6
         };
 
-        var alerts_info = new Gtk.Label (_("Event alerts occur when the system cannot do something in response to user input, like attempting to backspace in an empty input or switch windows when only one is open.")) {
-            max_width_chars = 80,
+        var alerts_info = new Gtk.Label (
+            _("Notify when the system can't do something in response to input, like attempting to backspace in an empty input or switch windows when only one is open.")
+        ) {
             wrap = true,
             xalign = 0
         };
 
         alerts_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…")) {
+        var test_popover = new TestPopover ();
+
+        var test_button = new Gtk.MenuButton () {
             halign = Gtk.Align.END,
-            margin_top = 18
+            label = _("Test Speakers…"),
+            popover = test_popover
         };
 
-        var screen_reader_label = new Gtk.Label (_("Screen Reader:")) {
-            halign = Gtk.Align.END,
-            xalign = 1
-        };
+        var screen_reader_label = new Granite.HeaderLabel (_("Screen Reader"));
 
         var screen_reader_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START,
+            halign = END,
+            valign = CENTER,
             hexpand = true
         };
 
         var screen_reader_description_label = new Gtk.Label (_("Provide audio descriptions for items on the screen")) {
-            max_width_chars = 60,
             wrap = true,
             xalign = 0
         };
-
         screen_reader_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var test_popover = new TestPopover (test_button);
-        test_button.bind_property ("active", test_popover, "visible", GLib.BindingFlags.BIDIRECTIONAL);
+        var output_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        output_grid.attach (volume_label, 0, 0, 2);
+        output_grid.attach (volume_scale, 0, 1);
+        output_grid.attach (volume_switch, 1, 1);
+        output_grid.attach (balance_scale, 0, 2);
 
-        var no_device_grid = new Granite.Widgets.AlertView (_("No Output Device"), _("There is no output device detected. You might want to add one to start listening to anything."), "audio-volume-muted-symbolic");
-        no_device_grid.show_all ();
-        devices_listbox.set_placeholder (no_device_grid);
+        var alerts_box = new Gtk.Box (VERTICAL, 0);
+        alerts_box.add (alerts_label);
+        alerts_box.add (alerts_info);
+        alerts_box.add (audio_alert_check);
+        alerts_box.add (visual_alert_check);
 
-        attach (devices_frame, 0, 1, 4, 1);
-        attach (volume_label, 0, 2);
-        attach (volume_scale, 1, 2, 2);
-        attach (volume_switch, 3, 2);
-        attach (balance_label, 0, 3);
-        attach (balance_scale, 1, 3, 2);
-        attach (alerts_label, 0, 4);
-        attach (audio_alert_check, 1, 4);
-        attach (visual_alert_check, 2, 4);
-        attach (alerts_info, 1, 5, 2);
-        attach (screen_reader_label, 0, 6);
-        attach (screen_reader_switch, 1, 6, 2);
-        attach (screen_reader_description_label, 1, 7, 2);
-        attach (test_button, 0, 8, 4);
+        var screen_reader_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        screen_reader_grid.attach (screen_reader_label, 0, 0);
+        screen_reader_grid.attach (screen_reader_description_label, 0, 1);
+        screen_reader_grid.attach (screen_reader_switch, 1, 0, 1, 2);
+
+        orientation = VERTICAL;
+        spacing = 18;
+        add (devices_frame);
+        add (output_grid);
+        add (alerts_box);
+        add (screen_reader_grid);
+        add (test_button);
 
         var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
         applications_settings.bind ("screen-reader-enabled", this, "screen_reader_active", SettingsBindFlags.DEFAULT);
@@ -195,6 +164,22 @@ public class Sound.OutputPanel : Gtk.Grid {
                                 null);
         ca_context.open ();
         connect_signals ();
+
+        devices_listbox.row_activated.connect ((row) => {
+            pam.set_default_device.begin (((Sound.DeviceRow) row).device);
+        });
+
+        volume_scale.button_release_event.connect (e => {
+            notify_change ();
+            return false;
+        });
+
+        volume_scale.scroll_event.connect (e => {
+            if (volume_scale.get_value () < 100) {
+                notify_change ();
+            }
+            return false;
+        });
     }
 
     private void default_changed () {

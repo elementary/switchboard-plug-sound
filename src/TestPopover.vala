@@ -24,10 +24,6 @@ public class Sound.TestPopover : Gtk.Popover {
     private Gtk.Grid main_grid;
     private Device default_device;
 
-    public TestPopover (Gtk.ToggleButton relative_to) {
-        Object (relative_to: relative_to);
-    }
-
     construct {
         main_grid = new Gtk.Grid () {
             margin = 12,
