@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: LGPL-2.0-or-later
- * SPDX-FileCopyrightText: 2016-2022 elementary, Inc. (https://elementary.io)
+ * SPDX-FileCopyrightText: 2016-2023 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
