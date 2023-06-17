@@ -27,6 +27,7 @@ shared_module(
         dependency('libpulse-mainloop-glib'),
         dependency('libcanberra'),
         dependency('libcanberra-gtk3'),
+        dependency('libhandy-1'),
         meson.get_compiler('vala').find_library('libpulse-ext', dirs: join_paths(meson.source_root(), 'vapi')),
         switchboard_dep
     ],

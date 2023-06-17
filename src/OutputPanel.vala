@@ -36,8 +36,6 @@ public class Sound.OutputPanel : Gtk.Grid {
     public bool screen_reader_active { get; set; }
 
     construct {
-        margin = 12;
-        margin_top = 0;
         column_spacing = 12;
         row_spacing = 6;
 
