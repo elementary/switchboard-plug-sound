@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 06:21+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"PO-Revision-Date: 2023-06-19 15:07+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:23
@@ -63,22 +63,16 @@ msgid "Enable"
 msgstr "Inschakelen"
 
 #: src/OutputPanel.vala:25
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "Geen verbonden audio-apparaten gedetecteerd"
+msgstr "Geen verbonden audio uitvoer-apparaten gedetecteerd"
 
 #: src/OutputPanel.vala:26
-#, fuzzy
-#| msgid ""
-#| "Check that all cables are securely attached and audio input devices are "
-#| "powered on."
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
 "Controleer of alle kabels goed zijn aangesloten en of de audio-"
-"invoerapparaten zijn ingeschakeld."
+"uitvoerapparaten zijn ingeschakeld."
 
 #: src/OutputPanel.vala:64
 msgid "Left"
@@ -93,10 +87,8 @@ msgid "Right"
 msgstr "Rechts"
 
 #: src/OutputPanel.vala:68
-#, fuzzy
-#| msgid "Event alerts:"
 msgid "Event Alerts"
-msgstr "Waarschuwingen:"
+msgstr "Waarschuwingen"
 
 #: src/OutputPanel.vala:70
 msgid "Play sound"
@@ -107,29 +99,22 @@ msgid "Flash screen"
 msgstr "Flits scherm"
 
 #: src/OutputPanel.vala:79
-#, fuzzy
-#| msgid ""
-#| "Event alerts occur when the system cannot do something in response to "
-#| "user input, like attempting to backspace in an empty input or switch "
-#| "windows when only one is open."
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
-"Waarschuwingen komen voor als het systeem input van een gebruiker niet kan "
-"verwerken, bijvoorbeeld bij het indrukken van de backspace in een leeg "
-"invoerveld of wisselen van vensters als er maar een enkel venster open is."
+"Waarschuw als het systeem invoer van een gebruiker niet kan verwerken, "
+"bijvoorbeeld bij het indrukken van backspace in een leeg invoerveld of "
+"wisselen van vensters als er maar een venster open is."
 
 #: src/OutputPanel.vala:91
 msgid "Test Speakers…"
 msgstr "Luidsprekers testen…"
 
 #: src/OutputPanel.vala:95
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "Schermlezer:"
+msgstr "Schermlezer"
 
 #: src/OutputPanel.vala:103
 msgid "Provide audio descriptions for items on the screen"
@@ -148,10 +133,8 @@ msgstr ""
 "invoerapparaten zijn ingeschakeld."
 
 #: src/InputPanel.vala:45
-#, fuzzy
-#| msgid "Input volume:"
 msgid "Input Volume"
-msgstr "Invoervolume:"
+msgstr "Invoervolume"
 
 #: src/InputPanel.vala:53
 msgid "Unamplified"
