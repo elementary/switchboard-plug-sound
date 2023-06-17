@@ -18,9 +18,6 @@ public class Sound.OutputPanel : Gtk.Box {
     private unowned PulseAudioManager pam;
 
     construct {
-        margin = 12;
-        margin_top = 0;
-
         var no_device_grid = new Granite.Widgets.AlertView (
             _("No Connected Output Devices Detected"),
             _("Check that all cables are securely attached and audio output devices are powered on."),
