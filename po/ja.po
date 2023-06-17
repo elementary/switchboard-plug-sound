@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 06:21+0000\n"
-"PO-Revision-Date: 2021-12-17 12:02+0000\n"
+"PO-Revision-Date: 2023-06-19 15:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-10-16 06:42+0000\n"
 
 #: src/Plug.vala:23
@@ -63,21 +63,14 @@ msgid "Enable"
 msgstr "有効"
 
 #: src/OutputPanel.vala:25
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "接続済みの音声デバイスが検出されませんでした"
+msgstr "接続済みの出力デバイスが検出されませんでした"
 
 #: src/OutputPanel.vala:26
-#, fuzzy
-#| msgid ""
-#| "Check that all cables are securely attached and audio input devices are "
-#| "powered on."
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
-msgstr ""
-"ケーブルにゆるみがないか、音声入力デバイスの電源が入っているか確認してくださ"
+msgstr "ケーブルにゆるみがないか、音声出力デバイスの電源が入っているか確認してくださ"
 "い。"
 
 #: src/OutputPanel.vala:64
@@ -93,10 +86,8 @@ msgid "Right"
 msgstr "右"
 
 #: src/OutputPanel.vala:68
-#, fuzzy
-#| msgid "Event alerts:"
 msgid "Event Alerts"
-msgstr "イベント警告:"
+msgstr "イベント警告"
 
 #: src/OutputPanel.vala:70
 msgid "Play sound"
@@ -107,29 +98,22 @@ msgid "Flash screen"
 msgstr "画面の点滅"
 
 #: src/OutputPanel.vala:79
-#, fuzzy
-#| msgid ""
-#| "Event alerts occur when the system cannot do something in response to "
-#| "user input, like attempting to backspace in an empty input or switch "
-#| "windows when only one is open."
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
-"イベント警告は、空白の入力欄で Backspace キーを押そうとしたときや、1 つしか開"
-"いていないウィンドウを切り替えようとしたときなど、システムがユーザーの入力に"
-"応じた操作をできないときに実行されます。"
+"空白の入力欄で Backspace キーを押そうとしたときや、1つしか開いていないウィン"
+"ドウを切り替えようとしたときなど、システムが入力に応じた操作をできないときに"
+"通知します。"
 
 #: src/OutputPanel.vala:91
 msgid "Test Speakers…"
 msgstr "スピーカーをテスト…"
 
 #: src/OutputPanel.vala:95
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "スクリーンリーダー:"
+msgstr "スクリーンリーダー"
 
 #: src/OutputPanel.vala:103
 msgid "Provide audio descriptions for items on the screen"
@@ -148,10 +132,8 @@ msgstr ""
 "い。"
 
 #: src/InputPanel.vala:45
-#, fuzzy
-#| msgid "Input volume:"
 msgid "Input Volume"
-msgstr "入力音量:"
+msgstr "入力音量"
 
 #: src/InputPanel.vala:53
 msgid "Unamplified"
