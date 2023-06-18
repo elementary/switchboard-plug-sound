@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 06:21+0000\n"
-"PO-Revision-Date: 2021-12-18 12:56+0000\n"
+"PO-Revision-Date: 2023-06-19 15:07+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:23
@@ -63,21 +63,15 @@ msgid "Enable"
 msgstr "Aktivieren"
 
 #: src/OutputPanel.vala:25
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "Keine Audiogeräte gefunden"
+msgstr "Keine Ausgabegeräte gefunden"
 
 #: src/OutputPanel.vala:26
-#, fuzzy
-#| msgid ""
-#| "Check that all cables are securely attached and audio input devices are "
-#| "powered on."
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
-"Prüfen, ob alle Kabel korrekt eingesteckt und die Audioeingabegeräte "
+"Prüfen, ob alle Kabel korrekt eingesteckt und die Audioausgabegeräte "
 "eingeschaltet sind."
 
 #: src/OutputPanel.vala:64
@@ -93,10 +87,8 @@ msgid "Right"
 msgstr "Rechts"
 
 #: src/OutputPanel.vala:68
-#, fuzzy
-#| msgid "Event alerts:"
 msgid "Event Alerts"
-msgstr "Ereigniswarnungen:"
+msgstr "Ereigniswarnungen"
 
 #: src/OutputPanel.vala:70
 msgid "Play sound"
@@ -107,30 +99,23 @@ msgid "Flash screen"
 msgstr "Bildschirm kurz blinken lassen"
 
 #: src/OutputPanel.vala:79
-#, fuzzy
-#| msgid ""
-#| "Event alerts occur when the system cannot do something in response to "
-#| "user input, like attempting to backspace in an empty input or switch "
-#| "windows when only one is open."
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
-"Ereigniswarnungen werden ausgelöst, wenn das System auf Benutzereingaben "
-"nicht anders reagieren kann; das ist beispielsweise der Fall bei dem "
-"Versuch, in einem leeren Eingabefeld die Rücktaste zu betätigen oder zu "
-"einem anderen Fenster zu wechseln, obwohl nur ein einziges geöffnet ist."
+"Benachrichtigen, wenn das System auf Benutzereingaben nicht anders reagieren "
+"kann; das ist beispielsweise der Fall bei dem Versuch, in einem leeren "
+"Eingabefeld die Rücktaste zu betätigen oder zu einem anderen Fenster zu "
+"wechseln, obwohl nur ein einziges geöffnet ist."
 
 #: src/OutputPanel.vala:91
 msgid "Test Speakers…"
 msgstr "Lautsprecher testen …"
 
 #: src/OutputPanel.vala:95
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "Bildschirmvorleser:"
+msgstr "Bildschirmvorleser"
 
 #: src/OutputPanel.vala:103
 msgid "Provide audio descriptions for items on the screen"
@@ -149,10 +134,8 @@ msgstr ""
 "eingeschaltet sind."
 
 #: src/InputPanel.vala:45
-#, fuzzy
-#| msgid "Input volume:"
 msgid "Input Volume"
-msgstr "Eingangslautstärke:"
+msgstr "Eingangslautstärke"
 
 #: src/InputPanel.vala:53
 msgid "Unamplified"
