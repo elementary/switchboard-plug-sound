@@ -184,7 +184,7 @@ public class Sound.OutputPanel : Gtk.Box {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
         });
 
-        media_keys_settings.changed.connect (() => {
+        media_keys_settings.changed["screenreader"].connect (() => {
             screen_reader_description_label.label = screenreader_shortcut_label;
         });
 
