@@ -16,6 +16,23 @@ public class Sound.OutputPanel : Gtk.Box {
     private uint notify_timeout_id = 0;
     private unowned Canberra.Context? ca_context = null;
     private unowned PulseAudioManager pam;
+    private Settings media_keys_settings;
+
+    private string _screenreader_shortcut_label = "";
+    private string screenreader_shortcut_label {
+        get {
+            string?[] granite_accel_strings = null;
+            foreach (unowned var key in media_keys_settings.get_strv ("screenreader")) {
+                granite_accel_strings += Granite.accel_to_string (key);
+            }
+
+            _screenreader_shortcut_label = _("Provide audio descriptions for items on the screen. %s").printf (
+                string.joinv (_(", "), granite_accel_strings)
+            );
+
+            return _screenreader_shortcut_label;
+        }
+    }
 
     construct {
         var no_device_grid = new Granite.Widgets.AlertView (
@@ -97,7 +114,8 @@ public class Sound.OutputPanel : Gtk.Box {
             hexpand = true
         };
 
-        var screen_reader_description_label = new Gtk.Label (_("Provide audio descriptions for items on the screen")) {
+        media_keys_settings = new Settings ("org.gnome.settings-daemon.plugins.media-keys");
+        var screen_reader_description_label = new Gtk.Label (screenreader_shortcut_label) {
             wrap = true,
             xalign = 0
         };
@@ -164,6 +182,10 @@ public class Sound.OutputPanel : Gtk.Box {
 
         devices_listbox.row_activated.connect ((row) => {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
+        });
+
+        media_keys_settings.changed.connect (() => {
+            screen_reader_description_label.label = screenreader_shortcut_label;
         });
 
         volume_scale.button_release_event.connect (e => {
