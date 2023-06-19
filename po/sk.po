@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2022-02-05 22:24+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgstr "Zvuky udalostí"
 msgid "Port"
 msgstr "Port"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "Hlasitosť"
 
@@ -62,13 +62,23 @@ msgstr "Vyváženie"
 msgid "Enable"
 msgstr "Zapnúť"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, fuzzy, c-format
+#| msgid "Provide audio descriptions for items on the screen"
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr "Poskytuje zvukový popis položiek na obrazovke"
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 #, fuzzy
 #| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
 msgstr "Neboli nájdené žiadne pripojené zvukové zariadenia"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 #, fuzzy
 #| msgid ""
 #| "Check that all cables are securely attached and audio input devices are "
@@ -80,33 +90,33 @@ msgstr ""
 "Skontrolujte, či sú všetky káble dobre zapojené a vstupné zvukové zariadenia "
 "zapnuté."
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "Ľavé"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "Stredné"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "Pravé"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "Upozornenia udalostí:"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "Prehrať zvuk"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "Prebliknúť obrazovku"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -121,19 +131,15 @@ msgstr ""
 "požaduje používateľ. Napríklad stlačenie klávesy Backspace, keď nie je čo "
 "zmazať, alebo pokus o prepnutie na ďalšie okno, ak je otvorené iba jedno."
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "Otestovať reproduktory…"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 #, fuzzy
 #| msgid "Screen Reader:"
 msgid "Screen Reader"
 msgstr "Čítačka obrazovky:"
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
-msgstr "Poskytuje zvukový popis položiek na obrazovke"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"

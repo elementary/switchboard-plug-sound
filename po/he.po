@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2023-06-19 15:07+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgstr "צלילי אירועים"
 msgid "Port"
 msgstr "חיבור"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "עצמת שמע"
 
@@ -62,41 +62,51 @@ msgstr "איזון"
 msgid "Enable"
 msgstr "הפעלה"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, fuzzy, c-format
+#| msgid "Provide audio descriptions for items on the screen"
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr "אספקת תיאורים קוליים לפריטים על המסך"
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 msgid "No Connected Output Devices Detected"
 msgstr "לא התגלו התקני פלט מחוברים"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr "נא לבדוק שכל הכבלים מחוברים כראוי והתקני פלט השמע פועלים."
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "שמאלי"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "מרכז"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "ימני"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 msgid "Event Alerts"
 msgstr "התראות אירועים"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "השמעת צליל"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "הבהוב המסך"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
@@ -105,17 +115,13 @@ msgstr ""
 "להודיע כאשר המערכת לא יכולה לעשות משהו בתגובה לקלט, כמו לנסות למחוק קלט בשדה "
 "ריק או להחליף חלונות כאשר יש רק חלון אחד פתוח."
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "בדיקת הרמקולים…"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 msgid "Screen Reader"
 msgstr "מקריא מסך"
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
-msgstr "אספקת תיאורים קוליים לפריטים על המסך"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"

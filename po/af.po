@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2014-08-15 09:09+0000\n"
 "Last-Translator: Jaycee Lock <jaycee.lock@gmail.com>\n"
 "Language-Team: Afrikaans <af@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Port"
 msgstr ""
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr ""
 
@@ -60,57 +60,62 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, c-format
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr ""
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 msgid "No Connected Output Devices Detected"
 msgstr ""
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 msgid "Event Alerts"
 msgstr ""
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr ""
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 msgid "Screen Reader"
-msgstr ""
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
 #: src/InputPanel.vala:21

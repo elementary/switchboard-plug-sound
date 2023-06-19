@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2022-08-06 15:44+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgstr "이벤트 알림음"
 msgid "Port"
 msgstr "포트"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "볼륨"
 
@@ -62,13 +62,23 @@ msgstr "밸런스"
 msgid "Enable"
 msgstr "사용"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, fuzzy, c-format
+#| msgid "Provide audio descriptions for items on the screen"
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr "화면에 표시된 항목에 오디오로 된 설명 제공하기"
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 #, fuzzy
 #| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
 msgstr "연결된 오디오 장치를 발견할 수 없습니다"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 #, fuzzy
 #| msgid ""
 #| "Check that all cables are securely attached and audio input devices are "
@@ -80,33 +90,33 @@ msgstr ""
 "모든 케이블이 제대로 연결되어 있고 오디오 입력 장치의 전원이 켜져 있는지 확인"
 "하세요."
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "왼쪽"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "가운데"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "오른쪽"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "이벤트 소리:"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "소리 재생"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "플래시 스크린"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -121,19 +131,15 @@ msgstr ""
 "로 가기를 누른다거나 창이 하나만 열려 있는데 창 전환을 시도하거나 할 때 같은 "
 "상황에서 납니다."
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "스피커 테스트…"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 #, fuzzy
 #| msgid "Screen Reader:"
 msgid "Screen Reader"
 msgstr "스크린 리더:"
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
-msgstr "화면에 표시된 항목에 오디오로 된 설명 제공하기"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"

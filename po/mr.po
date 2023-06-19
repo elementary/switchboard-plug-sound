@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2019-03-09 18:27+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgstr "घटना ध्वनी"
 msgid "Port"
 msgstr "पोर्ट"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "आवाज"
 
@@ -62,45 +62,54 @@ msgstr "बॅलेन्स"
 msgid "Enable"
 msgstr "सक्षम"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, c-format
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr ""
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 #, fuzzy
 #| msgid "No Output Device"
 msgid "No Connected Output Devices Detected"
 msgstr "कोणतेही आउटपुट उपकरण नाही"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "डावा"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "मध्य"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "उजवा"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "घटना अलर्ट:"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "ध्वनी चालवा"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "स्क्रीन फ्लॅश करा"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -115,16 +124,12 @@ msgstr ""
 "जसे रिक्त इनपुटमध्ये बॅकस्पेस वापरण्याचा प्रयत्न करणे किंवा केवळ एखादे उघडल्यास विंडो स्विच "
 "करणे."
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "स्पीकर्सची चाचणी करा…"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 msgid "Screen Reader"
-msgstr ""
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
 #: src/InputPanel.vala:21

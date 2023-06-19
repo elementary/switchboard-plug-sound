@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2023-06-19 15:07+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgstr "Ereignistöne"
 msgid "Port"
 msgstr "Schnittstelle"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "Lautstärke"
 
@@ -62,11 +62,21 @@ msgstr "Balance"
 msgid "Enable"
 msgstr "Aktivieren"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, fuzzy, c-format
+#| msgid "Provide audio descriptions for items on the screen"
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr "Audiobeschreibungen zu Objekten auf dem Bildschirm"
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 msgid "No Connected Output Devices Detected"
 msgstr "Keine Ausgabegeräte gefunden"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
@@ -74,31 +84,31 @@ msgstr ""
 "Prüfen, ob alle Kabel korrekt eingesteckt und die Audioausgabegeräte "
 "eingeschaltet sind."
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "Links"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "Mitte"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "Rechts"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 msgid "Event Alerts"
 msgstr "Ereigniswarnungen"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "Ton wiedergeben"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "Bildschirm kurz blinken lassen"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
@@ -109,17 +119,13 @@ msgstr ""
 "Eingabefeld die Rücktaste zu betätigen oder zu einem anderen Fenster zu "
 "wechseln, obwohl nur ein einziges geöffnet ist."
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "Lautsprecher testen …"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 msgid "Screen Reader"
 msgstr "Bildschirmvorleser"
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
-msgstr "Audiobeschreibungen zu Objekten auf dem Bildschirm"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"

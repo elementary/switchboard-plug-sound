@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2018-11-19 11:15+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
@@ -52,7 +52,7 @@ msgstr "Įvykių garsai"
 msgid "Port"
 msgstr "Prievadas"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "Garsis"
 
@@ -64,45 +64,54 @@ msgstr "Balansas"
 msgid "Enable"
 msgstr "Įjungti"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, c-format
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr ""
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 #, fuzzy
 #| msgid "No Output Device"
 msgid "No Connected Output Devices Detected"
 msgstr "Nėra išvesties įrenginio"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "Kairė"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "Vidurys"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "Dešinė"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "Įvykių garsai:"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "Atkurti garsą"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "Blyksėti ekrane"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -117,16 +126,12 @@ msgstr ""
 "negali kažko atlikti. Pavyzdžiui, negali tuščiame lauke panaikinti jokių "
 "simbolių arba kai yra tik vienas langas, negali perjungti į kitą langą."
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "Išbandyti garsiakalbius…"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 msgid "Screen Reader"
-msgstr ""
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
 msgstr ""
 
 #: src/InputPanel.vala:21

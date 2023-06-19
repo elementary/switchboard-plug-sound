@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2022-01-15 12:35+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -50,7 +50,7 @@ msgstr "事件声音"
 msgid "Port"
 msgstr "端口"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "音量"
 
@@ -62,13 +62,23 @@ msgstr "音量平衡"
 msgid "Enable"
 msgstr "启用"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, fuzzy, c-format
+#| msgid "Provide audio descriptions for items on the screen"
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr "为屏幕上的项目提供音频描述"
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 #, fuzzy
 #| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
 msgstr "未检测到连接的音频设备"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 #, fuzzy
 #| msgid ""
 #| "Check that all cables are securely attached and audio input devices are "
@@ -78,33 +88,33 @@ msgid ""
 "powered on."
 msgstr "检查所有电缆是否已牢固连接并且音频输入设备已打开电源。"
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "左声道"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "均衡"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "右声道"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "事件警告："
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "播放声音"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "闪烁屏幕"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -118,19 +128,15 @@ msgstr ""
 "事件警告用于系统无法对输入指令做出响应的情况，如在空白内容处退格、仅有单一窗"
 "口时进行窗口切换等。"
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "声音测试…"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 #, fuzzy
 #| msgid "Screen Reader:"
 msgid "Screen Reader"
 msgstr "屏幕阅读："
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
-msgstr "为屏幕上的项目提供音频描述"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"

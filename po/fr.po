@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 06:21+0000\n"
+"POT-Creation-Date: 2023-06-19 20:26+0000\n"
 "PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgstr "Évènements sonores"
 msgid "Port"
 msgstr "Port"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:45
+#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
 msgid "Volume"
 msgstr "Volume"
 
@@ -62,13 +62,23 @@ msgstr "Balance"
 msgid "Enable"
 msgstr "Activer"
 
-#: src/OutputPanel.vala:25
+#: src/OutputPanel.vala:29
+#, fuzzy, c-format
+#| msgid "Provide audio descriptions for items on the screen"
+msgid "Provide audio descriptions for items on the screen. %s"
+msgstr "Fournit une description audio des éléments à l'écran"
+
+#: src/OutputPanel.vala:30
+msgid ", "
+msgstr ""
+
+#: src/OutputPanel.vala:39
 #, fuzzy
 #| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
 msgstr "Aucun périphérique audio connecté détecté"
 
-#: src/OutputPanel.vala:26
+#: src/OutputPanel.vala:40
 #, fuzzy
 #| msgid ""
 #| "Check that all cables are securely attached and audio input devices are "
@@ -80,33 +90,33 @@ msgstr ""
 "Veuillez vérifier que tous les câbles sont bien branchés et que les "
 "périphériques d'entrée audio sont bien allumés."
 
-#: src/OutputPanel.vala:64
+#: src/OutputPanel.vala:78
 msgid "Left"
 msgstr "Gauche"
 
-#: src/OutputPanel.vala:65
+#: src/OutputPanel.vala:79
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:66
+#: src/OutputPanel.vala:80
 msgid "Right"
 msgstr "Droit"
 
-#: src/OutputPanel.vala:68
+#: src/OutputPanel.vala:82
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "Évènements sonores :"
 
-#: src/OutputPanel.vala:70
+#: src/OutputPanel.vala:84
 msgid "Play sound"
 msgstr "Jouer un son"
 
-#: src/OutputPanel.vala:74
+#: src/OutputPanel.vala:88
 msgid "Flash screen"
 msgstr "Flasher l'écran"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:93
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -121,19 +131,15 @@ msgstr ""
 "l'action que demande l'utilisateur comme effectuer un retour arrière dans un "
 "champ vide ou changer de fenêtre lorsqu'il n'y en a qu'une d'ouverte."
 
-#: src/OutputPanel.vala:91
+#: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "Tester le son…"
 
-#: src/OutputPanel.vala:95
+#: src/OutputPanel.vala:109
 #, fuzzy
 #| msgid "Screen Reader:"
 msgid "Screen Reader"
 msgstr "Lecteur d'écran :"
-
-#: src/OutputPanel.vala:103
-msgid "Provide audio descriptions for items on the screen"
-msgstr "Fournit une description audio des éléments à l'écran"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
