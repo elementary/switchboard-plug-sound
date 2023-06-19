@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-19 20:26+0000\n"
-"PO-Revision-Date: 2023-06-19 15:07+0000\n"
+"PO-Revision-Date: 2023-06-21 16:07+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/he/>\n"
@@ -63,14 +63,13 @@ msgid "Enable"
 msgstr "הפעלה"
 
 #: src/OutputPanel.vala:29
-#, fuzzy, c-format
-#| msgid "Provide audio descriptions for items on the screen"
+#, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr "אספקת תיאורים קוליים לפריטים על המסך"
+msgstr "אספקת תיאורים קוליים לפריטים על המסך. %s"
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/OutputPanel.vala:39
 msgid "No Connected Output Devices Detected"
