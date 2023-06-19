@@ -89,8 +89,6 @@ public class Sound.InputPanel : Gtk.Box {
             default_changed ();
         });
 
-        volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
-
         connect_signals ();
     }
 
@@ -152,6 +150,8 @@ public class Sound.InputPanel : Gtk.Box {
                 if (volume_switch.active == default_device.is_muted) {
                     volume_switch.activate ();
                 }
+
+                volume_scale.sensitive = !default_device.is_muted;
                 break;
             case "volume":
                 volume_scale.set_value (default_device.volume);
