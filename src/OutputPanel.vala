@@ -162,9 +162,6 @@ public class Sound.OutputPanel : Gtk.Box {
         pam.new_device.connect (add_device);
         pam.notify["default-output"].connect (default_changed);
 
-        volume_switch.bind_property ("active", volume_scale, "sensitive", BindingFlags.DEFAULT);
-        volume_switch.bind_property ("active", balance_scale, "sensitive", BindingFlags.DEFAULT);
-
         var sound_settings = new Settings ("org.gnome.desktop.sound");
         sound_settings.bind ("event-sounds", audio_alert_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
@@ -259,6 +256,9 @@ public class Sound.OutputPanel : Gtk.Box {
                 if (volume_switch.active == default_device.is_muted) {
                     volume_switch.activate ();
                 }
+
+                balance_scale.sensitive = !default_device.is_muted;
+                volume_scale.sensitive = !default_device.is_muted;
                 break;
             case "volume":
                 volume_scale.set_value (default_device.volume);
