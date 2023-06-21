@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-19 20:26+0000\n"
-"PO-Revision-Date: 2023-06-19 15:07+0000\n"
+"PO-Revision-Date: 2023-06-22 22:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/hu/>\n"
@@ -63,14 +63,13 @@ msgid "Enable"
 msgstr "Engedélyezés"
 
 #: src/OutputPanel.vala:29
-#, fuzzy, c-format
-#| msgid "Provide audio descriptions for items on the screen"
+#, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr "Hangalapú leírások szolgáltatása a kijelzőn lévő elemekhez"
+msgstr "Hangalapú leírások szolgáltatása a kijelzőn lévő elemekhez. %s"
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/OutputPanel.vala:39
 msgid "No Connected Output Devices Detected"
