@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-19 20:26+0000\n"
-"PO-Revision-Date: 2021-12-18 09:03+0000\n"
+"PO-Revision-Date: 2023-06-25 11:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:23
@@ -64,32 +64,25 @@ msgid "Enable"
 msgstr "Włącz"
 
 #: src/OutputPanel.vala:29
-#, fuzzy, c-format
-#| msgid "Provide audio descriptions for items on the screen"
+#, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr "Dostarcz opisy dźwiękowe dla przedmiotów na ekranie"
+msgstr "Dostarcz opisy dźwiękowe dla przedmiotów na ekranie. %s"
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/OutputPanel.vala:39
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "Nie wykryto podłączonych urządzeń dźwięku"
+msgstr "Nie wykryto podłączonych urządzeń wyjściowych"
 
 #: src/OutputPanel.vala:40
-#, fuzzy
-#| msgid ""
-#| "Check that all cables are securely attached and audio input devices are "
-#| "powered on."
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
 "Sprawdź czy wszystkie kable są odpowiednio podpięte oraz czy urządzenia "
-"dźwiękowe są włączone."
+"wyjściowe dźwiękowe są włączone."
 
 #: src/OutputPanel.vala:78
 msgid "Left"
@@ -104,10 +97,8 @@ msgid "Right"
 msgstr "Prawy"
 
 #: src/OutputPanel.vala:82
-#, fuzzy
-#| msgid "Event alerts:"
 msgid "Event Alerts"
-msgstr "Alarmy wydarzeń:"
+msgstr "Alarmy wydarzeń"
 
 #: src/OutputPanel.vala:84
 msgid "Play sound"
@@ -118,30 +109,22 @@ msgid "Flash screen"
 msgstr "Migający ekran"
 
 #: src/OutputPanel.vala:93
-#, fuzzy
-#| msgid ""
-#| "Event alerts occur when the system cannot do something in response to "
-#| "user input, like attempting to backspace in an empty input or switch "
-#| "windows when only one is open."
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
-"Alerty o zdarzeniach pojawiają się, gdy system nie może zrobić czegoś w "
-"odpowiedzi na dane wprowadzane przez użytkownika. Dzieje się tak na przykład "
-"podczas próby cofnięcia do pustego wejścia lub przełączania okien, gdy tylko "
-"jedno jest otwarte."
+"Powiadamiaj gdy system nie może zrobić czegoś w odpowiedzi na dane "
+"wprowadzane przez użytkownika, jak na przykład podczas próby usunięcia znaku "
+"w pustym polu lub przełączania okien, gdy tylko jedno jest otwarte."
 
 #: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "Test głośników…"
 
 #: src/OutputPanel.vala:109
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "Czytnik ekranu:"
+msgstr "Czytnik ekranu"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
@@ -156,10 +139,8 @@ msgstr ""
 "dźwiękowe są włączone."
 
 #: src/InputPanel.vala:45
-#, fuzzy
-#| msgid "Input volume:"
 msgid "Input Volume"
-msgstr "Głośność na wejściu:"
+msgstr "Głośność wejścia"
 
 #: src/InputPanel.vala:53
 msgid "Unamplified"
