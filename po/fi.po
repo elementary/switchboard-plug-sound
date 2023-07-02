@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-19 20:26+0000\n"
-"PO-Revision-Date: 2021-12-20 09:18+0000\n"
+"PO-Revision-Date: 2023-07-03 13:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:23
@@ -63,31 +63,24 @@ msgid "Enable"
 msgstr "Käytä"
 
 #: src/OutputPanel.vala:29
-#, fuzzy, c-format
-#| msgid "Provide audio descriptions for items on the screen"
+#, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr "Tarjoa äänikuvaukset näytöllä oleville kohteille"
+msgstr "Tarjoa äänikuvaukset näytöllä oleville kohteille. %s"
 
 #: src/OutputPanel.vala:30
 msgid ", "
 msgstr ""
 
 #: src/OutputPanel.vala:39
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "Yhdistettyjä äänilaitteita ei havaittu"
+msgstr "Yhdistettyjä äänen ulostulolaitteita ei havaittu"
 
 #: src/OutputPanel.vala:40
-#, fuzzy
-#| msgid ""
-#| "Check that all cables are securely attached and audio input devices are "
-#| "powered on."
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
-"Varmista, että kaikki kaapelit on liitetty ja äänen tulolaitteisiin on "
+"Varmista, että kaikki kaapelit on liitetty ja äänen ulostulolaitteisiin on "
 "kytketty virta."
 
 #: src/OutputPanel.vala:78
@@ -103,10 +96,8 @@ msgid "Right"
 msgstr "Oikea"
 
 #: src/OutputPanel.vala:82
-#, fuzzy
-#| msgid "Event alerts:"
 msgid "Event Alerts"
-msgstr "Tapahtumaäänet:"
+msgstr "Tapahtumaäänet"
 
 #: src/OutputPanel.vala:84
 msgid "Play sound"
@@ -137,10 +128,8 @@ msgid "Test Speakers…"
 msgstr "Testaa kaiuttimia…"
 
 #: src/OutputPanel.vala:109
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "Näytönlukija:"
+msgstr "Näytönlukija"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
@@ -155,10 +144,8 @@ msgstr ""
 "kytketty virta."
 
 #: src/InputPanel.vala:45
-#, fuzzy
-#| msgid "Input volume:"
 msgid "Input Volume"
-msgstr "Sisääntulon äänenvoimakkuus:"
+msgstr "Sisääntulon äänenvoimakkuus"
 
 #: src/InputPanel.vala:53
 msgid "Unamplified"
