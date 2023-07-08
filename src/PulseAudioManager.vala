@@ -209,7 +209,7 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     public void change_device_mute (Device? device, bool mute = true) {
-        if (device == null) {
+        if (device == null || device.source_name == null) {
             return;
         }
 
