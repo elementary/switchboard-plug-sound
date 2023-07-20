@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-19 20:26+0000\n"
+"POT-Creation-Date: 2023-07-20 18:31+0000\n"
 "PO-Revision-Date: 2022-11-01 00:12+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -19,73 +19,68 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/sound.appdata.xml.in:5
+#: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
 msgstr "Hangbeállítások"
 
-#: data/sound.appdata.xml.in:6
+#: data/sound.metainfo.xml.in:11
 msgid "Change sound and microphone volume"
 msgstr "Hang és mikrofon hangerejének beállítása"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:25
-#: data/sound.appdata.xml.in:40 data/sound.appdata.xml.in:48
-#: data/sound.appdata.xml.in:56 data/sound.appdata.xml.in:65
-#: data/sound.appdata.xml.in:74 data/sound.appdata.xml.in:82
+#: data/sound.metainfo.xml.in:25
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/sound.metainfo.xml.in:32 data/sound.metainfo.xml.in:45
+#: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:70
+#: data/sound.metainfo.xml.in:79
 msgid "Minor updates:"
 msgstr "Kisebb frissítések:"
 
-#: data/sound.appdata.xml.in:14
+#: data/sound.metainfo.xml.in:34
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "A pontosabb ikonok hozzárendeléséhez használja az eszköz formai tényezőjét, "
 "ha az rendelkezésre áll"
 
-#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:29
-#: data/sound.appdata.xml.in:42 data/sound.appdata.xml.in:50
-#: data/sound.appdata.xml.in:59 data/sound.appdata.xml.in:68
-#: data/sound.appdata.xml.in:76 data/sound.appdata.xml.in:84
-#: data/sound.appdata.xml.in:92
+#: data/sound.metainfo.xml.in:35 data/sound.metainfo.xml.in:49
+#: data/sound.metainfo.xml.in:63 data/sound.metainfo.xml.in:72
+#: data/sound.metainfo.xml.in:82
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/sound.appdata.xml.in:27
+#: data/sound.metainfo.xml.in:47
 msgid "Provide a fallback device icon in case none is available"
 msgstr "Alapértelmezett ikon biztosítása arra az esetre, ha nincs elérhető"
 
-#: data/sound.appdata.xml.in:28
+#: data/sound.metainfo.xml.in:48
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
 "Hasznosabb helykitöltő szöveg arra az esetre, ha nem találhatóak bemeneti "
 "eszközök"
 
-#: data/sound.appdata.xml.in:35
+#: data/sound.metainfo.xml.in:56
 msgid "New features:"
 msgstr "Új funkciók:"
 
-#: data/sound.appdata.xml.in:37
+#: data/sound.metainfo.xml.in:58
 msgid "Show device icons"
 msgstr "Eszközikonok kijelzése"
 
-#: data/sound.appdata.xml.in:38
+#: data/sound.metainfo.xml.in:59
 msgid "Switch to enable the screen reader"
 msgstr "Kapcsoló a képernyőolvasóhoz"
 
-#: data/sound.appdata.xml.in:58
+#: data/sound.metainfo.xml.in:81
 msgid "Smoother transition when navigating away from this view"
 msgstr "Folyamatosabb átmenet a nézetből való elnavigáláskor"
 
-#: data/sound.appdata.xml.in:67
-msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr ""
-"A PulseAudio visszhangeltávolító moduljával kapcsolatos összeomlás javítva"
+#~ msgid "Fix crash with PulseAudio's echo cancellation plugin"
+#~ msgstr ""
+#~ "A PulseAudio visszhangeltávolító moduljával kapcsolatos összeomlás javítva"
 
-#: data/sound.appdata.xml.in:91
-msgid "Add volume slider event sound"
-msgstr "Hangeffekt a hangerő-csúszkához"
-
-#: data/sound.appdata.xml.in:102
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#~ msgid "Add volume slider event sound"
+#~ msgstr "Hangeffekt a hangerő-csúszkához"
 
 #~ msgid "Sound"
 #~ msgstr "Hang"
