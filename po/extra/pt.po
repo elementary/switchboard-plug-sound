@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-19 20:26+0000\n"
+"POT-Creation-Date: 2023-07-20 18:31+0000\n"
 "PO-Revision-Date: 2023-01-23 07:25+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -19,72 +19,67 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.14.2\n"
 
-#: data/sound.appdata.xml.in:5
+#: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
 msgstr "Definições do Som"
 
-#: data/sound.appdata.xml.in:6
+#: data/sound.metainfo.xml.in:11
 msgid "Change sound and microphone volume"
 msgstr "Alterar volume do som e do microfone"
 
-#: data/sound.appdata.xml.in:12 data/sound.appdata.xml.in:25
-#: data/sound.appdata.xml.in:40 data/sound.appdata.xml.in:48
-#: data/sound.appdata.xml.in:56 data/sound.appdata.xml.in:65
-#: data/sound.appdata.xml.in:74 data/sound.appdata.xml.in:82
+#: data/sound.metainfo.xml.in:25
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/sound.metainfo.xml.in:32 data/sound.metainfo.xml.in:45
+#: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:70
+#: data/sound.metainfo.xml.in:79
 msgid "Minor updates:"
 msgstr "Pequenas atualizações:"
 
-#: data/sound.appdata.xml.in:14
+#: data/sound.metainfo.xml.in:34
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "Usar o fator de forma do dispositivo quando disponível para atribuir ícones "
 "mais precisos"
 
-#: data/sound.appdata.xml.in:15 data/sound.appdata.xml.in:29
-#: data/sound.appdata.xml.in:42 data/sound.appdata.xml.in:50
-#: data/sound.appdata.xml.in:59 data/sound.appdata.xml.in:68
-#: data/sound.appdata.xml.in:76 data/sound.appdata.xml.in:84
-#: data/sound.appdata.xml.in:92
+#: data/sound.metainfo.xml.in:35 data/sound.metainfo.xml.in:49
+#: data/sound.metainfo.xml.in:63 data/sound.metainfo.xml.in:72
+#: data/sound.metainfo.xml.in:82
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/sound.appdata.xml.in:27
+#: data/sound.metainfo.xml.in:47
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
 "Disponibiliza um ícone de dispositivo de recurso no caso de nenhum estar "
 "disponível"
 
-#: data/sound.appdata.xml.in:28
+#: data/sound.metainfo.xml.in:48
 msgid "More helpful placeholder text when no input devices are found"
 msgstr "Texto mais útil quando não são encontrados dispositivos de entrada"
 
-#: data/sound.appdata.xml.in:35
+#: data/sound.metainfo.xml.in:56
 msgid "New features:"
 msgstr "Novas funcionalidades:"
 
-#: data/sound.appdata.xml.in:37
+#: data/sound.metainfo.xml.in:58
 msgid "Show device icons"
 msgstr "Mostrar ícones de dispositivos"
 
-#: data/sound.appdata.xml.in:38
+#: data/sound.metainfo.xml.in:59
 msgid "Switch to enable the screen reader"
 msgstr "Mudar para ativar o leitor de ecrã"
 
-#: data/sound.appdata.xml.in:58
+#: data/sound.metainfo.xml.in:81
 msgid "Smoother transition when navigating away from this view"
 msgstr "Transição mais suave ao navegar para longe desta vista"
 
-#: data/sound.appdata.xml.in:67
-msgid "Fix crash with PulseAudio's echo cancellation plugin"
-msgstr "Corrige falha com o plugin de cancelamento de eco do PulseAudio"
+#~ msgid "Fix crash with PulseAudio's echo cancellation plugin"
+#~ msgstr "Corrige falha com o plugin de cancelamento de eco do PulseAudio"
 
-#: data/sound.appdata.xml.in:91
-msgid "Add volume slider event sound"
-msgstr "Adicionar som de evento de volume deslizante"
-
-#: data/sound.appdata.xml.in:102
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
+#~ msgid "Add volume slider event sound"
+#~ msgstr "Adicionar som de evento de volume deslizante"
 
 #~ msgid "Sound"
 #~ msgstr "Som"
