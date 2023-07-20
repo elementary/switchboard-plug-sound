@@ -2,10 +2,30 @@
 <component type="addon">
   <id>io.elementary.switchboard.sound</id>
   <extends>io.elementary.switchboard</extends>
+  <translation type="gettext">sound-plug</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+
+  <icon type="stock">preferences-desktop-sound</icon>
   <name>Sound Settings</name>
   <summary>Change sound and microphone volume</summary>
-  <icon type="stock">preferences-desktop-sound</icon>
-  <translation type="gettext">sound-plug</translation>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/master/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="bugtracker">https://github.com/elementary/switchboard-plug-sound/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/switchboard-plug-sound/discussions</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
   <releases>
     <release version="2.3.2" date="2022-10-26" urgency="medium">
       <description>
@@ -30,6 +50,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.3.0" date="2021-11-23" urgency="medium">
       <description>
         <p>New features:</p>
@@ -43,6 +64,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.2.7" date="2021-07-14" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -51,6 +73,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.2.6" date="2020-12-23" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -60,48 +83,10 @@
         </ul>
       </description>
     </release>
-    <release version="2.2.5" date="2020-09-02" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Fix crash with PulseAudio's echo cancellation plugin</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.2.4" date="2020-05-28" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.2.3" date="2020-04-03" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.2.2" date="2019-11-15" urgency="medium">
-      <description>
-        <ul>
-          <li>Add volume slider event sound</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
+
+    <release version="2.2.5" date="2020-09-02" />
+    <release version="2.2.4" date="2020-05-28" />
+    <release version="2.2.3" date="2020-04-03" />
+    <release version="2.2.2" date="2019-11-15" />
   </releases>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/master/data/screenshot.png</image>
-    </screenshot>
-  </screenshots>
-  <developer_name>elementary, Inc.</developer_name>
-  <url type="homepage">https://elementary.io</url>
-  <url type="bugtracker">https://github.com/elementary/switchboard-plug-sound/issues</url>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0+</project_license>
 </component>
