@@ -27,6 +27,21 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+      <release version="2.3.3" date="2023-07-19" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Improve responsiveness for large and small displays</li>
+          <li>Better volume level indicator for microphones</li>
+          <li>Show screen reader shortcut</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-sound/issues/247">Sound settings crashing when entering "Input" submenu</issue>
+      </issues>
+    </release>
+
     <release version="2.3.2" date="2022-10-26" urgency="medium">
       <description>
         <p>Minor updates:</p>
