@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 18:40+0000\n"
-"PO-Revision-Date: 2023-05-03 05:06+0000\n"
+"PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,19 +33,19 @@ msgstr "elementary בע״מ"
 
 #: data/sound.metainfo.xml.in:32
 msgid "Improvements:"
-msgstr ""
+msgstr "שיפורים:"
 
 #: data/sound.metainfo.xml.in:34
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "התגובתיות של תצוגות גדולות וקטנות השתפרה"
 
 #: data/sound.metainfo.xml.in:35
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "מחוון עצמת השמע למיקרופונים השתפר"
 
 #: data/sound.metainfo.xml.in:36
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "מוצג קיצור למקריא המסך"
 
 #: data/sound.metainfo.xml.in:37 data/sound.metainfo.xml.in:50
 #: data/sound.metainfo.xml.in:64 data/sound.metainfo.xml.in:78
