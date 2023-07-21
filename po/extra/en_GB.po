@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 18:40+0000\n"
-"PO-Revision-Date: 2023-02-17 15:25+0000\n"
+"PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/sound-plug-extra/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
@@ -33,19 +33,19 @@ msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:32
 msgid "Improvements:"
-msgstr ""
+msgstr "Improvements:"
 
 #: data/sound.metainfo.xml.in:34
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "Improve responsiveness for large and small displays"
 
 #: data/sound.metainfo.xml.in:35
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "Better volume level indicator for microphones"
 
 #: data/sound.metainfo.xml.in:36
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "Show screen reader shortcut"
 
 #: data/sound.metainfo.xml.in:37 data/sound.metainfo.xml.in:50
 #: data/sound.metainfo.xml.in:64 data/sound.metainfo.xml.in:78
