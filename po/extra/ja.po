@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 18:40+0000\n"
-"PO-Revision-Date: 2023-05-06 10:06+0000\n"
+"PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ja/>\n"
@@ -33,19 +33,19 @@ msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:32
 msgid "Improvements:"
-msgstr ""
+msgstr "改善点:"
 
 #: data/sound.metainfo.xml.in:34
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "大型・小型のディスプレイを考慮したレスポンシブデザインに改善"
 
 #: data/sound.metainfo.xml.in:35
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "マイクの音量レベルインジケーターの見た目を改善"
 
 #: data/sound.metainfo.xml.in:36
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "スクリーンリーダーのショートカットキーを表示するように修正"
 
 #: data/sound.metainfo.xml.in:37 data/sound.metainfo.xml.in:50
 #: data/sound.metainfo.xml.in:64 data/sound.metainfo.xml.in:78
