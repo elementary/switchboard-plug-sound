@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 18:40+0000\n"
-"PO-Revision-Date: 2022-10-28 06:40+0000\n"
+"PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
@@ -34,19 +34,19 @@ msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:32
 msgid "Improvements:"
-msgstr ""
+msgstr "Ulepszenia:"
 
 #: data/sound.metainfo.xml.in:34
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "Zwiększono responsywność dla dużych i małych ekranów"
 
 #: data/sound.metainfo.xml.in:35
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "Lepszy indykator głośności dla mikrofonów"
 
 #: data/sound.metainfo.xml.in:36
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "Widoczny skrót do czytnika ekranu"
 
 #: data/sound.metainfo.xml.in:37 data/sound.metainfo.xml.in:50
 #: data/sound.metainfo.xml.in:64 data/sound.metainfo.xml.in:78
