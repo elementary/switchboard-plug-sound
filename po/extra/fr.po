@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:31+0000\n"
+"POT-Creation-Date: 2023-07-20 18:40+0000\n"
 "PO-Revision-Date: 2023-02-16 09:25+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/sound-"
@@ -31,47 +31,63 @@ msgstr "Changer le volume du son et du microphone"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/sound.metainfo.xml.in:32 data/sound.metainfo.xml.in:45
-#: data/sound.metainfo.xml.in:61 data/sound.metainfo.xml.in:70
-#: data/sound.metainfo.xml.in:79
+#: data/sound.metainfo.xml.in:32
+msgid "Improvements:"
+msgstr ""
+
+#: data/sound.metainfo.xml.in:34
+msgid "Improve responsiveness for large and small displays"
+msgstr ""
+
+#: data/sound.metainfo.xml.in:35
+msgid "Better volume level indicator for microphones"
+msgstr ""
+
+#: data/sound.metainfo.xml.in:36
+msgid "Show screen reader shortcut"
+msgstr ""
+
+#: data/sound.metainfo.xml.in:37 data/sound.metainfo.xml.in:50
+#: data/sound.metainfo.xml.in:64 data/sound.metainfo.xml.in:78
+#: data/sound.metainfo.xml.in:87 data/sound.metainfo.xml.in:97
+msgid "Updated translations"
+msgstr "Mise à jour des traductions"
+
+#: data/sound.metainfo.xml.in:47 data/sound.metainfo.xml.in:60
+#: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:85
+#: data/sound.metainfo.xml.in:94
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
-#: data/sound.metainfo.xml.in:34
+#: data/sound.metainfo.xml.in:49
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "Utilisation du format de l'appareil, lorsqu'il est disponible, pour "
 "attribuer des icônes plus précises"
 
-#: data/sound.metainfo.xml.in:35 data/sound.metainfo.xml.in:49
-#: data/sound.metainfo.xml.in:63 data/sound.metainfo.xml.in:72
-#: data/sound.metainfo.xml.in:82
-msgid "Updated translations"
-msgstr "Mise à jour des traductions"
-
-#: data/sound.metainfo.xml.in:47
+#: data/sound.metainfo.xml.in:62
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
 "Ajout d'une icône de périphérique par défaut si aucune icône n'est disponible"
 
-#: data/sound.metainfo.xml.in:48
+#: data/sound.metainfo.xml.in:63
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
 "Texte explicatif plus clair lorsqu'aucun périphérique d'entrée n'est trouvé"
 
-#: data/sound.metainfo.xml.in:56
+#: data/sound.metainfo.xml.in:71
 msgid "New features:"
 msgstr "Nouvelles fonctionnalités :"
 
-#: data/sound.metainfo.xml.in:58
+#: data/sound.metainfo.xml.in:73
 msgid "Show device icons"
 msgstr "Affichage des icônes des appareils"
 
-#: data/sound.metainfo.xml.in:59
+#: data/sound.metainfo.xml.in:74
 msgid "Switch to enable the screen reader"
 msgstr "Option pour activer le lecteur d'écran"
 
-#: data/sound.metainfo.xml.in:81
+#: data/sound.metainfo.xml.in:96
 msgid "Smoother transition when navigating away from this view"
 msgstr ""
 "Transition plus fluide lorsque cette vue est fermée au cours de la navigation"
