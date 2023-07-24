@@ -1,3 +1,9 @@
+switchboard-plug-sound (2.3.3) jammy; urgency=medium
+
+  * Release 2.3.3
+
+ -- Danielle Foré <danielle@elementary.io>  Mon, 24 Jul 2023 09:27:31 -0700
+
 switchboard-plug-sound (2.3.2) bionic; urgency=medium
 
   * Release 2.3.2 (#231)
