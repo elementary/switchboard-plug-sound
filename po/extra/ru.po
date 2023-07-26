@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 18:40+0000\n"
-"PO-Revision-Date: 2023-07-23 14:07+0000\n"
+"PO-Revision-Date: 2023-07-26 20:07+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ru/>\n"
@@ -42,7 +42,7 @@ msgstr "Улучшения адаптации интерфейса для бол
 
 #: data/sound.metainfo.xml.in:35
 msgid "Better volume level indicator for microphones"
-msgstr "Улучшенный индикатор звука для микрофонов"
+msgstr "Улучшенный индикатор громкости для микрофонов"
 
 #: data/sound.metainfo.xml.in:36
 msgid "Show screen reader shortcut"
