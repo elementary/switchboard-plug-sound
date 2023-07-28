@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 18:40+0000\n"
-"PO-Revision-Date: 2022-11-01 00:12+0000\n"
+"PO-Revision-Date: 2023-07-29 20:08+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
@@ -33,19 +33,19 @@ msgstr "elementary, Inc."
 
 #: data/sound.metainfo.xml.in:32
 msgid "Improvements:"
-msgstr ""
+msgstr "Újítások:"
 
 #: data/sound.metainfo.xml.in:34
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "A reszponzivitás javítása nagy és kicsi képernyőkön"
 
 #: data/sound.metainfo.xml.in:35
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "Jobb hangerő-indikátor a mikrofonokhoz"
 
 #: data/sound.metainfo.xml.in:36
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "Képernyőlvasó-gyorsparancs megjelenítése"
 
 #: data/sound.metainfo.xml.in:37 data/sound.metainfo.xml.in:50
 #: data/sound.metainfo.xml.in:64 data/sound.metainfo.xml.in:78
