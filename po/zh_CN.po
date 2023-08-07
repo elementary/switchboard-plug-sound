@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 18:40+0000\n"
-"PO-Revision-Date: 2022-01-15 12:35+0000\n"
-"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
+"PO-Revision-Date: 2023-08-08 11:08+0000\n"
+"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:23
@@ -63,30 +63,23 @@ msgid "Enable"
 msgstr "启用"
 
 #: src/OutputPanel.vala:29
-#, fuzzy, c-format
-#| msgid "Provide audio descriptions for items on the screen"
+#, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr "为屏幕上的项目提供音频描述"
+msgstr "为屏幕上的项目提供音频描述。%s"
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/OutputPanel.vala:39
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "未检测到连接的音频设备"
+msgstr "未检测到连接的输出设备"
 
 #: src/OutputPanel.vala:40
-#, fuzzy
-#| msgid ""
-#| "Check that all cables are securely attached and audio input devices are "
-#| "powered on."
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
-msgstr "检查所有电缆是否已牢固连接并且音频输入设备已打开电源。"
+msgstr "检查所有电缆是否已牢固连接并且音频输出设备已打开电源。"
 
 #: src/OutputPanel.vala:78
 msgid "Left"
@@ -101,10 +94,8 @@ msgid "Right"
 msgstr "右声道"
 
 #: src/OutputPanel.vala:82
-#, fuzzy
-#| msgid "Event alerts:"
 msgid "Event Alerts"
-msgstr "事件警告："
+msgstr "事件警告"
 
 #: src/OutputPanel.vala:84
 msgid "Play sound"
@@ -115,28 +106,20 @@ msgid "Flash screen"
 msgstr "闪烁屏幕"
 
 #: src/OutputPanel.vala:93
-#, fuzzy
-#| msgid ""
-#| "Event alerts occur when the system cannot do something in response to "
-#| "user input, like attempting to backspace in an empty input or switch "
-#| "windows when only one is open."
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
-msgstr ""
-"事件警告用于系统无法对输入指令做出响应的情况，如在空白内容处退格、仅有单一窗"
-"口时进行窗口切换等。"
+msgstr "用于系统无法对输入指令做出响应的情况，如在空白内容处退格、仅有单一窗口时进行"
+"窗口切换等。"
 
 #: src/OutputPanel.vala:105
 msgid "Test Speakers…"
 msgstr "声音测试…"
 
 #: src/OutputPanel.vala:109
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "屏幕阅读："
+msgstr "屏幕阅读器"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
@@ -149,10 +132,8 @@ msgid ""
 msgstr "检查所有电缆是否已牢固连接并且音频输入设备已打开电源。"
 
 #: src/InputPanel.vala:45
-#, fuzzy
-#| msgid "Input volume:"
 msgid "Input Volume"
-msgstr "输入音量："
+msgstr "输入音量"
 
 #: src/InputPanel.vala:53
 msgid "Unamplified"
