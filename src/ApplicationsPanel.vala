@@ -31,13 +31,16 @@ public class Sound.ApplicationsPanel : Gtk.Box {
             child = scrolled_window
         };
 
-        var reset_button = new Gtk.Button.with_label (_("Reset all apps to default"));
+        var reset_button = new Gtk.Button.with_label (_("Reset all apps to default")) {
+            halign = END
+        };
 
         orientation = VERTICAL;
         spacing = 12;
         add (frame);
         add (reset_button);
 
+        // TODO: Reset also non active applications
         reset_button.clicked.connect (() => {
             for (int i = 0; i < pulse_audio_manager.apps.get_n_items (); i++) {
                 pulse_audio_manager.change_application_volume ((App) pulse_audio_manager.apps.get_item (i), 1);
