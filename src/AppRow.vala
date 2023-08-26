@@ -60,7 +60,7 @@ public class Sound.AppRow : Gtk.Grid {
         attach (media_name_label, 1, 1, 2);
         attach (icon_button, 1, 2);
         attach (volume_scale, 2, 2);
-        attach (mute_switch, 3, 0, 1, 2);
+        attach (mute_switch, 3, 0, 1, 3);
 
         volume_scale.change_value.connect ((type, new_value) => {
             if (app != null) {
