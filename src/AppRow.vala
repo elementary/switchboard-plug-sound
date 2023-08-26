@@ -87,7 +87,7 @@ public class Sound.AppRow : Gtk.Grid {
     }
 
     private void update () {
-        media_name_label.label = app.media_name;
+        media_name_label.label = media_name_label.tooltip_text = app.media_name;
         volume_scale.set_value (app.volume);
         mute_switch.state = !app.muted;
         volume_scale.sensitive = !app.muted;
