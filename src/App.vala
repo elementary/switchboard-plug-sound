@@ -29,6 +29,13 @@ public class Sound.App : Object {
 
         var app_info = new DesktopAppInfo (app_id + ".desktop");
 
+        if (app_info == null) {
+            var results = DesktopAppInfo.search (app_id);
+            if (results[0] != null && results[0][0] != null) {
+                app_info = new DesktopAppInfo (results[0][0]);
+            }
+        }
+
         if (app_info != null) {
             display_name = app_info.get_name ();
             icon = app_info.get_icon ();
