@@ -1,3 +1,10 @@
+/*
+* SPDX-License-Identifier: LGPL-3.0-or-later
+* SPDX-FileCopyrightText: 2023 elementary, Inc. (https://elementary.io)
+*
+* Authored by: Leonhard Kargl <leo.kargl@proton.me>
+*/
+
 public class Sound.ApplicationsPanel : Gtk.Box {
     construct {
         var pulse_audio_manager = PulseAudioManager.get_default ();
@@ -10,7 +17,8 @@ public class Sound.ApplicationsPanel : Gtk.Box {
 
     private Gtk.Widget widget_create_func (Object item) {
         var app = (App) item;
-        var app_row = new AppRow (app);
+        var app_row = new AppRow ();
+        app_row.bind_app (app);
         app_row.show_all ();
         return app_row;
     }

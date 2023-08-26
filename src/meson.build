@@ -1,4 +1,5 @@
 plug_files = files(
+    'App.vala',
     'ApplicationsPanel.vala',
     'AppRow.vala',
     'TestPopover.vala',

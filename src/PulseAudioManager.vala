@@ -25,19 +25,6 @@
  *  - Source: Input (microphone)
  *  - Sink: Output (speaker)
  */
-public class App : Object {
-    public uint32 index { get; construct; }
-    public string name { get; construct; }
-    public PulseAudio.ChannelMap channel_map { get; set; }
-    public double volume { get; set; }
-
-    public App (uint32 index, string name) {
-        Object (
-            index: index,
-            name: name
-        );
-    }
-}
 
 public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudioManager pam;
@@ -321,7 +308,7 @@ public class Sound.PulseAudioManager : GLib.Object {
                              PulseAudio.Context.SubscriptionMask.SOURCE_OUTPUT |
                              PulseAudio.Context.SubscriptionMask.CARD);
                 context.get_server_info (server_info_callback);
-                context.get_sink_input_info_list (sink_input_info_cb);
+                context.get_sink_input_info_list (sink_input_info_callback);
 
                 is_ready = true;
                 break;
@@ -387,17 +374,15 @@ public class Sound.PulseAudioManager : GLib.Object {
                 switch (t & PulseAudio.Context.SubscriptionEventType.TYPE_MASK) {
                     case NEW:
                     case CHANGE:
-                        c.get_sink_input_info (index, sink_input_info_cb);
+                        c.get_sink_input_info (index, sink_input_info_callback);
                         break;
 
                     case REMOVE:
-                        uint position = 0;
-                        for (; position < apps.get_n_items (); position++) {
-                            if (index == ((App)apps.get_item (position)).index) {
-                                break;
+                        for (uint i = 0; i < apps.get_n_items (); i++) {
+                            if (index == ((App) apps.get_item (i)).index) {
+                                apps.remove (i);
                             }
                         }
-                        apps.remove (position);
                         break;
 
                     default:
@@ -613,7 +598,7 @@ public class Sound.PulseAudioManager : GLib.Object {
 
 
 
-    private void sink_input_info_cb (PulseAudio.Context c, PulseAudio.SinkInputInfo? sink_input, int eol) {
+    private void sink_input_info_callback (PulseAudio.Context c, PulseAudio.SinkInputInfo? sink_input, int eol) {
         if (sink_input == null) {
             return;
         }
@@ -927,7 +912,6 @@ public class Sound.PulseAudioManager : GLib.Object {
     public void change_application_volume (App app, double volume) {
         var cvol = PulseAudio.CVolume ();
 
-        var vol = double_to_volume (volume);
         cvol.set (app.channel_map.channels, PulseAudio.Volume.sw_from_linear (volume));
 
         context.set_sink_input_volume (app.index, cvol, (c, success) => {
