@@ -613,10 +613,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
 
         if (app == null) {
-            app = new App (
-                sink_input.index,
-                sink_input.proplist.gets ("application.name")
-            );
+            app = new App.from_sink_input_info (sink_input);
             apps.append (app);
         }
 

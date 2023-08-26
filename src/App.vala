@@ -6,31 +6,40 @@
 */
 
 public class Sound.App : Object {
-    public uint32 index { get; construct; }
-    public string name { get; construct; }
-    public string display_name { get; construct; }
-    public Icon icon { get; construct; }
+    public uint32 index { get; private set; }
+    public string name { get; private set; }
+    public string display_name { get; private set; }
+    public Icon icon { get; private set; }
 
+    public string media_name { get; set; }
     public double volume { get; set; }
     public bool muted { get; set; }
     public PulseAudio.ChannelMap channel_map { get; set; }
 
-    public App (uint32 index, string name) {
-        Object (
-            index: index,
-            name: name
-        );
-    }
+    public App.from_sink_input_info (PulseAudio.SinkInputInfo sink_input) {
+        index = sink_input.index;
+        name = sink_input.proplist.gets (PulseAudio.Proplist.PROP_APPLICATION_NAME);
 
-    construct {
-        var app_info = new GLib.DesktopAppInfo (name + ".desktop");
+        string app_id;
+        if (sink_input.proplist.contains (PulseAudio.Proplist.PROP_APPLICATION_ID) == 1) {
+            app_id = sink_input.proplist.gets (PulseAudio.Proplist.PROP_APPLICATION_ID);
+        } else {
+            app_id = name;
+        }
+
+        var app_info = new DesktopAppInfo (app_id + ".desktop");
 
         if (app_info != null) {
             display_name = app_info.get_name ();
             icon = app_info.get_icon ();
         } else {
             display_name = name;
-            icon = new ThemedIcon ("application-default-icon");
+
+            if (sink_input.proplist.contains (PulseAudio.Proplist.PROP_APPLICATION_ICON_NAME) == 1) {
+                icon = new ThemedIcon (sink_input.proplist.gets (PulseAudio.Proplist.PROP_APPLICATION_ICON_NAME));
+            } else {
+                icon = new ThemedIcon ("application-default-icon");
+            }
         }
     }
 }
