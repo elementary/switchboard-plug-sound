@@ -11,6 +11,9 @@ public class Sound.AppRow : Gtk.ListBoxRow {
     private Gtk.Image image;
     private Gtk.Button icon_button;
     private Gtk.Scale volume_scale;
+    private Gtk.Switch mute_switch;
+
+    private bool updating = false;
 
     construct {
         image = new Gtk.Image () {
@@ -34,6 +37,11 @@ public class Sound.AppRow : Gtk.ListBoxRow {
             draw_value = false
         };
 
+        mute_switch = new Gtk.Switch () {
+            halign = CENTER,
+            valign = CENTER
+        };
+
         var grid = new Gtk.Grid () {
             column_spacing = 6,
             margin_top = 6,
@@ -45,6 +53,7 @@ public class Sound.AppRow : Gtk.ListBoxRow {
         grid.attach (title_label, 1, 0, 2);
         grid.attach (icon_button, 1, 1);
         grid.attach (volume_scale, 2, 1);
+        grid.attach (mute_switch, 3, 0, 1, 2);
 
         hexpand = true;
         child = grid;
@@ -58,10 +67,15 @@ public class Sound.AppRow : Gtk.ListBoxRow {
         });
 
         icon_button.clicked.connect (() => toggle_mute_application ());
+
+        mute_switch.state_set.connect ((state) => {
+            toggle_mute_application (state);
+            return true;
+        });
     }
 
     private void toggle_mute_application (bool? custom = null) {
-        if (app == null) {
+        if (app == null || updating) {
             return;
         }
 
@@ -69,22 +83,23 @@ public class Sound.AppRow : Gtk.ListBoxRow {
     }
 
     private void update () {
+        updating = true;
+
         volume_scale.set_value (app.volume);
+        mute_switch.state = !app.muted;
+        volume_scale.sensitive = !app.muted;
 
         if (app.muted) {
             ((Gtk.Image) icon_button.image).icon_name = "audio-volume-muted";
-            volume_scale.sensitive = false;
+        } else if (volume_scale.get_value () < 0.33) {
+            ((Gtk.Image) icon_button.image).icon_name = "audio-volume-low";
+        } else if (volume_scale.get_value () > 0.66) {
+            ((Gtk.Image) icon_button.image).icon_name = "audio-volume-high";
         } else {
-            volume_scale.sensitive = true;
-
-            if (volume_scale.get_value () < 0.33) {
-                ((Gtk.Image) icon_button.image).icon_name = "audio-volume-low";
-            } else if (volume_scale.get_value () > 0.66) {
-                ((Gtk.Image) icon_button.image).icon_name = "audio-volume-high";
-            } else {
-                ((Gtk.Image) icon_button.image).icon_name = "audio-volume-medium";
-            }
+            ((Gtk.Image) icon_button.image).icon_name = "audio-volume-medium";
         }
+
+        updating = false;
     }
 
     public void bind_app (App app) {
