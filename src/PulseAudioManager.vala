@@ -628,6 +628,8 @@ public class Sound.PulseAudioManager : GLib.Object {
         if (app.volume != volume) {
             app.volume = volume;
         }
+
+        app.changed ();
     }
 
     private void card_info_callback (PulseAudio.Context c, PulseAudio.CardInfo? card, int eol) {

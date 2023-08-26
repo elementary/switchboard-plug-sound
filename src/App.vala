@@ -6,6 +6,8 @@
 */
 
 public class Sound.App : Object {
+    public signal void changed ();
+
     public uint32 index { get; private set; }
     public string name { get; private set; }
     public string display_name { get; private set; }

@@ -109,14 +109,12 @@ public class Sound.AppRow : Gtk.Grid {
         app_name_label.label = app.display_name;
         image.set_from_gicon (app.icon, Gtk.IconSize.DND);
 
-        app.notify["volume"].connect (update);
-        app.notify["muted"].connect (update);
+        app.changed.connect (update);
 
         volume_scale.set_value (app.volume);
     }
 
     public void unbind_app () {
-        app.notify["volume"].disconnect (update);
-        app.notify["muted"].disconnect (update);
+        app.changed.disconnect (update);
     }
 }
