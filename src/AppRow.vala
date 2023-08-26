@@ -117,5 +117,6 @@ public class Sound.AppRow : Gtk.ListBoxRow {
 
     public void unbind_app () {
         app.notify["volume"].disconnect (update);
+        app.notify["muted"].disconnect (update);
     }
 }
