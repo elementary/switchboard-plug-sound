@@ -5,7 +5,7 @@
 * Authored by: Leonhard Kargl <leo.kargl@proton.me>
 */
 
-public class Sound.AppRow : Gtk.ListBoxRow {
+public class Sound.AppRow : Gtk.Grid {
     private App? app;
     private Gtk.Label title_label;
     private Gtk.Image image;
@@ -40,21 +40,18 @@ public class Sound.AppRow : Gtk.ListBoxRow {
             valign = CENTER
         };
 
-        var grid = new Gtk.Grid () {
-            column_spacing = 6,
-            margin_top = 6,
-            margin_end = 6,
-            margin_bottom = 6,
-            margin_start = 6
-        };
-        grid.attach (image, 0, 0, 1, 2);
-        grid.attach (title_label, 1, 0, 2);
-        grid.attach (icon_button, 1, 1);
-        grid.attach (volume_scale, 2, 1);
-        grid.attach (mute_switch, 3, 0, 1, 2);
-
         hexpand = true;
-        child = grid;
+        column_spacing = 6;
+        margin_top = 6;
+        margin_end = 6;
+        margin_bottom = 6;
+        margin_start = 6;
+
+        attach (image, 0, 0, 1, 2);
+        attach (title_label, 1, 0, 2);
+        attach (icon_button, 1, 1);
+        attach (volume_scale, 2, 1);
+        attach (mute_switch, 3, 0, 1, 2);
 
         volume_scale.change_value.connect ((type, new_value) => {
             if (app != null) {
