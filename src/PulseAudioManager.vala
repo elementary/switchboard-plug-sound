@@ -617,9 +617,8 @@ public class Sound.PulseAudioManager : GLib.Object {
             apps.append (app);
         }
 
-        if (!app.channel_map.equal (sink_input.channel_map)) {
-            app.channel_map = sink_input.channel_map;
-        }
+        app.media_name = sink_input.name;
+        app.channel_map = sink_input.channel_map;
 
         if ((sink_input.mute != 0) != app.muted) {
             app.muted = sink_input.mute != 0;

@@ -7,7 +7,8 @@
 
 public class Sound.AppRow : Gtk.Grid {
     private App? app;
-    private Gtk.Label title_label;
+    private Gtk.Label app_name_label;
+    private Gtk.Label media_name_label;
     private Gtk.Image image;
     private Gtk.Button icon_button;
     private Gtk.Scale volume_scale;
@@ -18,12 +19,19 @@ public class Sound.AppRow : Gtk.Grid {
             pixel_size = 32
         };
 
-        title_label = new Gtk.Label ("") {
-            ellipsize = Pango.EllipsizeMode.END,
-            valign = Gtk.Align.END,
+        app_name_label = new Gtk.Label ("") {
+            ellipsize = END,
+            valign = END,
             xalign = 0
         };
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        app_name_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        media_name_label = new Gtk.Label ("") {
+            ellipsize = END,
+            valign = END,
+            xalign = 0
+        };
+        media_name_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         icon_button = new Gtk.Button.from_icon_name ("audio-volume-muted") {
             can_focus = false
@@ -47,10 +55,11 @@ public class Sound.AppRow : Gtk.Grid {
         margin_bottom = 6;
         margin_start = 6;
 
-        attach (image, 0, 0, 1, 2);
-        attach (title_label, 1, 0, 2);
-        attach (icon_button, 1, 1);
-        attach (volume_scale, 2, 1);
+        attach (image, 0, 0, 1, 3);
+        attach (app_name_label, 1, 0, 2);
+        attach (media_name_label, 1, 1, 2);
+        attach (icon_button, 1, 2);
+        attach (volume_scale, 2, 2);
         attach (mute_switch, 3, 0, 1, 2);
 
         volume_scale.change_value.connect ((type, new_value) => {
@@ -78,6 +87,7 @@ public class Sound.AppRow : Gtk.Grid {
     }
 
     private void update () {
+        media_name_label.label = app.media_name;
         volume_scale.set_value (app.volume);
         mute_switch.state = !app.muted;
         volume_scale.sensitive = !app.muted;
@@ -96,7 +106,7 @@ public class Sound.AppRow : Gtk.Grid {
     public void bind_app (App app) {
         this.app = app;
 
-        title_label.label = app.display_name;
+        app_name_label.label = app.display_name;
         image.set_from_gicon (app.icon, Gtk.IconSize.DND);
 
         app.notify["volume"].connect (update);
