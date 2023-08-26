@@ -13,8 +13,6 @@ public class Sound.AppRow : Gtk.ListBoxRow {
     private Gtk.Scale volume_scale;
     private Gtk.Switch mute_switch;
 
-    private bool updating = false;
-
     construct {
         image = new Gtk.Image () {
             pixel_size = 32
@@ -69,22 +67,20 @@ public class Sound.AppRow : Gtk.ListBoxRow {
         icon_button.clicked.connect (() => toggle_mute_application ());
 
         mute_switch.state_set.connect ((state) => {
-            toggle_mute_application (state);
+            toggle_mute_application (!state);
             return true;
         });
     }
 
     private void toggle_mute_application (bool? custom = null) {
-        if (app == null || updating) {
+        if (app == null) {
             return;
         }
 
-        PulseAudioManager.get_default ().mute_application (app, null != null ? custom : !app.muted);
+        PulseAudioManager.get_default ().mute_application (app, custom != null ? custom : !app.muted);
     }
 
     private void update () {
-        updating = true;
-
         volume_scale.set_value (app.volume);
         mute_switch.state = !app.muted;
         volume_scale.sensitive = !app.muted;
@@ -98,8 +94,6 @@ public class Sound.AppRow : Gtk.ListBoxRow {
         } else {
             ((Gtk.Image) icon_button.image).icon_name = "audio-volume-medium";
         }
-
-        updating = false;
     }
 
     public void bind_app (App app) {
