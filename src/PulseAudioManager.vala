@@ -25,6 +25,19 @@
  *  - Source: Input (microphone)
  *  - Sink: Output (speaker)
  */
+public class App : Object {
+    public uint32 index { get; construct; }
+    public string name { get; construct; }
+    public PulseAudio.ChannelMap channel_map { get; set; }
+    public double volume { get; set; }
+
+    public App (uint32 index, string name) {
+        Object (
+            index: index,
+            name: name
+        );
+    }
+}
 
 public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudioManager pam;
@@ -41,6 +54,8 @@ public class Sound.PulseAudioManager : GLib.Object {
     public signal void new_device (Device dev);
 
     public PulseAudio.Context context { get; private set; }
+    public ListStore apps { get; construct; }
+
     private PulseAudio.GLibMainLoop loop;
     private bool is_ready = false;
     private uint reconnect_timer_id = 0U;
@@ -58,6 +73,7 @@ public class Sound.PulseAudioManager : GLib.Object {
 
     construct {
         loop = new PulseAudio.GLibMainLoop ();
+        apps = new ListStore (typeof (App));
         input_devices = new Gee.HashMap<string, Device> ();
         output_devices = new Gee.HashMap<string, Device> ();
         volume_operations = new Gee.HashMap<uint32, PulseAudio.Operation> ();
@@ -305,6 +321,8 @@ public class Sound.PulseAudioManager : GLib.Object {
                              PulseAudio.Context.SubscriptionMask.SOURCE_OUTPUT |
                              PulseAudio.Context.SubscriptionMask.CARD);
                 context.get_server_info (server_info_callback);
+                context.get_sink_input_info_list (sink_input_info_cb);
+
                 is_ready = true;
                 break;
 
@@ -330,7 +348,6 @@ public class Sound.PulseAudioManager : GLib.Object {
         var source_type = t & PulseAudio.Context.SubscriptionEventType.FACILITY_MASK;
         switch (source_type) {
             case PulseAudio.Context.SubscriptionEventType.SINK:
-            case PulseAudio.Context.SubscriptionEventType.SINK_INPUT:
                 var event_type = t & PulseAudio.Context.SubscriptionEventType.TYPE_MASK;
                 switch (event_type) {
                     case PulseAudio.Context.SubscriptionEventType.NEW:
@@ -361,6 +378,29 @@ public class Sound.PulseAudioManager : GLib.Object {
                             }
                         }
 
+                        break;
+                }
+
+                break;
+
+            case PulseAudio.Context.SubscriptionEventType.SINK_INPUT:
+                switch (t & PulseAudio.Context.SubscriptionEventType.TYPE_MASK) {
+                    case NEW:
+                    case CHANGE:
+                        c.get_sink_input_info (index, sink_input_info_cb);
+                        break;
+
+                    case REMOVE:
+                        uint position = 0;
+                        for (; position < apps.get_n_items (); position++) {
+                            if (index == ((App)apps.get_item (position)).index) {
+                                break;
+                            }
+                        }
+                        apps.remove (position);
+                        break;
+
+                    default:
                         break;
                 }
 
@@ -568,6 +608,40 @@ public class Sound.PulseAudioManager : GLib.Object {
                     device.is_default = false;
                 }
             }
+        }
+    }
+
+
+
+    private void sink_input_info_cb (PulseAudio.Context c, PulseAudio.SinkInputInfo? sink_input, int eol) {
+        if (sink_input == null) {
+            return;
+        }
+
+        App? app = null;
+        for (uint i = 0; i < apps.get_n_items (); i++) {
+            var _app = (App) apps.get_item (i);
+            if (sink_input.index == _app.index) {
+                app = _app;
+                break;
+            }
+        }
+
+        if (app == null) {
+            app = new App (
+                sink_input.index,
+                sink_input.proplist.gets ("application.name")
+            );
+            apps.append (app);
+        }
+
+        if (!app.channel_map.equal (sink_input.channel_map)) {
+            app.channel_map = sink_input.channel_map;
+        }
+
+        var volume = sink_input.volume.avg ().sw_to_linear ();
+        if (app.volume != volume) {
+            app.volume = volume;
         }
     }
 
@@ -844,5 +918,22 @@ public class Sound.PulseAudioManager : GLib.Object {
     private static PulseAudio.Volume double_to_volume (double vol) {
         double tmp = (double)(PulseAudio.Volume.NORM - PulseAudio.Volume.MUTED) * vol / 100;
         return (PulseAudio.Volume)tmp + PulseAudio.Volume.MUTED;
+    }
+
+    /*
+     * Application Volume management
+     */
+
+    public void change_application_volume (App app, double volume) {
+        var cvol = PulseAudio.CVolume ();
+
+        var vol = double_to_volume (volume);
+        cvol.set (app.channel_map.channels, PulseAudio.Volume.sw_from_linear (volume));
+
+        context.set_sink_input_volume (app.index, cvol, (c, success) => {
+            if (success != 1) {
+                warning ("Changing application volume failed");
+            }
+        });
     }
 }

@@ -30,6 +30,7 @@ public class Sound.Plug : Switchboard.Plug {
         if (box == null) {
             var output_panel = new OutputPanel ();
             input_panel = new InputPanel ();
+            var applications_panel = new ApplicationsPanel ();
 
             stack = new Gtk.Stack () {
                 hexpand = true,
@@ -37,6 +38,7 @@ public class Sound.Plug : Switchboard.Plug {
             };
             stack.add_titled (output_panel, "output", _("Output"));
             stack.add_titled (input_panel, "input", _("Input"));
+            stack.add_titled (applications_panel, "applications", _("Applications"));
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,

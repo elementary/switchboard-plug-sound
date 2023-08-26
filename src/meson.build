@@ -1,4 +1,6 @@
 plug_files = files(
+    'ApplicationsPanel.vala',
+    'AppRow.vala',
     'TestPopover.vala',
     'PulseAudioManager.vala',
     'Plug.vala',
