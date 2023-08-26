@@ -16,7 +16,7 @@ public class Sound.AppRow : Gtk.Grid {
 
     construct {
         image = new Gtk.Image () {
-            pixel_size = 32
+            pixel_size = 48
         };
 
         app_name_label = new Gtk.Label ("") {
