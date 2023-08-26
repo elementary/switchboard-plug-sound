@@ -96,15 +96,8 @@ public class Sound.AppRow : Gtk.Grid {
     public void bind_app (App app) {
         this.app = app;
 
-        var appinfo = new GLib.DesktopAppInfo (app.name + ".desktop");
-
-        title_label.label = appinfo != null ? appinfo.get_name () : app.name;
-
-        if (appinfo != null && appinfo.get_icon () != null) {
-            image.set_from_gicon (appinfo.get_icon (), Gtk.IconSize.DND);
-        } else {
-            image.set_from_icon_name ("application-default-icon", Gtk.IconSize.DND);
-        }
+        title_label.label = app.display_name;
+        image.set_from_gicon (app.icon, Gtk.IconSize.DND);
 
         app.notify["volume"].connect (update);
         app.notify["muted"].connect (update);
