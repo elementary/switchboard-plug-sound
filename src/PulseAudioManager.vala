@@ -624,6 +624,10 @@ public class Sound.PulseAudioManager : GLib.Object {
             app.channel_map = sink_input.channel_map;
         }
 
+        if ((sink_input.mute != 0) != app.muted) {
+            app.muted = sink_input.mute != 0;
+        }
+
         var volume = sink_input.volume.avg ().sw_to_linear ();
         if (app.volume != volume) {
             app.volume = volume;
@@ -916,7 +920,15 @@ public class Sound.PulseAudioManager : GLib.Object {
 
         context.set_sink_input_volume (app.index, cvol, (c, success) => {
             if (success != 1) {
-                warning ("Changing application volume failed");
+                warning ("Failed to change volume of application '%s'.", app.name);
+            }
+        });
+    }
+
+    public void mute_application (App app, bool mute) {
+        context.set_sink_input_mute (app.index, mute, (c, success) => {
+            if (success != 1) {
+                warning ("Failed to mute application '%s'.", app.name);
             }
         });
     }
