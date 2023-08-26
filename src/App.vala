@@ -5,7 +5,7 @@
 * Authored by: Leonhard Kargl <leo.kargl@proton.me>
 */
 
-public class App : Object {
+public class Sound.App : Object {
    public uint32 index { get; construct; }
    public string name { get; construct; }
    public PulseAudio.ChannelMap channel_map { get; set; }
