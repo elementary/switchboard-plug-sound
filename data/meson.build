@@ -6,3 +6,8 @@ i18n.merge_file(
     install: true,
     install_dir: datadir / 'metainfo',
 )
+
+install_data(
+    'sound.gschema.xml',
+    install_dir: datadir / 'glib-2.0' / 'schemas'
+)

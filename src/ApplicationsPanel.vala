@@ -52,7 +52,6 @@ public class Sound.ApplicationsPanel : Gtk.Box {
         var app = (App) item;
         var app_row = new AppRow ();
         app_row.bind_app (app);
-        app_row.show_all ();
         return app_row;
     }
 }

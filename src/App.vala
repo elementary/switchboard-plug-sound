@@ -18,6 +18,14 @@ public class Sound.App : Object {
     public bool muted { get; set; }
     public PulseAudio.ChannelMap channel_map { get; set; }
 
+    public bool hidden { get; set; default = false; }
+
+    private static Settings settings;
+
+    static construct {
+        settings = new Settings ("io.elementary.switchboard.sound");
+    }
+
     public App.from_sink_input_info (PulseAudio.SinkInputInfo sink_input) {
         index = sink_input.index;
         name = sink_input.proplist.gets (PulseAudio.Proplist.PROP_APPLICATION_NAME);
@@ -32,10 +40,7 @@ public class Sound.App : Object {
         var app_info = new DesktopAppInfo (app_id + ".desktop");
 
         if (app_info == null) {
-            var results = DesktopAppInfo.search (app_id);
-            if (results[0] != null && results[0][0] != null) {
-                app_info = new DesktopAppInfo (results[0][0]);
-            }
+            settings.bind ("show-unknown-apps", this, "hidden", GET | INVERT_BOOLEAN);
         }
 
         if (app_info != null) {

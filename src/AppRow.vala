@@ -110,6 +110,17 @@ public class Sound.AppRow : Gtk.Grid {
         image.set_from_gicon (app.icon, Gtk.IconSize.DND);
 
         app.changed.connect (update);
+        app.notify["hidden"].connect (() => {
+            if (app.hidden) {
+                hide ();
+            } else {
+                show_all ();
+            }
+        });
+
+        if (!app.hidden) {
+            show_all ();
+        }
 
         volume_scale.set_value (app.volume);
     }
