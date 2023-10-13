@@ -79,7 +79,9 @@ public class Sound.OutputPanel : Gtk.Box {
         balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
         balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
 
-        var alerts_label = new Granite.HeaderLabel (_("Event Alerts"));
+        var alerts_label = new Granite.HeaderLabel (_("Event Alerts")) {
+            secondary_text = _("Notify when the system can't do something in response to input, like attempting to backspace in an empty input or switch windows when only one is open.")
+        };
 
         var audio_alert_check = new Gtk.CheckButton.with_label (_("Play sound")) {
             margin_top = 6
@@ -88,15 +90,6 @@ public class Sound.OutputPanel : Gtk.Box {
         var visual_alert_check = new Gtk.CheckButton.with_label (_("Flash screen")) {
             margin_top = 6
         };
-
-        var alerts_info = new Gtk.Label (
-            _("Notify when the system can't do something in response to input, like attempting to backspace in an empty input or switch windows when only one is open.")
-        ) {
-            wrap = true,
-            xalign = 0
-        };
-
-        alerts_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var test_popover = new TestPopover ();
 
@@ -107,20 +100,17 @@ public class Sound.OutputPanel : Gtk.Box {
             popover = test_popover
         };
 
-        var screen_reader_label = new Granite.HeaderLabel (_("Screen Reader"));
+        media_keys_settings = new Settings ("org.gnome.settings-daemon.plugins.media-keys");
+
+        var screen_reader_label = new Granite.HeaderLabel (_("Screen Reader")) {
+            secondary_text = screenreader_shortcut_label
+        };
 
         var screen_reader_switch = new Gtk.Switch () {
             halign = END,
             valign = CENTER,
             hexpand = true
         };
-
-        media_keys_settings = new Settings ("org.gnome.settings-daemon.plugins.media-keys");
-        var screen_reader_description_label = new Gtk.Label (screenreader_shortcut_label) {
-            wrap = true,
-            xalign = 0
-        };
-        screen_reader_description_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var output_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -132,7 +122,6 @@ public class Sound.OutputPanel : Gtk.Box {
 
         var alerts_box = new Gtk.Box (VERTICAL, 0);
         alerts_box.append (alerts_label);
-        alerts_box.append (alerts_info);
         alerts_box.append (audio_alert_check);
         alerts_box.append (visual_alert_check);
 
@@ -140,8 +129,7 @@ public class Sound.OutputPanel : Gtk.Box {
             column_spacing = 12
         };
         screen_reader_grid.attach (screen_reader_label, 0, 0);
-        screen_reader_grid.attach (screen_reader_description_label, 0, 1);
-        screen_reader_grid.attach (screen_reader_switch, 1, 0, 1, 2);
+        screen_reader_grid.attach (screen_reader_switch, 1, 0);
 
         orientation = VERTICAL;
         spacing = 18;
@@ -183,7 +171,7 @@ public class Sound.OutputPanel : Gtk.Box {
         });
 
         media_keys_settings.changed["screenreader"].connect (() => {
-            screen_reader_description_label.label = screenreader_shortcut_label;
+            screen_reader_label.secondary_text = screenreader_shortcut_label;
         });
 
         // volume_scale.button_release_event.connect (e => {
