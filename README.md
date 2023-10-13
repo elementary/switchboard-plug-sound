@@ -7,9 +7,10 @@
 
 You'll need the following dependencies:
 
-* libcanberra-gtk3-dev
-* libgranite-dev
-* libgtk-3-dev
+* libadwaita-1-dev
+* libcanberra-gtk4-dev
+* libgranite-7-dev
+* libgtk-4-dev
 * libpulse-dev
 * libswitchboard-3-dev
 * meson
@@ -23,4 +24,4 @@ Run `meson` to configure the build environment and then `ninja` to build
 
 To install, use `ninja install`
 
-    sudo ninja install
+    ninja install
