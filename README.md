@@ -8,7 +8,7 @@
 You'll need the following dependencies:
 
 * libadwaita-1-dev
-* libcanberra-gtk4-dev
+* libcanberra-dev
 * libgranite-7-dev
 * libgtk-4-dev
 * libpulse-dev
