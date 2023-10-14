@@ -124,23 +124,21 @@ public class Sound.OutputPanel : Gtk.Box {
         output_grid.attach (volume_switch, 1, 1);
         output_grid.attach (balance_scale, 0, 2);
 
-        var alerts_box = new Gtk.Box (VERTICAL, 0);
+        var alerts_box = new Gtk.Box (VERTICAL, 3);
         alerts_box.append (alerts_label);
         alerts_box.append (audio_alert_check);
         alerts_box.append (visual_alert_check);
 
-        var screen_reader_grid = new Gtk.Grid () {
-            column_spacing = 12
-        };
-        screen_reader_grid.attach (screen_reader_label, 0, 0);
-        screen_reader_grid.attach (screen_reader_switch, 1, 0);
+        var screen_reader_box = new Gtk.Box (HORIZONTAL, 12);
+        screen_reader_box.append (screen_reader_label);
+        screen_reader_box.append (screen_reader_switch);
 
         orientation = VERTICAL;
         spacing = 18;
         append (devices_frame);
         append (output_grid);
         append (alerts_box);
-        append (screen_reader_grid);
+        append (screen_reader_box);
         append (test_button);
 
         var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
