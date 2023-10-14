@@ -51,10 +51,6 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         description_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var grid = new Gtk.Grid () {
-            margin_top = 6,
-            margin_end = 6,
-            margin_bottom = 6,
-            margin_start = 6,
             column_spacing = 12,
             orientation = Gtk.Orientation.HORIZONTAL
         };

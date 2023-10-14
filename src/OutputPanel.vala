@@ -47,6 +47,7 @@ public class Sound.OutputPanel : Gtk.Box {
             vexpand = true
         };
         devices_listbox.set_placeholder (no_device_grid);
+        devices_listbox.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
         var scrolled = new Gtk.ScrolledWindow () {
             child = devices_listbox

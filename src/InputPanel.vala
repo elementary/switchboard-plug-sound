@@ -29,6 +29,7 @@ public class Sound.InputPanel : Gtk.Box {
             vexpand = true
         };
         devices_listbox.set_placeholder (no_device_grid);
+        devices_listbox.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
         devices_listbox.row_activated.connect ((row) => {
             pam.set_default_device.begin (((Sound.DeviceRow) row).device);
