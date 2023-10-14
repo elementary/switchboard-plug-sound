@@ -58,11 +58,14 @@ public class Sound.OutputPanel : Gtk.Box {
 
         var volume_label = new Granite.HeaderLabel (_("Volume"));
 
+        var legacy_controller = new Gtk.EventControllerLegacy ();
+
         volume_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 5) {
             draw_value = false,
             hexpand = true
         };
         volume_scale.adjustment.page_increment = 5;
+        volume_scale.add_controller (legacy_controller);
 
         volume_switch = new Gtk.Switch () {
             valign = Gtk.Align.CENTER,
@@ -174,17 +177,14 @@ public class Sound.OutputPanel : Gtk.Box {
             screen_reader_label.secondary_text = screenreader_shortcut_label;
         });
 
-        // volume_scale.button_release_event.connect (e => {
-        //     notify_change ();
-        //     return false;
-        // });
+        legacy_controller.event.connect ((e) => {
+            var event_type = e.get_event_type ();
+            if (event_type == SCROLL || event_type == BUTTON_RELEASE) {
+                notify_change ();
+            }
 
-        // volume_scale.scroll_event.connect (e => {
-        //     if (volume_scale.get_value () < 100) {
-        //         notify_change ();
-        //     }
-        //     return false;
-        // });
+            return Gdk.EVENT_PROPAGATE;
+        });
     }
 
     private void default_changed () {
