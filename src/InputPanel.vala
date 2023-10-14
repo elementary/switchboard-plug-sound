@@ -58,7 +58,7 @@ public class Sound.InputPanel : Gtk.Box {
         };
 
         level_bar = new Gtk.LevelBar.for_interval (0.0, 1.0);
-        level_bar.get_style_context ().add_class ("inverted");
+        level_bar.add_css_class ("inverted");
 
         level_bar.add_offset_value ("low", 0.8);
         level_bar.add_offset_value ("high", 0.95);

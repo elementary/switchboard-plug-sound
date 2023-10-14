@@ -138,7 +138,7 @@ public class Sound.TestPopover : Gtk.Popover {
         }
 
         construct {
-            get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
+            add_css_class (Granite.STYLE_CLASS_FLAT);
 
             image = new Gtk.Image.from_icon_name (get_icon ()) {
                 pixel_size = 48

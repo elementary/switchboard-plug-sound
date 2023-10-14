@@ -47,10 +47,8 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         var description_label = new Gtk.Label (device.description) {
             xalign = 0
         };
-
-        unowned var description_style_context = description_label.get_style_context ();
-        description_style_context.add_class (Granite.STYLE_CLASS_DIM_LABEL);
-        description_style_context.add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        description_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+        description_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var grid = new Gtk.Grid () {
             margin_top = 6,
