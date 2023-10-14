@@ -72,7 +72,7 @@ public class Sound.InputDeviceMonitor : GLib.Object {
 
         var props = new PulseAudio.Proplist ();
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_NAME, "Sound Settings");
-        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "io.elementary.setings.sound.sound");
+        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "io.elementary.settings");
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_ICON_NAME, "preferences-desktop-sound");
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_VERSION, "0.1");
 
