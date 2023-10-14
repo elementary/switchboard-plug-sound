@@ -1,26 +1,24 @@
-Source: switchboard-plug-sound
+Source: io.elementary.settings.sound
 Section: x11
 Priority: optional
 Maintainer: elementary OS Team <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                gettext,
+               libadwaita-1-dev,
                libcanberra-dev,
-               libcanberra-gtk3-dev,
-               libgranite-dev,
-               libhandy-1-dev,
+               libgranite-7-dev,
+               libgtk-4-dev,
                libpulse-dev,
-               libswitchboard-2.0-dev,
+               libswitchboard-3-dev,
                meson,
                valac (>= 0.22)
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/switchboard-plug-sound
 
-Package: switchboard-plug-sound
+Package: io.elementary.settings.sound
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Enhances: switchboard
-Conflicts: switchboard-plug-gcc-sound
-Replaces: switchboard-plug-gcc-sound
+Enhances: io.elementary.settings
 Description: Sound plug for Switchboard
  This plug allows the user to set the audio and microphone volume and several 
  sound-related settings.
