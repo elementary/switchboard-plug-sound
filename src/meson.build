@@ -24,6 +24,7 @@ shared_module(
         dependency('gobject-2.0'),
         dependency('granite-7'),
         dependency('gtk4'),
+        dependency('gtk4-x11'),
         dependency('libadwaita-1'),
         dependency('libpulse'),
         dependency('libpulse-mainloop-glib'),
