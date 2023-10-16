@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:40+0000\n"
+"POT-Creation-Date: 2023-10-16 17:32+0000\n"
 "PO-Revision-Date: 2023-01-23 07:25+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -27,67 +27,67 @@ msgstr "Definições do Som"
 msgid "Change sound and microphone volume"
 msgstr "Alterar volume do som e do microfone"
 
-#: data/sound.metainfo.xml.in:25
+#: data/sound.metainfo.xml.in:28
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/sound.metainfo.xml.in:32
+#: data/sound.metainfo.xml.in:35
 msgid "Improvements:"
 msgstr ""
 
-#: data/sound.metainfo.xml.in:34
+#: data/sound.metainfo.xml.in:37
 msgid "Improve responsiveness for large and small displays"
 msgstr ""
 
-#: data/sound.metainfo.xml.in:35
+#: data/sound.metainfo.xml.in:38
 msgid "Better volume level indicator for microphones"
 msgstr ""
 
-#: data/sound.metainfo.xml.in:36
+#: data/sound.metainfo.xml.in:39
 msgid "Show screen reader shortcut"
 msgstr ""
 
-#: data/sound.metainfo.xml.in:37 data/sound.metainfo.xml.in:50
-#: data/sound.metainfo.xml.in:64 data/sound.metainfo.xml.in:78
-#: data/sound.metainfo.xml.in:87 data/sound.metainfo.xml.in:97
+#: data/sound.metainfo.xml.in:40 data/sound.metainfo.xml.in:53
+#: data/sound.metainfo.xml.in:67 data/sound.metainfo.xml.in:81
+#: data/sound.metainfo.xml.in:90 data/sound.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/sound.metainfo.xml.in:47 data/sound.metainfo.xml.in:60
-#: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:85
-#: data/sound.metainfo.xml.in:94
+#: data/sound.metainfo.xml.in:50 data/sound.metainfo.xml.in:63
+#: data/sound.metainfo.xml.in:79 data/sound.metainfo.xml.in:88
+#: data/sound.metainfo.xml.in:97
 msgid "Minor updates:"
 msgstr "Pequenas atualizações:"
 
-#: data/sound.metainfo.xml.in:49
+#: data/sound.metainfo.xml.in:52
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "Usar o fator de forma do dispositivo quando disponível para atribuir ícones "
 "mais precisos"
 
-#: data/sound.metainfo.xml.in:62
+#: data/sound.metainfo.xml.in:65
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
 "Disponibiliza um ícone de dispositivo de recurso no caso de nenhum estar "
 "disponível"
 
-#: data/sound.metainfo.xml.in:63
+#: data/sound.metainfo.xml.in:66
 msgid "More helpful placeholder text when no input devices are found"
 msgstr "Texto mais útil quando não são encontrados dispositivos de entrada"
 
-#: data/sound.metainfo.xml.in:71
+#: data/sound.metainfo.xml.in:74
 msgid "New features:"
 msgstr "Novas funcionalidades:"
 
-#: data/sound.metainfo.xml.in:73
+#: data/sound.metainfo.xml.in:76
 msgid "Show device icons"
 msgstr "Mostrar ícones de dispositivos"
 
-#: data/sound.metainfo.xml.in:74
+#: data/sound.metainfo.xml.in:77
 msgid "Switch to enable the screen reader"
 msgstr "Mudar para ativar o leitor de ecrã"
 
-#: data/sound.metainfo.xml.in:96
+#: data/sound.metainfo.xml.in:99
 msgid "Smoother transition when navigating away from this view"
 msgstr "Transição mais suave ao navegar para longe desta vista"
 
