@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:40+0000\n"
+"POT-Creation-Date: 2023-10-16 17:32+0000\n"
 "PO-Revision-Date: 2023-06-22 22:07+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -28,37 +28,37 @@ msgstr "Audio"
 msgid "Change sound and microphone volume"
 msgstr "Audio- und Mikrofonlautstärke ändern"
 
-#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
-#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
 msgid "Output"
 msgstr "Ausgang"
 
-#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
 msgid "Input"
 msgstr "Eingang"
 
-#: src/Plug.vala:94 src/Plug.vala:100
+#: src/Plug.vala:95 src/Plug.vala:101
 msgid "Device"
 msgstr "Gerät"
 
-#: src/Plug.vala:95
+#: src/Plug.vala:96
 msgid "Event Sounds"
 msgstr "Ereignistöne"
 
-#: src/Plug.vala:96 src/Plug.vala:101
+#: src/Plug.vala:97 src/Plug.vala:102
 msgid "Port"
 msgstr "Schnittstelle"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
+#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "Lautstärke"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:99
 msgid "Balance"
 msgstr "Balance"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:104
 msgid "Enable"
 msgstr "Aktivieren"
 
@@ -75,7 +75,7 @@ msgstr ", "
 msgid "No Connected Output Devices Detected"
 msgstr "Keine Ausgabegeräte gefunden"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:41
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
@@ -83,31 +83,23 @@ msgstr ""
 "Prüfen, ob alle Kabel korrekt eingesteckt und die Audioausgabegeräte "
 "eingeschaltet sind."
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "Left"
 msgstr "Links"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Center"
 msgstr "Mitte"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Right"
 msgstr "Rechts"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 msgid "Event Alerts"
 msgstr "Ereigniswarnungen"
 
-#: src/OutputPanel.vala:84
-msgid "Play sound"
-msgstr "Ton wiedergeben"
-
-#: src/OutputPanel.vala:88
-msgid "Flash screen"
-msgstr "Bildschirm kurz blinken lassen"
-
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:87
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
@@ -118,7 +110,15 @@ msgstr ""
 "Eingabefeld die Rücktaste zu betätigen oder zu einem anderen Fenster zu "
 "wechseln, obwohl nur ein einziges geöffnet ist."
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:90
+msgid "Play sound"
+msgstr "Ton wiedergeben"
+
+#: src/OutputPanel.vala:94
+msgid "Flash screen"
+msgstr "Bildschirm kurz blinken lassen"
+
+#: src/OutputPanel.vala:103
 msgid "Test Speakers…"
 msgstr "Lautsprecher testen …"
 
@@ -130,7 +130,7 @@ msgstr "Bildschirmvorleser"
 msgid "No Connected Audio Devices Detected"
 msgstr "Keine Audiogeräte gefunden"
 
-#: src/InputPanel.vala:22
+#: src/InputPanel.vala:23
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
@@ -138,15 +138,15 @@ msgstr ""
 "Prüfen, ob alle Kabel korrekt eingesteckt und die Audioeingabegeräte "
 "eingeschaltet sind."
 
-#: src/InputPanel.vala:45
+#: src/InputPanel.vala:46
 msgid "Input Volume"
 msgstr "Eingangslautstärke"
 
-#: src/InputPanel.vala:53
+#: src/InputPanel.vala:54
 msgid "Unamplified"
 msgstr "Unverstärkt"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:55
 msgid "100%"
 msgstr "100%"
 

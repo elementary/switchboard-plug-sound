@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:40+0000\n"
+"POT-Creation-Date: 2023-10-16 17:32+0000\n"
 "PO-Revision-Date: 2022-02-05 22:24+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -28,37 +28,37 @@ msgstr "Zvuk"
 msgid "Change sound and microphone volume"
 msgstr "Meňte hlasitosť zvuku a mikrofónu"
 
-#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
-#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
 msgid "Output"
 msgstr "Výstup"
 
-#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
 msgid "Input"
 msgstr "Vstup"
 
-#: src/Plug.vala:94 src/Plug.vala:100
+#: src/Plug.vala:95 src/Plug.vala:101
 msgid "Device"
 msgstr "Zariadenie"
 
-#: src/Plug.vala:95
+#: src/Plug.vala:96
 msgid "Event Sounds"
 msgstr "Zvuky udalostí"
 
-#: src/Plug.vala:96 src/Plug.vala:101
+#: src/Plug.vala:97 src/Plug.vala:102
 msgid "Port"
 msgstr "Port"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
+#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "Hlasitosť"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:99
 msgid "Balance"
 msgstr "Vyváženie"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:104
 msgid "Enable"
 msgstr "Zapnúť"
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "No Connected Output Devices Detected"
 msgstr "Neboli nájdené žiadne pripojené zvukové zariadenia"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:41
 #, fuzzy
 #| msgid ""
 #| "Check that all cables are securely attached and audio input devices are "
@@ -90,33 +90,25 @@ msgstr ""
 "Skontrolujte, či sú všetky káble dobre zapojené a vstupné zvukové zariadenia "
 "zapnuté."
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "Left"
 msgstr "Ľavé"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Center"
 msgstr "Stredné"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Right"
 msgstr "Pravé"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "Upozornenia udalostí:"
 
-#: src/OutputPanel.vala:84
-msgid "Play sound"
-msgstr "Prehrať zvuk"
-
-#: src/OutputPanel.vala:88
-msgid "Flash screen"
-msgstr "Prebliknúť obrazovku"
-
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:87
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -131,7 +123,15 @@ msgstr ""
 "požaduje používateľ. Napríklad stlačenie klávesy Backspace, keď nie je čo "
 "zmazať, alebo pokus o prepnutie na ďalšie okno, ak je otvorené iba jedno."
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:90
+msgid "Play sound"
+msgstr "Prehrať zvuk"
+
+#: src/OutputPanel.vala:94
+msgid "Flash screen"
+msgstr "Prebliknúť obrazovku"
+
+#: src/OutputPanel.vala:103
 msgid "Test Speakers…"
 msgstr "Otestovať reproduktory…"
 
@@ -145,7 +145,7 @@ msgstr "Čítačka obrazovky:"
 msgid "No Connected Audio Devices Detected"
 msgstr "Neboli nájdené žiadne pripojené zvukové zariadenia"
 
-#: src/InputPanel.vala:22
+#: src/InputPanel.vala:23
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
@@ -153,17 +153,17 @@ msgstr ""
 "Skontrolujte, či sú všetky káble dobre zapojené a vstupné zvukové zariadenia "
 "zapnuté."
 
-#: src/InputPanel.vala:45
+#: src/InputPanel.vala:46
 #, fuzzy
 #| msgid "Input volume:"
 msgid "Input Volume"
 msgstr "Vstupná hlasitosť:"
 
-#: src/InputPanel.vala:53
+#: src/InputPanel.vala:54
 msgid "Unamplified"
 msgstr "Nezosilnené"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:55
 msgid "100%"
 msgstr "100%"
 
