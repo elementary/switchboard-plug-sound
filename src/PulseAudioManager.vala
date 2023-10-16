@@ -285,7 +285,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
 
         var props = new PulseAudio.Proplist ();
-        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "org.pantheon.switchboard.plug.sound");
+        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "io.elementary.settings.sound");
         context = new PulseAudio.Context (loop.get_api (), null, props);
         context.set_state_callback (context_state_callback);
 
