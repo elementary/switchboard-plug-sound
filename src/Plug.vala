@@ -20,7 +20,7 @@ public class Sound.Plug : Switchboard.Plug {
         settings.set ("sound/input", "input");
         settings.set ("sound/output", "output");
         Object (category: Category.HARDWARE,
-                code_name: "io.elementary.switchboard.sound",
+                code_name: "io.elementary.settings.sound",
                 display_name: _("Sound"),
                 description: _("Change sound and microphone volume"),
                 icon: "preferences-desktop-sound",
@@ -43,20 +43,21 @@ public class Sound.Plug : Switchboard.Plug {
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
-                homogeneous = true,
                 stack = stack
             };
 
-            var clamp = new Hdy.Clamp () {
+            var clamp = new Adw.Clamp () {
                 child = stack
             };
 
             box = new Gtk.Box (VERTICAL, 12) {
-                margin = 12
+                margin_top = 12,
+                margin_end = 12,
+                margin_bottom = 12,
+                margin_start = 12
             };
-            box.add (stack_switcher);
-            box.add (clamp);
-            box.show_all ();
+            box.append (stack_switcher);
+            box.append (clamp);
 
             var pam = PulseAudioManager.get_default ();
             pam.start ();
