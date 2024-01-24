@@ -209,13 +209,13 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     public void change_device_mute (Device? device, bool mute = true) {
-        if (device == null || device.source_name == null) {
+        if (device == null) {
             return;
         }
 
-        if (device.input) {
+        if (device.input && device.source_name != null) {
             context.set_source_mute_by_name (device.source_name, mute, null);
-        } else {
+        } else if (device.sink_name != null) {
             context.set_sink_mute_by_name (device.sink_name, mute, null);
         }
     }
