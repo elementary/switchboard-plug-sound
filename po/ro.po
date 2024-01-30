@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:40+0000\n"
+"POT-Creation-Date: 2023-10-16 17:32+0000\n"
 "PO-Revision-Date: 2017-05-25 08:18+0000\n"
 "Last-Translator: Sergiu <sergiup26@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,37 +29,37 @@ msgstr "Sunet"
 msgid "Change sound and microphone volume"
 msgstr ""
 
-#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
-#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
 msgid "Output"
 msgstr ""
 
-#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
 msgid "Input"
 msgstr ""
 
-#: src/Plug.vala:94 src/Plug.vala:100
+#: src/Plug.vala:95 src/Plug.vala:101
 msgid "Device"
 msgstr ""
 
-#: src/Plug.vala:95
+#: src/Plug.vala:96
 msgid "Event Sounds"
 msgstr ""
 
-#: src/Plug.vala:96 src/Plug.vala:101
+#: src/Plug.vala:97 src/Plug.vala:102
 msgid "Port"
 msgstr ""
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
+#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr ""
 
-#: src/Plug.vala:98
+#: src/Plug.vala:99
 msgid "Balance"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:104
 msgid "Enable"
 msgstr ""
 
@@ -76,44 +76,44 @@ msgstr ""
 msgid "No Connected Output Devices Detected"
 msgstr ""
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:41
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
 msgstr ""
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 msgid "Event Alerts"
 msgstr ""
 
-#: src/OutputPanel.vala:84
-msgid "Play sound"
-msgstr ""
-
-#: src/OutputPanel.vala:88
-msgid "Flash screen"
-msgstr ""
-
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:87
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:90
+msgid "Play sound"
+msgstr ""
+
+#: src/OutputPanel.vala:94
+msgid "Flash screen"
+msgstr ""
+
+#: src/OutputPanel.vala:103
 msgid "Test Speakers…"
 msgstr ""
 
@@ -125,21 +125,21 @@ msgstr ""
 msgid "No Connected Audio Devices Detected"
 msgstr ""
 
-#: src/InputPanel.vala:22
+#: src/InputPanel.vala:23
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
 msgstr ""
 
-#: src/InputPanel.vala:45
+#: src/InputPanel.vala:46
 msgid "Input Volume"
 msgstr ""
 
-#: src/InputPanel.vala:53
+#: src/InputPanel.vala:54
 msgid "Unamplified"
 msgstr ""
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:55
 msgid "100%"
 msgstr ""
 

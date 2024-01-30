@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:40+0000\n"
+"POT-Creation-Date: 2023-10-16 17:32+0000\n"
 "PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -28,37 +28,37 @@ msgstr "Ses"
 msgid "Change sound and microphone volume"
 msgstr "Ses ve mikrofon seviyelerini değiştir"
 
-#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
-#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
 msgid "Output"
 msgstr "Çıkış"
 
-#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
 msgid "Input"
 msgstr "Giriş"
 
-#: src/Plug.vala:94 src/Plug.vala:100
+#: src/Plug.vala:95 src/Plug.vala:101
 msgid "Device"
 msgstr "Aygıt"
 
-#: src/Plug.vala:95
+#: src/Plug.vala:96
 msgid "Event Sounds"
 msgstr "Olay Sesleri"
 
-#: src/Plug.vala:96 src/Plug.vala:101
+#: src/Plug.vala:97 src/Plug.vala:102
 msgid "Port"
 msgstr "Bağlantı Noktası"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
+#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "Ses Düzeyi"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:99
 msgid "Balance"
 msgstr "Denge"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:104
 msgid "Enable"
 msgstr "Etkinleştir"
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "No Connected Output Devices Detected"
 msgstr "Bağlı Ses Aygıtı Algılanmadı"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:41
 #, fuzzy
 #| msgid ""
 #| "Check that all cables are securely attached and audio input devices are "
@@ -90,33 +90,25 @@ msgstr ""
 "Tüm kabloların güvenli bir şekilde takıldığından ve ses giriş cihazlarının "
 "açık olduğundan emin olun."
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "Left"
 msgstr "Sol"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Center"
 msgstr "Orta"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Right"
 msgstr "Sağ"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "Olay uyarıları:"
 
-#: src/OutputPanel.vala:84
-msgid "Play sound"
-msgstr "Ses çal"
-
-#: src/OutputPanel.vala:88
-msgid "Flash screen"
-msgstr "Ekran yanıp sönsün"
-
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:87
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -131,7 +123,15 @@ msgstr ""
 "meydana gelir. Örneğin boş bir metin girişinde silme girişimi veya yalnızca "
 "bir tane pencere açıkken pencereleri değiştirmeye çalışmak gibi."
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:90
+msgid "Play sound"
+msgstr "Ses çal"
+
+#: src/OutputPanel.vala:94
+msgid "Flash screen"
+msgstr "Ekran yanıp sönsün"
+
+#: src/OutputPanel.vala:103
 msgid "Test Speakers…"
 msgstr "Hoparlörleri Test Et…"
 
@@ -145,7 +145,7 @@ msgstr "Ekran Okuyucu:"
 msgid "No Connected Audio Devices Detected"
 msgstr "Bağlı Ses Aygıtı Algılanmadı"
 
-#: src/InputPanel.vala:22
+#: src/InputPanel.vala:23
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
@@ -153,17 +153,17 @@ msgstr ""
 "Tüm kabloların güvenli bir şekilde takıldığından ve ses giriş cihazlarının "
 "açık olduğundan emin olun."
 
-#: src/InputPanel.vala:45
+#: src/InputPanel.vala:46
 #, fuzzy
 #| msgid "Input volume:"
 msgid "Input Volume"
 msgstr "Giriş seviyesi:"
 
-#: src/InputPanel.vala:53
+#: src/InputPanel.vala:54
 msgid "Unamplified"
 msgstr "Yükseltilmedi"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:55
 msgid "100%"
 msgstr "%100"
 

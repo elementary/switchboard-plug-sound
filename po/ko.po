@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:40+0000\n"
+"POT-Creation-Date: 2023-10-16 17:32+0000\n"
 "PO-Revision-Date: 2022-08-06 15:44+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -28,37 +28,37 @@ msgstr "소리"
 msgid "Change sound and microphone volume"
 msgstr "소리 및 마이크 볼륨을 조절합니다"
 
-#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
-#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
 msgid "Output"
 msgstr "출력"
 
-#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
 msgid "Input"
 msgstr "입력"
 
-#: src/Plug.vala:94 src/Plug.vala:100
+#: src/Plug.vala:95 src/Plug.vala:101
 msgid "Device"
 msgstr "장치"
 
-#: src/Plug.vala:95
+#: src/Plug.vala:96
 msgid "Event Sounds"
 msgstr "이벤트 알림음"
 
-#: src/Plug.vala:96 src/Plug.vala:101
+#: src/Plug.vala:97 src/Plug.vala:102
 msgid "Port"
 msgstr "포트"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
+#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "볼륨"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:99
 msgid "Balance"
 msgstr "밸런스"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:104
 msgid "Enable"
 msgstr "사용"
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "No Connected Output Devices Detected"
 msgstr "연결된 오디오 장치를 발견할 수 없습니다"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:41
 #, fuzzy
 #| msgid ""
 #| "Check that all cables are securely attached and audio input devices are "
@@ -90,33 +90,25 @@ msgstr ""
 "모든 케이블이 제대로 연결되어 있고 오디오 입력 장치의 전원이 켜져 있는지 확인"
 "하세요."
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "Left"
 msgstr "왼쪽"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Center"
 msgstr "가운데"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Right"
 msgstr "오른쪽"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "이벤트 소리:"
 
-#: src/OutputPanel.vala:84
-msgid "Play sound"
-msgstr "소리 재생"
-
-#: src/OutputPanel.vala:88
-msgid "Flash screen"
-msgstr "플래시 스크린"
-
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:87
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -131,7 +123,15 @@ msgstr ""
 "로 가기를 누른다거나 창이 하나만 열려 있는데 창 전환을 시도하거나 할 때 같은 "
 "상황에서 납니다."
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:90
+msgid "Play sound"
+msgstr "소리 재생"
+
+#: src/OutputPanel.vala:94
+msgid "Flash screen"
+msgstr "플래시 스크린"
+
+#: src/OutputPanel.vala:103
 msgid "Test Speakers…"
 msgstr "스피커 테스트…"
 
@@ -145,7 +145,7 @@ msgstr "스크린 리더:"
 msgid "No Connected Audio Devices Detected"
 msgstr "연결된 오디오 장치를 발견할 수 없습니다"
 
-#: src/InputPanel.vala:22
+#: src/InputPanel.vala:23
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
@@ -153,17 +153,17 @@ msgstr ""
 "모든 케이블이 제대로 연결되어 있고 오디오 입력 장치의 전원이 켜져 있는지 확인"
 "하세요."
 
-#: src/InputPanel.vala:45
+#: src/InputPanel.vala:46
 #, fuzzy
 #| msgid "Input volume:"
 msgid "Input Volume"
 msgstr "입력 볼륨:"
 
-#: src/InputPanel.vala:53
+#: src/InputPanel.vala:54
 msgid "Unamplified"
 msgstr "비증폭"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:55
 msgid "100%"
 msgstr "100%"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 18:40+0000\n"
+"POT-Creation-Date: 2023-10-16 17:32+0000\n"
 "PO-Revision-Date: 2023-06-25 11:07+0000\n"
 "Last-Translator: Corentin Noël <tintou@noel.tf>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -28,37 +28,37 @@ msgstr "Son"
 msgid "Change sound and microphone volume"
 msgstr "Changer le volume du son et du microphone"
 
-#: src/Plug.vala:38 src/Plug.vala:93 src/Plug.vala:94 src/Plug.vala:95
-#: src/Plug.vala:96 src/Plug.vala:97 src/Plug.vala:98 src/Device.vala:101
+#: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
 msgid "Output"
 msgstr "Sortie"
 
-#: src/Plug.vala:39 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
 msgid "Input"
 msgstr "Entrée"
 
-#: src/Plug.vala:94 src/Plug.vala:100
+#: src/Plug.vala:95 src/Plug.vala:101
 msgid "Device"
 msgstr "Périphérique"
 
-#: src/Plug.vala:95
+#: src/Plug.vala:96
 msgid "Event Sounds"
 msgstr "Évènements sonores"
 
-#: src/Plug.vala:96 src/Plug.vala:101
+#: src/Plug.vala:97 src/Plug.vala:102
 msgid "Port"
 msgstr "Port"
 
-#: src/Plug.vala:97 src/Plug.vala:102 src/OutputPanel.vala:59
+#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "Volume"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:99
 msgid "Balance"
 msgstr "Balance"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:104
 msgid "Enable"
 msgstr "Activer"
 
@@ -75,7 +75,7 @@ msgstr ", "
 msgid "No Connected Output Devices Detected"
 msgstr "Aucun périphérique de sortie audio connecté détecté"
 
-#: src/OutputPanel.vala:40
+#: src/OutputPanel.vala:41
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
@@ -83,31 +83,23 @@ msgstr ""
 "Veuillez vérifier que tous les câbles sont bien branchés et que les "
 "périphériques de sortie audio sont bien allumés."
 
-#: src/OutputPanel.vala:78
+#: src/OutputPanel.vala:82
 msgid "Left"
 msgstr "Gauche"
 
-#: src/OutputPanel.vala:79
+#: src/OutputPanel.vala:83
 msgid "Center"
 msgstr "Centre"
 
-#: src/OutputPanel.vala:80
+#: src/OutputPanel.vala:84
 msgid "Right"
 msgstr "Droit"
 
-#: src/OutputPanel.vala:82
+#: src/OutputPanel.vala:86
 msgid "Event Alerts"
 msgstr "Évènements sonores"
 
-#: src/OutputPanel.vala:84
-msgid "Play sound"
-msgstr "Jouer un son"
-
-#: src/OutputPanel.vala:88
-msgid "Flash screen"
-msgstr "Flasher l'écran"
-
-#: src/OutputPanel.vala:93
+#: src/OutputPanel.vala:87
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
@@ -117,7 +109,15 @@ msgstr ""
 "comme effectuer un retour arrière dans un champ vide ou changer de fenêtre "
 "lorsqu'il n'y en a qu'une d'ouverte."
 
-#: src/OutputPanel.vala:105
+#: src/OutputPanel.vala:90
+msgid "Play sound"
+msgstr "Jouer un son"
+
+#: src/OutputPanel.vala:94
+msgid "Flash screen"
+msgstr "Flasher l'écran"
+
+#: src/OutputPanel.vala:103
 msgid "Test Speakers…"
 msgstr "Tester le son…"
 
@@ -129,7 +129,7 @@ msgstr "Lecteur d'écran"
 msgid "No Connected Audio Devices Detected"
 msgstr "Aucun périphérique audio connecté détecté"
 
-#: src/InputPanel.vala:22
+#: src/InputPanel.vala:23
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
@@ -137,15 +137,15 @@ msgstr ""
 "Veuillez vérifier que tous les câbles sont bien branchés et que les "
 "périphériques d'entrée audio sont bien allumés."
 
-#: src/InputPanel.vala:45
+#: src/InputPanel.vala:46
 msgid "Input Volume"
 msgstr "Volume d'enregistrement"
 
-#: src/InputPanel.vala:53
+#: src/InputPanel.vala:54
 msgid "Unamplified"
 msgstr "Non Amplifié"
 
-#: src/InputPanel.vala:54
+#: src/InputPanel.vala:55
 msgid "100%"
 msgstr "100%"
 

@@ -209,13 +209,13 @@ public class Sound.PulseAudioManager : GLib.Object {
     }
 
     public void change_device_mute (Device? device, bool mute = true) {
-        if (device == null || device.source_name == null) {
+        if (device == null) {
             return;
         }
 
-        if (device.input) {
+        if (device.input && device.source_name != null) {
             context.set_source_mute_by_name (device.source_name, mute, null);
-        } else {
+        } else if (device.sink_name != null) {
             context.set_sink_mute_by_name (device.sink_name, mute, null);
         }
     }
@@ -285,7 +285,7 @@ public class Sound.PulseAudioManager : GLib.Object {
         }
 
         var props = new PulseAudio.Proplist ();
-        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "org.pantheon.switchboard.plug.sound");
+        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "io.elementary.settings.sound");
         context = new PulseAudio.Context (loop.get_api (), null, props);
         context.set_state_callback (context_state_callback);
 
