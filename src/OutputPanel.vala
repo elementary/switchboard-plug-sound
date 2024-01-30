@@ -79,9 +79,12 @@ public class Sound.OutputPanel : Gtk.Box {
 
         balance_scale.adjustment.page_increment = 0.1;
 
-        balance_scale.add_mark (-1, Gtk.PositionType.BOTTOM, _("Left"));
-        balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, _("Center"));
-        balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Right"));
+        /// TRANSLATORS: describes sound balance
+        balance_scale.add_mark (-1, Gtk.PositionType.BOTTOM, NC_("balance", "Left"));
+        /// TRANSLATORS: describes sound balance
+        balance_scale.add_mark (0, Gtk.PositionType.BOTTOM, NC_("balance", "Center"));
+        /// TRANSLATORS: describes sound balance
+        balance_scale.add_mark (1, Gtk.PositionType.BOTTOM, NC_("balance", "Right"));
 
         var alerts_label = new Granite.HeaderLabel (_("Event Alerts")) {
             secondary_text = _("Notify when the system can't do something in response to input, like attempting to backspace in an empty input or switch windows when only one is open.")
