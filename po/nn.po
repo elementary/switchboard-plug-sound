@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 17:32+0000\n"
+"POT-Creation-Date: 2024-01-30 15:51+0000\n"
 "PO-Revision-Date: 2019-01-06 22:36+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -83,25 +83,37 @@ msgid ""
 "powered on."
 msgstr ""
 
-#: src/OutputPanel.vala:82
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:83
+#, fuzzy
+#| msgid "Left"
+msgctxt "balance"
 msgid "Left"
 msgstr "Venstre"
 
-#: src/OutputPanel.vala:83
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:85
+#, fuzzy
+#| msgid "Center"
+msgctxt "balance"
 msgid "Center"
 msgstr "Sentrum"
 
-#: src/OutputPanel.vala:84
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:87
+#, fuzzy
+#| msgid "Right"
+msgctxt "balance"
 msgid "Right"
 msgstr "Høgre"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:89
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "Hendingsvarsel"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:90
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -116,19 +128,19 @@ msgstr ""
 "brukarhandlingar som har med inndata å gjere, som til dømes forsøk på å "
 "bruke rettetasten i eit tomt felt, eller byte vindauge når kun eitt er opent."
 
-#: src/OutputPanel.vala:90
+#: src/OutputPanel.vala:93
 msgid "Play sound"
 msgstr "Spel av lyd"
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:97
 msgid "Flash screen"
 msgstr "Blink skjermen"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr "Test høgtalarar…"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:112
 msgid "Screen Reader"
 msgstr ""
 

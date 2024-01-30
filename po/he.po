@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 17:32+0000\n"
+"POT-Creation-Date: 2024-01-30 15:51+0000\n"
 "PO-Revision-Date: 2023-06-21 16:07+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -81,23 +81,35 @@ msgid ""
 "powered on."
 msgstr "נא לבדוק שכל הכבלים מחוברים כראוי והתקני פלט השמע פועלים."
 
-#: src/OutputPanel.vala:82
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:83
+#, fuzzy
+#| msgid "Left"
+msgctxt "balance"
 msgid "Left"
 msgstr "שמאלי"
 
-#: src/OutputPanel.vala:83
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:85
+#, fuzzy
+#| msgid "Center"
+msgctxt "balance"
 msgid "Center"
 msgstr "מרכז"
 
-#: src/OutputPanel.vala:84
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:87
+#, fuzzy
+#| msgid "Right"
+msgctxt "balance"
 msgid "Right"
 msgstr "ימני"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:89
 msgid "Event Alerts"
 msgstr "התראות אירועים"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:90
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
@@ -106,19 +118,19 @@ msgstr ""
 "להודיע כאשר המערכת לא יכולה לעשות משהו בתגובה לקלט, כמו לנסות למחוק קלט בשדה "
 "ריק או להחליף חלונות כאשר יש רק חלון אחד פתוח."
 
-#: src/OutputPanel.vala:90
+#: src/OutputPanel.vala:93
 msgid "Play sound"
 msgstr "השמעת צליל"
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:97
 msgid "Flash screen"
 msgstr "הבהוב המסך"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr "בדיקת הרמקולים…"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:112
 msgid "Screen Reader"
 msgstr "מקריא מסך"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 17:32+0000\n"
+"POT-Creation-Date: 2024-01-30 15:51+0000\n"
 "PO-Revision-Date: 2014-10-18 14:56+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Burmese <my@li.org>\n"
@@ -79,42 +79,48 @@ msgid ""
 "powered on."
 msgstr ""
 
-#: src/OutputPanel.vala:82
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:83
+msgctxt "balance"
 msgid "Left"
 msgstr ""
 
-#: src/OutputPanel.vala:83
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:85
+msgctxt "balance"
 msgid "Center"
 msgstr ""
 
-#: src/OutputPanel.vala:84
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:87
+msgctxt "balance"
 msgid "Right"
 msgstr ""
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:89
 msgid "Event Alerts"
 msgstr ""
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:90
 msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
 msgstr ""
 
-#: src/OutputPanel.vala:90
+#: src/OutputPanel.vala:93
 msgid "Play sound"
 msgstr ""
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:97
 msgid "Flash screen"
 msgstr ""
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr ""
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:112
 msgid "Screen Reader"
 msgstr ""
 

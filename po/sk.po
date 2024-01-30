@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 17:32+0000\n"
+"POT-Creation-Date: 2024-01-30 15:51+0000\n"
 "PO-Revision-Date: 2023-10-27 11:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -90,23 +90,35 @@ msgstr ""
 "Skontrolujte, či sú všetky káble dobre zapojené a vstupné zvukové zariadenia "
 "zapnuté."
 
-#: src/OutputPanel.vala:82
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:83
+#, fuzzy
+#| msgid "Left"
+msgctxt "balance"
 msgid "Left"
 msgstr "Ľavé"
 
-#: src/OutputPanel.vala:83
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:85
+#, fuzzy
+#| msgid "Center"
+msgctxt "balance"
 msgid "Center"
 msgstr "Stredné"
 
-#: src/OutputPanel.vala:84
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:87
+#, fuzzy
+#| msgid "Right"
+msgctxt "balance"
 msgid "Right"
 msgstr "Pravé"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:89
 msgid "Event Alerts"
 msgstr "Upozornenia na udalosti"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:90
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -121,19 +133,19 @@ msgstr ""
 "požaduje používateľ. Napríklad stlačenie klávesy Backspace, keď nie je čo "
 "zmazať, alebo pokus o prepnutie na ďalšie okno, ak je otvorené iba jedno."
 
-#: src/OutputPanel.vala:90
+#: src/OutputPanel.vala:93
 msgid "Play sound"
 msgstr "Prehrať zvuk"
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:97
 msgid "Flash screen"
 msgstr "Prebliknúť obrazovku"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr "Otestovať reproduktory…"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:112
 #, fuzzy
 #| msgid "Screen Reader:"
 msgid "Screen Reader"

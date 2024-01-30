@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 17:32+0000\n"
+"POT-Creation-Date: 2024-01-30 15:51+0000\n"
 "PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -90,25 +90,37 @@ msgstr ""
 "Tüm kabloların güvenli bir şekilde takıldığından ve ses giriş cihazlarının "
 "açık olduğundan emin olun."
 
-#: src/OutputPanel.vala:82
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:83
+#, fuzzy
+#| msgid "Left"
+msgctxt "balance"
 msgid "Left"
 msgstr "Sol"
 
-#: src/OutputPanel.vala:83
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:85
+#, fuzzy
+#| msgid "Center"
+msgctxt "balance"
 msgid "Center"
 msgstr "Orta"
 
-#: src/OutputPanel.vala:84
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:87
+#, fuzzy
+#| msgid "Right"
+msgctxt "balance"
 msgid "Right"
 msgstr "Sağ"
 
-#: src/OutputPanel.vala:86
+#: src/OutputPanel.vala:89
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "Olay uyarıları:"
 
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:90
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -123,19 +135,19 @@ msgstr ""
 "meydana gelir. Örneğin boş bir metin girişinde silme girişimi veya yalnızca "
 "bir tane pencere açıkken pencereleri değiştirmeye çalışmak gibi."
 
-#: src/OutputPanel.vala:90
+#: src/OutputPanel.vala:93
 msgid "Play sound"
 msgstr "Ses çal"
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:97
 msgid "Flash screen"
 msgstr "Ekran yanıp sönsün"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr "Hoparlörleri Test Et…"
 
-#: src/OutputPanel.vala:109
+#: src/OutputPanel.vala:112
 #, fuzzy
 #| msgid "Screen Reader:"
 msgid "Screen Reader"
