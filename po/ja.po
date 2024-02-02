@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-02 16:14+0000\n"
-"PO-Revision-Date: 2024-02-01 02:42+0000\n"
+"PO-Revision-Date: 2024-02-03 01:37+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ja/>\n"
@@ -64,10 +64,8 @@ msgid "Screen Reader"
 msgstr "スクリーンリーダー"
 
 #: src/Plug.vala:101
-#, fuzzy
-#| msgid "Test Speakers…"
 msgid "Test Speakers"
-msgstr "スピーカーをテスト…"
+msgstr "スピーカーをテスト"
 
 #: src/Plug.vala:106
 msgid "Enable"
