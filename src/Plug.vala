@@ -93,10 +93,12 @@ public class Sound.Plug : Switchboard.Plug {
         var search_results = new Gee.TreeMap<string, string> ();
         search_results.set ("%s → %s".printf (display_name, _("Output")), "output");
         search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Device")), "output");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Event Sounds")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Event Alerts")), "output");
         search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Port")), "output");
         search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Volume")), "output");
         search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Balance")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Screen Reader")), "output");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Output"), _("Test Speakers")), "output");
         search_results.set ("%s → %s".printf (display_name, _("Input")), "input");
         search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Device")), "input");
         search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Port")), "input");
