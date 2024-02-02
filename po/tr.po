@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-30 15:51+0000\n"
+"POT-Creation-Date: 2024-02-02 16:14+0000\n"
 "PO-Revision-Date: 2021-12-17 16:10+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -29,28 +29,31 @@ msgid "Change sound and microphone volume"
 msgstr "Ses ve mikrofon seviyelerini değiştir"
 
 #: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
-#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Plug.vala:100
+#: src/Plug.vala:101 src/Device.vala:101
 msgid "Output"
 msgstr "Çıkış"
 
-#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Device.vala:101
 msgid "Input"
 msgstr "Giriş"
 
-#: src/Plug.vala:95 src/Plug.vala:101
+#: src/Plug.vala:95 src/Plug.vala:103
 msgid "Device"
 msgstr "Aygıt"
 
-#: src/Plug.vala:96
-msgid "Event Sounds"
-msgstr "Olay Sesleri"
+#: src/Plug.vala:96 src/OutputPanel.vala:89
+#, fuzzy
+#| msgid "Event alerts:"
+msgid "Event Alerts"
+msgstr "Olay uyarıları:"
 
-#: src/Plug.vala:97 src/Plug.vala:102
+#: src/Plug.vala:97 src/Plug.vala:104
 msgid "Port"
 msgstr "Bağlantı Noktası"
 
-#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
+#: src/Plug.vala:98 src/Plug.vala:105 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "Ses Düzeyi"
 
@@ -58,7 +61,19 @@ msgstr "Ses Düzeyi"
 msgid "Balance"
 msgstr "Denge"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:100 src/OutputPanel.vala:112
+#, fuzzy
+#| msgid "Screen Reader:"
+msgid "Screen Reader"
+msgstr "Ekran Okuyucu:"
+
+#: src/Plug.vala:101
+#, fuzzy
+#| msgid "Test Speakers…"
+msgid "Test Speakers"
+msgstr "Hoparlörleri Test Et…"
+
+#: src/Plug.vala:106
 msgid "Enable"
 msgstr "Etkinleştir"
 
@@ -114,12 +129,6 @@ msgctxt "balance"
 msgid "Right"
 msgstr "Sağ"
 
-#: src/OutputPanel.vala:89
-#, fuzzy
-#| msgid "Event alerts:"
-msgid "Event Alerts"
-msgstr "Olay uyarıları:"
-
 #: src/OutputPanel.vala:90
 #, fuzzy
 #| msgid ""
@@ -146,12 +155,6 @@ msgstr "Ekran yanıp sönsün"
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr "Hoparlörleri Test Et…"
-
-#: src/OutputPanel.vala:112
-#, fuzzy
-#| msgid "Screen Reader:"
-msgid "Screen Reader"
-msgstr "Ekran Okuyucu:"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
@@ -234,6 +237,9 @@ msgstr "Bilgisayar"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "Taşınabilir"
+
+#~ msgid "Event Sounds"
+#~ msgstr "Olay Sesleri"
 
 #~ msgid "Input level:"
 #~ msgstr "Giriş düzeyi:"
