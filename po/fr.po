@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-02 16:14+0000\n"
-"PO-Revision-Date: 2023-06-25 11:07+0000\n"
-"Last-Translator: Corentin Noël <tintou@noel.tf>\n"
+"PO-Revision-Date: 2024-02-07 10:31+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/Plug.vala:23
@@ -64,10 +64,8 @@ msgid "Screen Reader"
 msgstr "Lecteur d'écran"
 
 #: src/Plug.vala:101
-#, fuzzy
-#| msgid "Test Speakers…"
 msgid "Test Speakers"
-msgstr "Tester le son…"
+msgstr "Tester les hauts-parleurs"
 
 #: src/Plug.vala:106
 msgid "Enable"
@@ -96,24 +94,18 @@ msgstr ""
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:83
-#, fuzzy
-#| msgid "Left"
 msgctxt "balance"
 msgid "Left"
 msgstr "Gauche"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:85
-#, fuzzy
-#| msgid "Center"
 msgctxt "balance"
 msgid "Center"
 msgstr "Centre"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:87
-#, fuzzy
-#| msgid "Right"
 msgctxt "balance"
 msgid "Right"
 msgstr "Droit"
