@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-02 16:14+0000\n"
-"PO-Revision-Date: 2024-02-08 16:11+0000\n"
+"PO-Revision-Date: 2024-02-10 23:29+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/pt/>\n"
@@ -60,36 +60,29 @@ msgid "Balance"
 msgstr "Equilíbrio"
 
 #: src/Plug.vala:100 src/OutputPanel.vala:112
-#, fuzzy
-#| msgid "Screen Reader:"
 msgid "Screen Reader"
-msgstr "Leitor de ecrã:"
+msgstr "Leitor de ecrã"
 
 #: src/Plug.vala:101
-#, fuzzy
-#| msgid "Test Speakers…"
 msgid "Test Speakers"
-msgstr "Testar altifalantes…"
+msgstr "Testar altifalantes"
 
 #: src/Plug.vala:106
 msgid "Enable"
 msgstr "Ativar"
 
 #: src/OutputPanel.vala:29
-#, fuzzy, c-format
-#| msgid "Provide audio descriptions for items on the screen"
+#, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr "Disponibiliza descrições áudio para itens no ecrã"
+msgstr "Disponibiliza descrições áudio para itens no ecrã. %s"
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/OutputPanel.vala:39
-#, fuzzy
-#| msgid "No Connected Audio Devices Detected"
 msgid "No Connected Output Devices Detected"
-msgstr "Não foram detetados dispositivos áudio ligados"
+msgstr "Não foram detetados dispositivos de saída ligados"
 
 #: src/OutputPanel.vala:41
 #, fuzzy
@@ -105,8 +98,6 @@ msgstr ""
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:83
-#, fuzzy
-#| msgid "Left"
 msgctxt "balance"
 msgid "Left"
 msgstr "Esquerda"
