@@ -277,6 +277,8 @@ public class Sound.OutputPanel : Gtk.Box {
         device_row.set_as_default.connect (() => {
             pam.set_default_device.begin (device);
         });
+
+        device.removed.connect (() => devices_listbox.remove (device_row));
     }
 
     private void notify_change () {

@@ -74,7 +74,6 @@ public class Sound.DeviceRow : Gtk.ListBoxRow {
         device.bind_property ("display-name", name_label, "label");
         device.bind_property ("description", description_label, "label");
 
-        device.removed.connect (() => destroy ());
         device.notify["is-default"].connect (() => {
             ignore_default = true;
             activate_radio.active = device.is_default;
