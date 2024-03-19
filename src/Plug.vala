@@ -16,6 +16,7 @@ public class Sound.Plug : Switchboard.Plug {
 
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("sound", null);
+        settings.set ("sound/applications", "applications");
         settings.set ("sound/input", "input");
         settings.set ("sound/output", "output");
         Object (category: Category.HARDWARE,
@@ -30,6 +31,7 @@ public class Sound.Plug : Switchboard.Plug {
         if (box == null) {
             var output_panel = new OutputPanel ();
             input_panel = new InputPanel ();
+            var applications_panel = new ApplicationsPanel ();
 
             stack = new Gtk.Stack () {
                 hexpand = true,
@@ -37,6 +39,7 @@ public class Sound.Plug : Switchboard.Plug {
             };
             stack.add_titled (output_panel, "output", _("Output"));
             stack.add_titled (input_panel, "input", _("Input"));
+            stack.add_titled (applications_panel, "applications", _("Applications"));
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
@@ -78,14 +81,7 @@ public class Sound.Plug : Switchboard.Plug {
     }
 
     public override void search_callback (string location) {
-        switch (location) {
-            case "input":
-                stack.set_visible_child_name ("input");
-                break;
-            case "output":
-                stack.set_visible_child_name ("output");
-                break;
-        }
+        stack.set_visible_child_name (location);
     }
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
@@ -104,6 +100,7 @@ public class Sound.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Port")), "input");
         search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Volume")), "input");
         search_results.set ("%s → %s → %s".printf (display_name, _("Input"), _("Enable")), "input");
+        search_results.set ("%s → %s".printf (display_name, _("Applications")), "applications");
         return search_results;
     }
 }

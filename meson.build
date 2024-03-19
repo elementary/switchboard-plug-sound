@@ -36,6 +36,8 @@ config_file = configure_file(
     configuration: config_data
 )
 
+gnome.post_install (glib_compile_schemas: true)
+
 subdir('data')
 subdir('src')
 subdir('po')
