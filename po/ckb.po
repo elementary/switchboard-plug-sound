@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 17:32+0000\n"
+"POT-Creation-Date: 2024-02-02 16:14+0000\n"
 "PO-Revision-Date: 2022-10-04 21:31+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -22,28 +22,31 @@ msgid "Change sound and microphone volume"
 msgstr "گۆڕینی بەرزی دەنگ و مایکرۆفۆن"
 
 #: src/Plug.vala:38 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
-#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Device.vala:101
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Plug.vala:100
+#: src/Plug.vala:101 src/Device.vala:101
 msgid "Output"
 msgstr "دەنگی دەردراو"
 
-#: src/Plug.vala:39 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104 src/Device.vala:101
+#: src/Plug.vala:39 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Device.vala:101
 msgid "Input"
 msgstr "وەرگرتنی دەنگ"
 
-#: src/Plug.vala:95 src/Plug.vala:101
+#: src/Plug.vala:95 src/Plug.vala:103
 msgid "Device"
 msgstr "ئامێر"
 
-#: src/Plug.vala:96
-msgid "Event Sounds"
-msgstr "دەنگی ڕووداوەکان"
+#: src/Plug.vala:96 src/OutputPanel.vala:89
+#, fuzzy
+#| msgid "Event alerts:"
+msgid "Event Alerts"
+msgstr "ئاگادارکردنەوەی ڕووداوەکان:"
 
-#: src/Plug.vala:97 src/Plug.vala:102
+#: src/Plug.vala:97 src/Plug.vala:104
 msgid "Port"
 msgstr "پۆرت"
 
-#: src/Plug.vala:98 src/Plug.vala:103 src/OutputPanel.vala:60
+#: src/Plug.vala:98 src/Plug.vala:105 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "بەرزی دەنگ"
 
@@ -51,7 +54,19 @@ msgstr "بەرزی دەنگ"
 msgid "Balance"
 msgstr "باڵانس"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:100 src/OutputPanel.vala:112
+#, fuzzy
+#| msgid "Screen Reader:"
+msgid "Screen Reader"
+msgstr "خوێنەری ڕوونما:"
+
+#: src/Plug.vala:101
+#, fuzzy
+#| msgid "Test Speakers…"
+msgid "Test Speakers"
+msgstr "تاقیکردنەوەی بڵندگۆکان…"
+
+#: src/Plug.vala:106
 msgid "Enable"
 msgstr "کاراکردن"
 
@@ -83,25 +98,31 @@ msgstr ""
 "دڵنیابە کە هەموو وەیارەکان بە دروستی بەجێگەی خۆیانەوەن و ئامێرە دەنگییەکانی "
 "وەرگرتنی دەنگ پێکراون."
 
-#: src/OutputPanel.vala:82
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:83
+#, fuzzy
+#| msgid "Left"
+msgctxt "balance"
 msgid "Left"
 msgstr "چەپ"
 
-#: src/OutputPanel.vala:83
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:85
+#, fuzzy
+#| msgid "Center"
+msgctxt "balance"
 msgid "Center"
 msgstr "ناوەڕاست"
 
-#: src/OutputPanel.vala:84
+#. / TRANSLATORS: describes sound balance
+#: src/OutputPanel.vala:87
+#, fuzzy
+#| msgid "Right"
+msgctxt "balance"
 msgid "Right"
 msgstr "ڕاست"
 
-#: src/OutputPanel.vala:86
-#, fuzzy
-#| msgid "Event alerts:"
-msgid "Event Alerts"
-msgstr "ئاگادارکردنەوەی ڕووداوەکان:"
-
-#: src/OutputPanel.vala:87
+#: src/OutputPanel.vala:90
 #, fuzzy
 #| msgid ""
 #| "Event alerts occur when the system cannot do something in response to "
@@ -117,23 +138,17 @@ msgstr ""
 "لە خانەیەکی بەتاڵدا یان پەنجەرەیەک بگۆڕیت لە کاتێکدا خۆی تاکە پەنجەرەی "
 "کراوەیە."
 
-#: src/OutputPanel.vala:90
+#: src/OutputPanel.vala:93
 msgid "Play sound"
 msgstr "دەرکردنی دەنگ"
 
-#: src/OutputPanel.vala:94
+#: src/OutputPanel.vala:97
 msgid "Flash screen"
 msgstr "فلاش سکرین"
 
-#: src/OutputPanel.vala:103
+#: src/OutputPanel.vala:106
 msgid "Test Speakers…"
 msgstr "تاقیکردنەوەی بڵندگۆکان…"
-
-#: src/OutputPanel.vala:109
-#, fuzzy
-#| msgid "Screen Reader:"
-msgid "Screen Reader"
-msgstr "خوێنەری ڕوونما:"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
@@ -216,6 +231,9 @@ msgstr "کۆمپیتەر"
 #: src/Device.vala:99
 msgid "Portable"
 msgstr "هەڵگیراو"
+
+#~ msgid "Event Sounds"
+#~ msgstr "دەنگی ڕووداوەکان"
 
 #~ msgid "Input level:"
 #~ msgstr "ئاستی وەرگرنی دەنگ:"
