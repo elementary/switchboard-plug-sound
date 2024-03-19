@@ -16,51 +16,44 @@ public class Sound.AppRow : Gtk.Grid {
 
     construct {
         image = new Gtk.Image () {
-            pixel_size = 48
+            icon_size = LARGE
         };
 
         app_name_label = new Gtk.Label ("") {
             ellipsize = END,
-            valign = END,
             xalign = 0
         };
-        app_name_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        app_name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         media_name_label = new Gtk.Label ("") {
             ellipsize = END,
-            valign = END,
             xalign = 0
         };
-        media_name_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        media_name_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+        media_name_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
-        icon_button = new Gtk.Button.from_icon_name ("audio-volume-muted") {
-            can_focus = false
-        };
-        icon_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        var label_box = new Gtk.Box (HORIZONTAL, 6);
+        label_box.append (app_name_label);
+        label_box.append (media_name_label);
+
+        icon_button = new Gtk.Button.from_icon_name ("audio-volume-muted");
 
         volume_scale = new Gtk.Scale.with_range (HORIZONTAL, 0, 1, 0.01) {
-            hexpand = true,
-            draw_value = false
+            hexpand = true
         };
 
         mute_switch = new Gtk.Switch () {
-            halign = CENTER,
             valign = CENTER
         };
 
         hexpand = true;
         column_spacing = 6;
-        margin_top = 6;
-        margin_end = 6;
-        margin_bottom = 6;
-        margin_start = 6;
 
-        attach (image, 0, 0, 1, 3);
-        attach (app_name_label, 1, 0, 2);
-        attach (media_name_label, 1, 1, 2);
-        attach (icon_button, 1, 2);
-        attach (volume_scale, 2, 2);
-        attach (mute_switch, 3, 0, 1, 3);
+        attach (image, 0, 0, 1, 2);
+        attach (label_box, 1, 0, 2);
+        attach (icon_button, 1, 1);
+        attach (volume_scale, 2, 1);
+        attach (mute_switch, 3, 0, 1, 2);
 
         volume_scale.change_value.connect ((type, new_value) => {
             if (app != null) {
@@ -93,13 +86,19 @@ public class Sound.AppRow : Gtk.Grid {
         volume_scale.sensitive = !app.muted;
 
         if (app.muted) {
-            ((Gtk.Image) icon_button.image).icon_name = "audio-volume-muted";
+            icon_button.icon_name = "audio-volume-muted";
         } else if (volume_scale.get_value () < 0.33) {
-            ((Gtk.Image) icon_button.image).icon_name = "audio-volume-low";
+            icon_button.icon_name = "audio-volume-low";
         } else if (volume_scale.get_value () > 0.66) {
-            ((Gtk.Image) icon_button.image).icon_name = "audio-volume-high";
+            icon_button.icon_name = "audio-volume-high";
         } else {
-            ((Gtk.Image) icon_button.image).icon_name = "audio-volume-medium";
+            icon_button.icon_name = "audio-volume-medium";
+        }
+
+        if (app.muted) {
+            icon_button.tooltip_text = _("Unmute");
+        } else {
+            icon_button.tooltip_text = _("Mute");
         }
     }
 
@@ -107,20 +106,14 @@ public class Sound.AppRow : Gtk.Grid {
         this.app = app;
 
         app_name_label.label = app.display_name;
-        image.set_from_gicon (app.icon, Gtk.IconSize.DND);
+        image.set_from_gicon (app.icon);
 
         app.changed.connect (update);
         app.notify["hidden"].connect (() => {
-            if (app.hidden) {
-                hide ();
-            } else {
-                show_all ();
-            }
+            visible = app.hidden;
         });
 
-        if (!app.hidden) {
-            show_all ();
-        }
+        visible = app.hidden;
 
         volume_scale.set_value (app.volume);
     }

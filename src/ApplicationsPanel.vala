@@ -9,20 +9,18 @@ public class Sound.ApplicationsPanel : Gtk.Box {
     construct {
         var pulse_audio_manager = PulseAudioManager.get_default ();
 
-        var placeholder = new Granite.Widgets.AlertView (
-            _("No applications currently emittings sounds"),
-            _("Applications emitting sounds will automatically appear here"),
-            "dialog-information"
-        );
-        placeholder.show_all ();
+        var placeholder = new Granite.Placeholder (_("No applications currently emittings sounds")) {
+            description = _("Applications emitting sounds will automatically appear here")
+        };
 
         var list_box = new Gtk.ListBox () {
             selection_mode = NONE,
         };
         list_box.bind_model (pulse_audio_manager.apps, widget_create_func);
         list_box.set_placeholder (placeholder);
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+        var scrolled_window = new Gtk.ScrolledWindow () {
             child = list_box,
             vexpand = true
         };
@@ -37,8 +35,8 @@ public class Sound.ApplicationsPanel : Gtk.Box {
 
         orientation = VERTICAL;
         spacing = 12;
-        add (frame);
-        add (reset_button);
+        append (frame);
+        append (reset_button);
 
         // TODO: Reset also non active applications
         reset_button.clicked.connect (() => {
