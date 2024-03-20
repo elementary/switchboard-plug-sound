@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-19 16:56+0000\n"
-"PO-Revision-Date: 2024-02-06 14:23+0000\n"
+"PO-Revision-Date: 2024-03-22 11:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ca/>\n"
@@ -22,23 +22,23 @@ msgstr ""
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emittings sounds"
-msgstr ""
+msgstr "Actualment no hi ha cap aplicació que emeti so."
 
 #: src/ApplicationsPanel.vala:13
 msgid "Applications emitting sounds will automatically appear here"
-msgstr ""
+msgstr "Les aplicacions que emetin so apareixeran automàticament aquí."
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
-msgstr ""
+msgstr "Restableix totes les aplicacions al valor predeterminat"
 
 #: src/AppRow.vala:99
 msgid "Unmute"
-msgstr ""
+msgstr "No silenciïs"
 
 #: src/AppRow.vala:101
 msgid "Mute"
-msgstr ""
+msgstr "Silencia"
 
 #: src/Plug.vala:24
 msgid "Sound"
@@ -61,7 +61,7 @@ msgstr "Entrada"
 
 #: src/Plug.vala:42 src/Plug.vala:103
 msgid "Applications"
-msgstr ""
+msgstr "Aplicacions"
 
 #: src/Plug.vala:91 src/Plug.vala:99
 msgid "Device"
