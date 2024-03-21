@@ -51,13 +51,13 @@ public class Sound.Plug : Switchboard.Plug {
                 child = stack
             };
 
-            box = new Gtk.Box (VERTICAL, 12) {
-                margin_top = 12,
-                margin_end = 12,
-                margin_bottom = 12,
-                margin_start = 12
+            var headerbar = new Adw.HeaderBar () {
+                title_widget = stack_switcher
             };
-            box.append (stack_switcher);
+            headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+
+            box = new Gtk.Box (VERTICAL, 0);
+            box.append (headerbar);
             box.append (clamp);
 
             var pam = PulseAudioManager.get_default ();
