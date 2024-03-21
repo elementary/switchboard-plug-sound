@@ -1,4 +1,7 @@
 plug_files = files(
+    'App.vala',
+    'ApplicationsPanel.vala',
+    'AppRow.vala',
     'CanberraGtk4.vala',
     'TestPopover.vala',
     'PulseAudioManager.vala',
