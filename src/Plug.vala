@@ -45,6 +45,7 @@ public class Sound.Plug : Switchboard.Plug {
                 halign = Gtk.Align.CENTER,
                 stack = stack
             };
+            ((Gtk.BoxLayout) stack_switcher.layout_manager).homogeneous = true;
 
             var clamp = new Adw.Clamp () {
                 child = stack
