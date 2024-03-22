@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-19 16:56+0000\n"
-"PO-Revision-Date: 2024-02-21 09:10+0000\n"
-"Last-Translator: Marmelada <marmelada.pk@wp.pl>\n"
+"PO-Revision-Date: 2024-03-23 19:13+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/pl/>\n"
 "Language: pl\n"
@@ -23,23 +23,23 @@ msgstr ""
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emittings sounds"
-msgstr ""
+msgstr "Żadna aplikacja nie wydaje aktualnie dźwięku"
 
 #: src/ApplicationsPanel.vala:13
 msgid "Applications emitting sounds will automatically appear here"
-msgstr ""
+msgstr "Aplikacje wydające dźwięk będą automatycznie pojawiać się tutaj"
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
-msgstr ""
+msgstr "Zresetuj wszystkie aplikacje do ustawień domyślnych"
 
 #: src/AppRow.vala:99
 msgid "Unmute"
-msgstr ""
+msgstr "Odcisz"
 
 #: src/AppRow.vala:101
 msgid "Mute"
-msgstr ""
+msgstr "Wycisz"
 
 #: src/Plug.vala:24
 msgid "Sound"
@@ -62,7 +62,7 @@ msgstr "Wejście"
 
 #: src/Plug.vala:42 src/Plug.vala:103
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacje"
 
 #: src/Plug.vala:91 src/Plug.vala:99
 msgid "Device"
