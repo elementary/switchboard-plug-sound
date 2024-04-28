@@ -9,7 +9,7 @@ public class Sound.ApplicationsPanel : Gtk.Box {
     construct {
         var pulse_audio_manager = PulseAudioManager.get_default ();
 
-        var placeholder = new Granite.Placeholder (_("No applications currently emittings sounds")) {
+        var placeholder = new Granite.Placeholder (_("No applications currently emitting sounds")) {
             description = _("Applications emitting sounds will automatically appear here")
         };
 
