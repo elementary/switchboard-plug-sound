@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-28 02:08+0000\n"
+"POT-Creation-Date: 2024-05-04 06:42+0000\n"
 "PO-Revision-Date: 2023-08-02 09:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/sound-"
@@ -27,70 +27,69 @@ msgstr "Paramètres de son"
 msgid "Change sound and microphone volume"
 msgstr "Changer le volume du son et du microphone"
 
-#: data/sound.metainfo.xml.in:28
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/sound.metainfo.xml.in:35
+#: data/sound.metainfo.xml.in:37
 msgid "Improvements:"
 msgstr "Améliorations :"
 
-#: data/sound.metainfo.xml.in:37
+#: data/sound.metainfo.xml.in:39
 msgid "Improve responsiveness for large and small displays"
 msgstr "Amélioration de l'adaptabilité pour les grands et petits écrans"
 
-#: data/sound.metainfo.xml.in:38
+#: data/sound.metainfo.xml.in:40
 msgid "Better volume level indicator for microphones"
 msgstr "Meilleur indicateur de volume pour les micros"
 
-#: data/sound.metainfo.xml.in:39
+#: data/sound.metainfo.xml.in:41
 msgid "Show screen reader shortcut"
 msgstr "Affichage d'un raccourci vers le lecteur d'écrab"
 
-#: data/sound.metainfo.xml.in:40 data/sound.metainfo.xml.in:53
-#: data/sound.metainfo.xml.in:67 data/sound.metainfo.xml.in:81
-#: data/sound.metainfo.xml.in:90 data/sound.metainfo.xml.in:100
+#: data/sound.metainfo.xml.in:42 data/sound.metainfo.xml.in:55
+#: data/sound.metainfo.xml.in:69 data/sound.metainfo.xml.in:83
+#: data/sound.metainfo.xml.in:92 data/sound.metainfo.xml.in:102
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/sound.metainfo.xml.in:50 data/sound.metainfo.xml.in:63
-#: data/sound.metainfo.xml.in:79 data/sound.metainfo.xml.in:88
-#: data/sound.metainfo.xml.in:97
+#: data/sound.metainfo.xml.in:52 data/sound.metainfo.xml.in:65
+#: data/sound.metainfo.xml.in:81 data/sound.metainfo.xml.in:90
+#: data/sound.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
-#: data/sound.metainfo.xml.in:52
+#: data/sound.metainfo.xml.in:54
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "Utilisation du format de l'appareil, lorsqu'il est disponible, pour "
 "attribuer des icônes plus précises"
 
-#: data/sound.metainfo.xml.in:65
+#: data/sound.metainfo.xml.in:67
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
 "Ajout d'une icône de périphérique par défaut si aucune icône n'est disponible"
 
-#: data/sound.metainfo.xml.in:66
+#: data/sound.metainfo.xml.in:68
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
 "Texte explicatif plus clair lorsqu'aucun périphérique d'entrée n'est trouvé"
 
-#: data/sound.metainfo.xml.in:74
+#: data/sound.metainfo.xml.in:76
 msgid "New features:"
 msgstr "Nouvelles fonctionnalités :"
 
-#: data/sound.metainfo.xml.in:76
+#: data/sound.metainfo.xml.in:78
 msgid "Show device icons"
 msgstr "Affichage des icônes des appareils"
 
-#: data/sound.metainfo.xml.in:77
+#: data/sound.metainfo.xml.in:79
 msgid "Switch to enable the screen reader"
 msgstr "Option pour activer le lecteur d'écran"
 
-#: data/sound.metainfo.xml.in:99
+#: data/sound.metainfo.xml.in:101
 msgid "Smoother transition when navigating away from this view"
 msgstr ""
 "Transition plus fluide lorsque cette vue est fermée au cours de la navigation"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Fix crash with PulseAudio's echo cancellation plugin"
 #~ msgstr ""

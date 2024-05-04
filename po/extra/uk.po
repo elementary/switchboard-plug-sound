@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-28 02:08+0000\n"
+"POT-Creation-Date: 2024-05-04 06:42+0000\n"
 "PO-Revision-Date: 2023-10-16 17:30+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,68 +28,67 @@ msgstr "Налаштування звуку"
 msgid "Change sound and microphone volume"
 msgstr "Зміна гучності динаміків та мікрофона"
 
-#: data/sound.metainfo.xml.in:28
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/sound.metainfo.xml.in:35
+#: data/sound.metainfo.xml.in:37
 msgid "Improvements:"
 msgstr "Удосконалення:"
 
-#: data/sound.metainfo.xml.in:37
+#: data/sound.metainfo.xml.in:39
 msgid "Improve responsiveness for large and small displays"
 msgstr "Поліпшення адаптивності для великих і маленьких дисплеїв"
 
-#: data/sound.metainfo.xml.in:38
+#: data/sound.metainfo.xml.in:40
 msgid "Better volume level indicator for microphones"
 msgstr "Кращий індикатор рівня гучності мікрофонів"
 
-#: data/sound.metainfo.xml.in:39
+#: data/sound.metainfo.xml.in:41
 msgid "Show screen reader shortcut"
 msgstr "Показ комбінації клавіш зчитувача з екрана"
 
-#: data/sound.metainfo.xml.in:40 data/sound.metainfo.xml.in:53
-#: data/sound.metainfo.xml.in:67 data/sound.metainfo.xml.in:81
-#: data/sound.metainfo.xml.in:90 data/sound.metainfo.xml.in:100
+#: data/sound.metainfo.xml.in:42 data/sound.metainfo.xml.in:55
+#: data/sound.metainfo.xml.in:69 data/sound.metainfo.xml.in:83
+#: data/sound.metainfo.xml.in:92 data/sound.metainfo.xml.in:102
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/sound.metainfo.xml.in:50 data/sound.metainfo.xml.in:63
-#: data/sound.metainfo.xml.in:79 data/sound.metainfo.xml.in:88
-#: data/sound.metainfo.xml.in:97
+#: data/sound.metainfo.xml.in:52 data/sound.metainfo.xml.in:65
+#: data/sound.metainfo.xml.in:81 data/sound.metainfo.xml.in:90
+#: data/sound.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
-#: data/sound.metainfo.xml.in:52
+#: data/sound.metainfo.xml.in:54
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "Використовувати формфактор пристрою, коли це можливо, для призначення "
 "точніших піктограм"
 
-#: data/sound.metainfo.xml.in:65
+#: data/sound.metainfo.xml.in:67
 msgid "Provide a fallback device icon in case none is available"
 msgstr "Додано запасну піктограму пристрою на випадок, якщо вона недоступна"
 
-#: data/sound.metainfo.xml.in:66
+#: data/sound.metainfo.xml.in:68
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
 "Корисніший текст заповнювач, коли не знайдено жодних пристроїв введення"
 
-#: data/sound.metainfo.xml.in:74
+#: data/sound.metainfo.xml.in:76
 msgid "New features:"
 msgstr "Нові функції:"
 
-#: data/sound.metainfo.xml.in:76
+#: data/sound.metainfo.xml.in:78
 msgid "Show device icons"
 msgstr "З'явилися піктограми пристроїв"
 
-#: data/sound.metainfo.xml.in:77
+#: data/sound.metainfo.xml.in:79
 msgid "Switch to enable the screen reader"
 msgstr "Додано перемикач увімкнення читання з екрана"
 
-#: data/sound.metainfo.xml.in:99
+#: data/sound.metainfo.xml.in:101
 msgid "Smoother transition when navigating away from this view"
 msgstr "Плавніший перехід під час переходу до іншого подання"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Fix crash with PulseAudio's echo cancellation plugin"
 #~ msgstr "Виправлено збої плагіна прибирання луни в PulseAudio"
