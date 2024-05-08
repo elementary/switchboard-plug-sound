@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 06:42+0000\n"
-"PO-Revision-Date: 2024-02-15 02:35+0000\n"
+"PO-Revision-Date: 2024-05-09 19:13+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/hu/>\n"
@@ -17,28 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emitting sounds"
-msgstr ""
+msgstr "Jelenleg egy alkalmazás sem játszik le hangot"
 
 #: src/ApplicationsPanel.vala:13
 msgid "Applications emitting sounds will automatically appear here"
-msgstr ""
+msgstr "A hangot lejátszó alkalmazások itt fognak megjelenni"
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
-msgstr ""
+msgstr "Összes alkalmazás visszaállítása alapértelmezettre"
 
 #: src/AppRow.vala:99
 msgid "Unmute"
-msgstr ""
+msgstr "Némítás feloldása"
 
 #: src/AppRow.vala:101
 msgid "Mute"
-msgstr ""
+msgstr "Némítás"
 
 #: src/Plug.vala:24
 msgid "Sound"
@@ -61,7 +61,7 @@ msgstr "Bemenet"
 
 #: src/Plug.vala:42 src/Plug.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "Alkalmazások"
 
 #: src/Plug.vala:92 src/Plug.vala:100
 msgid "Device"
