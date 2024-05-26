@@ -23,7 +23,7 @@ public class Sound.Plug : Switchboard.Plug {
                 code_name: "io.elementary.settings.sound",
                 display_name: _("Sound"),
                 description: _("Change sound and microphone volume"),
-                icon: "preferences-desktop-sound",
+                icon: "multimedia-volume-control",
                 supported_settings: settings);
     }
 
