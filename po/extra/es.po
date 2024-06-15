@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 06:42+0000\n"
-"PO-Revision-Date: 2024-06-13 08:33+0000\n"
+"PO-Revision-Date: 2024-06-15 19:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/es/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
-msgstr "Configuración de sonido"
+msgstr "Configuración de Sonido"
 
 #: data/sound.metainfo.xml.in:11
 msgid "Change sound and microphone volume"
@@ -29,19 +29,19 @@ msgstr "Cambie el volumen del micrófono y el sonido"
 
 #: data/sound.metainfo.xml.in:37
 msgid "Improvements:"
-msgstr ""
+msgstr "Mejoras:"
 
 #: data/sound.metainfo.xml.in:39
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "Se mejoró la velocidad para grandes y pequeñas pantallas"
 
 #: data/sound.metainfo.xml.in:40
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "Un mejor indicador de nivel de volumen para micrófonos"
 
 #: data/sound.metainfo.xml.in:41
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "Se muestra el atajo para el lector de pantalla"
 
 #: data/sound.metainfo.xml.in:42 data/sound.metainfo.xml.in:55
 #: data/sound.metainfo.xml.in:69 data/sound.metainfo.xml.in:83
@@ -58,14 +58,18 @@ msgstr "Actualizaciones menores:"
 #: data/sound.metainfo.xml.in:54
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
+"Se usa el factor de forma del dispositivo cuando esté disponible para "
+"asignar iconos más precisos"
 
 #: data/sound.metainfo.xml.in:67
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
+"Se ofrece un icono de dispositivo alternativo si nada se encuentra disponible"
 
 #: data/sound.metainfo.xml.in:68
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
+"Un texto alternativo más útil cuando no se encuentran dispositivos de entrada"
 
 #: data/sound.metainfo.xml.in:76
 msgid "New features:"
@@ -73,15 +77,15 @@ msgstr "Nuevas características:"
 
 #: data/sound.metainfo.xml.in:78
 msgid "Show device icons"
-msgstr ""
+msgstr "Se muestran iconos de dispositivos"
 
 #: data/sound.metainfo.xml.in:79
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Se ofrece la posibilidad de cambiar a un lector de pantalla"
 
 #: data/sound.metainfo.xml.in:101
 msgid "Smoother transition when navigating away from this view"
-msgstr ""
+msgstr "Se usan transiciones más suaves cuando se sale de esta vista"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
