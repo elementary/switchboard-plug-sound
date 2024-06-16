@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 06:42+0000\n"
-"PO-Revision-Date: 2023-07-26 20:07+0000\n"
+"PO-Revision-Date: 2024-06-16 21:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/nb/>\n"
@@ -17,28 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emitting sounds"
-msgstr ""
+msgstr "Ingen programmer spiller lyd"
 
 #: src/ApplicationsPanel.vala:13
+#, fuzzy
 msgid "Applications emitting sounds will automatically appear here"
-msgstr ""
+msgstr "Programmer som spiller lyd vises her"
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
-msgstr ""
+msgstr "Tilbakestill alle programmer til forvalg"
 
 #: src/AppRow.vala:99
 msgid "Unmute"
-msgstr ""
+msgstr "Opphev forstumming"
 
 #: src/AppRow.vala:101
 msgid "Mute"
-msgstr ""
+msgstr "Forstum"
 
 #: src/Plug.vala:24
 msgid "Sound"
@@ -61,7 +62,7 @@ msgstr "Inngang"
 
 #: src/Plug.vala:42 src/Plug.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "Programmer"
 
 #: src/Plug.vala:92 src/Plug.vala:100
 msgid "Device"
@@ -102,9 +103,9 @@ msgid "Enable"
 msgstr "Skru på"
 
 #: src/OutputPanel.vala:29
-#, fuzzy, c-format
+#, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr "Angi lydbeskrivelser for elementer på skjermen"
+msgstr "Tilby lydbeskrivelser for elementer på skjermen. %s"
 
 #: src/OutputPanel.vala:30
 #, fuzzy
