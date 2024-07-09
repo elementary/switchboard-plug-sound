@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:42+0000\n"
+"POT-Creation-Date: 2024-07-09 19:25+0000\n"
 "PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -28,66 +28,78 @@ msgid "Change sound and microphone volume"
 msgstr "Canvieu el volum del so i del micròfon"
 
 #: data/sound.metainfo.xml.in:37
+#, fuzzy
+#| msgid "New features:"
+msgid "New Features:"
+msgstr "Característiques noves:"
+
+#: data/sound.metainfo.xml.in:39
+msgid "Control the volume of individual apps"
+msgstr ""
+
+#: data/sound.metainfo.xml.in:41 data/sound.metainfo.xml.in:58
 msgid "Improvements:"
 msgstr "Millores:"
 
-#: data/sound.metainfo.xml.in:39
-msgid "Improve responsiveness for large and small displays"
-msgstr "Millora de la capacitat de resposta per a pantalles grans i petites"
+#: data/sound.metainfo.xml.in:43
+msgid "Include missing output items in search results"
+msgstr ""
 
-#: data/sound.metainfo.xml.in:40
-msgid "Better volume level indicator for microphones"
-msgstr "Millor indicador de nivell de volum per a micròfons"
-
-#: data/sound.metainfo.xml.in:41
-msgid "Show screen reader shortcut"
-msgstr "Mostra la drecera del lector de pantalla"
-
-#: data/sound.metainfo.xml.in:42 data/sound.metainfo.xml.in:55
-#: data/sound.metainfo.xml.in:69 data/sound.metainfo.xml.in:83
-#: data/sound.metainfo.xml.in:92 data/sound.metainfo.xml.in:102
+#: data/sound.metainfo.xml.in:44 data/sound.metainfo.xml.in:63
+#: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:90
+#: data/sound.metainfo.xml.in:104
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/sound.metainfo.xml.in:52 data/sound.metainfo.xml.in:65
-#: data/sound.metainfo.xml.in:81 data/sound.metainfo.xml.in:90
-#: data/sound.metainfo.xml.in:99
+#: data/sound.metainfo.xml.in:60
+msgid "Improve responsiveness for large and small displays"
+msgstr "Millora de la capacitat de resposta per a pantalles grans i petites"
+
+#: data/sound.metainfo.xml.in:61
+msgid "Better volume level indicator for microphones"
+msgstr "Millor indicador de nivell de volum per a micròfons"
+
+#: data/sound.metainfo.xml.in:62
+msgid "Show screen reader shortcut"
+msgstr "Mostra la drecera del lector de pantalla"
+
+#: data/sound.metainfo.xml.in:73 data/sound.metainfo.xml.in:86
+#: data/sound.metainfo.xml.in:102
 msgid "Minor updates:"
 msgstr "Actualitzacions menors:"
 
-#: data/sound.metainfo.xml.in:54
+#: data/sound.metainfo.xml.in:75
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "Usa el factor de forma del dispositiu quan estigui disponible per assignar "
 "icones més precises."
 
-#: data/sound.metainfo.xml.in:67
+#: data/sound.metainfo.xml.in:88
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
 "Proporciona una icona de dispositiu alternativa en cas que no n'hi hagi cap "
 "de disponible."
 
-#: data/sound.metainfo.xml.in:68
+#: data/sound.metainfo.xml.in:89
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
 "Text de marcador de posició més útil quan no es troba cap dispositiu "
 "d'entrada"
 
-#: data/sound.metainfo.xml.in:76
+#: data/sound.metainfo.xml.in:97
 msgid "New features:"
 msgstr "Característiques noves:"
 
-#: data/sound.metainfo.xml.in:78
+#: data/sound.metainfo.xml.in:99
 msgid "Show device icons"
 msgstr "Mostra les icones del dispositiu."
 
-#: data/sound.metainfo.xml.in:79
+#: data/sound.metainfo.xml.in:100
 msgid "Switch to enable the screen reader"
 msgstr "Interruptor per activar el lector de pantalla"
 
-#: data/sound.metainfo.xml.in:101
-msgid "Smoother transition when navigating away from this view"
-msgstr "Transició més suau en allunyar-se d'aquesta vista"
+#~ msgid "Smoother transition when navigating away from this view"
+#~ msgstr "Transició més suau en allunyar-se d'aquesta vista"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
