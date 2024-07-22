@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:42+0000\n"
+"POT-Creation-Date: 2024-07-09 19:25+0000\n"
 "PO-Revision-Date: 2024-06-15 19:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -26,7 +26,8 @@ msgstr "No hay aplicaciones emitiendo sonidos en este momento"
 
 #: src/ApplicationsPanel.vala:13
 msgid "Applications emitting sounds will automatically appear here"
-msgstr "Las aplicaciones que emitan sonidos aparecerán aquí de forma automática"
+msgstr ""
+"Las aplicaciones que emitan sonidos aparecerán aquí de forma automática"
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
