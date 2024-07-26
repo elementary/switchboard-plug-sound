@@ -12,13 +12,13 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/2.3.3/data/screenshot-output.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/8.0.0/data/screenshot-output.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/2.3.3/data/screenshot-input.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/8.0.0/data/screenshot-input.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/2.3.3/data/screenshot-applications.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/8.0.0/data/screenshot-applications.png</image>
     </screenshot>
   </screenshots>
 
@@ -35,7 +35,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.0.0" date="2024-07-09" urgency="medium">
+    <release version="8.0.0" date="2024-07-26" urgency="medium">
       <description>
         <p>New Features:</p>
         <ul>

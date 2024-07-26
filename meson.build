@@ -1,7 +1,7 @@
 project(
     'io.elementary.settings.sound',
     'vala', 'c',
-    version: '2.3.3'
+    version: '8.0.0'
 )
 
 gnome = import('gnome')
