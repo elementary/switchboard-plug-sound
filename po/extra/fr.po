@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 19:25+0000\n"
-"PO-Revision-Date: 2024-07-10 20:16+0000\n"
+"PO-Revision-Date: 2024-07-24 08:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/fr/>\n"
@@ -42,6 +42,7 @@ msgstr "Améliorations :"
 #: data/sound.metainfo.xml.in:43
 msgid "Include missing output items in search results"
 msgstr ""
+"Ajout des éléments de sortie manquants dans les résultats de la recherche"
 
 #: data/sound.metainfo.xml.in:44 data/sound.metainfo.xml.in:63
 #: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:90
