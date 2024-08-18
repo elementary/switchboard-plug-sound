@@ -145,12 +145,14 @@ public class Sound.OutputPanel : Gtk.Box {
         append (test_button);
 
         var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
-        applications_settings.bind ("screen-reader-enabled", this, "screen_reader_active", SettingsBindFlags.DEFAULT);
-        bind_property ("screen_reader_active", screen_reader_switch, "active", GLib.BindingFlags.BIDIRECTIONAL, () => {
+
+        bind_property ("screen-reader-active", screen_reader_switch, "active", GLib.BindingFlags.BIDIRECTIONAL, () => {
             if (screen_reader_active != screen_reader_switch.active) {
                 screen_reader_switch.activate ();
             }
         }, null);
+
+        applications_settings.bind ("screen-reader-enabled", this, "screen_reader_active", SettingsBindFlags.DEFAULT);
 
         pam = PulseAudioManager.get_default ();
         pam.new_device.connect (add_device);
