@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 19:25+0000\n"
-"PO-Revision-Date: 2022-10-04 21:31+0000\n"
-"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/ckb/>\n"
 "Language: ckb\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emitting sounds"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/AppRow.vala:101
 msgid "Mute"
-msgstr ""
+msgstr "بێدەنگ کردن"
 
 #: src/Plug.vala:24
 msgid "Sound"
@@ -54,7 +54,7 @@ msgstr "وەرگرتنی دەنگ"
 
 #: src/Plug.vala:42 src/Plug.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "بەرنامەکان"
 
 #: src/Plug.vala:92 src/Plug.vala:100
 msgid "Device"
@@ -102,7 +102,7 @@ msgstr "فرۆزی دەنگی دابین بکە بۆ دانەکانی سەر ڕ�
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr "، "
 
 #: src/OutputPanel.vala:39
 #, fuzzy
@@ -124,24 +124,18 @@ msgstr ""
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:83
-#, fuzzy
-#| msgid "Left"
 msgctxt "balance"
 msgid "Left"
 msgstr "چەپ"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:85
-#, fuzzy
-#| msgid "Center"
 msgctxt "balance"
 msgid "Center"
 msgstr "ناوەڕاست"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:87
-#, fuzzy
-#| msgid "Right"
 msgctxt "balance"
 msgid "Right"
 msgstr "ڕاست"

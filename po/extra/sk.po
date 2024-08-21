@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 19:25+0000\n"
-"PO-Revision-Date: 2022-12-26 20:25+0000\n"
-"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/sk/>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
@@ -28,8 +28,6 @@ msgid "Change sound and microphone volume"
 msgstr "Meňte hlasitosť zvuku a mikrofónu"
 
 #: data/sound.metainfo.xml.in:37
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "Nové funkcie:"
 
@@ -39,7 +37,7 @@ msgstr ""
 
 #: data/sound.metainfo.xml.in:41 data/sound.metainfo.xml.in:58
 msgid "Improvements:"
-msgstr ""
+msgstr "Vylepšenia:"
 
 #: data/sound.metainfo.xml.in:43
 msgid "Include missing output items in search results"

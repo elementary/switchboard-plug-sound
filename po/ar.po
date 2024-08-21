@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 19:25+0000\n"
-"PO-Revision-Date: 2020-05-15 12:45+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/ar/>\n"
 "Language: ar\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/ApplicationsPanel.vala:12
@@ -62,7 +62,7 @@ msgstr "مدخل"
 
 #: src/Plug.vala:42 src/Plug.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "التطبيقات"
 
 #: src/Plug.vala:92 src/Plug.vala:100
 msgid "Device"
@@ -123,24 +123,18 @@ msgstr ""
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:83
-#, fuzzy
-#| msgid "Left"
 msgctxt "balance"
 msgid "Left"
 msgstr "يسار"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:85
-#, fuzzy
-#| msgid "Center"
 msgctxt "balance"
 msgid "Center"
 msgstr "متوسط"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:87
-#, fuzzy
-#| msgid "Right"
 msgctxt "balance"
 msgid "Right"
 msgstr "يمين"

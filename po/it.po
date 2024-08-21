@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 19:25+0000\n"
-"PO-Revision-Date: 2018-12-11 15:10+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-sound/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/ApplicationsPanel.vala:12
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/AppRow.vala:101
 msgid "Mute"
-msgstr ""
+msgstr "Silenzia"
 
 #: src/Plug.vala:24
 msgid "Sound"
@@ -61,7 +61,7 @@ msgstr "Ingresso"
 
 #: src/Plug.vala:42 src/Plug.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "Applicazioni"
 
 #: src/Plug.vala:92 src/Plug.vala:100
 msgid "Device"
@@ -106,7 +106,7 @@ msgstr ""
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/OutputPanel.vala:39
 #, fuzzy
@@ -122,24 +122,18 @@ msgstr ""
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:83
-#, fuzzy
-#| msgid "Left"
 msgctxt "balance"
 msgid "Left"
 msgstr "Sinistro"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:85
-#, fuzzy
-#| msgid "Center"
 msgctxt "balance"
 msgid "Center"
 msgstr "Centro"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:87
-#, fuzzy
-#| msgid "Right"
 msgctxt "balance"
 msgid "Right"
 msgstr "Destro"

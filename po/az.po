@@ -2,8 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 19:25+0000\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Azerbaijani <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-sound/az/>\n"
+"Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emitting sounds"
@@ -46,7 +54,7 @@ msgstr ""
 
 #: src/Plug.vala:42 src/Plug.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "Proqramlar"
 
 #: src/Plug.vala:92 src/Plug.vala:100
 msgid "Device"
