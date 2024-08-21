@@ -73,7 +73,7 @@ public class Sound.InputDeviceMonitor : GLib.Object {
         var props = new PulseAudio.Proplist ();
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_NAME, "Sound Settings");
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_ID, "io.elementary.settings.sound");
-        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ICON_NAME, "preferences-desktop-sound");
+        props.sets (PulseAudio.Proplist.PROP_APPLICATION_ICON_NAME, "multimedia-volume-control");
         props.sets (PulseAudio.Proplist.PROP_APPLICATION_VERSION, "0.1");
 
         steam = new PulseAudio.Stream (c, _("Peak detect"), ss, null, props);
