@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-09 19:25+0000\n"
+"POT-Creation-Date: 2024-08-25 20:24+0000\n"
 "PO-Revision-Date: 2024-07-10 20:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -27,72 +27,77 @@ msgstr "Configuración de Sonido"
 msgid "Change sound and microphone volume"
 msgstr "Cambie el volumen del micrófono y el sonido"
 
-#: data/sound.metainfo.xml.in:37
-msgid "New Features:"
-msgstr "Nuevas características:"
-
-#: data/sound.metainfo.xml.in:39
-msgid "Control the volume of individual apps"
-msgstr "Ahora se puede controlar el volumen individual de cada aplicación"
-
-#: data/sound.metainfo.xml.in:41 data/sound.metainfo.xml.in:58
+#: data/sound.metainfo.xml.in:40 data/sound.metainfo.xml.in:54
+#: data/sound.metainfo.xml.in:71
 msgid "Improvements:"
 msgstr "Mejoras:"
 
-#: data/sound.metainfo.xml.in:43
+#: data/sound.metainfo.xml.in:42
+msgid "Fix crash when connecting bluetooth audio players"
+msgstr ""
+
+#: data/sound.metainfo.xml.in:43 data/sound.metainfo.xml.in:57
+#: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:89
+#: data/sound.metainfo.xml.in:103 data/sound.metainfo.xml.in:117
+msgid "Updated translations"
+msgstr "Traducciones actualizadas"
+
+#: data/sound.metainfo.xml.in:50
+msgid "New Features:"
+msgstr "Nuevas características:"
+
+#: data/sound.metainfo.xml.in:52
+msgid "Control the volume of individual apps"
+msgstr "Ahora se puede controlar el volumen individual de cada aplicación"
+
+#: data/sound.metainfo.xml.in:56
 msgid "Include missing output items in search results"
 msgstr ""
 "Ahora se incluyen dispositivos de salida faltantes en la búsqueda de "
 "resultados"
 
-#: data/sound.metainfo.xml.in:44 data/sound.metainfo.xml.in:63
-#: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:90
-#: data/sound.metainfo.xml.in:104
-msgid "Updated translations"
-msgstr "Traducciones actualizadas"
-
-#: data/sound.metainfo.xml.in:60
+#: data/sound.metainfo.xml.in:73
 msgid "Improve responsiveness for large and small displays"
 msgstr "Se mejoró la velocidad para grandes y pequeñas pantallas"
 
-#: data/sound.metainfo.xml.in:61
+#: data/sound.metainfo.xml.in:74
 msgid "Better volume level indicator for microphones"
 msgstr "Un mejor indicador de nivel de volumen para micrófonos"
 
-#: data/sound.metainfo.xml.in:62
+#: data/sound.metainfo.xml.in:75
 msgid "Show screen reader shortcut"
 msgstr "Se muestra el atajo para el lector de pantalla"
 
-#: data/sound.metainfo.xml.in:73 data/sound.metainfo.xml.in:86
-#: data/sound.metainfo.xml.in:102
+#: data/sound.metainfo.xml.in:86 data/sound.metainfo.xml.in:99
+#: data/sound.metainfo.xml.in:115
 msgid "Minor updates:"
 msgstr "Actualizaciones menores:"
 
-#: data/sound.metainfo.xml.in:75
+#: data/sound.metainfo.xml.in:88
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
 "Se usa el factor de forma del dispositivo cuando esté disponible para "
 "asignar iconos más precisos"
 
-#: data/sound.metainfo.xml.in:88
+#: data/sound.metainfo.xml.in:101
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
 "Se ofrece un icono de dispositivo alternativo si nada se encuentra disponible"
 
-#: data/sound.metainfo.xml.in:89
+#: data/sound.metainfo.xml.in:102
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
 "Un texto alternativo más útil cuando no se encuentran dispositivos de entrada"
 
-#: data/sound.metainfo.xml.in:97
+#: data/sound.metainfo.xml.in:110
 msgid "New features:"
 msgstr "Nuevas características:"
 
-#: data/sound.metainfo.xml.in:99
+#: data/sound.metainfo.xml.in:112
 msgid "Show device icons"
 msgstr "Se muestran iconos de dispositivos"
 
-#: data/sound.metainfo.xml.in:100
+#: data/sound.metainfo.xml.in:113
 msgid "Switch to enable the screen reader"
 msgstr "Se ofrece la posibilidad de cambiar a un lector de pantalla"
 
