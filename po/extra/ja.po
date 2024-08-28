@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-07-10 20:16+0000\n"
+"PO-Revision-Date: 2024-08-29 23:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ja/>\n"
@@ -34,7 +34,7 @@ msgstr "改善点:"
 
 #: data/sound.metainfo.xml.in:42
 msgid "Fix crash when connecting bluetooth audio players"
-msgstr ""
+msgstr "Bluetooth オーディオプレーヤー接続時にクラッシュする不具合を修正"
 
 #: data/sound.metainfo.xml.in:43 data/sound.metainfo.xml.in:57
 #: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:89
