@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-08-17 10:16+0000\n"
+"PO-Revision-Date: 2024-09-01 23:41+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/sound-"
-"plug-extra/nl/>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
+"sound-plug-extra/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +34,7 @@ msgstr "Verbeteringen:"
 
 #: data/sound.metainfo.xml.in:42
 msgid "Fix crash when connecting bluetooth audio players"
-msgstr ""
+msgstr "Crash verholpen wanneer bluetooth-geluidsapparatuur wordt verbonden"
 
 #: data/sound.metainfo.xml.in:43 data/sound.metainfo.xml.in:57
 #: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:89
@@ -43,30 +43,28 @@ msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
 #: data/sound.metainfo.xml.in:50
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "Nieuwe functies:"
 
 #: data/sound.metainfo.xml.in:52
 msgid "Control the volume of individual apps"
-msgstr ""
+msgstr "Bedien het volume van individuele apps"
 
 #: data/sound.metainfo.xml.in:56
 msgid "Include missing output items in search results"
-msgstr ""
+msgstr "Voeg missende uitvoer-items toe in zoekresultaten"
 
 #: data/sound.metainfo.xml.in:73
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "Verbeter de responsiviteit voor kleine en grote beeldschermen"
 
 #: data/sound.metainfo.xml.in:74
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "Betere volumeniveau-indicator voor microfoons"
 
 #: data/sound.metainfo.xml.in:75
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "Geef schermlezersneltoets weer"
 
 #: data/sound.metainfo.xml.in:86 data/sound.metainfo.xml.in:99
 #: data/sound.metainfo.xml.in:115
@@ -76,14 +74,20 @@ msgstr "Kleine updates:"
 #: data/sound.metainfo.xml.in:88
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
+"Gebruik de vormfactor van het apparaat wanneer beschikbaar om beter passende "
+"iconen toe te wijzen"
 
 #: data/sound.metainfo.xml.in:101
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
+"Bied een terugval apparaat-icoon in het geval dat er geen andere beschikbaar "
+"is"
 
 #: data/sound.metainfo.xml.in:102
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
+"Behulpzamere plaatsaanduidende tekst wanneer geen invoerapparaten zijn "
+"gevonden"
 
 #: data/sound.metainfo.xml.in:110
 msgid "New features:"
@@ -91,11 +95,11 @@ msgstr "Nieuwe functionaliteit:"
 
 #: data/sound.metainfo.xml.in:112
 msgid "Show device icons"
-msgstr ""
+msgstr "Geef apparaaticonen weer"
 
 #: data/sound.metainfo.xml.in:113
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Wissel om de schermlezer te activeren"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
