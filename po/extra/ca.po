@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-07-10 20:16+0000\n"
+"PO-Revision-Date: 2024-09-02 20:05+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/ca/>\n"
@@ -34,7 +34,7 @@ msgstr "Millores:"
 
 #: data/sound.metainfo.xml.in:42
 msgid "Fix crash when connecting bluetooth audio players"
-msgstr ""
+msgstr "Solució de l'error en connectar reproductors d'àudio bluetooth"
 
 #: data/sound.metainfo.xml.in:43 data/sound.metainfo.xml.in:57
 #: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:89
