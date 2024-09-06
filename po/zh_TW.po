@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-06 10:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/zh_Hant/>\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: src/Plug.vala:96 src/OutputPanel.vala:89
 msgid "Event Alerts"
-msgstr ""
+msgstr "事件警告"
 
 #: src/Plug.vala:97 src/Plug.vala:104
 #, fuzzy
