@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-08-22 15:16+0000\n"
+"PO-Revision-Date: 2024-09-14 02:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "sound-plug-extra/hu/>\n"
@@ -34,7 +34,7 @@ msgstr "Újítások:"
 
 #: data/sound.metainfo.xml.in:42
 msgid "Fix crash when connecting bluetooth audio players"
-msgstr ""
+msgstr "Bluetooth-audiólejátszók csatlakoztatásakor történő összeomlás javítása"
 
 #: data/sound.metainfo.xml.in:43 data/sound.metainfo.xml.in:57
 #: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:89
@@ -48,11 +48,11 @@ msgstr "Új funkciók:"
 
 #: data/sound.metainfo.xml.in:52
 msgid "Control the volume of individual apps"
-msgstr ""
+msgstr "Az egyes alkalmazások hangerejének szabályozása"
 
 #: data/sound.metainfo.xml.in:56
 msgid "Include missing output items in search results"
-msgstr ""
+msgstr "A keresési eredményekből hiányzó elemek megjelenítése"
 
 #: data/sound.metainfo.xml.in:73
 msgid "Improve responsiveness for large and small displays"
