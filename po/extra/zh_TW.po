@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-09-05 21:13+0000\n"
+"PO-Revision-Date: 2024-09-14 02:16+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/sound-plug-extra/zh_Hant/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sound.metainfo.xml.in:10
 msgid "Sound Settings"
-msgstr "音訊設定"
+msgstr "音效設定值"
 
 #: data/sound.metainfo.xml.in:11
 msgid "Change sound and microphone volume"
@@ -34,7 +34,7 @@ msgstr "改善項目："
 
 #: data/sound.metainfo.xml.in:42
 msgid "Fix crash when connecting bluetooth audio players"
-msgstr ""
+msgstr "修正連接藍牙音效播放器時的崩潰"
 
 #: data/sound.metainfo.xml.in:43 data/sound.metainfo.xml.in:57
 #: data/sound.metainfo.xml.in:76 data/sound.metainfo.xml.in:89
@@ -48,23 +48,23 @@ msgstr "新功能："
 
 #: data/sound.metainfo.xml.in:52
 msgid "Control the volume of individual apps"
-msgstr ""
+msgstr "控制個別應用程式的音量"
 
 #: data/sound.metainfo.xml.in:56
 msgid "Include missing output items in search results"
-msgstr ""
+msgstr "修正輸出分頁中有些項目不會顯示在搜尋結果裡的問題"
 
 #: data/sound.metainfo.xml.in:73
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "改善在特別大和特別小的螢幕環境下的顯示"
 
 #: data/sound.metainfo.xml.in:74
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "改善麥克風音量指示器的外觀"
 
 #: data/sound.metainfo.xml.in:75
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "顯示螢幕閱讀器的快捷鍵"
 
 #: data/sound.metainfo.xml.in:86 data/sound.metainfo.xml.in:99
 #: data/sound.metainfo.xml.in:115
@@ -73,15 +73,15 @@ msgstr "小型更新："
 
 #: data/sound.metainfo.xml.in:88
 msgid "Use device form factor when available to assign more accurate icons"
-msgstr ""
+msgstr "可能的話依裝置種類來選擇更精確的圖示"
 
 #: data/sound.metainfo.xml.in:101
 msgid "Provide a fallback device icon in case none is available"
-msgstr ""
+msgstr "沒有其他可用的裝置圖示的時候提供備用的裝置圖示"
 
 #: data/sound.metainfo.xml.in:102
 msgid "More helpful placeholder text when no input devices are found"
-msgstr ""
+msgstr "沒有找到輸入裝置時提供更有用的替代說明文字"
 
 #: data/sound.metainfo.xml.in:110
 msgid "New features:"
@@ -89,11 +89,11 @@ msgstr "新功能："
 
 #: data/sound.metainfo.xml.in:112
 msgid "Show device icons"
-msgstr ""
+msgstr "顯示裝置圖示"
 
 #: data/sound.metainfo.xml.in:113
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "新增啟用螢幕閱讀器的開關"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
