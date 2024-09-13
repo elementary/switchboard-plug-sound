@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-09-06 10:13+0000\n"
+"PO-Revision-Date: 2024-09-14 02:16+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/zh_Hant/>\n"
@@ -21,19 +21,19 @@ msgstr ""
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emitting sounds"
-msgstr ""
+msgstr "沒有應用程式正在發出聲音"
 
 #: src/ApplicationsPanel.vala:13
 msgid "Applications emitting sounds will automatically appear here"
-msgstr ""
+msgstr "發出聲音的應用程式會自動出現於此"
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
-msgstr ""
+msgstr "重設所有應用程式為預設值"
 
 #: src/AppRow.vala:99
 msgid "Unmute"
-msgstr ""
+msgstr "解除靜音"
 
 #: src/AppRow.vala:101
 msgid "Mute"
@@ -64,61 +64,54 @@ msgstr "應用程式"
 
 #: src/Plug.vala:95 src/Plug.vala:103
 msgid "Device"
-msgstr ""
+msgstr "裝置"
 
 #: src/Plug.vala:96 src/OutputPanel.vala:89
 msgid "Event Alerts"
 msgstr "事件警告"
 
 #: src/Plug.vala:97 src/Plug.vala:104
-#, fuzzy
 msgid "Port"
-msgstr "可攜裝置"
+msgstr "連接埠"
 
 #: src/Plug.vala:98 src/Plug.vala:105 src/OutputPanel.vala:60
-#, fuzzy
 msgid "Volume"
-msgstr "輸入音量："
+msgstr "音量"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Balance"
-msgstr "平衡："
+msgstr "平衡"
 
 #: src/Plug.vala:100 src/OutputPanel.vala:112
 msgid "Screen Reader"
-msgstr ""
+msgstr "螢幕閱讀器"
 
 #: src/Plug.vala:101
-#, fuzzy
-#| msgid "Test Speakers…"
 msgid "Test Speakers"
-msgstr "測試喇叭…"
+msgstr "測試喇叭"
 
 #: src/Plug.vala:106
 msgid "Enable"
-msgstr ""
+msgstr "啟用"
 
 #: src/OutputPanel.vala:29
 #, c-format
 msgid "Provide audio descriptions for items on the screen. %s"
-msgstr ""
+msgstr "為螢幕上的項目提供語音描述。%s"
 
 #: src/OutputPanel.vala:30
 msgid ", "
 msgstr "、 "
 
 #: src/OutputPanel.vala:39
-#, fuzzy
-#| msgid "No Output Device"
 msgid "No Connected Output Devices Detected"
-msgstr "沒有輸出裝置"
+msgstr "沒有偵測到已連接的輸出裝置"
 
 #: src/OutputPanel.vala:41
 msgid ""
 "Check that all cables are securely attached and audio output devices are "
 "powered on."
-msgstr ""
+msgstr "請確認有沒有接線的連接是鬆開的，以及音訊輸出裝置的電源是否開啟。"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:83
@@ -143,15 +136,16 @@ msgid ""
 "Notify when the system can't do something in response to input, like "
 "attempting to backspace in an empty input or switch windows when only one is "
 "open."
-msgstr ""
+msgstr "系統收到輸入但無法進行其目的時進行通知，像是在空白輸入欄位嘗試使用 Backspace "
+"或是在只有一個視窗時嘗試切換視窗等等。"
 
 #: src/OutputPanel.vala:93
 msgid "Play sound"
-msgstr ""
+msgstr "播放音效"
 
 #: src/OutputPanel.vala:97
 msgid "Flash screen"
-msgstr ""
+msgstr "閃爍螢幕"
 
 #: src/OutputPanel.vala:106
 msgid "Test Speakers…"
@@ -159,18 +153,17 @@ msgstr "測試喇叭…"
 
 #: src/InputPanel.vala:21
 msgid "No Connected Audio Devices Detected"
-msgstr ""
+msgstr "沒有偵測到已連接的音效裝置"
 
 #: src/InputPanel.vala:23
 msgid ""
 "Check that all cables are securely attached and audio input devices are "
 "powered on."
-msgstr ""
+msgstr "請確認有沒有接線的連接是鬆開的，以及音訊輸入裝置的電源是否開啟。"
 
 #: src/InputPanel.vala:46
-#, fuzzy
 msgid "Input Volume"
-msgstr "輸入音量："
+msgstr "輸入音量"
 
 #: src/InputPanel.vala:54
 msgid "Unamplified"
