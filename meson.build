@@ -13,6 +13,7 @@ libdir = join_paths(prefix, get_option('libdir'))
 
 add_project_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()),
+    '-DG_LOG_DOMAIN="@0@"'.format(meson.project_name()),
     language:'c'
 )
 
