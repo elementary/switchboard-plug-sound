@@ -12,10 +12,13 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/2.3.3/data/screenshot-output.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/8.0.0/data/screenshot-output.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/2.3.3/data/screenshot-input.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/8.0.0/data/screenshot-input.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-sound/8.0.0/data/screenshot-applications.png</image>
     </screenshot>
   </screenshots>
 
@@ -32,7 +35,41 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-      <release version="2.3.3" date="2023-07-24" urgency="medium">
+    <release version="8.0.1" date="2024-08-21" urgency="medium">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+          <li>Fix crash when connecting bluetooth audio players</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-sound/issues/278">ScreenReader switch does not synchronise with setting</issue>
+      </issues>
+    </release>
+
+    <release version="8.0.0" date="2024-07-26" urgency="medium">
+      <description>
+        <p>New Features:</p>
+        <ul>
+          <li>Control the volume of individual apps</li>
+        </ul>
+        <p>Improvements:</p>
+        <ul>
+          <li>Include missing output items in search results</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-sound/issues/207">Audio output device not switched correctly when plugged in</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-sound/issues/222">It is very annoying to change sound output</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-sound/issues/259">After plugging wired headphones, can't switch back to speakers</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-sound/issues/260">Toggling mute switch does nothing</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-sound/issues/264">Unplugging device doesn't remove from list</issue>
+      </issues>
+    </release>
+
+    <release version="2.3.3" date="2023-07-24" urgency="medium">
       <description>
         <p>Improvements:</p>
         <ul>
@@ -85,25 +122,8 @@
       </description>
     </release>
 
-    <release version="2.2.7" date="2021-07-14" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
-    <release version="2.2.6" date="2020-12-23" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Smoother transition when navigating away from this view</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="2.2.7" date="2021-07-14" />
+    <release version="2.2.6" date="2020-12-23" />
     <release version="2.2.5" date="2020-09-02" />
     <release version="2.2.4" date="2020-05-28" />
     <release version="2.2.3" date="2020-04-03" />

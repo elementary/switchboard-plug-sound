@@ -1,7 +1,7 @@
 project(
     'io.elementary.settings.sound',
     'vala', 'c',
-    version: '2.3.3'
+    version: '8.0.0'
 )
 
 gnome = import('gnome')
@@ -13,6 +13,7 @@ libdir = join_paths(prefix, get_option('libdir'))
 
 add_project_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()),
+    '-DG_LOG_DOMAIN="@0@"'.format(meson.project_name()),
     language:'c'
 )
 

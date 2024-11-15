@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:42+0000\n"
-"PO-Revision-Date: 2022-10-04 21:31+0000\n"
-"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"POT-Creation-Date: 2024-08-25 20:24+0000\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-sound/ckb/>\n"
 "Language: ckb\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emitting sounds"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/AppRow.vala:101
 msgid "Mute"
-msgstr ""
+msgstr "بێدەنگ کردن"
 
 #: src/Plug.vala:24
 msgid "Sound"
@@ -41,56 +41,56 @@ msgstr "دەنگ"
 msgid "Change sound and microphone volume"
 msgstr "گۆڕینی بەرزی دەنگ و مایکرۆفۆن"
 
-#: src/Plug.vala:40 src/Plug.vala:91 src/Plug.vala:92 src/Plug.vala:93
-#: src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96 src/Plug.vala:97
-#: src/Plug.vala:98 src/Device.vala:101
+#: src/Plug.vala:43 src/Plug.vala:94 src/Plug.vala:95 src/Plug.vala:96
+#: src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99 src/Plug.vala:100
+#: src/Plug.vala:101 src/Device.vala:101
 msgid "Output"
 msgstr "دەنگی دەردراو"
 
-#: src/Plug.vala:41 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Device.vala:101
+#: src/Plug.vala:44 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Device.vala:101
 msgid "Input"
 msgstr "وەرگرتنی دەنگ"
 
-#: src/Plug.vala:42 src/Plug.vala:104
+#: src/Plug.vala:45 src/Plug.vala:107
 msgid "Applications"
-msgstr ""
+msgstr "بەرنامەکان"
 
-#: src/Plug.vala:92 src/Plug.vala:100
+#: src/Plug.vala:95 src/Plug.vala:103
 msgid "Device"
 msgstr "ئامێر"
 
-#: src/Plug.vala:93 src/OutputPanel.vala:89
+#: src/Plug.vala:96 src/OutputPanel.vala:89
 #, fuzzy
 #| msgid "Event alerts:"
 msgid "Event Alerts"
 msgstr "ئاگادارکردنەوەی ڕووداوەکان:"
 
-#: src/Plug.vala:94 src/Plug.vala:101
+#: src/Plug.vala:97 src/Plug.vala:104
 msgid "Port"
 msgstr "پۆرت"
 
-#: src/Plug.vala:95 src/Plug.vala:102 src/OutputPanel.vala:60
+#: src/Plug.vala:98 src/Plug.vala:105 src/OutputPanel.vala:60
 msgid "Volume"
 msgstr "بەرزی دەنگ"
 
-#: src/Plug.vala:96
+#: src/Plug.vala:99
 msgid "Balance"
 msgstr "باڵانس"
 
-#: src/Plug.vala:97 src/OutputPanel.vala:112
+#: src/Plug.vala:100 src/OutputPanel.vala:112
 #, fuzzy
 #| msgid "Screen Reader:"
 msgid "Screen Reader"
 msgstr "خوێنەری ڕوونما:"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:101
 #, fuzzy
 #| msgid "Test Speakers…"
 msgid "Test Speakers"
 msgstr "تاقیکردنەوەی بڵندگۆکان…"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Enable"
 msgstr "کاراکردن"
 
@@ -102,7 +102,7 @@ msgstr "فرۆزی دەنگی دابین بکە بۆ دانەکانی سەر ڕ�
 
 #: src/OutputPanel.vala:30
 msgid ", "
-msgstr ""
+msgstr "، "
 
 #: src/OutputPanel.vala:39
 #, fuzzy
@@ -124,24 +124,18 @@ msgstr ""
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:83
-#, fuzzy
-#| msgid "Left"
 msgctxt "balance"
 msgid "Left"
 msgstr "چەپ"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:85
-#, fuzzy
-#| msgid "Center"
 msgctxt "balance"
 msgid "Center"
 msgstr "ناوەڕاست"
 
 #. / TRANSLATORS: describes sound balance
 #: src/OutputPanel.vala:87
-#, fuzzy
-#| msgid "Right"
 msgctxt "balance"
 msgid "Right"
 msgstr "ڕاست"

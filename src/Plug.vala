@@ -35,7 +35,10 @@ public class Sound.Plug : Switchboard.Plug {
 
             stack = new Gtk.Stack () {
                 hexpand = true,
-                vexpand = true
+                vexpand = true,
+                margin_start = 12,
+                margin_end = 12,
+                margin_bottom = 12
             };
             stack.add_titled (output_panel, "output", _("Output"));
             stack.add_titled (input_panel, "input", _("Input"));
