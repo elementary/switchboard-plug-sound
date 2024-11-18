@@ -1,3 +1,9 @@
+io.elementary.settings.sound (8.0.1) noble; urgency=medium
+
+  * Release 8.0.1 (#285)
+
+ -- elementary OS Team <builds@elementary.io>  Mon, 18 Nov 2024 20:07:39 +0000
+
 io.elementary.settings.sound (8.0.0) noble; urgency=medium
 
   * Release 8.0.0
