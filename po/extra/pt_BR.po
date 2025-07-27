@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
 "PO-Revision-Date: 2025-07-28 04:55+0000\n"
-"Last-Translator: Gustavo Silva <g.costasalles@gmail.com>\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
 "settings/sound-plug-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -48,23 +48,23 @@ msgstr "Novos Recursos:"
 
 #: data/sound.metainfo.xml.in:52
 msgid "Control the volume of individual apps"
-msgstr ""
+msgstr "Controlar o volume de aplicativos individuais"
 
 #: data/sound.metainfo.xml.in:56
 msgid "Include missing output items in search results"
-msgstr ""
+msgstr "Incluir itens de saída ausentes nos resultados da pesquisa"
 
 #: data/sound.metainfo.xml.in:73
 msgid "Improve responsiveness for large and small displays"
-msgstr ""
+msgstr "Melhore a responsividade para telas grandes e pequenas"
 
 #: data/sound.metainfo.xml.in:74
 msgid "Better volume level indicator for microphones"
-msgstr ""
+msgstr "Melhor indicador de nível de volume para microfones"
 
 #: data/sound.metainfo.xml.in:75
 msgid "Show screen reader shortcut"
-msgstr ""
+msgstr "Mostrar atalho do leitor de tela"
 
 #: data/sound.metainfo.xml.in:86 data/sound.metainfo.xml.in:99
 #: data/sound.metainfo.xml.in:115
@@ -74,14 +74,19 @@ msgstr "Pequenas atualizações:"
 #: data/sound.metainfo.xml.in:88
 msgid "Use device form factor when available to assign more accurate icons"
 msgstr ""
+"Use o fator de forma do dispositivo quando disponível para atribuir ícones "
+"mais precisos"
 
 #: data/sound.metainfo.xml.in:101
 msgid "Provide a fallback device icon in case none is available"
 msgstr ""
+"Fornecer um ícone de dispositivo de reserva caso nenhum esteja disponível"
 
 #: data/sound.metainfo.xml.in:102
 msgid "More helpful placeholder text when no input devices are found"
 msgstr ""
+"Texto de espaço reservado mais útil quando nenhum dispositivo de entrada é "
+"encontrado"
 
 #: data/sound.metainfo.xml.in:110
 msgid "New features:"
@@ -89,11 +94,11 @@ msgstr "Novas funcionalidades:"
 
 #: data/sound.metainfo.xml.in:112
 msgid "Show device icons"
-msgstr ""
+msgstr "Mostrar ícones do dispositivo"
 
 #: data/sound.metainfo.xml.in:113
 msgid "Switch to enable the screen reader"
-msgstr ""
+msgstr "Alterne para ativar o leitor de tela"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
