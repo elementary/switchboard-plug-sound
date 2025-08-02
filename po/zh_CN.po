@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-sound/zh_Hans/>\n"
+"PO-Revision-Date: 2025-08-03 07:55+0000\n"
+"Last-Translator: JieXu <xujie0739@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"l10n.elementaryos.org/projects/settings/switchboard-plug-sound/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-09-28 06:53+0000\n"
 
 #: src/ApplicationsPanel.vala:12
 msgid "No applications currently emitting sounds"
-msgstr ""
+msgstr "没有应用程序正在发出声音"
 
 #: src/ApplicationsPanel.vala:13
 msgid "Applications emitting sounds will automatically appear here"
@@ -30,11 +30,11 @@ msgstr ""
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
-msgstr ""
+msgstr "重置所有应用程序为预设值"
 
 #: src/AppRow.vala:99
 msgid "Unmute"
-msgstr ""
+msgstr "解除静音"
 
 #: src/AppRow.vala:101
 msgid "Mute"
@@ -88,10 +88,8 @@ msgid "Screen Reader"
 msgstr "屏幕阅读器"
 
 #: src/Plug.vala:101
-#, fuzzy
-#| msgid "Test Speakers…"
 msgid "Test Speakers"
-msgstr "声音测试…"
+msgstr "测试扬声器"
 
 #: src/Plug.vala:106
 msgid "Enable"
