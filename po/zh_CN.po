@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-about\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-25 20:24+0000\n"
-"PO-Revision-Date: 2025-08-03 07:55+0000\n"
+"PO-Revision-Date: 2025-08-08 14:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
 "l10n.elementaryos.org/projects/settings/switchboard-plug-sound/zh_Hans/>\n"
@@ -26,7 +26,7 @@ msgstr "没有应用程序正在发出声音"
 
 #: src/ApplicationsPanel.vala:13
 msgid "Applications emitting sounds will automatically appear here"
-msgstr ""
+msgstr "有声音输出的应用会在此处自动显示"
 
 #: src/ApplicationsPanel.vala:32
 msgid "Reset all apps to default"
